@@ -1,6 +1,7 @@
 # La désinformation scientifique de Google que j’ai débunkée
 
 En 2010, les historiens des sciences Naomi Oreskes et Erik M. Conway publient “Marchand de doutes”, un ouvrage qui expose l’étendue de la désinformation scientifique qui vise à nier l’ampleur du changement climatique et ses conséquences probables sur la sécurité des sociétés humaines. Ainsi, certains instituts et experts du domaine ont visiblement délibérément biaisé leurs recherches, pour “nourrir la controverse” et banaliser le statu quo. Dans leur livre très documenté, Oreskes et Conway trace en particulier des parallèles saisissants avec d’autres cas avérés précédemment, comme la désinformation scientifique sur le tabagisme, les pluies acides et le trou dans la couche d'ozone. Dans tous ces cas, la communauté scientifique a été empoisonnée par des membres malveillants, qui maintenaient le doute sur la dangerosité de produits industriels et normalisaient l’inaction malgré cette dangerosité.
+
 https://fr.wikipedia.org/wiki/Les_Marchands_de_doute 
 
 Si une énorme partie des sciences est épargnée de telles trahisons, notamment les sciences fondamentales qui n’ont que peu d’applications, la présence d’énormes enjeux industriels ou géopolitiques dans certains secteurs doit absolument appeler à la vigilance. 
