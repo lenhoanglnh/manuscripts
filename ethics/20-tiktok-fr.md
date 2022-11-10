@@ -93,6 +93,17 @@ Jack Ma.
 
 ## Les enjeux géopolitiques sont énormes
 
+Ouïghours, Tibet, Hong-Kong.
+
+Taïwan.
+
+Affaiblir les démocraties.
+
+Séduire les marchés asiatiques et africains.
+
+Taire le changement climatique.
+
+Prétendre que le zéro-COVID est efficace.
 
 
 ## Les télécommandes sont hors de contrôle
