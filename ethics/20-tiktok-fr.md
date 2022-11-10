@@ -135,17 +135,65 @@ Qui a le pouvoir d'exploiter le pouvoir monumental de la zappette de TikTok ?
 
 ## TikTok, contrôlé par Xi ?
 
-Douyin
+Alors, ByteDance est une entreprise privée, 
+et on pourrait croire que, dès lors, 
+elle est indépendante du Parti Communiste Chinois.
+C'est en tout cas ce que TikTok affirme.  
+https://www.reuters.com/article/us-usa-china-tiktok-us-idUSKBN1XF2N1
 
-Controverses des données
+Mais bien sûr, faute d'audits des infrastructures informationnels de TikTok,
+les autorités américains sont peu convaincus par les déclarations de TikTok.  
+https://www.independent.co.uk/tech/tiktok-china-data-privacy-lawsuit-bytedance-a9230426.html
 
-Pour rappel, l'Institut de Recherche Stratégique de l'École Militaire
-rapporte l'existence de 20 millions de chinois payés par les autorités chinoises
-pour produire de la désinformation,
-et de 2 millions pour le faire à temps plein.  
+Et quand on sait à quel point même les entreprises de pays démocratiques mentent,
+y compris à des scientifiques qui acceptent leurs mensonges,
+il y a en effet de quoi être dubitatif.  
+https://tournesol.app/entities/yt:-UDLorjyWg0  
+https://tournesol.app/entities/yt:IVqXKP91L4E
+
+D'autant que les enjeux géopolitiques, sur lesquels on reviendra, sont absolument énormes.
+Pour bien se les représenter, il est instructif de garder en tête un chiffre
+partagé et publié par l'Institut de Recherche Stratégique de l'École Militaire en France :
+20 millions de chinois seraient ainsi payés par les autorités chinoises 
+pour produire de la désinformation, dont 2 millions à temps plein.  
 https://www.irsem.fr/report.html
 
-Jack Ma.
+Qui plus est, le cas de Jack Ma, ex-PDG d'Alibaba et 5e plus grande fortune de Chine,
+est particulièrement inquiétante.
+Cet homme d'affaire, bien connu pour ses déclarations contestataires
+de la ligne directrice du Parti unique de Chine,
+a mystérieusement disparu d'Octobre de 2020 à Janvier 2021.
+Et bizarrement, il est devenu moins critique ensuite.  
+https://www.forbes.com/sites/georgecalhoun/2021/06/24/what-really-happened-to-jack-ma/  
+https://www.bbc.com/news/technology-56448688
+
+Le cas de Jack Ma semble en fait représentatif d'une plus grande attention donnée
+par le gouvernement chinois aux entreprises du numérique chinoises.
+Et ByteDance, l'entreprise qui développe TikTok, ne fait pas exception.
+Ainsi, en 2021, Zhang Yiming, 
+PDG de ByteDance et deuxième homme le plus riche de Chine, 
+démissionne, à l'âge de seulement 38 ans,
+ce qui paraît assez... étrange.  
+https://www.cnbc.com/2021/11/03/bytedance-founder-zhang-yiming-steps-down-as-chairman-amid-reshuffle.html  
+https://edition.cnn.com/2021/05/20/tech/zhang-bytedance-ceo-resignation-intl-hnk/index.html
+
+En avril 2021, le Fond d'Investissement sur Internet de Chine, 
+une entreprise étatique de l'Administration du Cyber-espace de Chine,
+a pris des parts de ByteDance,
+ce qui lui a permis de placer un membre officiel du gouvernement, Wu Shugang,
+dans le conseil d'administration de ByteDance.  
+https://www.reuters.com/technology/bytedance-says-china-unit-holds-local-licences-response-media-report-2021-08-16/
+
+Puis en 2022, le gouvernement chinois a lui-même racheté des parts de ByteDance.  
+https://gamerant.com/tiktok-chinese-government-acquires-bytedance-stake/
+
+Enfin, suite à des éléments de plus en plus compromettants,
+en novembre 2022, TikTok a fini par admettre que le personnel en Chine
+pouvait bel et bien accéder aux données d'utilisateurs européens -
+et il en est sans doute de même des données d'utilisateurs américains.
+Ceci dit, TikTok persiste à affirmer que le gouvernement de Xi Jinping n'a pas accès à ces données.  
+https://fortune.com/2022/11/03/tiktok-china-staff-european-user-data-access-fcc-commissioner-urges-app-be-banned/  
+https://www.cnn.com/2022/09/14/tech/tiktok-china-data/index.html
 
 
 ## Les enjeux géopolitiques
@@ -226,11 +274,14 @@ Même des logiciels libres peuvent être corrompus par leur gouvernance.
 
 ## Conclusion
 
-Danger pour l'attention et la santé mentale.
+Danger pour l'attention, la santé mentale et la productivité : Douyin interdit en Chine.
 
 Ramener des gens vers TikTok, c'est augmenter notre dépendance aux autorités chinoises.
 
 Boycotter TikTok ne suffira pas. Auditer TikTok non plus.
 
-Interdire TikTok ? Racheter TikTok Europe ? Nationaliser TikTok ?
+Interdire TikTok ? Racheter TikTok Europe ? Nationaliser TikTok ?  
+https://www.axios.com/2022/11/01/interview-fcc-commissioner-says-government-should-ban-tiktok
+
+D'autres pays ont commencé : Iran, Inde, US... Qu'attends l'Europe ?
 
