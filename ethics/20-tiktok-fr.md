@@ -193,15 +193,44 @@ La télécommande est ultra-personnalisée, ce qui augmente son opacité.
 
 Les audits et les régulations ne sont pas du tout à la hauteur des enjeux.
 
+TikTok est encore dans une phase de croissance (encore dans une phase de "cadeau de Troie").
+
 TikTok est le plus inquiétant ; mais le même problème se pose pour Google et al.
 
 Le futur de nos démocraties à court terme en dépend !
 
 Il faut urgemment proposer une gouvernance transparente et collaborative des télécommandes.
 
+Tournesol.
+
+
+## Le problème de la gouvernance algorithmique
+
+Enjeu de sécurité nationale.
+
+Même enjeu pour toutes les autres plateformes.
+Le siège social de Telegram est aux Émirats (et Telegram n'est PAS open-source/libre).
+Twitter est financé par l'Arabie Saoudite, et racheté par un milliardaire irresponsable.
+Facebook, Instagram et WhatsApp sont aussi sous le contrôle d'un milliardaire irresponsable.
+Google a propulsé Raoult via sa télécommande, a licencié son éthique,
+et ment sur la sécurité de ses algorithmes.
+
+À l'ère des spywares, tout système d'influence majeur contrôlé par une poignée d'individus
+peut en fait être sous le contrôle d'entités malveillantes,
+qui exploitent la menace ou le chantage.
+S'applique aussi à des États (Macron, Liz Truss).
+
+La gouvernance est un problème différent de celui de la propriété.
+Même des logiciels libres peuvent être corrompus par leur gouvernance.
+
 
 ## Conclusion
 
-Danger pour l'attention.
+Danger pour l'attention et la santé mentale.
 
+Ramener des gens vers TikTok, c'est augmenter notre dépendance aux autorités chinoises.
+
+Boycotter TikTok ne suffira pas. Auditer TikTok non plus.
+
+Interdire TikTok ? Racheter TikTok Europe ? Nationaliser TikTok ?
 
