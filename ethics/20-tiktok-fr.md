@@ -58,25 +58,82 @@ la dystopie informationnelle qui a introduit cette vidéo
 est en fait une analogie avec les services du réseau social TikTok.
 Mais donc, faisons rapidement le point sur TikTok.
 
-Appartient à ByteDance.
+À moins que vous ne débarquiez d'un univers parallèle,
+vous savez certainement que TikTok est un réseau social chinois,
+qui a énormément gagné en popularité récemment.
+TikTok s'appuie surtout sur des vidéos verticales de courte durée,
+souvent entre 15 secondes et 1 minute,
+même s'il est possible de mettre en ligne des vidéos plus longues.
 
-Vidéos de courte durée.
+Il a été lancé en 2016 dans sa version chinoise, où il s'appelle en fait Douyin,
+mais a ensuite été commercialisé à travers le monde.
+D'ailleurs, le lien entre TIkTok et Douyin est assez étrange.
+Alors que les deux plateformes ont la même interface,
+les contenus de l'un ne peuvent pas être accédés par l'autre, et vice-versa.
 
-2 milliards+ de téléchargements en 2020.
+Par ailleurs, Douyin est une application bien plus complète, 
+puisqu'il permet notamment, par exemple, de réserver des hôtels.
+Enfin, soulignons une fonctionnalité potentiellement dérangeante de Douyin :
+la recherche de vidéos par visage.
+Oui, autrement dit, Douyin est capable de retrouver les vidéos où un individu apparaît,
+simplement à partir d'une photo de cet individu.
+Ou dit autrement , Douyin est en train de concevoir une base de données d'images,
+qui permet d'identifier tous ceux qui sont apparus dans un contenu Douyin.
+Voilà qui va permettre de facilement retrouver des contenus promettants sur beaucoup.
+C'est un peu flippant...
 
-Extrêmement populaire chez les jeunes.
+Juridiquement parlant, TikTok et Douyin apparetiennent à une entreprise appelée ByteDance.
+Fait étonnant, ByteDance est incorporée dans les îles Caïmans -
+visiblement même les dirigeants chinois aiment l'évasion fiscale
+(oh pardon, je voulais dire, "l'optimisation" fiscale).
+Bon, par contre, le siège social, lui, est bien à Beijing, la capitale chinoise.
+ByteDance développe d'autres produits, notamment Toutiao,
+une plateforme de recommandations personnalisées de sites d'actualité -
+et alors, je ne sais pas qui a écrit la page Wikipedia de Toutiao,
+mais la page insiste beaucoup sur le machine learning très sophistiqué 
+développé et déployée pour cette recommendation...
 
-Il n'y a pas que de la musique sur TikTok !  
+Aujourd'hui, et surtout, TikTok, c'est LE réseau social qui explose en popularité, 
+surtout parmi les jeunes.
+En 2020, TikTok a ainsi dépassé les 2 milliards de téléchargements sur mobile.
+Et alors, que la fraction d'adolescents américains utilisant Facebook ou Twitter a chuté
+au cours de la dernière demi-décennie,
+TikTok a pris le dessus sur Instagram et Snapchat,
+pour devenir le deuxième réseau social le plus utilisé, derrière YouTube.  
+https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/
+
+Et de façon cruciale, 
+loin de l'imaginaire collectif selon lequel TikTok n'aurait que des vidéos de danse,
+TikTok joue un rôle de plus en plus central dans la diffusion de l'information.
+Selon une étude du Pew Research Institute, 
+alors que la fraction d'utilisateurs de Twitter 
+qui suivent régulièrement l'actualité sur Twitter baisse (idem pour Facebook, Reddit et YouTube),
+les utilisateurs de TikTok vont de plus en plus s'informer sur le monde
+directement via l'application de TikTok.  
 https://www.pewresearch.org/fact-tank/2022/10/21/more-americans-are-getting-news-on-tiktok-bucking-the-trend-on-other-social-media-sites/
 
-Mais surtout, ce qui fait le pouvoir de TikTok, 
-c'est que plus encore que sur YouTube, Facebook ou Twitter,
-l'algorithme de recommandation décide de ce que les utilisateurs voient.
+Autrement dit, la télécommande de TikTok, 
+auparavant utilisée surtout pour zapper vers des chaînes de divertissement,
+semble de plus en plus utilisée pour zapper vers des chaînes d'information.
+Et ça, ça devrait vous paraître terrifiant.
+D'autant que cette zappette de TikTok, 
+cet algorithme de recommandation qui choisit quel vidéo diffuser à quel utilisateur,
+est vraiment beaucoup plus puissant encore sur TikTok,
+qu'il ne l'est sur des plateformes comme YouTube, Facebook ou Twitter.
+
+En effet, sur TikTok, par défaut, il n'y a pas de notion de vidéo sur laquelle cliquer.
+L'algorithme de recommandation zappe et joue la vidéo suivante,
+sans que l'utilisateur n'entreprenne quelque action que ce soit.
+L'algorithme de TikTok est surpuissant.
+
+Et ça, ça devrait susciter énormément de curiosité et d'attention pour cet algorithme.
+Comment est-il programmé ?
+Quel est son objectif ?
+Et qui décide de cet objectif ?
+Qui a le pouvoir d'exploiter le pouvoir monumental de la zappette de TikTok ?
 
 
 ## TikTok, contrôlé par Xi ?
-
-Danger pour l'attention.
 
 Douyin
 
@@ -85,35 +142,66 @@ Controverses des données
 Pour rappel, l'Institut de Recherche Stratégique de l'École Militaire
 rapporte l'existence de 20 millions de chinois payés par les autorités chinoises
 pour produire de la désinformation,
-et de 2 millions pour le faire à temps plein.
+et de 2 millions pour le faire à temps plein.  
 https://www.irsem.fr/report.html
 
 Jack Ma.
 
 
-## Les enjeux géopolitiques sont énormes
+## Les enjeux géopolitiques
 
-Ouïghours, Tibet, Hong-Kong.
+L'algorithme de recommandation de TikTok est donc une télécommande surpuissante,
+que le dictateur surpuissant Xi Jinping peut reprogrammer comme bon lui semble.
+Mais donc, à quel point celui-ci pourrait-il vouloir modifier cet algorithme ?
+Quels sont les enjeux géopolitiques derrière le contrôle sur l'algorithme de TikTok ?
+Eh bien, j'ai invité Jean-Lou Fourquet, 
+journaliste et créateur de contenus de la chaîne Après la Bière,
+à venir nous en parler.
 
-Taïwan.
+> Ouïghours, Tibet, Hong-Kong.
 
-Affaiblir les démocraties.
+> Taïwan.
 
-Séduire les marchés asiatiques et africains.
+> Affaiblir les démocraties.
 
-Taire le changement climatique.
+> Séduire les marchés asiatiques et africains.
 
-Prétendre que le zéro-COVID est efficace.
+> Taire le changement climatique.
+
+> Prétendre que le zéro-COVID est efficace.
+
+J'en profite pour signaler 
+que Jean-Lou avait précédemment une chronique dans "Arrêt sur Image", 
+mais que celle-ci a été interrompue parce que, selon les producteurs, 
+Jean-Lou avait fait le tour de la question des algorithmes de recommandation.
+Comme vous l'aurez peut-être compris en me suivant,
+je considère que ce sujet est en fait plus important et complexe 
+que d'autres sujets également importants et complexes comme celui du changement climatique.
+Et donc affirmer qu'on peut "avoir fait le tour de la question",
+ça me paraît être une grave erreur de jugement.
+Imaginez un peu qu'on vous dise "non, TF1 va arrêter de parler de changement climatique,
+car on a fait le tour de la question"...
 
 
-## Les télécommandes sont hors de contrôle
+## Les télécommandes, un cheval de Troie
 
+TikTok est aussi un spyware. Mais on en parle trop.
 
+La télécommande est opaque, ce qui facilite grandement son utilisation à mauvais escient.
 
+La télécommande est ultra-personnalisée, ce qui augmente son opacité.
+
+Les audits et les régulations ne sont pas du tout à la hauteur des enjeux.
+
+TikTok est le plus inquiétant ; mais le même problème se pose pour Google et al.
+
+Le futur de nos démocraties à court terme en dépend !
+
+Il faut urgemment proposer une gouvernance transparente et collaborative des télécommandes.
 
 
 ## Conclusion
 
-
+Danger pour l'attention.
 
 
