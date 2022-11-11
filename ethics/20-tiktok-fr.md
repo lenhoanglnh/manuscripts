@@ -291,11 +291,17 @@ La principale préoccupation est davantage celle de la gouvernance de cette tél
 Qui, aujourd'hui et demain, aura le pouvoir de reprogrammer cette télécommande ?
 À qui sommes-nous en train de céder le pouvoir de la gestion du flux de l'information à travers le monde ?
 
+Plus que comme une attaque frontale sur la démocratie,
+TikTok ressemble à un cheval de Troie, une offrande distrayante
+qui pourrait un jour déclencher l'effondrement des démocraties.
+
 
 ## Le problème de la gouvernance algorithmique
 
 Alors, cette vidéo se concentre sur TikTok,
-mais la même question se pose en fait pour toutes les commandes les plus puissantes du monde.
+parce que c'est un exemple particulièrement frappant,
+mais les préoccupations que nous avons soulevées s'appliquent en fait 
+pour toutes les commandes les plus puissantes du monde.
 Qui contrôle les télécommandes de YouTube, de Facebook, d'Instagram, de Twitter et de LinkedIn ?
 Qui les contrôleront demain ?
 Et qui contrôleront ceux qui ont le contrôle de ces télécommandes ?
@@ -382,14 +388,73 @@ Des outils comme Tournesol semblent indispensables pour les gouverner collaborat
 
 ## Conclusion
 
-Danger pour l'attention, la santé mentale et la productivité : Douyin interdit en Chine.
+J'espère vous avoir convaincu que, dès à présent et plus encore dans les années à venir,
+la télécommande de TikTok est une arme de destruction massive,
+dans la guerre de l'information qui oppose les superpuissances mondiales,
+peut-être plus terrifiante que le changement climatique et les menaces nucléaires de Poutine.
+De façon toutefois terriblement frustrante, toutefois,
+le danger que représente cette télécommande est une énorme #MuteNews.
+Rares sont ceux qui parlent de TikTok comme d'un danger,
+et plus rares encore sont ceux qui s'arrêtent davantage sur l'algorithme de recommandation
+que sur l'extraction des données personnelles.
 
-Ramener des gens vers TikTok, c'est augmenter notre dépendance aux autorités chinoises.
+Et encore, dans cette vidéo, nous n'avons parlé que des risques d'utilisation malveillante
+de la télécommande de TikTok.
+En pratique, cette malveillance n'est même pas nécessaire pour nuire à la société.
+TikTok a déjà des conséquences dramatiques sur la capacité d'attention des utilisateurs,  
+https://www.nature.com/articles/s41467-019-09311-w  
+ainsi que sur leur santé mentale et sur leur productivité.
+À tel point que l'accès à Douyin, la version chinoise de TikTok, est restreint en Chine.
+Ainsi, les enfants de moins de quatorze n'ont droit qu'à 40 minutes par jour à Douyin.  
+https://www.bbc.com/news/technology-58625934
 
-Boycotter TikTok ne suffira pas. Auditer TikTok non plus.
+Dès lors, sachant toutes ces conséquences néfastes de TikTok,
+et le danger que représente l'accès qu'a la dictature chinoise à la télécommande de TikTok,
+il est urgent de sérieusement questionne l'adoption massive de ce réseau social.
+Ramener des gens vers TikTok, c'est augmenter notre dépendance aux autorités chinoises,
+d'une manière plus insidieuse que la dépendance de l'Allemagne au gaz Russe ou au marché chinois.
+TikTok n'a rien de cool.
+C'est un danger sociétal.
 
-Interdire TikTok ? Racheter TikTok Europe ? Nationaliser TikTok ?  
+Ceci étant dit, boycotter individuellement TikTok ne suffira pas.
+Après tout, TikTok n'affecte pas que ses utilisateurs.
+En biaisant l'attention de ces utilisateurs, TikTok est une menace pour toute la société,
+et en particulier pour la priorisation des enjeux importants et pour la prise de décision collective.
+Par ailleurs, auditer TikTok ne suffira pas non plus.
+Même si ces audits sont nécessaires pour mieux comprendre ce que TikTok recommande,
+ils ne nous diront rien de ce que TikTok recommandera dans le futur,
+une fois son infiltration dans les démocraties réussie,
+et que Xi Jinping décidera d'exploiter cette infiltration pour modifier sa télécommande,
+et la faire amplifier massivement la désinformation et la haine dans les démocraties.
+
+Mais alors que faire. Faut-il interdire TikTok, comme l'Iran et l'Inde l'ont fait,
+et comme certains membres de la Commission Fédérale des Communications Américaine le suggère,
+quitte à faire des millions d'utilisateurs mécontents ?
+Ou peut-on envisager un rachat de TikTok en Europe, 
+voire une nationalisation du service proposé par le réseau social ?  
 https://www.axios.com/2022/11/01/interview-fcc-commissioner-says-government-should-ban-tiktok
 
-D'autres pays ont commencé : Iran, Inde, US... Qu'attends l'Europe ?
+Il me semble y avoir urgence à prendre des décisions fortes pour protéger les démocraties.
+Cependant, j'insiste à nouveau dessus :
+le problème de la sécurité des réseaux sociaux, 
+notamment contre la désinformation, le harcèlement et la haine,
+ne sera pas résolu tant qu'on n'exige pas au préalable 
+une gouvernance collaborative, transparente et auditable des télécommandes de ces réseaux sociaux,
+ce qui requiert au préalable des outils efficaces et sécurisés 
+de gouvernance collaborative de ces télécommandes.
+
+Bref. Ce dont on a avant tout besoin pour sécuriser nos démocraties,
+c'est, il me semble, de sécuriser, développer et promouvoir des plateformes comme Tournesol.
+Et pour y arriver, très concrement aujourd'hui,
+on a surtout besoin de beaucoup plus d'attention, de contributions et de financements de Tournesol.
+Donc, encore une fois, je vous invite vivement de vous informer sur notre projet,
+de le promouvoir auprès de votre entourage et de votre milieu professionnel,
+de fournir des comparaisons de vidéos pour alimenter notre base de données
+et pour identifier plus de vidéos de qualité,
+de contribuer au développement open source de notre code libre,
+et de donner à l'Association Tournesol,
+voire d'appeler des fonds à envisager le financement d'un web enfin gouverné
+de manière multilatérale, collaborative et sécurisée.
+
+J'espère vous avoir convaincu que le futur de nos sociétés en dépend.
 
