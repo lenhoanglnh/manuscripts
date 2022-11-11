@@ -233,43 +233,151 @@ car on a fait le tour de la question"...
 
 ## Les télécommandes, un cheval de Troie
 
-TikTok est aussi un spyware. Mais on en parle trop.
+Trop souvent à mon goût, l'attention est portée sur les données extraites par TikTok.
+Et oui, en un sens, TikTok est un spyware redoutable, 
+c'est-à-dire un logiciel qui permet la surveillance, 
+installé sur les téléphones de milliards d'humains à travers la planète.
+Mais si TikTok me semble absolument terrifiant,
+c'est beaucoup plus parce qu'il s'agit d'une télécommande 
+qui contrôle l'exposition informationnelle quotidienne de ces milliards d'humains.
 
-La télécommande est opaque, ce qui facilite grandement son utilisation à mauvais escient.
+Qui plus est, cette télécommande est extrêmement opaque.
+Il est extrêmement difficile de comprendre comment TikTok organise le flot de l'information.
+Est-ce que TikTok shadow-ban les reportages sur les Ouïghours ?
+Est-ce que TikTok amplifie les appels à la haine des mouvements d'extrême-droite ?
+Aujourd'hui, il est impossible de fournir des réponses quantitatives à ces questions.
+Et cette opacité renforce le pouvoir de nuisance des autorités chinoises,
+qui peuvent ainsi nuire aux démocraties sans que leurs interventions ne soient identifiables.
 
-La télécommande est ultra-personnalisée, ce qui augmente son opacité.
+Pire, les controverses sur la modération jouent le rôle de distraction stratégique,
+une stratégie du gouvernement chinois bien documentée.  
+https://tournesol.app/entities/yt:LdjPCMo8I2s  
+Autrement dit, la modération attire toute l'attention des médias, des politiciens et des régulateurs,
+si bien que les nouvelles régulations comme le Digital Services Act (ou DSA) de l'Union Européenne
+comportent de nombreuses restrictions et exigences vis-à-vis de la modération,
+mais ignorent complètement le problème de la recommandation,
+comme j'ai pu le constater quand j'ai été invité dans un comité d'experts de l'ARCOM,
+l'Autorité pour la Régulation de la COMmunication audiovisuelle et numérique.  
+https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/digital-services-act-ensuring-safe-and-accountable-online-environment_en
 
-Les audits et les régulations ne sont pas du tout à la hauteur des enjeux.
+Malheureusement, par voie de conséquence,
+l'audit des algorithmes de recommandation est aujourd'hui gravement sous-financé,
+si bien qu'il est quasiment inexistant - alors qu'on parle d'un enjeu de sécurité nationale !
+Or les moyens nécesssaires pour des audits adéquats sont énormes,
+d'autant que les télécommandes de TikTok sont ultra-personnalisées.
+Les recommandations faites à un compte TikTok ne sont en fait que très peu représentatives
+des recommandations faites à d'autres comptes TikTok,
+peut-être jugés plus enclins à la radicalisation,
+ou plus facilement victimes de distraction stratégique -
+je pense notamment aux chercheurs en IA plus prompts 
+à s'émerveiller devant les gadgets qui génèrent des images photoréalistes
+qu'à s'intéresser aux dangers des algorithmes de recommandation.
 
-TikTok est encore dans une phase de croissance (encore dans une phase de "cadeau de Troie").
+En fait, le problème de l'audit est plus complexe encore,
+car les recommandations faites par TikTok ne sont pas nécessairement représentatives
+des recommandations que fera TikTok dans les années à venir.
+Après tout, TikTok est encore dans une phase d'énorme croissance.
+Dans ce contexte, les autorités chinoises ont en fait tout intérêt à persévérer
+dans la quête de parts de marché,
+de sorte que sa télécommande fonctionne sur davantage de téléphones à travers le monde.
+Mais pour y arriver, TikTok a ainsi tout intérêt à éviter les controverses,
+comme des recommandations TikTok douteuses qui soulèveraient des préoccupations.
+Dès lors, il n'est pas étonnant que, pour l'instant,
+la télécommande de TikTok soit encore principalement utilisée pour diffuser des contenus distrayants.
 
-TikTok est le plus inquiétant ; mais le même problème se pose pour Google et al.
-
-Le futur de nos démocraties à court terme en dépend !
-
-Il faut urgemment proposer une gouvernance transparente et collaborative des télécommandes.
-
-Tournesol.
+En fait, la principale préoccupation à avoir vis-à-vis de TikTok ne devrait pas être
+les recommandations faites aujourd'hui par l'algorithme de TikTok.
+La principale préoccupation est davantage celle de la gouvernance de cette télécommande de TikTok.
+Qui, aujourd'hui et demain, aura le pouvoir de reprogrammer cette télécommande ?
+À qui sommes-nous en train de céder le pouvoir de la gestion du flux de l'information à travers le monde ?
 
 
 ## Le problème de la gouvernance algorithmique
 
-Enjeu de sécurité nationale.
+Alors, cette vidéo se concentre sur TikTok,
+mais la même question se pose en fait pour toutes les commandes les plus puissantes du monde.
+Qui contrôle les télécommandes de YouTube, de Facebook, d'Instagram, de Twitter et de LinkedIn ?
+Qui les contrôleront demain ?
+Et qui contrôleront ceux qui ont le contrôle de ces télécommandes ?
 
-Même enjeu pour toutes les autres plateformes.
-Le siège social de Telegram est aux Émirats (et Telegram n'est PAS open-source/libre).
-Twitter est financé par l'Arabie Saoudite, et racheté par un milliardaire irresponsable.
-Facebook, Instagram et WhatsApp sont aussi sous le contrôle d'un milliardaire irresponsable.
-Google a propulsé Raoult via sa télécommande, a licencié son éthique,
-et ment sur la sécurité de ses algorithmes.
+Vous le savez certainement, Twitter a récemment été racheté par Elon Musk,
+un milliardaire qui n'a pas tardé pour prendre des mesures qui inquiètent fortement,
+tout ceux qui s'intéressent à la qualité de l'information,
+au cyber-harcement et à la prolifération dangereuse des discours de haine.
+Twitter appartient par ailleurs en partie à des fonds liés à la monarchie de l'Arabie Saoudite,
+connue pour ses abus récurrents des droits humains,
+et a déjà eu plusieurs employés inculpés pour espionnage au profit de ce pays.  
+https://www.theguardian.com/technology/2022/oct/28/twitter-takeover-fears-raised-over-disinformation-and-hate-speech
 
-À l'ère des spywares, tout système d'influence majeur contrôlé par une poignée d'individus
+Telegram, lui, a son siège social aux Émirats Arabes Unis, 
+très probablement très impliqués dans des massacres horribles,
+notamment en Lybie, au Yémen et en Éthiopie.
+Qui plus est, contrairement à ce qui est souvent annoncé,
+Telegram n'est pas chiffré, en tout cas pas par défaut.
+Et surtout, Telegram n'est PAS open-source, et n'est pas libre non plus.
+Ou du moins, seule la partie front-end, c'est-à-dire l'application que vous téléchargez,
+est Open-Source.
+Cependant, ce que Telegram fait de vos données non chiffrées est totalement opaque,
+et s'appuie sur des logiciels propriétaires inconnus.  
+https://en.wikipedia.org/wiki/Telegram_(software)
+
+Facebook lui semble avoir suivi les exigences des actionnaires depuis plusieurs années,
+ce qui les a conduits à prioriser, encore et encore, 
+les profits à la sécurité de populations entières désormais victimes de génocides,
+notamment au Myanmar, au Tigré et en Inde.  
+https://tournesol.app/entities/yt:sAjm3-IaRtI
+
+Par ailleurs, Mastodon a été détourné par Donald Trump,
+qui en a fait son réseau social Truth Social, 
+un véritable nid de radicalisation où, au lieu de Retweeter les messages des autres,
+vous pouvez les "Retruth".  
+https://www.theverge.com/2021/10/29/22752850/mastodon-trump-truth-social-network-open-source-gab-legal-notice
+
+Enfin, Google a littéralement propulsé Raoult via sa télécommande, 
+ce qui a probablement conduit à des milliers de morts additionnels du COVID,
+mais aussi et surtout à une normalisation dangereuse du rejet des autorités,
+et à une perte de confiance dangereuse des instituts publics et des scientifiques.
+Qui plus est, Google a viré son équipe d'éthique,  
+https://tournesol.app/entities/yt:HbFadtOxs4k  
+et trompe la communauté scientifique en désinformant sur la sécurité de ses algorithmes,
+le tout pour accéléré le déploiement beaucoup trop précipité 
+de nouvelles télécommandes toujours mieux personnalisées,
+mais aussi indirectement manipulables par des campagnes de trolls.  
+https://tournesol.app/entities/yt:IVqXKP91L4E
+
+Plus généralement, à l'ère des spywares, 
+notamment a priori déployés dans l'application du sommet COP 27 en Égypte,  
+https://www.politico.eu/article/cop-27-climate-change-app-cybersecurity-weapon-risks/  
+tout système d'influence majeur contrôlé par une poignée d'individus
 peut en fait être sous le contrôle d'entités malveillantes,
 qui exploitent la menace ou le chantage.
-S'applique aussi à des États (Macron, Liz Truss).
+En fait, cette préoccupation dépasse le cadre des télécommandes numériques,
+puisque de nombreux chefs d'États semblent avoir été ainsi surveillés depuis des années,
+y compris Emmanuelle Macron et Liz Truss, l'ex-première ministre britannique.  
+https://www.bbc.co.uk/news/world-europe-57907258  
+https://nypost.com/2022/10/29/russian-agents-may-have-hacked-former-british-pm-liz-trusss-phone-report/
 
-La gouvernance est un problème différent de celui de la propriété.
-Même des logiciels libres peuvent être corrompus par leur gouvernance.
+Dès lors, la sécurité nationale semble exiger le contrôle décentralisé, et non unilatéral,
+de toute télécommande de flux massifs d'information à travers le web.
+Ou dit autrement, il est urgent d'établir une gouvernance collaborative du web.  
+https://tournesol.app/entities/yt:hdAEGAwlK0M
+
+Notez que ce n'est PAS ce que propose Mastodon, 
+qui propose plutôt à chacun de créer sa propre gouvernance, 
+mais qui ne pourra s'appliquer qu'à l'ensemble des utilisateurs ayant accepté
+de se joindre à la structure ainsi gouvernée.
+En fait, plus généralement, la gouvernance est un problème différent de celui de la propriété.
+Même des logiciels libres peuvent être corrompus par une gouvernance unilatérale.
+
+Mais alors, qu'existe-t-il aujourd'hui pour gouverner collaborativement des télécommandes ?
+Eh bien, à ma connaissance - et j'ai beaucoup épeluché la littérature scientifique -
+il n'existe qu'un seul projet déployé de gouvernance collaborative avancée et sécurisée,
+à savoir le projet Tournesol.
+Et bon, je ne vais pas vous refaire le pitch de ce qu'est Tournesol,
+mais j'espère que cette vidéo vous aide à mieux comprendre le besoin auquel Tournesol répond.
+
+Les télécommandes sont devenues surpuissantes.
+Des outils comme Tournesol semblent indispensables pour les gouverner collaborativement.
 
 
 ## Conclusion
