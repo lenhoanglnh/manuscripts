@@ -79,7 +79,7 @@ Oui, autrement dit, Douyin est capable de retrouver les vidéos où un individu 
 simplement à partir d'une photo de cet individu.
 Ou dit autrement , Douyin est en train de concevoir une base de données d'images,
 qui permet d'identifier tous ceux qui sont apparus dans un contenu Douyin.
-Voilà qui va permettre de facilement retrouver des contenus promettants sur beaucoup.
+Voilà qui va permettre de facilement retrouver des contenus compromettants sur beaucoup.
 C'est un peu flippant...
 
 Juridiquement parlant, TikTok et Douyin apparetiennent à une entreprise appelée ByteDance.
@@ -93,7 +93,7 @@ et alors, je ne sais pas qui a écrit la page Wikipedia de Toutiao,
 mais la page insiste beaucoup sur le machine learning très sophistiqué 
 développé et déployée pour cette recommendation...
 
-Aujourd'hui, et surtout, TikTok, c'est LE réseau social qui explose en popularité, 
+Aujourd'hui, TikTok, c'est LE réseau social qui explose en popularité, 
 surtout parmi les jeunes.
 En 2020, TikTok a ainsi dépassé les 2 milliards de téléchargements sur mobile.
 Et alors, que la fraction d'adolescents américains utilisant Facebook ou Twitter a chuté
@@ -243,8 +243,14 @@ qui contrôle l'exposition informationnelle quotidienne de ces milliards d'humai
 
 Qui plus est, cette télécommande est extrêmement opaque.
 Il est extrêmement difficile de comprendre comment TikTok organise le flot de l'information.
-Est-ce que TikTok shadow-ban les reportages sur les Ouïghours ?
-Est-ce que TikTok amplifie les appels à la haine des mouvements d'extrême-droite ?
+Est-ce que TikTok dé-recommande les reportages sur les Ouïghours, 
+c'est-à-dire diminue artificiellement leurs recommandations, ce qu'on appelle aussi le shadow-ban ?
+Qu'en est-il des vidéos sur le changement climatique, 
+dont la Chine est de plus en plus responsable ?  
+https://tournesol.app/entities/yt:GBp_NgrrtPM
+
+À l'inverse, TikTok amplifie-t-il les appels à la haine des mouvements d'extrême-droite ?
+Donne-t-il beaucoup plus de visibilités à des clashs et à la désinformation ?
 Aujourd'hui, il est impossible de fournir des réponses quantitatives à ces questions.
 Et cette opacité renforce le pouvoir de nuisance des autorités chinoises,
 qui peuvent ainsi nuire aux démocraties sans que leurs interventions ne soient identifiables.
@@ -309,11 +315,15 @@ Et qui contrôleront ceux qui ont le contrôle de ces télécommandes ?
 Vous le savez certainement, Twitter a récemment été racheté par Elon Musk,
 un milliardaire qui n'a pas tardé pour prendre des mesures qui inquiètent fortement,
 tout ceux qui s'intéressent à la qualité de l'information,
-au cyber-harcement et à la prolifération dangereuse des discours de haine.
-Twitter appartient par ailleurs en partie à des fonds liés à la monarchie de l'Arabie Saoudite,
-connue pour ses abus récurrents des droits humains,
+au cyber-harcement et à la prolifération dangereuse des discours de haine.  
+https://www.theguardian.com/technology/2022/oct/28/twitter-takeover-fears-raised-over-disinformation-and-hate-speech  
+Twitter appartient par ailleurs en partie à des fonds liés à la monarchie de l'Arabie Saoudite
+et en partie au Qatar,
+deux pays connus pour ses abus récurrents des droits humains,
 et a déjà eu plusieurs employés inculpés pour espionnage au profit de ce pays.  
-https://www.theguardian.com/technology/2022/oct/28/twitter-takeover-fears-raised-over-disinformation-and-hate-speech
+https://www.axios.com/2022/11/01/elon-musk-twitter-saudi-arabia  
+https://www.arabianbusiness.com/industries/technology/saudis-prince-alwaleed-qatar-wealth-fund-meet-the-investors-who-funded-elon-musks-twitter-buyout  
+https://www.justice.gov/opa/pr/former-twitter-employee-found-guilty-acting-agent-foreign-government-and-unlawfully-sharing
 
 Telegram, lui, a son siège social aux Émirats Arabes Unis, 
 très probablement très impliqués dans des massacres horribles,
@@ -333,11 +343,21 @@ les profits à la sécurité de populations entières désormais victimes de gé
 notamment au Myanmar, au Tigré et en Inde.  
 https://tournesol.app/entities/yt:sAjm3-IaRtI
 
-Par ailleurs, Mastodon a été détourné par Donald Trump,
-qui en a fait son réseau social Truth Social, 
+Par ailleurs, le code libre de Mastodon a été détourné par Donald Trump,
+qui l'a exploité pour créer son réseau social Truth Social, 
 un véritable nid de radicalisation où, au lieu de Retweeter les messages des autres,
 vous pouvez les "Retruth".  
-https://www.theverge.com/2021/10/29/22752850/mastodon-trump-truth-social-network-open-source-gab-legal-notice
+https://www.theverge.com/2021/10/29/22752850/mastodon-trump-truth-social-network-open-source-gab-legal-notice  
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fmashable.com%2Farticle%2Finside-truth-social-trump-social-network-tour  
+Et si la modération sur Mastodon a l'avantage d'être décentralisée, 
+sur différentes instances qui peuvent appliquer chacune ses propres règles,
+la conception même du Mastodon encourage les bulles de filtre,
+et donc l'émergence de nids de radicalisation impossibles à modérer, si ce n'est par la loi.
+En fait, cet exemple montre que l'enjeu de la modération n'est pas uniquement de décentraliser sa gouvernance, 
+mais il faut aussi que cette gouvernance s'applique à l'ensemble des utilisateurs,
+pour éviter que ceux qui refusent d'entendre parler de changement climatique 
+ou de compassion envers des populations vulnérables,
+ne puissent s'isoler, se radicaliser, et ainsi représenter une menace pour ces populations vulnérables.
 
 Enfin, Google a littéralement propulsé Raoult via sa télécommande, 
 ce qui a probablement conduit à des milliers de morts additionnels du COVID,
@@ -381,6 +401,11 @@ il n'existe qu'un seul projet déployé de gouvernance collaborative avancée et
 à savoir le projet Tournesol.
 Et bon, je ne vais pas vous refaire le pitch de ce qu'est Tournesol,
 mais j'espère que cette vidéo vous aide à mieux comprendre le besoin auquel Tournesol répond.
+Et si vous aussi vous pensez que gouverner collaborativement les télécommandes est critique
+pour la sécurité nationale et la paix à travers le monde,
+je vous encourage vivement à participer à notre projet,
+en créant un compte et en comparant des vidéos 
+pour programmer collaborativement la télécommande Tournesol.
 
 Les télécommandes sont devenues surpuissantes.
 Des outils comme Tournesol semblent indispensables pour les gouverner collaborativement.
