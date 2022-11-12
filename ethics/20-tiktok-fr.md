@@ -410,7 +410,7 @@ https://www.bbc.com/news/technology-58625934
 
 Dès lors, sachant toutes ces conséquences néfastes de TikTok,
 et le danger que représente l'accès qu'a la dictature chinoise à la télécommande de TikTok,
-il est urgent de sérieusement questionne l'adoption massive de ce réseau social.
+il est urgent de sérieusement questionner l'adoption massive de ce réseau social.
 Ramener des gens vers TikTok, c'est augmenter notre dépendance aux autorités chinoises,
 d'une manière plus insidieuse que la dépendance de l'Allemagne au gaz Russe ou au marché chinois.
 TikTok n'a rien de cool.
