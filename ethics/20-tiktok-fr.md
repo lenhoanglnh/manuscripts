@@ -301,7 +301,7 @@ qui pourrait un jour déclencher l'effondrement des démocraties.
 Alors, cette vidéo se concentre sur TikTok,
 parce que c'est un exemple particulièrement frappant,
 mais les préoccupations que nous avons soulevées s'appliquent en fait 
-pour toutes les commandes les plus puissantes du monde.
+pour toutes les télécommandes les plus puissantes du monde.
 Qui contrôle les télécommandes de YouTube, de Facebook, d'Instagram, de Twitter et de LinkedIn ?
 Qui les contrôleront demain ?
 Et qui contrôleront ceux qui ont le contrôle de ces télécommandes ?
