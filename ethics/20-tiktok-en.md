@@ -1,4 +1,4 @@
-# TikTok: Xi Jinping's super-powered remote control
+# TikTok: Xi Jinping's mighty remote control
 
 Imagine a family watching television every night.
 At first, there are only a handful of channels - 6 to be precise.
