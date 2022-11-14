@@ -379,7 +379,7 @@ peut en fait être sous le contrôle d'entités malveillantes,
 qui exploitent la menace ou le chantage.
 En fait, cette préoccupation dépasse le cadre des télécommandes numériques,
 puisque de nombreux chefs d'États semblent avoir été ainsi surveillés depuis des années,
-y compris Emmanuelle Macron et Liz Truss, l'ex-première ministre britannique.  
+y compris Emmanuel Macron et Liz Truss, l'ex-première ministre britannique.  
 https://www.bbc.co.uk/news/world-europe-57907258  
 https://nypost.com/2022/10/29/russian-agents-may-have-hacked-former-british-pm-liz-trusss-phone-report/
 
