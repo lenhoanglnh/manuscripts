@@ -101,6 +101,8 @@ over the past half-decade,
 TikTok has overtaken Instagram and Snapchat
 to become the second most used social network, behind YouTube.  
 https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/
+And it is even the most used among children.
+https://techcrunch.com/2022/07/13/kids-and-teens-watch-more-tiktok-than-youtube-tiktok-91-minutes-in-2021-youtube-56/
 
 And crucially so, 
 far from the collective imagination that TikTok is all about dance videos,
