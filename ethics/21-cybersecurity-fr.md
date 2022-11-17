@@ -43,5 +43,5 @@ Changement d’attitude urgent, notamment en IA.
 
 Il faut de l’argent.
 
-
-
+## Calicarpa
+https://www.theregister.com/2022/11/16/wasp_python_malware_checkmarx/
