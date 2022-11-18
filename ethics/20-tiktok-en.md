@@ -24,8 +24,8 @@ to zap to another channel instead.
 Sometimes, the family can ask the service to zap itself.
 However, the zapping service learns the family's preferences,
 and its zapping is more and more in line with the family's preferences.
-Therefore, little by little, the family is content to let the zapping service
-decide what audiovisual content they consume.
+Therefore, little by little, the family reacts less and less,
+when the zapping service selects what audiovisual content to consume next.
 And as this service improves, it also accelerates,
 with a zapping every 5 minutes, 
 and even for more and more users, zapping every 30 seconds.
@@ -73,8 +73,11 @@ the contents of one cannot be accessed by the other, and vice versa.
 
 On the other hand, Douyin is a much more complete application, 
 since it allows, for example, to book hotels.
-Finally, let's point out a potentially disturbing feature of Douyin:
-the search for videos by face.
+Finally, let's point out a potentially disturbing feature of Douyin,
+namely, the search for videos by face,,
+in a country where face recognition is already overused in concerning scales by authorities.
+https://www.csis.org/blogs/trustee-china-hand/coming-focus-chinas-facial-recognition-regulations
+
 Yes, in other words, Douyin is able to find videos where an individual appears,
 simply from a photo of that individual.
 Or to put it another way, Douyin is building a database of images,
@@ -100,9 +103,12 @@ And while the fraction of American teens using Facebook or Twitter has dropped
 over the past half-decade,
 TikTok has overtaken Instagram and Snapchat
 to become the second most used social network, behind YouTube.  
-https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/
-And it is even the most used among children.
-https://techcrunch.com/2022/07/13/kids-and-teens-watch-more-tiktok-than-youtube-tiktok-91-minutes-in-2021-youtube-56/
+https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/  
+And it is even the most used among children.  
+https://techcrunch.com/2022/07/13/kids-and-teens-watch-more-tiktok-than-youtube-tiktok-91-minutes-in-2021-youtube-56/  
+This being said, TikTok isn't used by young people only.
+All sorts of age groups are present on TikTok.  
+https://explodingtopics.com/blog/tiktok-demographics
 
 And crucially so, 
 far from the collective imagination that TikTok is all about dance videos,
@@ -321,15 +327,18 @@ cyber-harassment and the dangerous proliferation of hate speech.
 https://www.theguardian.com/technology/2022/oct/28/twitter-takeover-fears-raised-over-disinformation-and-hate-speech  
 Twitter is also partly owned by funds linked to the Saudi Arabian monarchy
 and partly to Qatar,
-two countries known for their recurrent human rights abuses,
+two countries known for their recurrent human rights abuses and
+for their use of malwares,
 and has already had several employees charged with spying for that country.  
 https://www.axios.com/2022/11/01/elon-musk-twitter-saudi-arabia  
 https://www.arabianbusiness.com/industries/technology/saudis-prince-alwaleed-qatar-wealth-fund-meet-the-investors-who-funded-elon-musks-twitter-buyout  
+https://www.politico.eu/article/qatar-world-cup-app-data-warning/  
 https://www.justice.gov/opa/pr/former-twitter-employee-found-guilty-acting-agent-foreign-government-and-unlawfully-sharing
 
 Telegram, meanwhile, is headquartered in the United Arab Emirates, 
 most likely involved in horrific massacres,
-notably in Libya, Yemen and Ethiopia.
+notably in Libya, Yemen and Ethiopia.  
+https://tournesol.app/entities/yt:JvF6w_r56EA  
 What's more, contrary to what is often announced,
 Telegram is not encrypted, at least not by default.
 And above all, Telegram is NOT open-source, and it is not free either.
@@ -350,16 +359,13 @@ who used it to create his social network Truth Social,
 a veritable nest of radicalization where, instead of Retweeting other people's messages,
 you can "Retruth" them.  
 https://www.theverge.com/2021/10/29/22752850/mastodon-trump-truth-social-network-open-source-gab-legal-notice  
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fmashable.com%2Farticle%2Finside-truth-social-trump-social-network-tour  
-And if the moderation on Mastodon has the advantage of being decentralized 
-on different instances that can each apply their own rules,
-the very design of Mastodon encourages filter bubbles,
-and thus the emergence of nests of radicalization impossible to moderate, except by law.
-In fact, this example shows that the challenge of moderation is not only to decentralize its governance, 
-but it is also necessary that this governance applies to all users,
-to avoid that those who refuse to hear about climate change 
-or compassion towards vulnerable populations,
-can become isolated, radicalized, and thus pose a threat to these vulnerable populations.
+https://mashable.com/article/inside-truth-social-trump-social-network-tour  
+https://twitter.com/amnesty/status/1592608374230843392  
+Just as open source deep learning algorithms can be reused to produce
+to produce #deepfakes, misinformation and cyber-harassment,
+these solutions are weapons that malicious entities can misuse.
+Developing these weapons that will be impossible to govern seems extremely dangerous.  
+https://tournesol.app/entities/yt:lYXQvHhfKuM
 
 Finally, Google literally propelled Raoult via his remote control, 
 which probably led to thousands of additional deaths of COVID,
@@ -371,7 +377,7 @@ and misleads the scientific community by misinforming about the security of its 
 all to speed up the much too hasty deployment 
 of new and more personalized remote controls,
 but also indirectly manipulated by troll campaigns.  
-https://tournesol.app/entities/yt:IVqXKP91L4E
+https://tournesol.app/entities/yt:063Ayh_6EJg
 
 More generally, in the era of spyware, 
 especially a priori deployed in the application of the COP 27 summit in Egypt,  
@@ -390,17 +396,27 @@ of any remote control of massive information flows through the web.
 Or put another way, there is an urgent need for collaborative governance of the web.  
 https://tournesol.app/entities/yt:hdAEGAwlK0M
 
-Note that this is NOT what Mastodon proposes, 
-which rather proposes to each one to create his own governance, 
+Note that this is NOT what Mastodon,
+this open-source and free alternative to Twitter,
+which proposes instead to each one to create its own governance, 
 but which can only be applied to all users who have agreed to join the
 to join the governed structure.
-In fact, more generally, governance is a different problem than ownership.
-Even free software can be corrupted by unilateral governance.
+In fact, the very design of Mastodon encourages filter bubbles,
+like Truth Social and GAB Social,
+and thus favors the emergence of radicalization nests responsible for their own moderation,
+and thus impossible to moderate by outsiders to these communities, except by law.
+In fact, this example shows that decentralizing governance is not enough;
+it is also necessary that this governance applies to all users,
+to avoid that those who refuse to hear about climate change or compassion for vulnerable populations 
+or compassion towards vulnerable populations,
+to avoid that those who refuse to hear about climate change or compassion for vulnerable populations can become isolated, radicalized, and thus represent a threat for these vulnerable populations.  
+https://tournesol.app/entities/yt:J-0zvNL6O3k
 
 But then, what exists today to collaboratively govern remote controls?
 Well, as far as I know - and I've done a lot of spelunking of the scientific literature -
 there is only one deployed project of advanced and secure collaborative governance
-and that is the Tournesol project.
+and that is the Tournesol project.  
+https://arxiv.org/abs/2211.01179  
 And well, I'm not going to rehash the pitch of what Tournesol is,
 but I hope this video helps you better understand the need Tournesol addresses.
 And if you too think that governing remotes collaboratively is critical
@@ -454,7 +470,7 @@ once it has successfully infiltrated democracies,
 and that Xi Jinping will decide to exploit this infiltration to modify his remote control,
 and make it massively amplify disinformation and hatred in democracies.
 
-But then what to do. Should TikTok be banned, as Iran and India have done,
+But then what to do. Should TikTok be banned, as India has,
 and as some members of the US Federal Communications Commission suggest,
 even if it means making millions of users unhappy?
 Or can we envisage a takeover of TikTok in Europe? 

@@ -24,8 +24,8 @@ de zapper à sa place vers une autre chaîne.
 Il arrive ainsi parfois à la famille de demander elle-même de zapper.
 Cependant, le service de zapping apprend les préférences de la famille,
 et son zapping est de plus en plus conforme aux préférences de la famille.
-Dès lors petit à petit, la famille se contente de laisser le service de zapping
-décider des contenus audiovisuels qu'elle consommme.
+Dès lors petit à petit, la famille réagit de moins en moins,
+lorsque le service de zapping change le contenu audiovisuel qu'elle consommme.
 Et au fur et à mesure que ce service s'améliore, il s'accélère également,
 avec un zapping toutes les 5 minutes, 
 et même pour de plus en plus d'utilisateurs, un zapping toutes les 30 secondes.
@@ -73,8 +73,11 @@ les contenus de l'un ne peuvent pas être accédés par l'autre, et vice-versa.
 
 Par ailleurs, Douyin est une application bien plus complète, 
 puisqu'il permet notamment, par exemple, de réserver des hôtels.
-Enfin, soulignons une fonctionnalité potentiellement dérangeante de Douyin :
-la recherche de vidéos par visage.
+Enfin, soulignons une fonctionnalité potentiellement dérangeante de Douyin,
+à savoir la recherche de vidéos par visage,
+dans un pays où l'abus de la reconnaissance faciale par les autorités est déjà préoccupante.
+https://www.csis.org/blogs/trustee-china-hand/coming-focus-chinas-facial-recognition-regulations
+
 Oui, autrement dit, Douyin est capable de retrouver les vidéos où un individu apparaît,
 simplement à partir d'une photo de cet individu.
 Ou dit autrement , Douyin est en train de concevoir une base de données d'images,
@@ -100,7 +103,12 @@ Et alors, que la fraction d'adolescents américains utilisant Facebook ou Twitte
 au cours de la dernière demi-décennie,
 TikTok a pris le dessus sur Instagram et Snapchat,
 pour devenir le deuxième réseau social le plus utilisé, derrière YouTube.  
-https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/
+https://www.pewresearch.org/internet/2022/08/10/teens-social-media-and-technology-2022/  
+et même le plus utilisé chez les enfants.  
+https://techcrunch.com/2022/07/13/kids-and-teens-watch-more-tiktok-than-youtube-tiktok-91-minutes-in-2021-youtube-56/  
+Ceci dit, TikTok n'est pas qu'une application de jeunes.
+Des gens de tout âge utilisent la plateforme.  
+https://explodingtopics.com/blog/tiktok-demographics
 
 Et de façon cruciale, 
 loin de l'imaginaire collectif selon lequel TikTok n'aurait que des vidéos de danse,
@@ -319,15 +327,18 @@ au cyber-harcement et à la prolifération dangereuse des discours de haine.
 https://www.theguardian.com/technology/2022/oct/28/twitter-takeover-fears-raised-over-disinformation-and-hate-speech  
 Twitter appartient par ailleurs en partie à des fonds liés à la monarchie de l'Arabie Saoudite
 et en partie au Qatar,
-deux pays connus pour ses abus récurrents des droits humains,
+deux pays connus pour ses abus récurrents des droits humains et
+pour leur utilisation de logiciels malveillants,
 et a déjà eu plusieurs employés inculpés pour espionnage au profit de ce pays.  
 https://www.axios.com/2022/11/01/elon-musk-twitter-saudi-arabia  
 https://www.arabianbusiness.com/industries/technology/saudis-prince-alwaleed-qatar-wealth-fund-meet-the-investors-who-funded-elon-musks-twitter-buyout  
+https://www.politico.eu/article/qatar-world-cup-app-data-warning/  
 https://www.justice.gov/opa/pr/former-twitter-employee-found-guilty-acting-agent-foreign-government-and-unlawfully-sharing
 
 Telegram, lui, a son siège social aux Émirats Arabes Unis, 
 très probablement très impliqués dans des massacres horribles,
-notamment en Lybie, au Yémen et en Éthiopie.
+notamment en Libye, au Yémen et en Éthiopie.  
+https://tournesol.app/entities/yt:JvF6w_r56EA  
 Qui plus est, contrairement à ce qui est souvent annoncé,
 Telegram n'est pas chiffré, en tout cas pas par défaut.
 Et surtout, Telegram n'est PAS open-source, et n'est pas libre non plus.
@@ -348,16 +359,13 @@ qui l'a exploité pour créer son réseau social Truth Social,
 un véritable nid de radicalisation où, au lieu de Retweeter les messages des autres,
 vous pouvez les "Retruth".  
 https://www.theverge.com/2021/10/29/22752850/mastodon-trump-truth-social-network-open-source-gab-legal-notice  
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fmashable.com%2Farticle%2Finside-truth-social-trump-social-network-tour  
-Et si la modération sur Mastodon a l'avantage d'être décentralisée, 
-sur différentes instances qui peuvent appliquer chacune ses propres règles,
-la conception même du Mastodon encourage les bulles de filtre,
-et donc l'émergence de nids de radicalisation impossibles à modérer, si ce n'est par la loi.
-En fait, cet exemple montre que l'enjeu de la modération n'est pas uniquement de décentraliser sa gouvernance, 
-mais il faut aussi que cette gouvernance s'applique à l'ensemble des utilisateurs,
-pour éviter que ceux qui refusent d'entendre parler de changement climatique 
-ou de compassion envers des populations vulnérables,
-ne puissent s'isoler, se radicaliser, et ainsi représenter une menace pour ces populations vulnérables.
+https://mashable.com/article/inside-truth-social-trump-social-network-tour  
+https://twitter.com/amnesty/status/1592608374230843392  
+À l'instar des algorithmes Open Source de deep learning qui peuvent être réutilisés
+pour produire des #deepfakes, de la désinformation et du cyber-harcèlement,
+ces solutions sont des armes que les entités malveillantes peuvent réutiliser à mauvais escient.
+Développer ces armes qui seront impossibles à gouverner paraît extrêmement dangereux.  
+https://tournesol.app/entities/yt:lYXQvHhfKuM
 
 Enfin, Google a littéralement propulsé Raoult via sa télécommande, 
 ce qui a probablement conduit à des milliers de morts additionnels du COVID,
@@ -388,17 +396,30 @@ de toute télécommande de flux massifs d'information à travers le web.
 Ou dit autrement, il est urgent d'établir une gouvernance collaborative du web.  
 https://tournesol.app/entities/yt:hdAEGAwlK0M
 
-Notez que ce n'est PAS ce que propose Mastodon, 
+Notez que ce n'est PAS ce que propose Mastodon,
+cette alternative open-source et libre à Twitter,
 qui propose plutôt à chacun de créer sa propre gouvernance, 
 mais qui ne pourra s'appliquer qu'à l'ensemble des utilisateurs ayant accepté
 de se joindre à la structure ainsi gouvernée.
+En fait, la conception même du Mastodon encourage les bulles de filtre,
+comme Truth Social et GAB Social,
+et favorise ainsi l'émergence de nids de radicalisation responsables de leur propore modération,
+et donc impossibles à modérer par les externes à ce ces communautés, si ce n'est par la loi.
+En fait, cet exemple montre que décentraliser la gouvernance ne suffit pas ;
+il faut aussi que cette gouvernance s'applique à l'ensemble des utilisateurs,
+pour éviter que ceux qui refusent d'entendre parler de changement climatique 
+ou de compassion envers des populations vulnérables,
+ne puissent s'isoler, se radicaliser, et ainsi représenter une menace pour ces populations vulnérables.  
+https://tournesol.app/entities/yt:TgB9pHZ0YPM
+
 En fait, plus généralement, la gouvernance est un problème différent de celui de la propriété.
 Même des logiciels libres peuvent être corrompus par une gouvernance unilatérale.
 
 Mais alors, qu'existe-t-il aujourd'hui pour gouverner collaborativement des télécommandes ?
 Eh bien, à ma connaissance - et j'ai beaucoup épeluché la littérature scientifique -
 il n'existe qu'un seul projet déployé de gouvernance collaborative avancée et sécurisée,
-à savoir le projet Tournesol.
+à savoir le projet Tournesol.  
+https://arxiv.org/abs/2211.01179  
 Et bon, je ne vais pas vous refaire le pitch de ce qu'est Tournesol,
 mais j'espère que cette vidéo vous aide à mieux comprendre le besoin auquel Tournesol répond.
 Et si vous aussi vous pensez que gouverner collaborativement les télécommandes est critique
@@ -452,7 +473,7 @@ une fois son infiltration dans les démocraties réussie,
 et que Xi Jinping décidera d'exploiter cette infiltration pour modifier sa télécommande,
 et la faire amplifier massivement la désinformation et la haine dans les démocraties.
 
-Mais alors que faire. Faut-il interdire TikTok, comme l'Iran et l'Inde l'ont fait,
+Mais alors que faire. Faut-il interdire TikTok, comme l'Inde l'a fait,
 et comme certains membres de la Commission Fédérale des Communications Américaine le suggère,
 quitte à faire des millions d'utilisateurs mécontents ?
 Ou peut-on envisager un rachat de TikTok en Europe, 
