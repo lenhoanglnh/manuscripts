@@ -214,17 +214,8 @@ Well, I invited Jean-Lou Fourquet,
 journalist and content creator of the channel Après la Bière,
 to come and talk to us about it.
 
-> Uyghurs, Tibet, Hong Kong.
-
-> Taiwan.
-
-> Weakening democracies.
-
-> Seducing Asian and African markets.
-
-> Covering up climate change.
-
-> Pretending that the zero-COVID is effective.
+[Extrait de Jean-Lou]  
+https://docs.google.com/document/d/1guYNynZaPsIIGHb1FDlffcBvf7HQLXeUhnLEW5YkkTI/
 
 I take this opportunity to point out that 
 that Jean-Lou previously had a column in "Arrêt sur Image", 
