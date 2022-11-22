@@ -214,17 +214,8 @@ Eh bien, j'ai invité Jean-Lou Fourquet,
 journaliste et créateur de contenus de la chaîne Après la Bière,
 à venir nous en parler.
 
-> Ouïghours, Tibet, Hong-Kong.
-
-> Taïwan.
-
-> Affaiblir les démocraties.
-
-> Séduire les marchés asiatiques et africains.
-
-> Taire le changement climatique.
-
-> Prétendre que le zéro-COVID est efficace.
+[Extrait de Jean-Lou]  
+https://docs.google.com/document/d/1guYNynZaPsIIGHb1FDlffcBvf7HQLXeUhnLEW5YkkTI/
 
 J'en profite pour signaler 
 que Jean-Lou avait précédemment une chronique dans "Arrêt sur Image", 
