@@ -5,7 +5,7 @@
 Les modèles de langage ne sont que des "machines à compléter des phrases".
 Et ça c'est cool !
 Pourquoi pensez-vous qu'un outil pour compléter/prédire du texte 
-dans les mains du grand public peut conduire à de mauvaises conséquences ?
+dans les mains du grand public peut conduire à de mauvaises conséquences ?  
 https://twitter.com/JacksonKernion/status/1446620267300601861
 
 Telles sont des interrogations de Jackson Kernion, 
@@ -98,7 +98,8 @@ Tous étaient trop distraits par la spectacularité des algorithmes développés
 Et bien, il me semble que c'était justement ça, l'objectif économique de cette conférence.
 Il s'agissait de distraire les chercheurs des enjeux économiques et géopolitiques
 des algorithmes de machine learning,
-et de donner l'impression que l'IA, c'est cool !
+et de donner l'impression que l'IA, c'est cool,
+voire que freiner son progrès spectaculaire serait immoral.
 
 (alors que nombres de leurs collègues, notamment Frances Haugen et Sophie Zhang,
 appellent désespérément à "ne pas fermer les yeux"
@@ -109,26 +110,48 @@ voire les émeutes du Capitol et la tentative de coup d'état par l'extrême dro
 Le #coolwashing a terriblement bien marché.
 
 
-## Les investissements massifs de Big Tech
+## L'industrie de la distraction stratégique
+
+Propagande chinoise (soft power).  
+https://tournesol.app/entities/yt:LdjPCMo8I2s  
+https://www.cambridge.org/core/journals/american-political-science-review/article/how-the-chinese-government-fabricates-social-media-posts-for-strategic-distraction-not-engaged-argument/4662DB26E2685BAF1485F14369BD137C
+
+FIFA.  
+https://www.itv.com/news/2022-11-04/fifa-world-cup-countries-should-focus-on-football-not-human-rights-issues
+
+Maradona, Beckham, Raul... & coca-cola.  
+https://www.vivelapub.fr/footballeurs-et-publicite-le-couple-parfait/
+
+Automobile.  
+
+SBF.  
+https://www.vox.com/future-perfect/23500014/effective-altruism-sam-bankman-fried-ftx-crypto
+
+Alcool.
 
 
 ## L'inattention tue
 
+Les mute news sont plus dangereuses que les fake news.
+
 COVID
 
-Tabac, sucre
+Tabac
 
-Changement climatique
+Changement climatique : ce n'est pas un problème individuel.
 
-Aide humanitaire
+Droits humains
 
-## La modération est une distraction stratégique
+Algorithmes.
 
-Retirer le mal n'est pas la solution.
 
-## Tournesol et le rectangle jaune
+## Le rectangle jaune de Tournesol
+
+La modération est une fausse solution.
 
 Que mettre dans ce rectangle jaune ?
 
+Il faut comparer la recommandabilité de sujets différents.
 
+La question fondamentale de la priorisation de l'information.
 
