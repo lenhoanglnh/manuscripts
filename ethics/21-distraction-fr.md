@@ -200,6 +200,14 @@ ont appelé à se laisser distraire par le football,
 plutôt que de donner de l'attention aux souffrances humaines.  
 https://www.itv.com/news/2022-11-04/fifa-world-cup-countries-should-focus-on-football-not-human-rights-issues
 
+D'ailleurs, il n'y a pas que la FIFA à critiquer à ce sujet.
+Les plus grandes superstars de ce sport, qu'il s'agisse de Mbappé, Messi ou Cristiano Ronaldo,
+sont tous payés par l'argent sale du pétrole,
+extrait dans des pays connus pour leurs abus des droits humains,
+voire par leurs meurtres commandités par les dictateurs au pouvoir.  
+https://tournesol.app/entities/yt:DQOxyTJh-JA  
+https://tournesol.app/entities/yt:FkPCec7jG5I
+
 En parlant de souffrances humaines, justement,
 beaucoup de membres influents du mouvement Altruisme Efficace ont clairement abusé
 de la distraction stratégique permise par le fait de prétendre vouloir le bien de l'humanité,
