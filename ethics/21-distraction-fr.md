@@ -39,7 +39,7 @@ et pour freiner les critiques, les alternatives et les initiatives de régulatio
 
 Aujourd'hui, je vais essayer de vous convaincre que 
 ce #coolwashing est une menace civilisationnelle
-qu'il est urgent de se combattre,
+qu'il est urgent de combattre,
 en exigeant de nous-mêmes, de nos amis et de nos collègues
 de ne pas tomber dans l'émerveillement démesuré pour ce qui paraît "cool".
 
