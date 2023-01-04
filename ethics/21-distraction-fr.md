@@ -201,10 +201,12 @@ plutôt que de donner de l'attention aux souffrances humaines.
 https://www.itv.com/news/2022-11-04/fifa-world-cup-countries-should-focus-on-football-not-human-rights-issues
 
 D'ailleurs, il n'y a pas que la FIFA à critiquer à ce sujet.
-Les plus grandes superstars de ce sport, qu'il s'agisse de Mbappé, Messi ou Cristiano Ronaldo,
+Les plus grandes superstars de ce sport, qu'il s'agisse de Mbappé, Messi, Neymar ou Cristiano Ronaldo,  
+https://twitter.com/totalBarca/status/1610193864425365504/photo/1
 sont tous payés par l'argent sale du pétrole,
 extrait dans des pays connus pour leurs abus des droits humains,
-voire par leurs meurtres commandités par les dictateurs au pouvoir.  
+voire par leurs meurtres commandités par les dictateurs au pouvoir
+(même si on peut noter que Ronaldo est payé davantage que les trois autres stars réunies !).  
 https://tournesol.app/entities/yt:DQOxyTJh-JA  
 https://tournesol.app/entities/yt:FkPCec7jG5I
 
@@ -335,7 +337,7 @@ c'est davantage à quelles informations les 8 milliards d'humains devraient êtr
 Quelles sont les distractions qui ne mettent pas de vies en danger,
 et quelles sont les informations auxquelles nous devons absolument prêter attention ?
 
-En particulier, si vous êtiez l'algorithme de recommandation de YouTube,
+En particulier, si vous étiez l'algorithme de recommandation de YouTube,
 quelles vidéos afficheriez-vous sur les téléphones des milliards d'utilisateurs,
 lorsque ceux-ci cliquent sur l'application YouTube ?
 Ou plus concrètement encore, que voudriez-vous mettre dans le rectangle jaune
