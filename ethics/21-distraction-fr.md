@@ -9,11 +9,14 @@ Mais ces contenus devraient-ils être recommandés massivement ?
 Quelles sont les conséquences sociales d'une consommation massive
 de ce contenu distractif ?
 
-En tout, l'Armée Américaine s'est clairement beaucoup posée ces questions.
+En tout cas, l'Armée Américaine s'est clairement beaucoup posée ces questions.
 Après tout, selon Wikipedia, je cite,
 "le film a été activement soutenu et influencé par le ministère de la Défense
 et la marine des États-Unis d'Amérique,
-afin de présenter l'armée américaine sous un jour positif".
+afin de présenter l'armée américaine sous un jour positif".  
+
+À vérifier : https://screenrant.com/top-gun-us-navy-recruiting-applications-increase/  
+https://taskandpurpose.com/news/navy-is-trying-to-recruit-at-top-gun-maverick/
 
 En fait, toujours selon Wikipedia,
 le personnage principal est inspiré d'un militaire Américain, Duke Cunningham,
@@ -38,7 +41,8 @@ des conflits dans lesquels ces forces armées sont engagées.
 Mais ce n'est pas tout.
 Top Gun normalise aussi l'élitisme, la starrification et le masculinisme,
 voire la consommation de tabac et d'alcool,
-notamment dans le premier film.
+notamment dans le premier film,
+ou encore le fait de faire le rebelle et de désobéir.
 
 Mais si je vous parle de Top Gun dans cette série sur l'éthique de l'information,
 ce n'est pas pour critiquer ce film en particulier.
@@ -69,15 +73,15 @@ https://twitter.com/JacksonKernion/status/1446620267300601861
 3Blue1Brown concluait sa vidéo sur la progression exponentielle du COVID en mars 2020
 avec le dicton "la seule chose à craindre, c'est l'absente de crainte même". #MesTasDeMetas
 Je crains que, à cause de la distraction stratégique et du #CoolWashing,
-dans beaucoup de cas, comme le tabac, le changement climatique ou du #CoolWashing,
+dans beaucoup de cas, comme le tabac, le changement climatique ou le développement des IA,
 il y a beaucoup trop souvent lieu de craindre l'absente de crainte.
 Bien plus que les #FakeNews, le plus grand danger est ici celui des #MuteNews.
 Or, malheureusement, les #FakeNews attirent aujourd'hui toute l'attention et les financements,
-par exemple au niveau académique ou au niveau législatif,
+par exemple au niveau académique, au niveau médiatique ou au niveau législatif,
 faisant ainsi du problème des #MuteNews une #MuteNews.
 
 
-## Les investissements massifs de Big Tech
+## Le coolwashing de Big Tech
 
 Il y a quelques semaines, j'ai eu l'honneur d'être invité à FLAIM,
 un événement académique organisé par Meta à l'Institut Henri Poincaré.
@@ -88,9 +92,10 @@ pour évaluer la vulnérabilité des algorithmes développés en apprenant de do
 
 Mais le thème de la conférence était assez différent.
 Il s'agissait davantage de réunir ceux qui appliquent le machine learning aux mathématiques.
-Et force est de constater que les algorithmes modernes sont capables de prouesses spectaculaires,
+Et force est de constater que les algorithmes modernes de langage sont capables de prouesses spectaculaires,
 souvent très largement surhumaines,
-notamment grâce à la formalisation algorithmique des preuves mathématiques et de leur vérification.
+notamment grâce à la formalisation algorithmique des preuves mathématiques et de leur vérification,
+et à des avancées comme ChatGPT dont vous avez certainement entendu parler.
 
 Et très clairement, à cette conférence, Big Tech était surreprésenté,
 qu'il s'agisse de Facebook, Google ou autres OpenAI,
@@ -113,7 +118,7 @@ et les félicite de faire des algorithmes
 pour bien jouer aux échecs, au go et aux jeux vidéos,
 ou pour résoudre le problème du repliement de protéine ?
 
-Et pourquoi OpenAI investit autant pour produire des IA "artistiques",
+Et pourquoi OpenAI investit autant pour produire des IA "artistes",
 capables de générer des images spectaculaires
 ou de converser de manière bluffante ?
 Qu'est-ce qui justifie, d'un point de vue économique, le salaire de ces chercheurs ?
@@ -122,9 +127,11 @@ Telles sont les questions que je n'ai cessé de poser aux participants à la con
 Et, en gros, personne ne s'était même posé la question.
 Tous étaient trop distraits par la spectacularité des algorithmes développés.
 Et bien, il me semble que c'était justement ça, l'objectif économique de cette conférence.
-Il s'agissait de distraire les chercheurs des enjeux économiques et géopolitiques
-des algorithmes de machine learning,
-et de donner l'impression que l'IA, c'est cool,
+Il s'agissait de "tenir un ton positif" sur l'intelligence artificielle,
+de s'auto-persuader des formidables applications potentielles de l'IA,
+et de ne pas se laisser distraire par les problèmes géopolitiques que
+le développement et le déploiement de ces algorithmes posent.
+Autrement dit, il s'agissait de normaliser l'impression que l'IA, c'est cool,
 voire que freiner son progrès spectaculaire serait immoral.
 
 (alors que nombres de leurs collègues, notamment Frances Haugen et Sophie Zhang,
@@ -182,9 +189,9 @@ Vous devinez laquelle ?
 Petit indice : cette industrie est si énorme qu'elle est devenue le coeur de métier
 de plusieurs des plus puissantes entreprises des technologies.
 Il s'agit de l'industrie de la publicité.
-La publicité, plus que mentir ou nier les risques,
-consiste aujourd'hui majoritairement à ignorer les risques,
-en s'appuyant notamment sur le #coolwashing.
+À bien y réfléchir, la publicité, plus que mentir ou nier les risques,
+me semble consister aujourd'hui à faire oublier les risques,
+en s'appuyant abondamment sur le #coolwashing.
 
 Et pour optimiser ce #coolwashing,
 beaucoup d'industries dangereuses ont misé sur des stars mondiales,
@@ -211,13 +218,20 @@ https://tournesol.app/entities/yt:DQOxyTJh-JA
 https://tournesol.app/entities/yt:FkPCec7jG5I
 
 En parlant de souffrances humaines, justement,
-beaucoup de membres influents du mouvement Altruisme Efficace ont clairement abusé
+beaucoup de membres influents du mouvement Altruisme Efficace me semblent avoir clairement abusé
 de la distraction stratégique permise par le fait de prétendre vouloir le bien de l'humanité,
 pour commettre des actes illégaux sans que personne ne soulève de questions.
 Je pense en particulier à l'escroc Sam Bankman-Fried, alias SBF,
 dont les fraudes monumentales ont clairement été facilité par son #coolwashing
 auprès de l'Altruisme Efficace.  
 https://www.vox.com/future-perfect/23500014/effective-altruism-sam-bankman-fried-ftx-crypto
+
+Et alors, jusque là, on a pris des exemples de #CoolWashing intentionnels.
+Mais la plupart du #CoolWashing n'est en fait probablement pas intentionnel.
+Mais c'est en fait là qu'il est le plus dangereux.
+En effet, le jackpot pour Coca-Cola, ce n'est pas tant
+quand Maradona boit du Coca-Cola devant un milliard de spectateurs,
+mais plus encore quand les parents boivent eux-mêmes du Coca-Cola devant leurs parents.
 
 Bref. Cette liste est non-exhaustive,
 et je vous invite à proposer vos propres exemples de distraction stratégique dangereuse
@@ -257,8 +271,9 @@ De la même manière, si l'industrie du tabac a causé des ravages monumentaux,
 à hauteur de 8 millions de mort par an selon l'OMS,  
 https://www.who.int/news-room/fact-sheets/detail/tobacco  
 c'est clairement avant tout par inattention aux dangers que cet objet représente,
-une inattention dont beaucoup de fumeurs, mais aussi la société civile et les régulateurs,
-sont bien trop souvent victime.
+un manque d'attention dont beaucoup de fumeurs, mais aussi la société civile et les régulateurs,
+sont bien trop souvent victime.  
+https://ourworldindata.org/grapher/share-of-adults-who-smoke?country=USA~European+Union~FRA~CHE~AUS~NZL~NOR
 
 Et bien sûr, cette inattention n'est absolument pas accidentelle.
 En particulier, là encore, le #coolwashing dans les vieux films
@@ -308,14 +323,18 @@ limitent drastiquement la diffusion d'autres contenus.
 En priorisant davantage la distraction,
 souvent conçue de manière stratégique par des campagnes de désinformation,
 ces algorithmes tuent.
-Et aujourd'hui, tout le monde s'en fout.
+Et aujourd'hui, trop peu de gens s'y intéressent.
 Notamment à cause des efforts monumentaux de #coolwashing de Google, Meta, OpenAI et d'autres,
 qui font que, aux yeux de l'écrasante majorité des chercheurs en intelligence artificielle,
-le machine learning, c'est tellement cool qu'il serait criminel de freiner son progrès,
-par exemple avec la publication de théorèmes d'impossibilité de sécurité,
-ou via des régulations drastiques et très contraignantes pour "l'innovation".
+le machine learning, c'est tellement cool qu'il serait indésirable de freiner son progrès.
+Mais du coup, les théorèmes d'impossibilité de sécurité du machine learning,
+surtout lorsqu'ils appellent clairement à ne pas déployer les solutions existantes,
+c'est clairement chiant, ce qui peut affecter, consciemment ou non,
+leurs décisions d'acceptation ou de rejection à des conférences scientifiques.
+Pire encore, des régulations drastiques et très contraignantes pour "l'innovation"
+peuvent ainsi être jugées indésirables, voire dangereuses, par ces scientifiques.
 
-En particulier, de nos jours,
+En particulier, pour toutes ces raisons, de nos jours,
 il me semble plus problématique de s'enthousiasmer devant ChatGPT
 sans donner d'attention majeure aux énormes manques de sécurité de ce produit,
 que d'écrire un article sur les 10 avantages du sucre pour la santé...  
@@ -325,7 +344,7 @@ https://gesundmd.com/sante/10-avantages-du-sucre-pour-la-sante-n-2-est-inattendu
 ## Le rectangle jaune de Tournesol
 
 L'inattention à la distraction stratégique conduit malheureusement beaucoup à penser
-que la solution contre la désinformation repose sur la modération.
+que la solution contre la désinformation repose sur la modération contre la fausse information.
 Mais très clairement, si l'on considère que l'inattention à la crise environnementale,
 au problème de santé mentale et à l'amplification de la haine, entre autres,
 est un aspect majeur de la crise informationnelle,

@@ -9,14 +9,17 @@ But should these contents be massively recommended?
 What are the social consequences of a massive consumption of this
 of this distracting content?
 
-In all, the U.S. Army has clearly asked itself these questions a lot.
-After all, according to Wikipedia, and I quote,
+In any case, the U.S. Army has clearly been asking itself these questions a lot.
+After all, according to Wikipedia, I quote,
 "the film was actively supported and influenced by the Department of Defense
 and the United States Navy,
-in order to portray the U.S. military in a positive light."
+in order to portray the U.S. military in a positive light."  
 
-In fact, according to Wikipedia,
-the main character is inspired by an American military man, Duke Cunningham,
+Check it out: https://screenrant.com/top-gun-us-navy-recruiting-applications-increase/  
+https://taskandpurpose.com/news/navy-is-trying-to-recruit-at-top-gun-maverick/
+
+In fact, again according to Wikipedia,
+the main character is inspired by an American soldier, Duke Cunningham,
 and in particular his prowess in the Vietnam war -
 a war where more bombs were dropped on a limited territory
 than during the whole second world war!
@@ -24,7 +27,7 @@ Moreover, it happens that this same Cunningham became a politician,
 and will later admit to having been corrupted,
 by accepting a check for 2.4 million dollars...
 
-And so, is Top Gun a recommendable entertainment?
+So, is Top Gun a recommendable entertainment?
 If you think about it, Top Gun actually raises a serious problem,
 a problem that could be described as #CoolWashing.
 In other words, Top Gun makes cool in the eyes of millions of viewers
@@ -38,10 +41,11 @@ of the conflicts in which these armed forces are engaged.
 But that is not all.
 Top Gun also normalizes elitism, starrification and masculinism,
 and even the use of tobacco and alcohol,
-especially in the first film.
+especially in the first film,
+or even acting rebellious and disobedient.
 
 But if I mention Top Gun in this series on the ethics of information
-it is not to criticize this particular film.
+it's not to criticize this particular movie.
 The problem of #CoolWashing is much more general.
 And, what I will try to convince you of, is that it is even
 one of the biggest informational dangers for our civilizations,
@@ -50,7 +54,7 @@ which private companies and governments abuse extensively
 so that the information that disturbs them becomes #MuteNews,
 i.e. important information that is far too rarely relayed.
 
-In particular, the greatest danger of the spectacularity of AI,
+In particular, the greatest danger of AI spectacularity,
 especially applications like chatbots or image generators,
 or even promises like health applications,
 seems to me to be the #CoolWashing that enthusiasm for these AIs causes.
@@ -69,15 +73,15 @@ https://twitter.com/JacksonKernion/status/1446620267300601861
 3Blue1Brown concluded his video on the exponential progression of COVID in March 2020
 with the saying "the only thing to fear is the absence of fear itself." #MesTasDeMetas
 I fear that due to strategic distraction and #CoolWashing,
-in many cases, like tobacco, climate change or #CoolWashing,
+in many cases, such as tobacco, climate change or AI development,
 there is far too much reason to fear the absence of fear.
-More than #FakeNews, the greatest danger here is #MuteNews.
+Far more than #FakeNews, the greatest danger here is #MuteNews.
 Unfortunately, the #FakeNews are attracting all the attention and funding today,
-for example at the academic or legislative level,
+for example at the academic level, at the media level or at the legislative level,
 thus making the #MuteNews problem a #MuteNews.
 
 
-## Big Tech's massive investments
+## Big Tech's coolwashing
 
 A few weeks ago, I had the honor of being invited to FLAIM,
 an academic event organized by Meta at the Institut Henri Poincaré.
@@ -88,12 +92,13 @@ to assess the vulnerability of algorithms developed by learning from user data.
 
 But the theme of the conference was quite different.
 It was more about bringing together those who apply machine learning to mathematics.
-And it is clear that modern algorithms are capable of spectacular feats,
+And it is clear that modern language algorithms are capable of spectacular feats,
 often very largely superhuman,
-especially thanks to the algorithmic formalization of mathematical proofs and their verification.
+in particular thanks to the algorithmic formalization of mathematical proofs and their verification,
+and advances like ChatGPT that you have certainly heard about.
 
 And very clearly, at this conference, Big Tech was overrepresented,
-be it Facebook, Google or OpenAI,
+whether it's Facebook, Google or OpenAI,
 as opposed to academics who generally don't have access
 enough supercomputers to perform the monstrous calculations needed to design
 necessary to design superhuman algorithms in mathematics.
@@ -113,21 +118,23 @@ and congratulate them for making algorithms
 to play chess, go and video games well,
 or to solve the protein folding problem?
 
-And why is OpenAI investing so much in producing "artistic" AIs
+And why is OpenAI investing so much in producing "artist" AIs,
 capable of generating spectacular images
 or conversing in a bluffing way?
 What justifies, from an economic point of view, the salary of these researchers?
 
-These are the questions I kept asking to the participants of the conference.
+These are the questions I kept asking the conference participants.
 And, by and large, no one had even asked the question.
 They were all too distracted by the spectacularity of the algorithms developed.
 Well, it seems to me that this was the economic objective of the conference.
-It was to distract the researchers from the economic and geopolitical stakes of machine learning algorithms
-of machine learning algorithms,
-and to give the impression that AI is cool,
+It was about "keeping a positive tone" about artificial intelligence,
+to convince ourselves of the great potential applications of AI,
+and not to be distracted by the geopolitical problems that
+development and deployment of these algorithms.
+In other words, it was about normalizing the impression that AI is cool,
 or even that slowing down its spectacular progress would be immoral.
 
-(while many of their colleagues, notably Frances Haugen and Sophie Zhang,
+(While many of their colleagues, including Frances Haugen and Sophie Zhang,
 desperately call for "not turning a blind eye"
 on the atrocities to which Meta's algorithms have largely contributed,
 such as the Rohingya and Tigray genocides, the information chaos of COVID,
@@ -148,7 +155,7 @@ There is today a disturbing but widespread confusion
 between misinformation and false information.
 As if misinformation was only about producing "fake news".
 However, the researchers who have chosen to study the producers of disinformation
-on the contrary, they notice that the arsenal used by them goes far beyond
+on the contrary, they have noticed that the arsenal used by the latter goes far beyond
 the simple production of false information.
 To dis-inform, that is to say to remove information, lying is not necessary.  
 https://www.bbc.com/news/world-us-canada-52912241
@@ -182,9 +189,9 @@ Can you guess which one?
 Here's a hint: this industry is so huge that it has become the core business
 of many of the most powerful technology companies.
 It is the advertising industry.
-Advertising, more than lying or denying risks,
-is nowadays mostly about ignoring risks,
-relying in particular on #coolwashing.
+When you think about it, advertising, more than lying or denying risks,
+it seems to me that advertising today is about making people forget the risks,
+relying heavily on #coolwashing.
 
 And to optimize this #coolwashing,
 many dangerous industries have relied on global stars,
@@ -211,18 +218,25 @@ https://tournesol.app/entities/yt:DQOxyTJh-JA
 https://tournesol.app/entities/yt:FkPCec7jG5I
 
 Speaking of human suffering
-many influential members of the Effective Altruism movement have clearly abused
-the strategic distraction afforded by claiming to want the good of humanity
+many influential members of the Effective Altruism movement seem to me to have clearly abused
+of the strategic distraction afforded by claiming to want the good of humanity
 to commit illegal acts without anyone raising questions.
 I am thinking in particular of the con man Sam Bankman-Fried, aka SBF,
 whose monumental frauds were clearly facilitated by his #coolwashing
 from Effective Altruism.  
 https://www.vox.com/future-perfect/23500014/effective-altruism-sam-bankman-fried-ftx-crypto
 
-In short. This list is not exhaustive,
+And so, so far, we've taken examples of intentional #CoolWashing.
+But most #CoolWashing is actually probably not intentional.
+But that's actually where it's most dangerous.
+Indeed, the jackpot for Coca-Cola is not so much
+when Maradona drinks Coca-Cola in front of a billion spectators,
+but even more when the parents themselves drink Coca-Cola in front of their parents.
+
+Anyway. This list is not exhaustive,
 and I invite you to propose your own examples of dangerous strategic distraction
 in the comments of this video.
-I hope I have convinced you that this strategy of disinformation
+I hope I have convinced you that this strategy of misinformation
 is at least as alarming as the massive production of false information,
 although it is far from the only other strategy.
 
@@ -257,10 +271,11 @@ In the same way, if the tobacco industry has caused monumental devastation
 to the tune of 8 million deaths per year according to the WHO,  
 https://www.who.int/news-room/fact-sheets/detail/tobacco  
 it is clearly above all by inattention to the dangers that this object represents,
-an inattention of which many smokers, but also the civil society and the regulators
-are too often victims.
+a lack of attention of which many smokers, but also the civil society and the regulators
+are all too often victims.  
+https://ourworldindata.org/grapher/share-of-adults-who-smoke?country=USA~European+Union~FRA~CHE~AUS~NZL~NOR
 
-And of course, this inattention is absolutely not accidental.
+And of course, this inattention is by no means accidental.
 In particular, here again, the #coolwashing in old movies
 will have strongly contributed to the inattention to the dangers of smoking.
 
@@ -308,16 +323,20 @@ drastically limit the diffusion of other contents.
 By prioritizing distraction,
 often strategically designed by disinformation campaigns,
 these algorithms kill.
-And today, no one cares.
+And today, too few people are interested.
 Not least because of the monumental #coolwashing efforts of Google, Meta, OpenAI and others,
 which make that, in the eyes of the overwhelming majority of artificial intelligence researchers,
-machine learning is so cool that it would be criminal to slow down its progress,
-for example with the publication of impossibility theorems,
-or via drastic and very restrictive regulations for "innovation".
+machine learning is so cool that it would be undesirable to slow down its progress.
+But then, the impossibility theorems of machine learning security,
+especially when they clearly call for not deploying existing solutions,
+is clearly annoying, which may affect, consciously or not,
+their acceptance or rejection decisions at scientific conferences.
+Even worse, drastic and very restrictive regulations for "innovation"
+can thus be considered undesirable, even dangerous, by these scientists.
 
-In particular, nowadays,
+In particular, for all these reasons, nowadays
 it seems to me more problematic to get excited about ChatGPT
-without giving major attention to the huge security flaws of this product,
+without giving major attention to the huge safety deficiencies of this product,
 than to write an article about the 10 health benefits of sugar...  
 https://gesundmd.com/sante/10-avantages-du-sucre-pour-la-sante-n-2-est-inattendu/
 
@@ -325,9 +344,9 @@ https://gesundmd.com/sante/10-avantages-du-sucre-pour-la-sante-n-2-est-inattendu
 ## Sunflower's Yellow Rectangle
 
 The inattention to strategic distraction unfortunately leads many to think
-that the solution to misinformation lies in moderation.
+that the solution to misinformation lies in moderation against false information.
 But very clearly, if we consider that inattention to the environmental crisis
-the mental health problem, and the amplification of hate, among others,
+the mental health problem and the amplification of hate, among others,
 is a major aspect of the information crisis,
 then "moderating well" is clearly very insufficient.
 
@@ -340,7 +359,7 @@ and what information do we absolutely need to pay attention to?
 In particular, if you were the YouTube recommendation algorithm,
 what videos would you display on the phones of billions of users,
 when they click on the YouTube application?
-Or more concretely, what would you want to put in the yellow rectangle
+Or more concretely, what would you put in the yellow rectangle
 displayed on the YouTube homepage
 for all those who use the Sunflower browser extension,
 available on Firefox and Chrome?
@@ -366,7 +385,7 @@ which one should be in the yellow rectangle more often.
 Note that to answer these questions,
 it is critical that you compare all kinds of videos,
 including videos that talk about very different topics.
-In fact, this is exactly how you will help us collaboratively determine
+In fact, this is precisely how you will help us collaboratively determine
 which content is #MuteNews that suffers from inattention
 and should be discussed further.
 
