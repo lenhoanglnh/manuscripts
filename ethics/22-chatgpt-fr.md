@@ -131,20 +131,20 @@ https://blog.google/technology/ai/introducing-pathways-next-generation-ai-archit
 En fait, Google a développé des chatbots spectaculaires avant ChatGPT,
 à savoir LaMDA et PaLM,
 mais ils ont préféré ne pas les rendre accessibles au grand public,
-probablement pour éviter tout backlash.
+probablement pour éviter tout retour de batton.
 En fait, Google a surtout plus à perdre en terme d'images de marque de Microsoft et OpenAI,
 et ça me semble surtout être pour cette raison qu'ils n'ont pas misé
-sur une hype comme celle qu'OpenAI a provoqué­e.
+sur une euphorie comme celle qu'OpenAI a provoqué­e.
 
 Cependant, avec les nouveaux investissements massifs dans ces technologies,
 et avec l'avènement de solutions Open Source comme BLOOM,
 il faut surtout s'attendre à ce que, dans les années à venir,
 accéder à des modèles de langage très puissants à un coût raisonnable
 deviendra facile pour des acteurs malveillants,
-qui pourront alors les fine-tuner comme bon leur semble.
+qui pourront alors affiner ces modèles comme bon leur semble.
 
 Dès lors, qu'importe que ChatGPT ait des mesures de sécurité ou non.
-En provoquant la hype, ils ont surtout essentiellement garanti
+En provoquant une euphorie, ils ont surtout essentiellement garanti
 l'apparition éminente de modèles de langage bon marchés, extrêmement puissants,
 et facilement reprogrammables par le cybercrime,
 pour que celui-ci continue à voler des milliers de milliards de dollars,
@@ -391,6 +391,10 @@ alors que des milliards de fonds philanthropiques ont été versés à des entre
 des alternatives dédiées à l'éthique, la sécurité et la gouvernance collaborative
 des algorithmes les plus dangereux du web comme Tournesol
 manquent gravement de dons et de visibilité, au niveau de la recherche et des médias.
+Dans le cas de Tournesol, après maintenant presque 3 ans,
+on a juste de quoi payer un salaire de développeur ;
+et même avec les meilleures idées qui soient, 
+c'est compliqué de concurrencer OpenAI, Google ou TikTok avec 1 seul employé...
 
 Heureusement, au niveau de la recherche en tout cas, 
 les problématiques d'éthique, de sécurité et de gouvernance gagnent en importance.
