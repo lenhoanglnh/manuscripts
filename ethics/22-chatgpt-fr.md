@@ -394,7 +394,11 @@ manquent gravement de dons et de visibilité, au niveau de la recherche et des m
 Dans le cas de Tournesol, après maintenant presque 3 ans,
 on a juste de quoi payer un salaire de développeur ;
 et même avec les meilleures idées qui soient, 
-c'est compliqué de concurrencer OpenAI, Google ou TikTok avec 1 seul employé...
+c'est compliqué de concurrencer OpenAI, Google ou TikTok avec 1 seul employé,
+d'autant que le développement des algorithmes sécurisés dont on a besoin
+est en fait plus sophistiqué, en tout cas mathématiquement, 
+que celui de #ChatGPT, LaMDA ou du "bouton magique" de TikTok.  
+https://tournesol.app/entities/yt:RMJz3nVE-78
 
 Heureusement, au niveau de la recherche en tout cas, 
 les problématiques d'éthique, de sécurité et de gouvernance gagnent en importance.
