@@ -82,7 +82,7 @@ https://www.youtube.com/watch?v=fSErHToV8IU
 Pour bien comprendre à quel point ce serait une erreur
 de penser ChatGPT de manière isolée,
 il est important de prendre un peu de recul sur le développement de tels algorithmes.
-En fait, depuis 2017 et un article de chercheurs de Google publiés à NeurIPS,
+En fait, depuis 2017 et un article de chercheurs de Google publiés à NeurIPS, qui est l'une des plus grande conférence sur le Machine learning,
 les algorithmes de langage s'appuient sur une même architecture appelée le Transformer.
 Depuis, ils n'ont cessé de progresser, à un rythme spectaculaire,
 si bien que les performances de ChatGPT ne m'ont personnellement pas vraiment surpris.  
