@@ -397,12 +397,12 @@ et des génocides au Myanmar, en Éthiopie et peut-être bientôt en Inde.
 https://www.aljazeera.com/news/2022/1/16/expert-warns-of-possible-genocide-against-muslims-in-india
 
 Ils me semblent très clairement violer beaucoup de lois,  
-https://tournesol.app/entities/yt:sAjm3-IaRtI
+https://tournesol.app/entities/yt:sAjm3-IaRtI  
 mais la justice manque aujourd'hui de moyens et d'attention  
-https://tournesol.app/entities/yt:1ml-OLDV7Vw
+https://tournesol.app/entities/yt:1ml-OLDV7Vw  
 pour prioriser l'application, par exemple de la régulation sur les publicités,
 pour punir la diffusion massive de contenus illégaux dont Google et d'autres profitent tant.
-Et vu ce manque de moyens difficile à combler,
+Et vu ce manque de moyens difficile à combler,  
 je trouverais cela judicieux d'imposer des lois simples à faire appliquer, comme #TaxonsLaPub.
 https://tournesol.app/entities/yt:sGLiSLAlwrY
 

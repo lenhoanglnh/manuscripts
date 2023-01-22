@@ -332,7 +332,7 @@ pretending to be their relatives, their colleagues or even their bosses.
 20:45 "Please don't believe [...] you need to verify."
 https://tournesol.app/entities/yt:BQ_JrFgUTKI
 
-## Conclusion
+## What should be done?
 
 Faced with this realistic discourse of the landscape of truly deployed algorithms,
 AI enthusiasts often rush to minimize the responsibility of algorithms.
@@ -378,6 +378,16 @@ and in public research on cybersecurity,
 which, I believe, should prioritize the recruitment of security-oriented researchers
 than experts in learning system optimization without attention to security.
 
+After all, cybercrime is not an individual problem.
+If tomorrow employees of Google, Tesla, EDF or Société Générale are hacked
+and if this allows attackers to access and paralyze critical information systems
+of these multinationals whose products are used throughout the economic fabric and the population,
+then the consequences would be catastrophic for everyone,
+including me, even though I have been very careful with my own cybersecurity.
+A collective response is needed, 
+and developers, researchers, journalists, politicians and lawyers have a critical role 
+in that response today, which is clearly very deficient.
+
 But above all, the biggest danger of the excessive attention given to OpenAI,
 seems to me to be the inattention it causes to the most dangerous algorithms,
 which in my opinion are the advertising targeting and content recommendation algorithms.
@@ -385,6 +395,16 @@ These algorithms are already widely deployed,
 have caused social chaos in the United States, Brazil and the United Kingdom,
 and genocides in Myanmar, Ethiopia and maybe soon in India.
 https://www.aljazeera.com/news/2022/1/16/expert-warns-of-possible-genocide-against-muslims-in-india
+
+They clearly seem to me to be breaking a lot of laws,  
+https://tournesol.app/entities/yt:sAjm3-IaRtI  
+but the justice system today lacks means and attention  
+https://tournesol.app/entities/yt:1ml-OLDV7Vw  
+to prioritize the application, for example of the regulation on advertisements,
+to punish the massive diffusion of illegal contents that Google and others take advantage of so much.
+And given this lack of means that is difficult to fill,
+I would find it wise to impose laws that are simple to enforce, like #TaxTheAd.  
+https://tournesol.app/entities/yt:sGLiSLAlwrY
 
 In particular, in a very real way,
 while billions in philanthropic funds have been poured into companies like OpenAI,
