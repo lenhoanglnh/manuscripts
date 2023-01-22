@@ -332,7 +332,7 @@ en se faisant passer pour leurs proches, pour leurs collègues, voire pour leurs
 20:45 "Please don't believe [...] you need to verify."
 https://tournesol.app/entities/yt:BQ_JrFgUTKI
 
-## Conclusion
+## Que faire ?
 
 Face à ce discours réalistes du paysage des algorithmes vraiment déployés, 
 les enthousiastes de l'IA se précipitent souvent pour minimiser la responsabilité des algorithmes.
@@ -378,6 +378,16 @@ et dans la recherche publique sur la cybersécurité,
 qui, je pense, devrait prioriser le recrutement de chercheurs orientés sécurité
 à celui d'experts en optimisation des systèmes d'apprentissage sans attention à la sécurité.
 
+Après tout, le cybercrime n'est pas un problème individuel.
+Si demain des employés de Google, de Tesla, d'EDF ou de la Société Générale se font hacker,
+et si cela permet aux attaquants d'accéder et de paralyser des systèmes d'information critiques
+de ces multinationales dont les produits sont utilisés partout le tissu économique et la population,
+alors les conséquences seraient catastrophiques pour tous,
+y compris pour moi, même si j'ai fait très attention à ma propre cybersécurité.
+Une réponse collective est nécessaire, 
+et les développeurs, chercheurs, journalistes, politiciens et juristes ont un rôle critique 
+dans cette réponse aujourd'hui très clairement très déficiente.
+
 Mais surtout, le plus gros danger de l'attention démesurée donnée à OpenAI,
 ça me semble être surtout l'inattention que cela provoque pour les algorithmes les plus dangereux,
 qui restent à mes yeux les algorithmes de ciblage publicitaire et de recommendation de contenus.
@@ -385,6 +395,16 @@ Ces algorithmes sont déjà très largement déployés,
 ont provoqués des chaos sociaux aux États-Unis, au Brésil et au Royaume-Uni,
 et des génocides au Myanmar, en Éthiopie et peut-être bientôt en Inde.  
 https://www.aljazeera.com/news/2022/1/16/expert-warns-of-possible-genocide-against-muslims-in-india
+
+Ils me semblent très clairement violer beaucoup de lois,  
+https://tournesol.app/entities/yt:sAjm3-IaRtI
+mais la justice manque aujourd'hui de moyens et d'attention  
+https://tournesol.app/entities/yt:1ml-OLDV7Vw
+pour prioriser l'application, par exemple de la régulation sur les publicités,
+pour punir la diffusion massive de contenus illégaux dont Google et d'autres profitent tant.
+Et vu ce manque de moyens difficile à combler,
+je trouverais cela judicieux d'imposer des lois simples à faire appliquer, comme #TaxonsLaPub.
+https://tournesol.app/entities/yt:sGLiSLAlwrY
 
 En particulier, de manière très concrète,
 alors que des milliards de fonds philanthropiques ont été versés à des entreprises comme OpenAI,
