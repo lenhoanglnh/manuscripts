@@ -39,6 +39,10 @@ notamment, par exemple, en présence d'agents malveillants,
 comme en parle cet article paru l'an dernier.
 https://deepblue.lib.umich.edu/bitstream/handle/2027.42/154046/manipulation-final.pdf
 
+Professeure Ozdaglar a aussi produit des théorèmes nouveaux
+dans des domaines comme l'optimisation, le machine learning et la théorie des jeux,
+et en mélangeant ses domaines avec l'étude des réseaux.
+
 Il y aurait bien sûr beaucoup à dire sur la Professeure Ozdaglar,
 à qui j'ai eu l'occasion de parler de temps à autre quand j'étais moi-même au MIT.
 En particulier, je peux vous dire qu'il s'agit d'une personne adorable et très inspirante -
