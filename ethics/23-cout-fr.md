@@ -149,9 +149,11 @@ et je mets de gros guillements sur le "que" bien sûr,
 346 vies humaines.
 
 C'est bien sûr déjà beaucoup trop.
-Mais c'est très négligeable 
-devant les dizaines de milliers de victimes du génocide des Rohingyas,
-voire devant le demi-million de mort au Tigré.
+Mais c'est très négligeable devant 
+les dizaines de milliers de victimes du génocide des Rohingyas au Myanmar,
+voire devant le demi-million de morts du génocide des Tigrés en Éthiopie,
+deux cas où les appels à la haine, à la violence, au meurtre et au génocide
+ont été massivement amplifiés par les algorithmes des réseaux sociaux.
 
 À cela s'ajoutent tous les troubles de santé mentale,
 y compris les suicides qui représenteraient plus de 700 000 de mort
@@ -175,7 +177,12 @@ le flux de l'information à travers le monde.
 Malheureusement, de nos jours, 
 la sécurité des systèmes informationnelles est une énorme #MuteNews, 
 surtout en comparaison des enjeux.
-C'est simple. Le métier d'inspecteur des algorithmes de Tiktok n'existe essentiellement pas.
+C'est simple. Le métier d'inspecteur des algorithmes de Tiktok n'existe essentiellement pas,
+et le peu qu'on sait vient surtout d'enquêtes journalistiques à partir de données publiques  
+https://tournesol.app/entities/yt:_kzc3Vkk7Xk  
+ou de fuites de documents internes.  
+https://tournesol.app/entities/yt:sAjm3-IaRtI
+
 Mais on est très loin du jour où plusieurs organismes de centaines d'employés chacun
 chercheront à étudier les risques de manipulations d'information
 en fouillant dans les codes et les documentations de Google et Facebook.
