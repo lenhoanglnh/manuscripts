@@ -133,7 +133,7 @@ que les avions défectueux de Boeing.
 Pire encore, à l'instar d'un avion piloté par des passagers clandestins,
 les algorithmes de recommandation sont aujourd'hui constamment manipulés
 par des campagnes de désinformation organisés,
-qui vont typiquement abusés d'armées de faux comptes et de trolls,
+qui vont typiquement abuser d'armées de faux comptes et de trolls,
 pour amplifier les contenus qu'ils sont mandatés d'amplifier,
 et pour réduire au silence l'information qu'ils veulent noyer.
 
