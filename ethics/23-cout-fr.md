@@ -279,7 +279,7 @@ l'une des meilleures façons d'avancer,
 et de sécuriser à terme l'information la plus propagée à travers le monde.
 
 Bien sûr, plutôt qu'un don, vous pouvez aussi nous aider en promouvant Tournesol,
-ou en contribuant à l'identification de contenus d'intérêt public via Tournesol.
+ou en contribuant à l'identification de contenus d'intérêt public via Tournesol en comparant, si possible régulièrement des vidéos.
 
 Du fond du coeur et au nom de toute l'équipe de Tournesol,
 je vous en remercie profondément d'avance.
