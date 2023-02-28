@@ -256,7 +256,7 @@ et ainsi garantir la pérénité du développement de Tournesol,
 il nous faudrait recevoir autour de 3000 euros de dons mensuels.
 Pour l'instant, on est à 800 euros.
 
-Je vous serais extrêmement reconnaissant si vous vouliez bien nous faire ce don,
+Je vous serais extrêmement reconnaissant si vous vouliez bien nous faire un don unique ou récurant,
 via uTip, via virement bancaire ou via Paypal,
 pour permettre au projet Tournesol de perdurer.
 Cela fait 7 ans que je fais des vidéos gratuitement sur YouTube,
