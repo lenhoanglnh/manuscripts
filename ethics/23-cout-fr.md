@@ -170,7 +170,7 @@ Autrement dit, ça ne sert à rien de dire à un militant des droits humains
 de cesser d'utiliser les réseaux sociaux, ou un réseau social en particulier.
 Sa vie sera menacée, que cette personne utilise Facebook ou non.
 
-Toute protection de la population mondiale semble inéluctablement nécessite
+Toute protection de la population mondiale semble inéluctablement nécessiter
 une sécurité beaucoup plus accrue des systèmes qui maîtrisent le plus
 le flux de l'information à travers le monde.
 
