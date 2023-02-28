@@ -269,7 +269,7 @@ et des algorithmes de recommandation,
 et je pense que la seule façon de combattre la désinformation et les appels à la haine,
 c'est qu'il y ait des investissements massifs pour les combattre.
 Et bien sûr, ce n'est pas avec un unique développeur pour Tournesol qu'on va y arriver.
-Mais faute de mieux, il me semble urgent de commencer par aider là où on peut.
+Mais faute de mieux, il me semble urgent de commencer par aider là où on peut et essayer d’encourager le plus gens possible à en faire de même.
 
 Et sachant que Tournesol est la seule solution avancée 
 pour gouverner collaborativement les algorithmes les plus influents du web,
