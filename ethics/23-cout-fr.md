@@ -1,4 +1,12 @@
-# Le coût de la sécurité (aidez-nous !)
+# Le coût de la sécurité (qui paiera ?)
+
+Si je fais cette vidéo aujourd'hui, c'est en partie pour vous demander 
+de supporter financièrement le projet Tournesol. 
+Tournesol est une association à but non lucratif 
+qui propose en gros une alternative démocratique à l'algorithme de YouTube.
+Malheureusement, l'association ne reçoit pas suffisamment de dons
+pour continuer à payer le salaire de son unique développeur. 
+J'en reparlerai en fin de vidéo.
 
 ## Le scandale 737 MAX
 
@@ -139,7 +147,7 @@ et pour réduire au silence l'information qu'ils veulent noyer.
 
 Je suspecte ainsi les #StoryKillers d'avoir été "killed" par ces campagnes,
 qui ont probablement massivement signalés ces contenus sur les réseaux sociaux
-pour que les algorithmes croient qu'il s'agit de désinformation ou de contenus "sensitive".
+pour que les algorithmes croient qu'il s'agit de désinformation ou de contenus "inappropriés".
 
 Les défaillances de ces algorithmes devraient être beaucoup plus inquiétantes
 que les défaillances des algorithmes des Boeing 737 MAX.
@@ -160,9 +168,15 @@ y compris les suicides qui représenteraient plus de 700 000 de mort
 selon l'Organisation Mondiale de la Santé.
 Si les algorithmes de recommandation, notamment sur Instagram,
 augmentent ce nombre de même seulement 1%,
-on parlerait alors de dizaines de milliers de morts.
+on parlerait alors de dizaines de milliers de morts.  
+https://jonathanhaidt.substack.com/p/social-media-mental-illness-epidemic
 
-Mais surtout, en amplifiant massivement la haine, 
+On pourrait aussi parler de la désinformation sanitaire,
+qu'il s'agisse d'amplifier l'hésitation vaccinale pendant le COVID,
+ou de la promotion massive de pseudo-médecines qui mettent des vies en danger.  
+https://tournesol.app/entities/yt:LdjYWkv4F-U
+
+Mais surtout, en amplifiant massivement la haine,
 les algorithmes de recommandation mettent en danger les populations déjà sur-exposées à la haine,
 à l'instar de la population musulmane en Inde,
 y compris lorsque ces derniers n'utilisent pas les réseaux sociaux.
@@ -194,9 +208,26 @@ que Google et Facebook diffusent chaque année,
 et d'évaluer la légalité de ces publicités.  
 https://tournesol.app/entities/yt:sGLiSLAlwrY
 
-Malheureusement, réguler des marchés planétaires et dangereux coûte très cher.
+Comme l'explique très l'avocat Albert Fox Cahn sur LastWeekTonight,
+25:08 "We don't trust companies ... not with the existing laws."
+https://tournesol.app/entities/yt:Sqa8Zo2XWc4
+
+Non seulement les moyens légaux nécessaires pour auditer ces groupes sont insuffisants,
+mais surtout, les moyens financiers pour embaucher les armées d'avocats, 
+mais aussi de chercheurs, d'ingénieurs et de journalistes pour disséquer 
+les IA les plus puissantes du monde modernes,
+ces moyens financiers sont cruellement déficients.
+Aujourd'hui, les meilleurs avocats, chercheurs et ingénieurs bosssent pour Google et compagnie,
+pas pour la régulation de ces groupes.
+
+On ne peut pas y couper.
+Réguler des marchés planétaires et dangereux coûte très cher.
 Typiquement, Wikipedia s'appuie sur la Wikimedia Foundation,
-dont les dépenses sont de l'ordre de 150 millions de dollars par an.  
+dont les dépenses sont de l'ordre de 150 millions de dollars par an.
+Sans de tels investissements, le far west de l'IA va inéluctablement perduré,
+et on risque de continuer à assister à des amplifications toujours plus massives
+de la haine sur les réseaux sociaux, à l'intérieur des démocraties,
+voire entre superpuissances internationales.
 https://upload.wikimedia.org/wikipedia/foundation/2/26/Wikimedia_Foundation_FY2021-2022_Audit_Report.pdf
 
 Or, il y a urgence. Vraiment urgence.
@@ -254,7 +285,9 @@ je n'ai plus de salaire fixe à injecter dans Tournesol.
 Bref. Pour pouvoir continuer à payé notre excellent développeur,
 et ainsi garantir la pérénité du développement de Tournesol,
 il nous faudrait recevoir autour de 3000 euros de dons mensuels.
-Pour l'instant, on est à 800 euros.
+Pour l'instant, on est à 800 euros, ce qui fait déjà un quart du chemin !
+Si 220 personnes parmi vous décident de faire un don mensuel de 10 euros,
+l'association pourra continuer à développer sereinement la plateforme Tournesol.
 
 Je vous serais extrêmement reconnaissant si vous vouliez bien nous faire un don unique ou récurant,
 via uTip, via virement bancaire ou via Paypal,
@@ -273,6 +306,7 @@ Mais faute de mieux, il me semble urgent de commencer par aider là où on peut 
 
 Et sachant que Tournesol est la seule solution avancée 
 pour gouverner collaborativement les algorithmes les plus influents du web,
+pour autant que je sache,
 qui de surcroît est une solution Open Source et libre sous licence AGPL,
 investir dans les ressources humaines de Tournesol me semble être 
 l'une des meilleures façons d'avancer,
@@ -280,6 +314,10 @@ et de sécuriser à terme l'information la plus propagée à travers le monde.
 
 Bien sûr, plutôt qu'un don, vous pouvez aussi nous aider en promouvant Tournesol,
 ou en contribuant à l'identification de contenus d'intérêt public via Tournesol en comparant, si possible régulièrement des vidéos.
+
+Ou mieux encore, pour les plus motivés d'entre vous,
+vous pourriez nous aider à identier des pistes prometteuses de financement,
+voire à écrire avec nous les demandes de financement.
 
 Du fond du coeur et au nom de toute l'équipe de Tournesol,
 je vous en remercie profondément d'avance.
