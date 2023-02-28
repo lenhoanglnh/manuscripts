@@ -260,7 +260,7 @@ Je vous serais extrêmement reconnaissant si vous vouliez bien nous faire un don
 via uTip, via virement bancaire ou via Paypal,
 pour permettre au projet Tournesol de perdurer.
 Cela fait 7 ans que je fais des vidéos gratuitement sur YouTube,
-et contrairement à mes collègues, je ne vous ai jamais vraiment demandé de me faire de dons,
+et contrairement à mes collègues, je ne vous ai jamais vraiment demandé de me faire de dons et mes vidéos n'ont jamais été monétises,
 voire j'avais une page Tipeee qui demandait explicitement de ne pas me faire de dons.
 
 Si je vous demande de contribuer, ce n'est absolument pas pour mon propre intérêt direct.
