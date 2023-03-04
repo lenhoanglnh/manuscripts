@@ -12,7 +12,9 @@ J'en reparlerai en fin de vidéo.
 
 Le 29 octobre 2018, un vol domestique en Indonésie, 
 de Jakarta à Pangkal Pinang, connut une fin tragique.
-Le Boeing 737 MAX s'échoua dans la mer de java, 13 minutes après le décollage.
+Le Boeing 737 MAX s'échoua dans la mer de java, 13 minutes après le décollage.  
+https://www.reuters.com/world/asia-pacific/indonesia-allow-boeings-737-max-fly-again-after-fatal-crash-2021-12-28/
+
 Les 189 passagers et l'équipage sont morts lors du crash.
 Il s'agit de l'un des accidents les plus mortels de l'aviation moderne.
 https://en.wikipedia.org/wiki/Lion_Air_Flight_610
@@ -147,7 +149,8 @@ et pour réduire au silence l'information qu'ils veulent noyer.
 
 Je suspecte ainsi les #StoryKillers d'avoir été "killed" par ces campagnes,
 qui ont probablement massivement signalés ces contenus sur les réseaux sociaux
-pour que les algorithmes croient qu'il s'agit de désinformation ou de contenus "inappropriés".
+pour que les algorithmes croient qu'il s'agit de désinformation ou de contenus "inappropriés".  
+https://forbiddenstories.org/fr/
 
 Les défaillances de ces algorithmes devraient être beaucoup plus inquiétantes
 que les défaillances des algorithmes des Boeing 737 MAX.
@@ -161,7 +164,8 @@ Mais c'est très négligeable devant
 les dizaines de milliers de victimes du génocide des Rohingyas au Myanmar,
 voire devant le demi-million de morts du génocide des Tigrés en Éthiopie,
 deux cas où les appels à la haine, à la violence, au meurtre et au génocide
-ont été massivement amplifiés par les algorithmes des réseaux sociaux.
+ont été massivement amplifiés par les algorithmes des réseaux sociaux.  
+https://tournesol.app/entities/yt:dGJzpQwA090
 
 À cela s'ajoutent tous les troubles de santé mentale,
 y compris les suicides qui représenteraient plus de 700 000 de mort
@@ -310,7 +314,8 @@ pour autant que je sache,
 qui de surcroît est une solution Open Source et libre sous licence AGPL,
 investir dans les ressources humaines de Tournesol me semble être 
 l'une des meilleures façons d'avancer,
-et de sécuriser à terme l'information la plus propagée à travers le monde.
+et de sécuriser à terme l'information la plus propagée à travers le monde.  
+https://arxiv.org/abs/2211.01179
 
 Bien sûr, plutôt qu'un don, vous pouvez aussi nous aider en promouvant Tournesol,
 ou en contribuant à l'identification de contenus d'intérêt public via Tournesol en comparant, si possible régulièrement des vidéos.
