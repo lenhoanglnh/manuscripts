@@ -34,4 +34,4 @@ A second challenge is institutional. While new laws are needed, today's large-sc
 
 A third challenge lies in the development of democratically governed secure alternatives to today's most impactful algorithms. This is precisely what I have spent most of the last 5 five years working on, as my colleagues and I set up the nonprofit [Tournesol](https://tournesol.app/) project. Essentially, Tournesol's algorithm results from a secure and fair vote on its preferred behavior by Tournesol's community of contributors, which you are welcome to join.
 
-Overall, the more we will care about the safety of our information ecosystems, the more we will be capable of creating a safe Internet for all.	
+Overall, the more we prioritize the safety of our information ecosystems, the more we will have a chance to make the Internet for all.	
