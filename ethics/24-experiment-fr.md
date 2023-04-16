@@ -1,4 +1,4 @@
-# Participez à notre expérience scientifique sur l'impact des recommandations !
+# Participez à notre étude scientifique sur l'impact de bonnes recommandations !
 
 Cette vidéo appelle chacun d'entre vous qui utilise l'extension Tournesol
 à suivre un formulaire pour nous permettre d'analyser l'impact des recommandations Tournesol,
@@ -9,7 +9,7 @@ Le lien du formulaire est en description.
 Au nom de toute l'équipe Tournesol et des chercheurs de l'EPFL,
 je vous remercie profondément d'avance pour votre participation.
 Plus de détails en fin de vidéos.  
-https://docs.google.com/forms/d/e/1FAIpQLSd4_8nF0kVnHj3GvTlEAFw-PHAGOAGc1j1NKZbXr8Ga_nIY9w/
+https://docs.google.com/forms/d/e/1FAIpQLSd4_8nF0kVnHj3GvTlEAFw-PHAGOAGc1j1NKZbXr8Ga_nIY9w/viewform?usp=share_link
 
 
 ## Le biais de négativité de la recherche
@@ -32,9 +32,7 @@ soumis à l'influence malsaine de gouvernements parfois autoritaires,
 https://tournesol.app/entities/yt:10g0J31RuK4  
 et manipulés à longueur de journée par des campagnes de désinformations
 et de manipulations idéologiques,
-à l'instar de Cambridge Analytica au Royaume-Uni, 
-d'Eliminalia en Espagne ou d'Avisa Partners en France.  
-https://www.rts.ch/info/sciences-tech/13787015-eliminalia-un-tueur-a-gages-numerique-pour-effacer-ses-traces-en-ligne.html  
+à l'instar de Cambridge Analytica.
 https://fr.wikipedia.org/wiki/Avisa_Partners
 
 Sauf que, à l'instar du changement climatique,
