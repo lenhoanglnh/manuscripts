@@ -61,22 +61,22 @@ la question des moyens pour les faire appliquer se pose sérieusement.
 
 ## Le numérique ne doit pas faire exception
 
-Il existe toutefois une parade très simple à tous ces problèmes,
-déjà abondamment appliqués à travers les industries matûres, 
+Il existe toutefois une parade simple et efficace à ces problèmes,
+déjà abondamment appliquée dans les industries matûres, 
 à savoir la *présomption de non-conformité*.
-Typiquement, par défaut, un nouvel avion d'Airbus n'a pas le droit de vol.
-Et c'est aux concepteurs de convaincre des régulateurs puissants, bien financés et indépendants
-de la conformité de l'avion avec les réglementations notamment liées à la sécurité de l'appareil.
+Typiquement, par défaut, un nouvel Airbus n'a pas le droit de vol.
+Et c'est à l'entreprise de démontrer aux régulateurs la conformité de leur nouveau produit 
+avec les réglementations déjà existantes.
 
 En finance, un principe similaire de *présomption de blanchiment* 
 a d'ailleurs été récemment introduit pour les montages financiers douteux,
 rejetant ainsi la *charge de la preuve* à ceux qui possèdent les données les plus pertinentes
-pour déterminer la légalité de ces montages.
-Cette disposition du code pénale a été [qualifiée](https://www.lemonde.fr/les-decodeurs/article/2023/04/29/la-presomption-de-blanchiment-arme-redoutable-contre-les-montages-financiers-occultes_6171473_4355770.html) de « game changer » par des enquêteurs et des magistrats « dithyrambiques ».
+pour déterminer la légalité des opérations financières.
+Cette disposition a été [qualifiée](https://www.lemonde.fr/les-decodeurs/article/2023/04/29/la-presomption-de-blanchiment-arme-redoutable-contre-les-montages-financiers-occultes_6171473_4355770.html) de « game changer » par des enquêteurs et des magistrats « dithyrambiques ».
 
 Alors que les incidents liés à TikTok et ChatGPT, mais aussi à Facebook, YouTube et Twitter, 
 ne cessent de se multiplier,
-et que les données les plus pertinentes pour déterminer la légalité de ces systèmes restent le monopole des entreprises qui développent ces produits,
+et que les données les plus pertinentes pour déterminer la légalité de ces systèmes demeurent le monopole des entreprises qui développent ces produits,
 il paraît urgent que les régulateurs du numérique adoptent eux aussi
 la présomption de non-conformité.
 
