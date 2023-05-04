@@ -10,7 +10,7 @@ Pourtant, pendant ce temps,
 la commission nationale de l'informatique et des libertés (CNIL),
 chargée notamment d'appliquer le règlement général pour la protection des données (RGPD),
 tarde à réagir, 
-malgré la réception d'au moins [5 plaintes](https://www.lesechos.fr/tech-medias/hightech/chatgpt-la-cnil-enquete-sur-cinq-plaintes-1934550).
+malgré la réception de [5 plaintes](https://www.lesechos.fr/tech-medias/hightech/chatgpt-la-cnil-enquete-sur-cinq-plaintes-1934550).
 
 Cette étrange situation illustre un problème plus général.
 Alors que les nouvelles technologies bouleversent nos sociétés,
