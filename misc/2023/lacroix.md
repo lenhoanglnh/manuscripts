@@ -31,35 +31,35 @@ Pire encore, la charge de la preuve de non-conformité retombe trop souvent sur 
 Cette situation est inacceptable, pour de nombreuses raisons.
 
 Premièrement, la société civile a rarement accès à des données incriminantes.
-En fait, c'est souvent grâce au courage de lanceurs d'alerte ou à des fuites de données,
+En fait, c'est souvent grâce à des fuites de données ou au courage de lanceurs d'alerte,
 que ces données incriminantes sont apprises par les régulateurs,
 à l'instar des [Facebook Files](https://www.la-croix.com/Economie/Frances-Haugen-lanceuse-dalerte-issue-Facebook-tournee-europeenne-2021-11-07-1201184083) révélés par Frances Haugen, 
-qui montrent le rôle dévastateur des algorithmes de Facebook pour les démocraties.
+qui montrent le rôle dévastateur des algorithmes de Facebook sur les démocraties.
 
-Deuxièmement, cette situation encourage de plus l'opacité des entreprises.
+Deuxièmement, cette situation encourage l'opacité des entreprises.
 Beaucoup de mystères entourent ainsi le dernier algorithme GPT-4 d'OpenAI.
 De façon plus préoccupante encore, 
-Google, Meta et Microsoft ont successivement démantelé leurs équipes d'éthique,
+[Google, Meta et Microsoft ont successivement démantelé leurs équipes d'éthique](https://techcrunch.com/2023/03/13/microsoft-lays-off-an-ethical-ai-team-as-it-doubles-down-on-openai/),
 et [restreint l'accès](https://www.wsj.com/articles/facebook-limits-employee-access-to-some-internal-discussion-groups-11634171786) à des discussions internes à ses employés,
 réduisant ainsi leur transparence en interne.
 
-Troisièmement, l'inaction des régulateurs encourage le développement précipité des algorithmes
-par toutes sortes d'acteurs, non seulement Google, Microsoft et Meta,
+Troisièmement, l'inaction des régulateurs encourage des développements précipités, 
+non seulement Google, Microsoft et Meta,
 mais aussi Baidu, Hugging Face ou encore le Technology Innovation Institute d'Abu Dhabi.
-Cette précipitation est en particulier associée à une réduction alarmante des standards de sécurité,
+Cette précipitation s'accompagne d'une réduction alarmante des standards de sécurité,
 [bien documentée dans le cas de Google](https://www.bloomberg.com/news/features/2023-04-19/google-bard-ai-chatbot-raises-ethical-concerns-from-employees#xj4y7vzkg).
 
 Quatrièment, les technologies du numérique restent massivement utilisées
 tant que les régulateurs n'agissent pas.
-Si elles présentent des risques, chaque jour d'inaction légale met des entreprises ou des vies en danger,
-à l'instar des conséquences de TikTok sur la santé mentale de ses utilisateurs.
+Si elles présentent des risques, chaque jour d'inaction légale met davantage d'entreprises et de vies en danger,
+notamment dans le cas de [la santé mentale des utilisateurs de TikTok](https://jonathanhaidt.substack.com/p/international-mental-illness-part-one).
 
 Enfin, l'inapplication de lois déjà existantes, faute par exemple d'enquêtes dignes de ce nom, décrédibilise toutes les lois.
 À l'heure où l'Europe s'arme de nouveaux textes légaux très exigeants,
-comme l'AI Act ou le Cyber Resilience Act,
+comme [l'AI Act](https://artificialintelligenceact.eu/) ou le [Cyber Resilience Act](https://digital-strategy.ec.europa.eu/en/library/cyber-resilience-act),
 la question des moyens pour les faire appliquer se pose sérieusement.
 
-## L'IA ne doit pas faire exception
+## Le numérique ne doit pas faire exception
 
 Il existe toutefois une parade très simple à tous ces problèmes,
 déjà abondamment appliqués à travers les industries matûres, 
