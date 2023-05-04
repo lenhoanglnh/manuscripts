@@ -1,4 +1,4 @@
-# L'urgence à adopter la présomption de non-conformité en IA
+# Imposons la présomption de non-conformité au numérique
 
 Le 3 mai 2023, l'entreprise technologique Samsung a [interdit](https://www.journaldugeek.com/2023/05/03/chatgpt-pourquoi-samsung-interdit-a-ses-employes-dutiliser-lia/) à ses employés l'utilisation des intelligences artificielles (IA) conversationnelles, comme ChatGPT, Google Bard et Bing Chat,
 peu après que des employés ont demandé à ChatGPT d'analyser du code et de résumer des notes de réunion.
@@ -8,8 +8,8 @@ Selon Samsung, OpenAI est une menace sérieuse pour la protection des informatio
 
 Pourtant, pendant ce temps,
 la commission nationale de l'informatique et des libertés (CNIL),
-chargée d'appliquer le règlement générale pour la protection des données (RGPD),
-n'a toujours pas réagi, 
+chargée notamment d'appliquer le règlement général pour la protection des données (RGPD),
+tarde à réagir, 
 malgré la réception d'au moins [5 plaintes](https://www.lesechos.fr/tech-medias/hightech/chatgpt-la-cnil-enquete-sur-cinq-plaintes-1934550).
 
 Cette étrange situation illustre un problème plus général.
@@ -21,14 +21,12 @@ comme l'aviation, la pharmaceutique et l'agroalimentaire,
 est cruellement déficiente à la régulation numérique.
 
 
-## Les dangers de la présomption de conformité
+## La régulation traîne
 
-La plus grande déficience de la régulation actuelle, 
-c'est sans doute le fait que les régulateurs du numérique n'interviennent essentiellement jamais 
-en amont du déploiement des technologiques.
+En effet, les régulateurs du digital n'interviennent presque jamais 
+en amont du déploiement des technologies.
 C'est même probablement après l'adoption massive de ChatGPT, TikTok ou du Bitcoin, 
-que la question de la conformité de ces systèmes d'information
-avec les lois *déjà existantes* s'est posée.
+que la question de la conformité avec les lois *déjà existantes* s'est posée.
 Pire encore, la charge de la preuve de non-conformité retombe trop souvent sur la partie civile.
 Cette situation est inacceptable, pour de nombreuses raisons.
 
