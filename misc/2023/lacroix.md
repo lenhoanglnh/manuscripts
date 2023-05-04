@@ -3,34 +3,36 @@
 
 Le 3 mai 2023, l'entreprise technologique Samsung a [interdit](https://www.journaldugeek.com/2023/05/03/chatgpt-pourquoi-samsung-interdit-a-ses-employes-dutiliser-lia/) à ses employés l'utilisation de la nouvelle génération d'intelligences artificielles (IA) conversationnelles, comme ChatGPT, Google Bard et Bing Chat.
 Cette décision suggère vivement que ces IA peuvent être davantage des vulnérabilités pour les entreprises que des atouts.
-En l'occurence, plusieurs employés de Samsung avaient demandé à ChatGPT d'analyser du code source et de résumer des notes de réunion,
-fournissant ainsi à OpenAI des secrets industriels
-que [les prochaines versions de ChatGPT risquent de communiquer à leurs millions d'utilisateurs](https://arxiv.org/abs/2304.05197).
-Toutefois, pendant ce temps,
+En l'occurence, plusieurs employés de Samsung avaient demandé à ChatGPT d'analyser du code source et de résumer des notes de réunion.
+Or ce faisant, ils ont communiqué à OpenAI ces secrets industriels.
+Pire encore, les prochaines versions de ChatGPT apprendront ces données, et [risquent de les relayer à leurs millions d'utilisateurs](https://arxiv.org/abs/2304.05197).
+Selon Samsung, OpenAI est une menace sérieuse pour la protection des informations sensibles.
+
+Pourtant, pendant ce temps,
 la commission nationale de l'informatique et des libertés (CNIL),
 chargée d'appliquer le règlement générale pour la protection des données (RGPD),
-n'a toujours pas réagi, malgré la réception d'au moins [5 plaintes](https://www.lesechos.fr/tech-medias/hightech/chatgpt-la-cnil-enquete-sur-cinq-plaintes-1934550).
+n'a toujours pas réagi, 
+malgré la réception d'au moins [5 plaintes](https://www.lesechos.fr/tech-medias/hightech/chatgpt-la-cnil-enquete-sur-cinq-plaintes-1934550).
 
 Cette étrange situation illustre un problème plus général.
 Alors que les nouvelles technologies de l'information bouleversent nos sociétés à une vitesse spectaculaire,
 leur régulation est arriérée.
 En particulier, la *présomption de non-conformité*,
-déjà abondamment appliquée dans les industries matûres,
+déjà abondamment appliquée dans les industries matûres
 comme l'aviation, la pharmaceutique et l'agroalimentaire,
-doit urgemment être adoptée dans le numérique.
+doit urgemment être adoptée au numérique aussi.
 
 
 ## Les dangers de la présomption de conformité
 
-Jusque là, les régulateurs du numérique n'interviennent essentiellement jamais 
+La plus grande déficience de la régulation actuelle, 
+c'est sans doute le fait que les régulateurs du numérique n'interviennent essentiellement jamais 
 en amont du déploiement des technologiques.
-En fait, c'est même probablement après 
-l'adoption de ChatGPT, TikTok ou le Bitcoin par des millions de français, 
+C'est même probablement après l'adoption massive de ChatGPT, TikTok ou du Bitcoin, 
 que la question de la conformité de ces systèmes d'information
-avec les lois déjà existantes s'est posée.
-Pire encore, les régulateurs attendent souvent de la société civile
-qu'elle démontre l'illégalité de ces produits pour les interdire.
-Cette situation est extrêmement insatisfaisante, pour de nombreuses raisons.
+avec les lois *déjà existantes* s'est posée.
+Pire encore, la charge de la preuve de non-conformité retombe trop souvent sur la partie civile.
+Cette situation est inacceptable, pour de nombreuses raisons.
 
 Premièrement, la société civile a rarement accès à des données incriminantes.
 En fait, c'est souvent grâce au courage de lanceurs d'alerte ou à des fuites de données,
