@@ -1,4 +1,4 @@
-# Imposons la présomption de non-conformité au numérique
+# Faut-il interdire ChatGPT ?
 
 Le 3 mai 2023, l'entreprise technologique Samsung a [interdit](https://www.journaldugeek.com/2023/05/03/chatgpt-pourquoi-samsung-interdit-a-ses-employes-dutiliser-lia/) à ses employés l'utilisation des intelligences artificielles (IA) conversationnelles, comme ChatGPT, Google Bard et Bing Chat,
 peu après que des employés ont demandé à ChatGPT d'analyser du code et de résumer des notes de réunion.
