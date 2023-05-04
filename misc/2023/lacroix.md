@@ -1,11 +1,9 @@
 # L'urgence à adopter la présomption de non-conformité en IA
-5000 signes.
 
-Le 3 mai 2023, l'entreprise technologique Samsung a [interdit](https://www.journaldugeek.com/2023/05/03/chatgpt-pourquoi-samsung-interdit-a-ses-employes-dutiliser-lia/) à ses employés l'utilisation de la nouvelle génération d'intelligences artificielles (IA) conversationnelles, comme ChatGPT, Google Bard et Bing Chat.
-Cette décision suggère vivement que ces IA peuvent être davantage des vulnérabilités pour les entreprises que des atouts.
-En l'occurence, plusieurs employés de Samsung avaient demandé à ChatGPT d'analyser du code source et de résumer des notes de réunion.
-Or ce faisant, ils ont communiqué à OpenAI ces secrets industriels.
-Pire encore, les prochaines versions de ChatGPT apprendront ces données, et [risquent de les relayer à leurs millions d'utilisateurs](https://arxiv.org/abs/2304.05197).
+Le 3 mai 2023, l'entreprise technologique Samsung a [interdit](https://www.journaldugeek.com/2023/05/03/chatgpt-pourquoi-samsung-interdit-a-ses-employes-dutiliser-lia/) à ses employés l'utilisation des intelligences artificielles (IA) conversationnelles, comme ChatGPT, Google Bard et Bing Chat,
+peu après que des employés ont demandé à ChatGPT d'analyser du code et de résumer des notes de réunion.
+Ce faisant, ils ont communiqué à OpenAI ces secrets industriels.
+Pire encore, les prochaines versions de ChatGPT apprendront sans doute de ces données, et [risquent de les relayer à leurs millions d'utilisateurs](https://arxiv.org/abs/2304.05197).
 Selon Samsung, OpenAI est une menace sérieuse pour la protection des informations sensibles.
 
 Pourtant, pendant ce temps,
@@ -15,12 +13,12 @@ n'a toujours pas réagi,
 malgré la réception d'au moins [5 plaintes](https://www.lesechos.fr/tech-medias/hightech/chatgpt-la-cnil-enquete-sur-cinq-plaintes-1934550).
 
 Cette étrange situation illustre un problème plus général.
-Alors que les nouvelles technologies de l'information bouleversent nos sociétés à une vitesse spectaculaire,
+Alors que les nouvelles technologies bouleversent nos sociétés,
 leur régulation est arriérée.
 En particulier, la *présomption de non-conformité*,
 déjà abondamment appliquée dans les industries matûres
 comme l'aviation, la pharmaceutique et l'agroalimentaire,
-doit urgemment être adoptée au numérique aussi.
+est cruellement déficiente à la régulation numérique.
 
 
 ## Les dangers de la présomption de conformité
