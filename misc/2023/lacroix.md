@@ -1,10 +1,10 @@
 # Faut-il interdire ChatGPT ?
 
-Le 3 mai 2023, l'entreprise technologique Samsung a [interdit](https://www.journaldugeek.com/2023/05/03/chatgpt-pourquoi-samsung-interdit-a-ses-employes-dutiliser-lia/) à ses employés l'utilisation des intelligences artificielles (IA) conversationnelles, comme ChatGPT, Google Bard et Bing Chat,
-peu après que des employés ont demandé à ChatGPT d'analyser du code et de résumer des notes de réunion.
-Ce faisant, ils ont communiqué à OpenAI ces secrets industriels.
-Pire encore, les prochaines versions de ChatGPT apprendront sans doute de ces données, et [risquent de les relayer à leurs millions d'utilisateurs](https://arxiv.org/abs/2304.05197).
-Selon Samsung, OpenAI est une menace sérieuse pour la protection des informations sensibles.
+Il y a quelques semaines, des employés de Samsung ont demandé à ChatGPT d'analyser du code et de résumer des notes de réunion,
+communiquant ainsi des secrets industriels à OpenAI, l'entreprise qui développe ChatGPT.
+Dès lors, les prochaines versions de ChatGPT auront sans doute appris ces données, et [risquent de les relayer à leurs millions d'utilisateurs](https://arxiv.org/abs/2304.05197).
+Suite à ces événement, Samsung a [interdit](https://www.journaldugeek.com/2023/05/03/chatgpt-pourquoi-samsung-interdit-a-ses-employes-dutiliser-lia/) à ses employés l'utilisation des intelligences artificielles (IA) conversationnelles, comme ChatGPT, Google Bard et Bing Chat.
+Selon Samsung, ces IA sont une menace sérieuse pour la protection des informations sensibles.
 
 Pourtant, pendant ce temps,
 la commission nationale de l'informatique et des libertés (CNIL),
