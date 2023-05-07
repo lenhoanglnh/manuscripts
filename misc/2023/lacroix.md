@@ -19,20 +19,20 @@ leur régulation est arriérée.
 En particulier, la *présomption de non-conformité*,
 déjà abondamment appliquée dans les industries matûres
 comme l'aviation, la pharmaceutique et l'agroalimentaire,
-est cruellement déficiente à la régulation numérique.
+fait cruellement défault à la régulation numérique.
 
 
 ## La régulation traîne
 
 En effet, les régulateurs du digital n'interviennent presque jamais 
 en amont du déploiement des technologies.
-C'est même probablement après l'adoption massive de ChatGPT, TikTok ou du Bitcoin, 
+C'est même probablement après l'adoption massive de ChatGPT, de TikTok, ou du Bitcoin, 
 que la question de la conformité avec les lois *déjà existantes* s'est posée.
 Pire encore, la charge de la preuve de non-conformité retombe trop souvent sur la partie civile.
 Cette situation est inacceptable, pour de nombreuses raisons.
 
 Premièrement, la société civile a rarement accès à des données incriminantes.
-En fait, c'est souvent grâce à des fuites de données ou au courage de lanceurs d'alerte,
+En fait, c'est souvent grâce à des fuites de données, ou au courage de lanceurs d'alerte,
 que ces données incriminantes sont apprises par les régulateurs,
 à l'instar des [Facebook Files](https://www.la-croix.com/Economie/Frances-Haugen-lanceuse-dalerte-issue-Facebook-tournee-europeenne-2021-11-07-1201184083) révélés par Frances Haugen, 
 qui montrent (entre autres) le rôle dévastateur des algorithmes de Facebook sur les démocraties.
@@ -45,7 +45,7 @@ et [restreint l'accès](https://www.wsj.com/articles/facebook-limits-employee-ac
 réduisant ainsi leur transparence en interne.
 
 Troisièmement, l'inaction des régulateurs encourage des développements précipités, 
-non seulement Google, Microsoft et Meta,
+comme c'est le cas chez non seulement Google, Microsoft et Meta,
 mais aussi Baidu, Hugging Face ou encore le Technology Innovation Institute d'Abu Dhabi.
 Cette précipitation s'accompagne d'une réduction alarmante des standards de sécurité,
 [bien documentée dans le cas de Google](https://www.bloomberg.com/news/features/2023-04-19/google-bard-ai-chatbot-raises-ethical-concerns-from-employees#xj4y7vzkg).
@@ -63,8 +63,8 @@ la question des moyens pour les faire appliquer se pose sérieusement.
 ## Le numérique ne doit pas faire exception
 
 Il existe toutefois une parade simple et efficace à ces problèmes,
-déjà abondamment appliquée dans les industries matûres, 
-à savoir la *présomption de non-conformité*.
+déjà abondamment appliquée dans les industries matûres : 
+la *présomption de non-conformité*.
 Typiquement, par défaut, un nouvel Airbus n'a pas le droit de vol.
 Et c'est à l'entreprise de démontrer aux régulateurs la conformité de leur nouveau produit 
 avec les réglementations déjà existantes.
@@ -79,6 +79,5 @@ Alors que les incidents liés à TikTok et ChatGPT, mais aussi à Facebook, YouT
 ne cessent de se multiplier,
 et que les données les plus pertinentes pour déterminer la légalité de ces systèmes demeurent le monopole des entreprises qui développent ces produits,
 il paraît urgent que les régulateurs du numérique adoptent eux aussi
-la présomption de non-conformité.
-Et entrent dans la norme.
+la présomption de non-conformité; et entrent dans la norme.
 
