@@ -307,6 +307,10 @@ avec parfois des milliards en jeu,
 sont prises à partir de ces statistiques aggrégées.
 J'espère que vous retiendrez qu'il s'agit là en fait d'une très mauvaise façon de faire,
 aussi bien sur le plan de l'éthique que sur le plan de la sécurité.
+Au lieu de cela, et à l'instar de ce que tout journaliste et scientifique apprend,
+pour des questions de sécurité,
+il est important de prêter attention aux sources de données, 
+et juger la fiabilité des données à la lumière de ces sources.
 
 Malheureusement, faute d'analyse critique de ces aspects,
 et parfois poussée par la corruption et l'incitation 
@@ -331,7 +335,8 @@ et à encourager vos proches, vos collègues, vos entreprises et vos régulateur
 Et pour monter en expertise sur ces sujets critiques,
 sachez que notre entreprise Calicarpa, co-fondée par trois experts du domaine,
 offre du conseil et de la formation pour vous et vos équipes.
-Je vous invite à prendre contact avec moi, si vous souhaitez profiter de nos services.
+Je vous invite à prendre contact avec moi, 
+si vous souhaitez faire profiter vos équipes de nos services.
 
 
 
