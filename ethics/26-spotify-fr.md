@@ -8,7 +8,7 @@ je vais vous le jouer maintenant, malgré les risques d'infraction au droit d'au
 [Awkward silence]
 
 Oui vous avez bien entendu.
-Cette chanson à 20 000$ n'est autre que du silence.  
+Cette album à 20 000$ n'est autre que du silence.  
 https://www.theguardian.com/music/2014/jul/25/vulpeck-the-band-who-made-20000-from-their-silent-spotify-album
 
 Alors, techniquement, je crois que je vous ai passé la chanson "Zzzz",
