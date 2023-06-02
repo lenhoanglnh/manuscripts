@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=KXvncV79LXk
 
 En fait, aujourd'hui, on va voir que ces fausses écoutent sont désormais un enjeu
 qui représente littéralement des milliards de dollars  
-https://www.lemonde.fr/economie/article/2021/06/09/spotify-deezer-apple-amazon-le-streaming-musical-toujours-en-croissance_6083448_3234.html
+https://www.lemonde.fr/economie/article/2021/06/09/spotify-deezer-apple-amazon-le-streaming-musical-toujours-en-croissance_6083448_3234.html  
 alors que la fraude massive par fausse écoute est devenue une économie importante
 qui biaise toute l'offre musicale,
 au profit des escrocs, désormais professionnalisés et puissants, qui exploitent.  
@@ -317,7 +317,10 @@ et parfois poussée par la corruption et l'incitation
 à déployer rapidement des technologies spectaculaires,
 les industries ont tendance à déployer rapidement des solutions très insatisfaisantes,
 qui peuvent pourtant avoir des conséquences majeures sur des économies entières,
-comme l'économie des artistes indépendants dans le cas des plateformes de streaming.
+comme l'économie des artistes indépendants dans le cas des plateformes de streaming,
+ou, dans le cas de ChatGPT et TikTok,
+sur l'économie massive du cybercrime, la cybersécurité du tissu économique,
+les capacités cognitives de milliards d'humains et les sujets d'actualité en démocratie.
 
 Il est urgent d'exiger beaucoup plus de sécurité et d'éthique 
 dans la conception des systèmes d'information.
