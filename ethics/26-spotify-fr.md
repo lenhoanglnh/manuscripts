@@ -1,4 +1,4 @@
-# Un silence a rapporté 20 000$... sur Spotify !
+# L'album silencieux à 20 000$
 
 En 2014, un groupe de musique appelé Vulpeck, a gagné 20 000$ avec un album inattendu,
 intitulé Sleepify.
