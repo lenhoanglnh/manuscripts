@@ -1,4 +1,4 @@
-# L'album silencieux à 20 000$
+# Spotify a payé leur silence
 
 En 2014, un groupe de musique appelé Vulpeck, a gagné 20 000$ avec un album inattendu,
 intitulé Sleepify.
@@ -24,7 +24,7 @@ ont payé pour écouter du silence plutôt que de la musique.
 Ce qu'il s'est passé, 
 c'est que le groupe Vulpeck a demandé à ses fans d'écouter ce silence en permanence,
 y compris pendant la nuit,
-pour augmenter leur temps d'écoute,
+pour augmenter leur nombre d'écoutes,
 et récupérer ainsi de plus grandes recettes via le système de paiement de Spotify.
 Vulpeck a exploité la faille des fausses écoutes.  
 https://www.youtube.com/watch?v=KXvncV79LXk
@@ -38,8 +38,10 @@ au profit des escrocs, désormais professionnalisés et puissants, qui exploiten
 https://www.vice.com/en/article/gv5xbx/i-built-a-botnet-that-could-destroy-spotify-with-fake-listens
 
 Mais surtout, pour contrer la fraude, 
-il existe une parade que Deezer a récemment décidé d'adopter,
-et qui est un principe fondamental de notre recherche en sécurité des intelligences artificielles.
+il existe une parade, que Deezer cherche notamment à adopter depuis 2016 -
+mais sa mise en application traîne -
+et qui est un principe fondamental de la recherche en sécurité des intelligences artificielles,
+que des collègues et moi avons formalisé dans un article publié en 2022.
 Aujourd'hui, on va parler de la théorie mathématique des IA équitables et sécurisées,
 que mes nombreux co-auteurs et moi avons développée depuis 7 ans,
 qu'on a peaufiné et optimisé notamment sur la plateforme Tournesol.  
@@ -49,17 +51,21 @@ https://www.deezer-blog.com/how-much-does-deezer-pay-artists/
 ## Market-Centric versus User-Centric
 
 Alors, la manière dont les recettes de Spotify sont distribuées est très opaque,
-et il y a des arrangements spécifiques pour les grands artistes,
-qui passent notamment par les grands labels de disque 
-comme Warner Music, Sony Music ou Universal Music.  
+et il y a des arrangements spécifiques avec certains ayant-droits puissants,
+notamment les grandes maisons de disque comme Warner Music, Sony Music ou Universal Music,
+par opposition notamment aux indépendants.  
 https://www.theverge.com/2015/5/19/8621581/sony-music-spotify-contract
 
-Mais une composante clairement majeure de la redistribution des recettes Spotify aux artistes
+Mais une composante clairement majeure de la redistribution des recettes Spotify
 est un système parfois appelé le Market-Centric Payment System.
 En gros, dans ce système, les abonnements des consommateurs sont tous collectés 
 et regroupés dans un pot commun.
-Puis, chaque artiste est rémunéré à hauteur de son temps d'écoute total,
-relativement aux temps d'écoutes des autres artistes.
+Puis, chaque ayant-droit est rémunéré à hauteur de son nombre d'écoutes total,
+relativement aux nombres d'écoutes des autres ayant-droits.
+
+Techniquement, une écoute set la lecture d'une piste audio d'au moins 30 secondes,
+ce qui explique pourquoi les chansons de l'album Sleepfy de VUlpeck font toutes 31 secondes,
+et pourquoi les musiques sur ces plateformes ont tendance à se raccourcir.
 
 Et le problème, c'est que, comme on l'a vu, 
 ce système permet aux utilisateurs de manipuler aisément les recettes des artistes, 
@@ -74,6 +80,18 @@ en laissant typiquement tourner en boucle pendant toute la nuit.
 Autrement dit, c'est comme si vous aviez plus de droit de vote sur la redistribution des recettes,
 en écoutant davantage Spotify.
 
+Alors, depuis le cas Vulpeck, les services de streaming ont des algorithmes anti-fraudes,
+qui détectent et annulent les tentatives grossières de manipuler le système de paiement.
+Mais bien sûr, les fraudeurs se sont adaptés, 
+et ils ont maintenant largement automatisé l'écoute réaliste des contenus, 
+tout en la rendant suffisamment réaliste pour ne pas se faire détecter.  
+https://musiczone.substack.com/p/le-big-hold-up-des-faux-streams
+
+je vous invite vivement à lire cette enquête glaçante de Philippe Astor,
+qui décrit toute une industrie de la fauusse écoute,
+dont certains tres grands artistes semblent être des clients.  
+https://musiczone.substack.com/p/le-big-hold-up-des-faux-streams
+
 D'ailleurs, ce hack fut même organisé et facilité par l'application Eternify,
 développée par un autre groupe de musique en protestation 
 avec le manque de protection des petits artistes.  
@@ -83,28 +101,38 @@ Pour contrer cette faille du système de paiement,
 Deezer va passer à un système de paiement dit "User-Centric".
 Selon ce système, les abonnements des utilisateurs ne sont plus regroupés.
 Chacun de ses abonnements est répartis, 
-en fonction uniquement des temps d'écoute par l'utilisateur en question.  
+en fonction uniquement des écoute de l'utilisateur en question.  
 https://www.deezer-blog.com/how-much-does-deezer-pay-artists/
 
 En plus d'empêcher la triche par fausses écoutes,
 ce système très simple et naturel semble aussi plus équitable.
-La répartition des recettes dépend en effet alors bien moins des très gros consommateurs.
-En fait, avec le système User-Centric, chaque utilisateur contrôle parfaitement
-quels artistes seront financés par ses abonnements.
+La répartition des recettes dépend en effet alors bien moins 
+de ce qu'écoute les très gros consommateurs des plateformes de streaming.
+En fait, avec le système User-Centric, 
+chaque utilisateur contrôle qui sera financé par ses abonnements.
+L'utilisateur ne rémunère que celles et ceux qu'il écoute.
 "Pay who you play", comme disent Deezer.
 
-Malheureusement, contrairement à Deezer, 
-Spotify et Apple sont plus réticents à changer de systèmes.  
+Malheureusement, malgré des bonnes volontés chez Deezer
+qui appellent à adopter le système User-Centric depuis 2016,
+Deezer n'a pas encore transitionné à ce système.
+Quant à eux, Spotify et Apple sont plus réticents à changer de systèmes.  
 https://www.digitalmusicnews.com/2022/08/02/streaming-payouts-user-centric-payment-system-market-share-payment-system/
 
-Et il semble qu'il pourrait y avoir une raison très malsaine derrière cette réticence.
-En effet, bien conscients qu'ils pouvaient hacker leur succès musical,
-des gros artistes pourraient avoir payé les services du cybercrime,
-pour automatiser les fausses écoutes et faire gonfler les chiffres des tubes de ces artistes.
-Pour se rendre compte à quel point c'est malsain, 
-je vous invite vivement à lire cette enquête glaçante de Philippe Astor,
-qui décrit toute une industrie.  
-https://musiczone.substack.com/p/le-big-hold-up-des-faux-streams
+Et il y a une raison simple à cela.
+Ce changement de système revient à redistribuer les richesses différemment,
+ce qui entraînera inéluctablement des gagnants et des perdants.
+Selon une simulation du Centre National de la Musique,
+le rock et la pop y gagneraient, au détriment du rap et du hip hop.  
+https://cnm.fr/en/studies/impact-of-online-music-streaming-services-adopting-the-ucps/
+
+Selon une étude de chercheurs de l'Université de Hambourg,  
+https://link.springer.com/article/10.1007/s11747-022-00875-6
+
+Mais du coup, certaines grandes maisons de disque pourraient y perdre !
+Et comme celles-ci ont un pouvoir de marché particulièrement important,
+et qu'elles peuvent menacer les plateformes de streaming de les quitter,
+le statu quo semble difficile à faire évoluer...
 
 Ce phénomène est particulièrement insidieux, 
 sachant à quel point l'apparence de succès est un facteur majeur du succès en musique,
