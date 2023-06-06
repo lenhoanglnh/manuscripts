@@ -83,7 +83,7 @@ en écoutant davantage Spotify.
 Alors, depuis le cas Vulpeck, les services de streaming ont des algorithmes anti-fraudes,
 qui détectent et annulent les tentatives grossières de manipuler le système de paiement.
 Mais bien sûr, les fraudeurs se sont adaptés, 
-et ils ont maintenant largement automatisé l'écoute réaliste des contenus, 
+et ils ont maintenant largement automatisé l'écoute des contenus, 
 tout en la rendant suffisamment réaliste pour ne pas se faire détecter.  
 https://musiczone.substack.com/p/le-big-hold-up-des-faux-streams
 
@@ -112,11 +112,11 @@ de ce qu'écoute les très gros consommateurs des plateformes de streaming.
 En fait, avec le système User-Centric, 
 chaque utilisateur contrôle qui sera financé par ses abonnements.
 L'utilisateur ne rémunère que celles et ceux qu'il écoute.
-"Pay who you play", comme disent Deezer.
+"Pay who you play", comme dit Deezer.
 
 Malheureusement, malgré des bonnes volontés chez Deezer
 qui appellent à adopter le système User-Centric depuis 2016,
-Deezer n'a pas encore transitionné à ce système.
+Deezer n'a pas encore transitionné vers ce système.
 Quant à eux, Spotify et Apple sont plus réticents à changer de systèmes.  
 https://www.digitalmusicnews.com/2022/08/02/streaming-payouts-user-centric-payment-system-market-share-payment-system/
 
@@ -172,7 +172,7 @@ Comme j'en ai parlé dans une vidéo précédente,
 cette hypothèse dite "i.i.d." est l'une des plus irréalistes et des plus dangereuse 
 des hypothèses "standards" en machine learning - 
 l'autre hypothèse dangereusement politisée étant l'objectif de généraliser les données collectées,
-qui est clairement en parti pris pour le statu quo et les idées les plus populaires...  
+qui est clairement un parti pris pour le statu quo et les idées les plus populaires...  
 https://tournesol.app/entities/yt:IVqXKP91L4E
 
 Pour se rendre compte de l'inadéquation de l'hypothèse i.i.d., 
@@ -181,7 +181,7 @@ Le pot commun des temps d'écoute représente en fait très mal l'usage de Spoti
 Mais surtout, tout mettre dans un même pot revient à survaloriser
 les utilisateurs qui ont une grosse consommation de Spotify,
 et à ignorer ceux qui en ont une consommation plus occasionnelle.
-Mais surtout, il suffit dès lors d'écouter plus pour davantage influencer
+Ainsi, il suffit dès lors d'écouter plus pour davantage influencer
 la redistribution des recettes de Spotify.
 
 Autrement dit, on peut identifier deux failles, l'une d'équité et l'autre de sécurité.
@@ -238,7 +238,8 @@ Mais clairement, ceci est insuffisant, sachant qu'il suffirait alors d'injecter 
 pour acquérir plus de droits de votes.  
 https://tournesol.app/entities/yt:iy2RZbq7Kn4
 
-Eh bien, on aura fourni une solution très propre, 
+Eh bien, avec mes collègues Sadegh Farhadkhani, Oscar Villemaud et Rachid Guerraoui, 
+on a fourni une solution très propre, 
 et finalement très proche du paiement User-Centric,
 dans un article accepté en 2022 à la conférence ultra-prestigieuse ICML,
 dont j'avais fait un vlog il y a plusieurs mois.  
@@ -394,8 +395,8 @@ Merci beaucoup à eux pour ce partenariat.
 # Conclusions
 
 Si je récapitule, on a vu aujourd'hui que, très souvent,
-les statistiques étaient aggrégées et des décisions importantes, 
-avec parfois des milliards en jeu,
+les statistiques étaient aggrégées sans se soucier de leurs origines,
+et des décisions importantes, avec parfois des milliards en jeu,
 sont prises à partir de ces statistiques aggrégées.
 J'espère que vous retiendrez qu'il s'agit là en fait d'une très mauvaise façon de faire,
 aussi bien sur le plan de l'éthique que sur le plan de la sécurité.
