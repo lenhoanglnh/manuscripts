@@ -87,9 +87,10 @@ et ils ont maintenant largement automatisé l'écoute réaliste des contenus,
 tout en la rendant suffisamment réaliste pour ne pas se faire détecter.  
 https://musiczone.substack.com/p/le-big-hold-up-des-faux-streams
 
-je vous invite vivement à lire cette enquête glaçante de Philippe Astor,
-qui décrit toute une industrie de la fauusse écoute,
-dont certains tres grands artistes semblent être des clients.  
+Je vous invite vivement à lire cette enquête glaçante de Philippe Astor,
+qui décrit toute une industrie de la fausse écoute,
+que le journaliste qualifie de "mafia",
+dont certains très grands artistes semblent être des clients.  
 https://musiczone.substack.com/p/le-big-hold-up-des-faux-streams
 
 D'ailleurs, ce hack fut même organisé et facilité par l'application Eternify,
@@ -126,7 +127,10 @@ Selon une simulation du Centre National de la Musique,
 le rock et la pop y gagneraient, au détriment du rap et du hip hop.  
 https://cnm.fr/en/studies/impact-of-online-music-streaming-services-adopting-the-ucps/
 
-Selon une étude de chercheurs de l'Université de Hambourg,  
+Une étude de chercheurs de l'Université de Hambourg confirme cela,
+avec notamment une perte estimée à près 90 millions d'euros 
+pour le hip hop et le rap allemand,
+par opposition à des gains importants pour le rock, le metal et le classique.
 https://link.springer.com/article/10.1007/s11747-022-00875-6
 
 Mais du coup, certaines grandes maisons de disque pourraient y perdre !
@@ -136,8 +140,18 @@ le statu quo semble difficile à faire évoluer...
 
 Ce phénomène est particulièrement insidieux, 
 sachant à quel point l'apparence de succès est un facteur majeur du succès en musique,
-comme l'a montré Mehdi Moussaid dans une excellente vidéo Fouloscopie.  
+comme l'ont montré Salganik, Dodds et Watts en 2006,  
+https://www.science.org/doi/10.1126/science.1121066  
+dans une expérience répliquée par Mehdi Moussaid dans une excellente vidéo Fouloscopie.  
 https://tournesol.app/entities/yt:ppSrAHoGwrI
+
+En particulier, en manipulant les algorithmes de recommandation,
+l'impression de succès peut être boosté, et peut ainsi permettre un succès effectif.
+Un journaliste affirme ainsi avoir reçu une offre.
+Pour 12 000 euros, une agence de publicité lui promettait 1 millions de vues sur YouTube.
+Dans un contexte où la fraude est facile et peu combattue,
+l'argent fait le succès... qui fait lui-même beaucoup d'argent !  
+https://musiczone.substack.com/p/le-big-hold-up-des-faux-streams
 
 Plus généralement, la manière dont les activités des utilisateurs sont aggrégées 
 est un aspect critique pour la sécurité et l'équité, et donc l'éthique, des systèmes ainsi conçus.
@@ -165,8 +179,8 @@ Pour se rendre compte de l'inadéquation de l'hypothèse i.i.d.,
 il suffit d'en revenir au cas de Spotify.
 Le pot commun des temps d'écoute représente en fait très mal l'usage de Spotify.
 Mais surtout, tout mettre dans un même pot revient à survaloriser
-les utilisateurs qui ont une consommation abusive de Spotify,
-et à ignorer ceux qui en ont une consommation plus raisonnée.
+les utilisateurs qui ont une grosse consommation de Spotify,
+et à ignorer ceux qui en ont une consommation plus occasionnelle.
 Mais surtout, il suffit dès lors d'écouter plus pour davantage influencer
 la redistribution des recettes de Spotify.
 
@@ -254,51 +268,101 @@ on a rusé et on a remplacé les forces unitaires par des forces quasi-unitaires
 obtenues avec la smooth-L2 putôt que la L2, ce qui a par ailleurs d'autres avantage.
 Mais on peut oublier ces détails techniques pour aujourd'hui !
 
-En fait, le système User-Centric est en gros un cas particulier de notre article.
-Dans ce cas, chaque utilisateur a un vecteur d'écoute, 
-qui assigne un nombre d'heures d'écoute par artiste.
-Au lieu de prendre directement la moyenne de ces heures d'écoutes,
-on normalise ces heures d'écoute, 
-en divisant par le nombre total d'heures d'écoute de l'utilisateur.
+En fait, les systèmes de paiement Market-Centric et User-Centric 
+sont intimement liés aux problèmes de robustesse discutés dans notre article.
+Dans ces cas, chaque utilisateur a un vecteur d'écoute, 
+qui assigne à chaque artiste un vecteur d'écoutes.
+Le système Market-Centric est alors équivalent 
+à prendre la moyenne des vecteurs d'écoute des abonnés à la plateforme de streaming,
+puis à répartir les recettes de manière proportionnelle à ce vecteur d'écoutes.
 
-Autrement dit, on prend le vecteur d'écoute colinéaire de norme unitaire,
-avec une petite précision : la norme considérée ici est la norme L1, pas la norme euclidienne L2.
-Puis chaque utilisateur tire la distribution des heures d'écoute avec ce vecteur normalisé.
-La somme des vecteurs normalisés détermine alors la répartition des recettes
-selon le système User-Centric !
+Mais si vous avez suivi la vidéo précédente,
+vous savez très bien que cette solution est mauvaise, car la moyenne est très manipulable,
+en exaggérant le vecteur vers les directions qu'on préfère - 
+ce qui peut être fait avec les fausses écoutes.
 
-NB: La somme des gradients est ici directement le résultat final, 
-pas le gradient à intégrer dans une étape d'apprentissage.
+A contrario, le paiement User-Centric est équivalent à d'abord normaliser 
+les vecteurs d'écoutes des différents abonnés,
+à ensuite prendre la moyenne des vecteurs ainsi normalisés,
+et à payer les artistes proportionnellement au vecteur moyen ainsi calculé -
+bon techniquement ce ne sont pas les artistes qui sont payés,
+mais leurs ayant-droits, typiquement les maisons de disques des artistes.
 
-Alors, en termes d'incitatifs, la normalisation L1 n'est pas tip top.
-Elle est même moins bien que la norme L2, en un certain sens.
-Typiquement, si vous trouvez qu'un artiste est sous-payé par rapport à un autre,
-notamment parce que les autres utilisateurs l'écoutent moins,
-vous pourriez vouloir effectuer des fausses écoutes pour ce premier artiste,
-alors que dans votre usage quotidien vous écoutez les deux autant.
+Et en fait, pour être plus précis, les vecteurs ne sont pas normalisés pour être de norme unitaire 
+selon la norme euclidienne, aussi appelée norme L2, 
+et qui est la manière usuelle de calculer des distances.
+Ils sont de norme unitaire selon la norme L1.
+Autrement dit, la somme des coordonnées du vecteur doit être unitaire.
 
-NB: Encore une fois, ce que je dis là est approximatif, et surtout illustratif,
-mais la L1 a tendance en effet à favoriser les "Dirac" sur une coordonnée.
+Et alors, cette solution est en effet plus robuste, 
+mais elle n'a pas les jolies propriétés d'incitatifs alignés avec l'honnêteté
+dont on a beaucoup parlé dans le cas de la médiane géométrique.
+En effet, si je suis tout aussi fan de 2 artistes aux succès très différents,
+disons le sosie de Lê d'un côté - [extrait de Lê avec son ukulélé] -
+et Taylor Swift de l'autre,
+mais si je pense que le sosie de Lê est sous-payé, et que Taylor Swift ne l'est pas,
+j'ai tout intérêt à mentir dans mon vote, et à voter entièrement pour le sosie de Lê -
+par exemple avec des fausses écoutes... 
+parce que, bon, c'est quand même un peu chiant d'écouter le sosie de Lê toute la nuit...
 
-En fait, la normalisation qui a les meilleures propriétés en termes d'incitatifs,
-c'est la normalisation L infini, qui est intimement liée à la médiane par coordonnée.
+Comme je l'avais dit dans la vidéo précédente, s'il faut répartir des budgets,
+au moins d'un point de vue sécurité et équité du vote,
+et en oubliant la difficulté d'explicabilité pour le plus grand nombre,
+la solution que je préconise c'est bien plus la médiane géométrique,
+notamment à cause de ses propriétés de robustesse, d'incitatifs alignés avec l'honnêteté
+et de localisation dans l'enveloppe convexe des votes reçus.
+
+Mais d'ailleurs, dans le cas particulier du streaming, 
+d'autres considérations pourraient aussi entrer en jeu, 
+comme ne pas trop valoriser l'avis d'une personne qui n'a fait qu'une écoute dans l'année,
+le fait de soutenir les artistes indépendants et de leur garantir un salaire minimum,
+quitte potentiellement à limiter les recettes mirobolantes des méga-artistes,
+voire le fait de favoriser les auteurs de musique qui améliorent le bien-être des consommateurs,
+et qui diffusent des messages positifs pour la société,
+aux dépens de ceux qui pourraient appeler à la haine et à la violence, par exemple.
+
+En fait, l'algorithme qui détermine la répartition des recettes des plateformes de streaming,
+et plus encore l'algorithme de recommandation qui met en avant certains contenus plutôt que d'autres,
+c'est on-ne-peut-plus un objet politique en soi,
+qui va déterminer la survie économique des différents créateurs de contenus,
+les habitudes de consommation audio d'un demi-milliard d'humains
+et les cultures musicales prédominantes aux quatre coins du monde -
+quand bien même cet objet politique est sous le contrôle d'entreprises privées.
+Et donc, tout ce dont on a parlé dans la série sur la démocratie,
+et tout ce dont on a parlé dans cette série sur l'éthique de l'information,
+s'applique à ces algorithmes des plateformes de streaming.
+
+Et bien entendu, tout ceci s'applique en particulier à Tournesol,
+cette plateforme qui vise à concevoir un algorithme de recommandation sécurisé et éthique,
+en s'appuyant sur des principes de gouvernance démocratique.
+Et sur Tournesol, justement, l'aggrégation des contributions des contributeurs
+s'appuie sur une autre normalisation encore, à savoir la normalisation L infini.
+Je ne rentre pas dans trop de détails pour aujourd'hui - on y reviendra -
+mais en gros, sur Tournesol, et pour chaque vidéo qu'il ou elle a explicitement jugé,
+chaque contributeur va en gros tirer le score de cette vidéo vers le score
+qu'il ou elle juge être le score adéquat de la vidéo.
+
 Si on l'appliquait à Spotify ou Deezer, 
 cette normalisation revient à vous demander, pour chaque artiste, 
 si vous pensez qu'il devrait être payé plus ou moins qu'il ne l'est actuellement.
-Chaque utilisateur tire alors la recette de l'artiste vers le haut ou vers le bas.
+Chaque utilisateur tire alors la recette de l'artiste vers le haut ou vers le bas -
+ce qui n'est pas évident parce qu'on obtient alors une recette totale à reverser
+qui n'a a priori rien à voir avec les recettes de ces plateformes -
+bon, c'est un problème qui se pose beaucoup moins sur Tournesol,
+puisque nous on reverse des scores Tournesol, pas de l'argent.
 
-Alors, ceci pose d'autres problèmes, 
-sachant que si on applique ceci naïvement au cas de Spotify et Deezer,
-on va en fait calculer une sorte de temps d'écoute médian, 
-qui sera quasiment toujours égal à zéro.
-Bref. Il ne faut pas faire cela naïvement.
-
-Mais chez Tournesol, on a beaucoup travaillé pour faire tout cela aussi intelligemment que possible,
-et ça nous a conduit à développer depuis 3 ans 
+En fait, même sur Tournesol, 
+ce principe de vote par norme L infini ne marche pas du tout
+si on l'appliquait naïvement ainsi.
+Pour obtenir une démocratie algorithmique satisfaisante,
+il nous a fallu développer, depuis maintenant 3 ans,
 une toute nouvelle théorie des votes sécurisés et équitables,
 qui tient désormais dans plusieurs articles de recherche,
 et qu'on continue à améliorer tous les jours,
-notamment en cherchant à intégrer de volition, de vote bayésien ou encore de démocratie liquide.
+notamment en cherchant à intégrer de volition, du vote bayésien ou encore de démocratie liquide -
+avec dernièrement des progrès assez excitants 
+dans la théorie des conversions de comparaisons en scores,
+qui s'appuie désormais sur des mathématiques incroyablement élégantes dont j'ai hâte de vous parler.
 
 Si tout ceci peut sembler très technique, 
 (et malheureusement, c'est en effet très technique),
@@ -367,7 +431,16 @@ Et pour monter en expertise sur ces sujets critiques,
 sachez que notre entreprise Calicarpa, co-fondée par trois experts du domaine,
 offre du conseil et de la formation pour vous et vos équipes.
 Je vous invite à prendre contact avec moi, 
-si vous souhaitez faire profiter vos équipes de nos services.
+si vous souhaitez faire profiter vos équipes de nos services,
+pour les éviter de tomber dans les nombreux pièges de la cybersécurité des IA,
+dont même les ingénieurs de Samsung sont des victimes...  
+https://www.lemonde.fr/pixels/article/2023/05/02/samsung-interdit-l-utilisation-de-chatgpt-a-une-partie-de-ses-employes_6171774_4408996.html
 
+Le développement du numérique est aujourd'hui un énorme far west,
+qui ne cesse de considérer que les enjeux de sécurité, d'éthique et de gouvernance,
+sont secondaires et ne méritent pas une attention centrale.
+J'espère que je peux compter sur vous pour ne pas tomber dans ce travers,
+et pour faire au moins vos premiers pas 
+vers un numérique plus sécurisé, éthique et collaborativement gouverné.
 
 
