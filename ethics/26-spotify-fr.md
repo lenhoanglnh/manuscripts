@@ -388,7 +388,7 @@ notamment par opposition aux entreprises américaines soumises au Patriot Act.
 Vous pouvez profitez gratuitement des services Mail et SwissTransfer d'Infomaniak,
 et je vous recommande aussi vivement leurs services Web, kMeet ou encore kDrive.
 Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir,
-Infomaniak reverse 2000 CHF de donation à l'Association Tournesol.
+Infomaniak reverse un don à l'Association Tournesol.
 Merci beaucoup à eux pour ce partenariat.
 
 
