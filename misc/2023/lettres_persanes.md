@@ -49,7 +49,7 @@ Or je sais que tu en profites pour questionner ces sites et récupérer de l'inf
 Et même lorsqu'il s'agit de sites qui ne font pas appels à tes services, 
 comme Mastodon ou Wikipedia, 
 je sais que tu surveilles et prends note de tout ce que ces sites publient, 
-ne serait-ce que pour alimenter le moteur de recherche que tu alimentes.
+ne serait-ce que pour le moteur de recherche que tu alimentes.
 
 Enfin, parce que, comme le monde des algorithmes, 
 le monde des humains est extrêmement interconnecté, 
