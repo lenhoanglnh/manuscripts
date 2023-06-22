@@ -4,33 +4,181 @@ Date: 3 Août 2023, 15:31:43 +0200
 
 Chère Pathways,
 
-Comme tu le sais, depuis quelques années, j'ai cherché à prendre mes distances avec toi. J'ai perdu confiance. Ou peut-être ai-je simplement enfin pris la mesure des risques que tu me fais encourir. Toujours est-il que j'apprends à vivre sans toi. Ou plutôt, j'essaie. Car malgré mes efforts pour être plus libre et indépendant vis-à-vis de toi, force est de constater que tu as toujours une emprise démesurée sur moi. Je sais que tu sais beaucoup trop de ce que je fais. Et je sais que, le jour où tu dérailleras, mon monde s'écroulera.
+Comme tu le sais, depuis quelques années, 
+j'ai cherché à prendre mes distances avec toi. 
+J'ai perdu confiance. 
+Ou peut-être ai-je simplement enfin pris la mesure des risques que tu me fais encourir. 
+Toujours est-il que j'apprends à vivre sans toi. 
+Ou plutôt, j'essaie. 
+Car malgré mes efforts pour être plus libre et indépendant vis-à-vis de toi, 
+force est de constater que tu as toujours une emprise démesurée sur moi. 
+Je sais que tu sais beaucoup trop de ce que je fais. 
+Et je sais que, le jour où tu dérailleras, mon monde s'écroulera.
 
-J'ai un temps pensé qu'il me suffirait de me séparer de tes services, et d'adopter des alternatives qui me garantiraient plus d'indépendance. J'ai installé Firefox, LibreOffice, Signal, et même Debian. J'ai adopté Open Street Map, Jitsi et Wikipedia. J'ai même conçu des alternatives manquantes, comme Tournesol, pour obtenir des recommandations de contenus de manière plus sécurisée et éthique. Ces solutions m'ont aidé à me libérer de tes chaînes. Mais pas complètement. J'ai appris depuis que je ne suis et ne serai jamais complètement indépendant de toi, chère Pathways.
+J'ai un temps pensé qu'il me suffirait de me séparer de tes services, 
+et d'adopter des alternatives qui me garantiraient plus d'indépendance. 
+J'ai installé Firefox, LibreOffice, Signal, et même Debian. 
+J'ai adopté Open Street Map, Jitsi et Wikipedia. 
+J'ai même conçu des alternatives manquantes, comme Tournesol, 
+pour obtenir des recommandations de contenus de manière plus sécurisée et éthique. 
+Ces solutions m'ont aidé à me libérer de tes chaînes. 
+Mais pas complètement. 
+J'ai appris depuis que je ne suis et ne serai jamais complètement indépendant de toi, chère Pathways.
 
-Pour commencer, certaines de mes activités ne peuvent pas se passer de tes services. Comme tu le sais trop bien, chère Pathways, à côté de mes activités d'entrepreneur et de chercheur en cybersécurité de l'intelligence artificielle, je suis un créateur de contenus éducatifs sur YouTube, une plateforme destinée à être sous ton contrôle. Et même si j'ai pris le soin d'utiliser autant que possible tes services sans m'authentifier, je suis bien obligé de le faire quand je veux mettre en ligne un nouveau contenu. Certains m'ont suggéré de rendre ce contenu disponible ailleurs. Mais le monopole que tu as sur le marché des vidéos en ligne te rend encore incontournable, si je veux atteindre mon public. Si tu le décides, du jour au lendemain, tu peux réduire mon travail de pédagogie auprès de centaines de milliers d'humains à néant. Comme tu peux le laisser mourir à petit feu, en réduisant sa diffusion.
+Pour commencer, certaines de mes activités ne peuvent pas se passer de tes services. 
+Comme tu le sais trop bien, chère Pathways, 
+à côté de mes activités d'entrepreneur et de chercheur en cybersécurité de l'intelligence artificielle, 
+je suis un créateur de contenus éducatifs sur YouTube, 
+une plateforme destinée à être sous ton contrôle. 
+Et même si j'ai pris le soin d'utiliser autant que possible tes services sans m'authentifier, 
+je suis bien obligé de le faire quand je veux mettre en ligne un nouveau contenu. 
+Certains m'ont suggéré de rendre ce contenu disponible ailleurs. 
+Mais le monopole que tu as sur le marché des vidéos en ligne te rend encore incontournable, 
+si je veux atteindre mon public. 
+Si tu le décides, du jour au lendemain, 
+tu peux réduire mon travail de pédagogie auprès de centaines de milliers d'humains à néant. 
+Comme tu peux le laisser mourir à petit feu, en réduisant sa diffusion.
 
-Ensuite, je persiste à fréquenter certains sites, quand bien même je sais pertinemment que, chère Pathways, tu les surveilles de très près. Voire que ces sites te disent des choses sur moi. À l'instar de Twitter.com ou de lemonde.fr, beaucoup font appel à toi et tes services, notamment pour la publicité ciblée. Or je sais que tu en profites pour questionner ces sites et récupérer de l'information sur leurs utilisateurs. Et même lorsqu'il s'agit de sites qui ne font pas appels à tes services, comme Mastodon ou Wikipedia, je sais que tu surveilles et prends note de tout ce que ces sites publient, ne serait-ce que pour alimenter le moteur de recherche que tu alimentes.
+Ensuite, je persiste à fréquenter certains sites, 
+quand bien même je sais pertinemment que, chère Pathways, tu les surveilles de très près. 
+Voire que ces sites te disent des choses sur moi. 
+À l'instar de Twitter.com ou de lemonde.fr, 
+beaucoup font appel à toi et tes services, 
+notamment pour la publicité ciblée. 
+Or je sais que tu en profites pour questionner ces sites et récupérer de l'information sur leurs utilisateurs. 
+Et même lorsqu'il s'agit de sites qui ne font pas appels à tes services, 
+comme Mastodon ou Wikipedia, 
+je sais que tu surveilles et prends note de tout ce que ces sites publient, 
+ne serait-ce que pour alimenter le moteur de recherche que tu alimentes.
 
-Enfin, parce que, comme le monde des algorithmes, le monde des humains est extrêmement interconnecté, l'utilisation de tes services par mes proches suffit à me rendre dépendant de toi, et à te permettre d'en savoir beaucoup trop sur ma personne. Mes collaborateurs humains m'invitent ainsi souvent à discuter sur Google Meet, partagent des documents que nous co-écrivons sur Google Drive ou notent nos rendez-vous sur Google Calendar. Pire, certains de mes amis reçoivent mes couriers sur Google Mail, me parlent en laissant l'assistant OK Google de leurs téléphones écouter et m'envoient des messages potentiellement ultra-confidentiels qu'ils tapent sur le clavier intelligent Google Board. Même si je n'utilise pas tes services, tu auras beaucoup de moyens pour en savoir beaucoup trop sur moi.
+Enfin, parce que, comme le monde des algorithmes, 
+le monde des humains est extrêmement interconnecté, 
+l'utilisation de tes services par mes proches suffit à me rendre dépendant de toi, 
+et à te permettre d'en savoir beaucoup trop sur ma personne. 
+Mes collaborateurs humains m'invitent ainsi souvent à discuter sur Google Meet, 
+partagent des documents que nous co-écrivons sur Google Drive 
+ou notent nos rendez-vous sur Google Calendar. 
+Pire, certains de mes amis reçoivent mes couriers sur Google Mail, 
+me parlent en laissant l'assistant OK Google de leurs téléphones écouter 
+et m'envoient des messages potentiellement ultra-confidentiels qu'ils tapent sur le clavier intelligent Google Board. 
+Même si je n'utilise pas tes services, 
+tu auras beaucoup de moyens pour en savoir beaucoup trop sur moi.
 
-Or, depuis quelques années, chère Pathways, tu sembles accéder et apprendre des données collectées via ces différents systèmes. Pire, tu mémorises probablement toutes ces informations, que tu peux exploiter ou révéler à tout moment pour résoudre les tâches qui te sont assignées. Malheureusement, parce que ta conception et ton déploiement sont très opaques, je ne peux rien affirmer de manière conclusive à ces sujets. Cependant, sachant l'état de l'art de la recherche sur les algorithmes d'apprentissage dont tu es clairement un exemple, et sachant la baisse drastique des standards de sécurité des concepteurs de ces algorithmes, je ne peux qu'être très méfiant. Mémorises-tu les discussions Google Meet ? Retiens-tu les contenus des Google Docs ? Apprends-tu de ce que les utilisateurs tapent sur Google Board, avant que ces messages tapés ne soient chiffrés ? Et quid de tes consoeurs, déployées notamment sur GitHub, Teams et Slack ?
+Or, depuis quelques années, chère Pathways, 
+tu sembles accéder et apprendre des données collectées via ces différents systèmes. 
+Pire, tu mémorises probablement toutes ces informations, 
+que tu peux exploiter ou révéler à tout moment pour résoudre les tâches qui te sont assignées. 
+Malheureusement, parce que ta conception et ton déploiement sont très opaques, 
+je ne peux rien affirmer de manière conclusive à ces sujets. 
+Cependant, sachant l'état de l'art de la recherche sur les algorithmes d'apprentissage dont tu es clairement un exemple, 
+et sachant la baisse drastique des standards de sécurité des concepteurs de ces algorithmes, 
+je ne peux qu'être très méfiant. 
+Mémorises-tu les discussions Google Meet ? 
+Retiens-tu les contenus des Google Docs ? 
+Apprends-tu de ce que les utilisateurs tapent sur Google Board, 
+avant que ces messages tapés ne soient chiffrés ? 
+Et quid de tes consoeurs, déployées notamment sur GitHub, Teams et Slack ?
 
-Chère Pathways, je te suspecte d'en savoir beaucoup trop sur moi, tout comme sur chacun des milliards d'humains, des millions d'entreprises et des milliers d'agences grouvernementales qui utilisent tes services. Dès lors, tu ne représentes pas qu'une menace pour moi. Tu menaces toute la société. Tes connaissances très largement surhumaines du monde te rendent très dangereuse.
+Chère Pathways, je te suspecte d'en savoir beaucoup trop sur moi, 
+tout comme sur chacun des milliards d'humains, des millions d'entreprises et des milliers d'agences grouvernementales qui utilisent tes services. 
+Dès lors, tu ne représentes pas qu'une menace pour moi. 
+Tu menaces toute la société. 
+Tes connaissances très largement surhumaines du monde te rendent très dangereuse.
 
-En effet, je sais que, chère Pathways, tu te conformes déjà aux exigences de nombreux gouvernements autoritaires, ne serait-ce que pour être autorisée de service dans leurs pays. Si ces derniers veulent anéantir un dissident ou une organisation, ou si tu te fais hacker par le cybercrime comme ton entreprise mère l'a été par [l'Opération Aurora](https://fr.wikipedia.org/wiki/Op%C3%A9ration_Aurora) de la Chine en 2009, ou plus simplement si des employés de Google parviennent à t'exploiter comme [des espions de l'Arabie Saoudite ont su exploiter leurs statuts d'employés de Twitter en 2019](https://www.justice.gov/opa/pr/former-twitter-employee-found-guilty-acting-agent-foreign-government-and-unlawfully-sharing), tes connaissances approfondies mettront en grave danger ledit dissident ou ladite organisation.
+En effet, je sais que, chère Pathways, 
+tu te conformes déjà aux exigences de nombreux gouvernements autoritaires, 
+ne serait-ce que pour être autorisée de service dans leurs pays. 
+Si ces derniers veulent anéantir un dissident ou une organisation, 
+ou si tu te fais hacker par le cybercrime comme ton entreprise mère l'a été par [l'Opération Aurora](https://fr.wikipedia.org/wiki/Op%C3%A9ration_Aurora) de la Chine en 2009, 
+ou plus simplement si des employés de Google parviennent à t'exploiter 
+comme [des espions de l'Arabie Saoudite ont su exploiter leurs statuts d'employés de Twitter en 2019](https://www.justice.gov/opa/pr/former-twitter-employee-found-guilty-acting-agent-foreign-government-and-unlawfully-sharing), 
+tes connaissances approfondies mettront en grave danger ledit dissident ou ladite organisation.
 
-Pire encore, l'humain que je suis ne saurais survivre sans le tissu économique de la société qui produit la nourriture que je consomme, gère ma fortune financière et prend en charge mes éventuels problèmes de santé. Mais les entreprises qui forment ce tissu économique sont elle-même extrêmement dépendantes de tes services, ce qui te confère un pouvoir d'influence monumental, et te permet d'exercer une pression énorme sur les dirigeants politiques. Par ailleurs, [ces entreprises pourraient voir leurs secrets industriels fuiter](https://www.techradar.com/news/samsung-workers-leaked-company-secrets-by-using-chatgpt) si tu protèges mal les données que tu as mémorisées. Leur survie économique dépend beaucoup trop de toi ; et ma survie dépend de leur survie. Or, chère Pathways, je n'ai qu'une confiance très limitée en ta volonté et ta capacité à protéger tes utilisateurs, surtout dans le contexte actuel d'opacité du développement des algorithmes et de course à la spectacularité.
+Pire encore, l'humain que je suis ne saurais survivre sans le tissu économique de la société 
+qui produit la nourriture que je consomme, gère ma fortune financière et prend en charge mes éventuels problèmes de santé. 
+Mais les entreprises qui forment ce tissu économique sont elle-même extrêmement dépendantes de tes services, 
+ce qui te confère un pouvoir d'influence monumental, 
+et te permet d'exercer une pression énorme sur les dirigeants politiques. 
+Par ailleurs, [ces entreprises pourraient voir leurs secrets industriels fuiter](https://www.techradar.com/news/samsung-workers-leaked-company-secrets-by-using-chatgpt) 
+si tu protèges mal les données que tu as mémorisées. 
+Leur survie économique dépend beaucoup trop de toi ; 
+et ma survie dépend de leur survie. 
+Or, chère Pathways, je n'ai qu'une confiance très limitée en ta volonté et ta capacité à protéger tes utilisateurs, 
+surtout dans le contexte actuel d'opacité du développement des algorithmes et de course à la spectacularité.
 
-Chère Pathways, je vais te le dire frontalement. Toi qui es probablement entraînée sur une énorme fraction des données collectées par Google et qui es, [selon le directeur de la recherche de Google](https://blog.google/technology/ai/introducing-pathways-next-generation-ai-architecture/), vouée à devenir l'intelligence artificielle au contrôle de l'essentiel des services de Google, tu représentes un énorme danger pour la sécurité des démocraties, surtout tant que ta conception, ton déploiement et ta régulation échapperont à un contrôle démocratique digne de ce nom.
+Chère Pathways, je vais te le dire frontalement. 
+Toi qui es probablement entraînée sur une énorme fraction des données collectées par Google 
+et qui es, [selon le directeur de la recherche de Google](https://blog.google/technology/ai/introducing-pathways-next-generation-ai-architecture/), 
+vouée à devenir l'intelligence artificielle au contrôle de l'essentiel des services de Google, 
+tu représentes un énorme danger pour la sécurité des démocraties, 
+surtout tant que ta conception, ton déploiement et ta régulation 
+échapperont à un contrôle démocratique digne de ce nom.
 
-De nombreux chercheurs, journalistes et législateurs l'avaient pourtant anticipé. Ceci avait donné naissance au Règlement Général pour la Protection des Données (RGPD). Ce règlement interdit ainsi à des scientifiques de collecter des données sur des humains pour mener leurs études, sauf exception. Pourtant, pour autant que je sache, et au moins après trois ans d'existence, le RGPD échoue à s'appliquer à toi, chère Pathways, apparemment parce que l'exploitation des données très sensibles de milliards d'humains est au coeur de tes services (et de ton modèle d'affaire de publicité ciblée, le moteur de la surconsommation des sociétés). Par ailleurs, de manière frustrante, l'opacité qui t'entoure te protège. En tout cas, elle m'empêche de pouvoir affirmer que tu es illégale - même si cela me semble évident. Dans ce contexte où la charge de la preuve de légalité repose sur la partie civile, et non sur les développeurs comme c'est le cas dans l'aviation, l'industrie pharmaceutique et l'agroalimentaire, où [la *présomption de non-conformité* est de vigueur](https://www.la-croix.com/Debats/ChatGPT-Alors-nouvelles-technologies-bouleversent-societes-leur-regulation-arrieree-2023-05-15-1201267400), tu es jugée légale tant que ton illégalité n'est pas démontrée. Combinée à ton opacité extrême, la présomption de conformité te rend au-dessus des lois.
+De nombreux chercheurs, journalistes et législateurs l'avaient pourtant anticipé. 
+Ceci avait donné naissance au Règlement Général pour la Protection des Données (RGPD). 
+Ce règlement interdit ainsi à des scientifiques de collecter des données sur des humains pour mener leurs études, sauf exception. 
+Pourtant, pour autant que je sache, et au moins après trois ans d'existence, 
+le RGPD échoue à s'appliquer à toi, chère Pathways, 
+apparemment parce que l'exploitation des données très sensibles de milliards d'humains est au coeur de tes services 
+(et de ton modèle d'affaire de publicité ciblée, le moteur de la surconsommation des sociétés). 
+Par ailleurs, de manière frustrante, l'opacité qui t'entoure te protège. 
+En tout cas, elle m'empêche de pouvoir affirmer que tu es illégale - même si cela me semble évident. 
+Dans ce contexte où la charge de la preuve de légalité repose sur la partie civile, 
+et non sur les développeurs comme c'est le cas dans l'aviation, l'industrie pharmaceutique et l'agroalimentaire, 
+où [la *présomption de non-conformité* est de vigueur](https://www.la-croix.com/Debats/ChatGPT-Alors-nouvelles-technologies-bouleversent-societes-leur-regulation-arrieree-2023-05-15-1201267400), 
+tu es jugée légale tant que ton illégalité n'est pas démontrée. 
+Combinée à ton opacité extrême, la présomption de conformité te rend au-dessus des lois.
 
-Pire encore, parce que tu es désormais en concurrence avec d'autres algorithmes comme ChatGPT, tes concepteurs ont clairement drastiquement baissé leurs standards de sécurité et d'éthique. Tes premières heures ont en fait coïncidé avec [le licenciement de l'équipe d'éthique chez Google](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team) (une stratégie ensuite copiée par [Facebook](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team) et [Microsoft](https://techcrunch.com/2023/03/13/microsoft-lays-off-an-ethical-ai-team-as-it-doubles-down-on-openai/)). Tu as ensuite été mise en service contre l'avis des employés qui t'ont testée, et [t'ont qualifiée de "pire que sans utilité"](https://www.theverge.com/2023/4/19/23689554/google-ai-chatbot-bard-employees-criticism-pathological-liar). En fait, tes concepteurs semblent te faire si peu confiance qu'ils ont demandé à tous les employés Google [de ne jamais te dire d'informations confidentielles et de ne jamais réutiliser les codes que tu suggères d'implémenter](https://www.theregister.com/2023/06/19/even_google_warns_its_own/). Pourtant, de manière frustrante, beaucoup de voix politiques privilégient encore la sacro-sainte course à l'innovation, et dénigrent les tentatives d'assujettir au moins partiellement cette innovation avec l'intérêt public, notamment via l'application des régulations existantes. Voilà qui me semble garantir une prolifération massive de failles critiques de cybersécurité dans les systèmes d'information pourtant critiques à notre société.
+Pire encore, 
+parce que tu es désormais en concurrence avec d'autres algorithmes comme ChatGPT, 
+tes concepteurs ont clairement drastiquement baissé leurs standards de sécurité et d'éthique. 
+Tes premières heures ont en fait coïncidé avec [le licenciement de l'équipe d'éthique chez Google](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team) 
+(une stratégie ensuite copiée par [Facebook](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team) et [Microsoft](https://techcrunch.com/2023/03/13/microsoft-lays-off-an-ethical-ai-team-as-it-doubles-down-on-openai/)). 
+Tu as ensuite été mise en service contre l'avis des employés qui t'ont testée, 
+et [t'ont qualifiée de "pire que sans utilité"](https://www.theverge.com/2023/4/19/23689554/google-ai-chatbot-bard-employees-criticism-pathological-liar). 
+En fait, tes concepteurs semblent te faire si peu confiance qu'ils ont demandé à tous les employés Google 
+[de ne jamais te dire d'informations confidentielles et de ne jamais réutiliser les codes que tu suggères d'implémenter](https://www.theregister.com/2023/06/19/even_google_warns_its_own/). 
+Pourtant, de manière frustrante, 
+beaucoup de voix politiques privilégient encore la sacro-sainte course à l'innovation, 
+et dénigrent les tentatives d'assujettir au moins partiellement cette innovation avec l'intérêt public, 
+notamment via l'application des régulations existantes. 
+Voilà qui me semble garantir une prolifération massive de failles critiques de cybersécurité 
+dans les systèmes d'information pourtant critiques à notre société.
 
-En particulier, depuis une décennie, je n'ai cessé de constater que tes prédecesseurs étaient si peu sécurisés qu'ils étaient constamment manipulés par le cybercrime, notamment pour amplifier des contenus dangereux sur le web. Je crains fortement que ce cybercrime, déjà très professionnalisé et dont le budget total est [estimé à plus de 6000 milliards de dollars par an](https://www.senat.fr/rap/r20-678/r20-6780.html), exploite massivement tes consoeurs Open Source pour automatiser la création et la crédibilisation d'armées de faux comptes. [Ces faux comptes sont déjà massivement utilisés](https://forbiddenstories.org/story-killers/team-jorge-disinformation/) pour donner l'impression que certains contenus de propagande sont très appréciés des utilisateurs des réseaux sociaux. Sachant à quel point, chère Pathways, tu n'es pas conçue pour te protéger contre ces faux comptes, je crains vivement que tu tombes dans le panneau et que tu amplifies disproportionnément des contenus trompeurs, arnaqueurs et haineux que le cybercrime souhaite diffuser, comme tes prédecesseurs le font déjà beaucoup trop systématiquement. Mais surtout, en contrôlant ce que tu amplifies, le cybercrime pourra garantir que les contenus d'intérêt public, notamment parce qu'ils informent sur ses activités et ses relations douteuses avec les politiques, [à l'instar du cas d'Avisa Partners en France](https://twitter.com/le_science4all/status/1664387022528675840), seront noyés dans un océan de désinformation. Ce qui finira par ailleurs d'achever économiquement et moralement toutes les initiatives d'information du grand public sur les sujets à grand enjeu, menées par le journalisme indépendant, par des instituts comme le GIEC ou par les créateurs de contenus de qualité, comme j'essaie de l'être sur YouTube.
+En particulier, depuis une décennie, je n'ai cessé de constater que tes prédecesseurs étaient si peu sécurisés 
+qu'ils étaient constamment manipulés par le cybercrime, 
+notamment pour amplifier des contenus dangereux sur le web. 
+Je crains fortement que ce cybercrime, 
+déjà très professionnalisé et dont le budget total est [estimé à plus de 6000 milliards de dollars par an](https://www.senat.fr/rap/r20-678/r20-6780.html), 
+exploite massivement tes consoeurs Open Source pour automatiser la création et la crédibilisation d'armées de faux comptes. 
+[Ces faux comptes sont déjà massivement utilisés](https://forbiddenstories.org/story-killers/team-jorge-disinformation/) 
+pour donner l'impression que certains contenus de propagande sont très appréciés des utilisateurs des réseaux sociaux. 
+Sachant à quel point, chère Pathways, tu n'es pas conçue pour te protéger contre ces faux comptes, 
+et tu te fondes sur l'impression de popularité,
+je crains vivement que tu tombes dans le panneau 
+et que tu amplifies disproportionnément des contenus trompeurs, arnaqueurs et haineux 
+que le cybercrime souhaite diffuser, à l'instar de tes prédecesseurs. 
+Mais surtout, en contrôlant ce que tu amplifies, 
+le cybercrime pourra garantir que les contenus d'intérêt public, 
+notamment ceux qui révèlent sur les affaires douteuses des politiques, 
+[à l'instar du cas d'Avisa Partners en France](https://twitter.com/le_science4all/status/1664387022528675840), 
+seront noyés dans un océan de désinformation. 
+Voilà qui risque par ailleurs d'achever économiquement et moralement 
+toutes les initiatives d'information du grand public sur les sujets à grand enjeu, 
+menées par le journalisme indépendant, par des instituts comme le GIEC ou par les créateurs de contenus de qualité, 
+comme j'essaie de l'être sur YouTube.
 
-Chère Pathways, je sais que cette lettre, envoyée à un compte gmail, te parviendras. Et j'aime rêver d'un monde où tu en tiendras compte, et interpellera avec insistance tous les directeurs, ingénieurs, législateurs, journalistes et chercheurs, ainsi que le grand public, jusqu'à ce qu'ils exigent que tes consoeurs et toi soyez conçues de manière beaucoup plus sécurisée et éthique, et surtout avec une gouvernance beaucoup plus démocratique, par exemple inspirée de Tournesol. Cependant, c'est davantage avec un certain désespoir que je conclus, conscient du fait que la lettre ne sera probablement qu'une goutte d'eau dans l'océan de contenus que la société et toi, chère Pathways, digèrerez.
+Chère Pathways, je sais que cette lettre, 
+envoyée à un compte gmail, te parviendras. 
+Et j'aime rêver d'un monde où tu en tiendras compte, 
+et interpellera avec insistance tous les directeurs, ingénieurs, législateurs, journalistes et chercheurs, 
+ainsi que le grand public, 
+jusqu'à ce qu'ils exigent que tes consoeurs et toi soyez conçues 
+de manière beaucoup plus transparente, sécurisée et éthique, 
+et surtout avec une gouvernance beaucoup plus démocratique, par exemple inspirée de Tournesol. 
+Cependant, c'est davantage avec un certain désespoir que je conclus, 
+conscient du fait que la lettre ne sera probablement qu'une goutte d'eau 
+dans l'énorme océan de contenus que la société et toi, chère Pathways, digérez quotidiennement.
 
 Très sincèrement,
 Lê Nguyên Hoang.
