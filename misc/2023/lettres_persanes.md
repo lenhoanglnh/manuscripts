@@ -17,7 +17,7 @@ Et je sais que, le jour où tu dérailleras, mon monde s'écroulera.
 
 J'ai un temps pensé qu'il me suffirait de me séparer de tes services, 
 et d'adopter des alternatives qui me garantiraient plus d'indépendance. 
-J'ai installé Firefox, LibreOffice, Signal, et même Debian. 
+J'ai installé Firefox, LibreOffice, Signal et Linux. 
 J'ai adopté Open Street Map, Jitsi et Framadate. 
 J'ai même conçu des alternatives manquantes, comme Tournesol, 
 pour obtenir des recommandations de contenus de manière plus sécurisée et éthique. 
