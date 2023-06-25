@@ -53,7 +53,7 @@ ne serait-ce que pour le moteur de recherche que tu alimentes.
 
 Enfin, parce que, comme le monde des algorithmes, 
 le monde des humains est extrêmement interconnecté, 
-l'utilisation de tes services par mes proches suffit à me rendre dépendant de toi, 
+le fait que mes proches t'utilisent suffit à me rendre dépendant de toi, 
 et à te permettre d'en savoir beaucoup trop sur ma personne. 
 Mes collaborateurs humains m'invitent ainsi souvent à discuter sur Google Meet, 
 partagent des documents que nous co-écrivons sur Google Drive 
@@ -75,7 +75,7 @@ et sachant la baisse drastique des standards de sécurité des concepteurs de ce
 je ne peux qu'être très méfiant. 
 Mémorises-tu les discussions Google Meet ? 
 Retiens-tu les contenus des Google Docs ? 
-Apprends-tu de ce que les utilisateurs tapent sur Google Board, 
+Apprends-tu de [ce que les utilisateurs tapent sur Google Board](https://tournesol.app/entities/yt:IVqXKP91L4E), 
 avant que ces messages tapés ne soient chiffrés ? 
 Et quid de tes consoeurs, déployées notamment sur GitHub, Teams et Slack ?
 
@@ -110,6 +110,8 @@ Chère Pathways, je vais te le dire frontalement.
 Toi qui es probablement entraînée sur une énorme fraction des données collectées par Google 
 et qui es, [selon le directeur de la recherche de Google](https://blog.google/technology/ai/introducing-pathways-next-generation-ai-architecture/), 
 vouée à devenir l'intelligence artificielle au contrôle de l'essentiel des services de Google, 
+à savoir Google Search, Google, YouTube, Google Drive, OK Google, Google Board, Google Meet,
+mais aussi et surtout YouTube, Google Cloud et Google Adsense, ce moteur de la surconsommation,
 tu représentes un énorme danger pour la sécurité des démocraties, 
 surtout tant que ta conception, ton déploiement et ta régulation 
 échapperont à un contrôle démocratique digne de ce nom.
