@@ -128,7 +128,7 @@ et chaque nouvel appel à l'API d'un tiers
 est une vulnérabilité additionnelle.
 La meilleure cyberdéfense, c'est éviter les *bloatwares*,
 c'est-à-dire l'ajout d'outils numériques de faible utilité,
-mais qui pourraient un jour devenir le vecteur d'attaque fatale aux systèmes d'information.
+mais qui pourraient un jour devenir le vecteur d'une attaque fatale aux systèmes d'information.
 En cela, les algorithmes génératifs à tout faire sont des catastrophes pour la cybersécurité[^jailbreak_multimodal].
 
 [^calicarpa]: https://calicarpa.com
