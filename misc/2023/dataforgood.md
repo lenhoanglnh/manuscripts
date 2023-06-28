@@ -75,7 +75,7 @@ En particulier, pour espérer rétablir les droits humains,
 il semble urgent d'adopter la *présomption de non-conformité*,
 qui exige des concepteurs qu'ils démontrent la conformité de leurs produits
 pour obtenir le droit de commercialisation,
-comme cela est le cas dans les industries matûres 
+comme cela est le cas dans les industries matures 
 comme l'aviation, la pharmaceutique et l'agroalimentaire.
 
 ## Dépendance et sobriété numérique
