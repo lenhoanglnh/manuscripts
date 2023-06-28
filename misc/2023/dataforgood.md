@@ -3,7 +3,7 @@
 Les algorithmes génératifs sont capables de prouesses spectaculaires.
 OpenAI et Midjourney ont permis à des centaines de millions d'utilisateurs
 de prendre la mesure de tout ce que ces outils pouvaient leur apporter à l'échelle individuelle.
-Rapidement, les blogs et les réseaux sociaux se sont remplies de contenus 
+Rapidement, les blogs et les réseaux sociaux se sont remplis de contenus 
 avec des titres comme "9 façons d'améliorer votre productivité avec ChatGPT"
 ou "comment utiliser ChatGPT pour gagner beaucoup d'argent".
 Derrière cette posture individualiste vis-à-vis des technologies,
