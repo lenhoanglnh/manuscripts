@@ -89,7 +89,7 @@ elle soulève toutefois le problème plus établi de la dépendance numérique.
 En particulier, il est urgent de considérer que les fournisseurs de services informatiques
 peuvent un jour devenir des menaces dangereuses pour leurs clients.
 Or, la plupart des entreprises européennes sont déjà extrêmement dépendantes 
-du service informatique de Google, Microsoft ou Amazon, parmi d'autres.
+des services informatiques de Google, Microsoft ou Amazon, parmi d'autres.
 Si ces entreprises cessent leur activité sur le territoire européen, 
 parce qu'elles ont subi une cyberattaque
 ou parce que le gouvernement américain l'exige pour faire pression sur l'Europe,
