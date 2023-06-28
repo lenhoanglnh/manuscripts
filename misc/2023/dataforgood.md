@@ -41,7 +41,7 @@ D'autant que, à maintes reprises, il a été montré que ces algorithmes mémor
 Voilà qui a conduit Samsung à interdire l'utilisation des algorithmes génératifs à une partie de ses employés[^samsung_interdiction], 
 après que plusieurs d'entre eux ont révélés des secrets industriels à ChatGPT[^samsung_erreur]. 
 Même Microsoft appelle ses employés à faire attention à leur utilisation de cet algorithme génératif[^microsoft_chatgpt], 
-tandis que Google demande aux siens de ne pas utilisés le code généré par Google Bard[^google_bard].
+tandis que Google demande aux siens de ne pas utiliser le code généré par Google Bard[^google_bard].
 
 [^palm]: https://web.archive.org/web/20230103115317/https://arxiv.org/abs/2204.02311
 [^memorization]: [https://www.usenix.org/system/files/sec21-carlini-extracting.pdf](https://www.usenix.org/system/files/sec21-carlini-extracting.pdf), [https://petsymposium.org/popets/2023/popets-2023-0070.pdf](https://petsymposium.org/popets/2023/popets-2023-0070.pdf), [https://arxiv.org/abs/2304.05197](https://arxiv.org/abs/2304.05197)
