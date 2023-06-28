@@ -190,7 +190,7 @@ ce qui risquent d'aggraver significativement le déclin démocratique actuel dé
 [^avisa_partners]: https://www.linforme.com/banque-finance/article/avisa-partners-va-aider-l-union-europeenne-a-lutter-contre-la-desinformation_695.html
 [^vdem]: https://www.v-dem.net/documents/29/V-dem_democracyreport2023_lowres.pdf
 
-Une dernière préoccupaion à mentionner est l'utilisation des algorithmes génératifs
+Une dernière préoccupation à mentionner est l'utilisation des algorithmes génératifs
 pour la fabrication d'armes, en particulier de cyberattaques.
 De nombreuses cyberattaques ont ainsi déjà été conçues via ChatGPT[^zero_day_chatgpt][^chatgpt_attacks].
 Il est alors particulièrement préoccupant de savoir que le Président de TII, 
