@@ -158,7 +158,7 @@ semble surtout résider dans leur utilisation massive à venir par des acteurs m
 En particulier, de nombreuses cyberarnaques, 
 comme les attaques par phishing ou l'impersonification de proches,
 semblent dangereusement optimisables et automatisables 
-notamment par l'exploitation d'algorithmes génératifs Open Source[^scam].
+notamment par l'exploitation d'algorithmes génératifs open source[^scam].
 
 [^scam]: https://www.youtube.com/watch?v=U2r1MJk85Zo
 
