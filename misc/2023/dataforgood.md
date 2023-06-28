@@ -93,7 +93,7 @@ des services informatiques de Google, Microsoft ou Amazon, parmi d'autres.
 Si ces entreprises cessent leur activité sur le territoire européen, 
 parce qu'elles ont subi une cyberattaque
 ou parce que le gouvernement américain l'exige pour faire pression sur l'Europe,
-alors la survie de tout le tissu économique européen sera menacé.
+alors la survie de tout le tissu économique européen sera menacée.
 
 Pire encore, des solutions numériques émergentes viennent de pays autoritaires,
 à l'instar du modèle de langue Falcon conçu par l'entreprise Émirati *Technology Institute Innovation* (TII), 
