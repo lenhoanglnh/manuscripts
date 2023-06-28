@@ -178,7 +178,7 @@ les capacités de l'industrie de la désinformation
 à automatiser et crédibiliser les créations et les activités des faux comptes
 qui opèrent ces manipulations de l'écosystème informationnel mondial.
 Malheureusement, les réponses des institutions dirigeantes jusque là sont désespérément inappropriées[^avisa_partners],
-ce qui risquent d'aggraver significativement le déclin démocratique actuel déjà terrifiant[^vdem].
+ce qui risque d'aggraver significativement le déclin démocratique actuel déjà terrifiant[^vdem].
 
 [^psg]: https://www.mediapart.fr/journal/france/121022/revelations-sur-l-armee-numerique-du-paris-saint-germain
 [^russo_russe]: https://theconversation.com/putins-propaganda-is-rooted-in-russian-history-and-thats-why-it-works-184197
