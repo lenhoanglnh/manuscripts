@@ -235,6 +235,6 @@ Il y a malheureusement une inattention alarmante
 qui pourtant déterminent tant les sujets qui auront l'attention des démocraties,
 et l'identité des bénéficiaires d'investissement importants.
 Plus encore que les algorithmes génératifs,
-ce sont sans doute ces IA qu'il faudrait urgemment beaucoup plus strictement encadrer.
+ce sont sans doute ces IA qu'il faudrait urgemment encadrer beaucoup plus strictement.
 
 [^insécurité]: https://arxiv.org/abs/2303.12340
