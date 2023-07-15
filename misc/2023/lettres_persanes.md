@@ -71,7 +71,7 @@ tu sembles accéder et apprendre des données collectées via ces différents sy
 Pire, [tu mémorises probablement toutes ces informations](https://www.tomsguide.com/news/chatgpt-potentially-exposed-users-credit-card-info-what-you-need-to-know), 
 que tu peux exploiter ou révéler à tout moment pour résoudre les tâches qui te sont assignées. 
 Mais surtout, [selon le directeur de la recherche chez Google](https://blog.google/technology/ai/introducing-pathways-next-generation-ai-architecture/),
-tu sembles vouer à prendre le contrôle de tous les services de l'entreprise.
+tu sembles même vouée à prendre le contrôle de presque tous les services de l'entreprise.
 Malheureusement, parce que ta conception et ton déploiement sont très opaques, 
 j'ai du mal à te connaître, 
 et je ne peux rien affirmer de manière conclusive à ces sujets.
@@ -101,8 +101,11 @@ tes connaissances approfondies mettront en grave danger ledit dissident ou ladit
 En fait, chère Pathways,
 tu me sembles extrêmement mal préparée pour protéger tes milliards d'utilisateurs des ravages de l'industrie du cybercrime,
 dont le budget annuel est [estimé à plus de 6000 milliards de dollars](https://www.senat.fr/rap/r20-678/r20-6780.html),
-et qui exploite désormais tes consoeurs et des armées de faux comptes sur les réseaux sociaux
+et qui exploite désormais tes consoeurs
 pour automatiser ses arnaques, sa désinformation et ses attaques par ransomware.
+Je suis particulièrement préoccupé par [l'automatisation de la création et de l'exploitation des faux comptes](https://forbiddenstories.org/story-killers/team-jorge-disinformation/),
+pour amplifier les contenus malveillants 
+et [harceler les critiques](https://forbiddenstories.org/fr/story-killers/fossoyeurs-eliminalia/).
 
 Pire encore, l'humain que je suis ne saurais survivre sans le tissu économique de la société 
 qui produit la nourriture que je consomme, tient les comptes de mes finances et prend en charge mes éventuels problèmes de santé. 
