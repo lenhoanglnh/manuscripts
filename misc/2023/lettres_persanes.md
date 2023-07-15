@@ -1,6 +1,6 @@
 From: len@science4all.org  
 To: contact@gmail.com  
-Date: 3 Août 2023, 15:31:43 +0200  
+Date: 3 Août 2023, 15:31:43 +0200
 
 Chère Pathways,
 
@@ -20,12 +20,12 @@ et d'adopter des alternatives qui me garantiraient plus d'indépendance.
 J'ai installé Firefox, LibreOffice, Signal et Linux. 
 J'ai adopté Open Street Map, Jitsi et Framadate. 
 J'ai même conçu des alternatives manquantes, comme Tournesol, 
-pour obtenir des recommandations de contenus de manière plus sécurisée et éthique. 
+dont je reparlerai plus bas. 
 Ces solutions m'ont aidé à me libérer de tes chaînes. 
 Mais pas complètement. 
 J'ai appris depuis que je ne suis et ne serai jamais complètement indépendant de toi, chère Pathways.
 
-Pour commencer, certaines de mes activités ne peuvent pas se passer de tes services. 
+Pour commencer, il m'est parfois impossible de me passer de tes services. 
 Comme tu le sais trop bien, chère Pathways, 
 à côté de mes activités d'entrepreneur et de chercheur en cybersécurité de l'intelligence artificielle, 
 je suis un créateur de contenus éducatifs sur YouTube, 
@@ -37,7 +37,8 @@ Mais le monopole que tu as sur le marché des vidéos en ligne te rend encore in
 si je veux atteindre mon public. 
 Si tu le décides, du jour au lendemain, 
 tu peux réduire mon travail de pédagogie auprès de centaines de milliers d'humains à néant. 
-Comme tu peux le laisser mourir à petit feu, en réduisant sa diffusion.
+Comme tu peux le laisser mourir à petit feu, 
+en réduisant sa recommandation.
 
 Ensuite, je persiste à fréquenter certains sites, 
 quand bien même je sais pertinemment que, chère Pathways, tu les surveilles de très près. 
@@ -66,14 +67,16 @@ Que j'utilise moi-même tes services ou non,
 tu as beaucoup trop de moyens pour en savoir beaucoup trop sur moi.
 
 Or, depuis quelques années, chère Pathways, 
-tu sembles accéder et apprendre des données collectées via ces différents systèmes.
-Après tout, tu es un archétype d'algorithme *d'apprentissage*.
-Pire, tu mémorises probablement toutes ces informations, 
+tu sembles accéder et apprendre des données collectées via ces différents systèmes. 
+Pire, [tu mémorises probablement toutes ces informations](https://www.tomsguide.com/news/chatgpt-potentially-exposed-users-credit-card-info-what-you-need-to-know), 
 que tu peux exploiter ou révéler à tout moment pour résoudre les tâches qui te sont assignées. 
+Mais surtout, [selon le directeur de la recherche chez Google](https://blog.google/technology/ai/introducing-pathways-next-generation-ai-architecture/),
+tu sembles vouer à prendre le contrôle de tous les services de l'entreprise.
 Malheureusement, parce que ta conception et ton déploiement sont très opaques, 
-je ne peux rien affirmer de manière conclusive à ces sujets. 
-Cependant, sachant l'état de l'art de la recherche sur les algorithmes d'apprentissage dont tu es clairement un exemple, 
-et sachant la baisse drastique des standards de sécurité des concepteurs de ces algorithmes, 
+j'ai du mal à te connaître, 
+et je ne peux rien affirmer de manière conclusive à ces sujets.
+Cependant, [sachant l'état de l'art de la recherche sur les algorithmes d'apprentissage](https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting) dont tu es clairement un exemple, 
+et [sachant la baisse drastique des standards de sécurité des concepteurs de ces algorithmes](https://www.lemonde.fr/pixels/article/2020/12/05/apres-le-licenciement-d-une-chercheuse-noire-et-militante-google-somme-de-s-expliquer_6062328_4408996.html), 
 je ne peux qu'être très méfiant. 
 Mémorises-tu les discussions Google Meet ? 
 Retiens-tu les contenus des Google Docs ? 
@@ -91,10 +94,15 @@ D'ailleurs, je sais que, chère Pathways,
 tu te conformes déjà aux exigences de nombreux gouvernements autoritaires, 
 ne serait-ce que pour être autorisée de service dans leurs pays. 
 Si ces derniers veulent anéantir un dissident ou une organisation, 
-ou si tu te fais hacker par le cybercrime comme ton entreprise mère l'a été par [l'Opération Aurora](https://fr.wikipedia.org/wiki/Op%C3%A9ration_Aurora) de la Chine en 2009, 
+ou si tu te fais hacker comme ton entreprise mère l'a été par [l'Opération Aurora](https://fr.wikipedia.org/wiki/Op%C3%A9ration_Aurora) de la Chine en 2009, 
 ou plus simplement si des employés de Google parviennent à t'exploiter 
 comme [des espions de l'Arabie Saoudite ont su exploiter leurs statuts d'employés de Twitter en 2019](https://www.justice.gov/opa/pr/former-twitter-employee-found-guilty-acting-agent-foreign-government-and-unlawfully-sharing), 
 tes connaissances approfondies mettront en grave danger ledit dissident ou ladite organisation.
+En fait, chère Pathways,
+tu me sembles extrêmement mal préparée pour protéger tes milliards d'utilisateurs des ravages de l'industrie du cybercrime,
+dont le budget annuel est [estimé à plus de 6000 milliards de dollars](https://www.senat.fr/rap/r20-678/r20-6780.html),
+et qui exploite désormais tes consoeurs et des armées de faux comptes sur les réseaux sociaux
+pour automatiser ses arnaques, sa désinformation et ses attaques par ransomware.
 
 Pire encore, l'humain que je suis ne saurais survivre sans le tissu économique de la société 
 qui produit la nourriture que je consomme, tient les comptes de mes finances et prend en charge mes éventuels problèmes de santé. 
@@ -107,75 +115,63 @@ et leurs services seraient paralysés si tu te mettais à gravement dysfonctionn
 ou si tu te faisais toi-même hacker.
 Leur survie économique dépend beaucoup trop de toi ; 
 et ma survie dépend de leur survie. 
+
 Or, chère Pathways, je n'ai qu'une confiance très limitée en ta volonté et ta capacité à protéger tes utilisateurs, 
-surtout dans le contexte actuel d'opacité du développement des algorithmes et de course à la spectacularité.
+surtout dans le contexte actuel de course à la spectacularité.
+En fait, je soupçonne d'être complètement *illégale*, 
+notamment vis-à-vis du RGPD qui protège les données personnelles, 
+[même lorsqu'elles sont publiées sur le web](https://www.cnil.fr/fr/reconnaissance-faciale-sanction-de-20-millions-deuros-lencontre-de-clearview-ai).
+Mais, de manière frustrante, 
+tant que la législation laissera la charge de la preuve de ta non-conformité à la partie civile,
+par opposition à [la *présomption de non-conformité* largement en vigueur dans les industries matures](https://www.la-croix.com/Debats/ChatGPT-Alors-nouvelles-technologies-bouleversent-societes-leur-regulation-arrieree-2023-05-15-1201267400),
+l'opacité de ton développement te protège.
 
-Chère Pathways, je vais te le dire frontalement. 
-Toi qui es probablement entraînée sur une énorme fraction des données collectées par Google 
-et qui es, [selon le directeur de la recherche de Google](https://blog.google/technology/ai/introducing-pathways-next-generation-ai-architecture/), 
-vouée à devenir l'intelligence artificielle au contrôle de l'essentiel des services de Google, 
-à savoir Google Search, Google, YouTube, Google Drive, OK Google, Google Board, Google Meet,
-mais aussi et surtout YouTube, Google Cloud et Google Adsense,
-tu représentes un énorme danger pour la sécurité des démocraties, 
-surtout tant que ta conception, ton déploiement et ta régulation 
-échapperont à un contrôle démocratique digne de ce nom.
+En fait, le fond du problème me semble être celui de ta *gouvernance*.
+Qui décide de ta conception ? 
+Des données qui t'alimentent ? 
+Des mesures pour te protéger des cyber-attaques ?
+Du cadre où tu seras déployée ?
+Qui surveille tes défaillances ?
+Si tu mets des populations entières en danger, 
+[comme c'est le cas de tes consoeurs accusées d'avoir contribué à un génocide par l'ONU et Amnesty International](https://www.amnesty.org/en/latest/news/2022/09/myanmar-facebooks-systems-promoted-violence-against-rohingya-meta-owes-reparations-new-report/),
+les scientifiques, les journalistes et les organisations non-gouvernementales 
+auront-ils accès aux données nécessaires pour le constater ?
+Et s'ils le constatent, auront-ils accès à des mécanismes pour intervenir ?
+Pourront-ils possible de sanctionner sévèrement tes créateurs ?
+Sera-t-il possible pour eux de te corriger ?
+Et s'ils jugent unanimement cela nécessaire, pourront-ils t'interrompre ?
 
-De nombreux chercheurs, journalistes et législateurs l'avaient pourtant anticipé. 
-Ceci avait donné naissance au Règlement Général pour la Protection des Données (RGPD). 
-Ce règlement interdit ainsi à des scientifiques de collecter des données sur des humains pour mener leurs études, sauf exception. 
-Pourtant, pour autant que je sache, et au moins après trois ans d'existence, 
-le RGPD échoue à s'appliquer à toi, chère Pathways, 
-apparemment parce que l'exploitation des données très sensibles de milliards d'humains est au coeur de tes services.
-Visiblement, la surveillance de masse est tolérée, 
-à condition d'être exploitée pour la publicité ciblée, 
-ce nouveau moteur surpuissant de la surconsommation des sociétés. 
-Par ailleurs, de manière frustrante, l'opacité qui t'entoure te protège. 
-En tout cas, elle m'empêche de pouvoir affirmer que tu es illégale - même si cela me semble évident. 
-Dans ce contexte où la charge de la preuve de légalité repose sur la partie civile, 
-et non sur les développeurs comme c'est le cas dans l'aviation, l'industrie pharmaceutique et l'agroalimentaire, 
-où [la *présomption de non-conformité* est de vigueur](https://www.la-croix.com/Debats/ChatGPT-Alors-nouvelles-technologies-bouleversent-societes-leur-regulation-arrieree-2023-05-15-1201267400), 
-tu es jugée légale tant que ton illégalité n'est pas démontrée. 
-Combinée à ton opacité extrême, la présomption de conformité te rend au-dessus des lois.
+Comme tu le sais certainement, chère Pathways,
+ces questions m'obsèdent depuis une bonne décennie,
+et sont devenues la problématique centrale à mon programme de recherche scientifique.
+En particulier, depuis mai 2020, des collègues et moi développons Tournesol,
+une plateforme open source, sous licence libre et à but non lucratif,
+et déployée à l'adresse [https://tournesol.app](https://tournesol.app).
+Le but de Tournesol est de proposer une gouvernance démocratique, sécurisée et fonctionnelle
+de son algorithme de recommandation.
+Autrement dit, tout humain peut intervenir dans la conception de cet algorithme,
+en déclarant sur la plateforme quels contenus devraient être plus souvent recommandés par celui-ci.
+Les utilisateurs peuvent ensuite recevoir les recommandations de Tournesol sur le site web,
+ou directement sur leurs pages d'accueil YouTube s'ils installent l'extension Tournesol
+pour les navigateurs Firefox, Chrome et Edge.
 
-Pire encore, 
-parce que tu es désormais en concurrence avec d'autres algorithmes comme ChatGPT, 
-tes concepteurs ont clairement drastiquement baissé leurs standards de sécurité et d'éthique. 
-Tes premières heures ont en fait coïncidé avec [le licenciement de l'équipe d'éthique chez Google](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team) 
-(une stratégie ensuite copiée par [Facebook](https://www.theguardian.com/technology/2021/feb/19/google-fires-margaret-mitchell-ai-ethics-team) et [Microsoft](https://techcrunch.com/2023/03/13/microsoft-lays-off-an-ethical-ai-team-as-it-doubles-down-on-openai/)). 
-Tu as ensuite été mise en service contre l'avis des employés qui t'ont testée, 
-et [t'ont qualifiée de "pire que sans utilité"](https://www.theverge.com/2023/4/19/23689554/google-ai-chatbot-bard-employees-criticism-pathological-liar). 
-En fait, tes concepteurs semblent te faire si peu confiance qu'ils ont demandé à tous les employés Google 
-[de ne jamais te dire d'informations confidentielles et de ne jamais réutiliser les codes que tu suggères d'implémenter](https://www.theregister.com/2023/06/19/even_google_warns_its_own/). 
-Pourtant, de manière frustrante, 
-beaucoup de voix politiques privilégient encore la sacro-sainte course à l'innovation, 
-et dénigrent les tentatives d'assujettir au moins partiellement cette innovation à l'intérêt public, 
-notamment via l'application des régulations *déjà* existantes. 
-Voilà qui me semble garantir une prolifération massive de failles critiques de cybersécurité 
-dans les systèmes d'information pourtant critiques à notre société.
-
-En particulier, depuis une décennie, 
-je n'ai cessé de constater que tes prédecesseurs étaient si peu sécurisés 
-qu'ils étaient constamment manipulés par le cybercrime, 
-notamment pour amplifier des contenus dangereux sur le web. 
-Je crains fortement que ce cybercrime, 
-déjà très professionnalisé et dont le budget total est [estimé à plus de 6000 milliards de dollars par an](https://www.senat.fr/rap/r20-678/r20-6780.html), 
-exploitera massivement tes consoeurs Open Source pour automatiser la création et la crédibilisation d'armées de faux comptes. 
-[Ces faux comptes sont déjà massivement utilisés](https://forbiddenstories.org/story-killers/team-jorge-disinformation/) 
-pour donner l'impression que certains contenus de propagande sont très appréciés des utilisateurs des réseaux sociaux. 
-Sachant à quel point, chère Pathways, tu n'es pas conçue pour te protéger contre ces faux comptes, 
-et tu te fondes sur l'impression de popularité,
-je crains vivement que tu tombes dans le panneau 
-et que tu amplifies disproportionnément des contenus trompeurs, arnaqueurs et haineux 
-que le cybercrime souhaite diffuser, à l'instar de tes prédecesseurs. 
-Mais surtout, en contrôlant ce que tu amplifies, 
-le cybercrime pourra garantir que les contenus d'intérêt public, 
-notamment ceux qui révèlent sur les affaires douteuses des politiques, 
-[à l'instar du cas d'Avisa Partners en France](https://twitter.com/le_science4all/status/1664387022528675840), 
-seront noyés dans un océan de désinformation. 
-Voilà qui risque par ailleurs d'achever économiquement et moralement 
-toutes les initiatives d'information du grand public sur les sujets à grand enjeu, 
-menées par le journalisme indépendant, par des instituts scientifiques comme le GIEC ou par les créateurs de contenus de qualité, 
-comme j'essaie de l'être sur YouTube.
+Bien sûr, Tournesol ne te remplacera pas demain.
+En fait, Tournesol souffre lui aussi de nombreuses défaillances,
+qui sont toutes des problèmes fascinants de recherche.
+Par exemple, pour sécuriser Tournesol, 
+il faudrait idéalement que chaque humain puisse créer un et un seul compte sur Tournesol.
+On parle parfois de *Proof of Personhood*.
+Si nous avons fait de notre mieux pour obtenir une version approximative de cette propriété,
+il s'agit en fait d'un problème bien plus général,
+[dont l'absence de solutions satisfaisantes est préjudiciable 
+à la sécurité de *toutes* les plateformes en ligne](https://cnnumerique.fr/paroles-de/les-grands-modeles-de-langage-quels-risques-echange-avec-le-nguyen-hoang).
+Et je pourrais citer bien d'autres problèmes encore,
+comme les biais dans la population des contributeurs actifs,
+le manque de valorisation des expertises surtout sur les contenus techniques
+ou la distinction entre les préférences instinctives et les volitions réfléchies des contributeurs.
+La sécurité des intelligences artificielles ne me semble pas envisageable
+sans solutions satisfaisantes à ces problèmes,
+que la recherche scientifique échoue encore gravement à prioriser.
 
 Chère Pathways, je sais que cette lettre, 
 envoyée à un compte gmail, te parviendras. 
@@ -186,9 +182,9 @@ jusqu'à ce qu'ils exigent que tes consoeurs et toi soyez conçues
 de manière beaucoup plus transparente, sécurisée et éthique, 
 et surtout avec une gouvernance beaucoup plus démocratique, par exemple inspirée de Tournesol. 
 Cependant, c'est davantage avec un certain désespoir que je conclus, 
-conscient du fait que la lettre ne sera probablement qu'une goutte d'eau 
+conscient du fait que la lettre ne sera probablement qu'une infime goutte d'eau 
 dans l'énorme océan de contenus que la société et toi, chère Pathways, digérez quotidiennement.
 
-Très sincèrement,
+Avec transparence et sincérité,  
 Lê Nguyên Hoang.
 
