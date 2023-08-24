@@ -1,4 +1,4 @@
-# Les algorithmes de Tournesol
+# Les nouveaux algorithmes de Tournesol
 
 Cet été, on a beaucoup bossé sur Tournesol, 
 et on a mis en ligne de nouveaux algorithmes 
