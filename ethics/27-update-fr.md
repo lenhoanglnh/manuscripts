@@ -257,7 +257,8 @@ mais pour qu'il corresponde davantage à une mauvaise vidéo de Tournesol.
 Autrement dit, le score par défaut, égal à zéro, va correspondre 
 à une vidéo parmi les 15% les moins bonnes de la plateforme.
 En quelques sortes, c'est comme si on instaurait une présomption de positivité
-pour 85% des vidéos sur Tournesol.
+pour 85% des vidéos sur Tournesol -
+une estimation qu'on a fait empiriquement.
 
 De façon intéressante, ceci nous a aussi permit de programmer naturellement une présomption de non-recommandabilité,
 en fixant un seuil de recommandabilité à 20.
@@ -315,7 +316,31 @@ que sur les plans philosophiques, sociologiques, politiques, juridiques et psych
 comme on en parle notamment dans notre article.  
 https://arxiv.org/pdf/2211.01179.pdf
 
-Comme on le disait en 2019, rendre les intelligences artificielles robustement bénéfiques
+Pour en citer trois, en premier lieu, on aimerait inclure 
+des jugements directs de recommandabilité et de non-recommandabilité des vidéos,
+ce qui permettrait de collecter plus de données, quoique de moindre qualité.
+Par ailleurs, il s'agirait d'informations exploitables 
+pour apprendre automatiquement comment ajuster le score zéro, 
+plutôt que de choisir à la main qu'il s'agit du 85%-il des vidéos.
+
+En second lieu, on aimerait implémenter une démocratie liquide sur Tournesol,
+qui permettrait à chacun de transférer ses droits de votes à des personnes plus actives sur la plateforme,
+ou d'identifier des experts pour telle ou telle vidéo, 
+et de leur déléguer tout ou partie de son droit de votes.
+
+Enfin, un troisième défi est d'établir des fondations plus solides et plus profondes de Tournesol.
+Que cherche-t-on vraiment à faire sur cette plateforme ?
+Comment intégrer ceux qui ne s'y sont pas beaucoup exprimés ?
+Est-ce vraiment les préférences instinctives de tout le monde qu'il faut apprendre et combiner ?
+Comment justifier de manière implacable la valorisation de l'expertise,
+et que signifie concrètement cette valorisation au niveau de la plateforme ?
+Comment mesure-t-on les déviations entre ce qui est calculé, et ce qu'il faudrait calculer ?
+Quelles sont les propriétés qu'une gouvernance vraiment satisfaisante doit satisfaire ?
+J'ai beaucoup de bouts de réponses à ces nombreuses questions,
+mais je suis le premier à admettre que je suis très loin d'avoir une réponse limpide,
+et qu'il y a clairement d'énormes progrès à faire dans cette direction fondatrice.
+
+Bref. Comme on le disait en 2019, rendre les intelligences artificielles robustement bénéfiques
 est un chantier absolument monumental,
 qui requiert une pluridisciplinarité 
 dont la recherche académique a jusque là été très peu prompte à initier,
