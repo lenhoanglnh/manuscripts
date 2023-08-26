@@ -144,7 +144,7 @@ Pour estimer la recommandabilité des différentes vidéos YouTube,
 Tournesol s'appuie sur un jugement comparatif des contributeurs,
 parce que ceux-ci nous semblent plus fiables que des jugements par vidéo.
 Par ailleurs, de tels jugements répondent davantage à la question fondamentale de Tournesol,
-qui fait dans un ensemble de 4 recommandations à chaque utilisateur de l'extension Tournesol,
+qui fait un ensemble de 4 recommandations à chaque utilisateur de l'extension Tournesol,
 disponible sur Firefox, Chrome et Edge,
 à chaque fois que celui-ci ouvre la page YouTube.com.
 En effet, la question fondamentale n'est alors pas de savoir si une vidéo est bien ;
