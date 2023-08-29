@@ -44,9 +44,9 @@ Encore une fois, je ne suis qu'un bénévole dans cette histoire !
 Infomaniak est LE service Cloud par excellence en Suisse,
 et se démarque de la concurrence pour son éthique et sa souveraineté,
 par opposition à d'autres services américains ou chinois.
-Je vous conseille en particulier la kSuite d'Infomaniak,
-avec notamment kMail, kDrive ou kMeet, parmi tant d'autres solutions sur le web.
-
+Je vous conseille en particulier la kSuite d'Infomaniak 
+qui contient toutes les applications nécessaires pour collaborer en ligne, 
+avec notamment un service mail et un drive entièrement développé et hébergé en Suisse.
 
 Le but de la plateforme, c'est de proposer une solution technique
 au problème fondamental de la gouvernance des intelligences artificielles 
