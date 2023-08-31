@@ -194,7 +194,9 @@ il faut bien évidemment agréger les avis des différents contributeurs.
 Mais s'il y a bien une chose qu'on a appris en développant Tournesol,
 et que j'avais déjà un peu exploré dans la série sur la démocratie,
 c'est que les mathématiques de l'agrégation d'avis conflictuels sont extrêmement complexes,
-surtout si l'on veut faire cela de manière éthique et sécurisée, dans un contexte "sparse".
+surtout si l'on veut faire cela de manière éthique et sécurisée, 
+dans un contexte "sparse",
+c'est-à-dire dans un contexte où chaque contenu n'est évalué que par une infime minorité des contributeurs.
 
 Ainsi, d'un point de vue éthique, une telle agrégation se doit d'éviter les pièges
 des jugements parisiens et marseillais.
@@ -358,10 +360,14 @@ qu'une telle gouvernance soulève.
 Mais pour y arriver, il nous faut absolument avoir les moyens de continuer à développer Tournesol.
 Et pour cela, nous avons besoin de beaucoup d'aides, notamment financières.
 En particulier, malgré les dons d'Infomaniak, 
-l'Association Tournesol manque de réserves
-pour assurer le salaire de notre employé dans les mois à venir.
+l'Association Tournesol est quasiment à sec.
+À moins d'une aide significative de votre part, 
+nous ne pourrons plus assurer le salaire de notre employé,
+et nous devrons donc nous passer de ses excellents services dans les mois à venir.
 Pour soutenir et encourager la recherche sur la gouvernance collaborative et sécurisée des algorithmes,
+et mener au mieux nos projets de démocratie liquide et d'apprentissage de la volition,
 nous vous serions extrêmement reconnaissants de contribuer à nos finances,
+si vous en avez les moyens,
 via des dons directs à l'Association ou via notre compte KissKissBankBank.
 Merci beaucoup d'avance.
 
