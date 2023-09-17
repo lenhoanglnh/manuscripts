@@ -114,7 +114,15 @@ déjà clairement engagés dans la cyberguerre comme la Chine,
 ou des machines "aussi hackables qu'un PC Windows", 
 dans lesquelles nous enregistrons tant de données sensibles
 et avec lesquels nous accédons à des systèmes que nous voudrions être les seuls à contrôler,
-comme nos comptes bancaires.  
+comme nos comptes bancaires.
+
+J'ai quand même souvent envie de dire que,
+au lieu de se préoccuper du débat autour du nucléaire,
+Bill Gates ferait bien mieux de mettre en avant les enjeux de cybersécurité,
+dont l'entreprise qu'il a fondé est coupable d'inattention,
+et qui met désormais en grave danger des milliards d'utilisateurs,
+des millions d'entreprises 
+et des milliers d'organisations gouvernementales et internationales.
 
 Alors, pour être juste avec Microsoft, 
 on peut largement reconnaître que, depuis 2001, ils se sont améliorés,
