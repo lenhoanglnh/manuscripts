@@ -71,11 +71,58 @@ https://siecledigital.fr/2021/09/24/etat-francais-micorost-365/
 
 ## Un demi-siècle de négligence
 
-Code Red  
-https://en.wikipedia.org/wiki/Code_Red_(computer_worm)
+Le premier gros électrochoc pour le gouvernement américain 
+fut l'attaque terroriste du 18 septembre 2001.
+Oui, j'ai bien dit 18 septembre.
+Une semaine après celle que vous connaissez 
+et qui a attaqué les tours du World Trade Center de New York,
+un ver informatique hybride a provoqué des catastrophes inédites.
+Ce ver était appelé Nimda, qui est le verlan lettre à lettre de Admin.
+Il exploitait des vulnérabilités dans les systèmes Microsoft,
+pour se répliquer et se propager de machine en machine,
+causant toutes sortes de surcharge informationnelle des systèmes d'information,
+qui empêchait alors les machines d'effectuer les tâches 
+pour lesquelles elles étaient programmées.  
+https://en.wikipedia.org/wiki/Nimda
 
-Patch Tuesday  
+Mais si l'on peut reconnaître que Nimda était spectaculaire et très coûteux, 
+il ne s'agissait pas de la plus grand crainte de la Défense Américaine,
+qui craignait beaucoup plus des attaques capables de prendre le contrôle 
+de systèmes d'information critiques de manière indétectable.
+Les ennemis les plus dangereux sont encore ceux qu'on ne voit pas.
+Et c'est avec ce constat, et dans un climat post-11 septembre,
+que Microsoft fut mis sous grosse pression des autorités américaines.
+
+C'est ainsi que, certainement sous la pression d'agences étatiques,
+Bill Gates, le fondateur milliardaire de Microsoft, écrivit un mémo,
+sensé marqué le jour où la cybersécurité était devenue la "plus grande priorité" de l'entreprise.
+"Dans 10 ans, l'informatique sera une part intégrale et indispensable de presque tout ce que nous faisons", écrivit-il.
+"Microsoft et l'industrie informatique ne sera un succès dans le monde que si
+les directeurs informatiques, les consommateurs et tout le monde voient 
+que Microsoft a créer une plateforme de confiance numérique."  
+
+Si la première partie de cette citation est une prédiction très juste,
+la seconde est en fait très questionnable,
+notamment car les citoyens et les gouvernements échouent constamment
+à prêter suffisamment attention à la notion de confiance numérique.
+Tant que des scandales monumentaux de négligence de cybersécurité seront ignorés,
+nous semblons voués à faire confiance à des outils numériques 
+auxquels nous ne devrions pas faire confiance,
+comme des téléphones ultra-connectés avec des micros constamment branchés,
+des applications contrôlées par des gouvernements autoritaires 
+déjà clairement engagés dans la cyberguerre comme la Chine,
+ou des machines "aussi hackables qu'un PC Windows", 
+dans lesquelles nous enregistrons tant de données sensibles
+et avec lesquels nous accédons à des systèmes que nous voudrions être les seuls à contrôler,
+comme nos comptes bancaires.  
+
+Alors, pour être juste avec Microsoft, 
+on peut largement reconnaître que, depuis 2001, ils se sont améliorés,
+en introduisant notamment
 https://en.wikipedia.org/wiki/Patch_Tuesday
+
+Stuxnet  
+https://fr.wikipedia.org/wiki/Stuxnet
 
 Eternal Blue  
 https://en.wikipedia.org/wiki/EternalBlue
@@ -84,7 +131,11 @@ Tiananmen Square
 https://en.wikipedia.org/wiki/Criticism_of_Microsoft#Censorship_in_China  
 https://www.reuters.com/technology/microsoft-bing-raises-concerns-over-lack-image-results-tiananmen-tank-man-2021-06-04/
 
-VS Code  
+SolarWinds  
+https://www.microsoft.com/en-us/security/blog/2021/07/13/microsoft-discovers-threat-actor-targeting-solarwinds-serv-u-software-with-0-day-exploit/  
+https://www.politico.eu/article/solarwinds-largest-cyberattack-ever-microsoft-president-brad-smith/
+
+VS Code
 https://stackoverflow.com/questions/67493012/how-safe-are-extensions-in-visual-studio-code
 
 Une banque vulnérable ? Si les hackers éthiques ont pénétré, les hackers malveillants y sont sans doute depuis longtemps.  
