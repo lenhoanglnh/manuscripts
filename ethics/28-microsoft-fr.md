@@ -126,28 +126,102 @@ et des milliers d'organisations gouvernementales et internationales.
 
 Alors, pour être juste avec Microsoft, 
 on peut largement reconnaître que, depuis 2001, ils se sont améliorés,
-en introduisant notamment
+en introduisant notamment le "Patch Tuesday" en octobre 2003.
+Les seconds mardis de chaque mois, 
+des mises à jour critiques de sécurité étaient proposées,
+et devaient être effectuées par les clients pour protéger leurs systèmes ;
+ce qui conduit d'ailleurs à des "exploitations du mercredi",
+qui tentent de hacker les systèmes Microsoft qui n'ont pas été mis à jour.
+Et me permet au passage de vous appeler à mettre à jour vos logiciels 
+dès qu'une mise à jour est disponible,
+surtout ceux qui communiquent beaucoup avec Internet, 
+comme les navigateurs web Firefox, Chrome ou Edge.
+Ceci étant dit, maintenant que l'informatique avance très vite,
+la mise à jour mensuelle semble inappropriée selon beaucoup d'experts,
+notamment les développeurs de systèmes Open Source comme Linux,
+qui préfèrent proposer une mise à jour dès que celle-ci est disponible,
+au lieu de laisser un délai pendant lequel la faille connue du développeur peut fuiter,
+et être connue des cyber attaquants.  
 https://en.wikipedia.org/wiki/Patch_Tuesday
 
-Stuxnet  
-https://fr.wikipedia.org/wiki/Stuxnet
-
-Eternal Blue  
-https://en.wikipedia.org/wiki/EternalBlue
-
-Tiananmen Square  
-https://en.wikipedia.org/wiki/Criticism_of_Microsoft#Censorship_in_China  
-https://www.reuters.com/technology/microsoft-bing-raises-concerns-over-lack-image-results-tiananmen-tank-man-2021-06-04/
-
-SolarWinds  
+Quoi qu'il en soit, malgré le mémo de Bill Gates,
+et malgré une amélioration de l'attention donnée à la sécurité par Microsoft,
+depuis deux décennies désormais,
+des failles critiques des systèmes de Microsoft n'ont cessé d'être découvertes,
+et surtout d'être exploitées par le cybercrime.
+Parmi les cas les plus spectaculaires, on peut citer ceux de Stuxnet en 2010,
+un ver informatique de la NSA qui a exploité des failles de Windows 
+pour saboter la recherche iranienne sur l'arme nucléaire,  
+https://tournesol.app/entities/yt:U_7CGl6VWaQ  
+WannaCry en 2017, un ver informatique qui chiffre les données de la machine cible,
+et exige une ranson en Bitcoin pour déchiffrer ces données -
+on parle de ransomware, et un jeune Micode avait fait une vidéo à l'époque de l'attaque,  
+https://tournesol.app/entities/yt:nIRDzPnJAro  
+ou encore, plus récemment, le cyber hack de SolarWinds par des hackers russes en 2020,
+qui a notamment exploité des failles de Microsoft 
+pour pénétrer plusieurs parties du gouvernement des États-Unis
+et faire fuiter des données sensibles.  
 https://www.microsoft.com/en-us/security/blog/2021/07/13/microsoft-discovers-threat-actor-targeting-solarwinds-serv-u-software-with-0-day-exploit/  
 https://www.politico.eu/article/solarwinds-largest-cyberattack-ever-microsoft-president-brad-smith/
 
+Justement, dans sa lettre, le Sénateur Ron Wyden rappelle que 
+Microsoft connaissait les vulnérabilités de son système d'authentification depuis 2017,
+trois ans avant que l'attaque des hackers russes ait eu lieu, 
+et soit détectée par des agences américaines.
+Mais Microsoft a préféré ne pas avertir ses clients, 
+qui utilisaient pourtant ses technologies défectueuses.
+Comme l'écrit Wyden : 
+
+"Microsoft n'a jamais reconnu sa responsabilité dans le hack de SolarWinds ... 
+Au lieu de cela, Microsoft a utilisé cet incident comme une opportunité 
+de promouvoir son produit Azure AD ... 
+Les clients de Microsoft ont entendu le message 
+[qui prétendait qu'il] était trop difficile
+de sécuriser les clés de leurs propres serveurs, 
+[et qu'il était plus sûr de] laisser Microsoft le faire pour eux ... 
+[Trois ans plus tard], les revenus des services de sécurité cloud professonnels de Microsoft 
+ont atteint plus de 20 milliards de dollars par an."  
+https://www.wyden.senate.gov/imo/media/doc/wyden_letter_to_cisa_doj_ftc_re_2023_microsoft_breach.pdf
+
+Voilà qui rend les failles critiques du service mail de Microsoft d'autant plus inexcusables,
+surtout quand on sait que leurs communications récentes tournaient surtout autour de ChatGPT,
+une solution elle-même rapidement hackée.  
+https://www.securityweek.com/chatgpt-data-breach-confirmed-as-security-firm-warns-of-vulnerable-component-exploitation/
+
+Et pourtant, on est encore très loin d'avoir égratigné la surface émergée de l'immence iceberg
+des problèmes majeurs de cybersécurité présents dans les produits Microsoft.
+Je vais me contenter d'en citer seulement trois autres.
+
+Le 4 juin 2021, pour le 32e anniversaire du massacre de Tiananmen,
+et alors que les militants pro-démocraties étaient réprimés à Hong-Kong,
+les recherches pour "Tank Man" sur Microsoft Bing censuraient
+l'image et la vidéo de l'homme courageux qui s'opposait au défilé de chars, 
+et qui était devenu depuis le symbole des mois de manifestations pacifistes et pro-démocratiques 
+que les autorités chinoises ont puni dans un horrible bain de sang.  
+https://tournesol.app/entities/yt:Je7dhUaO8Rg  
+Et même si, plutôt qu'un hack, 
+on peut y voir une complicité de Microsoft avec une dictature sanguinaire, 
+notamment rapportée pour l'utilisation de Microsoft Bing en chinois,  
+https://archive.nytimes.com/kristof.blogs.nytimes.com/2009/11/20/boycott-microsoft-bing/  
+Microsoft a préférer parler officiellement "d'erreurs humaines".  
+https://www.theguardian.com/technology/2021/jun/04/microsoft-bing-tiananmen-tank-man-results  
+Dans les deux cas, Microsoft a des comptes à rendre.  
+https://en.wikipedia.org/wiki/Criticism_of_Microsoft#Censorship_in_China  
+https://www.reuters.com/technology/microsoft-bing-raises-concerns-over-lack-image-results-tiananmen-tank-man-2021-06-04/
+
+Plus récemment, en mars 2023, 
+l'entreprise de cybersécurité Tenable a identifié une faille critique 
+dans le service Cloud de Microsoft qui, selon leur PDG Amit Yoran,
+leur a permis d'accéder aux secrets d'authentification d'une banque.
+Ils ont alerté Microsoft, mais se plaignent de l'inattention de l'entreprise à cette faille critique.
+120 jours après avoir rapporté le problème,
+la banque était ainsi toujours vulnérable.
+Comme l'écrit Yoran : "C'est grotesquement irresponsable, sinon d'une négligence flagrante".  
+https://www.linkedin.com/pulse/microsoftthe-truth-even-worse-than-you-think-amit-yoran  
+https://www.tenable.com/security/research/tra-2023-25
+
 VS Code
 https://stackoverflow.com/questions/67493012/how-safe-are-extensions-in-visual-studio-code
-
-Une banque vulnérable ? Si les hackers éthiques ont pénétré, les hackers malveillants y sont sans doute depuis longtemps.  
-https://www.linkedin.com/pulse/microsoftthe-truth-even-worse-than-you-think-amit-yoran
 
 
 ## Les failles révélées cet été
