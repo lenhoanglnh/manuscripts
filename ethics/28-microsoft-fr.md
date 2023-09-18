@@ -432,26 +432,31 @@ qui sont beaucoup moins sécurisées encore.
 https://tournesol.app/entities/yt:E9c2y0eUBMs  
 En particulier, plutôt que d'acheter aveuglément des services de Microsoft,
 parce que c'est ce que tout le monde fait et que "personne n'a jamais été licencié" pour ça,
-j'espère que vous envisagerez d'au moins envisager des solutions alternatives,
-dont le track record de cybersécurité est beaucoup moins compromettant, 
-comme Linux notamment.  
+j'espère que vous envisagerez des solutions alternatives,
+notamment celles qui ont un track record de cybersécurité beaucoup moins compromettant.  
 https://siecledigital.fr/2021/09/24/etat-francais-micorost-365/  
 https://www.lemondeinformatique.fr/actualites/lire-l-education-nationale-exclut-les-offres-gratuites-office365-et-workspace-dans-les-ecoles-88617.html
 
-Ceci étant dit, la vraie solution pour drastiquement augmenter la cybersécurité de votre entreprise,
+Ceci dit, une solution plus efficace pour drastiquement augmenter la cybersécurité de votre entreprise,
 et plus généralement de notre civilisation, cela reste la sobriété numérique.
 En particulier, moins vous aurez d'applications sur vos ordinateurs, vos tablettes et vos téléphones,
 moins il y aura de vecteurs via lesquels les cyber-attaquants peuvent compromettre vos informations.
 Ainsi, la mesure la plus simple que vous pouvez faire pour augmenter drastiquement votre cybersécurité,
 c'est désinstaller tous les plugins obscurs et non-essentiels
 que vous utilisez dans vos navigateurs web,
-et plus encore dans vos environnements de développement comme Microsoft VS Code.
+et plus encore dans vos environnements de développement comme Microsoft VS Code.  
+https://tournesol.app/entities/yt:ghVWFZ5esnU  
 Et si vous pouvez faire une tâche sans faire appel à ChatGPT
 ou toute autre solution développée dans la précipitation,
 je ne peux que vous encourager, et encourager vos entreprises, à faire sans,
 et à ainsi réduire ce qu'on appelle la surface d'attaque.
 
-Mais surtout, je vous invite à faire de la cybersécurité un sujet de discussion,
+Mais surtout, je vous invite à exiger beaucoup plus 
+des fournisseurs de services informatiques de vos entreprises,
+non seulement au moment d'échanger avec eux,
+mais aussi et surtout en appelant les politiques à imposer des audits externes obligatoires
+
+Enfin, je vous invite à faire de la cybersécurité un sujet de discussion,
 surtout au sein de votre entreprise.
 Que se passerait-il si votre entreprise était sous attaque ?
 Celle-ci pourrait-elle se faire facilement piratée par le premier cybercriminel ?
@@ -465,7 +470,7 @@ c'est qu'il vous faut sans doute urgemment y réfléchir.
 Je vous encourage à organiser des réunions, des séminaires ou des formations autour du sujet.
 Et si votre entreprise a les moyens, 
 vous pouvez engager les services de mon entreprise, Calicarpa,
-qui en plus d'un produit de sandboxing de modules python, encore en développement, 
+qui en plus de développer des produits de sécurité, 
 offre de la formation et du conseil en cybersécurité aux entreprises clientes,
 ne serait-ce que pour mieux estimer l'ampleur des risques auxquels votre entreprise est exposée.  
 https://calicarpa.com/
@@ -479,4 +484,20 @@ il ne change rien à ses habitudes.
 Il a gardé par exemple cet agenda Psion,
 aussi facilement piratable qu'un PC Windows".  
 https://www.youtube.com/watch?v=BEjn9xBdQp8
+
+
+Alors, c'est le Lê du futur, qui vient de découvrir une autre catastrophe de Microsoft.
+L'entreprise de cybersécurité Wiz a révélé une fuite massive de données via Microsoft GitHub,
+la plateforme que beaucoup d'entreprises privées pour stocker en clair leurs codes.
+Apparemment, une erreur a été faite par des employés de la division recherche en IA de Microsoft, 
+qui voulait partager des modèles d'IA sur GitHub ;
+mais au lieu de partager uniquement ces modèles,
+ils ont rendu accessible toutes les données Cloud associées au compte qu'ils utilisaient,
+qui incluent un backup du système de deux employés Microsoft,
+lui même contenant des clés privées, des secrets, des mots de passage 
+et 30 000 messages Microsoft Teams.
+De façon ironique, le compte GitHub expliquait comment partager des données 
+via le cloud de Microsoft. 
+Décidément, avec Microsoft, on ne s'ennuie pas...  
+https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers
 
