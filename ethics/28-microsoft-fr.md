@@ -1,4 +1,4 @@
-# L'incompétence de Microsoft menace la sécurité nationale
+# Microsoft menace la sécurité nationale
 
 "Aussi facilement piratable qu'un PC windows"  
 https://www.youtube.com/watch?v=BEjn9xBdQp8
@@ -110,7 +110,7 @@ sensé marqué le jour où la cybersécurité était devenue la "plus grande pri
 "Microsoft et l'industrie informatique ne sera un succès dans le monde que si
 les directeurs informatiques, les consommateurs et tout le monde voient 
 que Microsoft a créer une plateforme de confiance numérique."  
-https://www.cnet.com/tech/tech-industry/gates-security-is-top-priority/
+https://www.wired.com/2002/01/bill-gates-trustworthy-computing/
 
 Si la première partie de cette citation est une prédiction très juste,
 la seconde est en fait très questionnable,
@@ -121,7 +121,7 @@ nous semblons voués à faire confiance à des outils numériques
 auxquels nous ne devrions pas faire confiance,
 comme des téléphones ultra-connectés avec des micros constamment branchés,
 des applications contrôlées par des gouvernements autoritaires 
-déjà clairement engagés dans la cyberguerre comme la Chine,
+déjà clairement engagés dans la cyberguerre comme TikTok,
 ou des machines "aussi facilement piratables qu'un PC Windows",  
 https://www.youtube.com/watch?v=BEjn9xBdQp8  
 dans lesquelles nous enregistrons tant de données sensibles
@@ -460,7 +460,10 @@ et à ainsi réduire ce qu'on appelle la surface d'attaque.
 Mais surtout, je vous invite à exiger beaucoup plus 
 des fournisseurs de services informatiques de vos entreprises,
 non seulement au moment d'échanger avec eux,
-mais aussi et surtout en appelant les politiques à imposer des audits externes obligatoires
+mais aussi et surtout en appelant les politiques à imposer des audits externes obligatoires,
+voire, dans le cas des technologies massivement utilisées et très probablement illégales,
+d'adopter une présomption de non-conformité.  
+https://cnnumerique.fr/paroles-de/les-grands-modeles-de-langage-quels-risques-echange-avec-le-nguyen-hoang
 
 Enfin, je vous invite à faire de la cybersécurité un sujet de discussion,
 surtout au sein de votre entreprise.
