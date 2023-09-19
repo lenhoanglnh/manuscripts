@@ -25,8 +25,8 @@ que Microsoft a lancé une investigation pour constater une cyber attaque en cou
 https://msrc.microsoft.com/blog/2023/07/microsoft-mitigates-china-based-threat-actor-storm-0558-targeting-of-customer-email/  
 et pour reconnaître des failles critiques dans le fonctionnement de ses services Cloud,
 notamment les services emails comme Outlook et Microsoft Exchange :
-de nombreux comptes critiques du gouvernement américain, 
-utilisés pour toutes sortes d'échanges extrêmement sensibles et classés confidentiels,
+de nombreux comptes sensibles du gouvernement américain, 
+utilisés pour toutes sortes d'échanges classés confidentiels,
 avaient été hackés, probablement par un groupe chinois appelé Storm-0558.  
 https://msrc.microsoft.com/blog/2023/09/results-of-major-technical-investigations-for-storm-0558-key-acquisition/
 
@@ -51,27 +51,27 @@ et une implication d'une diversité grandissante d'acteurs malveillants,
 https://thisishowtheytellmetheworldends.com/  
 et surtout dans un contexte où toutes les organisations du monde,
 qu'il s'agisse de gouvernements, de banques, de réseaux électriques ou d'hôpitaux,
-sont devenues extrêmement dépendantes du bon fonctionnement du "cloud",  
+deviennent de plus en plus dépendantes du bon fonctionnement du "cloud",  
 https://www.bfmtv.com/paris/ile-de-france-les-hopitaux-de-l-ap-hp-touches-par-une-panne-geante_AN-202308300548.html  
 c'est-à-dire de services informatiques gérés à distance par des entreprises comme Microsoft,
 la découverte de l'exploitation du Cloud de Microsoft par des hackers chinois
 a de quoi préoccuper, bien au-delà encore du cas des emails du gouvernement américain.
 
 Un vieux dicton dit que "personne n'a jamais été licencié pour avoir acheter du Microsoft".
-Il me semble grand temps d'enterrer ce dicton.  
+L'historique des failles Microsoft devrait peut-être questionner ce dicton.  
 https://www.lesechos.fr/tech-medias/hightech/letat-choisit-microsoft-pour-les-donnees-de-sante-et-cree-la-polemique-1208376  
 Sachant tout ce qu'on sait de la négligence de la cybersécurité par cette entreprise,
 et sachant à quel point la sécurité économique des entreprises,
 et donc la stabilité financière des employés, dépend aujourd'hui de cette cybersécurité,
-avoir acheté du Microsoft, sans avoir évalué les risques associés, devrait être devenu inadmissible.
+avoir acheté du Microsoft, sans avoir évalué les risques associés, devrait être inadmissible.
 En fait, aujourd'hui, il y a même une probabilité très loin d'être négligeable que,
 accepter une offre de Microsoft pour votre entreprise,
 c'est permettre à des acteurs du cybercrime, 
 comme des concurrents ou des gouvernements étrangers,
 d'accéder aux informations sensibles de votre entreprise,
 voire de prendre le contrôle sur vos opérations dans le cloud.
-Sachant les failles de Microsoft Cloud, il serait irresponsable de ne pas questionner
-les habitudes numériques de nos entreprises.
+Sachant les failles connues de Microsoft Cloud, 
+il serait irresponsable de ne pas questionner les habitudes numériques de nos entreprises.
 
 "Evgueni Prigojine, même avec ces fuites de données, il ne change pas ses habitudes.
 Il a gardé, par exemple, cet agenda psion aussi facilement piratable qu'un PC windows."  
@@ -101,7 +101,7 @@ Les ennemis les plus dangereux sont encore ceux qu'on ne voit pas ;
 et pendant de longs mois, l'infiltration de Microsoft par les hackers chinois était de ce genre.
 Quoi qu'il en soit, c'est dans un climat post-11 septembre de forte préoccupation 
 pour les risques sur la sécurité nationale
-que Microsoft fut mis sous grosse pression des autorités américaines.
+que Microsoft fut mis sous grosse pression par les autorités américaines.
 
 C'est ainsi que, certainement sous la pression d'agences étatiques,
 Bill Gates, le fondateur milliardaire de Microsoft, écrivit un mémo,
@@ -128,11 +128,11 @@ dans lesquelles nous enregistrons tant de données sensibles
 et avec lesquels nous accédons à des systèmes que nous voudrions être les seuls à contrôler,
 comme nos comptes bancaires.
 
-J'ai quand même souvent envie de dire que,
+J'ai quand même envie de dire que,
 s'il voulait vraiment optimiser sa philanthropie,
-Bill Gates ferait mieux de s'intéresser beaucoup plus à la cybersécurité,
-dont l'entreprise qu'il a fondé est coupable d'inattention,
-et qui met désormais en grave danger des milliards d'utilisateurs,
+Bill Gates devrait sans doute s'intéresser beaucoup plus à la cybersécurité,
+notamment celle dont l'entreprise qu'il a fondé est coupable d'inattention,
+avec pour conséquence la mise en danger des milliards d'utilisateurs,
 des millions d'entreprises et des milliers d'organisations gouvernementales et internationales.
 
 Alors, pour être juste avec Microsoft, 
@@ -166,7 +166,7 @@ pour saboter le programme nucléaire iranien,
 en provoquant une auto-destruction difficilement détectable des machines à enrichir l'uranium.  
 https://tournesol.app/entities/yt:U_7CGl6VWaQ
 
-Autre cas gravissime, en 2009, l'Opération Aurora a elle permis à des hackers chinois
+Autre cas très grave, en 2009, l'Opération Aurora a permis à des hackers chinois
 d'infiltrer une de manière durable les systèmes de nombreux géants américains, y compris Google, 
 en exploitant une faille de Microsoft Internet Explorer ;
 une faille que Microsoft connaissait 3 mois avant l'attaque,
@@ -191,7 +191,7 @@ Et justement, dans sa lettre, le Sénateur Ron Wyden rappelle que
 Microsoft connaissait les vulnérabilités de son système d'authentification depuis 2017,
 trois ans avant que l'attaque des hackers russes ait eu lieu, 
 et soit détectée par des agences américaines.
-Mais, encore une fois, Microsoft n'a pas réparé la feuille, 
+Mais, encore une fois, Microsoft n'a pas réparé la faille, 
 et n'a pas averti ses clients qui utilisaient pourtant ses technologies défectueuses.
 Comme l'écrit Wyden : 
 
@@ -213,7 +213,7 @@ https://www.securityweek.com/chatgpt-data-breach-confirmed-as-security-firm-warn
 
 Et pourtant, on est encore très loin d'avoir égratigné la surface émergée de l'immence iceberg
 des problèmes majeurs de cybersécurité présents dans les produits Microsoft.
-Je vais me contenter d'en citer seulement deux autres, particulièrement révoltants.
+Je vais me contenter d'en citer seulement deux autres, particulièrement révélateurs.
 
 Le 4 juin 2021, pour le 32e anniversaire du massacre de Tiananmen,
 et alors que les militants pro-démocraties étaient réprimés à Hong-Kong,
@@ -254,7 +254,7 @@ Cet été donc, Microsoft en a remis une couche,
 avec une faille qui affecte son service Cloud,
 que Microsoft a prétendu être particulièrement sécurisé
 pour attirer de nombreux nouveaux clients dépassés par les enjeux de cybersécurité.
-La confiance des clients étaient à nouveau trahi -
+La confiance des clients était à nouveau trahi -
 mais vue l'inattention médiatique à cet événement majeur,
 je crains que les clients ne s'en rendent pas suffisamment compte.
 
@@ -274,7 +274,10 @@ Si tout va bien,
 le serveur d'authentification de Microsoft va vous envoyer un jeton d'authentification,
 que le serveur va certifier en y incluant une signature cryptographique,
 produite à l'aide d'une *clé de signature*.
-Retenez bien que le jeton est certifiée avec cette clé de signature, sensée être ultra-secrète.
+Autrement dit, cette signature est un certificat vérifiable 
+que seule une machine qui possède la clé de signature a pu produire.
+Retenez bien que le jeton est certifiée avec cette clé sensée être ultra-secrète,
+et n'être enregistrée que sur des serveurs de Microsoft auxquels personne n'a accès.
 Ça va être important pour comprendre le hack du groupe chinois.
 
 Ensuite, pour utiliser un service Cloud de Microsoft, 
@@ -301,11 +304,13 @@ Pour commencer, cette clé finit par expirer,
 ce qui évite qu'une clé volée puisse garantir un accès indéfini.
 De plus, elle est censée n'exister que dans l'environnement de production,
 lequel est détaché du réseau de machines des employés de Microsoft.
+En particulier, même les employés de Microsoft n'y ont pas accès.
 On parle parfois de sandboxing : l'accès à la production est restreinte,
 et en l'occurence interdite aux employés.
 
 Mais comme tout sandboxing, il demeure des canaux de communication entre les différentes sandboxes,
-en l'occurence entre le réseau de production et le réseau des employés.
+en l'occurence entre le réseau de production et le réseau des employés,
+qu'il faut surveiller comme le lait sur le feu.
 Parmi les communications possibles, il y a en particulier le transfert des informations de pannes.
 Si une machine du réseau de production tombe en panne,
 on permet aux employés d'accéder à des informations au sujet de cette panne,
@@ -337,7 +342,7 @@ pour accéder à des services Cloud de Microsoft, comme les emails d'un client d
 
 Et alors, en principe, ces attaquants n'auraient pas dû pouvoir aller bien loin,
 parce que la clé qu'ils ont volé était censée expirer en Avril 2021,
-et a priori ils y ont accéder après Avril 2021.
+et a priori ils y ont accédé après Avril 2021.
 Mais étrangement, les applications de Microsoft n'avaient pas encodé cette expiration,
 et ont permis aux attaquants de continuer à exploiter la clé de signature jusqu'en juillet 2023.
 Ce que l'on sait, c'est qu'ils l'ont en particulier utilisé pour accéder à des emails Outlook
@@ -358,9 +363,10 @@ aux nombreux autres services de Microsoft ;
 difficilement toutefois d'en être sûr, 
 tout dépend des détails d'acceptation de la signature des jetons par la clé volée 
 par les différents services.
-En tout cas, il est improbable que ces attaquants n'ont pas essayé d'infiltrer davantage de cibles,
+En tout cas, il est improbable que ces attaquants n'aient pas 
+essayé d'infiltrer davantage de cibles,
 et en particulier d'établir une présence persistente dans les services Cloud de nombreux clients.
-En particulier, l'entreprise de cybersécurité Wiz estime possible que 
+L'entreprise de cybersécurité Wiz estime ainsi possible que 
 les attaquants ont modifié les mécanismes d'authentification d'applications qu'ils ont hacké,
 pour permettre des backdoors via lesquelles ils peuvent se connecter 
 à n'importe quel moment dans le futur.  
@@ -388,9 +394,9 @@ https://www.youtube.com/watch?v=BEjn9xBdQp8
 
 Microsoft semble très très loin des standards de sécurité que 
 son rôle dominant dans le traitement de l'information à l'échelle mondiale devrait exiger.
-Et alors, en 2001, c'était déjà gravissime.
+Et alors, en 2001, c'était déjà un gros problème.
 Mais en 2023, comme le comprend très bien le Sénateur Ron Wyden,
-l'inattention de Microsoft à la cybersécurité menace tout simplement la sécurité nationale.
+l'inattention de Microsoft à la cybersécurité menace la sécurité nationale.
 Car au-delà des nombreux cas déjà très préoccupants dont on a parlé aujourd'hui,
 la cyber attaque de l'été dernier expose surtout la banalisation de l'omniprésence des failles
 dont les services critiques de Microsoft sont coupables d'avoir laisser traîner,
@@ -398,15 +404,10 @@ et le danger civilisationnel de donner à Microsoft le contrôle de serveurs res
 de transactions bancaires, de contrôle du réseau électrique,
 ou de gestion des hôpitaux et des assurances.
 
-Encore une fois, si ces systèmes sont infiltrés par des acteurs malveillants,
-et si ces acteurs malveillants décident un jour d'activer leur levier terroriste,
-on risque d'assister à un effondrement des services les plus critiques de nos sociétés,
-qui risquent de provoquer un chaos global sans précédent.
-
 Mais alors, que faire ?
 La première chose à faire, c'est, je pense, de cesser de fermer les yeux,
 ou de détourner notre attention de ces risques civilisationnels,
-en disqualifiant d'alarmistes ceux qui les étudient.
+en cédant à la tentation de disqualifier d'alarmistes ceux qui les étudient.
 Prenez le temps de bien évaluer l'état de la cybersécurité des systèmes d'information critiques.
 Même sans rentrer dans les détails techniques,
 il est largement possible d'évaluer l'ampleur des risques,
@@ -426,14 +427,15 @@ que de nombreux groupes obscurs veulent détruire
 et que les démocraties sont bien trop peu enclines à consolider.
 
 Une fois informés, je suis sûr que vous questionnerez en particulier 
-l'inattention criminelle d'entreprises privées à la cybersécurité,
+l'inattention des entreprises privées à la cybersécurité,
 et leurs investissements massifs dans le développement de nouvelles technologies
 qui sont beaucoup moins sécurisées encore.  
 https://tournesol.app/entities/yt:E9c2y0eUBMs  
 En particulier, plutôt que d'acheter aveuglément des services de Microsoft,
 parce que c'est ce que tout le monde fait et que "personne n'a jamais été licencié" pour ça,
 j'espère que vous envisagerez des solutions alternatives,
-notamment celles qui ont un track record de cybersécurité beaucoup moins compromettant.  
+notamment celles qui ont un track record de cybersécurité beaucoup moins compromettant,
+comme les administrations françaises commencent à le faire.  
 https://siecledigital.fr/2021/09/24/etat-francais-micorost-365/  
 https://www.lemondeinformatique.fr/actualites/lire-l-education-nationale-exclut-les-offres-gratuites-office365-et-workspace-dans-les-ecoles-88617.html
 
@@ -441,8 +443,12 @@ Ceci dit, une solution plus efficace pour drastiquement augmenter la cybersécur
 et plus généralement de notre civilisation, cela reste la sobriété numérique.
 En particulier, moins vous aurez d'applications sur vos ordinateurs, vos tablettes et vos téléphones,
 moins il y aura de vecteurs via lesquels les cyber-attaquants peuvent compromettre vos informations.
-Ainsi, la mesure la plus simple que vous pouvez faire pour augmenter drastiquement votre cybersécurité,
-c'est désinstaller tous les plugins obscurs et non-essentiels
+Avez-vous vraiment besoin d'installer sur votre téléphone professionnel 
+l'application qui stylise vos portraits avec un algorithme génératif ?  
+https://www.heidi.news/cyber/jamais-chatgpt-n-aurait-du-etre-deploye-pour-le-grand-public  
+En particulier, la mesure la plus simple que vous pouvez effectuer 
+pour augmenter drastiquement votre cybersécurité,
+c'est désinstaller tous les plugins obscurs et non-essentiels 
 que vous utilisez dans vos navigateurs web,
 et plus encore dans vos environnements de développement comme Microsoft VS Code.  
 https://tournesol.app/entities/yt:ghVWFZ5esnU  
