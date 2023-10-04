@@ -218,7 +218,12 @@ Et ça... bah ça ressemble beaucoup à la conclusion de la vidéo de Mathador !
 
 D'autant que l'instabilité du système solaire n'est que l'une des causes possibles
 de cette prédiction insensée du modèle laplacien !
-D'autres arguments fondés sur l'énergie noire prédisent 
+Déjà, dans 8 milliards d'années, notre soleil va mourir, 
+ou plutôt se transformer en géante rouge, puis en nébuleuse planétaire, puis en naine blanche.
+Bon, techniquement, ou pourrait dire qu'il continuera à se "lever"...
+Quoique ce seront des levers très différents de ceux d'aujourd'hui.
+
+Par ailleurs, d'autres arguments fondés sur l'énergie noire prédisent 
 une expansion fatale de l'espace-temps, appelée Big Rip, 
 dans 22 milliards d'années.
 Voilà deux arguments qui montrent que les ordres de grandeur de 
