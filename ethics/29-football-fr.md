@@ -5,9 +5,11 @@ Peut-on envisager un arbitrage du football entièrement automatisé ?
 Depuis plusieurs années, l'arbitrage du football s'est beaucoup modernisé,
 en exploitant les nouvelles technologies de l'information,
 notamment pour la goal-line technologie, 
-qui permet de savoir si le ballon a franchi la ligne de but,
+qui permet de savoir si le ballon a franchi la ligne de but,  
+https://tournesol.app/entities/yt:m17ERc-kQhQ  
 et pour la règle du hors-jeu, 
-dont les lignes sont maintenant tracées à l'aide de nombreuses caméras et d'algorithmes.
+dont les lignes sont maintenant tracées à l'aide de nombreuses caméras et d'algorithmes.  
+https://tournesol.app/entities/yt:C164kYMGV1A
 
 OK, mais ça, ça paraît être les applications "faciles" 
 des technologies de l'information à l'arbitrage au football.
@@ -52,9 +54,9 @@ https://www.theifab.com/fr/laws/latest/fouls-and-misconduct/#introduction
 Clairement, ces lois vont être difficiles à encoder dans un algorithme.
 En premier lieu, "l'avis de l'arbitre" est explicitement mis en valeur.
 Autrement dit, selon l'IFAB, la décision revient avant tout à une interprétation par l'arbitre.
-Et d'ailleurs, comme on y reviendra, cela peut paraître fort insatisfaisant.
-Sachant que l'avis de l'arbitre va à l'encontre de celui de tous les observateurs,
-et qu'il peut être corrompu par la pression du public ou des avances financières,
+Et d'ailleurs,cela peut paraître fort insatisfaisant.
+Si l'avis de l'arbitre va à l'encontre de celui de tous les observateurs,
+et sachant qu'il peut être corrompu par la pression du public ou des avances financières,
 comme cela a été le cas par le passé,  
 https://en.wikipedia.org/wiki/Match_fixing_in_association_football  
 est-ce vraiment l'avis d'un arbitre humain imparfait et corruptible qui doit faire foi ?
@@ -62,12 +64,13 @@ est-ce vraiment l'avis d'un arbitre humain imparfait et corruptible qui doit fai
 Mais surtout, la loi utilise des critères qui sont beaucoup plus difficiles à modéliser et à trancher,
 que ceux qui sont utilisés pour déterminer si le ballon a franchi la ligne de buts,
 ou si un joueur est en position de hors-jeu.
-En effet, on trouve dans la loi des mots comme "imprudente", "inconsidérée", "violente",
-mais aussi "charge", "essaie", "bouscule", "frappe" ou "faire trébucher".
+En effet, on trouve dans la loi des mots comme "imprudente", "inconsidérée", "violente".
 Sachant que le football reste un sport de contact où les charges et bouscules sont en fait souvent licites,
 comment tracer la frontière entre les interventions de la sorte qui sont "considérées"
 et celles qui seraient "inconsidérées".
-Comment un algorithme est censé considéré le mot "considéré" ? #MesTasDeMetas
+Comment un algorithme est censé considérer le mot "considéré" ? #MesTasDeMetas
+
+## L'apprentissage par jurisprudence
 
 En fait, la manière dont les arbitres, les professionnels et les amateurs de football
 ont appris à distinguer les actions de jeux qui sont des fautes,
@@ -112,8 +115,8 @@ C'est pour cela que je m'attends à ce que, dans les années à venir,
 l'arbitrage pourra être entièrement automatisable.
 
 Qui plus est, contrairement à l'arbitre humain,
-l'arbitre algorithmique pourra exploité tous les angles de vues de toutes les caméras
-pour prendre sa décision ;
+l'arbitre algorithmique pourra exploiter 
+tous les angles de vues de toutes les caméras pour prendre sa décision ;
 et contrairement à la VAR, sa décision pourra être rendue en une fraction de seconde,
 plutôt qu'après plusieurs minutes.
 
@@ -130,9 +133,12 @@ pour que toutes les parties prenantes du football acceptent de la déployer.
 
 Après tout, qui nous dit que l'IA n'a pas en fait un biais systématique en faveur de certaines équipes ?
 Quand on sait à quel point le football italien était sous l'emprise de la corruption,
-que ce soit à l'époque de Berlusconi, 
+notamment comme cela a été révélé dans l'affaire Calciopoli, 
 n'y a-t-il pas un risque que, en généralisant le passé,
-on généralise aussi un arbitrage favorable aux équipes de Berlusconi ?
+on généralise aussi un arbitrage favorable à deséquipes comme la Juventus et le Milan AC ?  
+https://fr.wikipedia.org/wiki/Affaire_Calciopoli  
+Et quid des suspicions modernes, par exemple concernant le FC Barcelone ?  
+https://www.reuters.com/sports/soccer/barcelona-under-investigation-suspected-bribery-refereeing-case-court-2023-09-28/
 
 Pour contrer les risques de biais systématiques, 
 il peut être utile d'exploiter le voile d'ignorance du philosophe John Rawls.
@@ -250,7 +256,10 @@ Depuis maintenant plus de trois ans,
 nous avons réuni des expertises en mathématiques, en informatique, en philosophie et en sociologie,
 entre autres, pour concevoir une plateforme open-source de gouvernance démocratique et sécurisée 
 des IA de recommandation.
-Cependant, il nous reste beaucoup de chemins à faire pour que cette plateforme soit vraiment satisfaisante.
+Et si l'on s'est donc intéressé surtout aux arbitres de l'information,
+nulle doute que nombre des outils qu'on a développés sont aussi applicables à l'arbitrage du football.
+Ceci étant dit, il nous reste en fait beaucoup de chemins à effectuer 
+pour que la gouvernance algorithmique de Tournesol soit vraiment satisfaisante.
 Et pour cela, nous avons besoin de nombreuses formes d'aides,
 de vos évaluations de la recommandabilité de différents contenus,
 à des dons financiers pour nous permettre de garder notre excellent employé,
@@ -259,5 +268,8 @@ ou encore à la simple promotion de la plateforme.
 Pour toute l'aide que vous pourrez nous fournir,
 nous tenons à exprimer d'ores-et-déjà notre extrême gratitude.
 
-
+Ce n'est qu'à la suite d'une mobilisation générale et de progrès majeurs
+dans la sécurité, l'éthique et la gouvernance des IA,
+que je pourrais un jour en venir à recommander un arbitrage entièrement par les IA ;
+que ce soit du football ou de l'information.
 
