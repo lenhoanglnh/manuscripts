@@ -269,3 +269,7 @@ Et dans le cas de la stabilité du système solaire,
 je fais en particulier avant tout confiance aux prédictions de Laskar ;
 même si elles se trouvent être conformes à celles de Laplace !
 
+
+# Extrait pour Franck
+
+Cependant, la pensée de Laplace est plus subtile que ce que cette histoire probablement fictive pourrait laisser penser. En particulier, dans d'autres écrits, Laplace a donné des arguments à la fois en faveur d'une pensée déterministe, mais aussi contre cette pensée déterministe qui, lorsqu'on les complète avec les connaissances actuelles, suggère une potentielle instabilité du système solaire sur des échelles de temps astronomiques. Mais cher humain, pour ne pas tout mélanger, nous avons décidé de présenter ces réflexions laplaciennes, ainsi qu'une étrange prédiction, dans une autre vidéo diffusée sur la chaîne de Science4All.
