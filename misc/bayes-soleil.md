@@ -1,4 +1,4 @@
-# L'incroyable prédiction de fin du monde de Laplace
+﻿# L'incroyable prédiction de fin du monde de Laplace
 
 Dans l'histoire des mathématiques, 
 il y a eu peu de débats aussi rocambolesques et mouvementés
@@ -24,8 +24,19 @@ On reparle de ton excellent récit de l'histoire de cette question en fin de vid
 Moi ce qui va m'intéresser dans cette histoire, 
 c'est un élément que je t'ai demandé de laisser de côté, 
 pour que j'y consacre une vidéo à part entière,
-à savoir une prédiction faite par, non pas Newton, pas Euler, pas Lagrange, pas Poincaré,
-Revient en arrière... Oui ! Lui. Laplace.
+à savoir une prédiction faite par, non pas Newton, pas Euler, 
+
+Franck: Lagrange?
+(Lê fait non de la tête)
+Franck:Poincaré??
+(Lê fait non de la tête)
+Lê : Revient en arrière... 
+(Franck fait une tête comme s'il venait de comprendre que c'était Laplace)
+
+Lê: Oui ! Lui. 
+Franck: Encore lui??
+
+Lê: Et oui: Laplace!
 
 Laplaaaaace !!
 
@@ -59,6 +70,9 @@ les probabilités de l'existence de ces causes prises de l'événement sont entr
 comme les probabilités de l'événement prises de ces causes,
 et la probabilité de l'existence de chacune d'elles est égale à la probabilité de l'événement prise de cette cause,
 divisée par la somme de toutes les probabilités de l'événement prises de chacune de ces causes."
+
+(Franck repète la définition péniblement en essayant de la comprendre)
+Franck: Si.. un événement... peut être produit... par un nombre n de causes différentes...
 
 Bon, je vais le reconnaître, l'écriture de Laplace est loin d'être la plus limpide qui soit.
 Et j'ai personnellement dû relire ce principe plusieurs fois pour le comprendre ;
@@ -134,6 +148,8 @@ Comme il y a une infinité de valeurs possibles de x',
 plutôt qu'une somme classique, il va nous falloir utiliser une somme continue,
 qu'on appelle "intégrale" dans le jargon mathématique.
 
+Franck: Et là, j'en vois deux, au fond, qui se disent: «Ahhhhhhhn c'était ça, une ingtégraaaaale!»
+
 Ainsi la probabilité d'une cause x sachant p et q
 est donné par f(p,q) x^p (1-x)^q / \int f(p,q) y^p (1-y)^q dy,
 où j'ai juste remplacé symboliquement la lettre x' par la lettre y.
@@ -177,7 +193,9 @@ En particulier, si la probabilité que le soleil ne se lève pas est en effet 1/
 et si chaque prochain lever de soleil est statistiquement indépendant des précédents,
 alors il faut s'attendre à ce que le soleil s'arrête de se lever, dans environ p+2 jours.
 
-Si vous pensez que ces calculs de Laplace sont farfelus, vous n'êtes pas les seuls !
+Franck: Mouais...
+
+Si vous pensez comme Franck que ces calculs de Laplace sont farfelus, vous n'êtes pas les seuls !
 Laplace même les avait effectués, 
 en prenant l'hypothèse religieuse selon laquelle l'histoire aurait commencé il y a 5000 ans,
 soit 1 826 213 jours,
@@ -216,14 +234,11 @@ Et ça... bah ça ressemble beaucoup à la conclusion de la vidéo de Mathador !
 
 [Extrait de vidéo de Mathador sur Laskar]
 
+Franck, beau joueur: j'avoue. Impressionnant, Laplace.
+
 D'autant que l'instabilité du système solaire n'est que l'une des causes possibles
 de cette prédiction insensée du modèle laplacien !
-Déjà, dans 8 milliards d'années, notre soleil va mourir, 
-ou plutôt se transformer en géante rouge, puis en nébuleuse planétaire, puis en naine blanche.
-Bon, techniquement, ou pourrait dire qu'il continuera à se "lever"...
-Quoique ce seront des levers très différents de ceux d'aujourd'hui.
-
-Par ailleurs, d'autres arguments fondés sur l'énergie noire prédisent 
+D'autres arguments fondés sur l'énergie noire prédisent 
 une expansion fatale de l'espace-temps, appelée Big Rip, 
 dans 22 milliards d'années.
 Voilà deux arguments qui montrent que les ordres de grandeur de 
