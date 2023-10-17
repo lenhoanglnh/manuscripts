@@ -220,11 +220,42 @@ Comme tous les experts vous le diront,
 chaque ajout de fonctionnalités à un système d'information augmente sa surface d'attaque,
 c'est-à-dire le nombre de possibilités pour les attaquants de compromettre les systèmes d'information.
 
-Si vous voulez vous protéger des vols de données, des vols de mots de passe, 
+Un exemple particulièrement clair de sobriété numérique est la recommandation effectuée
+par un comité de 14 chercheurs en cybersécurité sur le futur du vote aux États-Unis.
+Je cite :
+
+"À ce jour, Internet (ou n'importe quel réseau connecté à Internet) ne devrait pas être utilisé
+pour l'envoi de bulletins de vote remplis.
+De plus, le vote par Internet ne devrait pas être utilisé dans le futur,
+jusqu'au jour où, si ce jour arrive, des garanties très robustes de sécurité et de vérifiabilité
+sont développées et mises en place,
+sachant qu'aucune technologie connue ne garantit le secret, la sécurité et la vérifiabilité
+d'un bulletin rempli transmis via Internet."
+
+> At the present time, the Internet (or any network connected to the Internet) 
+should not be used for the return of marked ballots. 
+Further, Internet voting should not be used in the future 
+until and unless very robust guarantees of security and verifiability are developed and in place, 
+as no known technology guarantees the secrecy, security, and verifiability 
+of a marked ballot transmitted over the Internet.  
+https://nap.nationalacademies.org/catalog/25120/securing-the-vote-protecting-american-democracy
+
+Voilà un juge extrêmement radical, mais aussi extrêmement bien informé.
+Et ce ne sont pas les exemples récents de spywares surpuissants comme Pegasus ou Predator,
+capables d'infiltrer et de prendre le contrôle de nombreux téléphones,
+qui vont pousser ces chercheurs à réviser leur jugement.
+Voter avec des appareils potentiellement hackés,
+c'est encourir le risque que des élections présidentielles soient complètement manipulées
+par des logiciels malveillants contrôlés par des puissances autoritaires.
+
+Bref. Si vous voulez vous protéger des vols de données, des vols de mots de passe, 
 des vols d'accès à vos réseaux sociaux, à vos emails et à vos banques,
 réduisez drastiquement le nombre d'applications que vous avez sur vos téléphones,
 ainsi que le nombre d'extensions que vous avez dans vos navigateurs web,
-surtout sur vos machines de travail professionnel.
+surtout sur vos machines de travail professionnel ;
+voire, limitez votre confiance en les appareils numériques que vous utilisez.
+Ces machines pourraient en fait être devenus des espions d'une puissance étrangère.
+Faites très attention aux secrets que vous partagez avec elles.
 
 ## Le principe de développement différentiel
 
