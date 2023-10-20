@@ -44,6 +44,8 @@ Changement d’attitude urgent, notamment en IA.
 Il faut de l’argent.
 
 ## Calicarpa
+
+https://www.theregister.com/2023/02/05/supply_chain_security_efforts/
 https://www.theregister.com/2022/11/16/wasp_python_malware_checkmarx/  
 https://www.theregister.com/2023/01/04/pypi_pytorch_dependency_attack/  
 https://tournesol.app/entities/yt:puQci0NZKyw
