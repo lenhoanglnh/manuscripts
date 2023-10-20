@@ -210,18 +210,21 @@ aux services de géants du numérique qui ne méritent certainement pas un tel n
 Je ne peux que vous encourager à questionner vos fournisseurs de services informatiques,
 et à envisager des alternatives plus éthiques, sécurisées et souveraines.
 
-Et justement, le sponsor de cette vidéo, Infomaniak, est un fournisseur de service clouds
-qui s'appuie sur une souveraineté et une éthique très supérieures 
-à celles des concurrents américains qui, à cause du Patriot Act,
-se doivent de partager vos données avec les autorités américaines si celles-ci l'exigent.
-Autrement dit, ces concurrents américains sont officiellement facilement corruptibles.
-A contrario, Infomaniak fait un effort majeur pour tout développer de manière souveraine, 
-avec des collaborateurs uniquement en Suisse, un pays beaucoup plus digne de confiance. 
-Vous pouvez profitez gratuitement des services Mail et SwissTransfer d'Infomaniak, 
-et je vous recommande aussi vivement leurs services Web, kMeet ou encore kDrive. 
-Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
-Infomaniak reverse un don à l'Association Tournesol. 
-Merci beaucoup à eux pour ce partenariat.
+Et justement, le sponsor de cette vidéo, Infomaniak, est un
+fournisseur de service clouds qui s'appuie sur une souveraineté et
+une éthique très supérieures à celles des concurrents américains
+qui, à cause du Patriot Act, se doivent de partager vos données avec
+les autorités américaines si celles-ci l'exigent. Autrement dit, ces
+concurrents américains sont officiellement facilement corruptibles. A
+contrario, Infomaniak fait un effort majeur pour tout développer de
+manière souveraine, avec des collaborateurs uniquement en Suisse.
+Vous pouvez profiter gratuitement d'une adresse mail gratuite avec
+kDrive qui respecte votre vie privée à l'adresse etik.com, et je
+vous recommande aussi vivement d'utiliser leur service
+swisstransfer.com pour partager vos gros fichiers. Pour chaque vidéo
+où je les promeus, ce que je fais avec grand plaisir, Infomaniak
+reverse un don à l'Association Tournesol. Merci beaucoup à eux pour
+ce partenariat.
 
 ## Présomption de non-conformité
 
