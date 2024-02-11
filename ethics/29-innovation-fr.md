@@ -8,27 +8,27 @@ Ou vaut-il mieux éviter le sujet dont tout le monde parle,
 quitte à faire moins de vues,
 mais avec un risque bien moindre d'effectuer des erreurs ?
 
-Si cette histoire devient de plus en plus le quotidien des journalistes,
+Si cette situation devient de plus en plus le quotidien des journalistes,
 elle révèle toutefois un problème plus fondamental 
 sur la manière de traiter la nouveauté.
 De manière intuitive, plus on cherche la nouveauté,
-plus il y a un risque de commettre et de valider des erreurs.
+plus on risque de commettre et de valider des erreurs.
 Mais à l'inverse, plus on évite l'erreur, 
 moins on est capable de s'adapter à la nouveauté.
 
 Aujourd'hui, on va voir que cette tension entre nouveauté et fiabilité 
-est un fait une thématique fondamentale de la science de l'information,
+est en fait une thématique fondamentale de la science de l'information,
 où elle est connue davantage sous le nom de dilemme "liveness" versus "safety",
 que je vous propose de traduire par "innovation" versus "sécurité".
 On va voir en particulier un problème très précis,
-où l'on a démontré que, en un sens précis, 
+où l'on a démontré que, de manière formelle, 
 innovation et sécurité étaient incompatibles,
 et on verra comment des solutions comme Paxos et la Blockchain 
 font le choix de sacrifier l'un ou l'autre.
 
 Mais surtout, comme on le verra, 
 la tension fondamentale a des conséquences profondes,
-non seulement sur la qualité de l'information journaliste ou même scientifique,
+non seulement sur la qualité de l'information journalistique ou même scientifique,
 mais aussi et surtout sur la sécurité du développement des technologies,
 dans un monde où l'innovation est érigée en tant que priorité absolue.
 
@@ -43,8 +43,8 @@ Imaginez un média qui doit déterminer si un événement a eu lieu.
 Pour cela, ses nombreux journalistes doivent se coordonner, 
 en s'envoyant des messages.
 Supposez que le média a le seuil suivant : 
-si plus de journalistes confirment l'événement qu'il n'y en a qui le contestent,
-alors on considère l'événement vrai, et on on publie un article à son sujet.
+si le nombre de journalistes confirmant l'événement dépasse ceux qui le contestent,
+alors on considère l'événement vrai, et on publie un article à son sujet.
 
 Il y a toutefois deux difficultés.
 La première, c'est que les journalistes sont dans des lieux difficiles, 
@@ -68,7 +68,7 @@ et où au moins une machine peut tomber en panne à tout moment.
 On parle de réseau asynchrone avec risque de panne.
 Est-il alors possible pour les machines fonctionnelles
 d'agréger les informations accessibles des différentes autres machines,
-et ainsi aboutir une validation consensuelle de l'information ?
+et ainsi aboutir à une validation consensuelle de l'information ?
 
 Ce problème a tout à coup pris la lumière des projecteurs,
 lorsqu'on s'est rendus compte 
@@ -178,7 +178,7 @@ trop souvent par des systèmes conçus avec de hautes préoccupations de sécuri
 
 Et malheureusement, surtout dans le contexte actuel de courses à la spectacularité des IA,
 l'innovation est aujourd'hui beaucoup plus lucrative que la sécurité,
-tout en exigeant beaucoupo moins de compétences.
+tout en exigeant beaucoup moins de compétences.
 Ce n'est d'ailleurs pas un hasard si le motto de Facebook est "Move fast and break things",
 qu'on peut traduire par "innover vite et casser ce qui existe" ;
 un archétype d'une posture de dédain envers la sécurité.
@@ -259,7 +259,7 @@ https://www.calicarpa.com/
 Jusque là, toutefois, beaucoup de gouvernements valorisent encore davantage l'innovation,
 voire l'urgence à accélérer dans la digitalisation et l'adoption de produits étrangers,
 et ignorent largement les nombreux problèmes de cybersécurité 
-que l'innovation effreinée implique inéluctablement.
+que l'innovation effrénée implique inéluctablement.
 
 En fait, à l'instar du changement climatique, 
 la principale solution pour augmenter la cybersécurité de nos sociétés serait l'exact opposé ;
@@ -313,7 +313,7 @@ Faites très attention aux secrets que vous partagez avec elles.
 
 ## Le principe de développement différentiel
 
-Alors, jusque là, j'ai donné l'impression que la quête effreinée de l'innovation allait
+Alors, jusque là, j'ai donné l'impression que la quête effrénée de l'innovation allait
 à l'encontre de notre sécurité et de la sécurité de nos civilisations.
 C'est d'une certaine manière l'argument défendu par Nick Bostrom,
 dans son article terrifiant sur l'hypothèse du monde vulnérable,
@@ -338,7 +338,7 @@ https://tournesol.app/entities/yt:lYXQvHhfKuM
 Mais du coup, plus on tire rapidement de nouvelles boules de l'urne,
 ce qui grâce au progrès technologique, est de plus en plus le cas,
 plus la probabilité de tirer une boule noire est grande.
-En accélération l'innovation, l'humanité court en fait probablement à sa propre perte.
+En accélérant l'innovation, l'humanité court en fait probablement à sa propre perte.
 
 D'autant que les conditions géopolitiques nécessaires pour protéger l'humanité 
 malgré le tirage d'une boule noire sont extrêmement distantes du contexte actuel ;
