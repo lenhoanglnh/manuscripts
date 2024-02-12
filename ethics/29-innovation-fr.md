@@ -88,7 +88,7 @@ Aucun algorithme distribué ne peut garantir la validation consensuelle de l'inf
 dans un réseau asynchrone avec une panne potentielle.
 
 Et, bon, la preuve de ce théorème est très technique,
-donc je vais la passer sous silence dans cette vidéo,
+donc je vais pas en parler dans cette vidéo,
 mais intuitivement, c'est parce qu'il y aura toujours des suites d'événements 
 qui repousseront l'indécision,
 et après lesquelles il restera impossible pour quiconque de trancher
