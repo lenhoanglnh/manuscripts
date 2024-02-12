@@ -225,7 +225,7 @@ https://www.theregister.com/2023/06/19/even_google_warns_its_own/
 
 Et pourtant, malgré toutes ses inquiétudes chez les puissants du monde numérique,
 les démocraties échouent encore à protéger la population contre les travers de l'innovation,
-et autorisent encore, par exemple, SnapChat à s'introduire sur les téléphones de millions d'enfants,
+et autorisent encore, par exemple, SnapChat sur les téléphones de millions d'enfants dont beaucoup de moins de 13ans,
 alors que de nombreux articles révèlent que son IA banalise la pédophilie auprès de mineurs.   
 https://www.washingtonpost.com/technology/2023/03/14/snapchat-myai/
 
