@@ -1,4 +1,4 @@
-# Sécuriser ou innover, il faut choisir (le dilemme safety-liveness)
+# Sécuriser ou innover : faut-il choisir ?
 
 Imaginez qu'un nouveau conflit éclate de manière inattendue.
 Vous êtes journalistes, et vous ressentez la pression de parler de cet événement.
