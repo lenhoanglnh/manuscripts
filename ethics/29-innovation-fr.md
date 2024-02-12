@@ -360,7 +360,7 @@ sûrement, il ne faudrait pas vouloir innover dans ce domaine... non ?
 Eh bien, aussi effrayant que cela puisse paraître, 
 ces réflexions de base de l'impact social de l'innovation sont absentes 
 chez énormément d'entrepreneurs, de développeurs et de chercheurs, y compris académiques.
-Comme en parle Thibaut dans sa vidéo, en Australie, l'entreprise Silex Systems
+Comme en parle Mr. Phi dans sa vidéo, en Australie, l'entreprise Silex Systems
 continue d'investir massivement pour trouver des nouvelles techniques d'enrichissement nucléaire,
 et a connu même un gain drastique de son évaluation boursière depuis la guerre en Ukraine.  
 https://www.silex.com.au/  
