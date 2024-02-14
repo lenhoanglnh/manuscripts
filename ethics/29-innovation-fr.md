@@ -33,9 +33,13 @@ mais aussi et surtout sur la sécurité du développement des technologies,
 dans un monde où l'innovation est érigée en tant que priorité absolue.
 
 De manière plus générale, elle nous informe sur un arbitrage fondamental 
-qu'il nous faut faire entre le choix de la sécurité et celui de l'innovation,
-même si on verra aussi que, en pratique, 
-il y a des subtilités importantes dans cet arbitrage.
+qu'il nous faut faire entre le choix de la sécurité et celui de l'innovation.
+
+Ceci étant dit, on verra aussi que, en pratique, 
+il y a des subtilités importantes dans cet arbitrage ;
+notamment parce que la sécurité exige des innovations ;
+que ce soit en informatique 
+ou pour atténuer les conséquences dramatiques du changement climatique.
 
 ## Sécuriser et innover : mission impossible ?
 
