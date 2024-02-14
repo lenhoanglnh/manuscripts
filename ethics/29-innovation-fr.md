@@ -1,6 +1,6 @@
 # Peut-on innover sans mettre la planète en danger ? (oui*)
 
-Imaginez qu'un nouveau conflit éclate de manière inattendue.
+Imaginez qu'une nouvelle rumeur sur l'état de santé d'un dirigeant d'une superpuissance se propage.
 Vous êtes journalistes, et vous ressentez la pression de parler de cet événement.
 Mais les éléments que vous collectez sont à la fois nombreux et peu fiables.
 Faut-il communiquer sur les faits nouveaux à votre disposition ?
@@ -9,64 +9,71 @@ quitte à faire moins de vues,
 mais avec un risque bien moindre d'effectuer des erreurs ?
 
 Si cette situation devient de plus en plus le quotidien des journalistes,
-elle révèle toutefois un problème plus fondamental 
-sur la manière de traiter la nouveauté.
-De manière intuitive, plus on cherche la nouveauté,
+elle révèle toutefois un problème plus fondamental sur le traitement de la nouveauté.
+De manière intuitive, plus on cherche le nouveau,
 plus on risque de commettre et de valider des erreurs.
 Mais à l'inverse, plus on évite l'erreur, 
-moins on est capable de s'adapter à la nouveauté.
+moins on est capable de s'adapter à la nouveauté, voire de mener l'innovation.
 
 Aujourd'hui, on va voir que cette tension entre nouveauté et fiabilité 
 est en fait une thématique fondamentale de la science de l'information,
 où elle est connue davantage sous le nom de dilemme "liveness" versus "safety",
 que je vous propose de traduire par "innovation" versus "sécurité".
+Bon, ce sont des traductions approximatives, mais elles capturent bien la nature du dilemme.
+
 On va voir en particulier un problème très précis,
-où l'on a démontré que, de manière formelle, 
-innovation et sécurité étaient incompatibles,
-et on verra comment des solutions comme Paxos et la Blockchain 
-font le choix de sacrifier l'un ou l'autre.
+où l'on a démontré que, de manière formelle, innovation et sécurité sont incompatibles ;
+et on verra en quoi le Bitcoin, cette cryptomonnaie devenue célèbre,
+sacrifie un peu de sécurité, 
+contrairement aux algorithmes qu'a notamment proposé Leslie Lamport,
+chercheur en informatique et lauréat du prestigieux prix Turing.
 
 Mais surtout, comme on le verra, 
 la tension fondamentale a des conséquences profondes,
 non seulement sur la qualité de l'information journalistique ou même scientifique,
 mais aussi et surtout sur la sécurité du développement des technologies,
-dans un monde où l'innovation est érigée en tant que priorité absolue.
-
-De manière plus générale, elle nous informe sur un arbitrage fondamental 
+dans un monde où l'innovation est érigée en tant que priorité absolue,
+et où la sécurité est une préoccupation très secondaire.
+De manière plus générale, la science de l'information nous informe sur un arbitrage fondamental 
 qu'il nous faut faire entre le choix de la sécurité et celui de l'innovation.
 
 Ceci étant dit, on verra aussi que, en pratique, 
-il y a des subtilités importantes dans cet arbitrage ;
-notamment parce que la sécurité exige des innovations ;
-que ce soit en informatique 
+il y a des subtilités importantes dans cet arbitrage.
+En particulier, la sécurité exige aussi énormément d'innovations,
+notamment quand le statu quo est désastreux ;
+comme c'est le cas en cybersécurité 
 ou pour atténuer les conséquences dramatiques du changement climatique.
+
 
 ## Sécuriser et innover : mission impossible ?
 
-Imaginez un média qui doit déterminer si un événement a eu lieu.
-Pour cela, ses nombreux journalistes doivent se coordonner, 
-en s'envoyant des messages.
+Imaginez un média qui doit déterminer si un événement a eu lieu dans une zone de guerre.
+Pour cela, ses nombreux journalistes, qui collectent des informations disparates,
+doivent se coordonner, en s'envoyant des messages.
 Supposez que le média a le seuil suivant : 
 si le nombre de journalistes confirmant l'événement dépasse ceux qui le contestent,
 alors on considère l'événement vrai, et on publie un article à son sujet.
 
 Il y a toutefois deux difficultés.
 La première, c'est que les journalistes sont dans des lieux difficiles, 
-et le réseau passe parfois très mal.
-Ainsi, il peut se passer des jours, entre le moment 
-où un journaliste veut vous confirmer l'événement,
+ont parfois d'autres priorités que confirmer l'information en question,
+et le réseau téléphonique passe parfois très mal.
+Ainsi, il peut se passer des jours, 
+entre le moment où un journaliste veut vous confirmer l'événement,
 et le moment où vous recevrez effectivement le message.
+
 La deuxième, c'est que les journalistes sont en premières lignes du conflit,
 et il peut leur arriver à tout moment d'être kidnappé. 
 Voire pire.
 Dès lors, vous pourriez perdre toute nouvelle de ces journalistes.
+
 Quelles procédures faut-il alors suivre pour valider l'information ?
 
 L'exemple que j'ai donné ici est en fait une illustration 
 d'un problème plus fondamental de la science de l'information répartie,
 appelé le *problème du consensus*.
 Formellement, ce problème imagine plusieurs machines 
-qui communiquent via un réseau généralement fiable,
+qui communiquent via un réseau globalement fiable,
 mais qui subit régulièrement des délais de réponse imprévisibles et incontrôlés,
 et où au moins une machine peut tomber en panne à tout moment.
 On parle de réseau asynchrone avec risque de panne.
@@ -75,8 +82,7 @@ d'agréger les informations accessibles des différentes autres machines,
 et ainsi aboutir à une validation consensuelle de l'information ?
 
 Ce problème a tout à coup pris la lumière des projecteurs,
-lorsqu'on s'est rendus compte 
-que sa résolution permettrait de concevoir une monnaie décentralisée, 
+lorsqu'on s'est rendus compte que sa résolution permettrait de concevoir une monnaie décentralisée, 
 comme le Bitcoin.
 En effet, l'un des problèmes est l'émission de transactions incompatibles.
 Par exemple, si j'ai 100 Bitcoins, 
@@ -92,17 +98,17 @@ Aucun algorithme distribué ne peut garantir la validation consensuelle de l'inf
 dans un réseau asynchrone avec une panne potentielle.
 
 Et, bon, la preuve de ce théorème est très technique,
-donc je vais pas en parler dans cette vidéo,
-mais intuitivement, c'est parce qu'il y aura toujours des suites d'événements 
-qui repousseront l'indécision,
-et après lesquelles il restera impossible pour quiconque de trancher
-sur la bonne manière de résoudre tensions conflictuelles entre les parties du réseau
-de manière sécurisée.
+donc je vais pas en parler dans cette vidéo.
+Mais intuitivement, 
+c'est parce qu'il y aura toujours des suites d'événements qui repousseront l'indécision,
+et après lesquelles il restera impossible pour n'importe quelle machine 
+de résoudre les ajouts conflictuels à l'état des faits enregistrés,
+en garantissant que cette résolution sera conforme aux résolutions faites par les autres machines.
 
 Mais alors, est-ce que le Bitcoin fonctionne vraiment ?
 
 Eh bien, pour bien répondre à cette question,
-il est utile de distinguer deux propriétés différentes d'un algorithme distribué,
+il est utile de distinguer deux propriétés différentes d'un algorithme,
 à savoir d'un côté sa liveness, que j'ai donc proposé d'appeler "innovation",
 et de l'autre sa safety, que j'ai traduit en "sécurité".
 Dans notre cas, l'innovation consiste à valider une information ; 
@@ -122,7 +128,9 @@ https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf
 
 La Blockchain, cette solution algorithmique derrière le Bitcoin,
 a en revanche légèrement sacrifié la sécurité.
-En effet, avec le Bitcoin, une transaction validée par le système peut être plus tard rejetée,
+En effet, avec le Bitcoin, 
+une transaction validée par certaines machines du système peut être plus tard rejetée
+par ces mêmes machines,
 notamment si l'on observe une grande fourchette dans la liste des transactions acceptées ;
 et d'ailleurs, en 2016, 
 une autre cryptomonnaie appelée Ethereum a volontairement effectué un "hard fork",
@@ -140,18 +148,19 @@ auxquelles les cryptomonnaies échappent complètement,
 ce qui facilite la fraude, le blanchiment d'argent et les trafics de marchandises illégales.
 
 > Si vous préférez utiliser un numérique plus éthique et responsable,
-je vous invite en particulier à vous intéresser à Infomaniak.
-À l'heure où les systèmes d'information sont trop souvent outsourcés à des tiers 
-qui exploitent vos données et les données de vos entreprises pour entraîner des algorithmes génératifs, 
-il est devenu urgent de considérer que Slack, Google Docs ou autre Microsoft Teams sont des spywares en puissance. 
-A contrario, Infomaniak fait un effort majeur pour tout développer de manière souveraine, 
-avec des collaborateurs uniquement en Suisse, un pays beaucoup plus digne de confiance, 
-notamment par opposition aux entreprises américaines soumises au Patriot Act. 
-Vous pouvez profitez gratuitement des services Mail et SwissTransfer d'Infomaniak, 
-et je vous recommande aussi vivement leurs services Web, kMeet ou encore kDrive. 
-Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
-Infomaniak reverse un don à l'Association Tournesol. 
-Merci beaucoup à eux pour ce partenariat.
+> je vous invite en particulier à vous intéresser à Infomaniak.
+> À l'heure où les systèmes d'information sont trop souvent outsourcés à des tiers 
+> qui exploitent vos données et les données de vos entreprises pour entraîner des algorithmes génératifs, 
+> il est devenu urgent de considérer que Slack, Google Docs ou autre Microsoft Teams sont des spywares en puissance. 
+> A contrario, Infomaniak fait un effort majeur pour tout développer de manière souveraine, 
+> avec des collaborateurs uniquement en Suisse, un pays beaucoup plus digne de confiance, 
+> notamment par opposition aux entreprises américaines soumises au Patriot Act. 
+> Vous pouvez profitez gratuitement des services Mail et SwissTransfer d'Infomaniak, 
+> et je vous recommande aussi vivement leurs services Web, kMeet ou encore kDrive. 
+> Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
+> Infomaniak reverse un don à l'Association Tournesol. 
+> Merci beaucoup à eux pour ce partenariat.
+
 
 ## Freiner l'innovation au nom de la sécurité
 
@@ -173,19 +182,20 @@ En l'occurence, l'innovation exige grosso modo
 que les scores représentent fidèlement les jugements des contributeurs qui se sont exprimés,
 tandis que la sécurité exige que chaque contributeur n'a qu'un faible impact sur les scores Tournesol,
 pour éviter la manipulabilité des recommandations Tournesol par une poignée d'acteurs.
+Très concrètement, dans le code de Tournesol, 
+un paramètre appelé "résilience Lipschitz" effectue l'arbitrage entre innovation et sécurité.
 
 De façon plus terre-à-terre, la sécurité exige de dépenser du temps, de l'énergie et de l'argent
-pour évaluer, auditer et décortiquer les systèmes qu'on développe,
+pour évaluer, auditer et décortiquer les systèmes qu'on développe ;
 alors que l'innovation consiste à sans cesse remplacer les systèmes existants,
-en détruisant les mécanismes de sécurité qui y ont été inscrits,
-trop souvent par des systèmes conçus avec de hautes préoccupations de sécurité.
+avec souvent peu d'attention aux nombreux dispositifs de sécurité mis en place pour les sécuriser.
 
 Et malheureusement, surtout dans le contexte actuel de courses à la spectacularité des IA,
 l'innovation est aujourd'hui beaucoup plus lucrative que la sécurité,
 tout en exigeant beaucoup moins de compétences.
-Ce n'est d'ailleurs pas un hasard si le motto de Facebook est "Move fast and break things",
+Ce n'est d'ailleurs pas un hasard si le motto original de Facebook est "Move fast and break things",
 qu'on peut traduire par "innover vite et casser ce qui existe" ;
-un archétype d'une posture de dédain envers la sécurité.
+un archétype d'une posture de dédain envers la sécurité.  
 
 L'informatique n'est d'ailleurs pas le seul champ de nos sociétés 
 à avoir basculé vers un excès d'innovation.
@@ -245,7 +255,21 @@ https://www.rts.ch/emissions/infrarouge/13916241-intelligence-artificielle-a-que
 avec notamment l'AI Act, le Cyber Resilience Act et le Digital Services Act,
 le grand défi restera la mise en application des lois,
 pour non seulement protéger la population, 
-mais aussi les entreprises clientes de technologies très mal sécurisées.
+mais aussi les entreprises clientes de technologies très mal sécurisées.  
+https://hal.science/hal-03605110/document
+
+Vouloir ralentir l'intégration précipitée des intelligences artificielles 
+est même une position majoritaire dans la population américaine,
+d'après un sondage du Artificial Intelligence Policy Institute.
+En fait, même parmi les 21% d'enthousiastes de l'IA du sondage,
+la majorité ne souhaite pas accélérer leur développement,
+puisqu'ils sont au total que 8% a vouloir cette accélération.
+https://theaipi.org/poll-shows-overwhelming-concern-about-risks-from-ai-as-new-institute-launches-to-understand-public-opinion-and-advocate-for-responsible-ai-policies/
+
+Même son de cloche chez les experts, 
+en tout cas chez ceux qui ne gagnent pas des millions grâce à ce développement précipité.  
+https://futureoflife.org/open-letter/pause-giant-ai-experiments/  
+https://www.forbes.com/sites/nicolesilver/2023/06/06/artificial-intelligence-regulation-why-experts-are-calling-for-slowing-down-ai-ai-series-4-of-5/
 
 En particulier, il est urgent d'exiger, légalement ou contractuellement, 
 que les produits commercialisés respectent des standards,
@@ -258,23 +282,24 @@ c'est que 5 des 9 articles listés comme étant l'état de l'art des solutions
 de sécurisation des algorithmes contre les attaques par empoisonnement,
 qui représentent la plus grande menace industrielle selon les praticiens,
 sont des articles publiés par des co-fondateurs de mon entreprise Calicarpa,
-qui peut proposer à vos organisations du conseil de haute qualité en sécurité de l'IA.  
+qui peut proposer à vos organisations du conseil en IA et en sécurité de l'IA.  
 https://www.calicarpa.com/
 
 Jusque là, toutefois, beaucoup de gouvernements valorisent encore davantage l'innovation,
 voire l'urgence à accélérer dans la digitalisation et l'adoption de produits étrangers,
-et ignorent largement les nombreux problèmes de cybersécurité 
-que l'innovation effrénée implique inéluctablement.
+et ignorent, volontairement ou non, les nombreux problèmes de cybersécurité 
+que l'innovation effrénée implique inéluctablement.  
+https://www.lemonde.fr/sciences/article/2024/02/13/intelligences-artificielles-les-mille-et-une-facons-de-les-faire-derailler_6216264_1650684.html
 
 En fait, à l'instar du changement climatique, 
-la principale solution pour augmenter la cybersécurité de nos sociétés serait l'exact opposé ;
-bien plus que de l'innovation, il faut de la sobriété numérique.
+l'une des principles pistes pour améliorer radicalement la sécurité numérique est la sobriété.
 Comme tous les experts vous le diront, 
 chaque ajout de fonctionnalités à un système d'information augmente sa surface d'attaque,
 c'est-à-dire le nombre de possibilités pour les attaquants de compromettre les systèmes d'information.
 
-Un exemple particulièrement clair de sobriété numérique est la recommandation effectuée
-par un comité de 14 chercheurs en cybersécurité sur le futur du vote aux États-Unis.
+Un exemple particulièrement clair de sobriété numérique 
+est la recommandation d'un comité de 14 chercheurs en cybersécurité 
+sur le futur du vote aux États-Unis.
 Je cite :
 
 "À ce jour, Internet (ou n'importe quel réseau connecté à Internet) ne devrait pas être utilisé
@@ -286,12 +311,12 @@ sachant qu'aucune technologie connue ne garantit le secret, la sécurité et la 
 d'un bulletin rempli transmis via Internet."
 
 > At the present time, the Internet (or any network connected to the Internet) 
-should not be used for the return of marked ballots. 
-Further, Internet voting should not be used in the future 
-until and unless very robust guarantees of security and verifiability are developed and in place, 
-as no known technology guarantees the secrecy, security, and verifiability 
-of a marked ballot transmitted over the Internet.  
-https://nap.nationalacademies.org/catalog/25120/securing-the-vote-protecting-american-democracy
+> should not be used for the return of marked ballots. 
+> Further, Internet voting should not be used in the future 
+> until and unless very robust guarantees of security and verifiability are developed and in place, 
+> as no known technology guarantees the secrecy, security, and verifiability 
+> of a marked ballot transmitted over the Internet.  
+> https://nap.nationalacademies.org/catalog/25120/securing-the-vote-protecting-american-democracy
 
 Voilà un jugement extrêmement radical, mais aussi extrêmement bien informé.
 Et ce ne sont pas les exemples récents de spywares surpuissants comme Pegasus ou Predator,
@@ -301,7 +326,9 @@ Voter avec des appareils potentiellement hackés,
 c'est encourir le risque que des élections présidentielles soient complètement manipulées
 par des logiciels malveillants contrôlés par des puissances autoritaires.
 
-Et sachant les profits monumentaux du réseau tentaculaire du cybercrime, 
+Et sachant les profits monumentaux du réseau tentaculaire du cybercrime ---
+on parle de dizaines de milliers de milliards de dollars par an ---  
+https://www.weforum.org/agenda/2023/06/cyber-insurance-security-cybercrime/  
 il faut s'attendre à ce que les journalistes dissidents ne soient pas les seules cibles
 de ces spywares ;
 pour peu que votre entreprise a un chiffre d'affaire supérieur au millier d'euros,
@@ -309,14 +336,17 @@ elle est une cible qui intéressera bien au moins quelqu'un dans ce marché noir
 
 Bref. Si vous voulez vous protéger des vols de données, des vols de mots de passe, 
 des vols d'accès à vos réseaux sociaux, à vos emails et à vos banques,
-réduisez drastiquement le nombre d'applications que vous avez sur vos téléphones,
-ainsi que le nombre d'extensions que vous avez dans vos navigateurs web,
-surtout sur vos machines de travail professionnel ;
-voire, limitez votre confiance en les appareils numériques que vous utilisez.
+réduisez drastiquement le nombre d'applications que vous avez sur vos téléphones
+et les informations sensibles que vous partagez sur Slack ou WhatsApp,
+ainsi que le nombre d'extensions que vous avez dans vos navigateurs web
+ou dans vos IDE comme Microsoft VS Code,
+surtout sur vos machines de travail professionnel.
+Plus généralement, limitez votre confiance en les appareils numériques que vous utilisez.
 Ces machines pourraient en fait être devenus des espions d'une puissance étrangère.
 Faites très attention aux secrets que vous partagez avec elles.
 
-## Le principe de développement différentiel
+
+## Les boules noires de Bostrom
 
 Alors, jusque là, j'ai donné l'impression que la quête effrénée de l'innovation allait
 à l'encontre de notre sécurité et de la sécurité de nos civilisations.
@@ -380,16 +410,20 @@ Autrement dit, on célèbre ce qui accélère des armes de destruction massives,
 qui seront réutilisables par n'importe quelle puissance étatique qui voudrait s'en équiper.
 
 Mais donc, l'innovation est-elle vouée à sacrifier la sécurité de nos sociétés ?
-Et bien, peut-être pas. 
+
+
+## La bonne et la mauvaise innovation
+
 Comme l'explique Bostrom, en pratique, il y a plutôt de nombreuses urnes,
-avec différents chercheurs qui tirent des boules dans ces différentes urnes.
-Et plutôt que d'encourager nos chercheurs et nos entrepreneurs 
+avec différents chercheurs et entrepreneurs qui tirent des boules dans ces différentes urnes.
+Et plutôt que d'encourager ces derniers 
 à tirer des boules dans l'urne "enrichissement LASER d'uranium",
 ou dans l'urne "ordinateur quantique capable de détruire les systèmes d'information mondiaux",
 on pourrait envisager de les encourager à tirer dans l'urne
 "détection des usines d'enrichissement d'uranium" 
 ou dans l'urne "cybersécurité postquantique",
-ou encore dans l'urne "outil de gouvernance démocratique de l'information" ?
+ou encore dans les urnes "efficacité énergétique" et 
+"outil de gouvernance démocratique de l'information" ?
 
 Et si, plutôt que célébrer l'innovation aveugle, ou l'innovation pour l'innovation,
 on encourageait explicitement et on célébrait l'innovation 
@@ -400,29 +434,53 @@ le *principe de développement différentiel*.
 Et à bien y réfléchir, ça paraît être une évidence.
 Plutôt que de faire de la science pour la science,
 ou pire encore, de la science pour l'argent comme c'est malheureusement trop souvent le cas,
-et si on faisait de la science pour la société ?
+notamment via les partenariats publics-privés,
+et si on faisait de la science pour protéger la société ?
 
-« Science sans conscience n'est que ruine de l'âme », disait Rabelais.
-Alors que la science fournit désormais des superpouvoirs, 
-il est plus urgent que jamais d'exiger l'application de ce principe.
+C'est en cela que des discours trop simplistes comme celui d'Aurélien Barrau,
+qui accusent les étudiants de CentraleSupélec d'être le problème,
+sont en fait extrêmement gênant.  
+https://www.youtube.com/watch?v=r9vrU9g893o  
+Dans le cas particulier du problème environnemental,
+les chercheurs et les entrepreneurs ont beaucoup oeuvré 
+pour réduire drastiquement l'impact environnemental de nombreux produits 
+encore indispensables pour la plupart de nos concitoyens,
+comme le logement, le transport et l'alimentation,
+de sorte que l'empreinte carbone d'un Français aujourd'hui a chuté 
+par rapport à ce qu'elle était il y a un demi-siècle ---
+et si la sobriété aide, elle est en fait loin d'en être la principale cause !  
+https://ourworldindata.org/co2/country/france
 
-Malheureusement, jusque là, ce n'est vraiment pas ce que font nos instances dirigeantes,
-nos fonds de financement de la recherche, notre système académique ou nos universités.
+Malheureusement, en science de l'information, 
+jusque là et contrairement aux sciences environnementales, 
+nos instances dirigeantes,nos fonds de financement de la recherche, 
+notre système académique et nos universités 
+ne priorisent pas la recherche de solutions de résilience numérique pour nos sociétés.
 Il est encore bien plus facile de trouver un job académique aujourd'hui,
 ou plus simplement d'avoir un article de recherche accepté,
 si l'on s'intéresse à l'innovation dans des IA sans aucune considération de sécurité,
 que si l'on démontre l'impossibilité d'allier innovation et sécurité,
 ou si l'on s'intéresse au sujet extrêmement peu lucratif de la gouvernance algorithmique.
 
-Mais tout ceci n'est pas une fatalité.
+D'ailleurs, même avant que je ne quitte l'École Polytechnique Fédérale de Lausanne en Suisse,
+des ressources humaines de la ressource allouées à sécuriser la gouvernance algorithmique,
+sur laquelle je travaillais,
+ont été subitement réaffectées à un projet... de cryptomonnaie.
+Est-ce vraiment un tel projet qui va protéger nos sociétés contre les fléaux
+de la concentration de richesse, du blanchiment d'argent, de l'évasion fiscale,
+de la volatilité financière, du cybercrime ou encore de la corruption ?
+Et surtout, est-il moralement justiablement de détourner des moyens de recherche
+sur l'éthique des algorithmes vers cet autre projet ?
+
+Ceci étant dit, même si certaines tendances sont désespérantes,
+d'autres vont carrément dans le bon sens.
 À l'échelle individuelle, au moins, 
-de plus en plus de chercheurs parmi vous qui regardez Science4All
-se sont mis à s'intéresser à Tournesol, 
+de plus en plus de chercheurs parmi vous qui regardez Science4All s'intéressent à Tournesol, 
 notre projet d'innovation dans la gouvernance algorithmique sécurisée,
 et je suis très fier de pouvoir dire que plusieurs collaborations avec plusieurs laboratoires différents,
 y compris avec des chercheurs du MIT, du CNRS et de l'EPFL,
-sont en cours d'élaboration,
-avec déjà des publications acceptées notamment dernièrement à la prestigieuse conférence AAAI 2024.  
+sont en cours, avec déjà des publications acceptées 
+notamment dernièrement à la prestigieuse conférence AAAI 2024.  
 https://arxiv.org/abs/2308.08644
 
 Et tout ça, c'est aussi beaucoup grâce à tous ceux parmi vous 
@@ -432,8 +490,9 @@ via de la promotion de Tournesol auprès de vos proches et sur les réseaux soci
 ou via des dons financiers absolument critiques pour nous permettre de conserver les services
 de notre excellent développeur et unique employé.
 Vos contributions nous aident à fédérer une communauté de chercheurs autour d'un projet éthique,
-et à piocher des boules blanches, 
-qui aideront à nous protéger contre les boules noires 
+et à piocher des boules, non seulement très certainement blanches,
+mais même probablement blanchissantes,
+qui aideront ainsi à nous protéger contre les boules noires 
 que d'autres chercheurs ne manqueront pas de tirer.
 
 Du fond du coeur et au nom de toute l'équipe de Tournesol, 
