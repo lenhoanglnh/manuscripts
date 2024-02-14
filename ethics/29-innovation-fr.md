@@ -458,7 +458,8 @@ comme le logement, le transport et l'alimentation,
 de sorte que l'empreinte carbone d'un Français aujourd'hui a chuté 
 par rapport à ce qu'elle était il y a un demi-siècle ---
 et si la sobriété aide, elle est en fait loin d'en être la principale cause !  
-https://ourworldindata.org/co2/country/france
+https://ourworldindata.org/co2/country/france  
+https://fr.wikipedia.org/wiki/D%C3%A9couplage_(%C3%A9cologie)#/media/Fichier:Absolute-decoupling-Growth-and-falling-emissions-all.png
 
 Malheureusement, en science de l'information, 
 jusque là et contrairement aux sciences environnementales, 
