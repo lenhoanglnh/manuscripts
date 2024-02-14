@@ -19,7 +19,8 @@ Aujourd'hui, on va voir que cette tension entre nouveauté et fiabilité
 est en fait une thématique fondamentale de la science de l'information,
 où elle est connue davantage sous le nom de dilemme "liveness" versus "safety",
 que je vous propose de traduire par "innovation" versus "sécurité".
-Bon, ce sont des traductions approximatives, mais elles capturent bien la nature du dilemme.
+Bon, ce sont des traductions approximatives, mais elles capturent bien la nature du dilemme.  
+https://en.wikipedia.org/wiki/Safety_and_liveness_properties
 
 On va voir en particulier un problème très précis,
 où l'on a démontré que, de manière formelle, innovation et sécurité sont incompatibles ;
@@ -95,7 +96,8 @@ Mais comment le réseau de machines peut-il valider l'une sans valider l'autre ?
 Et bien, ça va peut-être vous surprendre, 
 mais le théorème de Fischer, Lynch et Paterson de 1985 prouve que c'est impossible.
 Aucun algorithme distribué ne peut garantir la validation consensuelle de l'information
-dans un réseau asynchrone avec une panne potentielle.
+dans un réseau asynchrone avec une panne potentielle.  
+https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
 
 Et, bon, la preuve de ce théorème est très technique,
 donc je vais pas en parler dans cette vidéo.
@@ -448,7 +450,10 @@ C'est pour cela que les discours technophobes simplistes sont ainsi très probl�
 à l'instar de celui d'Aurélien Barrau,
 qui accusent les étudiants de CentraleSupélec d'être le problème,
 sont en fait extrêmement gênant.  
-https://www.youtube.com/watch?v=r9vrU9g893o  
+
+> Vous n'êtes pas la solution. Vous êtes le problème.
+https://www.youtube.com/watch?v=r9vrU9g893o (5:31)  
+
 Dans le cas particulier du problème environnemental,
 les chercheurs et les entrepreneurs sont en fait extrêmement sensibilisés aux risques,
 et ont du coup énormément oeuvré pour réduire drastiquement 
