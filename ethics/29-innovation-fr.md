@@ -348,7 +348,7 @@ Ces machines pourraient en fait être devenus des espions d'une puissance étran
 Faites très attention aux secrets que vous partagez avec elles.
 
 
-## Les boules noires de Bostrom
+## Les "boules noires"
 
 Alors, jusque là, j'ai donné l'impression que la quête effrénée de l'innovation allait
 à l'encontre de notre sécurité et de la sécurité de nos civilisations.
@@ -358,12 +358,12 @@ et dont Monsieur Phi a dédié une excellente vidéo,
 qui est dans le top de tous les temps sur Tournesol.  
 https://tournesol.app/entities/yt:GuTgfnkILGs
 
-Comme l'explique Bostrom, à chaque fois qu'on innove,
+À chaque fois qu'on innove,
 on extrait d'une urne imaginaire des innovations une boule,
 sans connaître au préalable la couleur de cette boule ;
 or il n'y a pas de raison de penser que l'urne ne contient que des boules de la bonne couleur.
-Certaines boules pourraient être noires,
-ce qui, dans l'analogie de Bostrom, correspondraient à des boules très dangereuses pour l'humanité ;
+Certaines boules pourraient être "noires",
+c'est-à-dire des boules très dangereuses pour l'humanité ;
 du type bombe nucléaire facilement constructible, 
 nouvelles ressources fossiles ultra-efficaces et ultra-polluantes, 
 kit de créations de pandémie, ou encore IA incontrôlables.
@@ -416,7 +416,7 @@ Mais donc, l'innovation est-elle vouée à sacrifier la sécurité de nos socié
 
 ## La bonne et la mauvaise innovation
 
-Comme l'explique Bostrom, en pratique, il y a plutôt de nombreuses urnes,
+En pratique, il y a plutôt de nombreuses urnes,
 avec différents chercheurs et entrepreneurs qui tirent des boules dans ces différentes urnes.
 Et plutôt que d'encourager ces derniers 
 à tirer des boules dans l'urne "enrichissement LASER d'uranium",
