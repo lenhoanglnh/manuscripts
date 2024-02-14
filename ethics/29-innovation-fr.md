@@ -43,7 +43,7 @@ il y a des subtilités importantes dans cet arbitrage.
 En particulier, la sécurité exige aussi énormément d'innovations,
 notamment quand le statu quo est désastreux ;
 comme c'est le cas en cybersécurité 
-ou pour atténuer les conséquences dramatiques du changement climatique.
+ou pour atténuer drastiquement les conséquences dramatiques du changement climatique.
 
 
 ## Sécuriser et innover : mission impossible ?
@@ -455,7 +455,7 @@ sont en fait extrêmement gênant.
 https://www.youtube.com/watch?v=r9vrU9g893o (5:31)  
 
 Dans le cas particulier du problème environnemental,
-les chercheurs et les entrepreneurs sont en fait extrêmement sensibilisés aux risques,
+la plupart des chercheurs et des entrepreneurs sont en fait extrêmement sensibilisés aux risques,
 et ont du coup énormément oeuvré pour réduire drastiquement 
 l'impact environnemental de nombreux produits encore indispensables 
 pour la plupart de nos concitoyens,
@@ -465,6 +465,18 @@ par rapport à ce qu'elle était il y a un demi-siècle ---
 et si la sobriété aide, elle est en fait loin d'en être la principale cause !  
 https://ourworldindata.org/co2/country/france  
 https://fr.wikipedia.org/wiki/D%C3%A9couplage_(%C3%A9cologie)#/media/Fichier:Absolute-decoupling-Growth-and-falling-emissions-all.png
+
+Bien entendu, l'innovation seule ne nous sauvera pas.
+Même en pariant sur d'énormes progrès technologiques, 
+les scénarios du GIEC sont très préoccupants.
+Cependant, dans le scénario contrafactuel où tout progrès technologique est interrompu,
+même en imaginant par un coup de baguette magique une adoption massive d'une sobriété radicale,
+la dépendance aux énergies fossiles persistera, 
+avec toutes sortes de conséquences dramatiques qui pourraient aller jusqu'à un retour dans le passé,
+qui, comme le disent les livres d'histoire,
+est rempli de famines, de maladies et de guerres.  
+https://tournesol.app/entities/yt:jbkSRLYSojo  
+https://tournesol.app/entities/yt:Sm5xF-UYgdg
 
 Malheureusement, en science de l'information, 
 jusque là et contrairement aux sciences environnementales, 
