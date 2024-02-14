@@ -1,4 +1,4 @@
-# Sécuriser ou innover : faut-il choisir ?
+# Peut-on innover sans mettre la planète en danger ? (oui*)
 
 Imaginez qu'un nouveau conflit éclate de manière inattendue.
 Vous êtes journalistes, et vous ressentez la pression de parler de cet événement.
