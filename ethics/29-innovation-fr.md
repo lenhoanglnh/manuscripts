@@ -435,16 +435,25 @@ Et à bien y réfléchir, ça paraît être une évidence.
 Plutôt que de faire de la science pour la science,
 ou pire encore, de la science pour l'argent comme c'est malheureusement trop souvent le cas,
 notamment via les partenariats publics-privés,
-et si on faisait de la science pour protéger la société ?
+et si on faisait de la science et de l'ingénierie pour protéger la société ?
 
-C'est en cela que des discours trop simplistes comme celui d'Aurélien Barrau,
+C'est typiquement ce que s'acharnent à faire les chercheurs et les entreprises en cybersécurité,
+qui identifient des failles dans les produits existants 
+et proposent des mises à jour pour davantage les sécuriser.
+D'ailleurs, j'en profite pour vous rappeler un conseil de base de cybersécurité :
+mettez à jour vos logiciels dès qu'on vous en propose une.
+L'innovation en cybersécurité peut vous éviter d'énormes ennuis.
+
+C'est pour cela que les discours technophobes simplistes sont ainsi très problématiques,
+à l'instar de celui d'Aurélien Barrau,
 qui accusent les étudiants de CentraleSupélec d'être le problème,
 sont en fait extrêmement gênant.  
 https://www.youtube.com/watch?v=r9vrU9g893o  
 Dans le cas particulier du problème environnemental,
-les chercheurs et les entrepreneurs ont beaucoup oeuvré 
-pour réduire drastiquement l'impact environnemental de nombreux produits 
-encore indispensables pour la plupart de nos concitoyens,
+les chercheurs et les entrepreneurs sont en fait extrêmement sensibilisés aux risques,
+et ont du coup énormément oeuvré pour réduire drastiquement 
+l'impact environnemental de nombreux produits encore indispensables 
+pour la plupart de nos concitoyens,
 comme le logement, le transport et l'alimentation,
 de sorte que l'empreinte carbone d'un Français aujourd'hui a chuté 
 par rapport à ce qu'elle était il y a un demi-siècle ---
