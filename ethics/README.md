@@ -17,8 +17,9 @@ Here are the scripts:
 - Episode 22. ChatGPT & Cybercrime [FR](22-chatgpt-fr.md) [EN](22-chatgpt-en.md).
 - Episode 23. Cyber insecurity [FR](23-cout-fr.md).
 - Episode 24. Tournesol's experiment [FR](24-experiment-fr.md).
-- Episode 25. Geometric meidan [FR](25-geometric-median-fr.md).
-- Hardcore 25. Geometric Median [FR](25-hardcore-geomed.md).
+- Episode 25. Geometric median [FR](25-geometric-median-fr.md).
+- Hardcore 25. Geometric median [FR](25-hardcore-geomed.md).
 - Episode 26. Spotify [FR](26-spotify-fr.md).
 - Episode 27. Tournesol's new algorithms [FR](27-update.md).
 - Episode 28. Microsoft [FR](28-microsoft-fr.md) [EN](28-microsoft-en.md).
+- Episode 29. Innovation [FR](29-innovation-fr.md)
