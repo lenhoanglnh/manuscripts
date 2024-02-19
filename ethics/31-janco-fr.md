@@ -33,7 +33,7 @@ https://www.cnet.com/tech/mobile/us-finds-huawei-has-backdoor-access-to-mobile-n
 et c'est en très grande partie parce qu'ils n'ont pas du tout conscience
 de l'ampleur du désastre informationnel de ces industries.  
 
-[Extraits de désinformation russe, des émeutes du Capitol, des manifestations antivax, des actions AfD...]
+[Extraits de désinformation russe, des émeutes du Capitol, des mouvements antivax, des manifestations de l'extrême-droite en France, des ransomwares sur les hôpitaux français...]
 
 Cette grave inattention au doux,
 est particulièrement bien incarnée par les discours d'un autre diplômé de cette École Polytechnique,
