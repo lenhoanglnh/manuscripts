@@ -467,7 +467,8 @@ Cependant, sachant ces graphes, affirmer sans broncher que
 > https://www.youtube.com/watch?v=W1b2NLTDxNs 25:57
 
 Ça me semble être beaucoup trop péremptoire.
-Et ce sont ces aspects qui semblent déranger de plus en plus mes collègues sur YouTube.
+Et ce sont ces aspects qui semblent déranger de plus en plus mes collègues sur YouTube,
+notamment Gilles de la chaîne Heu?reka.
 
 > En gros, quand je parle de crise de l'offre, 
 > donc toute la partie qui parle d'environnement, là ça a quand même pas mal changé.
@@ -483,9 +484,36 @@ Et ce sont ces aspects qui semblent déranger de plus en plus mes collègues sur
 > Oh ! Tu oses ?  
 > https://www.youtube.com/watch?v=MpXxSq5cRMo 1:31
 
-Bon, ceci étant dit, j'insiste à nouveau sur le fait que tout n'est pas à rejeter 
+Et l'impact économique de l'énergie n'est pas le seul point 
+sur lequel le discours de Monsieur Jancovici mérite d'être repris.
+
+> Vous n'avez qu'un seul moyen de puissance décarbonée, c'est le nucléaire.
+> Donc pour faire avancer un gros bâtiment, hors combustible fossile,
+> il n'y a qu'un seul truc qui fonctionne : c'est un réacteur.  
+> https://www.youtube.com/watch?v=W1b2NLTDxNs 35:55
+
+Là encore, ça me paraît hautement péremptoire, 
+sachant que des porte-conteneurs électriques existent déjà aujourd'hui.  
+https://en.wikipedia.org/wiki/MV_Yara_Birkeland
+
+Et plus globalement, 
+on semble ici avoir un archétype de sous-estimation 
+du progrès technologique en énergie renouvelable,
+que Rodolphe, alias Le Réveilleur, a déjà pris le temps de déconstruire.
+
+> Je suis manifestement en désaccord avec Monsieur Jancovici [...]
+> Dans cette vidéo, j'attaque entre autres le message que le lecteur comprend
+> à la lecture de la BD "Le Monde Sans Fin" [...]
+> L'idée que le passage aux énergies renouvelables sonne la fin de notre société d'abondance
+> n'est donc pas, ou extrêmement mal, étayée dans la BD.
+> Pour moi, le titre de cette vidéo est justifié.  
+> https://tournesol.app/entities/yt:HgfcZeGP7BA 1:21:52
+
+Ceci étant dit, comme Rodolphe, 
+j'insiste à nouveau sur le fait que tout n'est pas à rejeter 
 dans le discours de Monsieur Jancovici ;
-et il ne s'agit en aucun cas de se moquer de lui, ou de le harceler sur les réseaux sociaux.
+et il ne s'agit en aucun cas de dénigrer tout son travail, 
+ou de le harceler sur les réseaux sociaux.
 D'autant que son discours sur l'ampleur du danger de la dépendance
 à des systèmes d'informations mal sécurisés est en fait excellent.
 
@@ -502,7 +530,7 @@ Je trouve dommage que ces propos très perspicaces de Monsieur Jancovici
 n'interviennent que suite à une question de l'auditoire,
 telle une note de bas de page dans les grandes lignes du programme de Défense du 21e siècle.
 
-Mais j'y souscris entièrement ; et j'aimerais qu'on aille beaucoup plus loin.
+Mais j'y souscris entièrement ; et j'aimerais qu'on aille même plus loin.
 Sécuriser les systèmes d'information me semble être devenu un enjeu majeur de la sécurité nationale.
 Et donc, il me semble qu'il devrait s'agir d'une priorité de l'Armée française.
 En fait, la guerre mondiale de l'information a déjà largement commencé.
