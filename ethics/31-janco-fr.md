@@ -301,8 +301,6 @@ et s'achève par un traité de paix, ou un accord de reddition.
 Cependant, les conflits dans le cyberespace sont en fait permanents,
 abusent abondamment des civils, et ne nécessitent pas de déclaration.
 Mais l'ampleur de ces conflits est tel qu'il me semble réducteur de les appeler "conflits".
-On assiste régulièrement à des déstabilisations de pouvoirs,
-et à des changements de rapports de force dans les superpuissances.
 Ces "conflits informationnels" dessinent aujourd'hui les contours de la géopolitique mondiale.
 De manière informelle, je préfère donc parler de "guerre informationnelle",
 même si ce n'est pas une expression idéale.
