@@ -139,7 +139,7 @@ Et c'est vraiment à ce moment là que j'ai envie de hurler :
 
 Est-ce que la Russie, qui produit et consomme 15 fois plus de pétrole que l'Ukraine,
 avec une population "seulement" 4 fois supérieure,
-à écraser l'Ukraine, comme ce raisonnement purement énergétique semble le prédire ?  
+a écrasé l'Ukraine, comme ce raisonnement purement énergétique semble le prédire ?  
 https://en.wikipedia.org/wiki/List_of_countries_by_oil_production  
 https://en.wikipedia.org/wiki/List_of_countries_by_oil_consumption
 
@@ -150,7 +150,7 @@ Alors, je ne suis pas historien
 et je ne vais absolument pas prétendre que l'information a joué un rôle prédominant dans la guerre.
 Cependant, j'aimerais bien faire le point sur la dimension informationnelle
 de la seconde guerre mondiale,
-et essayer de vous convaincre qu'il serait précipiter de complètement l'occulter.
+et essayer de vous convaincre qu'il serait précipité de complètement l'occulter.
 
 Pour commencer, si vous avez vu le film Oppenheimer,
 vous savez que la seconde guerre mondiale a vu la naissance d'une arme de destruction massive,
@@ -247,9 +247,9 @@ https://daily.jstor.org/an-affordable-radio-brought-nazi-propaganda-home/
 
 Bref. Clairement, s'ils avaient un ascendant énergétique,
 les Alliés avaient aussi un énorme ascendant informationnel.
-Et cet ascendant informationnel me semble avoir joué un rôle non-négligeable 
-dans la seconde guerre mondiale.
-Mais surtout, ce rôle me semble être devenu plus central que jamais dans la guerre moderne.
+Et cet ascendant informationnel me semble avoir joué un rôle 
+pas complètement négligeable dans la seconde guerre mondiale.
+Mais surtout, ce rôle me semble être devenu plus central dans la guerre moderne.
 
 
 ## La guerre moderne est avant tout informationnelle
