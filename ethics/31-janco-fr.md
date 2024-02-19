@@ -440,8 +440,14 @@ https://tournesol.app/entities/yt:Kl3VVrggKz4
 
 Ainsi, j'ai utilisé le logarithme de la puissance de calcul des supercalculateurs,
 mais j'aurais très bien pu utiliser le nombre de transistors,
-la capacité de stockage des centres de données ou le débit des câbles pour accéder à intermet.  
+la capacité de stockage des centres de données ou le débit des câbles pour accéder à internet.
+Et à chaque fois, il faut tout mettre en logarithmes, 
+parce que dans le domaine de l'information, tout accélère à accélération grand v.  
 https://ourworldindata.org/moores-law
+
+NB: Dire qui tout accélère à accélération grand v, en supposant que v est la vitesse,
+revient mathématiquement à décrire une croissance exponentielle 
+(c'était la petite blague absolument pas "4All" !)
 
 Cependant, on peut aller plus loin que simplement questionner l'argument de Monsieur Jancovici,
 et s'attaquer plus directement sa conclusion, 
