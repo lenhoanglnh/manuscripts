@@ -31,7 +31,9 @@ https://tournesol.app/entities/yt:dGJzpQwA090
 ou que des autorités aient identifiées des backdoors dans leurs produits commercialisés ;  
 https://www.cnet.com/tech/mobile/us-finds-huawei-has-backdoor-access-to-mobile-networks-globally-report-says/
 et c'est en très grande partie parce qu'ils n'ont pas du tout conscience
-de l'ampleur du désastre informationnel de ces industries.
+de l'ampleur du désastre informationnel de ces industries.  
+
+[Extraits de désinformation russe, des émeutes du Capitol, des manifestations antivax, des actions AfD...]
 
 Cette grave inattention au doux,
 est particulièrement bien incarnée par les discours d'un autre diplômé de cette École Polytechnique,
