@@ -506,7 +506,11 @@ que Rodolphe, alias Le Réveilleur, a déjà pris le temps de déconstruire.
 > à la lecture de la BD "Le Monde Sans Fin" [...]
 > L'idée que le passage aux énergies renouvelables sonne la fin de notre société d'abondance
 > n'est donc pas, ou extrêmement mal, étayée dans la BD.
-> Pour moi, le titre de cette vidéo est justifié.  
+> Pour moi, le titre de cette vidéo est justifié.
+> Les arguments avancés par Jean-Marc Jancovici dans l'échange de mails ne m'ont pas convaincu.
+> et l'absence de sources et de quantifications m'empêchent de voir autre chose
+> qu'une opinion peu justifiée, quand je lis que le passage aux énergies renouvelables
+> sonne la fin de nos sociétés complexes.
 > https://tournesol.app/entities/yt:HgfcZeGP7BA 1:21:52
 
 Ceci étant dit, comme Rodolphe, 
