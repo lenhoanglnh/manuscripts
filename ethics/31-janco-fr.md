@@ -440,7 +440,8 @@ https://tournesol.app/entities/yt:Kl3VVrggKz4
 
 Ainsi, j'ai utilisé le logarithme de la puissance de calcul des supercalculateurs,
 mais j'aurais très bien pu utiliser le nombre de transistors,
-la capacité de stockage des centres de données ou le débit des câbles pour accéder à intermet.
+la capacité de stockage des centres de données ou le débit des câbles pour accéder à intermet.  
+https://ourworldindata.org/moores-law
 
 Cependant, on peut aller plus loin que simplement questionner l'argument de Monsieur Jancovici,
 et s'attaquer plus directement sa conclusion, 
@@ -497,10 +498,12 @@ sur lequel le discours de Monsieur Jancovici mérite d'être repris.
 > https://www.youtube.com/watch?v=W1b2NLTDxNs 35:55
 
 Là encore, ça me paraît hautement péremptoire, 
-sachant que des porte-conteneurs électriques existent déjà aujourd'hui.  
+sachant que des porte-conteneurs électriques existent déjà aujourd'hui,
+et que les progrès technologiques dans l'électrification ont été impressionnants
+au cours de la dernière décennie.  
 https://en.wikipedia.org/wiki/MV_Yara_Birkeland
 
-Et plus globalement, 
+Plus globalement, 
 on semble ici avoir un archétype de sous-estimation 
 du progrès technologique en énergie renouvelable,
 que Rodolphe, alias Le Réveilleur, a déjà pris le temps de déconstruire.
@@ -514,7 +517,7 @@ que Rodolphe, alias Le Réveilleur, a déjà pris le temps de déconstruire.
 > Les arguments avancés par Jean-Marc Jancovici dans l'échange de mails ne m'ont pas convaincu.
 > et l'absence de sources et de quantifications m'empêchent de voir autre chose
 > qu'une opinion peu justifiée, quand je lis que le passage aux énergies renouvelables
-> sonne la fin de nos sociétés complexes.
+> sonne la fin de nos sociétés complexes.  
 > https://tournesol.app/entities/yt:HgfcZeGP7BA 1:21:52
 
 Ceci étant dit, comme Rodolphe, 
@@ -522,8 +525,10 @@ j'insiste à nouveau sur le fait que tout n'est pas à rejeter
 dans le discours de Monsieur Jancovici ;
 et il ne s'agit en aucun cas de dénigrer tout son travail, 
 ou de le harceler sur les réseaux sociaux.
-D'autant que son discours sur l'ampleur du danger de la dépendance
-à des systèmes d'informations mal sécurisés est en fait excellent.
+Beaucoup de ses propos sur la sobriété énergétique et l'urgence sanitaire à sortir du fossile
+me semblent extrêmement importants à diffuser.
+Mieux encore, son discours sur l'ampleur du danger de la dépendance
+à des systèmes d'informations mal sécurisés est parfait.
 
 > Alors par contre la digitalisation crée une vulnérabilité en tant que tel,
 > parce que vous avez aujourd'hui un certain nombre de processus vitaux à court terme
@@ -541,7 +546,7 @@ telle une note de bas de page dans les grandes lignes du programme de Défense d
 Mais j'y souscris entièrement ; et j'aimerais qu'on aille même plus loin.
 Sécuriser les systèmes d'information me semble être devenu un enjeu majeur de la sécurité nationale.
 Et donc, il me semble qu'il devrait s'agir d'une priorité de l'Armée française.
-En fait, la guerre mondiale de l'information a déjà largement commencé.
+En fait, la guerre mondiale dans le cyber espace a déjà largement commencé.
 Et si on n'y prête pas attention, 
 on risque de voir nos démocraties s'effondrer bien avant de subir les désastres environnementaux.
 
