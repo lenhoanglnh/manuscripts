@@ -1,4 +1,4 @@
-# Le réductionnisme énergétique est dangereux
+# Le danger du réductionnisme énergétique
 
 "Nos sciences dures qui, autrefois ne parlaient que de force et d'énergie,
 parlent depuis assez récemment de codes et de ce qu'on appelle en général le doux.
