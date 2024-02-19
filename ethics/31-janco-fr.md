@@ -412,11 +412,13 @@ et la capacité de calcul des plus puissants supercalculateurs.
 Eh paf ! Il suffit de faire des machines qui calculent plus vite, 
 pour augmenter le PIB.
 
+![Corrélation entre PIB mondial et vitesse des supercalculateurs](31-GDP_GFLOPS.png)
+
 Alors techniquement, j'ai pris le logarithme de la puissance de calculs des supercalculateurs,
 parce que celle-ci est vraiment exponentielle, 
 contrairement au PIB qui est plus linéaire,
-mais je peux maintenant me féliciter d'avoir un r² égal à 0,98.
-La même que celle calculée par Monsieur Jancovici !
+mais je peux maintenant me féliciter d'avoir un r² égal à 0,95.
+Pas loin de celui calculé par Monsieur Jancovici !
 
 Alors bien sûr, ma "preuve" est en fait ridicule.
 D'abord, parce que la corrélation mesure mal à quel point une variable prédit l'autre ;
