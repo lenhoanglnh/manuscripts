@@ -320,12 +320,12 @@ et pour l'affaiblir sur les plans économiques, institutionnelles et militaires 
 sachant que tout ceci est intrinsèquement lié.
 
 De la même manière, 
-il y a un enjeu existentiel pour certaines armées à mobiliser son peuple,
+il y a un enjeu existentiel pour certaines armées à mobiliser leurs peuples,
 ne serait-ce que pour recruter des militaires,
 à l'instar de ce qu'on voit aujourd'hui en Russie, en Ukraine ou à Taïwan.
 Mieux encore, en contrôlant la diffusion information chez des alliés et des ennemis,
 les différentes puissances militaires peuvent obtenir ou perdre des soutiens.
-Là encore, la guerre de l'information devient existentiel, 
+Là encore, la guerre de l'information devient existentielle, 
 comme on l'a vu dans le cas des conflits au Yémen, en Éthiopie ou au Soudan.
 
 Dès lors, si on regarde la guerre avec des lentilles informationnelles,
@@ -350,12 +350,12 @@ Après tout, certaines armes, comme l'arme nucléaire, ont pour but premier la d
 Si à travers des informations, 
 une armée peut décourager l'ennemi de se lancer dans une course à l'armement,
 alors elle peut renforcer la sécurité nationale de son pays, 
-sans même sortir les armes physique.
+sans même sortir les armes physiques.
 
 Enfin, et peut-être surtout, en tout cas selon le Général,
 il s'agit d'armer les militaires, voire la population, 
 pour éviter ou savoir réagir à un conflit.
-En fait, de nos jours, l'armement le plus important, c'est sans doute l'armement informationnel.
+Et de nos jours, l'armement le plus important, c'est sans doute l'armement informationnel.
 
 > Vous ne pouvez pas faire tout ça si vous ne rendez pas les gens plus puissants.
 > Destin: "Que voulez-vous dire ?"
