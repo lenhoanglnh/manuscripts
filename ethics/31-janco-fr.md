@@ -529,8 +529,8 @@ c'est bien parce que le gros du travail humain au 21e siècle est informationnel
 La plupart du travail humain moderne, c'est surtout du traitement de l'information.
 Et ça, ça me semble avoir des conséquences majeures sur la manière d'envisager l'économie moderne,
 dont les plus grands flux correspondent à l'économie du service ;
-lequel est généralement essentiellement un service informationnel.  
-https://fr.wikipedia.org/wiki/Tertiarisation_du_travail
+lequel est plein de services informationnels.  
+https://www.vie-publique.fr/fiches/269995-les-grands-secteurs-de-production-primaire-secondaire-et-tertiaire
 
 > Ça faisait déjà longtemps que les cabinets d'avocat s'intéressaient
 > aux larges modèles de langage (LLM) pour faire de l'analyse de documents,
