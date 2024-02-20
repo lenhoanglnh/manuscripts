@@ -252,7 +252,7 @@ pas complètement négligeable dans la seconde guerre mondiale.
 Mais surtout, ce rôle me semble être devenu plus central dans la guerre moderne.
 
 
-## La guerre moderne est avant tout informationnelle
+## La guerre informationnelle a pris beaucoup d'ampleur
 
 Pour bien se rendre compte à quel point il est devenu crucial 
 de ne pas ignorer la dimension informationnelle de la guerre moderne,
