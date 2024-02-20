@@ -493,6 +493,82 @@ notamment Gilles de la chaîne Heu?reka.
 > Oh ! Tu oses ?  
 > https://www.youtube.com/watch?v=MpXxSq5cRMo 1:31
 
+Pour montrer en particulier l'importance économique de l'expertise,
+on raconte souvent l'histoire d'un technicien qu'on appelle à réparer une chaîne de montage.
+Le technicien se déplace, inspecte certains éléments de la chaîne,
+s'arrête à un endroit donné, et tourne une vis d'un quart de tour vers la droite.
+Miracle, la chaîne de montage est réparé.
+Le lendemain, il envoie une facture de 30 000$.
+L'entreprise cliente n'en croit pas ses yeux.
+30 000$ pour tourner une vis ?
+"Non", répond le technicien, "j'ai facturé 30 000$ pour avoir su quelle vis tourner."  
+https://www.thinkmax.com/fr/reflexions/ce-que-le-taux-horaire-ne-vous-dit-pas/
+
+Si cette histoire est un on-dit des discours autour de l'expertise,
+elle révèle toutefois un aspect fondamental de l'économie moderne.
+
+> Autrefois, quand j'étais jeune, c'était le Paléolithique supérieur.
+> Lorsque j'entrais quelque part dans une échoppe quelconque,
+> Je pouvais reconnaître le métier de quiconque par l'observation extérieure 
+> et la position de son corps.
+> Si je voyais un homme avec un tablier de cuir brandir une masse sur une enclume,
+> je disais : "Voici un forgeron".
+> Si je voyais quelqu'un armé d'une varlobe,
+> je disais : "Voici un menuisier".
+> Si par exemple, je voyais une femme avec une blouse blanche tâchée de rouge et de vert,
+> je disais : "Tiens voilà une chimiste ou une pharmacienne".
+> Derrière un guichet, je disais "une banquière ou une postière".
+> Aujourd'hui, où que je rentre, je vois un homme penché ou une femme penchée
+> devant son écran en train de tapoter sa console.
+> Je ne peux plus distinguer les métiers.  
+> https://www.youtube.com/watch?v=ZCBB0QEmT5g 3:33
+
+Et si tant d'entre nous passons désormais nos journées à tapoter sur nos consoles,
+comme le dit Michel Serres,
+c'est bien parce que le gros du travail humain au 21e siècle est informationnel.
+La plupart du travail humain moderne, c'est surtout du traitement de l'information.
+Et ça, ça me semble avoir des conséquences majeures sur la manière d'envisager l'économie moderne,
+dont les plus grands flux correspondent à l'économie du service ;
+lequel est généralement essentiellement un service informationnel.  
+https://fr.wikipedia.org/wiki/Tertiarisation_du_travail
+
+> Ça faisait déjà longtemps que les cabinets d'avocat s'intéressaient
+> aux larges modèles de langage (LLM) pour faire de l'analyse de documents,
+> mais ici on parle potentiellement de plein de métiers comme les métiers de la communication,
+> du copyrighting, du journalisme, du développement du service clientèle,
+> qui pourrait être en grande partie automatisé 
+> et qui risque au minimum d'être sérieusement chamboulé.
+> Did I just get put out of a job ?
+> Will AI ultimately replace singers?
+> Et puis, même le métier de YouTubeur apparemment...  
+> https://tournesol.app/entities/yt:TofGNBrbzHA 0:00
+
+En particulier, pour décrire la révolution économique,
+il serait grand temps de cesser de réduire les machines 
+à de simples "esclaves énergétiques" selon les mots de Monsieur Jancovici ;
+il s'agit de plus en plus "d'esclaves informationnelles",
+à qui on délaisse non seulement la collecte, la mémoire et la communication de l'information,
+mais aussi de plus en plus le traitement de celle-ci.
+
+> Le support imprimé a complètement changé la civilisation 
+> telle qu'elle était avant le stade imprimé.
+> Je crains fort qu'aujourd'hui nous soyons à un changement de culture tel que
+> ça ne change pas que les contenus culturels, 
+> que ça ne change pas seulement les contenus scientifiques,
+> que ça ne change pas seulement les contenus de type religieux par exemple ou autres,
+> mais que ça change notre manière de connaître, notre manière de savoir,
+> bref le cognitif en général.
+> Pourquoi ? Parce que ce type de faculté change selon le support.
+> Et bien entendu, la démonstration que je viens de mener pour la mémoire,
+> c'est-à-dire pour la faculté mnémonique,
+> on pourrait aussi bien la reporter sur la raison, sur l'imagination.
+> Il y a dans votre machine des milliards de plus d'images
+> que vous ne pouvez en concevoir ou rêver.
+> Et par conséquent, votre fonction imaginative même se transforme équivalemment
+> à celle de la mémoire du côté de la formation des images.
+> Je suppose aussi que la raison en est au même point.  
+> https://www.youtube.com/watch?v=ZCBB0QEmT5g 44:09
+
 Et l'impact économique de l'énergie n'est pas le seul point 
 sur lequel le discours de Monsieur Jancovici mérite d'être repris.
 
