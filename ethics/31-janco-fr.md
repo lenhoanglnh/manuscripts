@@ -455,8 +455,23 @@ lancée avec extrêmement peu de modestie épistémique :
 > qu'on peut faire fonctionner.  
 > https://www.youtube.com/watch?v=W1b2NLTDxNs 25:57
 
-Pourtant, on trouve sur l'excellent site OurWorldInData un article 
-qui suggère non seulement que plusieurs pays ont au moins conservé une croissance économique 
+Pourtant, sur le site OurWorldInData, 
+on voit que les rapports énergie consommée par PIB, 
+qu'on appelle intensité énergétique dans le jargon,
+varient aisément du simple au quintuple, d'un pays à l'autre.  
+https://ourworldindata.org/grapher/energy-intensity
+
+Alors bien sûr, parmi les pays pour lesquels l'énergie est une part importante des dépenses,
+on retrouve des pays où il fait particulièrement froid, comme le Canada,
+ou particulièrement chaud, comme Singapour.
+Cependant, les disparités paraissent suffisamment grandes entre des pays plus comparables,
+comme la Belgique et la Suisse,
+pour affirmer que le PIB est loin d'être déterminé par la consommation d'énergie.
+Et ça, ça me paraît très important à comprendre, 
+surtout pour envisager les décisions à prendre.
+
+En particulier, toujours selon OurWorldInData, 
+plusieurs pays ont au moins conservé une croissance économique 
 tout en réduisant leurs émissions de CO2,
 mais même que certains pays ont presque réussi à y parvenir
 sans augmenter leurs consommations énergétiques,
