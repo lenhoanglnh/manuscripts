@@ -56,7 +56,7 @@ je vais m'intéresser davantage à sa tendance à trop réduire
 les enjeux civilisationnels à des considérations d'énergie.
 J'ai trouvé cette facette de son discours particulièrement dérangeante,
 lors de son intervention à l'École de Guerre,
-où la manière dont il occulte le rôle de l'information me paraît très erronée et dangereuse,
+où la manière dont il occulte le rôle de l'information me paraît problématique,
 surtout dans le contexte de la guerre informationnelle du 21e siècle
 et du déclin globalisé des démocraties.
 
@@ -136,14 +136,17 @@ a écrasé l'Ukraine, comme ce raisonnement purement énergétique semble le pr�
 https://en.wikipedia.org/wiki/List_of_countries_by_oil_production  
 https://en.wikipedia.org/wiki/List_of_countries_by_oil_consumption
 
+Bien sûr, l'énergie a clairement joué un rôle dans la seconde guerre mondiale,
+et elle reste une considération importante pour envisager les conflits futurs.
+Mais réduire les conflits à ce seul paramètre me paraît extrêmement problématique.
+
 
 ## La dimension informationnelle de la seconde guerre mondiale
 
 Alors, je ne suis pas historien 
-et je ne vais absolument pas prétendre que l'information a joué un rôle prédominant dans la guerre.
-Cependant, j'aimerais bien faire le point sur la dimension informationnelle
-de la seconde guerre mondiale,
-et essayer de vous convaincre qu'il serait précipité de complètement l'occulter.
+et je ne vais pas prétendre que l'information a déterminé l'issue de la guerre.
+Cependant, je vais esquisser la dimension informationnelle de la seconde guerre mondiale,
+et suggérer qu'il serait précipité de complètement occulter son rôle dans la guerre.
 
 Pour commencer, si vous avez vu le film Oppenheimer,
 vous savez que la seconde guerre mondiale a vu la naissance d'une arme de destruction massive,
@@ -242,7 +245,7 @@ Bref. Clairement, s'ils avaient un ascendant énergétique,
 les Alliés avaient aussi un énorme ascendant informationnel.
 Et cet ascendant informationnel me semble avoir joué un rôle 
 pas complètement négligeable dans la seconde guerre mondiale.
-Mais surtout, ce rôle me semble être devenu plus central dans la guerre moderne.
+Mais surtout, le rôle de l'information me semble être devenu plus central dans la guerre moderne.
 
 
 ## La guerre informationnelle a pris beaucoup d'ampleur
@@ -322,7 +325,10 @@ Là encore, la guerre de l'information devient existentielle,
 comme on l'a vu dans le cas des conflits au Yémen, en Éthiopie ou au Soudan.
 
 Dès lors, si on regarde la guerre avec des lentilles informationnelles,
-on devrait avant tout être terrifié par des armes de destruction informationnelles comme TikTok.  
+on devrait avant tout être terrifié par des armes capbables
+de détruire l'espace informationnel d'un pays étranger,
+comme les armées de faux compte ou comme la plateforme TikTok.  
+https://tournesol.app/entities/yt:qwFSHelaMV4  
 https://tournesol.app/entities/yt:iW0LiIMYqrU
 
 Dans ce cyber espace, les opérations informationnelles sont des armes.
@@ -348,7 +354,7 @@ sans même sortir les armes physiques.
 Enfin, et peut-être surtout, en tout cas selon le Général,
 il s'agit d'armer les militaires, voire la population, 
 pour éviter ou savoir réagir à un conflit.
-Et de nos jours, l'armement le plus important, c'est sans doute l'armement informationnel.
+Et de nos jours, l'armement le plus important, c'est peut-être l'armement informationnel.
 
 > Vous ne pouvez pas faire tout ça si vous ne rendez pas les gens plus puissants.
 > Destin: "Que voulez-vous dire ?"
@@ -390,12 +396,30 @@ est aussi problématique dans de nombreux autres domaines,
 
 Cette affirmation, on la retrouve dans les discours d'un très grand nombre d'écologistes.
 Et à bien y réfléchir, elle paraît extrêmement présomptueuse.
-Augmenter l'ampleur des transactions informationnelles 
-entre les comptes bancaires digitaux de l'économie réelle, 
+Augmenter les revenus des uns et des autres, 
 ce qui est, de manière grossière, ce que mesure le PIB,
 est-ce vraiment directement conséquent de la quantité de pétrole qu'on brûle ?
 
-Le principal argument pour obtenir cette conclusion est malheureusement très faible :
+On retrouve généralement deux arguments pour répondre positivement à cette question.
+Le premier est un mécanisme explicatif :
+les revenus augmentent quand plus de biens sont consommés,
+et ces biens nécessitent de la matière et de l'énergie pour être produits.
+OK... mais en y réfléchissant un petit peu, 
+il y a bien d'autres choses derrière la production de biens,
+comme le capital, les moyens de production et le travail humain,
+surtout quand il s'agit de biens avant tout immatériels, 
+comme un contrat d'assurance, un compte bancaire, 
+l'enseignement, les articles scientifiques ou le métier de YouTubeur.
+Sans compter que certaines activités aident à réduire les consommations énergétiques,
+notamment quand il s'agit d'isolation thermique.
+Bref, le mécanisme explicatif montre bien un lien entre consommation et énergie,
+mais pas au point d'affirmer
+
+> Eh bien l'économie mondiale est directement fonction de la quantité de machines 
+> qu'on peut faire fonctionner.  
+> https://www.youtube.com/watch?v=W1b2NLTDxNs 25:57
+
+Le second argument pour obtenir cette conclusion me paraît plus faible encore :
 une simple corrélation entre le PIB mondial et un nombre de machines en service.
 À ce jeu-là, je peux à mon tour "montrer" que l'économie est en fait fonction
 de la quantité d'opérations informationnelles dans le monde.
@@ -421,7 +445,7 @@ et avoir une corrélation nulle entre X et Y, comme j'en ai parlé dans une viei
 Bref, le fait que la corrélation soit très proche de 1 n'est pas davantage convaincant.  
 https://tournesol.app/entities/yt:Ee8gLwVCPxg
 
-Mais surtout, en pratique, on observe surtout une croissance du PIB au cours du temps.
+Mais surtout, en pratique, on observe avant tout une croissance du PIB au cours du temps.
 Et donc à peu près n'importe quelle courbe 
 qui monte ou descend avec le temps sera très corrélée avec le PIB.
 Et pour le coup, c'est très facile de trouver des courbes qui montent avec le temps.
@@ -581,16 +605,30 @@ mais aussi de plus en plus le traitement de celle-ci.
 Et l'impact économique de l'énergie n'est pas le seul point 
 sur lequel le discours de Monsieur Jancovici mérite d'être repris.
 
+> Dans un monde qui n'a plus de pétrole du tout,
+> la mondialisation sera croupion.
+> Parce que quand vous avez un porte-conteneur ou un minéralien de 300 000 tonnes,
+> vous n'allez pas le faire avancer à la voile.
+> Vous n'allez pas non plus le faire avancer avec des galériens.
+> Même si vous avez beaucoup de galériens.
+> Vous n'avez, et du reste les militaires le savent bien, 
+> que un seul moyen de puissance décarbonné, ça s'appelle le nucléaire.
 > Vous n'avez qu'un seul moyen de puissance décarbonée, c'est le nucléaire.
 > Donc pour faire avancer un gros bâtiment, hors combustible fossile,
 > il n'y a qu'un seul truc qui fonctionne : c'est un réacteur.  
-> https://www.youtube.com/watch?v=W1b2NLTDxNs 35:55
+> https://www.youtube.com/watch?v=W1b2NLTDxNs 33:33
 
 Là encore, ça me paraît hautement péremptoire, 
 sachant que des porte-conteneurs électriques existent déjà aujourd'hui,
 et que les progrès technologiques dans l'électrification ont été impressionnants
 au cours de la dernière décennie.  
 https://en.wikipedia.org/wiki/MV_Yara_Birkeland
+
+Et pour les longues distances, on peut imaginer des moteurs thermiques
+qui utilisent carburants non fossiles comme les agrocarburants et les électrocarburants.
+Bien sûr, ça implique d'autres problèmes,
+mais mon but ici n'est pas de montrer que l'affirmation est clairement erronée ;
+le but est de souligner à quel point le dilemme binaire proposé occulte de potentielles alternatives.
 
 Plus globalement, 
 on semble ici avoir un archétype de sous-estimation 
@@ -614,7 +652,7 @@ j'insiste à nouveau sur le fait que tout n'est pas à rejeter
 dans le discours de Monsieur Jancovici ;
 et il ne s'agit en aucun cas de dénigrer tout son travail, 
 ou de le harceler sur les réseaux sociaux.
-Beaucoup de ses propos sur la sobriété énergétique et l'urgence sanitaire à sortir du fossile
+Beaucoup de ses propos sur la sobriété énergétique et l'urgence à sortir du fossile
 me semblent extrêmement importants à diffuser.
 Mieux encore, son discours sur l'ampleur du danger de la dépendance
 à des systèmes d'informations mal sécurisés est parfait.
