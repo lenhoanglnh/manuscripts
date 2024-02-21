@@ -44,23 +44,16 @@ le célèbre Jean-Marc Jancovici, devenu Monsieur Énergie en France.
 Alors, pour être clair, beaucoup de ce que dit Monsieur Jancovici est très pertinent,
 notamment quand il s'agit de prendre la mesure de la catastrophe environnementale
 engendrée par l'exploitation des ressources fossiles,
-et l'urgence à remplacer cette exploitation par des ressources beaucoup plus décarbonnées.
+et l'urgence à remplacer cette exploitation par des technologies bas carbonne.
 En particulier, aujourd'hui, je ne compte absolument pas "clasher Monsieur Jancovici",
 ou affirmer qu'il s'agit d'un charlatan.
 Monsieur Jancovici a énormément apporté à la cause climatique,
 en effectuant une vulgarisation d'excellente qualité sur de nombreux sujets.
-
-Ceci dit, comme vous vous en êtes sans doute rendu compte si vous suivez le YouTube scientifique,
-de plus en plus de voix s'élèvent pour contredire les fondements scientifiques 
-de certains aspects de son discours,
-notamment quand il s'agit de technologies et d'économie.
-Et en effet, aujourd'hui je vais aussi apporter ma pierre à l'édifice,
-en essayant de corriger certains raccourcis un peu dérangeants de son argumentaire.
-Mais ce n'est pas tout à fait mon objectif.
  
-Un aspect que je trouve plus dérangeant encore dans le discours de Monsieur Jancovici,
-ce n'est pas tant la fiabilité de ses propos,
-que sa tendance à trop réduire les enjeux civilisationnels à des considérations d'énergie.
+D'ailleurs, ce que je vais questionner du discours de Monsieur Jancovici
+n'est pas vraiment la fiabilité de ses propos ;
+je vais m'intéresser davantage à sa tendance à trop réduire 
+les enjeux civilisationnels à des considérations d'énergie.
 J'ai trouvé cette facette de son discours particulièrement dérangeante,
 lors de son intervention à l'École de Guerre,
 où la manière dont il occulte le rôle de l'information me paraît très erronée et dangereuse,
@@ -545,7 +538,8 @@ La plupart du travail humain moderne, c'est surtout du traitement de l'informati
 Et ça, ça me semble avoir des conséquences majeures sur la manière d'envisager l'économie moderne,
 dont les plus grands flux correspondent à l'économie du service ;
 lequel est plein de services informationnels.  
-https://www.vie-publique.fr/fiches/269995-les-grands-secteurs-de-production-primaire-secondaire-et-tertiaire
+https://www.vie-publique.fr/fiches/269995-les-grands-secteurs-de-production-primaire-secondaire-et-tertiaire  
+https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_de_services
 
 > Ça faisait déjà longtemps que les cabinets d'avocat s'intéressaient
 > aux larges modèles de langage (LLM) pour faire de l'analyse de documents,
