@@ -778,7 +778,8 @@ mais aussi dans notre start-up Calicarpa pour aider les entrepises
 https://tournesol.app/  
 https://calicarpa.com/
 
-Et d'ailleurs Monsieur Jancovici est loin d'y être insensible.
+Et d'ailleurs Monsieur Jancovici est lui aussi loin 
+d'être insensible à ces enjeux de sécurité informationnelle.
 En particulier, son discours sur l'ampleur du danger de la dépendance
 à des systèmes d'informations mal sécurisés est parfait.
 
