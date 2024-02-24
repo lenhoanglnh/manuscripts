@@ -11,8 +11,7 @@ et le sont encore gravement.
 Malheureusement, cette attention démesurée à ces grandeurs physiques peut nous rendre aveugle
 à de nombreuses dimensions physiques que ces notions échouent à décrire,
 à commencer par l'information, 
-que Michel Serres appelle le "doux", par opposution au "dur",
-en référence probablement à la distinction entre les mots anglais "software" et "hardware".
+que Michel Serres appelle le "doux".
 
 Elle a des conséquences gravissimes très concrètes.
 Par exemple, les étudiants de l'école où j'ai reçu mon diplôme il y a maintenant 14 ans,
@@ -647,14 +646,92 @@ que Rodolphe, alias Le Réveilleur, a déjà pris le temps de déconstruire.
 > sonne la fin de nos sociétés complexes.  
 > https://tournesol.app/entities/yt:HgfcZeGP7BA 1:21:52
 
-Ceci étant dit, comme Rodolphe, 
-j'insiste à nouveau sur le fait que tout n'est pas à rejeter 
-dans le discours de Monsieur Jancovici ;
-et il ne s'agit en aucun cas de dénigrer tout son travail, 
-ou de le harceler sur les réseaux sociaux.
-Beaucoup de ses propos sur la sobriété énergétique et l'urgence à sortir du fossile
-me semblent extrêmement importants à diffuser.
-Mieux encore, son discours sur l'ampleur du danger de la dépendance
+
+## Prêtons attention au "doux"
+
+"Nos sciences dures qui, autrefois ne parlaient que de force et d'énergie,
+parlent depuis assez récemment de codes et de ce qu'on appelle en général le doux.
+Les sciences dures s'occupent aussi du doux."  
+2:00 https://www.youtube.com/watch?v=ZCBB0QEmT5g
+
+Selon Philippe Cibois, secrétaire général de l'Association française de sociologie,
+une distinction s'est faite historiquement, oopposant, je cite,  
+> la "hard science" qui concerne la physique et les sciences de la matière
+> à la "soft science" qui touche la lignuistique, l'algorithmique, la logique [...]
+> l'usage courant actuel est, chez certains membres des sciences de la matière,
+> d'appeler soft tout ce qui ne résiste pas autant à l'expérimentation que la matière,
+> ce qui en vient à désigner toutes les sciences humaines et sociales,
+> ce que les économistes contestent évidemment pour leur compte.  
+> https://fr.wikipedia.org/wiki/Sciences_dures
+
+Ce qui peut paraître étonnant, 
+c'est que cette distinction place l'information, 
+et en particulier l'algorithmique et la logique qui manipulent l'information,
+dans la partie "soft" ;
+alors que je pense que même les physiciens reconnaîtront consensuellement
+que les mathématiques de la science de l'information sont beaucoup plus rigoureuses 
+que les théories physiques.
+En fait, je les trouve même plus rigoureuses que beaucoup de mathématiques pures,
+dans le sens où elles mesurent beaucoup mieux leur degré d'applicabilité,
+en ayant notamment une approche plus constructive.  
+https://www.youtube.com/watch?v=Cm0GvResyR4  
+https://www.youtube.com/watch?v=EIineP-ZGas
+
+De façon plus générale, 
+comme en parle si bien El Mahdi El Mhamdi, 
+Professeur à l'École Polytechnique,
+la formation des écoles d'ingénieur, 
+y compris l'École Polytechnique où nous avions lui et moi fait nos études il y a 17 ans ---
+ça ne nous rajeunit pas ! ---
+dévalorisait, et de ce que me disent des collègues, dévalorise encore dangereusement l'information,
+ce qui conduit à faire des enjeux informationnels 
+un angle mort dangereux de la pensée de nombreux ingénieurs.  
+https://www.youtube.com/watch?v=qeWpTpCUmq0  
+https://www.lemonde.fr/idees/article/2020/06/24/seul-einstein-ne-vaut-rien-sans-tout-le-processus-qu-on-appelle-methode-scientifique_6044032_3232.html  
+https://www.youtube.com/watch?v=ORoQP3IpYFk
+
+D'ailleurs, le livre que nous avons co-écrit, Le Fabuleux Chantier,
+a un chapitre dédié au rôle central de l'information,
+non seulement dans les guerres, l'économie moderne et la santé publique,
+mais aussi dans les sciences modernes, 
+que ce soit en physique, en biologie ou en ingénierie,
+ainsi qu'en anthropologie, psychologie et en droit.  
+https://www.youtube.com/watch?v=pVOjnGw5SdE  
+
+En fait, comme l'explique aussi David de Science Étonnante,
+il ne faudrait pas parler de crise énergétique ; mais de crise entropique.
+Et l'entropie, qui a longtemps été une grandeur physique extrêmement floue,
+n'a pu être vraiment comprise, par Maxwell, Boltzmann et surtout Shannon,
+que grâce à des lentilles informationnelles ;
+comme le disait John von Neumann à Shannon 
+avant que ce dernier n'invente la théorie de l'information pour définir l'entropie : 
+"Personne ne sait réellement ce que l'entropie est vraiment".
+Et plus généralement, les théories les plus profondes de la physique
+donnent une importance majeure à l'information.  
+https://www.youtube.com/watch?v=2Z9p_I3hhUc  
+https://www.youtube.com/watch?v=rHIPMHO_tNA
+
+En tout cas, cela fait longtemps que les oeillères énergétiques me dérangent profondément.
+En 2019, dans Le Fabuleux Chantier (page 86), nous écrivions ainsi :
+> Il nous semble que nous avons tendance à sous-estimer le rôle crucial de cette
+> information, ainsi que le fait que cette information ne vient jamais de nulle
+> part. En fait, de la même manière qu’un scientifique de l’environnement pourrait
+> vous encourager à méditer les flux de matière et d’énergie dans nos sociétés
+> pour prendre conscience de l’étendue de notre ignorance 30 , nous vous invitons à
+> réfléchir au formidable et complexe flux de l’information dans nos sociétés
+> modernes. Qui a écrit quoi ? Pourquoi l’a-t-il écrit ? Comment a-t-il choisi d’écrire
+> cela plutôt qu’autre chose ? Sur quelles informations s’est-il fondé ? Pourquoi a-
+> t-il été exposé à ces informations ? D’où viennent ces informations sur lesquelles
+> il s’est fondé ? Quelles sont les sources originales de ces informations ? Quelles
+> sont les perturbations qu’a subies cette information ? Qui a le plus d’influence
+> sur les flux d’information ?
+
+Voilà des questions beaucoup plus urgentes à se poser, il me semble,
+lors d'un discours à l'École de Guerre en 2023,
+que le problème des contraintes énergétiques.
+
+Et d'ailleurs Monsieur Jancovici le comprend un peu aussi.
+En particulier, son discours sur l'ampleur du danger de la dépendance
 à des systèmes d'informations mal sécurisés est parfait.
 
 > Alors par contre la digitalisation crée une vulnérabilité en tant que tel,
@@ -667,10 +744,15 @@ Mieux encore, son discours sur l'ampleur du danger de la dépendance
 > https://tournesol.app/entities/yt:qOTYgcdNrXE 1:24:11
 
 Je trouve dommage que ces propos très perspicaces de Monsieur Jancovici 
-n'interviennent que suite à une question de l'auditoire,
+n'interviennent que suite à une question de l'auditoire, après son intervention,
 telle une note de bas de page dans les grandes lignes du programme de Défense du 21e siècle.
 
-Mais j'y souscris entièrement ; et j'aimerais qu'on aille même plus loin.
+Ceci dit, j'y souscris entièrement ! 
+Tout comme, à l'instar de Rodolphe Le Réveilleur,
+je tiens à insister à nouveau sur le fait que je suis d'accord 
+avec énormément d'aspects du discours de Monsieur Jancovici.
+
+Mais j'aimerais qu'on aille beaucoup plus vite beaucoup plus loin sur les enjeux informationnels.
 Sécuriser les systèmes d'information me semble être devenu un enjeu majeur de la sécurité nationale.
 Et donc, il me semble qu'il devrait s'agir d'une priorité de l'Armée française.
 En fait, la guerre mondiale dans le cyber espace a déjà largement commencé.
