@@ -751,6 +751,33 @@ la dimension informationnelle doit urgemment prendre une place prédominante
 dans l'espace attentionnelle.  
 https://www.tallandier.com/livre/la-dictature-des-algorithmes/
 
+Comme l'explique Mahdi,
+> Ce qui fait la force de l'intelligence humaine,
+> ce n'est pas forcément l'intelligence elle-même.
+> C'est tous les garde-fous que l'évolution sociale a mis en place
+> pour rendre cette intelligence fiable.
+> On a inventé beaucoup de mécanismes comme la démocratie,
+> la décentralisation du pouvoir, la séparation des expertises.
+> Ce sont des choses qui font qu'on n'est pas à la merci d'un génie qui contrôle tout
+> ou de l'intelligence d'un super dictateur [...]
+> Ce sont des mécanismes qui paraissent contradictoires,
+> mais qui permettent de canaliser l'intelligence humaine et de la rendre fiable.
+> Et tout le challenge aujourd'hui pour l'intelligence artificielle,
+> c'est d'inventer l'équivalent de ces mécanismes 
+> qui ont fait que l'intelligence humaine est plus ou moins fiable.  
+> https://www.youtube.com/watch?v=qeWpTpCUmq0
+
+Ces mécanismes, c'est vraiment le coeur de la recherche 
+sur laquelle Mahdi et moi travaillons depuis 7 ans maintenant,
+avec de nombreuses publications dans les meilleures conférences,
+un prix de meilleure thèse pour Mahdi,
+et une concrétisation dans le projet associatif Tournesol entre autres,
+qui vise à être d'intérêt public ;
+mais aussi dans notre start-up Calicarpa pour aider les entrepises
+à sécuriser leur intégration des solutions d'intelligence artificielle.  
+https://tournesol.app/  
+https://calicarpa.com/
+
 Et d'ailleurs Monsieur Jancovici est loin d'y être insensible.
 En particulier, son discours sur l'ampleur du danger de la dépendance
 à des systèmes d'informations mal sécurisés est parfait.
