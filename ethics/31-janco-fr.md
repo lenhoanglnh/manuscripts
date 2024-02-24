@@ -729,8 +729,29 @@ En 2019, dans Le Fabuleux Chantier (page 86), nous écrivions ainsi :
 Voilà des questions beaucoup plus urgentes à se poser, il me semble,
 lors d'un discours à l'École de Guerre en 2023,
 que le problème des contraintes énergétiques.
+Et même au delà de l'École de Guerre.
+Quand il s'agit d'envisager le problème environnemental aussi,
+il y a de quoi être alarmé par l'exode des chercheurs du climat de Twitter,
+et par les innombrables biais cognitifs qui conduisent des militants du climat
+à promouvoir un discours contre-productif pour la cause environnementale.  
+https://www.france24.com/fr/info-en-continu/20230524-climat-insult%C3%A9s-ou-menac%C3%A9s-des-scientifiques-fuient-twitter  
+https://tournesol.app/entities/yt:TiGXc4jmdlc  
+https://tournesol.app/entities/yt:xx55qcGdXOo  
+https://tournesol.app/entities/yt:urhVbud_vMc
 
-Et d'ailleurs Monsieur Jancovici le comprend un peu aussi.
+En particulier, des sciences douces, comme la psychologie, la sociologie et l'économie,
+devraient être au coeur de la stratégie climatique,
+comme l'explique si bien Stéphane alias Homo Fabulus.  
+https://tournesol.app/entities/yt:ZdEVVDk48L4
+
+Clairement, comme Jean-Lou alias Après la bière et moi 
+en parlons longuement dans notre livre "La dictature des algorithmes"
+à paraître le 21 mars prochain,
+la dimension informationnelle doit urgemment prendre une place prédominante 
+dans l'espace attentionnelle.  
+https://www.tallandier.com/livre/la-dictature-des-algorithmes/
+
+Et d'ailleurs Monsieur Jancovici est loin d'y être insensible.
 En particulier, son discours sur l'ampleur du danger de la dépendance
 à des systèmes d'informations mal sécurisés est parfait.
 
