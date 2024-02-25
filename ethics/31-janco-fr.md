@@ -11,7 +11,9 @@ et le sont encore gravement.
 Malheureusement, cette attention démesurée à ces grandeurs physiques peut nous rendre aveugle
 à de nombreuses dimensions physiques que ces notions échouent à décrire,
 à commencer par l'information, 
-que Michel Serres appelle le "doux".
+que Michel Serres appelle le "doux", 
+et qu'on appellerait aujourd'hui plus communément le "soft"
+(comme dans "software" ou "soft power").
 
 Elle a des conséquences gravissimes très concrètes.
 Par exemple, les étudiants de l'école où j'ai reçu mon diplôme il y a maintenant 14 ans,
@@ -28,13 +30,41 @@ https://tournesol.app/entities/yt:HbFadtOxs4k
 qu'elles aient été accusées de contribuer à des génocides par Amnesty International,  
 https://tournesol.app/entities/yt:dGJzpQwA090  
 ou que des autorités aient identifiées des backdoors dans leurs produits commercialisés ;  
-https://www.cnet.com/tech/mobile/us-finds-huawei-has-backdoor-access-to-mobile-networks-globally-report-says/
+https://www.cnet.com/tech/mobile/us-finds-huawei-has-backdoor-access-to-mobile-networks-globally-report-says/  
 et c'est en très grande partie parce qu'ils n'ont pas du tout conscience
-de l'ampleur du désastre informationnel de ces industries.  
+de l'ampleur du désastre informationnel de ces industries.
 
 [Extraits de désinformation russe, des émeutes du Capitol, des mouvements antivax, des manifestations de l'extrême-droite en France, des ransomwares sur les hôpitaux français...]
 
-Cette grave inattention au doux,
+En particulier, les élèves ne se sont pas mobilisés lorsque l'X a conclu un partenariat 
+avec la Mohammed Bin Zayed University of Artificial Intelligence (MBZUAI),
+une entité récemment mise sur pied, et qui porte le nom d'un dictateur en vie ---
+je n'en connais pas beaucoup d'autres exemples... la Trump university pourrait en devenir un.
+https://mbzuai.ac.ae/news/mbzuai-delegation-explores-partnerships-with-lx-and-ip-paris/  
+
+MBZUAI est ainsi citée dans le rapport annuel 2022 de l'École Polytechnique,
+dans une short-list de "prestigieuses universités", qui contient Berkeley et trois petits points.
+À travers cette phrase, 
+Polytechnique donne un crédit démesuré à une entité jusque là très peu connue,
+comme si elle était aussi respectable que l'Université de Berkeley et ses 55 prix Nobel.  
+https://www.calameo.com/read/0063192773bc76738472f (page 26)  
+https://light.berkeley.edu/nobels/
+
+Mais surtout MBZUAI est listée par le Président d'un comité bipartisan exceptionnel 
+de la chambre des représentants des États-Unis d'Amérique
+sur le soft power du Parti Communiste Chinois,
+notamment à cause des liens très forts, et très louches, entre MBZUAI et le gouvernement Chinois.  
+https://selectcommitteeontheccp.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence
+
+Malheureusement, faute de mobilisation, l'École Polytechnique,
+qui est pourtant sous la tutelle du ministère des Armées,
+a établi des liens très étroits avec des puissances étrangères autoritaires,
+y compris sur des thématiques de recherche aussi sensibles que l'intelligence artificielle,
+qui est désormais abondamment utilisée dans le cadre de la guerre de l'information,
+pour coordonnées des flottes de drones, surveiller des populations y compris ennemis
+et influencer les opinions publiques à travers le globe.
+
+Cette grave inattention au soft,
 est particulièrement bien incarnée par les discours d'un autre diplômé de cette École Polytechnique,
 le célèbre Jean-Marc Jancovici, devenu Monsieur Énergie en France.
 
@@ -113,7 +143,7 @@ le déchiffrement des communications Nazies
 les opérations Fortitude de désinformation et de diversion des Alliés,
 ou la propagande de guerre pour rallier les forces humaines.
 À en croire Monsieur Jancovici, 
-toutes ces opérations sur le "doux" auraient eu peu d'importance dans le passé.
+toutes ces opérations sur le soft auraient eu peu d'importance dans le passé.
 Pour gagner une guerre, ce qui comptait avant tout, c'était la dépense énergétique.
 
 Et au moment de se projeter dans l'avenir,
@@ -126,7 +156,7 @@ Il enchaîne rapidement avec ce qui est, selon lui, le grand défi des armées a
 > Parce que c'est bien ça la première question qui se pose.  
 > https://www.youtube.com/watch?v=W1b2NLTDxNs 11:42
 
-Et c'est vraiment à ce moment là que j'ai envie de hurler :
+Et c'est vraiment à ce moment là que j'ai envie de dire :
 "ce monsieur est en train de donner de très mauvais conseils à l'Armée Française".
 
 Est-ce que la Russie, qui produit et consomme 15 fois plus de pétrole que l'Ukraine,
@@ -240,7 +270,12 @@ qui grâce aux nouvelles technologies de l'information
 a pu envoyer un message à tous les Français mécontents de l'occupation Nazie ?  
 https://daily.jstor.org/an-affordable-radio-brought-nazi-propaganda-home/
 
-Bref. Clairement, s'ils avaient un ascendant énergétique,
+> J'invite tous les Français qui veulent rester libres
+> à m'écouter et à me suivre.
+> Vive la France libre dans l'honneur et dans l'indépendance !  
+> https://www.youtube.com/watch?v=ung6UiY3YY4
+
+Bref. Globalement, s'ils avaient un ascendant énergétique,
 les Alliés avaient aussi un énorme ascendant informationnel.
 Et cet ascendant informationnel me semble avoir joué un rôle 
 pas complètement négligeable dans la seconde guerre mondiale.
@@ -341,7 +376,7 @@ En tout cas selon le Général.
 > Si ça peut dissuader ceux qui nous veulent du mal,
 > c'est une arme de malade.
 > Et si ça aide ceux qui travaillent à mieux comprendre, à mieux nous soutenir,
-> alors c'est une sacré arme.
+> alors c'est une sacré arme.  
 > https://tournesol.app/entities/yt:qOTYgcdNrXE 21:22
 
 Après tout, certaines armes, comme l'arme nucléaire, ont pour but premier la dissuasion.
@@ -433,7 +468,7 @@ pour augmenter le PIB.
 Alors techniquement, j'ai pris le logarithme de la puissance de calculs des supercalculateurs,
 parce que celle-ci est vraiment exponentielle, 
 contrairement au PIB qui est plus linéaire,
-mais je peux maintenant me féliciter d'avoir un r² égal à 0,95.
+mais je peux maintenant me féliciter d'avoir une corrélation proche de 97%.
 Pas loin de celui calculé par Monsieur Jancovici !
 
 Alors bien sûr, ma "preuve" est en fait ridicule.
@@ -647,7 +682,7 @@ que Rodolphe, alias Le Réveilleur, a déjà pris le temps de déconstruire.
 > https://tournesol.app/entities/yt:HgfcZeGP7BA 1:21:52
 
 
-## Prêtons attention au "doux"
+## Soyons attentifs au soft
 
 "Nos sciences dures qui, autrefois ne parlaient que de force et d'énergie,
 parlent depuis assez récemment de codes et de ce qu'on appelle en général le doux.
@@ -739,7 +774,7 @@ https://tournesol.app/entities/yt:TiGXc4jmdlc
 https://tournesol.app/entities/yt:xx55qcGdXOo  
 https://tournesol.app/entities/yt:urhVbud_vMc
 
-En particulier, des sciences douces, comme la psychologie, la sociologie et l'économie,
+En particulier, des sciences soft, comme la psychologie, la sociologie et l'économie,
 devraient être au coeur de la stratégie climatique,
 comme l'explique si bien Stéphane alias Homo Fabulus.  
 https://tournesol.app/entities/yt:ZdEVVDk48L4
