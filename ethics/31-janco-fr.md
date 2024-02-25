@@ -165,9 +165,20 @@ a écrasé l'Ukraine, comme ce raisonnement purement énergétique semble le pr�
 https://en.wikipedia.org/wiki/List_of_countries_by_oil_production  
 https://en.wikipedia.org/wiki/List_of_countries_by_oil_consumption
 
-Bien sûr, l'énergie a clairement joué un rôle dans la seconde guerre mondiale,
+Et quid de la guerre du Vietnam, 
+entre les États-Unis qui, en 1965, produisaient presque 2 fois plus de pétrole
+que n'importe quel autre pays,
+et le Vietnam qui en produisant quelque chose comme 200 fois moins ?
+Une guerre pendant laquelle les Américains ont largué trois fois plus de bombes
+que pendant toute la seconde guerre mondiale !  
+https://www.visualcapitalist.com/the-largest-producers-of-crude-oil-1965-2017/  
+http://crudeoilpeak.info/wp-content/uploads/Vietnam_oil_production_vs_consumption_1965-2018.jpg  
+https://fr.wikipedia.org/wiki/Guerre_du_Viêt_Nam#Bombardements
+
+Bien sûr, l'énergie joue un rôle dans la guerre,
 et elle reste une considération importante pour envisager les conflits futurs.
-Mais réduire les conflits à ce seul paramètre me paraît extrêmement problématique.
+Mais réduire les conflits à ce "muscle" me paraît extrêmement problématique ;
+tout comme il serait trompeur de réduire un combat de boxe à la masse musculaire.
 
 
 ## La dimension informationnelle de la seconde guerre mondiale
