@@ -647,6 +647,24 @@ mais aussi de plus en plus le traitement de celle-ci.
 > Je suppose aussi que la raison en est au même point.  
 > https://www.youtube.com/watch?v=ZCBB0QEmT5g 44:09
 
+Et alors, en pratique, quand Monsieur Jancovici affirme que
+
+> l'économie mondiale est directement fonction de la quantité de machines 
+> qu'on peut faire fonctionner.  
+> https://www.youtube.com/watch?v=W1b2NLTDxNs 25:57
+
+il enchaîne souvent en imaginant un futur où l'offre en énergie chute drastiquement,
+en suggèrant que ceci serait catastrophique pour nos sociétés.
+Et oui, comme on en a senti les prémisses suite à la guerre en Ukraine,
+nos démocraties ont une résilience limitée à cela, 
+surtout celles qui sont fortement dépendantes de ressources fossiles russes.
+Ceci dit, nos sociétés me semblent plus dépendantes encore de ressources informationnelles étrangères,
+voire vulnérables à des cyber attaques majeures étrangères.
+Quelle grande entreprise française n'utilise pas des technologies d'information
+taïwanaises, américaines, voire chinoises, 
+comme des téléphones ZFC ou des laptops Lenovo.
+
+
 Et l'impact économique de l'énergie n'est pas le seul point 
 sur lequel le discours de Monsieur Jancovici mérite d'être repris.
 
