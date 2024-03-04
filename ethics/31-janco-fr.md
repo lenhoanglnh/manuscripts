@@ -8,14 +8,14 @@ Les sciences dures s'occupent aussi du doux."
 Comme l'explique si bien le philosophe Michel Serres, malheureusement récemment décédé,
 les sciences ont longtemps été obnubilées par la matière et l'énergie,
 et le sont encore gravement.
-Malheureusement, cette attention démesurée à ces grandeurs physiques peut nous rendre aveugle
-à de nombreuses dimensions physiques que ces notions échouent à décrire,
+Cette attention démesurée à ces grandeurs physiques peut nous rendre aveugle
+à de nombreuses dimensions que ces notions échouent à décrire,
 à commencer par l'information, 
 que Michel Serres appelle le "doux", 
 et qu'on appellerait aujourd'hui plus communément le "soft"
 (comme dans "software" ou "soft power").
 
-Elle a des conséquences gravissimes très concrètes.
+Ce biais attentionnel a des conséquences gravissimes très concrètes.
 Par exemple, les étudiants de l'école où j'ai reçu mon diplôme il y a maintenant 14 ans,
 à savoir l'École Polytechnique, 
 se sont mobilisés, avec succès,
@@ -36,9 +36,12 @@ de l'ampleur du désastre informationnel de ces industries.
 
 [Extraits de désinformation russe, des émeutes du Capitol, des mouvements antivax, des manifestations de l'extrême-droite en France, des ransomwares sur les hôpitaux français...]
 
-En particulier, les élèves ne se sont pas mobilisés lorsque l'X a conclu un partenariat 
+En particulier, les élèves ne se sont pas mobilisés lorsque l'X,
+lepetit nom de Polytechnique, 
+a conclu un partenariat 
 avec la Mohammed Bin Zayed University of Artificial Intelligence (MBZUAI),
-une entité récemment mise sur pied, et qui porte le nom d'un dictateur en vie ---
+une entité récemment mise sur pied aux Émirats Arabes Unis, 
+et qui porte le nom d'un dictateur en vie ---
 je n'en connais pas beaucoup d'autres exemples... la Trump university pourrait en devenir un.
 https://mbzuai.ac.ae/news/mbzuai-delegation-explores-partnerships-with-lx-and-ip-paris/  
 
@@ -50,21 +53,21 @@ comme si elle était aussi respectable que l'Université de Berkeley et ses 55 p
 https://www.calameo.com/read/0063192773bc76738472f (page 26)  
 https://light.berkeley.edu/nobels/
 
-Mais surtout MBZUAI est listée par le Président d'un comité bipartisan exceptionnel 
-de la chambre des représentants des États-Unis d'Amérique
-sur le soft power du Parti Communiste Chinois,
-notamment à cause des liens très forts, et très louches, entre MBZUAI et le gouvernement Chinois.  
+Mais surtout MBZUAI est listée parmi les organes du Soft Power chinois 
+par le Président d'un comité bipartisan exceptionnel 
+de la chambre des représentants des États-Unis d'Amérique.  
 https://selectcommitteeontheccp.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence
 
-Malheureusement, faute de mobilisation, l'École Polytechnique,
+Ainsi, l'École Polytechnique,
 qui est pourtant sous la tutelle du ministère des Armées,
 a établi des liens très étroits avec des puissances étrangères autoritaires,
 y compris sur des thématiques de recherche aussi sensibles que l'intelligence artificielle,
-qui est désormais abondamment utilisée dans le cadre de la guerre de l'information,
-pour coordonnées des flottes de drones, surveiller des populations y compris ennemis
+laquelle est abondamment utilisée dans le cadre de la guerre de l'information,
+pour coordonner des flottes de drones, surveiller des populations y compris ennemis
 et influencer les opinions publiques à travers le globe.
+Et tout ça, sans que les élèves de l'X ne se mobilise.
 
-Cette grave inattention au soft,
+Cette grave inattention aux enjeux de maîtrise de l’information, au "soft",
 est particulièrement bien incarnée par les discours d'un autre diplômé de cette École Polytechnique,
 le célèbre Jean-Marc Jancovici, devenu Monsieur Énergie en France.
 
@@ -73,8 +76,8 @@ le célèbre Jean-Marc Jancovici, devenu Monsieur Énergie en France.
 Alors, pour être clair, beaucoup de ce que dit Monsieur Jancovici est très pertinent,
 notamment quand il s'agit de prendre la mesure de la catastrophe environnementale
 engendrée par l'exploitation des ressources fossiles,
-et l'urgence à remplacer cette exploitation par des technologies bas carbonne.
-En particulier, aujourd'hui, je ne compte absolument pas "clasher Monsieur Jancovici",
+et l'urgence à remplacer cette exploitation par des technologies bas carbone.
+Aujourd'hui, je ne compte absolument pas "clasher Monsieur Jancovici",
 ou affirmer qu'il s'agit d'un charlatan.
 Monsieur Jancovici a énormément apporté à la cause climatique,
 en effectuant une vulgarisation d'excellente qualité sur de nombreux sujets.
@@ -92,7 +95,7 @@ et du déclin globalisé des démocraties.
 Plus généralement, il me semble important de déconstruire l'importance démesurée 
 que beaucoup donnent à la matière et à l'énergie au 21e siècle.
 En particulier, il est urgent de s'enlever les oeillères attentionnelles 
-qui résultent de cette volonté à tout réduire à des problèmes d'énergie,
+et de cesser de tout réduire à des problèmes d'énergie,
 surtout lorsqu'il s'agit des technologies du numériques, du PIB ou des conflits armés.
 
 En fait, comme Michel Serres, et comme vous le savez sans doute si vous me suivez,
@@ -188,30 +191,29 @@ et je ne vais pas prétendre que l'information a déterminé l'issue de la guerr
 Cependant, je vais esquisser la dimension informationnelle de la seconde guerre mondiale,
 et suggérer qu'il serait précipité de complètement occulter son rôle dans la guerre.
 
-Pour commencer, si vous avez vu le film Oppenheimer,
+Pour commencer, si vous avez vu le film Oppenheimer de Christopher Nolan,
 vous savez que la seconde guerre mondiale a vu la naissance d'une arme de destruction massive,
 à savoir l'arme nucléaire.
 Et si les États-Unis ont réussi à se doter de cette arme terrifiante,
 ce n'est absolument pas en brûlant davantage de pétrole et de charbon ;
 ils ont avant tout profité de l'exode des cerveaux européens, 
 pour former une dream team de scientifiques.
-Et alors, certes, l'arme nucléaire n'aura pas beaucoup joué sur l'issue de la guerre,
-en tout cas sur son développement sur le continent européen.
-Mais il faut bien voir que c'est avant tout parce qu'elle a été découverte trop tard,
-et qu'elle l'a été par les vainqueurs de la guerre.
+Bien sûr, l'arme nucléaire n'a pas décidé l'issue de la guerre,
+du moins sur le front européen.
+Mais imaginez une seconde que la bombe n’ait pas été découverte par les Alliés.
 Imaginez si le physicien Werner Heisenberg et ses collègues au service des forces Nazies
 avaient réussi cette avancée informationnelle avant 1945 !
 Je pense qu'on peut largement dire que 
 cet échec informationnel des Nazis a joué un rôle majeur dans l'issue de la guerre.
-Et de façon plus général, les technologies des armes de guerre sont clairement des enjeux majeurs
+Et de façon plus générale, les technologies des armes de guerre sont clairement des enjeux majeurs
 pour déterminer les issues d'une guerre.  
 https://www.reuters.com/business/aerospace-defense/exclusive-us-assesses-up-60-failure-rate-some-russian-missiles-officials-say-2022-03-24/
 
 Mais c'est loin d'être le seul défi informationnel qui se pose à des armées immenses,
 déployées dans un contexte complexe et dynamique.
 En particulier, un autre grand défi est logistique.
-Comment s'assurer que les matériels indispensables fournis par les bases arrières
-soient livrées de manière efficace sur le front ?
+Comment s'assurer que les matériels indispensables fournis par les bases arrière
+soient livrés de manière efficace sur le front ?
 Eh bien, c'est pendant cette seconde guerre mondiale 
 que les mathématiques de la logistique ont été inventées,
 notamment par l'américain Dantzig et le soviétique Leonid Kantorovich,
@@ -222,13 +224,17 @@ Et plus généralement, il faudrait toute une vidéo pour les inventions du seul
 aux États-Unis, pendant uniquement la seconde guerre mondiale,
 de la conception des ordinateurs à la théorie des jeux,
 en passant par l'optimisation, les méthodes de Monte Carlo ou le tri-fusion.
+Le général de Gaulle déclarera à ce sujet : 
+« C’est en respectant la logistique que le général Eisenhower mena 
+jusqu’à la victoire […] la machinerie des armées du monde libre. » 
 Là encore, il semble que les contributions des scientifiques des Alliés au traitement de l'information
 ont été supérieures à celles des forces Nazies, et cela a sans doute aidé.
-Au moins un peu.
+Au moins un peu.  
+https://fr.wikipedia.org/wiki/Logistique_militaire#Au_XXe_si%C3%A8cle
 
 Mais en matière de traitement de l'information pendant la seconde guerre mondiale,
 difficile de faire mieux que le génie anglais Alan Turing.
-Comme le met en scène le film "Imitation Game",
+Comme le met en scène le film "Imitation Game" de Morten Tyldum,
 qui est quand même à prendre avec de grosses pincettes sur son authenticité à la fois historique et mathématique,
 l'unité spéciale et secrète de Bletchley Park était un camp britannique de hackers,
 dont Turing faisait partie,
@@ -258,21 +264,21 @@ ainsi que des fuites contrôlées de fausses informations via des canaux diploma
 notamment à travers les États neutres.
 De plus, des agents doubles, au service des Alliés, 
 mais que les Nazis croyaient être des infiltrés dans les forces Alliées à leur service,
-ont été utilisé pour diffuser des informations trompeuses.
-Enfin, l'efficacité de cette manipulation informationnelle a pu être confirmée par les Alliés,
-grâce aux travaux de Turing qui permettait aux Alliés de s'assurer des croyances secrètes des Nazis.
-Et toutes les sources que j'ai trouvées décrivent en particulier Opération Fortitude
+ont été utilisés pour diffuser des informations trompeuses.
+Enfin, l'efficacité de cette manipulation informationnelle a pu être confirmée 
+en déchiffrant les communications nazies
+grâce aux travaux de Turing.
+L'Opération Fortitude est décrite par toutes les sources historiques que j'ai trouvées
 comme un succès important dans l'avancée des forces Alliées.  
 https://en.wikipedia.org/wiki/Operation_Fortitude#Impact
 
 Enfin, comment ne pas mentionner la propagande 
-dans l'analyse du rôle de l'information dans la seconde guerre mondiale ?
-En particulier, même avant cette guerre, 
-une nouvelle technologie de l'information semble avoir un joué un rôle non-négligeable
-dans la voie vers la guerre.
-Côté Nazi en particulier, le ministre Joseph Goebbels a beaucoup oeuvré
-pour rendre la radio assez abordable pour que toute la population allemande puisse l'écouter.
-Autrement dit, il a mis dans les demeures et les cafés de sa population
+dans l'analyse du rôle de l'information 
+dans le déclenchement et la conduite de la seconde guerre mondiale ?
+Côté Nazi, le ministre Joseph Goebbels a beaucoup oeuvré
+pour diffuser massivement une nouvelle technologie de l'information,
+à savoir la radio, pour que toute la population allemande puisse l'écouter.
+En particulier, il a mis dans les demeures et les cafés de sa population
 un outil capable de diffuser massivement les propos de son Führer,
 et ainsi de mobiliser son peuple et le motiver à prendre les armes.
 Et puis, comment ne pas mentionner le rare mot de gloire de la France pendant cette guerre,
@@ -339,12 +345,17 @@ qui interdit notamment les crimes de guerre, comme le meurtre intentionnel de ci
 Par ailleurs, la guerre doit en principe être précédée d'une déclaration de guerre,
 et s'achève par un traité de paix, ou un accord de reddition.
 
-Cependant, les conflits dans le cyberespace sont en fait permanents,
+Ce n'est pas le cas des conflits dans le cyberespace qui sont en fait permanents,
 abusent abondamment des civils, et ne nécessitent pas de déclaration.
-Mais l'ampleur de ces conflits est tel qu'il me semble réducteur de les appeler "conflits".
+Mais l'ampleur de ces conflits est telle qu'il me semble réducteur de les appeler "conflits".
 Ces "conflits informationnels" dessinent aujourd'hui les contours de la géopolitique mondiale.
 De manière informelle, je préfère donc parler de "guerre informationnelle",
 même si ce n'est pas une expression idéale.
+
+Après tout, on parle généralement de guerre 
+pour décrire l'invasion de l'Ukraine par la Russie,
+alors que la Russie n'a pas effectué de déclaration de guerre...  
+https://en.wikipedia.org/wiki/Russo-Ukrainian_War#Legality_and_declaration_of_war
 
 > Et vous avez tout à fait raison.
 > Ils vont travailler pour fabriquer et influencer la perception des populations
@@ -357,22 +368,22 @@ Comme l'explique si bien le Général,
 une énorme partie de la guerre moderne est purement informationnelle.
 Il suffit ainsi de diffuser des informations trompeuses, polarisantes et haineuses,
 dans une nation ennemie pour complètement la déstabiliser,
-et pour l'affaiblir sur les plans économiques, institutionnelles et militaires ;
+et pour l'affaiblir sur les plans économiques, institutionnels et militaires ;
 sachant que tout ceci est intrinsèquement lié.
 
 De la même manière, 
 il y a un enjeu existentiel pour certaines armées à mobiliser leurs peuples,
 ne serait-ce que pour recruter des militaires,
 à l'instar de ce qu'on voit aujourd'hui en Russie, en Ukraine ou à Taïwan.
-Mieux encore, en contrôlant la diffusion information chez des alliés et des ennemis,
+Mieux encore, en contrôlant la diffusion d'informations chez des alliés et des ennemis,
 les différentes puissances militaires peuvent obtenir ou perdre des soutiens.
 Là encore, la guerre de l'information devient existentielle, 
 comme on l'a vu dans le cas des conflits au Yémen, en Éthiopie ou au Soudan.
 
 Dès lors, si on regarde la guerre avec des lentilles informationnelles,
-on devrait avant tout être terrifié par des armes capbables
+on devrait avant tout être terrifié par des armes capables
 de détruire l'espace informationnel d'un pays étranger,
-comme les armées de faux compte ou comme la plateforme TikTok.  
+comme les armées de faux comptes ou comme la plateforme TikTok.  
 https://tournesol.app/entities/yt:qwFSHelaMV4  
 https://tournesol.app/entities/yt:iW0LiIMYqrU
 
@@ -434,7 +445,7 @@ est aussi problématique dans de nombreux autres domaines,
 à commencer par l'économie.
 
 > Le PIB mondial, vous voyez qu'il suit depuis quelques décennies au moins
-> l'énergie utilisé, c'est-à-dire en fait le parc de machines en service.
+> l'énergie utilisée, c'est-à-dire en fait le parc de machines en service.
 > Eh bien l'économie mondiale est directement fonction de la quantité de machines 
 > qu'on peut faire fonctionner.  
 > https://www.youtube.com/watch?v=W1b2NLTDxNs 25:57
@@ -486,7 +497,7 @@ Alors bien sûr, ma "preuve" est en fait ridicule.
 D'abord, parce que la corrélation mesure mal à quel point une variable prédit l'autre ;
 non seulement corrélation n'est pas causalité,
 mais il est aussi tout à fait possible d'avoir X qui explique entièrement Y,
-et avoir une corrélation nulle entre X et Y, comme j'en ai parlé dans une vieille vidéo.
+et avoir une corrélation nulle entre X et Y, comme j'en ai parlé dans cette vidéo.
 Bref, le fait que la corrélation soit très proche de 1 n'est pas davantage convaincant.  
 https://tournesol.app/entities/yt:Ee8gLwVCPxg
 
@@ -719,9 +730,9 @@ Les sciences dures s'occupent aussi du doux."
 2:00 https://www.youtube.com/watch?v=ZCBB0QEmT5g
 
 Selon Philippe Cibois, secrétaire général de l'Association française de sociologie,
-une distinction s'est faite historiquement, oopposant, je cite,  
+une distinction s'est faite historiquement, opposant, je cite,  
 > la "hard science" qui concerne la physique et les sciences de la matière
-> à la "soft science" qui touche la lignuistique, l'algorithmique, la logique [...]
+> à la "soft science" qui touche la linguistique, l'algorithmique, la logique [...]
 > l'usage courant actuel est, chez certains membres des sciences de la matière,
 > d'appeler soft tout ce qui ne résiste pas autant à l'expérimentation que la matière,
 > ce qui en vient à désigner toutes les sciences humaines et sociales,
