@@ -476,7 +476,7 @@ il y a bien d'autres choses derrière la production de biens,
 comme le capital, les moyens de production et le travail humain,
 surtout quand il s'agit de biens avant tout immatériels, 
 comme un contrat d'assurance, un compte bancaire, 
-l'enseignement, les articles scientifiques ou le métier de YouTubeur.
+l'enseignement, les articles scientifiques ou le métier qu'exerce Monsieur Jancovici.
 Sans compter que certaines activités aident à réduire les consommations énergétiques,
 notamment quand il s'agit d'isolation thermique.
 Bref, le mécanisme explicatif montre bien un lien entre consommation et énergie,
@@ -575,8 +575,8 @@ Cependant, sachant ces graphes, affirmer sans broncher que
 > https://www.youtube.com/watch?v=W1b2NLTDxNs 25:57
 
 Ça me semble être beaucoup trop péremptoire.
-Et ce sont ces aspects qui semblent déranger de plus en plus mes collègues sur YouTube,
-notamment Gilles de la chaîne Heu?reka.
+Et ce sont ces aspects qui semblent déranger de plus en plus mes collègues,
+notamment l'expert en économie Gilles de la chaîne Heu?reka.
 
 > En gros, quand je parle de crise de l'offre, 
 > donc toute la partie qui parle d'environnement, là ça a quand même pas mal changé.
