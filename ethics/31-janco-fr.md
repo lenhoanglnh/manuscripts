@@ -380,12 +380,23 @@ les différentes puissances militaires peuvent obtenir ou perdre des soutiens.
 Là encore, la guerre de l'information devient existentielle, 
 comme on l'a vu dans le cas des conflits au Yémen, en Éthiopie ou au Soudan.
 
+Et bien sûr, au-delà de la dimension psychologique et épistémique,
+la guerre de l'information est aujourd'hui incarnée 
+dans les attaques sur les systèmes d'information,
+à l'instar des piratages de l'entreprise chinoise i-Soon,
+de la fuite de conversations privées entre officiers allemands
+ou du ciblage du téléphone du Président Français par le logiciel espion Pegasus.  
+https://www.lemonde.fr/pixels/article/2024/02/23/la-chine-nie-tout-lien-avec-i-soon-la-societe-de-cyberespionnage-dont-les-donnees-ont-fuite-sur-github_6218128_4408996.html
+https://www.rts.ch/info/monde/2024/article/l-allemagne-enquete-apres-une-fuite-au-sein-de-son-armee-concernant-l-ukraine-28423776.html
+https://www.lemonde.fr/projet-pegasus/article/2021/07/20/projet-pegasus-un-telephone-portable-d-emmanuel-macron-dans-le-viseur-du-maroc_6088950_6088648.html
+
 Dès lors, si on regarde la guerre avec des lentilles informationnelles,
 on devrait avant tout être terrifié par des armes capables
 de détruire l'espace informationnel d'un pays étranger,
-comme les armées de faux comptes ou comme la plateforme TikTok.  
+comme les armées de faux comptes, la plateforme TikTok ou les ordinateurs quantiques.  
 https://tournesol.app/entities/yt:qwFSHelaMV4  
-https://tournesol.app/entities/yt:iW0LiIMYqrU
+https://tournesol.app/entities/yt:iW0LiIMYqrU  
+https://tournesol.app/entities/yt:1vbbdwpN-qc
 
 Dans ce cyber espace, les opérations informationnelles sont des armes.
 En tout cas selon le Général.
