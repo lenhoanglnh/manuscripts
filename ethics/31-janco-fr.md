@@ -65,7 +65,7 @@ y compris sur des thématiques de recherche aussi sensibles que l'intelligence a
 laquelle est abondamment utilisée dans le cadre de la guerre de l'information,
 pour coordonner des flottes de drones, surveiller des populations y compris ennemis
 et influencer les opinions publiques à travers le globe.
-Et tout ça, sans que les élèves de l'X ne se mobilise.
+Et tout ça, sans que les élèves de l'X ne se mobilisent.
 
 Cette grave inattention aux enjeux de maîtrise de l’information, au "soft",
 est particulièrement bien incarnée par les discours d'un autre diplômé de cette École Polytechnique,
@@ -96,7 +96,7 @@ Plus généralement, il me semble important de déconstruire l'importance démes
 que beaucoup donnent à la matière et à l'énergie au 21e siècle.
 En particulier, il est urgent de s'enlever les oeillères attentionnelles 
 et de cesser de tout réduire à des problèmes d'énergie,
-surtout lorsqu'il s'agit des technologies du numériques, du PIB ou des conflits armés.
+surtout lorsqu'il s'agit des technologies du numérique, du PIB ou des conflits armés.
 
 En fait, comme Michel Serres, et comme vous le savez sans doute si vous me suivez,
 j'estime que le plus grand défi civilisationnel du 21e siècle n'est pas énergétique.
@@ -107,12 +107,12 @@ Il est informationnel.
 
 > Il y a assez peu d'intérêt pour la réflexion sur à quoi ressemble une stratégie de défense
 > dans un monde de demain, c'est-à-dire dans un monde qui va se décarboner
-> et où la dérive climatique que nous avons mis en route va continuer.  
+> et où la dérive climatique que nous avons mise en route va continuer.  
 > https://www.youtube.com/watch?v=W1b2NLTDxNs
 
-Cette introduction du discours de Monsieur Jancovici est très factuelle.
+Cette introduction du discours de Monsieur Jancovici est factuelle.
 La dérive climatique va continuer, 
-avec de nombreuses conséquences sur les tensions géopolitique que cela va engendrer,
+avec de nombreuses conséquences sur les tensions géopolitiques que cela va engendrer,
 comme Monsieur Jancovici l'explique très bien plus tard dans sa conférence,
 et comme le montre très bien cette excellente vidéo d'econimate.  
 https://tournesol.app/entities/yt:6Mah7JcpWkw
@@ -127,7 +127,7 @@ https://tournesol.app/entities/yt:lYXQvHhfKuM
 
 Mais là où le discours va devenir très problématique, 
 c'est au moment où Monsieur Jancovici affirme 
-que l'issue de la guerre pouvait être prédite 
+que l'issue de la Seconde guerre mondiale pouvait être prédite 
 simplement en regardant la production de charbon avant guerre.
 
 > Avant guerre, vous aviez déjà les cartes de la victoire de 1945 
@@ -135,14 +135,14 @@ simplement en regardant la production de charbon avant guerre.
 > dans cette confrontation de force brute qu'est un conflit,
 > eh bien vous voyez les protagonistes du conflit, de quels muscles ils disposent,
 > au moment où ils vont jeter les forces dans la bataille.
-> Et c'est encore plus fragrant que vous regardez ce qui permet d'actionner les engins de combat.
+> Et c'est encore plus flagrant quand vous regardez ce qui permet d'actionner les engins de combat.
 > En 1940, les États-Unis produisaient quasiment les 2/3 du pétrole mondial. [...]
 > Donc là, vous avez également en filigrane les clés, j'ai envie de dire, de la victoire de 1945.  
 > https://www.youtube.com/watch?v=W1b2NLTDxNs 9:06
 
 Oubliez la quête de la bombe nucléaire, 
 l'organisation logistique des bases arrières et du front,
-le déchiffrement des communications Nazies
+le déchiffrement des communications nazies
 les opérations Fortitude de désinformation et de diversion des Alliés,
 ou la propagande de guerre pour rallier les forces humaines.
 À en croire Monsieur Jancovici, 
@@ -171,9 +171,9 @@ https://en.wikipedia.org/wiki/List_of_countries_by_oil_consumption
 Et quid de la guerre du Vietnam, 
 entre les États-Unis qui, en 1965, produisaient presque 2 fois plus de pétrole
 que n'importe quel autre pays,
-et le Vietnam qui en produisant quelque chose comme 200 fois moins ?
+et le Vietnam qui en produisait quelque chose comme 200 fois moins ?
 Une guerre pendant laquelle les Américains ont largué trois fois plus de bombes
-que pendant toute la seconde guerre mondiale !  
+que pendant toute la Seconde Guerre mondiale !  
 https://www.visualcapitalist.com/the-largest-producers-of-crude-oil-1965-2017/  
 http://crudeoilpeak.info/wp-content/uploads/Vietnam_oil_production_vs_consumption_1965-2018.jpg  
 https://fr.wikipedia.org/wiki/Guerre_du_Viêt_Nam#Bombardements
@@ -189,7 +189,7 @@ tout comme il serait trompeur de réduire un combat de boxe à la masse musculai
 Alors, je ne suis pas historien 
 et je ne vais pas prétendre que l'information a déterminé l'issue de la guerre.
 Cependant, je vais esquisser la dimension informationnelle de la seconde guerre mondiale,
-et suggérer qu'il serait précipité de complètement occulter son rôle dans la guerre.
+et suggérer qu'il serait précipité d'occulter son rôle dans la guerre.
 
 Pour commencer, si vous avez vu le film Oppenheimer de Christopher Nolan,
 vous savez que la seconde guerre mondiale a vu la naissance d'une arme de destruction massive,
@@ -226,7 +226,8 @@ de la conception des ordinateurs à la théorie des jeux,
 en passant par l'optimisation, les méthodes de Monte Carlo ou le tri-fusion.
 Le général de Gaulle déclarera à ce sujet : 
 « C’est en respectant la logistique que le général Eisenhower mena 
-jusqu’à la victoire […] la machinerie des armées du monde libre. » 
+jusqu’à la victoire […] la machinerie des armées du monde libre » ;
+une logistique particulièrement complexe lors du débarquement qui impliquait 150 000 hommes.
 Là encore, il semble que les contributions des scientifiques des Alliés au traitement de l'information
 ont été supérieures à celles des forces Nazies, et cela a sans doute aidé.
 Au moins un peu.  
@@ -241,7 +242,7 @@ dont Turing faisait partie,
 et qui a réussi à hacker un grand nombre de messages secrets échangés 
 par les forces Nazies de manière chiffrée.
 Voilà qui a notamment permis aux forces alliées de déterminer les localisations de sous-marins Nazis,
-et de permettre l'acheminement sécurisée des ressources des États-Unis vers l'Europe.
+et de permettre l'acheminement sécurisé des ressources des États-Unis vers l'Europe.
 Le philosophe Jack Copeland estime que cette cyberattaque informationnelle
 a peut-être permis de raccourcir la guerre de deux ou trois ans, 
 et ainsi de sauver 14 à 21 millions d'individus.  
@@ -281,7 +282,7 @@ pour diffuser massivement une nouvelle technologie de l'information,
 En particulier, il a mis dans les demeures et les cafés de sa population
 un outil capable de diffuser massivement les propos de son Führer,
 et ainsi de mobiliser son peuple et le motiver à prendre les armes.
-Et puis, comment ne pas mentionner le rare mot de gloire de la France pendant cette guerre,
+Et puis, comment ne pas mentionner le rare moment de gloire de la France pendant cette guerre,
 à savoir l'appel du 18 juin 1940 du Général de Gaulle,
 qui grâce aux nouvelles technologies de l'information
 a pu envoyer un message à tous les Français mécontents de l'occupation Nazie ?  
@@ -324,9 +325,9 @@ Notez le contraste saisissant avec le discours de Monsieur Jancovici.
 Revenons au discours du Général Américain.
 
 > Ce qu'on voit aujourd'hui, c'est qu'on peut influencer quelqu'un 
-> même avant d'être conflit avec eux.
+> même avant d'être en conflit avec eux.
 > Vous pouvez l'influencer dans le cyber domaine ;
-> Vous pouvez l'influence dans le domaine spatial.
+> Vous pouvez l'influencer dans le domaine spatial.
 > Et vous pouvez influencer et il n'y a pas de frontières dans ces domaines [...]
 > Destin: "J'ai suivi les actualités, et je sais qu'il y a d'énormes campagnes
 > sur les réseaux sociaux qui ont lieu avant qu'une bataille ait vraiment lieu.
@@ -368,7 +369,7 @@ Comme l'explique si bien le Général,
 une énorme partie de la guerre moderne est purement informationnelle.
 Il suffit ainsi de diffuser des informations trompeuses, polarisantes et haineuses,
 dans une nation ennemie pour complètement la déstabiliser,
-et pour l'affaiblir sur les plans économiques, institutionnels et militaires ;
+et pour l'affaiblir sur les plans économique, institutionnel et militaire ;
 sachant que tout ceci est intrinsèquement lié.
 
 De la même manière, 
@@ -436,8 +437,8 @@ Et de nos jours, l'armement le plus important, c'est peut-être l'armement infor
 > Et ils vont vous impressionner par leurs facultés.
 > Les jeunes leaders talentueux, notre peuple, c'est notre avantage.
 > Les meilleurs officiers non-commisionnés du monde,
-> Les meilleurs leaders à qui ont a appris à s'en sortir brillamment
-> dans des situations d'ambiguité et de chaos.  
+> Les meilleurs leaders à qui on a appris à s'en sortir brillamment
+> dans des situations d'ambiguïté et de chaos.  
 > https://tournesol.app/entities/yt:qOTYgcdNrXE 19:32
 
 
@@ -502,7 +503,7 @@ Alors techniquement, j'ai pris le logarithme de la puissance de calculs des supe
 parce que celle-ci est vraiment exponentielle, 
 contrairement au PIB qui est plus linéaire,
 mais je peux maintenant me féliciter d'avoir une corrélation proche de 97%.
-Pas loin de celui calculé par Monsieur Jancovici !
+Pas loin de celle calculée par Monsieur Jancovici !
 
 Alors bien sûr, ma "preuve" est en fait ridicule.
 D'abord, parce que la corrélation mesure mal à quel point une variable prédit l'autre ;
@@ -550,14 +551,14 @@ on retrouve des pays où il fait particulièrement froid, comme le Canada,
 ou particulièrement chaud, comme Singapour.
 Cependant, les disparités paraissent suffisamment grandes entre des pays plus comparables,
 comme la Belgique et la Suisse,
-pour affirmer que le PIB est loin d'être déterminé par la consommation d'énergie.
+pour affirmer que le PIB est loin d'être simplement déterminé par la consommation d'énergie.
 Et ça, ça me paraît très important à comprendre, 
 surtout pour envisager les décisions à prendre.
 
 En particulier, toujours selon OurWorldInData, 
 plusieurs pays ont au moins conservé une croissance économique 
-tout en réduisant leurs émissions de CO2,
-mais même que certains pays ont presque réussi à y parvenir
+tout en réduisant leurs émissions de CO2.
+Mieux encore, certains pays ont plus ou moins réussi à y parvenir
 sans augmenter leurs consommations énergétiques,
 y compris lorsqu'on tient compte de la délocalisation des lieux de production,
 comme l'Allemagne, la Suède, la Suisse et la France.  
@@ -596,7 +597,7 @@ Pour montrer en particulier l'importance économique de l'expertise,
 on raconte souvent l'histoire d'un technicien qu'on appelle à réparer une chaîne de montage.
 Le technicien se déplace, inspecte certains éléments de la chaîne,
 s'arrête à un endroit donné, et tourne une vis d'un quart de tour vers la droite.
-Miracle, la chaîne de montage est réparé.
+Miracle, la chaîne de montage est réparée.
 Le lendemain, il envoie une facture de 30 000$.
 L'entreprise cliente n'en croit pas ses yeux.
 30 000$ pour tourner une vis ?
@@ -624,8 +625,11 @@ elle révèle toutefois un aspect fondamental de l'économie moderne.
 
 Et si tant d'entre nous passons désormais nos journées à tapoter sur nos consoles,
 comme le dit Michel Serres,
-c'est bien parce que le gros du travail humain au 21e siècle est informationnel.
-La plupart du travail humain moderne, c'est surtout du traitement de l'information.
+c'est bien parce qu'une énorme partie du travail humain au 21e siècle est informationnel ---
+surtout les postes à haute qualification qui sont grassement payés.
+Mais même pour le boxeur, le footballeur ou le cycliste, le soft, 
+par exemple la stratégie à adopter, l'attention aux intentions de l'adversaire 
+ou encore l'aspect psychologique, joue un rôle primordial.
 Et ça, ça me semble avoir des conséquences majeures sur la manière d'envisager l'économie moderne,
 dont les plus grands flux correspondent à l'économie du service ;
 lequel est plein de services informationnels.  
@@ -646,7 +650,7 @@ https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_de_services
 En particulier, pour décrire la révolution économique,
 il serait grand temps de cesser de réduire les machines 
 à de simples "esclaves énergétiques" selon les mots de Monsieur Jancovici ;
-il s'agit de plus en plus "d'esclaves informationnelles",
+il s'agit de plus en plus "d'esclaves informationnels",
 à qui on délaisse non seulement la collecte, la mémoire et la communication de l'information,
 mais aussi de plus en plus le traitement de celle-ci.
 
@@ -711,9 +715,8 @@ https://en.wikipedia.org/wiki/MV_Yara_Birkeland
 
 Et pour les longues distances, on peut imaginer des moteurs thermiques
 qui utilisent carburants non fossiles comme les agrocarburants et les électrocarburants.
-Bien sûr, ça implique d'autres problèmes,
-mais mon but ici n'est pas de montrer que l'affirmation est clairement erronée ;
-le but est de souligner à quel point le dilemme binaire proposé occulte de potentielles alternatives.
+Un prototype à base de bio-méthanol a même déjà été inauguré.  
+https://www.lemonde.fr/planete/article/2023/09/14/decarbonation-du-transport-maritime-le-premier-navire-fonctionnant-au-bio-methanol-inaugure-au-danemark_6189380_3244.html
 
 Plus globalement, 
 on semble ici avoir un archétype de sous-estimation 
@@ -818,7 +821,7 @@ que le problème des contraintes énergétiques.
 Et même au delà de l'École de Guerre.
 Quand il s'agit d'envisager le problème environnemental aussi,
 il y a de quoi être alarmé par l'exode des chercheurs du climat de Twitter,
-et par les innombrables biais cognitifs qui conduisent des militants du climat
+et par les innombrables biais cognitifs qui conduisent certains militants du climat
 à promouvoir un discours contre-productif pour la cause environnementale.  
 https://www.france24.com/fr/info-en-continu/20230524-climat-insult%C3%A9s-ou-menac%C3%A9s-des-scientifiques-fuient-twitter  
 https://tournesol.app/entities/yt:TiGXc4jmdlc  
@@ -834,7 +837,7 @@ Clairement, comme Jean-Lou alias Après la bière et moi
 en parlons longuement dans notre livre "La dictature des algorithmes"
 à paraître le 21 mars prochain,
 la dimension informationnelle doit urgemment prendre une place prédominante 
-dans l'espace attentionnelle.  
+dans l'espace attentionnel.  
 https://www.tallandier.com/livre/la-dictature-des-algorithmes/
 
 Comme l'explique Mahdi,
@@ -859,7 +862,7 @@ avec de nombreuses publications dans les meilleures conférences,
 un prix de meilleure thèse pour Mahdi,
 et une concrétisation dans le projet associatif Tournesol entre autres,
 qui vise à être d'intérêt public ;
-mais aussi dans notre start-up Calicarpa pour aider les entrepises
+mais aussi dans notre start-up Calicarpa pour aider les entreprises
 à sécuriser leur intégration des solutions d'intelligence artificielle.  
 https://tournesol.app/  
 https://calicarpa.com/
@@ -869,7 +872,7 @@ d'être insensible à ces enjeux de sécurité informationnelle.
 En particulier, son discours sur l'ampleur du danger de la dépendance
 à des systèmes d'informations mal sécurisés est parfait.
 
-> Alors par contre la digitalisation crée une vulnérabilité en tant que tel,
+> Alors par contre la digitalisation crée une vulnérabilité en tant que telle,
 > parce que vous avez aujourd'hui un certain nombre de processus vitaux à court terme
 > qui dépendent du numérique.
 > Le premier d'entre eux, c'est le fonctionnement du système monétaire.
