@@ -271,9 +271,13 @@ de leurs champs électro-magnétiques et de leurs compositions chimiques.
 Mais qu'est-ce qu'un gros objet ? Parle-t-on de l'échelle du milligramme ? Du nanogramme ?
 Combien faut-il de particules, ou de volume d'espace, pour que l'objet soit "macroscopique" ?
 
-Clairement, plus le seuil est petit, plus le démon de Boltzmann aura connaissance fine du monde,
-et plus l'entropie thermodynamique, c'est-à-dire ce qu'il ne sait pas du monde microscopique,
-sera faible,
+Clairement, plus le seuil est petit, 
+plus le démon de Boltzmann aura connaissance fine du monde,
+et plus l'entropie thermodynamique, 
+c'est-à-dire ce qu'il ne sait pas du monde microscopique,
+sera faible.
+Sa mesure au sens de Boltzmann dépend ainsi fondamentalement 
+de la granularité du monde macroscopique.
 
 
 ## Le démon de Maxwell
@@ -333,25 +337,179 @@ ce ne sont pas des pénuries d'énergie ;
 il s'agit avant tout d'une incapacité à exploiter des informations microscopiques,
 comme le démon de Maxwell sait le faire.
 
+D'ailleurs le démon de Maxwell peut ainsi créer non seulement un différentiel de pression, 
+mais aussi un différentiel de pression, en mettant toutes les particules d'un seul côté...
+Vraiment, il y a quelques chose de profond dans le traitement des informations microscopiques.
+
 
 ## Des limites thermodynamiques au traitement informationnel ?
 
-Principe de Landauer
+L'expérience de pensée du démon de Maxwell a en fait troubler les physiciens 
+pendant plus d'un siècle.
+En 1960, le physicien Rolf Landauer en a fournit une interprétation,
+qui fait un pont entre information cédée au monde microscopique 
+et énergie dissipée en énergie thermique non récupérable.
 
-Calcul réversible
+Pour comprendre Landauer, il suffit de considérer le problème des deux cloisons,
+avec cette fois une seule particule, dont on sait qu'elle se trouve à gauche.
+Ou plus précisément, on va supposer 
+que le fait que la particule se trouve à gauche est une information macroscopique,
+et donc connue du démon de Boltzmann.
 
-Le réductionnisme énergétique est une erreur !
+En ouvrant la trappe, la particule va maintenant naviguer de gauche à droite et de droite à gauche,
+de sorte que l'information sur la cloison qui contient la particule sera inconnue,
+en tout cas dans le monde macroscopique.
+Cette information sera perdue par le démon de Boltzmann.
+En particulier, à la question "la particule se trouve-t-elle à gauche ?",
+le démon de Boltzmann doit maintenant répondre
+"il y a une probabilité 1/2 que ce soit le cas ?"
+(en supposant les deux cloisons macroscopiquement identique).
+
+En particulier, l'information avant ouverture de la trappe correspond 
+à une information au sens de Shannon et relativement au démon de Boltzmann
+égale au logarithme en base de 2 de l'inverse de 1/2, qui est égale à 1 bit.
+En ouvrant la trappe, le démon de Boltzmann a perdu 1 bit d'information ;
+ou dit autrement, l'entropie thermodynamique a augmenté d'un bit.
+
+Landauer montra que cette description informationnelle est équivalente à dire 
+que l'entropie thermodynamique a augmenté de k ln 2 Joules par Kelvin.
+De plus, si l'expérience a lieu à température ambiante T,
+alors cette augmentation de l'entropie correspond à une dissipation de kT ln 2 Joules.
+
+Aujourd'hui ce principe dit de Landauer est souvent exprimé sous la forme d'un coût énergétique
+à l'effacement de l'information.
+Pour être plus précis, toutefois, il faut bien voir qu'il s'agit 
+de la destruction d'une information macroscopique uniquement,
+c'est-à-dire une destruction informationnelle pour l'observateur qu'est le démon de Boltzmann.
+
+Cependant, le démon de Laplace, qui a lui accès à l'information microscopique,
+lui ne perd pas cette information.
+Il n'y a en tout cas pas de perte d'information fondamentale dans l'univers.
+
+Petite aparté mécanique quantique, 
+parce que je sens qu'il y en a qui font le lien avec le hasard de l'interprétation de Copenhague,
+en très bref, il existe plusieurs interprétations complètement déterministes de la mécanique quantique,
+parfaitement conformes avec l'existence d'un démon de Laplace,
+et selon lesquelles il n'y a pas de perte d'information microscopique.  
+https://tournesol.app/entities/yt:OpOcGoGRslQ
+
+En particulier, j'entends parfois dire que le traitement de l'information 
+nécessite forcément un coût énergétique.
+Alors, bon, d'abord, l'énergie est une grandeur qui se conserve.
+Donc bon, la terminologie "coût énergétique" est trompeuse ;
+il serait plus juste de parler de "coût entropique", 
+et donc d'un coup en termes de perte d'information macroscopique.
+
+Par ailleurs, ce coût inéluctable, selon le principe de Landauer, dépend de la température.
+Et donc, en principe, on pourrait faire énormément de calculs
+avec une très faible dissipation en énergie thermique,
+si ces calculs sont effectués à des températures proches du zéro absolu.
+
+Mais surtout, le principe de Landauer concerne uniquement l'effacement de l'information.
+Or, effacer une information, on conviendra qu'il ne s'agit que d'une opération particulière,
+parmi l'ensemble des opérations utiles au traitement de l'information.
+
+Par exemple, s'il s'agit de trier les informations du web pour recommander les plus pertinentes,
+comme cherche à le faire Tournesol notamment,
+alors en principe ces opérations ne nécessitent pas de destruction informationnelle.
+Il est donc possible en principe de faire Tournesol 
+sans dissipation d'énergie en énergie thermique !
+
+De façon générale, il y a toute une théorie à l'interface entre la physique et l'informatique,
+qui étudie le calcul dit réversible,
+et qui repose justement sur le non-effacement des informations macroscopiques.
+Et comme tout thermodynamicien vous le dira, si une opération est réversible,
+c'est qu'elle n'augmente pas l'entropie thermodynamique.
+
+Bref. Dire que l'information nécessite de l'énergie est en fait une erreur.
+Alors que dire les problèmes d'énergie sont avant tout 
+des histoires de pertes d'informations microscopiques,
+bon c'est très très loin d'être juste, hein, évitez de le dire,
+mais c'est plus cohérent avec les lois fondamentales de la physique.
+
+Bon ceci dit, bien sûr qu'en pratique et de facto, 
+nos machines à traiter l'information dissipent énormément d'énergie en énergie thermique.
+Mais premièrement, cette énergie dissipée est beaucoup, beaucoup, beaucoup plus faible 
+que dans le cas du transport, de l'agriculture et du chauffage.
+Et deuxièmement, réduire les problèmes d'information à cette dissipation énergétique,
+c'est précisément faire un réductionnisme énergétique très malencontreux,
+car il omet toutes les préoccupations majeures à avoir 
+dans le traitement et la diffusion actuels de l'information,
+qui échouent complètement à être décrites par ce réductionnisme énergétique.
+
+C'est amusant que dans une vidéo où j'explique que Monsieur Jancovici tombe dans ce travers,
+j'ai énormément de commentaires de ses fans qui, justement, illustrent ce travers...
 
 
 ## L'entropie ne mesure pas le chaos social
 
-Trier des pommes ne changera pas l'entropie thermodynamique.
+Pour vulgariser l'entropie, 
+il est courant de la définir comme étant une mesure du désorder ou du chaos,
+en prenant l'exemple d'une chambre mal rangée ou d'un mouvement social.
+Ces analogies peuvent être utiles en première approximation
+pour avoir une intuition de ce concept.
+
+Après tout, si une chambre est mal rangée, 
+c'est qu'il y a sans doute beaucoup d'incertitudes
+sur les positions des chaussettes de la chambre.
+Pour un observateur humain, on peut ainsi dire que 
+l'entropie au sens de Shannon de la chambre mal rangée sera plus grande
+que celle d'une chambre bien rangée, avec des étiquettes un peu partout.
+
+Cependant, il ne faut pas confondre cette entropie de l'observateur humain
+avec l'entropie thermodynamique, qui est vue via les lentilles du démon de Boltzmann.
+Ne l'oubliez pas.
+Le démon de Boltzmann est omniscient vis-à-vis de l'information macroscopique.
+Or les chausssettes sont des objets macroscopiques ;
+il n'a donc clairement aucune incertitude vis-à-vis de leurs positions.
+
+En fait, il n'est pas clair que, pour le démon de Boltzmann,
+l'entropie de la chambre mal rangée est plus grande que celle de la chambre bien rangée.
+
+De même ce n'est pas en triant des pommes que vous diminuerez l'entropie thermodynamique.
+Encore une fois, le tri de pomme est une opération qui peut être effectuée de manière réversible.
+Ce tri ne peut pas avoir réduit l'entropie thermodynamique.
 
 C'est en cela que je dis que "l'entropie ne mesure pas le chaos".
+Pour être moins erroné, on pourrait dire qu'elle mesure davantage le chaos microscopique,
+mais je pense que là encore, si on balance ça juste au détour d'une phrase,
+on risque d'induire en erreur car le mot "microscopique" peut facilement être mal compris.
 
-En particulier, depuis 1789, la France a beaucoup gagné een structures. Mais l'entropie a augmenté !
+En particulier, affirmer que le second principe de la thermodynamique 
+prédit un effondrement civilisationnel,
+ou qu'on court à notre perte en dissipant de l'énergie en chaleur,
+c'est effectuer un grave contresens vis-à-vis des lois de la physique.
 
-On est extrêmement loin des limites thermodynamiques !
+Du reste, depuis 1789, la France a beaucoup gagné en structures,
+avec l'instauration de l'éducation populaire, la liberté de la presse et l'indépendance de la justice,
+mais aussi en créant de nombreuses institutions publiques
+pour permettre à la démocratie de fonctionner de manière stable, durable et satisfaisante.
+À l'échelle macroscopique, 
+si on regarde l'évolution des sociétés au cours des trois derniers siècles,
+on est très loin d'assister à une amplification inéluctable du chaos.
+
+Et pourtant, bien entendu, pendant ce temps, l'entropie thermodynamique de l'univers a augmenté !
+Même si on n'inclut que le soleil est la terre,
+et les rayonnements perdus dans l'espace pour obtenir un système fermé,
+il y a eu une structuration macroscopique,
+même si une partie de l'information macroscopique a été dissipée et perdue dans les échelles microscopiques.
+
+Enfin, on peut insister sur le fait qu'on est encore extrêmement loin des limites thermodynamiques.
+Après tout, une entropie maximale, 
+ça correspond à un monde où le démon de Boltzmann ne sait plus rien du tout !
+Autrement dit, il s'agirait d'un énorme néant homogène de particules indiscernables macroscopiquement.
+Il n'y aurait pas certaines particules qu'on peut associer à une chaussette, une chambre ou un humain.
+
+Invoquer les limites thermodynamiques pour parler d'urgence écologique aujourd'hui,
+c'est en fait beaucoup plus erronée que d'affirmer que la planète terre va brûler,
+à cause de la transformation inéluctable de notre soleil en géante rouge.
+C'est non seulement être complètement à côté de la plaque,
+mais aussi révéler sa profonde confusion sur l'état des crises actuelles.
+
+S'il-vous-plaît, évitez absolument d'invoquer l'entropie pour parler de chaos social.
+Il y a déjà suffisamment de problèmes civilisationnels qui nous menacent au 21e siècle.
+Concentrons-nous sur eux, plutôt que de détourner l'attention de tous 
+vers des considérations injustifiées.
 
 
 
