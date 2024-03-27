@@ -595,10 +595,23 @@ et les rayonnements perdus dans l'espace pour obtenir un système fermé,
 il y a eu une structuration macroscopique,
 même si une partie de l'information macroscopique a été dissipée et perdue dans les échelles microscopiques.
 
-Enfin, on peut insister sur le fait qu'on est encore extrêmement loin des limites thermodynamiques.
+J’entendis dire que, pour expliquer l’apparition de structures macroscopiques, 
+il faut rappeler que la terre n’est pas un système fermé, 
+pour rappeler que le second principe de la thermodynamique ne s’applique pas à la terre. 
+Je pense maintenant qu’il s’agit d’un mauvais argument. 
+Alors oui, la terre n’est pas un système fermé et ce second principe ne s’applique donc pas. 
+Mais ce qu’il faut avant tout voir, 
+c’est que même si on coupait le robinet solaire du jour au lendemain, 
+on serait encore tellement loin de l’équilibre thermodynamique sur terre 
+pour que beaucoup de travail puisse être exploité en principe, 
+par exemple via les ressources fossiles, la géothermie, la fission nucléaire ou la fusion nucléaire. 
+Si les structures persistent à se former sur terre, 
+c’est avant tout parce qu’il y a encore énormément d’énergies sur terre 
+qui ne sont pas uniquement sous forme de chaleur, 
+et qu’on peut encore beaucoup les dissiper en énergie thermique. 
 Après tout, une entropie maximale, 
-ça correspond à un monde où le démon de Gibbs ne sait plus rien du tout !
-Autrement dit, il s'agirait d'un énorme néant homogène de particules indiscernables macroscopiquement.
+ça correspond à un monde où le démon de Gibbs ne sait plus rien du tout ! 
+Autrement dit, il s'agirait d'un énorme néant homogène de particules indiscernables macroscopiquement. 
 Il n'y aurait pas certaines particules qu'on peut associer à une chaussette, une chambre ou un humain.
 
 Invoquer les limites thermodynamiques pour parler d'urgence écologique aujourd'hui,
