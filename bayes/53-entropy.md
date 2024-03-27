@@ -184,6 +184,15 @@ En fait, pour que le concept d'entropie de Shannon s'applique rigoureusement à 
 il faut que ce sujet soit bayésien,
 dans le sens où ce sujet doit être constamment en mesure d'appliquer les lois des probabilités...
 
+Dit autrement, il ne s'applique vraiment qu'à une forme de superintelligence,
+qui, dans mon livre La Formule du Savoir, est appelée le démon de Solomonoff.
+Le démon de Solomonoff est cette entité imaginaire qui collecte cumulativement de l'information,
+et a le faculté d'appliquer systématiquement la formule de Bayes pour améliorer son modèle du monde.
+
+En pratique, l'entropie anthropique, c'est-à-dire l'incertitude des humains sur le monde,
+peut en fait augmenter, lorsque nous autres humains finissiont par perdre de la mémoire,
+ou quand nos biais cognitifs nous poussent à mal raisonner sur notre incertitude sur le monde.
+
 
 ## L'entropie thermodynamique
 
@@ -192,7 +201,7 @@ A-t-elle vraiment à voir avec la théorie de l'information de Shannon ?
 Pourquoi von Neumann conseillait-il à Shannon d'appeler sa mesure d'information "entropie" ?
 Et si oui, de quel sujet dépend cette entropie thermodynamique ?
 
-Alors, c'est là qu'on rentre un pays en zone instable,
+Alors, c'est là qu'on rentre en zone instable,
 puisqu'on est très loin aujourd'hui encore d'avoir une définition consensuelle 
 sur la définition de l'entropie thermodynamique,
 pour des systèmes qui ne sont pas ultra-simplifiés 
@@ -241,14 +250,97 @@ le démon de Boltzmann perdra de l'information sur les positions et les vitesses
 et deviendra davantage ignorant, 
 comparativement au démon de Laplace qui lui ne perd pas ses informations.
 
-Pour être précis, ce démon n'a pas de mémoire.
+Alors, quelques précisions techniques :
+le démon de Boltzmann doit être supposé être un omniscient du présent uniquement.
+Ou dit autrement, il n'a pas de mémoire,
+ce qui le distingue du démon de Solomonoff.
 
-Il reste mal défini : qu'est-ce qu'un macro-état ?
+Par ailleurs, contrairement aux démons de Solomonoff et de Laplace,
+le démon de Boltzmann est un être mal défini.
+En particulier, sa description dépend de la distinction 
+entre le monde macroscopique et le monde microscopique.
+Et ce n'est pas là une limite de mon analogie.
+Je parle là d'un problème fondamental au coeur de la thermodynamique statistique,
+qui dépend d'une distinction entre les "macro-états" et les "micro-états".
+
+S'il est clair que les micro-états décrivent les positions et les vitesses de toutes les particules,
+il n'est pas tout à fait clair ce que sont les macro-états.
+Intuitivement, il s'agit des description à base de positions et vitesses de "gros objets",
+ainsi que de leurs pressions, de leurs températures, de leurs états physiques,
+de leurs champs électro-magnétiques et de leurs compositions chimiques.
+Mais qu'est-ce qu'un gros objet ? Parle-t-on de l'échelle du milligramme ? Du nanogramme ?
+Combien faut-il de particules, ou de volume d'espace, pour que l'objet soit "macroscopique" ?
+
+Clairement, plus le seuil est petit, plus le démon de Boltzmann aura connaissance fine du monde,
+et plus l'entropie thermodynamique, c'est-à-dire ce qu'il ne sait pas du monde microscopique,
+sera faible,
 
 
 ## Le démon de Maxwell
 
-L'information est au coeur du travail !
+En 1867, le génie écossais James Clerk Maxwell proposa une expérience de pensée,
+pour montrer en quoi l'information microscopique est au coeur de la thermodynamique,
+c'est-à-dire de la dynamique des échanges de chaleur.
+Son expérience de pensée précède d'ailleurs les travaux de Boltzmann,
+et ils ont certainement aidé Boltzmann à formaliser l'entropie thermodynamique
+en tant qu'incertitude microscopique.
+
+L'expérience de pensée de Maxwell fait intervenir un être puissant,
+qu'il est désormais de coûtume d'appeler le démon de Maxwell.
+De façon remarquable, en ne faisant que traiter de l'information,
+ce démon était capable de violer le second principe de la thermodynamique,
+en faissant baisser l'enthropie thermodynamique, au sens classique non-informationnel de Clausius.
+
+Pour comprendre cela, imaginez deux cloisons complètement isolantes, 
+avec une trappe qui les sépare.
+Imaginez que, initialement, la cloison de gauche contient de l'air froid,
+alors que la cloison de droite a de l'air chaud.
+En 1855, Clausius fit la remarque que, lorsque la trappe était ouverte,
+la chaleur allait nécessairement se déplacer du chaud vers le froid,
+de sorte que les températures des deux cloisons finissent par s'homogénéiser.
+Et il mathématisa cela en définissant l'entropie comme une grandeur additive,
+qui augmentait nécessairement avec le temps.
+
+La remarque de Maxwell, toutefois, 
+c'est que si l'on considère que les gaz sont composés de particules,
+et que la température est en gros la vitesse moyenne de ces particules,
+alors on peut en fait réduire l'entropie en faisant simplement un tri.
+
+[NB : Techniquement, la température est davantage liée à l'énergie cinétique des particules.
+En fait cette énergie de chaque particule doit être en gros kT,
+où k est la constante de Boltzmann, 
+à un facteur multiplicatif prêt qui dépend du degré de liberté des particules.]
+
+Pour cela, il suffit au démon de Maxwell d'ouvrir la trappe 
+lorsqu'une particule rapide va de gauche à droite,
+et en la fermant quand elle va de droite à gauche.
+Ainsi, les particules à haute énergie cinétique vont se retrouver à droite,
+tandis que les particules à faible énergie vont se retrouver à gauche.
+Ce faisant la différence de température entre les cloisons va augmenter ;
+ou dit autrement, l'entropie va diminuer.
+
+En ouvrant et en fermant la trappe, ce qui est clairement une opération réversible,
+mais en faisant cela aux bons moments,
+le démon de Maxwell pouvait violer le second principe de l'entropie.
+En particulier, ce faisant, il pouvait transformer de l'énergie thermique inutilisable,
+en une différence de chaleur, qui peut être utilisée pour extraire du travail !
+
+Dit autrement, la simple exploitation d'informations microscopiques suffit
+à créer une capacité de travail,
+et donc à résoudre les problèmes d'énergie dans nos sociétés.
+En fait, tous les maux énergétiques de nos sociétés, 
+ce ne sont pas des pénuries d'énergie ;
+il s'agit avant tout d'une incapacité à exploiter des informations microscopiques,
+comme le démon de Maxwell sait le faire.
+
+
+## Des limites thermodynamiques au traitement informationnel ?
+
+Principe de Landauer
+
+Calcul réversible
+
+Le réductionnisme énergétique est une erreur !
 
 
 ## L'entropie ne mesure pas le chaos social
@@ -260,16 +352,6 @@ C'est en cela que je dis que "l'entropie ne mesure pas le chaos".
 En particulier, depuis 1789, la France a beaucoup gagné een structures. Mais l'entropie a augmenté !
 
 On est extrêmement loin des limites thermodynamiques !
-
-
-
-## Des limites thermodynamiques au traitement informationnel ?
-
-Principe de Landauer
-
-Calcul réversible
-
-Le réductionnisme énergétique est une erreur !
 
 
 
