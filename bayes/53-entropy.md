@@ -190,13 +190,86 @@ dans le sens où ce sujet doit être constamment en mesure d'appliquer les lois 
 Mais donc, qu'est-ce que l'entropie thermodynamique ?
 A-t-elle vraiment à voir avec la théorie de l'information de Shannon ?
 Pourquoi von Neumann conseillait-il à Shannon d'appeler sa mesure d'information "entropie" ?
+Et si oui, de quel sujet dépend cette entropie thermodynamique ?
+
+Alors, c'est là qu'on rentre un pays en zone instable,
+puisqu'on est très loin aujourd'hui encore d'avoir une définition consensuelle 
+sur la définition de l'entropie thermodynamique,
+pour des systèmes qui ne sont pas ultra-simplifiés 
+comme des gaz parfaits à l'équilibre thermodynamique.
+
+Cependant, une interprétation que je vous propose, 
+et qui colle pas mal avec les théories les plus standards,
+c'est d'introduire un être un peu spécial, que je vais appeler le démon de Boltzmann,
+en référence aux démons de Laplace et de Maxwell.
+
+Pour rappel, le démon de Laplace, c'est un être omniscient,
+qui connaît toutes les positions et toutes les vitesses de toutes les particules de l'univers.
+Autrement dit sa connaissance de l'univers va jusqu'aux échelles microscopiques.
+
+A contrario, le démon de Boltzmann, c'est un être que je définis comme macroscopiquement omniscient.
+Il connaît tous les "macro-états", c'est-à-dire les descriptions de tous les objets du monde,
+ainsi que leurs positions, leurs vitesses, leurs températures et leurs pressions,
+mais ne connaît pas les positions et les vitesses des particules qui composent ces objets.
+
+Eh bien, l'entropie thermodynamique, au moins dans le cas des gaz à l'équilibre thermodynamique,
+on peut vraiment la voir comme l'incertitude du démon de Boltzmann
+sur les positions et les vitesses des particules,
+malgré son omniscience macroscopique.
+Dit autrement, elle quantifie les informations du démon de Laplace 
+auxquelles le démon de Boltzmann n'a pas accès.
+L'entropie thermodynamique quantifie la différence de connaissance entre les deux démons.
+
+Encore une fois, je vous présente là une interprétation, qui vient vraiment de mon chapeau, 
+qui colle parfaitement avec la thermodynamique à l'équilibre,
+et qui me semble être quelque chose de très profond, 
+ou en tout cas de pédagogiquement très utile...
+mais qui est très loin de faire consensus chez les physiciens.
+
+Ceci dit, dans tous les mécanismes d'irréversibilité,
+il semble y avoir une mécanique de la sorte en jeu.
+De l'information semble échapper au démon de Boltzmann, 
+lorsque celle-ci passe du monde macroscopique au monde microscopique,
+et cette perte d'information semble irréversible.
+
+Quoi qu'il en soit, avec cette interprétation, 
+on a une nouvelle compréhension du second principe de la thermodynamique.
+Celui-ci affirme que le différentiel de connaissance entre les démons de Laplace et de Boltzmann
+ne peut que croître avec le temps.
+Au fur et à mesure que des actions irréversibles ont lieu,
+le démon de Boltzmann perdra de l'information sur les positions et les vitesses des particules,
+et deviendra davantage ignorant, 
+comparativement au démon de Laplace qui lui ne perd pas ses informations.
+
+Pour être précis, ce démon n'a pas de mémoire.
+
+Il reste mal défini : qu'est-ce qu'un macro-état ?
 
 
-## Le second principe
+## Le démon de Maxwell
+
+L'information est au coeur du travail !
+
+
+## L'entropie ne mesure pas le chaos social
+
+Trier des pommes ne changera pas l'entropie thermodynamique.
+
+C'est en cela que je dis que "l'entropie ne mesure pas le chaos".
+
+En particulier, depuis 1789, la France a beaucoup gagné een structures. Mais l'entropie a augmenté !
+
+On est extrêmement loin des limites thermodynamiques !
 
 
 
-## L'équilibre thermodynamique est très loin
+## Des limites thermodynamiques au traitement informationnel ?
+
+Principe de Landauer
+
+Calcul réversible
+
+Le réductionnisme énergétique est une erreur !
 
 
 
