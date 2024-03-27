@@ -8,14 +8,16 @@ de sorte que dans un débat, vous aurez toujours l'avantage."
 
 Tel fut le conseil que le génie américano-hongrois John von Neumann donna à Claude Shannon,
 lorsque le second proposa sa mesure de quantification de l'incertitude, dans les années 1940.
-Enfin, pourrait-on croire, la nature profonde de l'entropie aura-t-elle été saisie.
+Enfin, pourrait-on croire, la nature profonde de l'entropie a-t-elle été saisie.
 
 Pourtant, 80 ans plus tard, force est de reconnaître que, 
 si la science de l'entropie a énormément avancé,
 très peu de gens savent aujourd'hui vraiment ce qu'est l'entropie.
-En fait, même tout physicien sera bien embarrassé, 
+En fait, tout physicien sera même bien embarrassé, 
 lorsqu'on lui demandera de calculer l'entropie d'un ordinateur,
-ou de tout objet complexe qui est très loin d'être un gaz à l'équilibre thermodynamique.
+ou de tout objet complexe qui est très loin d'être un gaz à l'équilibre thermodynamique.  
+https://community.ams.org/journals/notices/199805/lieb.pdf  
+https://www.mdpi.com/1099-4300/19/11/603
 
 Là où il semble y avoir un paradoxe profond,
 c'est que ce concept est au coeur du second principe de la thermodynamique,
@@ -23,39 +25,42 @@ l'une des théories les plus indéboulonnables de la science.
 Tandis que les lois de la mécanique de Newton, les lois de l'électromagnétisme de Maxwell
 et les lois de l'espace-temps de Galilée ont toutes été ébranlées par les sciences modernes,
 et alors que le premier principe de conservation de l'énergie est aujourd'hui réinterprété
-comme une simple conséquence de l'invariance dans le temps des lois de la physique,
+comme une simple conséquence de l'invariance dans le temps des lois de la physique,  
+https://tournesol.app/entities/yt:CxlHLqJ9I0A  
 ce second principe résiste encore obstinément à l'expérimentation et à l'entendement.
 
 Plus encore que les bizarreries quantiques,
 le second principe est à mes yeux le mystère ultime de la science.
-Même si on est encore incapable de le définir précisément,
+Même si les physiciens sont en fait encore incapables de le définir précisément,
 il gouverne nos sociétés, en imposant des limites strictes au champ des possibles.
-Après tout, comme l'explique très bien David de Science Étonnante,
+Après tout, comme l'explique très bien David de Science Étonnante,  
+https://tournesol.app/entities/yt:2Z9p_I3hhUc  
 ce qui fait défaut à nos sociétés n'est absolument pas un manque d'énergie.
 En fait, le changement climatique n'est autre qu'un excédent d'énergie sur terre.
 Et en particulier, quand on dit que l'énergie est le moteur de la croissance,
 on dit quelque chose de profondément erroné sur le plan scientifique.
-Ce qui fait tourner nos machines, c'est en un sens davantage l'entropie que l'énergie.
+Ce qui fait tourner nos machines, c'est davantage l'entropie que l'énergie.
 
 Ceux qui le comprennent peuvent alors être tentés de se jeter sur le concept d'entropie,
 et faire croire que, en vertu notamment du second principe de la thermodynamique,
 nous traversons une crise de l'entropie.
-Malheureusement, certains en vont même jusqu'à prétendre 
+Certains en vont même jusqu'à prétendre 
 que le second principe garantit le désordre et le chaos,
+et là ça commence à me faire sérieusement grincer des dents...
 
 "Personne ne sait vraiment ce qu'est l'entropie",
-et visiblement, certains abusent de cette mécompréhension.
+et visiblement, certains abusent de cette mécompréhension,
+en utilisant ce terme scientifique pour feutrer leurs discours poétiques, ou politiques.
 
-Aujourd'hui, je vais essayer de clarifier ce qu'est l'entropie, en tout cas au sens de Shannon,
+Aujourd'hui, je vais essayer de clarifier au mieux ce qu'on comprend vraiment de l'entropie, 
 pour mieux évaluer ce qu'il est raisonnable de dire de l'entropie,
 ce qui est beaucoup plus discutable,
-et ce qui est extrêmement trompeur.
+et ce qui relève du discours extrêmement trompeur, et très problématique.
 
-Et plutôt que de suivre le tortilleux chemin historique pour en arriver là,
+Et plutôt que de suivre le tortilleux chemin de l'histoire des sciences pour en arriver là,
 je vais suivre les pas de Shannon, et prendre la voie informationnelle.
-Et oui, on va voir que les problèmes de pétrole et d'énergie renouvelable
-sont réductibles à des problèmes informationnels ---
-même si je ne suis pas sûr que ce réductionnisme informationnel soit vraiment utile en pratique...
+Et oui, on va voir que, en un sens grossier, 
+ce qu'on appelle "problèmes énergétiques" est en bonne partie une histoire d'information !
 
 
 ## L'entropie de Shannon
@@ -63,10 +68,11 @@ même si je ne suis pas sûr que ce réductionnisme informationnel soit vraiment
 Quelle est d'après vous l'information contenue dans le mot "Lê" ?
 Et puis, comment quantifier cette information ?
 
-Intuitivement, c'est un mot très informatif, puisqu'il permet d'identifier un objet,
+Intuitivement, même si ce mot n'a que deux lettres,
+c'est un mot très informatif, puisqu'il permet d'identifier un objet,
 à savoir moi, parmi l'ensemble de tous les objets de l'univers.
 C'est quand même pas mal !
-Mais alors, est-ce que l'information dans le mot "Lê" est très grand ?
+Mais alors, est-ce que l'information dans le mot "Lê" est très grande ?
 
 L'idée de génie de Claude Shannon, 
 c'est de supposer que information et incertitude doivent être les deux faces d'une même pièce.
@@ -74,14 +80,15 @@ Plus précisément, selon Shannon, l'information d'un message,
 c'est la quantité d'incertitude que la lecture de ce message fait disparaître.
 
 Autrement dit, si un message était très attendu, il est peu informatif.
-Hein, quoi ? Un nouveau scandale à OpenAI ?
+Hein, quoi ? Un nouveau scandale impliquant Elon Musk ?
 Oui j'aurais pu le deviner. Ce n'est pas très informatif.
 
 Dit autrement, plus je suis surpris par le message, plus il contient d'information.
 Et plus je risque de devoir changer d'avis.
 Et d'ailleurs, cette attention à la surprise, 
 je vous en ai déjà parler au tout début de cette série sur le bayésianisme,
-en l'an 1 avant le COVID.
+en l'an 1 avant le COVID,
+puisqu'elle est critique pour mettre à jour correctement notre état de connaissance du monde.
 L'information est intimement liée à la surprise.
 
 Mais alors, à quel point le mot "Lê" est-il surprenant ?
@@ -91,7 +98,7 @@ la réponse à cette question est nécessairement contextuelle.
 Si le mot "Lê" vient juste après "Le créateur de Science4All dont le prénom est ...",
 alors vous qui suivez cette chaîne serez probablement aucunement surpris par ce mot.
 
-À l'inverse, si vous entendez le mot "Lê" lors d'une réunion de travail dans votre entrerpise,
+À l'inverse, si vous entendez le mot "Lê" lors d'une réunion de travail dans votre entrepise,
 votre surprise sera probablement plus grande, et ce mot sera alors plus informatif.
 
 "Sans conteste, sans contexte, c'est la mauvaise probabilité qu'on teste",
@@ -109,7 +116,8 @@ au nombre de bits nécessaire pour encoder le message.
 
 OK, ça c'est l'information d'un message,
 et d'ailleurs ce n'est pas vraiment une définition standard que je vous ai donnée ;
-elle est surtout intéressante pédagogiquement.
+mais je la trouve pédagogiquement extrêmement utile,
+et assez conforme à notre intuition de ce qu'est l'intuition.
 
 Mais donc, l'entropie, c'est quoi ?
 Eh bien, l'entropie de Shannon, c'est la quantité d'information que je m'attend à recevoir,
@@ -118,15 +126,26 @@ et qui est donnée explicitement par la somme des quantités d'information
 des messages que je peux recevoir,
 pondérée par les probabilités de ces messages.
 
-Voilà l'objet au coeur de la plus grande contribution de Claude Shannon,
+Ou dit autrement, en utilisant la dualité information-incertitude,
+l'entropie mesure l'incertitude qu'on a sur les messages qu'on va recevoir.
+Par exemple, la position politique qu'adopteront les journalistes de CNews et de Blast
+sur le sujet de l'immigration la semaine prochaine aura peu d'entropie pour moi,
+car j'ai très peu d'incertitude sur l'angle journalistique qui sera choisi par ces médias.
+À l'inverse, l'entropie sur le prochain lieu de conflit armé majeur est énorme à mes yeux,
+car ça part un peu dans tous les sens en ce moment...
+
+En tout cas, l'entropie est l'objet au coeur de la plus grande contribution de Claude Shannon,
 retranscrite dans son article fabuleux de 1948 intitulé
 "A mathematical theory of communication",
 qui, pour les matheux parmi vous, est extrêmement lisible.
-
 Vraiment, ce papier est un véritable bijou, non seulement mathématique,
-mais aussi d'ingénierie et, je pense, de philosophie.
+mais aussi d'ingénierie, de linguistique et, je pense, de philosophie.
 La lecture de cet article est vraiment l'un des plus grands bouleversements intellectuels de ma vie,
 pas loin de Solomonoff 2009, Turing 1950 et Laplace 1814.
+
+Laplaaaace !!!
+
+Bon j'avoue, je met Laplace au-dessus des trois autres...
 
 
 ## Le théorème de la réduction de l'entropie
@@ -146,11 +165,13 @@ Je ne rentre pas dans les détails de ce que ça signifie,
 mais sachez que c'est extrêmement standard en théorie de l'information.
 
 Eh bien, un théorème assez simple à démontrer dit que H(Omega|X) est inférieur ou égal à H(Omega).
-D'ailleurs, la réduction sera égale précisément à l'information contenue dans X.
 
 Patatra, l'entropie d'Omega a diminué !
 Oui vous avez bien entendu.
 L'entropie a diminué.
+
+D'ailleurs, la réduction de l'entropie sera précisément égale 
+à l'information espérée contenue dans X.
 
 Et là, on ne parle pas d'un principe de physicien,
 qui ne sera considéré vrai que jusqu'au jour où on se rendra compte qu'il n'est pas si vrai.
@@ -170,10 +191,18 @@ Prenez le temps de mettre pause pour bien essayer de comprendre ce qu'il se pass
 En particulier, il ne faut pas perdre de vue que la notion d'entropie est contextuelle.
 Elle dépend des informations auxquelles on a accès.
 
+Souvenez-vous de l'exemple du mot "Lê".
+Pour quelqu'un qui n'a jamais entendu parler de Science4All,
+le mot "Lê" dans la phrase "Le créateur de Science4All dont le prénom est ..."
+est très grande, puisqu'il sera surpris de ce prénom.
+Mais ceux parmi vous qui me connaissez bien, ce mot ne contient presque aucune information.
+Vous le saviez déjà.
+L'entropie du mot Lê a été réduite par vos connaissances préalables.
+
 Et clairement, ça, ce n'est pas du tout ce que la physique cherche à décrire.
 L'entropie thermodynamique vise à décrire quelque chose qui ne dépend pas de l'observateur.
 
-Or, l'entropie de Shannon est fondamentalement subjective :
+A contrario, l'entropie de Shannon est fondamentalement subjective :
 elle dépend des informations auxquelles un sujet a accès.
 En un sens, on pourrait parler d'entropie anthropique,
 puisqu'elle se réfère à une personne, qu'on peut généralement supposer humaine.
@@ -188,41 +217,48 @@ Dit autrement, il ne s'applique vraiment qu'à une forme de superintelligence,
 qui, dans mon livre La Formule du Savoir, est appelée le démon de Solomonoff.
 Le démon de Solomonoff est cette entité imaginaire qui collecte cumulativement de l'information,
 et a le faculté d'appliquer systématiquement la formule de Bayes pour améliorer son modèle du monde.
+Pour ce démon, l'entropie est une fonction décroissante du temps !
 
-En pratique, l'entropie anthropique, c'est-à-dire l'incertitude des humains sur le monde,
-peut en fait augmenter, lorsque nous autres humains finissiont par perdre de la mémoire,
+Et alors, en pratique, l'entropie anthropique, 
+c'est-à-dire l'incertitude du monde pour nous autres Homo Sapiens,
+peut en fait augmenter, 
+lorsque nous autres humains finissiont par perdre de la mémoire,
 ou quand nos biais cognitifs nous poussent à mal raisonner sur notre incertitude sur le monde.
 
 
-## L'entropie thermodynamique
+## Le démon de Gibbs et l'entropie thermodynamique
 
 Mais donc, qu'est-ce que l'entropie thermodynamique ?
 A-t-elle vraiment à voir avec la théorie de l'information de Shannon ?
 Pourquoi von Neumann conseillait-il à Shannon d'appeler sa mesure d'information "entropie" ?
 Et si oui, de quel sujet dépend cette entropie thermodynamique ?
 
-Alors, c'est là qu'on rentre en zone instable,
+Alors, c'est là qu'on rentre en zone grise,
 puisqu'on est très loin aujourd'hui encore d'avoir une définition consensuelle 
 sur la définition de l'entropie thermodynamique,
 pour des systèmes qui ne sont pas ultra-simplifiés 
 comme des gaz parfaits à l'équilibre thermodynamique.
 
 Cependant, une interprétation que je vous propose, 
-et qui colle pas mal avec les théories les plus standards,
-c'est d'introduire un être un peu spécial, que je vais appeler le démon de Boltzmann,
-en référence aux démons de Laplace et de Maxwell.
+et qui à ma connaissance colle parfaitement avec les théories les plus standards,
+c'est d'introduire un être un peu spécial, 
+que je vais appeler le démon de Gibbs,
+du nom du physicien Josah William Gibbs,
+reconnu aux côtés de Maxwell et Boltzmann comme le père de la physique statistique.
+Et si je parle de démon de Gibbs,
+c'est en partie en comparaions à d'autres démons, comme le démon de Laplace.
 
 Pour rappel, le démon de Laplace, c'est un être omniscient,
 qui connaît toutes les positions et toutes les vitesses de toutes les particules de l'univers.
 Autrement dit sa connaissance de l'univers va jusqu'aux échelles microscopiques.
 
-A contrario, le démon de Boltzmann, c'est un être que je définis comme macroscopiquement omniscient.
+A contrario, le démon de Gibbs, c'est un être que je définis comme macroscopiquement omniscient.
 Il connaît tous les "macro-états", c'est-à-dire les descriptions de tous les objets du monde,
-ainsi que leurs positions, leurs vitesses, leurs températures et leurs pressions,
+ainsi que leurs positions, vitesses, volumes, températures et pressions,
 mais ne connaît pas les positions et les vitesses des particules qui composent ces objets.
 
 Eh bien, l'entropie thermodynamique, au moins dans le cas des gaz à l'équilibre thermodynamique,
-on peut vraiment la voir comme l'incertitude du démon de Boltzmann
+on peut vraiment la voir comme l'incertitude du démon de Gibbs
 sur les positions et les vitesses des particules,
 malgré son omniscience macroscopique.
 Dit autrement, elle quantifie les informations du démon de Laplace 
@@ -234,66 +270,127 @@ qui colle parfaitement avec la thermodynamique à l'équilibre,
 et qui me semble être quelque chose de très profond, 
 ou en tout cas de pédagogiquement très utile...
 mais qui est très loin de faire consensus chez les physiciens.
+Donc prenez-la avec des pincettes.
 
 Ceci dit, dans tous les mécanismes d'irréversibilité,
 il semble y avoir une mécanique de la sorte en jeu.
-De l'information semble échapper au démon de Boltzmann, 
+De l'information semble échapper au démon de Gibbs, 
 lorsque celle-ci passe du monde macroscopique au monde microscopique,
 et cette perte d'information semble irréversible.
 
-Quoi qu'il en soit, avec cette interprétation, 
+Alors, petite note terminologique.
+Le terme "démon de Gibbs", je l'ai vraiment inventé pour cette vidéo.
+Initialement, j'étais tenté d'appeler ce démon le "démon de Boltzmann",
+car l'interprétation macro versus micro-état est beaucoup plus associée à Boltzmann.
+Malheureusement, la notion de "démon de Boltzmann" est déjà utilisée,
+pour décrire un argument de "mélange aléatoire" dans les équations de Boltzmann.
+Plus précisément, dans l'argument de Boltzmann, 
+la perte d'information surgit vraiment des collisions entre deux particules élémentaires.
+Intuitivement, ces deux particules vont avoir tendance à homogénéiser leurs vitesses respectives.
+Typiquement, au billard, l'énergie cinétique de la boule blanche va se répartir à toutes les boules.
+Bon ce n'est pas toujours vrai, puisque les équations de la physique sont réversibles,
+et qu'il est en principe possible que les collisions mettent les autres boules à l'arrêt,
+de sorte à concentrer l'énergie cinétique dans la boule blanche.
+Mais ce second scénario semble extrêmement improbable.
+Pour formuler cette uniformation de manière mathématique,
+Boltzmann a supposer que la prochaine collision pouvait être décrite 
+comme celle entre deux particules tirées au hasard.
+C'est là qu'il y a un petit tour de passe-passe dans l'argument de Boltzmann,
+et d'autres chercheurs ont souligné cette hypothèse en introduisant un "démon de Boltzmann",
+qui choisit aléatoirement des prochaines particules qui entreront en collision.
+
+Bon après, "démon de Gibbs" ce n'est pas si mal, 
+puisque Gibbs a énormément contribué à consolider les idées parfois floues de Boltzmann.
+Selon Henri Poincaré, 
+"celui qui a vu le plus clairement [l'irréversibilité de processsus physiques macroscopiques en termes probabilistes], 
+dans un livre trop peu lu car un peu difficile à lire, 
+c'est Gibbs, dans ses Principes élémentaires de mécanique statistique".
+D'ailleurs, un cours que Gibbs enseignait à Yale s'intitulait très clairement
+"Sur la déduction a priori des principes de la thermodynamiques de la théorie des probabilités".
+Et oui, selon Gibbs, la thermodynamique ne serait qu'une conséquence des lois des probabilités !
+(Bon je nuancerais un peu cela, 
+mais ça reste une perspective déficiente aujourd'hui, 
+venant de l'un des plus grands experts de l'entropie de l'histoire !)  
+https://terpconnect.umd.edu/~cjarzyns/CHEM-CHPH-PHYS_703_Spr_20/resources/Physics-of-Gibbs-in-his-time.pdf
+
+Quoi qu'il en soit, avec l'interprétation via le démon de Gibbs, 
 on a une nouvelle compréhension du second principe de la thermodynamique.
-Celui-ci affirme que le différentiel de connaissance entre les démons de Laplace et de Boltzmann
+Celui-ci affirme que le différentiel de connaissance entre les démons de Laplace et de Gibbs
 ne peut que croître avec le temps.
-Au fur et à mesure que des actions irréversibles ont lieu,
-le démon de Boltzmann perdra de l'information sur les positions et les vitesses des particules,
+Au fur et à mesure que des opérations thermodynamiques irréversibles ont lieu,
+le démon de Gibbs perdra de l'information sur les positions et les vitesses des particules,
 et deviendra davantage ignorant, 
 comparativement au démon de Laplace qui lui ne perd pas ses informations.
 
 Alors, quelques précisions techniques :
-le démon de Boltzmann doit être supposé être un omniscient du présent uniquement.
+le démon de Gibbs doit être supposé être un omniscient du présent uniquement.
 Ou dit autrement, il n'a pas de mémoire,
 ce qui le distingue du démon de Solomonoff.
 
-Par ailleurs, contrairement aux démons de Solomonoff et de Laplace,
-le démon de Boltzmann est un être mal défini.
+Par ailleurs, malgré les énormes efforts de Gibbs pour combler aux manquements de sa théorie,
+le démon de Gibbs reste nettement moins bien défini que ceux de Laplace et Solomonoff.
 En particulier, sa description dépend de la distinction 
 entre le monde macroscopique et le monde microscopique.
 Et ce n'est pas là une limite de mon analogie.
 Je parle là d'un problème fondamental au coeur de la thermodynamique statistique,
-qui dépend d'une distinction entre les "macro-états" et les "micro-états".
+qui dépend d'une distinction entre les "macro-états" et les "micro-états".  
+https://terpconnect.umd.edu/~cjarzyns/CHEM-CHPH-PHYS_703_Spr_20/resources/Physics-of-Gibbs-in-his-time.pdf
 
 S'il est clair que les micro-états décrivent les positions et les vitesses de toutes les particules,
 il n'est pas tout à fait clair ce que sont les macro-états.
-Intuitivement, il s'agit des description à base de positions et vitesses de "gros objets",
-ainsi que de leurs pressions, de leurs températures, de leurs états physiques,
+Intuitivement, il s'agit des descriptions à base de positions et vitesses de "gros objets",
+ainsi que de leurs pressions, de leurs températures, de leurs volumes, de leurs états physiques,
 de leurs champs électro-magnétiques et de leurs compositions chimiques.
 Mais qu'est-ce qu'un gros objet ? Parle-t-on de l'échelle du milligramme ? Du nanogramme ?
 Combien faut-il de particules, ou de volume d'espace, pour que l'objet soit "macroscopique" ?
 
+Est-ce qu'un atome qu'on manipulerait individuellement, 
+et dont on connaît assez précisément la position et la vitesse,
+forme un objet macroscopique ?  
+https://en.wikipedia.org/wiki/IBM_%28atoms%29
+
 Clairement, plus le seuil est petit, 
-plus le démon de Boltzmann aura connaissance fine du monde,
+plus le démon de Gibbs aura une connaissance fine du monde,
 et plus l'entropie thermodynamique, 
-c'est-à-dire ce qu'il ne sait pas du monde microscopique,
-sera faible.
-Sa mesure au sens de Boltzmann dépend ainsi fondamentalement 
-de la granularité du monde macroscopique.
+c'est-à-dire ce qu'il ne sait pas du monde microscopique, sera faible.
+Sa mesure dépend ainsi fondamentalement de la granularité du monde macroscopique.
+
+Or, de tout ce que j'ai lu, 
+bien définir les contours de la frontière entre états macroscopiques et états microscopiques
+reste une limite des connaissances actuelles de la recherche en thermodynamique statistique.
+Surtout pour les systèmes hors-équilibre, 
+les physiciens ne savent par encore vraiment comment définir l'entropie.  
+https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.L012034  
+https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.110601  
+https://www.research.unipd.it/handle/11577/3425920  
+https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201912223?casa_token=mBbRVJ6vPbUAAAAA:JurERxLa-TdnddIKwKrPnONqQAbTqK6DfEZi3ommcUu3OGi5j9tmk7TtNhCaN-ZvqkH8w6v3EkrWvAE
+
+D'ailleurs, selon le physicien et historien de la physique Martin Klein,
+si Gibbs a procrastiné pendant plus d'une décennie la publication de son ouvrage fondateur
+sur la physique statistique,
+c'est probablement à cause de son incapacité à répondre à la question
+"Quelle est l'entropie d'un système hors équilibre ?" ---
+une question absolument fascinante dont je suis très loin d'avoir un iota de réponse satisfaisante !  
+https://terpconnect.umd.edu/~cjarzyns/CHEM-CHPH-PHYS_703_Spr_20/resources/Physics-of-Gibbs-in-his-time.pdf
 
 
 ## Le démon de Maxwell
 
-En 1867, le génie écossais James Clerk Maxwell proposa une expérience de pensée,
+Plusieurs décennies avant la publication de l'ouvrage de Gibbs, en 1867, 
+le génie écossais James Clerk Maxwell proposa une expérience de pensée,
 pour montrer en quoi l'information microscopique est au coeur de la thermodynamique,
 c'est-à-dire de la dynamique des échanges de chaleur.
-Son expérience de pensée précède d'ailleurs les travaux de Boltzmann,
-et ils ont certainement aidé Boltzmann à formaliser l'entropie thermodynamique
-en tant qu'incertitude microscopique.
+Son expérience de pensée précède d'ailleurs aussi les travaux de Boltzmann,
+et ils ont certainement aidé Boltzmann, puis Gibbs,
+à formaliser l'entropie thermodynamique en tant qu'incertitude microscopique.
 
 L'expérience de pensée de Maxwell fait intervenir un être puissant,
 qu'il est désormais de coûtume d'appeler le démon de Maxwell.
+Et oui, il y a beaucoup de démons dans ces histoires de physiques statistiques !
 De façon remarquable, en ne faisant que traiter de l'information,
 ce démon était capable de violer le second principe de la thermodynamique,
-en faissant baisser l'enthropie thermodynamique, au sens classique non-informationnel de Clausius.
+en faissant baisser l'enthropie thermodynamique, 
+au sens classique non-informationnel de Clausius.
 
 Pour comprendre cela, imaginez deux cloisons complètement isolantes, 
 avec une trappe qui les sépare.
@@ -350,37 +447,41 @@ En 1960, le physicien Rolf Landauer en a fournit une interprétation,
 qui fait un pont entre information cédée au monde microscopique 
 et énergie dissipée en énergie thermique non récupérable.
 
+Et oui, on va enfin parler de ce mystérieux Landauer,
+qui a gagné par ailleurs le droit d'être le nom du groupe Signal,
+où Rodolphe, Jean-Lou et moi avons échangé pour préparer nos vidéos sur l'entropie !
+
 Pour comprendre Landauer, il suffit de considérer le problème des deux cloisons,
 avec cette fois une seule particule, dont on sait qu'elle se trouve à gauche.
 Ou plus précisément, on va supposer 
 que le fait que la particule se trouve à gauche est une information macroscopique,
-et donc connue du démon de Boltzmann.
+et donc connue du démon de Gibbs.
 
 En ouvrant la trappe, la particule va maintenant naviguer de gauche à droite et de droite à gauche,
 de sorte que l'information sur la cloison qui contient la particule sera inconnue,
 en tout cas dans le monde macroscopique.
-Cette information sera perdue par le démon de Boltzmann.
+Cette information sera perdue par le démon de Gibbs.
 En particulier, à la question "la particule se trouve-t-elle à gauche ?",
-le démon de Boltzmann doit maintenant répondre
+le démon de Gibbs doit maintenant répondre
 "il y a une probabilité 1/2 que ce soit le cas ?"
 (en supposant les deux cloisons macroscopiquement identique).
 
 En particulier, l'information avant ouverture de la trappe correspond 
-à une information au sens de Shannon et relativement au démon de Boltzmann
+à une information au sens de Shannon et relativement au démon de Gibbs
 égale au logarithme en base de 2 de l'inverse de 1/2, qui est égale à 1 bit.
-En ouvrant la trappe, le démon de Boltzmann a perdu 1 bit d'information ;
+En ouvrant la trappe, le démon de Gibbs a perdu 1 bit d'information ;
 ou dit autrement, l'entropie thermodynamique a augmenté d'un bit.
 
-Landauer montra que cette description informationnelle est équivalente à dire 
+Gibbs montra que cette description informationnelle est équivalente à dire 
 que l'entropie thermodynamique a augmenté de k ln 2 Joules par Kelvin.
 De plus, si l'expérience a lieu à température ambiante T,
 alors cette augmentation de l'entropie correspond à une dissipation de kT ln 2 Joules.
 
-Aujourd'hui ce principe dit de Landauer est souvent exprimé sous la forme d'un coût énergétique
+Aujourd'hui ce principe dit de Gibbs est souvent exprimé sous la forme d'un coût énergétique
 à l'effacement de l'information.
 Pour être plus précis, toutefois, il faut bien voir qu'il s'agit 
 de la destruction d'une information macroscopique uniquement,
-c'est-à-dire une destruction informationnelle pour l'observateur qu'est le démon de Boltzmann.
+c'est-à-dire une destruction informationnelle pour l'observateur qu'est le démon de Gibbs.
 
 Cependant, le démon de Laplace, qui a lui accès à l'information microscopique,
 lui ne perd pas cette information.
@@ -457,13 +558,13 @@ l'entropie au sens de Shannon de la chambre mal rangée sera plus grande
 que celle d'une chambre bien rangée, avec des étiquettes un peu partout.
 
 Cependant, il ne faut pas confondre cette entropie de l'observateur humain
-avec l'entropie thermodynamique, qui est vue via les lentilles du démon de Boltzmann.
+avec l'entropie thermodynamique, qui est vue via les lentilles du démon de Gibbs.
 Ne l'oubliez pas.
-Le démon de Boltzmann est omniscient vis-à-vis de l'information macroscopique.
+Le démon de Gibbs est omniscient vis-à-vis de l'information macroscopique.
 Or les chausssettes sont des objets macroscopiques ;
 il n'a donc clairement aucune incertitude vis-à-vis de leurs positions.
 
-En fait, il n'est pas clair que, pour le démon de Boltzmann,
+En fait, il n'est pas clair que, pour le démon de Gibbs,
 l'entropie de la chambre mal rangée est plus grande que celle de la chambre bien rangée.
 
 De même ce n'est pas en triant des pommes que vous diminuerez l'entropie thermodynamique.
@@ -496,7 +597,7 @@ même si une partie de l'information macroscopique a été dissipée et perdue d
 
 Enfin, on peut insister sur le fait qu'on est encore extrêmement loin des limites thermodynamiques.
 Après tout, une entropie maximale, 
-ça correspond à un monde où le démon de Boltzmann ne sait plus rien du tout !
+ça correspond à un monde où le démon de Gibbs ne sait plus rien du tout !
 Autrement dit, il s'agirait d'un énorme néant homogène de particules indiscernables macroscopiquement.
 Il n'y aurait pas certaines particules qu'on peut associer à une chaussette, une chambre ou un humain.
 
