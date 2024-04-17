@@ -238,20 +238,100 @@ y compris pour les élections présidentielles.
 
 ## Vers de nouvelles formes de démocraties ?
 
-Votez pour plusieurs représentants.
+Si l'on s'autorise à s'équiper de calculateurs pour prendre des décisions collaborativement,
+alors le champ des possibles en terme de scrutins d'assemblée s'élargit drastiquement ---
+attention toutefois à ne pas abuser de numériques pour des applications à fort enjeu,
+sachant à quel point nos téléphones et nombre de serveurs notamment sous Windows
+sont extrêmement loin d'être suffisamment sécurisés.  
+https://tournesol.app/entities/yt:SCYa-S1VXZ8  
+https://www.cisa.gov/resources-tools/resources/cyber-safety-review-board-releases-report-microsoft-online-exchange-incident-summer-2023
 
-Les représentants des représentants ?
+La sobriété numérique reste la meilleure cyberdéfense.  
+https://tournesol.app/entities/yt:v66YDx7U6V0
 
-Anti-délégation.
+De façon très générale, ce qu'on attend d'un scrutin,
+c'est un système qui collecte des jugements des différents électeurs,
+et qui combine ces jugements pour sélectionner dans notre cas une assemblée d'objets,
+de sorte que cette assemblée représente les avis des électeurs.
 
-Favoriser le consensus.
+Jusque là, tous les scrutins qu'on a introduits s'appuient uniquement sur un système de soutien.
+Ce qui est retenu des jugements des différents électeurs est uniquement les premiers choix
+de leurs bulletins.
+Or, en pratique, on a non seulement des envies pour certains choix,
+mais aussi des réticenses, voire du dégoût, pour d'autres choix.
 
-Équipe de football
+Typiquement, j'ai vraiment envie que Tournesol tienne compte du fait 
+que, selon moi, certaines vidéos ne devraient absolument pas être recommandées ;
+comme l'ethics-washing des Big Techs, les appels au meurtre et la pédophilie.
 
-Vidéos Tournesol
+De la même manière, au-delà des premiers choix,
+il y a certainement des représentants politiques qui, selon vous,
+ne devraient absolument représenter la France au Parlement européen.
+Est-ce qu'il ne serait pas judicieux de tenir compte aussi des avis négatifs ?
+Mais alors, comment arbitrer entre les avis très négatifs et les avis très positifs ?
+
+Un personnage politique qu'une moitié de la population veut absolument élire,
+mais qu'une autre moitié ne veut absolument pas élire,
+doit-elle être préférée à une candidate qui est unanimement jugée "ok" ?
+
+Identifier et mettre en avant les contenus consensuellement bons, plutôt que ceux qui divisent,
+c'est ce que proposent notamment les Community Notes des Twitter,
+pour sélectionner les notes contextuelles qui seront affichées sur le réseau social.
+
+C'est aussi ce que permet la plateforme délibérative Pol.is,
+qui fut abondamment utilisée sur Taïwan 
+pour identifier les consensus déjà existants dans la population.
+Cette plateforme permet à un groupe de personnes de faire des propositions,
+qui seront jugées positives ou négatives par les autres membres du groupe.
+Et surtout, Pol.is va ensuite identifier les propositions qui sont conflictuelles,
+et celles qui sont consensuelles.
+
+Et pour souligner l'efficacité de cette approche, 
+je vous invite à réfléchir au cas de son application en France, l'été dernier, 
+au sujet de la réforme de la police suite aux émeutes des banlieues et aux violences policières.
+La plateforme Pol.is réunit différents citoyens, aux opinions souvent très polarisées.
+Clairement, certains jugeaient que la police était fautive, 
+quand d'autres estimaient que les jeunes manifestants étaient le problèmes ;
+et nombres de propositions conflictuelles étaient célébrées par les uns, et détestées par les autres.
+Les scrutins usuels nous pousseraient à nous attarder sur ces dernières,
+et nourriraient des rancoeurs chez le protestataires.
+
+Cependant, Pol.is a aussi permis d'identifier des propositions consensuelles sur la réforme de la police.
+Et ça, vu la couverture médiatique des violences,
+on aurait pu croire que c'était impossible.
+Et pourtant, un scrutin qui identifierait les propositions consensuellement bonnes
+aurait imposé un narratif très différent,
+qui conclurait que tous, pro-manifestants et pro-policiers,
+veulent des investissements publics importants dans la formation des policiers,
+et dans la police de proximité.
+
+Plutôt qu'une France divisée, on aurait une France unie,
+derrière une meilleure protection des policiers et de la population.
+
+Mais donc, comment devrait-on voter pour qu'un scrutin puisse différencier le consensuellement bon
+du excellent selon certains mais catastrophique selon d'autres ?
+Eh bien, j'ai surtout envie de dire qu'il s'agit d'une question encore relativement ouverte.
+Mais ce qui semble clair, c'est que surtout quand le nombre de propositions envisables est énorme,
+des méthodes à base d'algorithmes d'apprentissage, de machine learning, 
+seront utiles.
+
+Et quelles seraient les conséquences d'une telle approche ?
+Là encore, on est en zone inconnue.
+Mais on peut spéculer que l'inclusion des avis négatifs,
+et la pénalisation des candidats avec des avis très négatifs,
+pourra grandement aider à lutter contre le populisme et la corruption.
+
+Tant que les policiens auront l'incitatif de polariser, 
+et de capitaliser sur une fan base, 
+plutôt que d'être jugé ok par l'ensemble de la population,
+il me semble qu'il faut craindre des manoeuvres politiques qui ne seront pas dans l'intérêt de tous,
+et qui, surtout, continueront à affaiblir l'unité nationale dans des démocraties
+qui sont aujourd'hui de plus en plus divisées.
 
 
 ## La recherche dans le domaine
 
-
+Comme je vous le disais il y a maintenant 7 ans 
+dans ma série sur la démocratie et la théorie des jeux,
+nos scrutins ont aujourd'hui de nombreuses propriétés
 
