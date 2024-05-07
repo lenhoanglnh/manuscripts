@@ -11,7 +11,7 @@ Et il s'agira de choisir collectivement les 81 personnes politiques qui représe
 Pourtant, quand vous irez aux urnes, vous serez peut-être frappés par un constat :
 en France, pendant cette sélection, 
 vous n'avez aucun mot à dire sur l'identité de ces représentants.
-Le système électoral a été conçu de sorte 
+Le système électoral a été conçu de sorte
 que vous ne pouvez pas vous exprimer sur les individus qui pourraient représenter la France ;
 votre voix électorale est contrainte à n'être que celle d'une adhésion à un parti Français
 (ou plus exactement à une liste associée à un parti).
@@ -30,24 +30,28 @@ ce qui peut nécessiter des concessions vis-à-vis des dirigeants du parti,
 voire toutes sortes d'accords plus ou moins tacites, voire plus ou moins légaux,
 avec l'écosystème politique.
 
+En espérant que ceci n'aille pas jusqu'à provoquer des affaires de corruption...  
+https://tournesol.app/entities/yt:fxR8TT15VWw
+
 Aujourd'hui, on va se demander s'il serait possible de concevoir un scrutin,
 qui vise à sélectionner un ensemble de représentants,
-de sorte que ces représentants représentent bien toute la diversité des avis des électeurs,
+de sorte que ces représentants représentent bien les électeurs,
 et qui, surtout, ne contraint pas les candidats politiques à privilégier le jeu politique
 à l'écoute attentionnée des électeurs qu'ils sont censés représenter.
 
 Mais avant d'en venir là, prenons un peu de recul,
 pour bien voir que le problème dont on parle ici n'est pas restreint au cas des eurodéputés.
 L'élection d'une assemblée est un problème fondamental, 
-qu'on retrouve dans toutes sortes d'autres situations de prise de décision collective.
+qu'on retrouve dans toutes sortes d'autres situations de prise de décision collective,
+et qui abuse trop souvent de méthodes électorales très instatisfaisantes...
 
 
 ## Le scrutin majoritaire plurinominal
 
 D'ailleurs, l'idée de cette vidéo vient de collègues mathématiciens, 
 notamment Rémi Peyre, Thomas Stoll, Simon Bartolacci et Gérard Tenenbaum,
-qui soulignaient l'inattention de leur institution, à savoir le CNRS,
-aux réflexions scientifiques de leurs propres chercheurs dans l'organisation de l'institution.
+qui soulignaient l'inattention du CNRS,
+aux réflexions scientifiques des chercheurs de son écosystème.
 En particulier, le CNRS exige que les élections du Conseil de Laboratoire 
 obéisse au scrutin majoritaire plurinominal sans liste,
 qui est en gros celui utilisé par ailleurs dans les communes de moins de mille habitants,
@@ -75,9 +79,19 @@ la majorité aura décidé l'ensemble de l'assemblée.
 À l'inverse, si chaque contributeur ne peut voter que pour une vidéo,
 alors une majorité écrasante qui vote pour une même vidéo aura gaspillé leur vote,
 surtout sur les autres vidéos sélectionnées ont en fait reçu un très petit nombre de voix.
-À l'inverse, si la voix de cette majorité se disperse entre un grand nombre de candidats similaires,
+C'est a priori ce qui est arrivé lors du vote du FWA footballeur de l'année en Angleterre,
+ce qui a rendu le reste du classement discutable, 
+ou en tout discuté par certains journalistes sportifs ;
+et oui le reste du classement, 
+ce sont surtout les préférés parmi ceux qui ne préfèrent pas Phil Foden, le vainqueur,
+qui est tout de suite un sous-ensemble biaisé des votants.  
+https://www.eurosport.fr/football/premier-league/2023-2024/foden-footballeur-de-l-annee-c-est-d-odegaard-dont-on-va-se-souvenir_vid2133078/video.shtml
+
+Autre problème, 
+si la voix de cette majorité se disperse entre un grand nombre de candidats similaires,
 alors il est possible qu'aucun de ces candidats ne soit élu.
 Typiquement, si tous les écolos votent pour une vidéo écologiste différente,
+même si ces écolos forment une majorité des votants,
 alors il est possible qu'aucune vidéo écolo ne passe le seuil pour être sélectionnée.
 
 De façon plus générale, les nombreuses variantes du scrutin majoritaire plurinominal,
@@ -219,6 +233,8 @@ Si aucun candidat ne dépasse le quota de Hare,
 on va alors redistribuer entièrement la pile des bulletins en faveur du candidat avec le moindre nombre de voix,
 et en plaçant ces bulletins dans les piles des premiers choix restants.
 
+ILLUSTRER TOUT CECI AVEC UN SECOND EXEMPLE.
+
 Cette astuce qui utilise un tirage aléatoire, 
 qui se justifie pleinement quand le nombre d'électeurs est grand,
 rend le décompte du vote unique transférable tout à fait crédible en pratique,
@@ -242,30 +258,45 @@ qui sera en charge de choisir les personnes élues.
 Bref. Des systèmes hybrides demeurent très largement envisageables,
 y compris pour les élections présidentielles.
 
+Dernière remarque, 
+que je vais malheureusement balayer beaucoup trop rapidement car la vidéo est longue,
+mais qui mériterait plus d'attention,
+les bulletins dans un vote unique transférable sont extrêmement informatifs.
+Peut-être trop.
+En particulier, parce que le nombre de vote possible est astronomiquement large,
+chaque bulletin pourrait être unique,
+ce qui pourrait conduire à des risques de désanonymisation des bulletins.
 
-## Vers de nouvelles formes de démocraties ?
+Bon on pourrait... non ça ne nous emmènerait trop loin de détailler ces problèmes...
+Pas aujourd'hui...
 
-Si l'on s'autorise à s'équiper de calculateurs pour prendre des décisions collaborativement,
-alors le champ des possibles en terme de scrutins d'assemblée s'élargit drastiquement ---
-attention toutefois à ne pas abuser de numériques pour des applications à fort enjeu,
-sachant à quel point nos téléphones et nombre de serveurs notamment sous Windows
-sont extrêmement loin d'être suffisamment sécurisés.  
-https://tournesol.app/entities/yt:SCYa-S1VXZ8  
-https://www.cisa.gov/resources-tools/resources/cyber-safety-review-board-releases-report-microsoft-online-exchange-incident-summer-2023
 
-La sobriété numérique reste la meilleure cyberdéfense.  
-https://tournesol.app/entities/yt:v66YDx7U6V0
+## Au delà du principe "à chaque électeur son élu"
 
 De façon très générale, ce qu'on attend d'un scrutin,
 c'est un système qui collecte des jugements des différents électeurs,
 et qui combine ces jugements pour sélectionner dans notre cas une assemblée d'objets,
 de sorte que cette assemblée représente les avis des électeurs.
 
-Jusque là, tous les scrutins qu'on a introduits s'appuient uniquement sur un système de soutien.
+Or jusque là, tous les scrutins qu'on a introduits s'appuient uniquement sur un système de soutien.
 Ce qui est retenu des jugements des différents électeurs est uniquement les premiers choix
 de leurs bulletins.
-Or, en pratique, on a non seulement des envies pour certains choix,
-mais aussi des réticenses, voire du dégoût, pour d'autres choix.
+
+Bien sûr, cela a l'avantage d'augmenter les chances 
+que chaque électeur puissent identifier des élus qui représentent parfaitement l'électeur.
+Et jusque là, le gros de la recherche des scrutins d'assemblée
+s'appuient sur le principe philosophique selon lequel 
+chaque électeur devrait pouvoir s'identifier avec au moins un élu.
+
+Cependant, au moins pour d'autres applications,
+un électeur pourrait davantage vouloir que l'ensemble des élus forme une assemblée satisfaisante à ses yeux.
+Autrement dit, plutôt que de vouloir avoir un élu extrêmement représentatif de ses préférences,
+l'électeur pourrait vouloir une assemblée qui, dans son ensemble,
+soit relativement proche de ses préférences.
+
+En particulier, en pratique, 
+on a non seulement des avis sur les candidats qui devraient être élus,
+mais aussi des réticenses, voire du dégoût, pour d'autres candidats.
 
 Typiquement, j'ai vraiment envie que Tournesol tienne compte du fait 
 que, selon moi, certaines vidéos ne devraient absolument pas être recommandées ;
@@ -275,15 +306,18 @@ De la même manière, au-delà des premiers choix,
 il y a certainement des représentants politiques qui, selon vous,
 ne devraient absolument représenter la France au Parlement européen.
 Est-ce qu'il ne serait pas judicieux de tenir compte aussi des avis négatifs ?
-Mais alors, comment arbitrer entre les avis très négatifs et les avis très positifs ?
+Un candidat détesté par 90% de la population devrait-il être élu ?
+Devrait-il davantage être élu qu'une candidate que 90% de la population trouve "correct",
+mais que personne ne soutient comme étant son représentant idéal ?
 
-Un personnage politique qu'une moitié de la population veut absolument élire,
-mais qu'une autre moitié ne veut absolument pas élire,
-doit-elle être préférée à une candidate qui est unanimement jugée "ok" ?
+Une vidéo qu'une moitié de la population veut absolument recommander,
+mais qu'une autre moitié ne veut absolument pas recommander,
+doit-elle être préférée à une vidéo qui est unanimement jugée "ok" ?
 
 Identifier et mettre en avant les contenus consensuellement bons, plutôt que ceux qui divisent,
 c'est ce que proposent notamment les Community Notes des Twitter,
-pour sélectionner les notes contextuelles qui seront affichées sur le réseau social.
+pour sélectionner les notes contextuelles qui seront affichées sur le réseau social.  
+https://communitynotes.twitter.com/guide/en/under-the-hood/ranking-notes#Matrix_Factorization
 
 C'est aussi ce que permet la plateforme délibérative Pol.is,
 qui fut abondamment utilisée sur Taïwan 
@@ -315,18 +349,44 @@ et dans la police de proximité.
 Plutôt qu'une France divisée, on aurait une France unie,
 derrière une meilleure protection des policiers et de la population.
 
-Mais donc, comment devrait-on voter pour qu'un scrutin puisse différencier le consensuellement bon
-du excellent selon certains mais catastrophique selon d'autres ?
-Eh bien, j'ai surtout envie de dire qu'il s'agit d'une question encore relativement ouverte.
-Mais ce qui semble clair, c'est que surtout quand le nombre de propositions envisables est énorme,
-des méthodes à base d'algorithmes d'apprentissage, de machine learning, 
-seront utiles.
+Et de la même manière, 
+on pourrait imaginer qu'une assemblée constituée de représentants consensuels
+pourrait être beaucoup plus efficace pour agir au service des citoyens,
+qu'une assemblée qui représente fidèlement les positions conflictuelles dans la société.
+
+Alors, très loin de moi l'idée d'imposer ceci demain à l'échelle européenne ;
+de toute façon, ça me semble très illusoire d'imaginer une réforme aussi radicale des scrutins européens.
+Cependant, à l'échelle d'un laboratoire de recherche ou d'une association,
+ce sont des considérations dont il pourrait être utile de tenir compte.
+Le principe "à chaque électeur un élu" est loin d'être un principe philosophique inébranlable ;
+et il est d'ailleurs également très loin d'être facile à formaliser mathématiquement.
+Dès lors, il pourrait être intéressant d'envisager, 
+au moins pour certains cadres d'application,
+des principes alternatifs pour élire une assemblée censée représenter l'ensemble des électeurs,
+comme un mix entre "à chaque électeur un élu" 
+et une exigence de "non-polarisation extrême" pour chaque élu.
 
 Et quelles seraient les conséquences d'une telle approche ?
-Là encore, on est en zone inconnue.
-Mais on peut spéculer que l'inclusion des avis négatifs,
+Eh bien, je pense qu'il s'agit d'une zone inconnue,
+qui représente avant tout à mes yeux une direction de recherche palpitante ---
+même si le cas de Pol.is nous donne des premiers aperçus fascinants.
+En particulier, on peut spéculer que l'inclusion des avis négatifs,
 et la pénalisation des candidats avec des avis très négatifs,
 pourra grandement aider à lutter contre le populisme et la corruption.
+C'est en tout cas le fascinant retour d'expérience d'Audrey Tang,
+Ministre du digital à Taïwan :
+
+> 11:05 If you look only at mainstream media or indeed on social media,
+people often think that the society is divided, like two dots pulling a rope.
+And they're mostly focused on the 5 things that are most divided.
+However, using Pol.Is, we can see clearly that 
+most people agree with most of their neighbors
+on most of the things most of the time.
+It's just that it doesn't dominate the regular discussion on social and popular media.
+And by giving people a reflection of the rough consensus they actually have,
+we can put those into regulation first, because they it's already a norm,
+while tabling or deferring the legislation of the divisive issues.  
+https://tournesol.app/entities/yt:LscTx6DHh9I
 
 Tant que les policiens auront l'incitatif de polariser, 
 et de capitaliser sur une fan base, 
@@ -334,6 +394,16 @@ plutôt que d'être jugé ok par l'ensemble de la population,
 il me semble qu'il faut craindre des manoeuvres politiques qui ne seront pas dans l'intérêt de tous,
 et qui, surtout, continueront à affaiblir l'unité nationale dans des démocraties
 qui sont aujourd'hui de plus en plus divisées.
+
+Mais donc,
+à quoi pourrait alors ressembler un scrutin capable de différencier le consensuellement bon
+de l'excellent selon certains mais catastrophique selon d'autres ?
+Eh bien, là encore, c'est une question scientifique encore extrêmement ouverte,
+que le projet Tournesol investigue en ce moment même.
+Ainsi sur Tournesol, le score d'une vidéo est maintenant en gros calculé 
+comme étant le quartile des scores selon les contributeurs ;
+autrement dit, pour qu'une vidéo atteigne un score de 50,
+il faut que 75% des contributeurs jugent que cette vidéo doit avoir un score supérieur ou égal à 50.
 
 
 ## La recherche dans le domaine
@@ -357,15 +427,25 @@ qui m'a poussé à m'intéresser aux scrutins d'assemblée,
 tout comme il m'avait poussé à m'intéresser au scrutin de Condorcet randomisé il y a une décennie.
 Je cite :
 
-> j'ai pour ma part la conviction que notre position 
-de chercheurs, particulièrement à même de comprendre les graves 
-inconvénients des systèmes les plus usuels, nous confère une obligation 
-morale à servir d'exemples en la matière : car la transition vers des 
-méthodes plus pertinentes aura d'autant plus de chances de se faire — et 
-ce, pour le plus grand bien collectif, je pense — que le grand public 
-sera familiarisé avec ces méthodes “alternatives” ! Et un laboratoire de 
-recherche en mathématiques est naturellement amené à servir de pionnier 
-dans l'expérimentation de telles méthodes…
+>  Si vous pensez que ces méthodes de scrutin sont préférables, 
+et que vous souhaitez qu'elles soient utilisées à terme dans la vie 
+politique de votre ville/pays/confédération, une des meilleures choses 
+que vous puissiez faire pour la promotion de ces méthodes est de les 
+mettre en place autour de vous : dans vos clubs, vos associations, vos 
+entreprises, vos comités… Car une des difficultés à mettre en place ces 
+nouveaux systèmes est que les gens sont réticients face aux concepts 
+auxquels ils ne sont pas habitués et qu'ils ne comprennent pas bien : 
+or, si vous appliquez ces méthodes autour de vous, cela fera autant de 
+nouvelles personnes familières avec ces modes de scrutin, qui auront 
+fini par bien comprendre comment ça marche, et qui constateront que 
+c'est tout-à-fait satisfaisant en pratique : et donc autant de personnes 
+enclines à le soutenir un avatar du vote unique transférable si la 
+proposition arrive à nos instances politiques nationales un jour ! 😉 Et 
+si, par-dessus le marché, votre association est un laboratoire de 
+recherche en mathématiques/informatique/sociologie, ou un groupe 
+politique pour la démocratie, la, vous avez carrément un _devoir_ moral 
+de le faire : car si ce n'est pas vous qui montrez l'exemple les 
+premiers, qui se chargera d'initier le processus…?!
 
 Je ne peux que le soutenir dans la démarche du groupe de réflexion qu'il a monté avec ses collègues,
 pour au moins appeler le CNRS à investiguer de nouvelles formes de scrutins,
