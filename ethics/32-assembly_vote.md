@@ -233,11 +233,58 @@ Si aucun candidat ne dépasse le quota de Hare,
 on va alors redistribuer entièrement la pile des bulletins en faveur du candidat avec le moindre nombre de voix,
 et en plaçant ces bulletins dans les piles des premiers choix restants.
 
-ILLUSTRER TOUT CECI AVEC UN SECOND EXEMPLE.
+Imaginons ainsi qu'on soit en train d'élire deux vidéos sur l'urgence démocratique,
+parmi quatre candidats qui sont la vidéo de Philoxime sur les millardaires,
+celle de La Fabrique Sociale sur Taïwan,
+celle du Réveilleur sur la Convention Citoyenne sur le Climat,
+et celle de Pour 1nfo sur les attaques informationnelles lors d'élections.  
+https://tournesol.app/entities/yt:n-oujbO9fdQ  
+https://tournesol.app/entities/yt:CHoXZO7WFDA  
+https://tournesol.app/entities/yt:hqFynZQWYB8  
+https://tournesol.app/entities/yt:YC-v3whLUX0
 
-Cette astuce qui utilise un tirage aléatoire, 
-qui se justifie pleinement quand le nombre d'électeurs est grand,
-rend le décompte du vote unique transférable tout à fait crédible en pratique,
+Et plaçons-nous cette fois à la place de ceux qui dépouillent.
+On a 8 bulletins de vote.
+Le quota de Hare est donc 8/2 = 4 votes.
+Pour commencer, on va les classer en fonction des premiers choix.
+Ça nous en fait 1 pour Philoxime, 6 pour La Fabrique Sociale, 
+1 pour le Réveilleur et 0 pour Pour 1nf0.
+Seule La Fabrique Sociale dépasse le quota, et elle le dépasse de 2 voix.
+La Fabrique Sociale est donc élue, 
+et deux bulletins parmi les 6 bulletins de sa pile sont tirées au hasard.
+
+Dans ces deux bulletins, les meilleurs choix restants sont toutes les deux pour Pour 1nf0.
+Ça nous fait maintenant 1 voix pour Philoxime, 1 pour le Réveilleur et 2 pour Pour 1nf0.
+Aucun ne dépasse le quota de Hare.
+Il va donc falloir éliminer un candidat, parmi ceux avec le moins de voix.
+Dans notre cas, il y a en fait 2 options : supprimer Philoxime ou Le Réveilleur.
+En cas d'égalité, on peut tirer celui à supprimer au hasard.
+Imaginons qu'on élimine alors Le Réveilleur.
+
+Ses votes sont redistribués au meilleur choix restant.
+En l'occurence, le deuxième choix était La Fabrique Sociale, 
+mais La Fabrique Sociale est déjà élue.
+Il faut donc passer au troisième choix, qui dans ce cas est Pour 1nf0.
+Voilà maintenant que Pour 1nf0 a 3 voix, contre 1 voix pour Philoxime.
+
+Aucun candidat ne surpasse le seuil de Hare.
+Il faut donc éliminer celui avec le moins de voix.
+Et cette fois, c'est Philoxime qu'on élimine.
+On doit ensuite redistribuer les voix qu'il a reçues.
+Le meilleur choix restant de son unique bulletin est le 4e choix, à savoir Pour 1nf0.
+Pour 1nf0 récupère la voix, ce qui le fait passer à 4 voix,
+soit le quota de Hare.
+Pour 1nf0 est le deuxième élu !
+
+Alors, dans l'exemple explicit que je viens de vous présenter,
+il a fallu recourir au tirage au sort plusieurs fois,
+d'un côté pour redistribuer des bulletins excédentaires en cas de dépassement du quota de Hare,
+et de l'autre pour éliminer les candidats avec le moins de voix quand il y en a plusieurs.
+Cela peut paraître insatisfaisant.
+Cependant, ces astuces de tirage aléatoire
+se justifient pleinement quand le nombre d'électeurs est grand ;
+et elles ont surtout le bon goût de rendre le décompte du vote unique transférable 
+tout à fait réalisable en pratique par des dépouilleurs non-mathématiciens,
 malgré un grand nombre de candidats, d'électeurs et d'élus.
 
 Une autre difficulté réside toutefois davantage dans l'embarras du choix pour les électeurs.
@@ -451,4 +498,14 @@ Je ne peux que le soutenir dans la démarche du groupe de réflexion qu'il a mon
 pour au moins appeler le CNRS à investiguer de nouvelles formes de scrutins,
 et à valider théoriquement et empiriquement leurs propriétés,
 afin de défendre et améliorer la République qui finance l'institut.
+
+En particulier, il serait utile de concevoir des plateformes 
+qui permettent à n'importe quelle communauté de créer et d'effectuer un vote
+avec les scrutins les plus aboutis de la recherche scientifique,
+à l'instar de ce qu'on fait déjà dans le cadre du projet Tournesol,
+pour élire les vidéos que l'algorithme de recommandation de Tournesol devra le plus souvent recommander.
+
+À l'heure où de nombreuses démocraties sont sur le déclin à travers le monde,
+et y compris en Europe,
+cela me semble devoir être une priorité de la recherche académique.
 
