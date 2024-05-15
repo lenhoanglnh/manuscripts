@@ -310,7 +310,7 @@ que je vais malheureusement balayer beaucoup trop rapidement car la vidéo est l
 mais qui mériterait plus d'attention,
 les bulletins dans un vote unique transférable sont extrêmement informatifs.
 Peut-être trop.
-En particulier, parce que le nombre de vote possible est astronomiquement large,
+En particulier, parce que le nombre de vote possible est astronomiquement grand,
 chaque bulletin pourrait être unique,
 ce qui pourrait conduire à des risques de désanonymisation des bulletins.
 
