@@ -4,7 +4,7 @@ La semaine prochaine,
 se tiendront les élections européennes 2024 dans toute l'Union Européenne.
 Ces élections viseront à déterminer les 720 eurodéputés qui représenteront la population européenne.
 Qui seront nos représentants ?
-Et surtout, ces représentants représenteront bien la population qu'ils représentent ?
+Et surtout, ces représentants représenteront-isl bien la population ?
 
 En particulier, en France, ces élections auront lieu le 9 juin prochain.
 Et il s'agira de choisir collectivement les 81 personnes politiques qui représenteront la France.
