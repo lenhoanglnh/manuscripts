@@ -179,6 +179,7 @@ Notez toutefois qu'on a alors un risque de "gaspillage" des votes d'Aidan, Adrie
 et que c'est ce gaspillage qui peut être derrière des stratégies de "votes utiles".
 Pour éviter ces risques, on va couper l'excès de votes,
 et le répartir équitablement entre les électeurs Aidan, Adrien et Romain.
+Il faut donc répartir l'excédent, égal à une voix, entre trois personnes.
 
 C'est ainsi que, après élection de Science Étonnante,
 Aidan, Adrien et Romain auront encore chacun un droit de vote de 1/3.
