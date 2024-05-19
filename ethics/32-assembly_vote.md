@@ -141,8 +141,8 @@ Donc je parle là d'une solution tout à fait concrète, et pas d'une lubie de m
 
 Imaginons par exemple qu'il faille élire un ensemble de 2 vidéos à recommander, 
 parmi 3 excellentes vidéos sur le sujet des scrutins.
-Les 3 vidéos sont celles de Science Étonnante, Monsieur Phi et Math un peu ça.
-On a maintenant 4 électeurs, appelons-les Aidan, Louis, Adrien et Romain.
+Les 3 vidéos sont celles de Brut, Monsieur Phi et Math un peu ça.
+On a maintenant 4 électeurs, appelons-les Léa, David, Valentine et Rodolphe.
 Comment ces 4 électeurs pourront-ils choisir les 2 vidéos à retenir, 
 et celle qui ne sera pas retenue ?
 
@@ -152,10 +152,10 @@ chaque électeur va voter un classement des candidats.
 https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Preferential_ballot.svg/220px-Preferential_ballot.svg.png
 
 Imaginons ainsi que :
-- Aidan vote Science Étonnante devant Monsieur Phi devant Math un peu ça,
-- Louis vote Math un peu ça devant Monsieur Phi devant Science Étonnante.
-- Adrien vote Science Étonnante devant Math un peu ça devant Monsieur Phi.
-- et Romain vote Science Étonnante devant Monsieur Phi devant Math un peu ça.
+- Léa vote Math un peu ça devant Monsieur Phi devant Brut,
+- David vote Brut ça devant Monsieur Phi devant Math un peu ça.
+- Valentine vote Math un peu ça devant Brut devant Monsieur Phi.
+- et Rodolphe vote Math un peu ça devant Monsieur Phi devant Math un peu ça.
 
 Pour déterminer comment ces votes seront combinés, 
 le vote unique transférable commence par calculer le quota de Hare, 
@@ -168,46 +168,46 @@ ou après retrait du candidat avec le plus faible nombre de voix.
 Détaillons tout cela avec notre exemple.
 
 Dans notre cas, si on fait scrutin uninominal du premier choix,
-Aidan, Adrien et Romain votent Science Étonnante, tandis que Louis vote Math un peu ça.
-"Math un peu ça" reçoit donc une voix, ce qui est bien,
+Léa, Valentine et Rodolphe votent Math un peu ça, tandis que David vote Brut.
+Brut reçoit donc une voix, ce qui est bien,
 mais est inférieur au quota de Hare.
-Cependant, Science Étonnante a lui reçu 3 voix.
+Cependant, Math un peu ça a lui reçu 3 voix.
 Comme 3 est plus grand que le quota de Hare, égal à 2, 
-la vidéo de Science Étonnante est donc élue.
+la vidéo de Math un peu ça est donc élue.
 
-Notez toutefois qu'on a alors un risque de "gaspillage" des votes d'Aidan, Adrien et Romain,
+Notez toutefois qu'on a alors un risque de "gaspillage" des votes de Léa, Valentine et Rodolphe,
 et que c'est ce gaspillage qui peut être derrière des stratégies de "votes utiles".
 Pour éviter ces risques, on va couper l'excès de votes,
-et le répartir équitablement entre les électeurs Aidan, Adrien et Romain.
+et le répartir équitablement entre les électeurs Léa, Valentine et Rodolphe.
 Il faut donc répartir l'excédent, égal à une voix, entre trois personnes.
 
-C'est ainsi que, après élection de Science Étonnante,
-Aidan, Adrien et Romain auront encore chacun un droit de vote de 1/3.
-Barrons maintenant Science Étonnante des bulletins de vote.
+C'est ainsi que, après élection de Math un peu ça,
+Léa, Valentine et Rodolphe auront encore chacun un droit de vote de 1/3.
+Barrons maintenant Math un peu ça des bulletins de vote.
 Et effectuons à nouveau un scrutin uninominal des premiers choix restants.
 Y a-t-il un candidat qui dépasse maintenant le quota ?
 
-Aidan fournit maintenant 1/3 de voix à Monsieur Phi,
-Louis donne 1 à Math un peu ça.
-Adrien donne 1/3 à Math un peu ça.
-Et Romain donne 1/3 à Monsieur Phi.
+Léa fournit maintenant 1/3 de voix à Monsieur Phi,
+David donne 1 à Brut.
+Valentine donne 1/3 à Brut.
+Et Rodolphe donne 1/3 à Monsieur Phi.
 
-Monsieur Phi reçoit ainsi 2/3, et Math un peu ça reçoit 4/3.
+Monsieur Phi reçoit ainsi 2/3, et Brut reçoit 4/3.
 Aucun ne dépasse le quota de Hare de 2.
 
 Quand le quota n'est pas atteint, 
 le vote unique transférable propose alors de sacrifier le candidat avec le moins de voix.
 En l'occurence, ce sera Monsieur Phi qui sera sacrifié --- déso Thibaut.
-Ceux qui avaient Monsieur Phi récupèrent leurs droits de votes, à savoir Aidan et Romain.
+Ceux qui avaient Monsieur Phi récupèrent leurs droits de votes, à savoir Léa et Rodolphe.
 Puis, on supprime Monsieur Phi du vote,
 et on réeffectue les votes des premiers choix.
 
-En l'occurence, il ne reste plus qu'un seul choix, Math un peu ça,
+En l'occurence, il ne reste plus qu'un seul choix, Brut,
 et tout le monde vote pour lui.
 Il reçoit alors 1/3 + 1 + 1/3 + 1/3 = 2, soit le quota de Hare.
 Math un peu ça est élu.
 
-L'assemblée élue est donc celle composée de la paire Science Étonnante - Math un peu ça.
+L'assemblée élue est donc celle composée de la paire Math un peu ça - Brut.
 Félicitations !
 
 
