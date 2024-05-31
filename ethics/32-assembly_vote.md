@@ -436,7 +436,7 @@ we can put those into regulation first, because they it's already a norm,
 while tabling or deferring the legislation of the divisive issues.  
 https://tournesol.app/entities/yt:LscTx6DHh9I
 
-Tant que les policiens auront l'incitatif de polariser, 
+Tant que les politiciens auront l'incitatif de polariser, 
 et de capitaliser sur une fan base, 
 plutôt que d'être jugé ok par l'ensemble de la population,
 il me semble qu'il faut craindre des manoeuvres politiques qui ne seront pas dans l'intérêt de tous,
