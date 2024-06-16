@@ -69,25 +69,29 @@ vous gagnerez pas mal de points.
 Enfin, si vous battez un joueur a priori très supérieur à vous, comme Magnus Carlsen,
 alors vous gagnerez énormément de points.
 
-De façon plus précise, chaque score Elo X va être associé à un poids P_X = 10^(X/400),
+De façon plus précise, chaque score Elo X va être associé à une *puissance* $P_X = 10^(X/400)$,
 qui va clairement augmenter exponentiellement avec le score X.
 Maintenant, si vous avez un score Elo égal X,
 et si vous battez un adversaire dont le score Elo est égal à Y,
-alors le nombre de points que vous allez gagner sera P_Y / (P_X + P_Y).
-On voit bien avec cette formule, que si X est beaucoup plus grand que Y,
+alors le nombre de points que vous allez gagner sera la puissance de Y
+divisée par la somme des puissances des deux joueurs,
+c'est-à-dire $P_Y / (P_X + P_Y)$.
+On voit bien avec cette formule, que si X est bien plus grand que Y,
 ce qui correspond à battre Thibaut,
-alors vous gagnerez très peu de points.
+alors $P_X$ va être beaucoup, beaucoup plus grand que $P_Y$,
+et vous gagnerez alors très peu de points.
 À l'inverse, si vous battez un joueur de votre niveau, 
 autrement dit si X = Y,
 alors vous gagnerez un demi-point.
 Enfin, si vous battez bien meilleur que vous, alors vous gagnerez presque un point complet.
 
-Notez que si vous perdez, alors vous perdrez cette fois P_X / (P_X + P_Y),
+Notez que si vous perdez, alors vous perdrez cette fois $P_X / (P_X + P_Y)$,
 histoire de bien rendre les calculs symétriques entre les deux joueurs.
 
 Alors, sachant que les scores Elo sont plus de l'ordre de 2000,
 vous vous dites peut-être que ça va être très long d'atteindre le score Elo 2832 de Magnus Carlsen,
-même en supposant que vous êtes meilleur que lui.
+même en supposant que vous êtes meilleur que lui ;
+il va falloir gagner des milliers de parties.
 Eh bien, en pratique, le système Elo tient bien cela en compte, 
 en multipliant le score gagné Y / (X+Y) par un facteur K.
 Typiquement, un joueur qui joue peu, et donc le score Elo est donc a priori mal estimé,
@@ -114,10 +118,10 @@ En 1952, les statisticiens Ralph Bradley et Milton Terry proposèrent
 un modèle probabiliste de l'issue d'un match, à partir du niveau des adversaires.
 Ce modèle est très simple : 
 la probabilité qu'un joueur de niveau X batte un adversaire de niveau Y 
-est donnée par P_X / (P_X + P_Y),
+est donnée par $P_X / (P_X + P_Y)$,
 où P_X croît exponentiellement avec X.
-C'est le cas du P_X du Elo, où P_X = 10^(X/400),
-mais on peut imaginer de façon plus générale une fonction P_X de la forme P_X = e^(tX),
+C'est le cas du $P_X$ du Elo, où $P_X = 10^(X/400)$,
+mais on peut imaginer de façon plus générale une fonction $P_X$ de la forme $P_X = e^{tX}$,
 avec un paramètre t qui va définir l'échelle des scores.
 
 Mais maintenant, contrairement au score Elo, dans le modèle de Bradley-Terry,
@@ -133,22 +137,22 @@ qui maximisent la vraisemblance des données sachant ces score.
 Ces scores sont alors appelés maximums de vraisemblances.
 
 En supposant que les résultats des différents matchs sont indépendants,
-la vraisemblance de ces résultats sachant les scores X_i des différents joueurs est égale
-au produit des P_i / (P_i + P_j),
+la vraisemblance de ces résultats sachant les scores $X_i$ des différents joueurs est égale
+au produit des $P_i / (P_i + P_j)$,
 pour tous les matchs entre i et j, et où i désigne le vainqueur du match,
-et où P_i est, comme vous l'imaginez, P_(X_i).
+et où $P_i$ est, comme vous l'imaginez, $P_{X_i}$.
 
 Alors, manipuler des multiplications, c'est toujours un peu compliqué.
 Donc l'astuce usuelle est alors de prendre le logarithme, 
 qui va transformer la multiplication en somme.
 Il s'agit alors de maximiser la log-vraisemblance,
-qui est alors la somme des log (P_i / (P_i + P_j)).
+qui est alors la somme des $\log (P_i / (P_i + P_j))$.
 
 Et pour maximiser une telle quantité, 
 on va chercher à annuler les dérivées partielles par rapport aux scores X_i.
-Si on prend un unique terme log (P_i / (P_i + P_j)),
-et si on exploite le fait que P_i est de la forme e^(tX_i),
-on obtient une dérivée par rapport à X_j est égale à - P_j / (P_i + P_j).
+Si on prend un unique terme $\log (P_i / (P_i + P_j))$,
+et si on exploite le fait que $P_i$ est de la forme $e^{tX_i}$,
+on obtient une dérivée par rapport à X_j est égale à $- P_j / (P_i + P_j)$.
 Autrement dit, on obtient exactement l'opposé des points 
 que i gagne après sa victoire contre j dans le système Elo, au facteur K près.
 
@@ -158,6 +162,13 @@ c'est exactement ce que propose l'algorithme de descente de gradient stochastiqu
 qui est vraiment le moteur de l'apprentissage des réseaux de neurones.  
 https://tournesol.app/entities/yt:mRcP592mQ9w  
 https://tournesol.app/entities/yt:Q9-vDFvDdfg
+
+D'ailleurs, en pratique, 
+dans le cadre du classement de la Fédération Internationale Des Échecs,
+la mise à jour des scores ne Elo ne se fait pas juste après un match,
+mais plutôt après un tournoi, qui correspond à une suite de matchs.
+Et ça, ça correspond exactement à une descente de gradients stochastiques
+avec des gradients stochastiques estimés par batchs de données.
 
 L'avantage toutefois d'avoir une approche plus probabiliste,
 c'est qu'on n'aura pas à attendre que les joueurs jouent un grand nombre de matchs
@@ -281,25 +292,41 @@ Autrement dit, on va estimer la contribution de chaque coordonnée au score de l
 un peu comme on cherchait à déterminer les niveaux des joueurs des équipes de football.
 
 Bref, pour ceux qui ont l'habitude de faire de l'apprentissage des préférences humaines,
-ce dispositif est loin d'être aussi révolutionnaire que ce que les travaux d'OpenAI suggèrent.
-Il y a trop souvent une tendance dans cette entreprise, 
-et plus généralement dans l'Altruisme Efficace,
+ce dispositif est loin d'être aussi révolutionnaire 
+que ce que le marketing surpuissant d'OpenAI peut laisser croire.
+Il y a trop souvent une tendance,
+dans les organisations qui développent des algorithmes génératifs,
 à survendre leurs travaux, et à ignorer ceux des autres,
-notamment en l'occurence l'énorme littérature sur les modèles d'utilité aléatoires,
-qui n'ont pas attendu la recherche sur l'alignement 
-pour proposer des solutions pour l'apprentissage des préférences humaines.
-Avec notamment des applications remarquables telles que Moral Machines ou WeBuildAI.
+simplement parce que ces organisations font des profits énormes 
+grâce au buzz qu'elles génèrent ;
+alors que, en pratique, dans les nombreuses entreprises clientes avec qui j'ai échangé,
+le retour d'expérience est davantage que 
+la valeur commerciale de ces algorithmes génératifs est en fait loin d'être incroyable,
+dès lors qu'il faut faire plus que simplement pondre des codes basiques
+ou dès lors que la fiabilité des informations générées est un tant soit peu importante.
+
+En fait, côté recherche, l'énorme littérature scientifique
+sur l'élicitation et l'apprentissage des préférences n'a pas attendu 
+la recherche sur l'alignement pour développer des solutions.
 En fait, les IA les plus puissantes et les plus lucratives des Big Techs,
 à savoir les algorithmes de ciblage publicitaire et de recommandation,
 sont obsédées depuis bien longtemps par les préférences humaines,
-et cherchent constamment à prédire ce que vous ferez ensuite ;
-et elles exploitent massivement Bradley-Terry et les jugements comparatifs des internautes,
+et cherchent constamment à prédire ce qui vous plaira.
+Et pour ce faire, elles exploitent en fait massivement Bradley-Terry 
+et les jugements comparatifs des internautes,
 en considérant typiquement que vous cliquez sur l'option qui vous attire le plus,
 pour estimer ce que vous préférez.
-Bref. L'apprentissage des préférences n'a vraiment pas attendu "l'alignement des IA".
-Méfiez-vous énormément de la hype, surtout quand elle vient d'OpenAI.  
-https://arxiv.org/abs/1709.06692  
-https://dl.acm.org/doi/10.1145/3359283
+Bref. Méfiez-vous énormément de la hype, surtout quand elle vient d'OpenAI,
+qui tend à faire croire qu'ils ont inventé la roue 
+que d'autres chercheurs ont créée bien avant...  
+
+Mais bon, l'influence du marketing d'OpenAI sur le monde académique est tellement grand,
+que je me suis senti obligé de rajouter l'expression "Reinforcement Learning with Human Feedback"
+dans mes articles de recherche,
+car cela augmente clairement drastiquement la probabilité que l'article soit accepté.
+Et oui, je relaie moi aussi le marketing d'OpenAI dans les publications scientifiques,
+pour espérer passer le filtre de la revue par le comité de lecture
+composé d'humains fortement exposés à ce marketing.
 
 Mais surtout là où les travaux d'OpenAI ont été très largement survendus,
 c'est que le "Reinforcement Learning with Human Feedback" n'est en fait pas 
@@ -410,6 +437,60 @@ sont les meilleures à recommander massivement
 parmi toutes les vidéos publiées sur YouTube !
 
 
+## L'élicitation et l'apprentissage des préférences
+
+De façon plus générale, 
+tout projet de démocratie numérique est inéluctablement confronté
+au problème de l'espace de paroles des citoyens.
+
+Dans les scrutins classiques, cet espace est extrêmement limité,
+puisqu'il correspond à ne choisir qu'un candidat politique parmi une poignée d'alternatives.
+À l'inverse, sur des réseaux sociaux notamment,
+cet espace est rapidement chaotique, 
+puisque les citoyens peuvent produire des threads interminables,
+qu'il va être difficile d'agréger en une décision collective à prendre,
+qui résulterait clairement des avis citoyens exprimés.
+
+Des méthodes alternatives d'expression, semi-structurées, semblent requises.
+C'est ce que propose notamment la plateforme Pol.Is, Make.org et les Community Notes de Twitter,
+où les participants peuvent émettre de courtes propositions,
+et évaluer les propositions des autres, avec des jugements directs à coups de likes et dislikes.
+Voilà des formes de délibération beaucoup plus structurées et faciles à analyser,
+et qui permettent néanmoins d'entrer dans bien plus de complexité que les scrutins classiques.
+
+Cependant, on pourrait vouloir explorer des propositions plus complexes,
+qui ne tiennent pas en 140 caractères,
+et on pourrait vouloir émettre des jugements plus subtils que juste "like" ou "dislike".
+Et bien, d'une certaine manière, c'est précisément ce que propose Tournesol.
+Les propositions considérées sont les vidéos YouTube, 
+qui chacune contient en fait des narratifs sous-jacents, avec différentes justifications ---
+et j'ai envie de dire même une chanson douce,
+que me chantait ma maman, promeut un narratif de ce genre !
+
+Tournesol propose ainsi d'évaluer ces différentes propositions.
+Et plutôt qu'un simple "like" ou "dislike", 
+on demande donc des comparaisons quantitatives, 
+qu'on analyse avec un modèle généralisé de Bradley-Terry.
+
+Cependant, il est loin d'être clair
+que cette élicitation de préférences par comparaisons quantitatives
+est la meilleure des formes d'expression possible.
+En particulier, nombre de contributeurs au projet nous ont suggéré d'avoir un système de notation,
+car celui-ci pourrait être plus simple à utiliser.
+Voilà qui correspond à un vieux débat dans le domaine :
+faut-il préférer les jugements directs, comme sur IMDB, ou comparatifs ?
+
+Eh bien, on a fait récemment des progrès dans ce débat, que je vous détaillerai une autre fois.
+Mais intuitivement, si ce qui nous intéresse, 
+c'est de discerner les tops vidéos parmi les excellentes vidéos,
+et de ne jamais recommander les vidéos bofs,
+alors une combinaison judicieuse de jugements directs et comparatifs semble être optimale.
+En particulier, les jugements directs semblent très utiles pour dérecommander,
+mais les jugements comparatifs semblent plus utiles pour recommander le very best.
+
+Mais tout ça, on en reparlera sans doute une prochaine fois...
+
+
 ## Conclusion
 
 L'une des grandes joies des mathématiques, 
@@ -421,25 +502,45 @@ de l'évaluation des niveaux des joueurs d'échec aux paris sportifs,
 en passant par l'apprentissage des préférences humaines,
 avec des applications fondamentales pour la démocratie numérique.
 
-Et j'aimerais tellement pouvoir vous dire qu'une grande équipe travaille d'arrache-pied
-pour aller beaucoup plus vite beaucoup plus loin dans la recherche 
-sur les fondements mathématiques, mais aussi philosophiques, psychologiques et sociologiques,
+En particulier, les modèles de Bradley-Terry se sont retrouvés 
+au coeur d'initiatives de démocratie numérique,
+comme les excellents projets WeBuildAI pour la gouvernance collaborative du don de nourriture, 
+et ses variantes appliquées à l'éthique des voitures autonome ou au don de rein.
+https://arxiv.org/abs/1709.06692  
+https://dl.acm.org/doi/10.1145/3359283  
+https://www.sciencedirect.com/science/article/pii/S0004370220300229
+
+Et j'aimerais tellement pouvoir vous dire qu'un grand nombre de grandes équipes 
+travaillent d'arrache-pied pour aller beaucoup plus vite beaucoup plus loin 
+dans la recherche sur les fondements mathématiques, 
+mais aussi philosophiques, psychologiques et sociologiques,
 d'une démocratie numérique sécurisée et satisfaisante.
+
 Malheureusement, à l'heure même où la haine triomphe à travers le monde,
 avec une montée terrifiante de l'autoritarisme et de la corruption,
+je dois bien avouer que les moyens de recherche alloués à ces sujets d'intérêt public
+sont aujourd'hui minimes,
+surtout en comparaison des moyens monumentaux alloués aux algorithmes génératifs,
+par le privé et par la recherche publique,
+lesquels sont en fait beaucoup plus simples à intégrer dans des applications malveillantes,
+à commencer par les arnaques en ligne, la désinformation et, peut-être surtout,
+le cyberharcèlement via des deepfakes pornographiques.  
+https://www.rts.ch/play/tv/doc-a-la-une/video/porno-et-hypertrucage--une-intimite-volee?urn=urn:rts:video:14765180
+
+En tout cas, le projet Tournesol va malheureusement être ralenti.
+Notre association à but non lucratif n'ayant pas su récolter des fonds suffisants,
 j'ai été contraint de licencier le seul employé de Tournesol,
-car notre association à but non lucratif n'a pas su récolter les fonds suffisants pour le conserver ;
-alors que cet employé est absolument brillant.
+qui est pourtant une personne fantastique et absolument brillante.
+Tournesol va ainsi redevenir un projet entièrement bénévole,
+avec des contributeurs dévoués qui, comme moi, 
+développons ce projet et effectuons des découvertes scientifiques,
+uniquement sur notre temps libre, quelques heures par semaine.
 
-L'association Tournesol va bientôt redevenir entièrement bénévole,
-avec des contributeurs qui, comme moi, développons ce projet 
-et effectuons des découvertes scientifiques importantes sur notre temps libre uniquement,
-quelques heures par semaine.
-Si l'on veut combattre beaucoup plus efficacement la haine, la corruption et la désinformation,
+Clairement, si l'on veut combattre efficacement la haine, la corruption et la désinformation,
 il va nous falloir rapidement beaucoup plus d'aides.
-
 Et vous pouvez aider.
-Vous pouvez aider financièrement, avec des dons à l'Association.
+Vous pouvez aider financièrement, avec des dons à l'Association,
+ou en nous accompagnant dans des demandes de subventions.
 Vous pouvez aussi aider techniquement, en contribuant au code libre et open source,
 ou en collaborant avec nous sur des sujets de recherche.
 Et puis, vous pouvez nous aider directement, en fournissant des jugements sur la plateforme,
@@ -453,5 +554,8 @@ et exigez que la démocratie numérique devienne un sujet central,
 une réponse indispensable au déclin globalisé des démocraties,
 comme on en parle en long, en large et en travers dans notre livre #LaDictatureDesAlgorithmes.
 
-On a désespérément besoin de vous, pour éviter un chaos informationnel et politique.
+On a désespérément besoin de vous, 
+pour avancer la recherche sur l'élicitation et l'apprentissage des préférences des citoyens, 
+et pour proposer une solution de gouvernance démocratique de l'espace informationnelle,
+et empêcher le contrôle de cet espace par des milliardaires, des multinationales et le cybercrime.
 
