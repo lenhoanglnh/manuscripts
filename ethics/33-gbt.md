@@ -93,7 +93,7 @@ vous vous dites peut-être que ça va être très long d'atteindre le score Elo 
 même en supposant que vous êtes meilleur que lui ;
 il va falloir gagner des milliers de parties.
 Eh bien, en pratique, le système Elo tient bien cela en compte, 
-en multipliant le score gagné Y / (X+Y) par un facteur K.
+en multipliant le score gagné $P_Y / (P_X+P_Y)$ par un facteur K.
 Typiquement, un joueur qui joue peu, et donc le score Elo est donc a priori mal estimé,
 pourra avoir un facteur K plus élevé.
 
