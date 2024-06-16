@@ -1,14 +1,19 @@
-# L'argument d'autorité est un théorème
+# L'argument d'autorité n'est pas un sophisme
 
-Alice Bob.
+Théorème : Si Alice et Bob sont deux bayésiens avec le même a priori fondamental,
+si Alice est honnête et si elle a accès a toutes les données Bob et plus encore,
+alors Bob va croire tout ce que Alice affirme.
 
-Théorème
+## A priori fondamental et données différentes
 
-## Démonstration
-
-## Débat bayésien
+Débat bayésien
 
 ## Incompétence
 
-## Corruption
+Corriger le biais d'Alice.
 
+## Malfaisance
+
+Un mauvais argument d'Alice pour X est un argument contre X.
+
+Le silence fait fuiter de l'information. Le cas des IA.
