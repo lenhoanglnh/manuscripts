@@ -254,27 +254,204 @@ la probabilité de victoire de la France est égale à XXX.
 Donc votre espérance de gain est XXX * XXX - XXX, ce qui est... XXX.
 
 
-## Alignement des algorithmes
+## Alignement des modèles de langage
 
-Fine-tuning, RLHF.
+Le modèle de Bradley-Terry a récemment suscité énormément d'intérêt, 
+notamment dans le cadre de ce que les Big Techs appellent "l'alignement des modèles de langage",
+et qu'on appelle parfois plus communément le "fine tuning".
+En particulier, dans ce cadre, on demande à des juges humains
+de comparer différentes réponses possibles d'un modèle de langage,
+pour ensuite modifier le modèle de langage et le pousser à préférer certaines formes de complétion.
 
-DPO.
+Alors, historiquement, l'approche annoncée en fanfare par OpenAI lors du lancement de ChatGPT
+a été nommée "Reinforcement Learning with Human Feedback",
+notamment suite à des travaux de Google et OpenAI de 2017,  
+https://proceedings.neurips.cc/paper/2017/hash/d5e2c0adad503c91f91df240d0cd4e49-Abstract.html  
+complétés dans un article de 2020.  
+https://arxiv.org/pdf/1909.08593
+
+En gros, l'idée de ces approches est de modéliser les juges humains 
+par une fonction qui assigne un score à chaque réponse de ChatGPT.
+Ce score est une fonction linéaire d'une représentation vectorielle de la réponse.
+Autrement dit, on représente la réponse par une suite de nombres,
+et on suppose que le score de la réponse est une somme pondérée de la suite de nombres.
+Il s'agit ensuite de déterminer les coefficients de la fonction linéaire,
+c'est-à-dire la valeur, positive ou négative, d'avoir un grand nombre dans chaque case.
+Autrement dit, on va estimer la contribution de chaque coordonnée au score de la réponse,
+un peu comme on cherchait à déterminer les niveaux des joueurs des équipes de football.
+
+Bref, pour ceux qui ont l'habitude de faire de l'apprentissage des préférences humaines,
+ce dispositif est loin d'être aussi révolutionnaire que ce que les travaux d'OpenAI suggèrent.
+Il y a trop souvent une tendance dans cette entreprise, 
+et plus généralement dans l'Altruisme Efficace,
+à survendre leurs travaux, et à ignorer ceux des autres,
+notamment en l'occurence l'énorme littérature sur les modèles d'utilité aléatoires,
+qui n'ont pas attendu la recherche sur l'alignement 
+pour proposer des solutions pour l'apprentissage des préférences humaines.
+Avec notamment des applications remarquables telles que Moral Machines ou WeBuildAI.
+En fait, les IA les plus puissantes et les plus lucratives des Big Techs,
+à savoir les algorithmes de ciblage publicitaire et de recommandation,
+sont obsédées depuis bien longtemps par les préférences humaines,
+et cherchent constamment à prédire ce que vous ferez ensuite ;
+et elles exploitent massivement Bradley-Terry et les jugements comparatifs des internautes,
+en considérant typiquement que vous cliquez sur l'option qui vous attire le plus,
+pour estimer ce que vous préférez.
+Bref. L'apprentissage des préférences n'a vraiment pas attendu "l'alignement des IA".
+Méfiez-vous énormément de la hype, surtout quand elle vient d'OpenAI.  
+https://arxiv.org/abs/1709.06692  
+https://dl.acm.org/doi/10.1145/3359283
+
+Mais surtout là où les travaux d'OpenAI ont été très largement survendus,
+c'est que le "Reinforcement Learning with Human Feedback" n'est en fait pas 
+le coeur de "l'alignement des chatbots" ;
+le gros du travail de "dressage" des algorithmes de langage 
+réside beaucoup plus dans le fameux pré-prompt,
+dont Monsieur Phi vous a excellemment bien parlé,
+et dont beaucoup de chercheurs ont identifié les énormes limites en termes de sécurité ;
+pour s'en rendre compte, il suffit de taper "LLM jailbreaking" ou "prompt injection"
+sur un moteur de recherche comme DuckDuckGo.
+
+Quoi qu'il en soit, des chercheurs de Stanford ont par la suite montré
+que le "Reinforcement Learning with Human Feedback" est en fait équivalent
+à une approche peut-être plus simple, 
+ou en tout cas plus directe puisqu'ils l'ont appelé "Direct Preference Optimization",
+qui consiste à voir les jugements comparatifs des juges humains
+comme des votes directement sur les paramètres du modèle de langage.  
+https://arxiv.org/pdf/2305.18290
+
+Ainsi, lorsqu'on dit qu'on préfère une réponse A à une réponse B,
+on dit finalement qu'il faut tourner les paramètres d'un algorithme,
+de sorte à favoriser la réponse A à la réponse B.
+Cette intuition peut être parfaitement formalisée,
+à travers un modèle de Bradley-Terry paramétré par les paramètres de l'algorithme ;
+autrement dit, l'alignement des réseaux de neurone,
+qu'il s'agisse d'un modèle de langage ou d'une IA de recommandation,
+ce n'est finalement pas beaucoup plus qu'un modèle bayésien paramétré de Bradley-Terry,
+avec un a priori fourni par le modèle pré-entraîné.
+
+Dit plus simplement,
+en disant que vous préférez une réponse A à une réponse B,
+vous ne faites rien d'autre que fournir une sorte de résultat d'un match entre A et B,
+et la mécanique de Bradley-Terry permet de modifier automatiquement des algorithmes 
+pour coller davantage à vos préférences.
 
 
-## GBT
+## La généralisation de Bradley-Terry
 
-Tenir compte des différences de scores.
+Il y a un an, je partageais sur Twitter la joie intense d'une découverte mathématique,
+que mon ami Julien Fageot et moi avions faites,
+en cherchant à généraliser le modèle de Bradley-Terry 
+pour tenir compte de jugements comparatifs quantitatifs.  
+https://x.com/le_science4all/status/1666199278841212928
 
-Root law.
+Concrètement, une victoire 7-0 nous dit un peu plus sur la différence de niveau entre les équipes
+que le simple fait qu'il y a eu une victoire.
+Ne pourrait-on pas exploiter cette information sur la différence de buts
+pour peaufiner notre estimation des niveaux des équipes ?
 
-Guaranties mathématiques.
+Ce problème est au coeur de Tournesol, 
+où les jugements des contributeurs sont des comparaisons quantiatives entre vidéos,
+dans la mesure où il y a un slider qui peut être déplacé presque continûment de gauche à droite.
+Et c'est donc rapidement devenu l'un des nombreux problèmes fondamentaux du projet,
+et, il me semble, plus généralement, au coeur de tout projet de démocratie numérique.
+En effet, si on veut que les citoyens votent, il faut définir leurs modes d'expression ;
+ce qu'on appelle dans le jargon le problème de l'élicitation des préférences.
 
-Application à Climpact & Tournesol.
+Pour des raisons notamment de facilité de calculs,
+j'ai initialement opté pour un modèle quadratique, 
+qu'on appelle aujourd'hui dans le code de Tournesol le modèle Hookien,
+en référance au ressort à énergie potentielle quadratique du modèle du physicien Robert Hooke.
+Mais on s'est rendu compte que ce modèle peut justifié théoriquement
+avait de surcroît de nombreuses mauvaises propriétés :
+en particulier, pour des raisons que je vous épargne aujourd'hui,
+il pouvait arriver que, en accroissant le jugement comparatif entre deux vidéos,
+on en venait à décroître le score de la vidéo jugée plus positivement.
+Clairement cette propriété était fortement indésirable ;
+elle poussait même des contributeurs de tournesol à éviter les jugements extrêmes.
+
+Clairement, il fallait un modèle plus solide théoriquement.
+J'ai alors ressorti de mes tiroirs un vieux modèle que j'avais initialement considéré,
+sans toutefois avoir su démontrer qu'il avait les propriétés escomptées.
+Et j'ai ensuite eu la chance de pouvoir en parler à Julien.
+Et honnêtement, la merveilleuse structure mathématique dont parle mon tweet,
+c'est beaucoup plus à Julien qu'à moi qu'on la doit !
+
+Non seulement Julien a démontré que mon modèle avait la propriété de monotonie ;
+qui dit que si on rend une comparaison davantage favorable à A contre B,
+alors ça va nécessairement améliorer le score de A, et décroître celui de B.
+Mais surtout, Julien a démontré que mon modèle faisait partie d'une famille plus générale
+qu'on a ensuite appelé "modèle de Bradley-Terry généralisé",
+dont tous les membres avait cette propriété de monotonie.
+
+Mieux encore, toute cette famille, 
+dont les membres sont paramétrés par une loi de probabilité qu'on appelle la loi racine,
+garantit que la log-vraisemblance sera toujours convexe,
+et même souvent calculable explicitement,
+grâce à des connections avec les fonctions génératices des cumulants,
+qui ont été beaucoup étudiées précédemment par d'autres chercheurs.
+
+Enfin, l'ajout d'un a priori bayésien gaussien garantissait pour une sous-famille
+des propriétés désirable de résilience du modèle à des jugements erronés ;
+et oui, sur Internet, ça arrive très souvent de faire une erreur grossière,
+comme confondre la vidéo de gauche et de droite au moment de la comparaison !
+
+La découverte de cette structure mathématique merveilleuse a vraiment été
+l'un des grands temps forts de l'année 2023 pour moi,
+et j'y vois une contribution importante à la recherche sur l'apprentissage des préférences humaines.
+Et je ne suis pas le seul ;
+j'ai le grand plaisir de vous dire que notre article de recherche a été accepté à publication
+dans la prestigieuse conférence académique AAAI 2024.
+
+En tout cas, côté Tournesol, on s'est rapidement précipité 
+pour ajouter cette découverte mathématique 
+aux algorithmes qui aggrègent les jugements des contributeurs,
+pour ensuite identifier les vidéos qui, selon nos contributeurs,
+sont les meilleures à recommander massivement
+parmi toutes les vidéos publiées sur YouTube !
 
 
-## Les droits de vote
+## Conclusion
 
-Juger plus de contenus == plus de pouvoir ?
+L'une des grandes joies des mathématiques, 
+c'est de créer des passerelles qui unifient des sujets a priori extrêmement distants.
+J'espère que, dans cette vidéo, j'ai pu vous faire sentir cela.
+En étudiant les comparaisons, le modèle de Bradley-Terry et ses généralisations
+font le pont entre un grand nombre de disciplines,
+de l'évaluation des niveaux des joueurs d'échec aux paris sportifs,
+en passant par l'apprentissage des préférences humaines,
+avec des applications fondamentales pour la démocratie numérique.
 
-Limiter l'influence maximale de chaque évaluateur.
+Et j'aimerais tellement pouvoir vous dire qu'une grande équipe travaille d'arrache-pied
+pour aller beaucoup plus vite beaucoup plus loin dans la recherche 
+sur les fondements mathématiques, mais aussi philosophiques, psychologiques et sociologiques,
+d'une démocratie numérique sécurisée et satisfaisante.
+Malheureusement, à l'heure même où la haine triomphe à travers le monde,
+avec une montée terrifiante de l'autoritarisme et de la corruption,
+j'ai été contraint de licencier le seul employé de Tournesol,
+car notre association à but non lucratif n'a pas su récolter les fonds suffisants pour le conserver ;
+alors que cet employé est absolument brillant.
+
+L'association Tournesol va bientôt redevenir entièrement bénévole,
+avec des contributeurs qui, comme moi, développons ce projet 
+et effectuons des découvertes scientifiques importantes sur notre temps libre uniquement,
+quelques heures par semaine.
+Si l'on veut combattre beaucoup plus efficacement la haine, la corruption et la désinformation,
+il va nous falloir rapidement beaucoup plus d'aides.
+
+Et vous pouvez aider.
+Vous pouvez aider financièrement, avec des dons à l'Association.
+Vous pouvez aussi aider techniquement, en contribuant au code libre et open source,
+ou en collaborant avec nous sur des sujets de recherche.
+Et puis, vous pouvez nous aider directement, en fournissant des jugements sur la plateforme,
+qui aideront la communauté à identifier davantage de contenus d'intérêt public,
+et qui nouriront la base de données publiques pour attirer les chercheurs 
+vers les sujets de démocratie numérique,
+plutôt que vers la hype des algorithmes génératifs.
+Enfin, vous pouvez nous aider en promouvant le projet autour de vous.
+Dites à vos proches de participer, interpelez les influenceurs et les journalistes,
+et exigez que la démocratie numérique devienne un sujet central,
+une réponse indispensable au déclin globalisé des démocraties,
+comme on en parle en long, en large et en travers dans notre livre #LaDictatureDesAlgorithmes.
+
+On a désespérément besoin de vous, pour éviter un chaos informationnel et politique.
 
