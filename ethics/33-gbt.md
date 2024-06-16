@@ -170,6 +170,13 @@ mais plutôt après un tournoi, qui correspond à une suite de matchs.
 Et ça, ça correspond exactement à une descente de gradients stochastiques
 avec des gradients stochastiques estimés par batchs de données.
 
+Cette interprétation probabiliste des scores Elo permet d'ailleurs 
+de comprendre et prouver la cohérence statistique,
+c'est-à-dire le fait de retrouver les vrais niveaux des joueurs,
+notamment dans des simulations comme celles qu'a fait David dans sa vidéo.   
+https://en.wikipedia.org/wiki/Consistent_estimator  
+https://tournesol.app/entities/yt:9oRDksmH0zM
+
 L'avantage toutefois d'avoir une approche plus probabiliste,
 c'est qu'on n'aura pas à attendre que les joueurs jouent un grand nombre de matchs
 pour que leur score estimé par le maximum de vraisemblance sera assez juste.
