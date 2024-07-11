@@ -96,6 +96,12 @@ parfois qui n'ont rien à voir avec T.
 Imaginons qu'il existe deux types de signaux,
 qu'on va appeler pro-T et anti-T.
 
+Et supposons que les pro-T basculent à gauche du zéro,
+et donc votent pour T,
+alors que les anti-T basculent à droite, et votent contre T.
+Dès lors, la proportion de vote pour T, 
+c'est exactement la proportion de signaux pro-T reçus.
+
 Ceux qui vont recevoir le signal pro-T vont naturellement mettre à jour leurs crédences,
 et vont déplacer leur curseur de Turing en direction de T.
 Les autres, qui reçoivent donc le signal anti-T, vont se déplacer vers non-T.
@@ -121,9 +127,41 @@ que dans la branche T-faux.
 Plus précisément, la probabilité de recevoir pro-T sachant T-vrai
 est plus grande que celle de recevoir pro-T sachant T-faux.
 
-Mais donc, dans T-vrai comparé à T-faux,
-comme les pro-T sont plus nombreux,
-la réponse pro-T sera aussi davantage populaire.
+Imaginons maintenant T vrai. Donc la bonne branche est T-vraie.
+La proportion de résultats "T est vrai" est donc celle de pro-T 
+dans la branche T-vraie.
+Cependant, les paris eux sont les résultats d'une combinaison 
+des paris des pro-T et des anti-T,
+qui tous imaginent encore que T-vrai et T-faux demeurent tout deux possibles.
+Dès lors, s'ils doivent prédire la proportion de pro-T,
+ils doivent prendre la moyenne sur ces 2 branches.
+Or dans la branche T-faux, on vient de voir qu'il y avait moins de pro-T.
+
+Du coup, les paris sur la proportion de pro-T
+vont être nécessairement moindres que sa valeur dans T-vrai,
+ce qui revient à dire que, si T est vrai,
+alors il y aura davantage de vote "T-vrai"
+que les résultats des paris sur la proportion de pro-T,
+qui est la proportion des votes T-vrai.
+
+On vient de démontrer que si T est vraie,
+alors elle sera une réponse plus populaire que 
+selon les paris sur sa popularité ---
+qu'ils viennent des pro-T ou des anti-T !
+
+De manière complètement symétrique,
+on voit aussi que si T est fausse,
+alors le vote "non-T" sera plus populaire
+que selon les paris sur sa popularité,
+car ces paris resteront une moyenne de proportion de non-T,
+dans les branches T-vrai et T-faux.
+
+Dans tous les cas, la réponse plus populaire que prédite
+est en fait la bonne réponse !
+Incroyable ! 
+Des bayésiens peuvent ainsi identifier la bonne réponse,
+juste en comparant la popularité effective d'une affirmation
+par opposition à sa popularité prédite.
 
 
 ## Le théorème général
