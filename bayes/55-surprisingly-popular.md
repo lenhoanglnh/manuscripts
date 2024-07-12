@@ -1,11 +1,12 @@
 # Une astuce bayésienne pour identifier l'expertise
 
-Une heure de streaming Netflix en 4k pollue plus 
+Une heure de streaming Netflix en 4k via la 4G pollue plus 
 que manger un repas de viande rouge, vrai ou faux ?
 Imaginez que, pour répondre à cette question, 
 vous fassiez appel au vote du grand public,
 qui répond vrai à 70%, et faux à 30%.
-Faut-il suivre l'avis de la majorité ?
+Faut-il suivre l'avis de la majorité ?  
+https://agirpourlatransition.ademe.fr/particuliers/bureau/calculez-lempreinte-carbone-usages-numeriques
 
 Clairement, la réponse dépend avant tout de l'expertise de la majorité.
 Mais comment distinguer au sein des votants ceux qui ont un avis informé
@@ -57,121 +58,133 @@ en tout cas dans un monde où les humains réfléchissent correctement,
 ou plutôt, conformément aux lois des probabilités.
 
 
-## Le vas simplifié où la popularité insoupçonnée révèle une vérité
+## Le théorème de la popularité insoupçonnée d'une vérité
 
-Pour bien comprendre 
-pourquoi une affirmation bien plus populaire qu'on le croit
-a de bonnes chances d'être vraie,
-je vous propose de commencer par le cas mathématique le plus simple.
+Imaginons donc une théorie T,
+qui peut être une affirmation comme "1h de Netflix pollue plus que 1 repas de viande rouge",
+et considérons la possibilité qu'elle soit vraie ou fausse.
+Chaque possibilité donne lieu à une branche d'un multivers.
+Il y a donc une branche T-vraie, et une branche T-fausse.
 
-Imaginons donc une théorie T et sa négation non-T,
-qui correspond à dire que T est faux.
-Supposons maintenant que les humains sont tous des bayésiens,
-qui partent du même a priori.
-Ce cas, comme on l'a déjà vu dans des vidéos passées,
-s'analyse très bien avec un curseur de Turing sur une droite graduée.
+L'observation qui va être clé,
+consiste simplement à dire que dans T-vraie,
+on s'attend à ce qu'il y aura plus de gens qui recevront des informations,
+qui les pousseront à croire T plus vraie.
+Dit autrement, la proportion de gens qui votent pour T, 
+qu'on va appeler pro-T,
+est en espérance plus grande dans T-vraie que dans T-fausse.
 
-Quand le curseur tend à gauche, sa veut dire qu'on juge T plus crédible.
-Et quand le curseur tend à droite, on juge T moins crédible.
-Au milieu, au zéro de la droite, T est aussi crédible que non-T,
-ce qui revient à dire que la probabilité de T est de 50%.
-Si le curseur de Turing est un bit à gauche,
-T devient 2 fois plus crédible que non-T,
-ce qui revient à dire qu'il y a une cote de 2 contre 1 pour T contre non-T,
-ou encore que la probabilité de T est 2 / (2+1) = 2 tiers.
-Si le curseur est 3 bits à droite,
-alors non-T est 2^3 bits fois plus crédible que T,
-ce qui revient à dire qu'il y a une cote 8 contre 1 pour non-T contre T,
-ou dit autrement 1 contre 8 pour T contre non-T.
-Et ça, ça correspond à une probabilité de T égale à 1/(1+8) = 1 neuvième.
+Si on place ces personnes sur un curseur de Turing,
+où être très à gauche signifie croire davantage T vraie,
+et être à droite correspond à favoriser la théorie "T faux",
+alors dans la branche T-vraie du multivers,
+plus de gens se déplaceront à gauche, que dans la branche T-fausse.
+Ce qui conduira à plus de pro-T dans T-vraie.
 
-Comme on l'a vu, le curseur doit être placé initialement quelque part,
-ce qui correspond à la croyance commune à propos de T,
-en l'absence de toute expertise.
-On parle alors de crédence a priori, c'est-à-dire avant tout apprentissage.
+Maintenant, si les votants sont des bayésiens,
+alors ils ne peuvent complètement exclure aucune des deux branches du multivers.
+Certains considèreront T-vraie beaucoup plus probable,
+d'autres auront des informations différentes qui les pousseront à être plus sceptique.
+Mais tous assigneront au moins une toute petite crédence à chacune des deux branches.
 
-Mais maintenant, certains vont recevoir certaines informations,
-d'autres vont recevoir d'autres information,
-parfois qui n'ont rien à voir avec T.
-Imaginons qu'il existe deux types de signaux,
-qu'on va appeler pro-T et anti-T.
+Mais alors, pour évaluer la proportion des gens qui répondront T-vraie,
+d'après la loi des probabilités totales,
+chaque votant va imaginer cette proportion dans le monde T-vraie,
+ainsi que celle dans le monde T-fausse,
+et le votant va alors prendre une moyenne entre les proportions obtenues,
+pondérées par sa crédence a posteriori en les différentes branches.
 
-Et supposons que les pro-T basculent à gauche du zéro,
-et donc votent pour T,
-alors que les anti-T basculent à droite, et votent contre T.
-Dès lors, la proportion de vote pour T, 
-c'est exactement la proportion de signaux pro-T reçus.
+Maintenant, si, dans chaque branche du multivers, 
+les informations collectées par les votants sont supposées indépendantes, 
+alors cette proportion imaginée par le votant ne doit pas dépendre du votant.
+Elle découle uniquement de l'hypothèse T-vraie.
+Et donc le nombre de pro-T imaginée par un votant lorsqu'il suppose T vraie
+est égal au nombre de pro-T dans la branche T-vraie.
+De même, le nombre de pro-T imaginée par un votant lorsqu'il suppose T fausse
+est égal au nombre de pro-T dans la branche T-fausse.
 
-Ceux qui vont recevoir le signal pro-T vont naturellement mettre à jour leurs crédences,
-et vont déplacer leur curseur de Turing en direction de T.
-Les autres, qui reçoivent donc le signal anti-T, vont se déplacer vers non-T.
+Mais donc, chaque votant va prédire un nombre de pro-T 
+qui est entre celui dans la branche T-vraie, et celui dans la branche T-fausse.
+Et ça, ça implique que cette prédiction sera inférieure au nombre de pro-T dans T-vraie.
+On vient de conclure la preuve !
 
-Imaginons maintenant un multivers avec deux branches distinctes, 
-l'une où T est vrai, et l'autre où T est faux.
-Remarquez que les gens qui reçoivent le signal pro-T 
-croient davantage qu'on est dans la branche T-vrai,
-que ce ne n'est le cas pour les gens qui ont reçu le signal anti-T.
-Mais du coup, ils imaginent que les pro-T imaginent davantage
-que les autres ont eux aussi reçu pro-T.
-Ils imaginent pro-T davantage populaire, que les anti-T ne l'imaginent.
+Si T est vraie, 
+alors les prédictions de tous les votants du nombre de pro-T
+vont être inférieures au nombre de pro-T qu'il y aura effectivement eu dans T vraie.
+Le fait de transcender les prédictions prouve la vérité d'une affirmation.
+Et au passage, ceci valorise les pro-T,
+qu'on peut juger mieux informés que les anti-T.
 
-Par ailleurs, dans la branche T-vrai,
-on s'attend à une certaine fraction de gens qui reçoivent pro-T,
-et à une autre fraction qui reçoivent anti-T.
-Idem pour la branche T-faux.
-
-Cependant, un théorème bayésien assez simple à démontrer,
-c'est que dans la branche T-vrai,
-il y aura en espérance plus de gens qui reçoivent pro-T,
-que dans la branche T-faux.
-Plus précisément, la probabilité de recevoir pro-T sachant T-vrai
-est plus grande que celle de recevoir pro-T sachant T-faux.
-
-Imaginons maintenant T vrai. Donc la bonne branche est T-vraie.
-La proportion de résultats "T est vrai" est donc celle de pro-T 
-dans la branche T-vraie.
-Cependant, les paris eux sont les résultats d'une combinaison 
-des paris des pro-T et des anti-T,
-qui tous imaginent encore que T-vrai et T-faux demeurent tout deux possibles.
-Dès lors, s'ils doivent prédire la proportion de pro-T,
-ils doivent prendre la moyenne sur ces 2 branches.
-Or dans la branche T-faux, on vient de voir qu'il y avait moins de pro-T.
-
-Du coup, les paris sur la proportion de pro-T
-vont être nécessairement moindres que sa valeur dans T-vrai,
-ce qui revient à dire que, si T est vrai,
-alors il y aura davantage de vote "T-vrai"
-que les résultats des paris sur la proportion de pro-T,
-qui est la proportion des votes T-vrai.
-
-On vient de démontrer que si T est vraie,
-alors elle sera une réponse plus populaire que 
-selon les paris sur sa popularité ---
-qu'ils viennent des pro-T ou des anti-T !
-
-De manière complètement symétrique,
-on voit aussi que si T est fausse,
-alors le vote "non-T" sera plus populaire
-que selon les paris sur sa popularité,
-car ces paris resteront une moyenne de proportion de non-T,
-dans les branches T-vrai et T-faux.
-
-Dans tous les cas, la réponse plus populaire que prédite
-est en fait la bonne réponse !
-Incroyable ! 
-Des bayésiens peuvent ainsi identifier la bonne réponse,
-juste en comparant la popularité effective d'une affirmation
-par opposition à sa popularité prédite.
+De façon symétrique, si T est fausse,
+alors le nombre de pro-T sera plus grand que selon les prédictions des votants.
 
 
-## Le théorème général
+## Le cas des QCM
 
+Quand il y a plus de 2 choix possibles,
+et donc pas juste T ou non-T,
+les auteurs ont proposé et justifié une généralisation.
+Illustrons-le dans le cas avec 3 choix possibles, qu'on va appeler A, B et C.
+
+On va alors s'intéresser aux chassés-croisés.
+À quel point les gens qui votent A croient qu'il y aura beaucoup de B,
+par opposition aux prédictions des électeurs de B sur le nombre de votes pour A ?
+Les pro-A prédisent-ils davantage la popularité de B,
+que les pro-B ne prédisent la popularité de A ?
+Intuitivement, le fait que ce ratio est grand revient à dire que
+les prédictions de popularité de A sont sous-estimées,
+et donc, si on suit notre logique, ça nous pousse à davantage valoriser les pro-A.
+
+Eh bien, le scrutin proposé par Prelec, Seung et McCoy,
+qu'ils appellent le vote du candidat "surprenamment populaire"
+consiste à calculer, pour chaque candidat X,
+tous les ratios de ce genre, où X est comparé à des alternatives Y,
+en comparant les prédictions pro-Y chez les pro-X aux prédications pro-X chez les pro-Y.
+Le nombre de voix reçues par X est ensuite multiplié par cette somme de ratios.
+Le résultat est appelé le nombre de voix normalisé par les prédictions pour X.
+Le candidat élu est alors celui qui a le plus grand nombre de voix normalisé par les prédictions.
+
+Dans notre exemple à 3 choix, 
+pour la réponse A, 
+il faut donc calculer le chassé-croisé avec B,
+et donc le ratio entre la popularité prédite de B par les pro-A,
+et la popularité prédite de A par les pro-B.
+Et ajouter ça avec le chassé-croisé avec C.
+Enfin, tout ça est multiplié par la popularité effective de la réponse A.
+
+On fait ensuite de même pour la réponse B,
+ce qui correspond à ajouter le ratio popularité prédite de A par les pro-B 
+par la popularité prédite de B par les pro-A,
+avec le ratio popularité prédite de C par les pro-B 
+par la popularité prédite de B par les pro-C.
+Et de multiplier la popularité effective de B par le résultat.
+
+Et puis idem pour C.
+Dans notre exemple, le vote le plus populaire, corrigé par les prédictions, est la réponse A.
+
+De façon remarquable, là encore,
+les auteurs fournissent une justification bayésienne à ce scrutin,
+en prouvant que ce scrutin garantit l'élection de la bonne réponse,
+si on suppose les électeurs bayésiens avec des ,
+et sous certaines hypothèses additionnelles comme le fait 
+que les pro-X sont tous pro-X pour la même raison : 
+à savoir une information à laquelle seuls eux ont eu accès.
+
+Bon, du coup, le degré d'applicabilité de cette généralisation est plus discutable.
+Néanmoins, ce théorème suggère qu'il s'agit néanmoins d'une manière intéressante
+de mieux estimer les bonnes réponses, dans le cas des questions à choix multiple.
 
 
 ## Les limites du théorème
 
+Bayésiens. 
+
+Honnêtes. 
+
+Paris sur une bonne réponse.
 
 
 ## Conclusion
 
+TBD.
 
