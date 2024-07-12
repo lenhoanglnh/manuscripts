@@ -19,7 +19,8 @@ ou leurs degrés d'engagement avec les questions politiques,
 pour répondre à ces questions.
 Mais aujourd'hui, je vais vous parler d'une solution absolument remarquable,
 découverte en 2017 par les chercheurs Drazen Prelec, Sebastian Seung et John McCoy,
-dont l'article a été publié dans la prestigieuse revue scientifique Nature.
+dont l'article a été publié dans la prestigieuse revue scientifique Nature.  
+https://www.nature.com/articles/nature21054?error=cookies_not_supported&code=2e90e214-6ef4-4338-ae71-d4ee5cee7826
 
 Cette solution consiste à demander aux sondés,
 non seulement leur pari sur la bonne réponse,
