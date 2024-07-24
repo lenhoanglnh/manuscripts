@@ -1,4 +1,4 @@
-# Le réseau de neurones derrière ChatGPT
+# Comment marche ChatGPT ?
 
 Vous savez peut-être que ChatGPT,
 et plus généralement les modèles de langage,
@@ -316,9 +316,77 @@ et de ne les charger qu'au moment où ils sont appelés,
 et de les enlever de la mémoire juste après.
 
 
-## Les Visual Transformers
+## La multi-modalité
 
-Pas sûr que je rajouterais cette section... à voir.
+Dans sa version de base, 
+Llama 3 ne permet que d'effectuer un traitement automatique du langage.
+Cependant, il est possible de l'augmenter, 
+pour permettre le traitement combiné d'informations de différents formats,
+comme du son, des images, des vidéos ou autres.
+
+Dans le cas particulier du son, et en particulier de la voix,
+il s'agit simplement d'ajouter un amont un module,
+appelé l'encodeur de voix, ou speech encoder,
+qui va transformer le son en mots, 
+qui seront utilisés tels quels par le modèle de langage.
+
+Le cas des images et des vidéos est plus subtile.
+Dans un premier temps, on va entraîner séparément des modules,
+capables de transformer une image ou une vidéo en tokens.
+Il y a plusieurs façons de faire cela,
+notamment une combinaison de réseaux de convolution et de réseaux résiduels.
+Mais récemment, l'une des solutions qui semblent dominantes
+consistent à réutiliser l'architecture des transformeurs,
+en prenant en entrée des représentations de morceaux d'une image.
+
+Bref. Quoi qu'il en soit, ce que l'on veut,
+c'est surtout obtenir en sortie du module d'analyse d'image ou de vidéo
+une représentation matricielle de l'image ou de la vidéo.
+Cette information sera ensuite utilisée,
+dans certains blocs Transformeur du modèle de langage.
+Typiquement, dans l'article de recherche présentant Llama 3.1,
+dans un bloc sur 4, 
+juste après le module d'attention qui propage l'information textuelle 
+de l'arrière vers l'avant,
+on rajoute un module d'attention croisée,
+qui va propager de l'information du média visuel vers l'information textuelle.
+
+Bon, l'article n'est pas très précis sur les détails de cette attention croisée,
+et, à ma connaissance, le code de cette généralisation multi-modale n'a pas été partagé.
+Mais typiquement, ce qui aurait pu être fait,
+c'est introduire pour chaque module trois matrices, 
+comme on l'a fait pour le module d'attention.
+La première est semblable à celle d'un module d'attention :
+il transforme chaque colonne i de la représentation matricielle du texte en un vecteur x_i,
+typiquement de dimension 128.
+
+La seconde est elle adaptée à l'information visuelle.
+Elle va transformer chaque colonne j de la représentation matricielle de l'image,
+en un vecteur y_j de même dimension que les x_i.
+Et intuitivement, le produit scalaire x_i^T y_j va nous dire à quel point
+il faut diffuser la j-ième information de l'image au token à la position i.
+Encore une fois, il y a d'autres bidouilles effectuées en plus, 
+comme une opération softmax sur le produit scalaire.
+Toujours est-il que ces résultats vont nous dire à quel point
+les différents aspects de l'image doivent diffuser de l'information 
+aux représentations vectorielles des différents tokens.
+
+Pour finir, il reste à déterminer quelle information sera diffusée.
+Eh bien, c'est là que la 3e et dernière matrice entre en jeu,
+qui est utilisée pour transformer les colonnes de la représentation matricielle de l'image
+en des vecteurs de dimension 4096,
+qui correspondent à la modification additive 
+que ces colonnes souhaitent effectuer aux représentations des tokens.
+
+Bien entendu, ce que je viens de vous présenter n'est qu'une façon de faire,
+parmi la myriade des architectures multi-modales proposées jusque là.
+Et bon, c'est vraiment difficile de déterminer laquelle est la plus prometteuse,
+surtout si on ne s'appuie que sur des considérations théoriques.
+Mais j'ai envie de dire, encore une fois,
+que ce qui importe, ce ne sont pas les détails de ces architectures.
+Le plus important, c'est qu'il y a un flux de l'information raisonnable dans le réseau,
+et surtout, que celui-ci peut être optimisé lors de l'apprentissage,
+grâce à une descente de gradient stable.
 
 
 ## Conclusion
