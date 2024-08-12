@@ -53,16 +53,24 @@ Il m'a vraiment fallu me plonger dans les mathématiques,
 fournies en supplément à l'article,
 pour que je me dise qu'il y avait en fait quelque chose de profond.
 En particulier, un argument bayésien montre bel et bien 
-que les affirmations bien plus populaires que ceux qu'on croit
-ont tendance à être souvent juste ---
-en tout cas dans un monde où les humains réfléchissent correctement,
-ou plutôt, conformément aux lois des probabilités.
+que les affirmations avec une popularité insoupçonnée
+ont tendance à être souvent juste.
+
+Dans leur article, Prelec, Seung et McCoy suggèrent même
+que s'appuyer sur la popularité insouçonnée permet d'identifier l'expertise,
+ce qui permettrait de puiser mieux encore dans la *sagesse des foules*,
+voire de concevoir une forme de vote épistocratique.
+
+Aujourd'hui, on va explorer le degré d'applicabilité de cette approche,
+à la fois d'un point de vue empirique et théorique,
+en nous appuyant sur un questionnaire que j'ai fait circuler auprès de mes abonnés !
 
 
 ## Le théorème de la popularité insoupçonnée d'une vérité
 
 Imaginons donc une théorie T,
-qui peut être une affirmation comme "1h de Netflix pollue plus que 1 repas de viande rouge",
+qui peut être une affirmation comme 
+"1h de Netflix pollue plus que 1 repas de viande rouge",
 et considérons la possibilité qu'elle soit vraie ou fausse.
 Chaque possibilité donne lieu à une branche d'un multivers.
 Il y a donc une branche T-vraie, et une branche T-fausse.
@@ -74,13 +82,6 @@ qui les pousseront à croire T plus vraie.
 Dit autrement, la proportion de gens qui votent pour T, 
 qu'on va appeler pro-T,
 est en espérance plus grande dans T-vraie que dans T-fausse.
-
-Si on place ces personnes sur un curseur de Turing,
-où être très à gauche signifie croire davantage T vraie,
-et être à droite correspond à favoriser la théorie "T faux",
-alors dans la branche T-vraie du multivers,
-plus de gens se déplaceront à gauche, que dans la branche T-fausse.
-Ce qui conduira à plus de pro-T dans T-vraie.
 
 Maintenant, si les votants sont des bayésiens,
 alors ils ne peuvent complètement exclure aucune des deux branches du multivers.
@@ -178,11 +179,63 @@ de mieux estimer les bonnes réponses, dans le cas des questions à choix multip
 
 ## Les limites du théorème
 
-Bayésiens. 
+Comme tout théorème, 
+la garantie de validité du vote du surprenamment populaire
+repose sur des hypothèses,
+et son degré de validité en pratique va être fortement dépendant
+du degré de validité des hypothèses.
 
-Honnêtes. 
+En premier lieu, il faut bien sûr supposer que nos sondés sont honnêtes.
+S'ils nous racontent n'importe quoi,
+ou s'ils cherchent à nous tromper,
+alors on risque de conclure ce qu'ils veulent qu'on conclut.
+Dès lors, si on veut valoriser l'expertise 
+via le principe de popularité soupçonnée 
+dans des applications avec de véritables enjeux,
+ou sur Internet où les trolls pullulent,
+comme par exemple sur Tournesol,
+il va falloir envisager des solutions pour sécuriser le scrutin.
 
-Paris sur une bonne réponse.
+Ensuite, comme dans toute affaire de sondage,
+il y a une affaire de fluctuations statistiques.
+En particulier, en supposant T vrai,
+selon les hypothèses du modèle,
+chaque sondé a une estimation bayésienne de la proportion de pro-T.
+Mais comme on effectue un sondage, 
+la proportion parmi les sondés peut différer de la proportion envisagée par le sondé.
+Il va donc falloir en particulier que l'erreur d'échantillonnage soit faible,
+comparé à la marge d'erreur tolérable du scrutin,
+qui va être directement liée à la différence 
+entre la proportion de pro-T dans T vrai,
+et celle dans T-faux,
+selon les différents sondés.
+
+On peut souligner une hypothèse d'indépendance des signaux.
+Cependant, celle-ci n'est pas si fondamentale.
+Techniquement, si les sondés étaient bayésiens,
+on pourrait la contourner en leur demandant :
+imaginez que votre postérieur sur T soit en fait un a priori,
+et que vous ne sachiez rien d'autre que cet a priori.
+Quelle proportion de pro-T prédiriez-vous ?
+
+Non, vous le voyez venir, un énorme problème avec le théorème,
+c'est qu'il nécessite de supposer les sondés bayésiens.
+Autrement dit, on suppose que les sondés appliquent systématiquement
+les lois des probabilités pour déterminer si T est vrai,
+mais aussi pour estimer les proportions probables de pro-T parmi les sondés.
+Or clairement, nous autres humains sommes extrêmement loin d'avoir 
+la faculté de raisonner de manière conforme aux lois des probabilités.
+
+Mais ce n'est pas tout.
+Après tout, même en supposant les sondés bayésiens,
+ce serait trop beau s'il suffisait d'effectuer un sondage par popularité insoupçonnée
+pour obtenir des réponses quasi-conclusives,
+y compris à propos de prédictions futures.
+
+
+## Est-ce que ça marche en pratique ?
+
+
 
 
 ## Conclusion
