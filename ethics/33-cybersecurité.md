@@ -35,7 +35,7 @@ et ses coûts engendrés sur la société qui ont été estimés
 je répète, 11 mille milliards de dollars, soit 4 fois le PIB de la France ! ---
 ce n'est qu'une question de temps avant que votre organisation soit attaquée.
 
-> @RDM : En fait elle est déjà attaquée, 
+> @RduMarais : En fait elle est déjà attaquée, 
 > mais soit vous ne le savez pas... et c'est un problème,
 > soit ce ne sont que des attaques simples qui n'ont pas encore réussi 
 > à faire des dégâts visibles.
@@ -167,7 +167,7 @@ de vos systèmes d'information,
 ce qui impliquent que eux aussi peuvent être des composants faillibles,
 ou, à l'inverse, devenir des atouts pour la cybersécurité de votre organisation.
 
-> @RDM 
+> @RduMarais 
 
 En fait,souvent on parle de faille "entre la chaise et le clavier".
 Cette expression elle est absurde, parce que ce si toute votre organisation se fait pirater,
@@ -175,7 +175,7 @@ l'erreur elle est chez vous !
 C'est vous qui avez pas suffisamment sécurisé votre SI, 
 il y avait un risque très probable et vous l'avez laissé devenir très impactant.
 
-> @RDM 
+> @RduMarais 
 
 Donc au lieu de voir vos collaborateurs comme des vulnérabilités,
 Il faut d'abord se dire qu'ils essaient juste de faire leur boulot
@@ -189,9 +189,9 @@ et c'est elles et eux les premiers qui pourront détecter que quelque chose cloc
 Bien sûr, pour y arriver, 
 on ne vous demande pas d'enseigner le hacking à tous vos collègues.
 
-> @RDM enfin si, moi c'est ce que je fais avec mes collègues, parce que si tu sais hacker tu sais défendre
+> @RduMarais enfin si, moi c'est ce que je fais avec mes collègues, parce que si tu sais hacker tu sais défendre
 
-> @LNH ah ouais ? ok (ou whatever the line you wanna say)
+> @lenhoanglnh ah ouais ? ok (ou whatever the line you wanna say)
 
 Mais en réalité, il y a pas besoin d'être technique
 pour contribuer à la cybersécurité !
