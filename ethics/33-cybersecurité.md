@@ -12,22 +12,22 @@ de réaliser une arnaque en provoquant des transferts d'argent illicites,
 d'effectuer une exfiltration des données de vos clients et de vos secrets industriels
 ou d'exiger une rançon pour restaurer des machines de traitement d'information paralysées ?
 
-Eh bien, aujourd'hui même, Romain du Marais, 
-vulgarisateur de la chaîne Pour 1nf0 et responsable de la sécurité des systèmes d'information,
-et moi-même publions chez Dunod un livre dédié à ces questions,
-intitulé "Guide de survie au cybercrime",
-avec une préface de Guillaume Poupard,
+Eh bien, pour répondre à ces questions, 
+en ce moment même on est en train de publier un livre chez Dunod avec Romain du Marais, 
+vulgarisateur de la chaîne Pour 1nf0 et responsable de la sécurité des systèmes d'information.
+Le livre s'intitule "Guide de survie au cybercrime",
+et il commence par une préface de Guillaume Poupard,
 qui est un peu le big boss de la cybersécurité en France.
 
 Bien entendu, je ne vais pas pouvoir résumer ce livre en trois mots.
 Mais s'il fallait retenir un principe de notre livre,
-c'est indiscutablement la notion de *défense en profondeur*.
-Tel est, selon nous, le principe fondamental de la cybersécurité.
+c'est probablement la notion de *défense en profondeur*.
+Tel est, selon nous, un des principes fondamentaux de la cybersécurité.
 
 
 ## La défense en profondeur
 
-De nos jours, pour toutes les organisations,
+En fait de nos jours, pour toutes les organisations,
 la question n'est plus de savoir « si » on sera attaqué dans le cyber espace.
 Vu la croissance terrifiante de l'industrie du cybercrime,
 et ses coûts engendrés sur la société qui ont été estimés 
@@ -35,24 +35,33 @@ et ses coûts engendrés sur la société qui ont été estimés
 je répète, 11 mille milliards de dollars, soit 4 fois le PIB de la France ! ---
 ce n'est qu'une question de temps avant que votre organisation soit attaquée.
 
+> @RDM : En fait elle est déjà attaquée, 
+> mais soit vous ne le savez pas... et c'est un problème,
+> soit ce ne sont que des attaques simples qui n'ont pas encore réussi 
+> à faire des dégâts visibles.
+> Mais du coup, ça ce n'est qu'une question de temps
+> avant que vous intéressiez des attaquants plus costauds !
+
 La question qu'il faut se poser, 
-c'est donc plutôt d'anticiper les cyber attaques dont vous serez la cibles,
-et surtout de prendre les mesures les plus pertinentes
-pour minimiser l'ampleur des impacts des attaques 
-sur l'activité de votre organisation.
+c'est donc pas « si » on sera attaqué
+mais plutôt « et alors ? ».
+Et ainsi anticiper les attaques et prendre les mesures les plus pertinentes
+pour minimiser les impacts de ces attaques 
+sur votre organisation.
 
-Autrement dit, il ne faut pas concevoir un système d'information
-en imaginant qu'il ne sera jamais infiltré.
-Il faut davantage le concevoir de sorte que même une fois infiltré,
-les attaquants ne pourront pas provoquer des dégâts catastrophiques.
+Autrement dit, la défense en profondeur, 
+c'est l'idée qu'il ne faut jamais concevoir un système informatique
+en se disant qu'il ne sera jamais piraté.
+Au contraire, il faut vraiment le concevoir de sorte que même une fois compromis,
+les attaquants ne pourront pas provoquer de dégâts.
 
-Une image à avoir en tête est typiquement celle du "formage suisse".
+Une image à avoir en tête est typiquement celle du "fromage suisse".
 Aucune couche de défense ne doit être considérée incontournable ;
 après tout, tout antivirus peut échouer à détecter certains virus,
 tout logiciel peut avoir écrit avec des failles
 et toute machine peut avoir des portes dérobées.
-Mais en empilant adéquatement les couches de défense,
-vous pouvez réduire drastiquement la probabilité d'être vulnérable.  
+Mais en empilant adéquatement les couches de défense, 
+même si chacune a ses trous, au bout d'un moment vous êtes quand même suffisamment bien protégés.
 https://en.wikipedia.org/wiki/Swiss_cheese_model
 
 Ainsi, si on imagine que la probabilité qu'un attaquant perce une couche est égale à 10%,
