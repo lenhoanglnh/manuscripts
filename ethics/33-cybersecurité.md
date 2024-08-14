@@ -230,43 +230,37 @@ et ces les logiciels sont trop souvent minées de bugs, de failles, voire de por
 ces fournisseurs sont souvent trop occupées à développer de nouvelles fonctionnalités gadgets,
 au détriment de la sécurité des produits défectueux
 qu'ils sont déjà en train de vendre à très grande échelle ---
-à l'instar de Microsoft dont la faille exploitée par les hackers chinois à l'été 2023
-n'a toujours pas été identifiée, 
-selon un rapport alarmant de l'agence nationale de cybersécurité des États-Unis.  
-https://www.cisa.gov/sites/default/files/2024-04/CSRB_Review_of_the_Summer_2023_MEO_Intrusion_Final_508c.pdf  
-https://edition.cnn.com/2024/06/13/tech/microsoft-president-congress-cybersecurity-failures/index.html
+à l'instar de Microsoft qui vend Windows avec des mécanismes d'authentification 
+qui sont vulnérables aux mêmes attaques depuis 10 ans.
+https://medium.com/@offsecdeer/ntlmv1-domain-compromise-9bd8dd7e9891
+https://www.crowdstrike.fr/cybersecurity-101/pass-the-hash/
 
 Si l'on veut davantage protéger nos sociétés des failles de fournisseurs informatiques,
-qui plus est souvent américains ou chinois,
-comme Intel, Google, OpenAI, Lenovo ou autres Huawei,
 il va nous falloir augmenter drastiquement les exigences légales 
 vis-à-vis des produits commercialisés,
 comme cela est la norme dans toutes sortes de produits non numériques.
 
 Mais ce n'est pas tout.
-Sachant que les produits numériques sont souvent conçus avec des portes dérobées,
+Sachant que les produits numériques sont parfois conçus avec des portes dérobées,
 ou avec des systèmes de mise à jour qui permettent le contrôle à distance,
 et dans un contexte où les tensions géopolitiques augmentent à travers le monde,
-avec des dirigeants politiques qui ne sont pas toujours les plus dignes de confiance,
+avec des dirigeants politiques qui ne sont pas toujours de confiance,
 il est urgent de favoriser beaucoup plus des solutions informationnelles
-sur lesquelles nos organisations, voire nos sociétés, ont beaucoup plus de contrôle,
-à l'instar des logiciels libres et open source comme Linux,
+sur lesquelles nos organisations ou nos sociétés ont beaucoup plus de contrôle.
+C'est l'idée des logiciels libres et open-source comme Linux,
 qu'une loi suisse exige désormais pour les agences gouvernementales,
 et que la gendarmerie française a déjà adoptés.
 
 Enfin, les journalistes, les développeurs et les scientifiques 
-me semblent avoir une responsabilité particulière dans la cyberdéfense,
-tout simplement car leurs compétences représentent un grand pouvoir,
-et que, comme le dit l'oncle de Spiderman,
-de grands pouvoirs impliquent de grandes responsabilités.
+me semblent avoir une responsabilité particulière dans la cyberdéfense.
 
 Si au lieu de s'extasier devant une innovation technologique
 dont le niveau de sécurité est extrêmement faible,
-on donne tous beaucoup plus d'attention à la cybersécurité et aux solutions plus auditables,
+on donne tous plus d'attention à la cybersécurité et à la fiabilité des solutions,
 voire plus généralement aux technologies de l'information 
 qui ont davantage de chance de renforcer nos démocraties que de les affaiblir,
-nulle doute qu'on armera ainsi beaucoup mieux nos sociétés,
-pour les rendre plus résilientes à l'industrie mençante du cybercrime.
+nul doute qu'on armera ainsi beaucoup mieux nos sociétés,
+pour les rendre plus résilientes au cybercrime.
 
 
 ## Conclusion
@@ -278,13 +272,14 @@ notamment pour la survie des organisations et pour le tissu économique.
 Surtout à l'heure où les tensions géopolitiques se sont exacerbées,
 et où toutes les industries se sont fortement numérisées,
 il est ainsi urgent de donner beaucoup plus d'attention à la cybersécurité,
-et de prendre le temps de mieux comprendre les risques, les attaques et les défenses.
+d'arrêter d'en parler comme un sujet mystérieux et incompréhensible, 
+parce qu'il nous concerne tous !
 
 Ce faisant, comme on l'a vu,
-chacun d'entre vous peut aider, à protéger votre organisation et notre société.
+chacun d'entre nous peut aider, à protéger votre organisation et notre société.
 Et pour vous lancer dans votre initiation dans le domaine,
 j'ai bien sûr un livre à vous recommander,
-à savoir le "Guide de survie au cybercrime en entreprise",
+C'est notre "Guide de survie au cybercrime en entreprise",
 publié chez Dunod, préfacé par Guillaume Poupard, 
 et écrit par l'excellent Romain du Marais... Et par moi-même.
 
@@ -294,7 +289,7 @@ Et honnêtement, c'est un peu l'image que j'en avais il y a 10 ans.
 Cependant, plus je m'y intéresse, plus j'y vois un domaine avant tout fascinant,
 qui mêle aussi bien des mathématiques de très, très haut niveau,
 mais aussi des enjeux juridiques, psychologiques et sociologiques,
-et qui, clairement, nécessitera la contribution d'une énorme partie de la société,
+et qui, clairement, nécessite qu'on y contribue tous,
 pour être concrétisée dans le tissu économique et dans nos instances dirigeantes,
 de sorte à rendre nos sociétés numériques sûres et résilientes.
 
