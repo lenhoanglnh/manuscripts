@@ -73,32 +73,37 @@ Voilà qui confère une protection beaucoup plus grande qu'une couche robuste à
 
 ## Divers principes opérationnels
 
-En pratique, pour implémenter la défense en profondeur au mieux,
-c'est-à-dire concevoir un système d'information résilient
-à partir d'un grand nombre de composants potentiellement défectueux,
-l'empilement des couches de défense n'est pas la stratégie possible,
-et pas forcément toujours la plus efficace.
+En pratique, la défense en profondeur c'est difficile à implémenter,
+Parce qu'on ne conçoit pas le système d'information de zéro, 
+Mais on doit faire avec un grand nombre de composants potentiellement défectueux.
 
-Dans le livre plein d'exemples concrets,
-on identifie ainsi un certain nombre de principes opérationnels,
+Donc ce principe de défense en profondeur, il va se décliner en plein de façon de mettre de la sécurité
+à tous les niveaux du SI :
+c'est protéger l'accès au SI pour ne pas être piraté, 
+c'est aussi concevoir des systèmes difficiles à pirater au cas ou ça arrive,
+empêcher que le piratage d'un composant permette d'accéder à un autre,
+et même finir par une couche de détection... au cas où tout ça n'a pas marché.
+
+Dans le livre, on part de plein d'exemples concrets,
+et au fil du livre on identifie un certain nombre de principes opérationnels,
 auxquels il est utile de penser pour renforcer notre défense en profondeur.
 
-Par exemple, 
-surtout quand il s'agit de sauvegardes de données ou d'identifiants d'authentification,
-il est indispensable de miser sur la redondance des solutions,
-mais aussi sur leur diversification.
+Par exemple, un principe important c'est de miser sur la redondance des solutions,
+et aussi sur leur diversification.
+C'est indispensable quand il s'agit de sauvegardes ou d'authentification.
 Typiquement, je vous invite très vivement à utiliser des mots de passe radicalement différents
 pour les différents services informatiques que vous utilisez,
 de sorte que, même si l'un de vos mots de passe parvient à être deviné par un attaquant,
-peut-être parce qu'un service que vous utilisez s'est fait piraté comme cela arrive souvent,
 l'attaquant demeure incapable d'accéder aux autres services informatiques que vous utilisez.
 
 De même, il est critique de ne pas garder les sauvegardes de données à un même endroit,
-ou de permettre l'accès à ces sauvegardes via une même machine d'un administrateur.
-Et oui, il suffira alors à l'attaquant d'accéder à cette unique machine de l'administrateur,
+ou de permettre l'accès à ces sauvegardes par une machine qui est utilisée pour autre chose.
+Parce qu'il suffira alors à l'attaquant d'accéder à cette machine,
 pour ensuite pourrir toutes les sauvegardes,
-et ainsi effectuer une attaque par ransomware dévastatrice.
-Typiquement, une telle attaque va chiffrer toutes les données de l'organisation,
+et effectuer une attaque par ransomware dévastatrice.
+
+Ce genre d'attaques est très courante !
+Elle va chiffrer toutes les données de l'organisation,
 de sorte à paralyser complètement son activité,
 et exiger une rançon pour restaurer vos données.
 
@@ -110,8 +115,7 @@ aux parties les plus sensibles de votre réseau.
 
 D'ailleurs, pour ralentir, voire bloquer, les attaquants dans leurs démarches,
 il est aussi indispensable de décomposer votre système en un grand nombre de composants,
-et à limiter les droits de chaque composant au moindre privilège 
-qui lui est nécessaire pour fonctionner correctement.
+et à limiter les droits de chaque composant aux **moindres privilèges** nécessaires.
 C'est typiquement ce que font déjà les téléphones et les navigateurs web,
 en interdisant l'accès d'une application ou d'un onglet à la caméra ou au microphone 
 de votre machine.
@@ -129,7 +133,7 @@ c'est-à-dire le nombre de portes d'entrée
 par lesquels les attaquants pourront infiltrer votre système d'information,
 à l'instar des chateaux-forts dont la seule entrée accessible est un pont levis.
 Pour minimiser la surface d'attaque, rien de plus simple.
-Il suffit tout bêtement d'appliquer la sobriété numérique,
+En fait ça revient à appliquer tout simplement une certaine sobriété numérique,
 c'est-à-dire de minimiser le nombre de logiciels,
 d'extensions navigateurs ou de fonctionnalités à déployer.
 Plus votre machine sera spécialisée dans un petit nombre de tâches précises,
@@ -137,7 +141,7 @@ et conçue pour ne réaliser que ces tâches, plus vous serez protégés.
 
 Et bon, malheureusement, en pratique,
 le marketing des géants du numérique va complètement à l'encontre de ce principe,
-en proposant des solutions fourre-tout comme Microsoft 365,
+en proposant des solutions fourre-tout,
 ou cherchant à intégrer toutes sortes de gadgets peu utiles,
 notamment à base d'algorithmes génératifs.
 Méfiez-vous sérieusement de ce genres de solutions pseudo-futuristes,
@@ -163,19 +167,35 @@ de vos systèmes d'information,
 ce qui impliquent que eux aussi peuvent être des composants faillibles,
 ou, à l'inverse, devenir des atouts pour la cybersécurité de votre organisation.
 
-Ainsi, au lieu d'y voir des vecteurs de faille potentiels,
-nous vous invitons à y voir des solutions pour augmenter drastiquement
-la résilience de votre organisation à des cyber-attaques,
-qui chercheraient à nuire aux flux de traitement et de communication de l'information
-au sein de votre organisation.
-Faites de vos collaborateurs des acteurs de la cybersécurité.
+> @RDM 
+
+En fait,souvent on parle de faille "entre la chaise et le clavier".
+Cette expression elle est absurde, parce que ce si toute votre organisation se fait pirater,
+l'erreur elle est chez vous !
+C'est vous qui avez pas suffisamment sécurisé votre SI, 
+il y avait un risque très probable et vous l'avez laissé devenir très impactant.
+
+> @RDM 
+
+Donc au lieu de voir vos collaborateurs comme des vulnérabilités,
+Il faut d'abord se dire qu'ils essaient juste de faire leur boulot
+Et c'est à vous de les aider et de leur proposer des moyens sécurisés de le faire !
+Si la sécu est tout le temps dans l'opposition, ils et elles feront leur boulot sans.
+En fait on peut même aller plus loin : plutôt que d'être dans l'opposition,
+faites de vos collaborateurs des acteurs de la cybersécurité ! 
+C'est elles et eux qui connaissent les systèmes sur lesquels ils bossent,
+et c'est elles et eux les premiers qui pourront détecter que quelque chose cloche.
 
 Bien sûr, pour y arriver, 
-on ne vous recommande pas d'enseigner les lignes de commande à tous vos collègues,
-ou de leur apprendre à coder en Rust.
-D'une part, parce que ça risque de ne pas les intéresser.
-Mais surtout, parce qu'il n'y a nul besoin d'être technique
-pour contribuer de manière essentielle à la cybersécurité de votre organisation.
+on ne vous demande pas d'enseigner le hacking à tous vos collègues.
+
+> @RDM enfin si, moi c'est ce que je fais avec mes collègues, parce que si tu sais hacker tu sais défendre
+
+> @LNH ah ouais ? ok (ou whatever the line you wanna say)
+
+Mais en réalité, il y a pas besoin d'être technique
+pour contribuer à la cybersécurité !
+Il y a surtout besoin que tout le monde s'empare du sujet.
 
 En fait, les plus grandes contributions à la cybersécurité,
 ce ne sont généralement pas des lignes de codes ;
@@ -185,16 +205,16 @@ ce sont davantage des questions comme
 "Comment notre site web réagit-il, si un utilisateur fait ceci ?"
 "Notre investissement en cybersécurité jusque là est-il suffisant ?"
 
-Si vous pensez pouvoir poser ces questions,
+Si vous pensez vous poser ces questions,
 c'est que notre livre est fait pour vous.
-Son objectif, c'est vraiment de permettre à toutes sortes de collaborateurs
+Son objectif, c'est vraiment de permettre à tous les collaborateurs
 de mieux comprendre les enjeux et les menaces de cybersécurité,
 les grands principes d'une cyberdéfense pertinente et efficace,
 et les nombreuses questions qu'il faut se poser,
 pour évaluer l'exposition aux risques de vos organisations,
 et pour réduire drastiquement l'impact des cyber attaques.
 
-Il est urgent de ne pas délaisser la cybersécurité à une poignée de geeks dans votre organisation.
+C'est urgent de ne pas délaisser la cybersécurité à une poignée de geeks dans votre organisation.
 Seuls, ils n'y arriveront pas, seront frustrés, et vous frusteront.
 Nous devons sécuriser notre espace informationnel ensemble.
 
@@ -203,14 +223,13 @@ Nous devons sécuriser notre espace informationnel ensemble.
 
 Si jusque là, j'ai beaucoup insisté sur les actions individuelles que vous pouvez entreprendre
 pour augmenter drastiquement la résilience de vos organisations face à la menace cyber,
-je ne peux suffisamment insister sur l'importance d'une réponse sociétale à cette menace.
+je ne peux que insister sur l'importance d'une réponse sociétale à cette menace.
 À moins que vous ne soyez une petite organisation d'experts dans le domaine,
-vous utilisez forcément un grand nombre de solutions vendues par des fournisseurs,
-dont les logiciels sont trop souvent minées de bugs, de failles, voire de portes dérobées ;
-et qui sont souvent plus occupées à développer de nouvelles fonctionnalités,
-ou des algorithmes génératifs spectaculaires,
-qu'à investir massivement dans la sécurité des produits défectueux 
-qu'ils ont déjà commercialisés à très grande échelle ---
+vous utilisez forcément un grand nombre de programmes vendus par des fournisseurs,
+et ces les logiciels sont trop souvent minées de bugs, de failles, voire de portes dérobées ;
+ces fournisseurs sont souvent trop occupées à développer de nouvelles fonctionnalités gadgets,
+au détriment de la sécurité des produits défectueux
+qu'ils sont déjà en train de vendre à très grande échelle ---
 à l'instar de Microsoft dont la faille exploitée par les hackers chinois à l'été 2023
 n'a toujours pas été identifiée, 
 selon un rapport alarmant de l'agence nationale de cybersécurité des États-Unis.  
