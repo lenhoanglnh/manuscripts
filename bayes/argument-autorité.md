@@ -279,7 +279,8 @@ Alice et Bob finiront par dire exactement la même probabilité.
 Dès lors leurs estimations postérieures sur la probabilité d'élection d'Harris seront les mêmes.
 
 Dans un cadre plus général,
-Scott Aaronson a même démontré que, pour toute erreur epsilon, delta > 0,
+l'informaticien Scott Aaronson a même démontré que, 
+pour toute erreur epsilon, delta > 0,
 après 257 / (delta * epsilon^2) échanges,
 et avec une probabilité au moins 1-delta,
 les postérieurs d'Alice et Bob diffèreront d'au plus epsilon.  
@@ -288,13 +289,27 @@ https://www.scottaaronson.com/papers/agree-econ.pdf
 Autrement dit, il suffira d'environ 257 000 échanges pour que,
 avec une probabilité au moins 90%,
 l'erreur de prédiction entre Alice et Bob soit au plus de 10%.
-
 Bon, ça reste de très longs échanges, 
 avec des calculs bayésiens complexes entre chaque échange.
-Mais ce que je trouve fascinant dans ce que ce théorème suggère,
+
+Et en fait, il y a très certainement des manières plus efficaces de dialoguer,
+comme l'étudie notamment l'économiste Christina Pawlowitsch
+dans un article de 2021 sur l'optimisation des dialogues bayésiens.
+Et typiquement, ce que vous allez vouloir faire,
+c'est imaginer les états du monde que votre interlocuteur considère encore probable,
+et lui fournir des données qui lui permettent d'exclure efficacement
+des états du monde que vous êtes en mesure de rejeter grâce à vos données,
+et qui nuisent à son estimation de la probabilité de l'élection de Kamala Harris.  
+https://link.springer.com/content/pdf/10.1007/s11229-021-03288-0.pdf
+
+En fait, ce que je trouve le plus fascinant 
+dans toutes ces analyses de dialogues entre bayésiens,
 c'est que nos débats pourraient être plus informatifs,
-si nous faisions nous aussi l'effort intellectuel 
-d'intégrer dans nos raisonnements des croyances d'ordre supérieur.
+si nous faisions beaucoup plus systématiquement l'effort intellectuel 
+d'intégrer dans nos raisonnements des croyances d'ordre supérieur,
+en nous plongeant en particulier sur ce que notre interlocuteur a en tête,
+voire sur ce qu'il croit que nous avons en tête,
+voire peut-être même sur ce qu'il croit que vous croyez qu'il a en tête.
 
 Friends: They don't know that we know that they know that we know.
 
@@ -303,12 +318,20 @@ quelles sont les raisons pour lesquelles elle en est venu à sa conclusion ?
 Cette personne a-t-elle accès à des informations pertinentes et fiables ?
 A-t-elle des conflits d'intérêts et des motivations autres 
 que le partage honnête de ses croyances ?
-Et enfin, son raisonnement a-t-il des chances de conduire à des conclusions similaires,
+Et son raisonnement a-t-il des chances de conduire à des conclusions similaires,
 que celles d'une pure bayésienne,
 y compris l'intégration de calculs de croyances d'ordre supérieur ?
+Voire, mieux encore, avant que vous ne disiez quoi que ce soit,
+demandez ce que cette personne sait de vous, ou croit à votre sujet,
+et qui le poussera à interpréter ce que vous lui dites de telle ou telle manière ?
+Et si vous ne pourriez pas lui dire quelque chose,
+qui modifiera sa perception de vos connaissances,
+voire sa perception de la manière dont vous la percevez.
+Et à l'inverse, soyez attentif à ce que cet interlocuteur vous dit,
+parfois dans le but de modifier votre perception de sa perception de votre perception...
 
-Voici des réflexions essentielles pour #DébattonsMieux ;
-et en particulier, si vous avez la chance de parler 
+Tant des réflexions essentielles pour #DébattonsMieux !
+En particulier, si vous avez la chance de parler 
 à des personnes informées, honnêtes et dont le raisonnement coïncide suffisamment
 avec les lois des probabilités,
 pensez à intégrer correctement les affirmations de ces personnes.
