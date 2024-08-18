@@ -90,24 +90,17 @@ que la probabilité de victoire de Kamala Harris est de 60%.
 > suite notamment à la panne majeure provoquée par une faille de CrowdStrike.
 > Et si vous êtes un peu pointus, 
 > vous avez peut-être même vu que Microsoft a été l'objet 
-> (d'une faille moins spectaculaire, mais bien plus grave encore)[[https://www.theregister.com/2024/08/14/august_patch_tuesday_ipv6/]].
-> Comme d'autres entreprises américaine, 
-> Microsoft est par ailleurs soumis à des lois de cybersurveillance américaine
-> qui peuvent autoriser le gouvernement outre-Atlantique d'accéder aux données des clients Microsoft.
+> (d'une faille moins spectaculaire, mais bien plus grave encore)[[https://www.theregister.com/2024/08/14/august_patch_tuesday_ipv6/]]. 
 > Si vous ou votre entreprise sentez l'urgence à développer un numérique plus responsable, 
 > je vous invite en particulier à vous intéresser à Infomaniak.
 > À l'heure où les systèmes d'information sont trop souvent outsourcés à des tiers 
 > qui exploitent vos données et les données de vos entreprises pour entraîner des algorithmes génératifs, 
 > il est devenu urgent de considérer que Slack, Google Docs ou autre Microsoft Teams sont des spywares en puissance. 
-> A contrario, Infomaniak est une entreprise suisse 100% indépendante
-> qui fait un effort majeur pour tout développer de manière souveraine, 
-> avec des collaborateurs uniquement en Suisse, 
-> une société indépendante enregistrée en Suisse et un For juridique en Suisse.
-> (tout ce qu'il faut pour garantir 100% souveraineté), 
+> A contrario, Infomaniak fait un effort majeur pour tout développer de manière souveraine, 
+> avec des collaborateurs uniquement en Suisse, un pays beaucoup plus digne de confiance, 
 > notamment par opposition aux entreprises américaines soumises au Patriot Act. 
-> Vous pouvez profitez gratuitement des services Drive, Mail et SwissTransfer d'Infomaniak, 
-> et je vous recommande aussi vivement leur kSuite
-> qui est une alternative souveraine complète à Microsoft 365 ou Google WorkSpace.
+> Vous pouvez profitez gratuitement des services Mail et SwissTransfer d'Infomaniak, 
+> et je vous recommande aussi vivement leurs services Web, kMeet ou encore kDrive. 
 > Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
 > Infomaniak reverse un don à l'Association Tournesol. 
 > Merci beaucoup à eux pour ce partenariat.
@@ -280,37 +273,10 @@ Et Alice va alors effectuer un raisonnement sur ce qu'elle pense
 que Bob pense qu'elle pense sur ce qu'il pense sur sa pensée,
 et ainsi de suite.
 
-C'est ce que l'excellente Julia Galef explique excellement dans cette vidéo :
-https://tournesol.app/entities/yt:HxUxlVijZQw  
-
-Et dans ette autre vidéo, 
-Julia Galef insiste sur le danger de la phrase 
-"je ne comprends pas comment on peut croire X".
-Plus qu'un aveu d'ignorance,
-ce genre de phrases incite surtout à renoncer à l'effort
-de réflexion sur les croyances d'ordre supérieure,
-pourtant indispensable pour extraire un maximum d'information des interlocuteurs,
-et pour déterminer comment échanger au mieux avec eux.  
-https://tournesol.app/entities/yt:chALQCm9VgE
-
-A contrario,
-de manière remarquable, Geanakoplos et Polemarchakis ont démontré que,
+De manière remarquable, Geanakoplos et Polemarchakis ont démontré que,
 si l'ensemble des possibles est fini,
-et si Alice et Bob sont bien bayésiens et effectuent ces raisonnements 
-sur les croyances probables des autres,
-alors Alice et Bob finiront par dire exactement la même probabilité.
-Dès lors leurs estimations postérieures 
-sur la probabilité d'élection d'Harris seront les mêmes,
-et elle sera bien entendu celles qu'ils affirment publiquement.
-
-Et leur démonstration est très simple :
-juste après qu'Alice a donné son estimation,
-elle s'attend à ce que Bob a la même estimation qu'elle.
-Techniquement, c'est parce que l'a priori est nécessairement l'espérance du postérieur.
-Quoi qu'il en soit, si Bob exprime un désaccord,
-alors Alice sera néécessairement surprise par cela,
-ce qui la forcera à réviser ses croyances ;
-et en particulier à supprimer certains états du monde qu'elle pensait encore plausibles.
+Alice et Bob finiront par dire exactement la même probabilité.
+Dès lors leurs estimations postérieures sur la probabilité d'élection d'Harris seront les mêmes.
 
 Dans un cadre plus général,
 Scott Aaronson a même démontré que, pour toute erreur epsilon, delta > 0,
@@ -322,27 +288,10 @@ https://www.scottaaronson.com/papers/agree-econ.pdf
 Autrement dit, il suffira d'environ 257 000 échanges pour que,
 avec une probabilité au moins 90%,
 l'erreur de prédiction entre Alice et Bob soit au plus de 10%.
+
 Bon, ça reste de très longs échanges, 
 avec des calculs bayésiens complexes entre chaque échange.
-
-Mais il est en général certainement possible d'optimiser l'échange.
-Alice pourrait ainsi gagner en fournissant à Bob l'information dont elle dispose
-qui a le plus de change de le surprendre,
-ou, mieux encore, celle qui a le plus de chances de modifier ses croyances 
-à propos du sujet du débat,
-plutôt que de donner uniquement à Bob son postérieur.
-
-D'ailleurs, dans un article récent qui date de 2021,
-la chercheuse Christina Pawlowitsch démontre qu'il est en fait possible
-qu'une convergence de croyance entre Alice et Bob avec un simple échange de postérieurs
-ne produise pas les croyances qu'Alice et Bob auraient,
-s'ils s'étaient échangés leurs données respectives.
-Alice et Bob gagneraient alors à aller au-delà du consensus,
-et à s'échanger des informations qui pourraient affiner leurs croyances respectives.  
-https://pubmed.ncbi.nlm.nih.gov/34305184/
-
-Quoi qu'il en soit, 
-ce que je trouve fascinant dans ce que ces théorèmes sur les dialogues bayésiens suggèrent,
+Mais ce que je trouve fascinant dans ce que ce théorème suggère,
 c'est que nos débats pourraient être plus informatifs,
 si nous faisions nous aussi l'effort intellectuel 
 d'intégrer dans nos raisonnements des croyances d'ordre supérieur.
@@ -415,7 +364,7 @@ ce qui va permettre aux nombreux bénévoles de l'Association, notamment moi,
 de continuer à contribuer au projet sur nos heures perdues.
 Mais surtout, notre Association continue à recevoir près de 2000 euros de dons mensuels.
 On n'est en fait pas si loin d'une entrée suffisante,
-mais le déficit de 2000 euros par mois depuis près de deux ans
+mais le déficit de 1000 euros par mois depuis près de deux ans
 a fini par puiser dans toutes nos réserves.
 
 Quoi qu'il en soit, on a encore besoin de vos dons, 
