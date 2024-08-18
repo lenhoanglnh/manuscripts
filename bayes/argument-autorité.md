@@ -85,6 +85,26 @@ un guide de montagne ou un plombier de confiance.
 Ou lorsqu'un ami bien plus informé que vous affirme 
 que la probabilité de victoire de Kamala Harris est de 60%.
 
+> En parlant d'actualités, 
+> vous avez peut-être vu l'été dernier l'importance de la cybersécurité
+> suite notamment à la panne majeure provoquée par une faille de CrowdStrike.
+> Et si vous êtes un peu pointus, 
+> vous avez peut-être même vu que Microsoft a été l'objet 
+> (d'une faille moins spectaculaire, mais bien plus grave encore)[[https://www.theregister.com/2024/08/14/august_patch_tuesday_ipv6/]]. 
+> Si vous ou votre entreprise sentez l'urgence à développer un numérique plus responsable, 
+> je vous invite en particulier à vous intéresser à Infomaniak.
+> À l'heure où les systèmes d'information sont trop souvent outsourcés à des tiers 
+> qui exploitent vos données et les données de vos entreprises pour entraîner des algorithmes génératifs, 
+> il est devenu urgent de considérer que Slack, Google Docs ou autre Microsoft Teams sont des spywares en puissance. 
+> A contrario, Infomaniak fait un effort majeur pour tout développer de manière souveraine, 
+> avec des collaborateurs uniquement en Suisse, un pays beaucoup plus digne de confiance, 
+> notamment par opposition aux entreprises américaines soumises au Patriot Act. 
+> Vous pouvez profitez gratuitement des services Mail et SwissTransfer d'Infomaniak, 
+> et je vous recommande aussi vivement leurs services Web, kMeet ou encore kDrive. 
+> Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
+> Infomaniak reverse un don à l'Association Tournesol. 
+> Merci beaucoup à eux pour ce partenariat.
+
 
 ## La démonstration
 
