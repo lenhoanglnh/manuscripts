@@ -273,9 +273,25 @@ Et Alice va alors effectuer un raisonnement sur ce qu'elle pense
 que Bob pense qu'elle pense sur ce qu'il pense sur sa pensée,
 et ainsi de suite.
 
-De manière remarquable, Geanakoplos et Polemarchakis ont démontré que,
+C'est ce que l'excellente Julia Galef explique excellement dans cette vidéo :
+https://tournesol.app/entities/yt:HxUxlVijZQw  
+
+Et dans ette autre vidéo, 
+Julia Galef insiste sur le danger de la phrase 
+"je ne comprends pas comment on peut croire X".
+Plus qu'un aveu d'ignorance,
+ce genre de phrases incite surtout à renoncer à l'effort
+de réflexion sur les croyances d'ordre supérieure,
+pourtant indispensable pour extraire un maximum d'information des interlocuteurs,
+et pour déterminer comment échanger au mieux avec eux.  
+https://tournesol.app/entities/yt:chALQCm9VgE
+
+A contrario,
+de manière remarquable, Geanakoplos et Polemarchakis ont démontré que,
 si l'ensemble des possibles est fini,
-Alice et Bob finiront par dire exactement la même probabilité.
+et si Alice et Bob sont bien bayésiens et effectuent ces raisonnements 
+sur les croyances probables des autres,
+alors Alice et Bob finiront par dire exactement la même probabilité.
 Dès lors leurs estimations postérieures 
 sur la probabilité d'élection d'Harris seront les mêmes,
 et elle sera bien entendu celles qu'ils affirment publiquement.
