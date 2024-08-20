@@ -375,7 +375,7 @@ ce qui va permettre aux nombreux bénévoles de l'Association, notamment moi,
 de continuer à contribuer au projet sur nos heures perdues.
 Mais surtout, notre Association continue à recevoir près de 2000 euros de dons mensuels.
 On n'est en fait pas si loin d'une entrée suffisante,
-mais le déficit de 1000 euros par mois depuis près de deux ans
+mais le déficit de 2000 euros par mois depuis près de deux ans
 a fini par puiser dans toutes nos réserves.
 
 Quoi qu'il en soit, on a encore besoin de vos dons, 
