@@ -276,7 +276,18 @@ et ainsi de suite.
 De manière remarquable, Geanakoplos et Polemarchakis ont démontré que,
 si l'ensemble des possibles est fini,
 Alice et Bob finiront par dire exactement la même probabilité.
-Dès lors leurs estimations postérieures sur la probabilité d'élection d'Harris seront les mêmes.
+Dès lors leurs estimations postérieures 
+sur la probabilité d'élection d'Harris seront les mêmes,
+et elle sera bien entendu celles qu'ils affirment publiquement.
+
+Et leur démonstration est très simple :
+juste après qu'Alice a donné son estimation,
+elle s'attend à ce que Bob a la même estimation qu'elle.
+Techniquement, c'est parce que l'a priori est nécessairement l'espérance du postérieur.
+Quoi qu'il en soit, si Bob exprime un désaccord,
+alors Alice sera néécessairement surprise par cela,
+ce qui la forcera à réviser ses croyances ;
+et en particulier à supprimer certains états du monde qu'elle pensait encore plausibles.
 
 Dans un cadre plus général,
 Scott Aaronson a même démontré que, pour toute erreur epsilon, delta > 0,
