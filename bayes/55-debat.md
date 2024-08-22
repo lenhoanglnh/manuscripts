@@ -315,10 +315,27 @@ https://www.scottaaronson.com/papers/agree-econ.pdf
 Autrement dit, il suffira d'environ 257 000 échanges pour que,
 avec une probabilité au moins 90%,
 l'erreur de prédiction entre Alice et Bob soit au plus de 10%.
-
 Bon, ça reste de très longs échanges, 
 avec des calculs bayésiens complexes entre chaque échange.
-Mais ce que je trouve fascinant dans ce que ce théorème suggère,
+
+Mais il est en général certainement possible d'optimiser l'échange.
+Alice pourrait ainsi gagner en fournissant à Bob l'information dont elle dispose
+qui a le plus de change de le surprendre,
+ou, mieux encore, celle qui a le plus de chances de modifier ses croyances 
+à propos du sujet du débat,
+plutôt que de donner uniquement à Bob son postérieur.
+
+D'ailleurs, dans un article récent qui date de 2021,
+la chercheuse Christina Pawlowitsch démontre qu'il est en fait possible
+qu'une convergence de croyance entre Alice et Bob avec un simple échange de postérieurs
+ne produise pas les croyances qu'Alice et Bob auraient,
+s'ils s'étaient échangés leurs données respectives.
+Alice et Bob gagneraient alors à aller au-delà du consensus,
+et à s'échanger des informations qui pourraient affiner leurs croyances respectives.  
+https://pubmed.ncbi.nlm.nih.gov/34305184/
+
+Quoi qu'il en soit, 
+ce que je trouve fascinant dans ce que ces théorèmes sur les dialogues bayésiens suggèrent,
 c'est que nos débats pourraient être plus informatifs,
 si nous faisions nous aussi l'effort intellectuel 
 d'intégrer dans nos raisonnements des croyances d'ordre supérieur.
