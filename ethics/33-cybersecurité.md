@@ -169,18 +169,17 @@ ou, à l'inverse, devenir des atouts pour la cybersécurité de votre organisati
 
 > @RduMarais 
 
-En fait,souvent on parle de faille "entre la chaise et le clavier".
-Cette expression elle est absurde, parce que ce si toute votre organisation se fait pirater,
-l'erreur elle est chez vous !
-C'est vous qui avez pas suffisamment sécurisé votre SI, 
-il y avait un risque très probable et vous l'avez laissé devenir très impactant.
-
-> @RduMarais 
-
-Donc au lieu de voir vos collaborateurs comme des vulnérabilités,
-Il faut d'abord se dire qu'ils essaient juste de faire leur boulot
-Et c'est à vous de les aider et de leur proposer des moyens sécurisés de le faire !
-Si la sécu est tout le temps dans l'opposition, ils et elles feront leur boulot sans.
+On entend souvent que la faille est "entre la chaise et le clavier".
+Et en effet, beaucoup d'attaques, notamment les attaques par ingénierie sociale,
+cherchent à provoquer et exploiter des erreurs de vos collaborateurs.
+Cependant, si un de vos collaborateurs commet une erreur, et si cela conduit à un effondrement du SI,
+c'est que votre SI et votre organisation ont failli.
+D'un côté, il est essentiel d'avoir appliqué la défense en profondeur : 
+votre SI doit être conçu de sorte que les erreurs d'un unique employé ne doivent pas pouvoir conduire
+à une compromission de l'ensemble du SI.
+De l'autre, il est indispensable d'accompagner vos collaborateurs,
+et de déterminer avec eux des solutions pour leur permettre 
+de mener à bien et en toute sécurité leurs propres missions.
 En fait on peut même aller plus loin : plutôt que d'être dans l'opposition,
 faites de vos collaborateurs des acteurs de la cybersécurité ! 
 C'est elles et eux qui connaissent les systèmes sur lesquels ils bossent,
