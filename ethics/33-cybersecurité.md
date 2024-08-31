@@ -297,11 +297,12 @@ pour les rendre plus résilientes au cybercrime.
 > les médias couvrent de plus en plus des pannes et des attaques informatiques.
 > La cyber est devenu un enjeu majeur, 
 > notamment pour la survie des organisations et pour le tissu économique.
-> Surtout à l'heure où les tensions géopolitiques se sont exacerbées,
-> et où toutes les industries se sont fortement numérisées,
-> il est ainsi urgent de donner beaucoup plus d'attention à la cybersécurité,
-> d'arrêter d'en parler comme un sujet mystérieux et incompréhensible, 
-> parce qu'il nous concerne tous !
+> En fait c'est urgent de donner beaucoup plus d'attention à la cybersécurité,
+> surtout à l'heure où les tensions géopolitiques se sont exacerbées,
+> et où toutes les industries se sont complètement numérisées.
+> Il faut vraiment arrêter d'en parler comme un sujet mystérieux et obscur, 
+> parce que ça concerne tout le monde !
+> C'est comme la santé, pas besoin d'être médecin pour prendre soin de sa santé !
 
 > @lenhoanglnh
 
