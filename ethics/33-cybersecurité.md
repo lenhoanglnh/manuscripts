@@ -1,5 +1,7 @@
 # Le principe fondamental de la cybersécurité
 
+> @lenhoanglnh
+
 Comment éviter qu'une mise à jour défaillante de l'un des nombreux logiciels
 utilisés par le système d'information de votre organisation
 ne provoque à une panne majeure
@@ -42,12 +44,14 @@ ce n'est qu'une question de temps avant que votre organisation soit attaquée.
 > Mais du coup, ça ce n'est qu'une question de temps
 > avant que vous intéressiez des attaquants plus costauds !
 
-La question qu'il faut se poser, 
-c'est donc pas « si » on sera attaqué
-mais plutôt « et alors ? ».
-Et ainsi anticiper les attaques et prendre les mesures les plus pertinentes
-pour minimiser les impacts de ces attaques 
-sur votre organisation.
+> La question qu'il faut se poser, 
+> c'est donc pas « si » on sera attaqué
+> mais plutôt « et alors ? ».
+> Et ainsi anticiper les attaques et prendre les mesures les plus pertinentes
+> pour minimiser les impacts de ces attaques 
+> sur votre organisation.
+
+> @lenhoanglnh
 
 Autrement dit, la défense en profondeur, 
 c'est l'idée qu'il ne faut jamais concevoir un système informatique
@@ -73,16 +77,19 @@ Voilà qui confère une protection beaucoup plus grande qu'une couche robuste à
 
 ## Divers principes opérationnels
 
-En pratique, la défense en profondeur c'est difficile à implémenter,
-Parce qu'on ne conçoit pas le système d'information de zéro, 
-Mais on doit faire avec un grand nombre de composants potentiellement défectueux.
+> @RduMarais
+> En pratique, la défense en profondeur c'est difficile à implémenter,
+> Parce qu'on ne conçoit pas le système d'information de zéro, 
+> Mais on doit faire avec un grand nombre de composants potentiellement défectueux.
 
-Donc ce principe de défense en profondeur, il va se décliner en plein de façon de mettre de la sécurité
-à tous les niveaux du SI :
-c'est protéger l'accès au SI pour ne pas être piraté, 
-c'est aussi concevoir des systèmes difficiles à pirater au cas ou ça arrive,
-empêcher que le piratage d'un composant permette d'accéder à un autre,
-et même finir par une couche de détection... au cas où tout ça n'a pas marché.
+> Donc ce principe de défense en profondeur, il va se décliner en plein de façon de mettre de la sécurité
+> à tous les niveaux du SI :
+> c'est protéger l'accès au SI pour ne pas être piraté, 
+> c'est aussi concevoir des systèmes difficiles à pirater au cas ou ça arrive,
+> empêcher que le piratage d'un composant permette d'accéder à un autre,
+> et même finir par une couche de détection... au cas où tout ça n'a pas marché.
+
+> @lenhoanglnh
 
 Dans le livre, on part de plein d'exemples concrets,
 et au fil du livre on identifie un certain nombre de principes opérationnels,
@@ -96,16 +103,18 @@ pour les différents services informatiques que vous utilisez,
 de sorte que, même si l'un de vos mots de passe parvient à être deviné par un attaquant,
 l'attaquant demeure incapable d'accéder aux autres services informatiques que vous utilisez.
 
-De même, il est critique de ne pas garder les sauvegardes de données à un même endroit,
-ou de permettre l'accès à ces sauvegardes par une machine qui est utilisée pour autre chose.
-Parce qu'il suffira alors à l'attaquant d'accéder à cette machine,
-pour ensuite pourrir toutes les sauvegardes,
-et effectuer une attaque par ransomware dévastatrice.
 
-Ce genre d'attaques est très courante !
-Elle va chiffrer toutes les données de l'organisation,
-de sorte à paralyser complètement son activité,
-et exiger une rançon pour restaurer vos données.
+> @RduMarais
+> De même, il est critique de ne pas garder les sauvegardes de données à un même endroit,
+> ou de permettre l'accès à ces sauvegardes par une machine qui est utilisée pour autre chose.
+> Parce qu'il suffira alors à l'attaquant d'accéder à cette machine,
+> pour ensuite pourrir toutes les sauvegardes,
+> et effectuer une attaque par ransomware dévastatrice.
+
+> Ce genre d'attaques est très courante !
+> Elle va chiffrer toutes les données de l'organisation,
+> de sorte à paralyser complètement son activité,
+> et exiger une rançon pour restaurer vos données.
 
 Autre principe opérationnel essentiel : le monitoring de votre système d'information.
 Il vous faut constamment avoir accès et analyser toutes sortes d'opérations sur vos machines,
@@ -113,18 +122,21 @@ de sorte à identifier toute anomalie suspecte aussi vite que possible,
 et bloquer les attaquants avant qu'ils ne parviennent à accéder 
 aux parties les plus sensibles de votre réseau.
 
-D'ailleurs, pour ralentir, voire bloquer, les attaquants dans leurs démarches,
-il est aussi indispensable de décomposer votre système en un grand nombre de composants,
-et à limiter les droits de chaque composant aux **moindres privilèges** nécessaires.
-C'est typiquement ce que font déjà les téléphones et les navigateurs web,
-en interdisant l'accès d'une application ou d'un onglet à la caméra ou au microphone 
-de votre machine.
-Ainsi, votre système d'information ressemblera à une sorte de sous-marin,
-avec un grand nombre de compartiments distincts,
-et avec une conception telle que l'infiltration d'un compartiment
-puisse être restreinte uniquement à ce compartiment,
-sans mettre en péril les autres compartiments du sous-marin.
-On parle dans le jargon de cloisonnement, d'isolation ou de sandboxing des composants.
+> @RduMarais
+> D'ailleurs, pour ralentir, voire bloquer, les attaquants dans leurs démarches,
+> il est aussi indispensable de décomposer votre système en un grand nombre de composants,
+> et à limiter les droits de chaque composant aux **moindres privilèges** nécessaires.
+> C'est typiquement ce que font déjà les téléphones et les navigateurs web,
+> en interdisant l'accès d'une application ou d'un onglet à la caméra ou au microphone 
+> de votre machine.
+> Ainsi, votre système d'information ressemblera à une sorte de sous-marin,
+> avec un grand nombre de compartiments distincts,
+> et avec une conception telle que l'infiltration d'un compartiment
+> puisse être restreinte uniquement à ce compartiment,
+> sans mettre en péril les autres compartiments du sous-marin.
+> On parle dans le jargon de cloisonnement, d'isolation ou de sandboxing des composants.
+
+> @lenhoanglnh
 
 Mais s'il y a un seul conseil opérationnel que je devais vous donner,
 ce serait davantage, et de très loin,
@@ -151,7 +163,9 @@ l'exposition à des risques additionnels.
 
 ## Devenons tous acteurs de la cybersécurité
 
-Dans notre livre, Romain et moi considérons 
+> @lenhoanglnh
+
+Dans ce livre, Romain et moi considérons 
 que le système d'information de votre organisation,
 c'est, eh bien, tout ce qui permet à votre organisation
 d'effectuer l'ensemble des tâches informationnelles auxquelles elle confrontée.
@@ -165,32 +179,34 @@ Mais ce n'est pas tout.
 Pour nous, vos collaborateurs sont aussi des éléments essentiels
 de vos systèmes d'information,
 ce qui impliquent que eux aussi peuvent être des composants faillibles,
-ou, à l'inverse, devenir des atouts pour la cybersécurité de votre organisation.
+ou, à l'inverse, devenir des atouts pour la sécurité de votre organisation.
 
 > @RduMarais 
 
-On entend souvent que la faille est "entre la chaise et le clavier".
-Et en effet, beaucoup d'attaques, notamment les attaques par ingénierie sociale,
-cherchent à provoquer et exploiter des erreurs de vos collaborateurs.
-Cependant, si un de vos collaborateurs commet une erreur, et si cela conduit à un effondrement du SI,
-c'est que votre SI et votre organisation ont failli.
-D'un côté, il est essentiel d'avoir appliqué la défense en profondeur : 
-votre SI doit être conçu de sorte que les erreurs d'un unique employé ne doivent pas pouvoir conduire
-à une compromission de l'ensemble du SI.
-De l'autre, il est indispensable d'accompagner vos collaborateurs,
-et de déterminer avec eux des solutions pour leur permettre 
-de mener à bien et en toute sécurité leurs propres missions.
-En fait on peut même aller plus loin : plutôt que d'être dans l'opposition,
-faites de vos collaborateurs des acteurs de la cybersécurité ! 
-C'est elles et eux qui connaissent les systèmes sur lesquels ils bossent,
-et c'est elles et eux les premiers qui pourront détecter que quelque chose cloche.
+> On entend parfois des expressions comme "la faille est entre la chaise et le clavier".
+> Parce que beaucoup d'attaques, notamment les attaques par ingénierie sociale,
+> cherchent à provoquer des erreurs chez vos collaborateurs.
+> Cependant, si un de vos collaborateurs commet une erreur, et qu'à cause de cette erreur tout le SI est compromis,
+> la faute elle est pas chez la personne qui s'est fait piéger. 
+> Elle est du côté des responsables du SI, parce que l'organisation du SI est pas résiliente.
+> C'est essentiel d'avoir appliqué la défense en profondeur : 
+> votre SI doit être conçu de sorte que les erreurs d'un unique employé ne doivent pas pouvoir conduire
+> à la compromission de l'ensemble du SI.
+
+> D'un autre côté, il est indispensable d'accompagner vos collaborateurs,
+> et de déterminer avec eux des solutions pour leur permettre 
+> de mener à bien et en toute sécurité leurs propres missions.
+> En fait on peut même aller plus loin : plutôt que d'être dans l'opposition,
+> faites de vos collaborateurs des acteurs de la cybersécurité ! 
+> C'est elles et eux qui connaissent les systèmes sur lesquels ils bossent,
+> et c'est elles et eux les premiers qui pourront détecter que quelque chose cloche.
 
 Bien sûr, pour y arriver, 
 on ne vous demande pas d'enseigner le hacking à tous vos collègues.
 
 > @RduMarais enfin si, moi c'est ce que je fais avec mes collègues, parce que si tu sais hacker tu sais défendre
 
-> @lenhoanglnh ah ouais ? ok (ou whatever the line you wanna say)
+> @lenhoanglnh ah ouais ?
 
 Mais en réalité, il y a pas besoin d'être technique
 pour contribuer à la cybersécurité !
@@ -213,8 +229,12 @@ et les nombreuses questions qu'il faut se poser,
 pour évaluer l'exposition aux risques de vos organisations,
 et pour réduire drastiquement l'impact des cyber attaques.
 
-C'est urgent de ne pas délaisser la cybersécurité à une poignée de geeks dans votre organisation.
-Seuls, ils n'y arriveront pas, seront frustrés, et vous frusteront.
+> @RduMarais
+> C'est urgent de ne pas délaisser la cybersécurité à une poignée de geeks dans votre organisation.
+> Seuls, ils n'y arriveront pas, seront frustrés, et vous frusteront.
+
+> @lenhoanglnh
+
 Nous devons sécuriser notre espace informationnel ensemble.
 
 
