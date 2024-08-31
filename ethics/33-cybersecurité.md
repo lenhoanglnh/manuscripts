@@ -15,13 +15,21 @@ d'effectuer une exfiltration des données de vos clients et de vos secrets indus
 ou d'exiger une rançon pour restaurer des machines de traitement d'information paralysées ?
 
 Eh bien, pour répondre à ces questions, 
-en ce moment même on est en train de publier un livre chez Dunod avec Romain du Marais, 
+aujourd'hui même est sorti un livre chez Dunod,
+que j'ai co-écrit avec l'excellent Romain du Marais, 
 vulgarisateur de la chaîne Pour 1nf0 et responsable de la sécurité des systèmes d'information.
-Le livre s'intitule "Guide de survie au cybercrime",
-et il commence par une préface de Guillaume Poupard,
-qui est un peu le big boss de la cybersécurité en France.
 
-Bien entendu, je ne vais pas pouvoir résumer ce livre en trois mots.
+Salut Romain !
+
+> @RduMarais : Salut Lê !
+> Et oui, en effet, aujourd'hui est paru notre livre,
+> intitulé "Guide de survie au cybercrime",
+> qui a l'honneur d'être d'ailleurs préfacé par Guillaume Poupard,
+> qui est un peu le big boss de la cybersécurité en France.
+
+> @lenhoanglnh
+
+Bien entendu, dans cette vidéo, on ne va pas résumer ce livre en trois mots.
 Mais s'il fallait retenir un principe de notre livre,
 c'est probablement la notion de *défense en profondeur*.
 Tel est, selon nous, un des principes fondamentaux de la cybersécurité.
@@ -65,7 +73,7 @@ après tout, tout antivirus peut échouer à détecter certains virus,
 tout logiciel peut avoir écrit avec des failles
 et toute machine peut avoir des portes dérobées.
 Mais en empilant adéquatement les couches de défense, 
-même si chacune a ses trous, au bout d'un moment vous êtes quand même suffisamment bien protégés.
+même si chacune a ses trous, au bout d'un moment vous êtes quand même suffisamment bien protégés.  
 https://en.wikipedia.org/wiki/Swiss_cheese_model
 
 Ainsi, si on imagine que la probabilité qu'un attaquant perce une couche est égale à 10%,
@@ -250,8 +258,8 @@ ces fournisseurs sont souvent trop occupées à développer de nouvelles fonctio
 au détriment de la sécurité des produits défectueux
 qu'ils sont déjà en train de vendre à très grande échelle ---
 à l'instar de Microsoft qui vend Windows avec des mécanismes d'authentification 
-qui sont vulnérables aux mêmes attaques depuis 10 ans.
-https://medium.com/@offsecdeer/ntlmv1-domain-compromise-9bd8dd7e9891
+qui sont vulnérables aux mêmes attaques depuis 10 ans.  
+https://medium.com/@offsecdeer/ntlmv1-domain-compromise-9bd8dd7e9891  
 https://www.crowdstrike.fr/cybersecurity-101/pass-the-hash/
 
 Si l'on veut davantage protéger nos sociétés des failles de fournisseurs informatiques,
@@ -284,23 +292,28 @@ pour les rendre plus résilientes au cybercrime.
 
 ## Conclusion
 
-Vous l'avez certainement constaté,
-les médias couvrent de plus en plus des pannes et des attaques informatiques.
-La cyber est devenu un enjeu majeur, 
-notamment pour la survie des organisations et pour le tissu économique.
-Surtout à l'heure où les tensions géopolitiques se sont exacerbées,
-et où toutes les industries se sont fortement numérisées,
-il est ainsi urgent de donner beaucoup plus d'attention à la cybersécurité,
-d'arrêter d'en parler comme un sujet mystérieux et incompréhensible, 
-parce qu'il nous concerne tous !
+> @RduMarais
+> Vous l'avez certainement constaté,
+> les médias couvrent de plus en plus des pannes et des attaques informatiques.
+> La cyber est devenu un enjeu majeur, 
+> notamment pour la survie des organisations et pour le tissu économique.
+> Surtout à l'heure où les tensions géopolitiques se sont exacerbées,
+> et où toutes les industries se sont fortement numérisées,
+> il est ainsi urgent de donner beaucoup plus d'attention à la cybersécurité,
+> d'arrêter d'en parler comme un sujet mystérieux et incompréhensible, 
+> parce qu'il nous concerne tous !
 
-Ce faisant, comme on l'a vu,
-chacun d'entre nous peut aider, à protéger votre organisation et notre société.
+> @lenhoanglnh
+
+Comme on l'a vu, chacun d'entre nous peut aider, 
+à protéger votre organisation et notre société.
 Et pour vous lancer dans votre initiation dans le domaine,
 j'ai bien sûr un livre à vous recommander,
 C'est notre "Guide de survie au cybercrime en entreprise",
 publié chez Dunod, préfacé par Guillaume Poupard, 
-et écrit par l'excellent Romain du Marais... Et par moi-même.
+et écrit par Romain, et par moi-même.
+D'ailleurs n'hésitez pas également 
+à aller faire un tour sur la chaîne YouTube Pour 1nf0 de Romain.
 
 De loin, on pourrait croire qu'il s'agit d'un sujet obscur,
 plein de règles difficilement compréhensibles et de bonnes pratiques laborieuses à adopter.
