@@ -326,9 +326,12 @@ Dans les problèmes MIP, pour Multiprover Interactive Proof,
 le vérificateur peut interroger plusieurs prouveurs qui connaissent chacun la réponse,
 mais il peut les séparer pour les interroger 
 sans qu'aucune ne puisse communiquer avec l'autre.
-Ce n'est pas forcément très réaliste sur le web,
-mais ce concept est en fait très utile pour concevoir 
-des arguments succincts de connaissances sans interaction, comme on va en parler bientôt.
+Voilà qui permet de résoudre des problèmes dits NEXPTIME,
+ce qu'on pense être beaucoup plus grand encore que PSPACE !
+Et si ce n'est pas forcément très réaliste, notamment sur le web,
+c'est en fait très utile pour concevoir 
+des arguments succincts de connaissances sans interaction, 
+comme on va en parler bientôt.
 
 Enfin, dans les problèmes IOP, pour Interactive Oracle Protocol,
 le vérificateur a la capacité de laisser parler le prouveur très longtemps
@@ -341,6 +344,9 @@ sauf au moment de dire les informations que le vérificateur veut noter.
 Là encore c'est a priori difficile de réussir cette prouesse en pratique ;
 mais ce qui importe, c'est qu'on peut l'exploiter pour concevoir 
 des arguments succincts de connaissances sans interaction.
+
+NB : Les IOP généralisent PCP, un peu comme IP généralise NP,
+en ajoutant des interactions multiples.
 
 
 ## Les SNARK
@@ -476,12 +482,20 @@ Mais j'espère que je vous ai convaincu qu'il y a en fait beaucoup plus que cela
 L'hypothèse P ≠ NP est vraiment la pierre angulaire de nombreuses solutions cryptographiques,
 qu'il me semble indispensable de mieux comprendre et de faire comprendre,
 ainsi que de faire adopter massivement.
+Plus généralement, parce qu'on pense aujourd'hui que les SNARK
+ne peuvent pas être fabriqués sans déjà connaître un secret,
+en particulier parce qu'on pense que même une superintelligence
+est incapable de fabriquer des SNARK sans connaître le secret associé au SNARK,
+on considère les SNARK sont une solution pour un prouveur faible
+de prouver son identité à un vérificateur faible,
+selon un protocole que même une superintelligence ne pourra pas casser.
 
-Mais surtout, on peut même aller au-delà de cette hypothèse.
-Grâce aux 
-
-Car pour protéger nos démocraties et les nombreux systèmes numériques sur lesquels elle s'appuie,
-on a désespérément besoin de s'armer contre toutes sortes de superintelligences déjà existantes.
-
-
+Et je dis "on pense", au point de déployer massivement des SNARK,
+y compris dans des systèmes qui valent des milliards de dollars aujourd'hui.
+Donc c'est qu'on est très confiant en la validité mathématique des SNARK.
+Cependant, jusque là, on n'a pas su démontrer que ces SNARK sont effectivement sécurisés ;
+le démontrer est l'un des défis mathématiques les plus fondamentaux,
+non seulement des mathématiques modernes, 
+mais aussi de la sécurité du monde moderne.
+Et ça quand on y pense, c'est complètement fou...
 
