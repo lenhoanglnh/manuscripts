@@ -1,11 +1,11 @@
 # Paralléliser la vérification du calcul
 
-Imaginez qu'un supercalculateur d'une entreprise privée 
+Imaginez qu'une supercalculatrice d'une entreprise privée 
 prétend effectuer des milliards de milliards d'opérations,
 et que l'entreprise affirme que les calculs concluent 
 que la probabilité que la gauche gagne l'élection présidentielle de 2027
 est égale à 35%
-Comment savoir si le supercalculateur a bien effectué correctement
+Comment savoir si la supercalculatrice a bien effectué correctement
 les milliards de milliards d'opération, 
 et que l'entreprise a bien rapporté les résultats de ce calcul ?
 
@@ -27,20 +27,22 @@ les opérations d'une superintelligence ?
 
 Eh bien, aujourd'hui,
 on va voir comment des milliards de machines peuvent être combinées,
-et vérifier les opérations du supercalculateur
+et vérifier les opérations de la supercalculatrice
 en quelques secondes ou quelques minutes,
 avec toutes sortes d'astériques à mettre dans cette affirmation... * ** ***
 
 * En fait, non, car il faut un "témoin"
-** Techniquement, le supercalculateur pourrait juste envoyer ce témoin
+
+** Techniquement, la supercalculatrice pourrait juste envoyer ce témoin
+
 *** Mais en fait OSEF, car le plus intéressant, c'est qu'on peut transformer
 cette parallélisation en un SNARK ! 
-(Mais ça va prendre encore pas mal de vidéos pour qu'on y arrive...)
+(Mais ça va prendre encore pas mal de vidéos pour qu'on y arrive...)  
+https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html
 
+## Comment fonctionne une supercalculatrice ?
 
-## Comment fonctionne un supercalculateur ?
-
-Pour comprendre comment les opérations du supercalculateur peuvent être vérifiés,
+Pour comprendre comment les opérations de la supercalculatrice peuvent être vérifiés,
 prenons d'abord le temps de parler de son fonctionnement.
 Alors, bien sûr, on va éviter de plonger dans trop de détails,
 parce que, bah, c'est vite très compliqué...
@@ -51,12 +53,12 @@ dont je vous ai parlé à l'ère pré-Covid.
 Mais on peut être plus fins que cela.
 
 De manière un peu plus précise, mais toujours très grossière
-les supercalculateurs disposent d'un microprocesseur, et d'une mémoire.
+les supercalculatrices disposent d'un microprocesseur, et d'une mémoire.
 Le microprocesseur a lui-même une sorte de mémoire interne,
 dont les case mémoires sont appelés des registres.
 Par exemple l'ARMv8, introduit en 2011
 et qui équipe beaucoup de smartphones modernes,
-ainsi que des supercalculateurs comme Fugaku,
+ainsi que des supercalculatrices comme Fugaku,
 possède 31 registres de 64 bits à usage général,
 et 32 bits de 128 bits dédiés à des opérations arithmétiques.
 
@@ -126,14 +128,14 @@ un peu comme on peut vouloir réduire la matière
 Pour cela, on peut remarquer que, si on faisait une photographie à chaque instant
 des états des registres et de la mémoire,
 alors ça nous ferait autant de photographies à prendre
-qu'il y a eu d'opérations faites par le supercalculateur,
+qu'il y a eu d'opérations faites par la supercalculatrice,
 soit dans notre exemple un milliard de milliards de photographies.
 Cependant, on peut aussi remarquer que, 
-pour vérifier le calcul du supercalculateur,
+pour vérifier le calcul de la supercalculatrice,
 il suffit de vérifier que, pour passer d'une photo à l'autre,
-le supercalculateur a bien fait les opérations qu'on attendait de lui.
+la supercalculatrice a bien fait les opérations qu'on attendait de lui.
 
-Dès lors, vérifier les calculs du supercalculateur,
+Dès lors, vérifier les calculs de la supercalculatrice,
 c'est simplement vérifier que toutes les transitions sont correctes.
 Or ce calcul de vérification, il est très simple à paralléliser.
 Si on a un milliard de machines à disposition,
@@ -156,7 +158,7 @@ Alors, oui, ça peut là encore être fait à l'aide de circuits logiques ;
 en particulier vérifier qu'un bit B de la mémoire n'a pas changé entre t et t+1
 peut se calculer en vérifiant (B_t_ ET B_t+1_) OU (NON B_t_ ET NON B_t+1_).
 Mais il va nous en falloir énormément, car cette mémoire peut être énorme.
-Si le supercalculateur a effectivement utilisé une case mémoire différente pour chaque opération ;
+Si la supercalculatrice a effectivement utilisé une case mémoire différente pour chaque opération ;
 ça fait un milliard de milliards de cases mémoires 
 dont il faut bien vérifier qu'ils n'ont pas été changés d'une photo à l'autre !
 
@@ -167,6 +169,35 @@ peut en fait être insurmontable pour chaque machine de vérification.
 
 ## De la RAM à un circuit logique peu profond
 
+Bien entendu, suivre l'évolution de toute la mémoire lors de toutes les transitions,
+c'est clairement une approche sous-optimale de la vérification.
+Pour clarifier la tâche de vérification,
+on peut la décomposer en deux problèmes :
+1. Vérifier la cohérence de la mémoire.
+2. En supposant la mémoire valide, vérifier chaque transition des états des registres.
+
+Pour y parvenir, on va maintenant considérer 
+que les vérificateurs exigent de la supercalculatrice
+qu'elle leur envoie un transcript de ses calculs, qu'on appelle parfois la *trace*,
+qui liste à chaque instant l'état des registres.
+Comme les registres sont en petit nombre,
+la trace est un objet 
+dont la taille est proportionnelle uniquement à longueur du calcul ;
+et donc, si on décentralise la vérification, 
+la supercalculatrice aura un nombre suffisamment faible d'information 
+à envoyer à chaque vérificateur.
+
+En supposant la mémoire valide, en particulier au moment de lectures,
+chaque vérificateur peut aisément vérifier les transitions d'états des registres,
+pour chaque portion du transcript.
+En fait, il peut le faire en réutilisant les circuits logiques des microprocesseurs.
+
+Clairement, la difficulté de la vérification réside dans la vérification
+de la cohérence de la mémoire ;
+en particulier du fait que sa lecture retourne
+forcément la dernière écriture qui y a été faite ;
+y compris lors de son initialisation pour écrire les données du calcul effectué.
+
 Transcript => Memory consistency et time consistency.
 
 Variable inconnue.
@@ -174,14 +205,44 @@ Variable inconnue.
 Circuit peu profond => se prête parfaitement à la vérification.
 
 
-## Du circuit logique au circuit arithmétique
-
-X et Y = XY
-
-X ou Y = X + Y - XY
-
-
 ## Conclusion
 
-De façon étonnante, ceci est vraiment au coeur des SNARK.
+Dans cette vidéo, on a vu comment 
+la vérification des calculs d'une supercalculatrice pouvait être décentralisée,
+et ainsi effectuée par une foule de vérificateurs faibles.
+De façon plus précise encore, 
+n'importe quelle suite de T opérations d'une supercalculatrice
+par un ensemble de T vérificateurs faibles.
+Mieux encore, ces vérificateurs faibles n'ont en fait 
+qu'à exécuter à chaque étape les calculs d'un circuit logique,
+puis à communiquer un bit d'information à d'autres vérificateurs faibles.
+
+A priori, ce résultat peut sembler n'être que d'une utilité limitée.
+Cependant, comme on va le voir, cette décomposition est une étape essentielle
+pour ensuite permettre de concevoir un SNARK,
+c'est-à-dire une preuve relativement courte,
+capable de convaincre rapidement un unique vérificateur faible
+que le résultat du calcul de la supercalculatrice est correct.
+
+L'une des astuces indispensables pour y arriver
+consiste à transformer le circuit logique en un circuit arithmétique,
+où l'opération "NON x" est remplacée par l'opération 1-x,
+où l'opération "x ET y" est remplacée par xy,
+et où l'opération "x OU y" est remplacée par x + y - xy,
+Ce faisant, toutes les opérations du circuit logique sur des bits
+correspond à une suite d'addition et de multiplication.
+Or composer des additions et multiplications,
+c'est précisément concevoir des polynomes à plusieurs variables,
+qu'étudie la très riche théorie de la géométrie algébrique.
+
+Eh bien, la combinaison des propriétés des nombres de cette théorie
+avec la parallélisation de la vérification dont on a parlé aujourd'hui
+forme le socle d'une construction très générale de SNARK.
+En fait, plus que vérifier le calcul de la supercalculatrice,
+cette construction permet de vérifier que la supercalculatrice
+connaît des données qui lui ont permis d'obtenir le résultat de son calcul ;
+des données qui peuvent typiquement correspondre à des données secrètes d'authentification.
+
+Mais pour en venir là, on va devoir faire des mathématiques fondamentales ;
+ce sera le sujet des prochaines vidéos !
 
