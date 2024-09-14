@@ -258,12 +258,29 @@ tout en ayant O(log T) opérations par vérificateur,
 si on s'autorise des affaiblissements du problème de vérification,
 qui n'affaibilissent pas pour autant le SNARK qu'on finit par construire !
 
-A priori, ce résultat peut sembler n'être que d'une utilité limitée.
-Cependant, comme on va le voir, cette décomposition est une étape essentielle
-pour ensuite permettre de concevoir un SNARK,
+Bien sûr, ce résultat est avant tout théorique.
+Cependant, différents projets, notamment RISC-Zero et Cairo,
+cherchent vraiment à identifier des architectures de microprocesseurs
+et des circuits associés à ces architectures,
+dont la vérification est ainsi rapide avec une armée de vérificateurs,
+de sorte à ensuite fournir des preuves de validité du calcul rapidement vérifiables.
+
+NB: RISC est le "R" dans ARM.
+
+De façon plus pragmatique encore,
+pour certaines fonctions spécifiques et récurrentes, 
+notamment en cryptographie,
+des vérifications efficaces des calculs ont déjà été construites.
+
+Ceci étant, sachant qu'il reste nécessaire de disposer d'une armée de vérificateurs, 
+ces systèmes de vérification de calcul peuvent sembler n'être que d'une utilité limitée.
+Détrompez=vous !
+Comme on va le voir, la décomposition que je vous ai présentée aujourd'hui 
+n'est en fait qu'une étape de la conception de SNARK,
 c'est-à-dire une preuve relativement courte,
 capable de convaincre rapidement un unique vérificateur faible
-que le résultat du calcul de la supercalculatrice est correct.
+que le résultat du calcul de la supercalculatrice est correct,
+comme on en a parlé dans la vidéo précédente.
 
 L'une des nombreuses astuces indispensables pour y arriver
 consiste à transformer le circuit logique en un circuit arithmétique,
