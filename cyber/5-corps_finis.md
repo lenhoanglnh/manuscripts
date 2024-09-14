@@ -396,31 +396,38 @@ Vous voyez le drame ?
 Le 0 apparaît maintenant plusieurs fois dans une même ligne !
 Et ça, ça implique que les opérations définies ne composent plus un corps.
 
-Mais, donc, pourquoi est-ce que k^2 = k+1 est un bon choix,
+Mais, donc, pourquoi est-ce que k² = k+1 est un bon choix,
 mais k^2 = -1 en est un mauvais ?
 
-Eh bien, ça vient du fait que l'équation X^2 = -1 a déjà une solution dans F_2.
+Eh bien, ça vient du fait que l'équation X² = -1 a déjà une solution dans F_2.
 Vous vous souvenez peut-être que, si on a introduire le nombre imaginaire i,
 c'est parce qu'on ne pouvait pas prendre la racine carrée de -1 dans le corps des nombres réels.
-L'équation X^2 = -1 n'a pas de solution réelle.
+L'équation X² = -1 n'a pas de solution réelle.
 Et bien, c'est ça qui fait que ajouter une solution i à cette équation
 renforce le corps des nombres réels, en un corps plus grands, à savoir celui des complexes.
 
 Et bien, il en va de même pour les corps finis.
-Toute extension de corps finis requiert l'identification d'une équation en X^n
+Toute extension de corps finis requiert l'identification d'une équation en X^n^
 qui n'a pas de solution dans le corps fini.
-Les expressions comme X^n - X - 1 qui n'ont pas de solutions X^n - X - 1 = 0
+Les expressions comme X^n^ - X - 1 qui n'ont pas de solutions X^n^ - X - 1 = 0
 sont appelées des polynomes irréductibles.
 Et en pratique, les informaticiens identifient de telles expressions 
 pour ensuite concevoir des corps finis.
 
-Par exemple, le corps fini à 2^4 = 16 éléments peut se construire à partir de F_2,
-en s'appuyant sur le nombre imaginaire k défini par k^4 = k + 1.
-Et ça, ça marche, parce que le polynome X^4 - X - 1 est irréductible dans F_2,
+Par exemple, le corps fini à 2⁴ = 16 éléments peut se construire à partir de F_2_,
+en s'appuyant sur le nombre imaginaire k défini par k⁴ = k + 1.
+Et ça, ça marche, parce que le polynome X⁴ - X - 1 est irréductible dans F_2_,
 et qu'il est de degré 4, c'est-à-dire que la plus grande puissance est 4.
+En pratique, les informaticiens utilisent particulièrement le corps fini à 2⁸ = 256 éléments,
+notamment car ils regroupent souvent les bits par paquets de 8,
+qui forment alors un octet.
+On utilise alors le nombre imaginaire k défini par k⁸ = k⁴ + k³ + k² + 1,
+qui correspond à un polynome irréductible.
+Comme on le verra la prochaine,
+c'est ce nombre imaginaire qui est utilisé dans les QR Codes.
 
 D'ailleurs on peut noter que, de façon plus générale, 
-l'encodage des corps F_{2^n} est particulièrement naturel en informatique.
+l'encodage des corps F_2^n^_ est particulièrement naturel en informatique.
 En effet, tout élément de F_{2^n} s'écrit
 $a_0 + a_1 k + a_2 k^2 + ... + a_{n-1} k^{n-1}$,
 puisque les puissances supérieures sont réduites par la définition du nombre imaginaire $k$.
