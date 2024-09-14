@@ -1,4 +1,4 @@
-# Paralléliser la vérification du calcul
+# Vérifier une supercalculatrice avec une armée de vérificateurs faibles
 
 Imaginez qu'une supercalculatrice d'une entreprise privée 
 prétend effectuer des milliards de milliards d'opérations,
@@ -37,8 +37,8 @@ avec toutes sortes d'astériques à mettre dans cette affirmation... * ** ***
 
 *** Mais en fait OSEF, car le plus intéressant, c'est qu'on peut transformer
 cette parallélisation en un SNARK ! 
-(Mais ça va prendre encore pas mal de vidéos pour qu'on y arrive...)  
-https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html
+(Mais ça va prendre encore pas mal de vidéos pour qu'on y arrive...)
+
 
 ## Comment fonctionne une supercalculatrice ?
 
@@ -198,11 +198,44 @@ en particulier du fait que sa lecture retourne
 forcément la dernière écriture qui y a été faite ;
 y compris lors de son initialisation pour écrire les données du calcul effectué.
 
-Transcript => Memory consistency et time consistency.
+Et bien, l'astuce c'est d'exiger de la supercalculatrice
+qu'elle nous envoie aussi les opérations,
+mais cette fois dans un ordre trié.
+Plus précisément, on demande qu'elle classe les opérations en deux catégories :
+celles qui font intervenir une écriture ou une lecture en mémoire,
+et le reste.
+Le reste, elle les met toutes à la fins, dans un ordre quelconque ;
+puisque de toute façon ces opérations n'affectent pas la cohérence de la mémoire.
 
-Variable inconnue.
+Pour celles qui font intervenir une écriture ou une lecture en mémoire,
+on sait qu'elles font en particulier intervenir
+l'adresse mémoire à lire ou à laquelle écrire,
+ainsi qu'un numéro, qui correspond au numéro de l'opération
+dans l'ordre normal des opérations.
 
-Circuit peu profond => se prête parfaitement à la vérification.
+Et bien, le tri doit d'abord respecter l'ordre des adresses mémoires,
+en mettant en premier les opérations sur les premières cases mémoires,
+et ensuite pour une case mémoire donnée,
+les opérations doivent être telles 
+que les premières opérations à effectuer apparaissent avant.
+
+Étant donné les opérations dans cet ordre,
+on peut maintenant très bien paralléliser la vérification de cohérence de la mémoire,
+puisqu'on peut déduire la validité d'une opération sur la mémoire
+à partir du résultat de l'opération qui la précède.
+En effet, si c'est une opération d'écriture, alors rien à vérifier.
+Maintenant si c'est une opération de lecture,
+et que celle juste avant était une opération d'écriture,
+alors la lecture doit donner le résultat inscrit lors de l'écriture juste avant.
+Enfin, si c'est une lecture, et si juste avant c'était une lecture,
+il faut que ces deux lectures aient donné le même résultat.
+
+De façon remarquable, on peut effectuer 
+chaque vérification des opérations sur la mémoire à l'aide d'un circuit logique ;
+et on peut vérifier le tri par mémoire également avec un circuit logique ---
+ce n'est d'ailleurs pas trivial de faire cela,
+je renvoie à ce livre pour plus de détails sur comment y arriver.  
+https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html
 
 
 ## Conclusion
@@ -215,7 +248,15 @@ n'importe quelle suite de T opérations d'une supercalculatrice
 par un ensemble de T vérificateurs faibles.
 Mieux encore, ces vérificateurs faibles n'ont en fait 
 qu'à exécuter à chaque étape les calculs d'un circuit logique,
-puis à communiquer un bit d'information à d'autres vérificateurs faibles.
+puis à communiquer un bit d'information à d'autres vérificateurs faibles ;
+et le nombre d'étapes nécessaires est beaucoup plus faible que T,
+on peut le rendre polylogarithmique en T.
+
+NB : Le temps total de calcul des vérificateurs sera alors O(T log T).
+Mais on peut faire mieux, et se ramener à un temps total de calcul en O(T),
+tout en ayant O(log T) opérations par vérificateur,
+si on s'autorise des affaiblissements du problème de vérification,
+qui n'affaibilissent pas pour autant le SNARK qu'on finit par construire !
 
 A priori, ce résultat peut sembler n'être que d'une utilité limitée.
 Cependant, comme on va le voir, cette décomposition est une étape essentielle
@@ -224,7 +265,7 @@ c'est-à-dire une preuve relativement courte,
 capable de convaincre rapidement un unique vérificateur faible
 que le résultat du calcul de la supercalculatrice est correct.
 
-L'une des astuces indispensables pour y arriver
+L'une des nombreuses astuces indispensables pour y arriver
 consiste à transformer le circuit logique en un circuit arithmétique,
 où l'opération "NON x" est remplacée par l'opération 1-x,
 où l'opération "x ET y" est remplacée par xy,
