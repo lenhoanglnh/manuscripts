@@ -17,6 +17,10 @@ Quel est le nombre minimal de question à poser
 pour identifier avec certitude le personnage que l'autre joueur a dans la main ?
 Je vous invite à mettre pause, et à essayer de répondre vous même à cette question.
 
+Et pour les plus motivés d'entre vous, 
+je vous invite à considérer le cas de 16 personnages, 
+sur lequel on reviendra plus tard dans cette vidéo.
+
 En pratique, plutôt qu'un mensonge potentiellement malveillant,
 les informaticiens doivent préserver l'intégrité de toutes sortes d'informations,
 notamment lors de communications via la 4G qui ne passent pas toujours parfaitement,
@@ -194,86 +198,78 @@ qui intersecte k+t points parmis ceux qui nous ont été envoyés !
 
 ## Résolution du Qui Est-Ce ?
 
-Appliquons maintenant tout cela au problème du Qui Est-Ce avec un mensonge.
-Pour le résoudre, on va adapter une solution basée sur Reed Solomon.
+Appliquons maintenant tout cela au problème du Qui Est-Ce 
+avec 16 personnages possibles et un mensonge.
+
+J'ai choisi celui-là en particulier,
+parce qu'il s'adapte particulièrement bien à un encodage de Reed Solomon.
 En l'occurence, on va travailler non pas avec le corps F_256_, 
-mais avec le corps fini F_3_ à trois éléments,
-qui n'est autre que l'ensemble des entiers, 
-avec l'égalité imposée 3 = 0.
-Du coup, les trois éléments de F_3_ sont 0, 1 et 2.
+mais avec le corps fini F_4_ à quatre éléments.
+Souvenez-vous, les éléments de ce corps s'écrivent ak + b,
+où a et b et sont éléments de F_2_, c'est-à-dire des bits,
+et où k est un nombre imaginaire qui vérifie k² = k + 1.
+Pour simplifier les notations, on notera parfois ab le nombre ak + b.
+On a ainsi les quatre nombres de F_4_ qui s'écrivent
+00, 01, 10 et 11.
 
-Dans ce qui est-ce, comme il y a 4 personnages possibles,
-on peut encoder l'identité du bon personnage par une suite de 2 bits.
-Disons que Sabine est 00, Victor 01, Valentine 10 et Jean-Lou 11.
-En particulier, chaque bit peut être vu comme un élément de F_3_ ;
-donc le message à encoyer est ici une suite (m_1_, m_2_),
-où m_1_ et m_2_ sont des éléments de F_3_,
-dont on sait de surcroît qu'ils ne sont pas égaux à 2.
+Dans ce qui est-ce, comme il y a 16 personnages possibles,
+on peut encoder l'identité du bon personnage par une suite de deux nombres de F_4_,
+qu'on va appeler m_1_ et m_2_.
+Mis bout à bout ces deux nombres forment alors une suite de 4 bits.
+Par exemple, dans cette correspondance à l'écran,
+Thibaut correspond au code binaire 10 11,
+qui correspond aux nombres m_1_ = k et m_2_ = k+1.
 
-On peut alors construire le polynôme P(X) = m_1_ + m_2_ X.
-Et on peut envoyer les valeurs P(1), P(2) et P(3).
-Bon comme 3 = 0, ça revient à envoyer P(1), P(2) et P(0),
-qui sont respectivement égaux à m_1_ + m_2_, m_1_ + 2 m_2_ et m_1_.
-Notez que ces trois éléments sont des éléments de F_3_,
-donc a priori il faut 2 bits pour les représenter.
+Ainsi, si le bon personnage était Thibaut,
+en suivant le code de Reed-Solomon,
+il faudrait communiquer le polynôme P(X) = m_1_ + m_2_ X,
+qui serait dans ce cas égal à P(X) = k + (k+1) X.
+Et pour y arriver, on va donner des valeurs de ce polynôme en 4 points,
+qui vont être les 4 valeurs possibles de X, en tant que nombre de F_4_.
 
-En effet, on peut encoder l'élément 0 de F_3_ par 00,
-l'élément 1 par 01 et l'élément 2 par 10.
-Mais on va utiliser une astuce :
-on sait que m_1_ est un élément de F_3_ forcément égal à 0 ou 1 ;
-donc on peut convenir du fait qu'il sera envoyé par 1 bit.
+Ces quatre valeurs seront alors 
+P(00) = P(0) = k = 10
+P(01) = P(1) = k + k+1, 
+Ça, ça se simplifie. En effet, k+k = 2k = 0k dans F_4_, puisque 2 = 0.
+Du coup P(01) = P(1) = 1 = 01.
+Ensuite, P(10) = P(k) = k + (k+1) * k = k + k² + k = k + k + 1 + k = k + 1 = 11.
+Enfin, P(11) = P(k+1) = k + (k+1) * (k+1) = k + k² + 2k + 1 = k + k + 1 + 2k + 1 = 00.
+Du coup, le code associé à Thibaut sera 10 01 11 00.
 
-Du coup, le nombre de bits envoyés sera égal à 2 bits pour m_1_ + m_2_,
-2 bits pour m_1_ + 2m_2_ et 1 bit pour m_1_,
-soit un total de 5 bits d'information.
+On peut faire les mêmes opérations avec tout le monde.
+Je vous épargne les calculs.
+Mais in fine, on obtient alors le tableau des encodages de Reed-Solomonoff suivants :
 
-On peut même être plus précis que cela.
-À moins d'un mensonge, 
-le premier bit sera égal à 1 si et seulement si m_1_ + m_2_ = 2,
-ce qui revient à dire que m_1_ = 1 et m_2_ = 1,
-ou dit autrement, ce sera le cas si et seulement si le bon personnage est Jean-Lou.
-Donc il correspond à la question "As-tu Jean-Lou ?".
+00 00 => 00 00 00 00
+00 01 => 00 01 10 11
+00 10 => 00 10 11 01
+00 11 => 00 11 01 10
+01 00 => 01 01 01 01
+01 01 => 01 00 11 10
+01 10 => 01 11 10 00
+01 11 => 01 10 00 11
+10 00 => 10 10 10 10
+10 01 => 10 11 00 01
+10 10 => 10 00 01 11
+10 11 => 10 01 11 00
+11 00 => 11 11 11 11
+11 01 => 11 10 01 00
+11 10 => 11 01 00 10
+11 11 => 11 00 10 01
 
-Le second bit sera égal à 1 si et seulement si m_1_ + m_2_ = 1,
-ce qui sera le cas si le bon personage le code 01 ou 10 ;
-ou dit autrement s'il s'agit de Victor ou Valentine.
-Donc il correspond à la question 
-"La première lettre du prénom du personnage est-il le V ?"
+Et je voulais vraiment vous montrer ça, 
+parce qu'il y a quelque chose de magnifique dans la liste des codes obtenus.
+Pour commencer, on peut remarquer que, dans chaque colonne,
+il y a autant de 0 que de 1.
+C'est un signe que l'encodage a bien été optimisé ;
+chaque bit envoyé, s'il n'est pas corrompu, a bien un bit d'information.
 
-Le troisième bit sera égal à 1 si m_1_ + 2m_2_ = 2,
-ce qui ne peut arriver que si m_1_ = 0 et m_2_ = 1.
-Il correspond donc à la question
-"Le personnage est-il Victor ?"
+Par ailleurs, à l'exception des codes de 00 00 et 11 11,
+tous les codes obtenus ont exactement 4 valeurs 0, et 4 valeurs 1.
 
-Le quatrième bit sera égal à 1 si m_1_ + 2m_2_ = 1,
-ce qui ne peut arriver que si m_1_ = 1 et m_2_ = 0.
-Il correspond donc à la question
-"Le personnage est-il Valentine ?"
-
-Enfin, le cinquième bit est égal à 1 si m_1_ = 1,
-ce qui correspond à demander si
-le personnage est Valentine ou Jean-Lou.
-
-Telles sont les 5 questions binaires qu'on peut poser
-pour récupérer exactement le code de Reed-Solomon.
-Or on sait que s'il y a au plus une erreur parmi les 5 réponses,
-ça va impliquer au plus une erreur 
-dans la suite (P(1), P(2), P(3)),
-ce qui ne nous empêchera pas de reconstruire le message initial.
-
-En effet, il suffira de trouver la droite définie par 2 points
-
-Et ça, ça veut dire
-
-00 -> 00000
-01 -> 01100
-10 -> 01011
-11 -> 10001
-
-1 -> 00000
-2 -> 00111
-3 -> 11100
-4 -> 11011
+Mais surtout, le plus fou, et c'est vraiment ce qui fait que ce code est si bon,
+si on prend n'importe quelle paire de codes,
+on voit que le nombre
 
 Distance de Hamming
 
