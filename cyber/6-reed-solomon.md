@@ -205,10 +205,10 @@ J'ai choisi celui-là en particulier,
 parce qu'il s'adapte particulièrement bien à un encodage de Reed Solomon.
 En l'occurence, on va travailler non pas avec le corps F_256_, 
 mais avec le corps fini F_4_ à quatre éléments.
-Souvenez-vous, les éléments de ce corps s'écrivent ak + b,
+Souvenez-vous, les éléments de ce corps s'écrivent a + bk,
 où a et b et sont éléments de F_2_, c'est-à-dire des bits,
-et où k est un nombre imaginaire qui vérifie k² = k + 1.
-Pour simplifier les notations, on notera parfois ab le nombre ak + b.
+et où k est un nombre imaginaire qui vérifie k² = 1 + k.
+Pour simplifier les notations, on notera parfois ab le nombre a + bk.
 On a ainsi les quatre nombres de F_4_ qui s'écrivent
 00, 01, 10 et 11.
 
@@ -217,45 +217,45 @@ on peut encoder l'identité du bon personnage par une suite de deux nombres de F
 qu'on va appeler m_1_ et m_2_.
 Mis bout à bout ces deux nombres forment alors une suite de 4 bits.
 Par exemple, dans cette correspondance à l'écran,
-Thibaut correspond au code binaire 10 11,
-qui correspond aux nombres m_1_ = k et m_2_ = k+1.
+Thibaut correspond au code binaire 01 11,
+qui correspond aux nombres m_1_ = k et m_2_ = 1 + k.
 
 Ainsi, si le bon personnage était Thibaut,
 en suivant le code de Reed-Solomon,
 il faudrait communiquer le polynôme P(X) = m_1_ + m_2_ X,
-qui serait dans ce cas égal à P(X) = k + (k+1) X.
+qui serait dans ce cas égal à P(X) = k + (1 + k) X.
 Et pour y arriver, on va donner des valeurs de ce polynôme en 4 points,
 qui vont être les 4 valeurs possibles de X, en tant que nombre de F_4_.
 
 Ces quatre valeurs seront alors 
-P(00) = P(0) = k = 10
-P(01) = P(1) = k + k+1, 
-Ça, ça se simplifie. En effet, k+k = 2k = 0k dans F_4_, puisque 2 = 0.
-Du coup P(01) = P(1) = 1 = 01.
-Ensuite, P(10) = P(k) = k + (k+1) * k = k + k² + k = k + k + 1 + k = k + 1 = 11.
-Enfin, P(11) = P(k+1) = k + (k+1) * (k+1) = k + k² + 2k + 1 = k + k + 1 + 2k + 1 = 00.
-Du coup, le code associé à Thibaut sera 10 01 11 00.
+P(00) = P(0) = k = 01
+P(10) = P(1) = k + (1 + k) = 1 + 2k, 
+Ça, ça se simplifie. En effet, dans F_4_, 2 = 0, et donc 2k = 0k = 0.
+Du coup P(10) = P(1) = 1 = 10.
+Ensuite, P(01) = P(k) = k + (1+k) * k = k + (k + k²) = 2k + (1 + k) = 0 + 1 + k = 11.
+Enfin, P(11) = P(1+k) = k + (1+k) * (1+k) = k + 1 + 2k + k² = 1 + k + (1 + k) = 00.
+Du coup, le code associé à Thibaut sera 01 10 11 00.
 
 On peut faire les mêmes opérations avec tout le monde.
 Je vous épargne les calculs.
-Mais in fine, on obtient alors le tableau des encodages de Reed-Solomonoff suivants :
+Mais in fine, on obtient alors le tableau des encodages de Reed-Solomon suivants :
 
-00 00 => 00 00 00 00
-00 01 => 00 01 10 11
-00 10 => 00 10 11 01
-00 11 => 00 11 01 10
-01 00 => 01 01 01 01
-01 01 => 01 00 11 10
-01 10 => 01 11 10 00
-01 11 => 01 10 00 11
-10 00 => 10 10 10 10
-10 01 => 10 11 00 01
-10 10 => 10 00 01 11
-10 11 => 10 01 11 00
-11 00 => 11 11 11 11
-11 01 => 11 10 01 00
-11 10 => 11 01 00 10
-11 11 => 11 00 10 01
+ '00 00': '00 00 00 00'
+ '00 10': '00 10 01 11'
+ '00 01': '00 01 11 10'
+ '00 11': '00 11 10 01'
+ '10 00': '10 10 10 10'
+ '10 10': '10 00 11 01'
+ '10 01': '10 11 01 00'
+ '10 11': '10 01 00 11'
+ '01 00': '01 01 01 01'
+ '01 10': '01 11 00 10'
+ '01 01': '01 00 10 11'
+ '01 11': '01 10 11 00'
+ '11 00': '11 11 11 11'
+ '11 10': '11 01 10 00'
+ '11 01': '11 10 00 01'
+ '11 11': '11 00 01 10'
 
 Et je voulais vraiment vous montrer ça, 
 parce qu'il y a quelque chose de magnifique dans la liste des codes obtenus.
@@ -264,18 +264,169 @@ il y a autant de 0 que de 1.
 C'est un signe que l'encodage a bien été optimisé ;
 chaque bit envoyé, s'il n'est pas corrompu, a bien un bit d'information.
 
+En particulier, on peut maintenant transformer les codes de 8 bits de Reed-Solomon
+en une suite d 8 questions binaires.
+Pour cela, pour le premier bit,
+il suffit d'identifier toutes les lignes où le bit est égal à 1.
+Ces lignes correspondent à une moitié des personnages.
+Et bien, pour récolter l'information sur la valeur du premier bit du code de Reed-Solomon,
+il suffit de demander si le personnage que l'autre joueur a en main
+fait partie de cette moitié des personnages.
+Si la réponse est oui, c'est que le premier bit du code de Reed-Solomon est égal à 1.
+Sinon, il est égal à 0.
+Et en faisant cela pour chaque bit du code de Reed-Solomon,
+on peut alors récupérer ce code après 8 questions binaires.
+
 Par ailleurs, à l'exception des codes de 00 00 et 11 11,
 tous les codes obtenus ont exactement 4 valeurs 0, et 4 valeurs 1.
+Mais surtout, le plus fou, 
+c'est vraiment ce qu'il se passe quand on compare n'importe quelle paire de codes.
+Prenons par exemple des codes associés à 01 10 et 11 01.
+Ça nous donne les codes
+01 11 00 10 et
+11 10 00 01.
+On peut alors compter le nombre de bits pour lesquels ses codes diffèrent.
+On obtient 4.
+On dit que la distance de Hamming entre les deux codes est égale à 4.
 
-Mais surtout, le plus fou, et c'est vraiment ce qui fait que ce code est si bon,
-si on prend n'importe quelle paire de codes,
-on voit que le nombre
+Et bien, ce chiffre n'est pas spécifique aux deux codes qu'on a sélectionnés.
+Si on prend n'importe quelle paire de codes,
+le nombre de bits dont ils diffèrent va toujours être 4 ;
+à moins que les codes sont complètement opposés,
+comme celui de 00 00 et celui de 11 00.
 
-Distance de Hamming
+Dans le jargon, on dit que la distance de Hamming 
+entre n'importe quelle paire de codes est supérieure ou égale à 4.
+Et bien, je vous mets au défi de concevoir une liste de 16 codes de longueur 8
+telle que la distance entre chaque paire est supérieure ou égale à 4,
+sans invoquer la théorie des corps fini et le code de Reed-Solomon !
+C'est assez fou ce qu'on a réussi.
+
+Et d'ailleurs, cette distance de Hamming qui permet d'avoir un code robuste.
+En effet, s'il y a une erreur sur un bit,
+alors obtiendra le code corrompu ne sera qu'à une distance de Hamming de 1 
+de l'un des codes valides de Hamming ; celui qu'il était avant l'erreur.
+Mais il sera en revanche à une distance de Hamming au moins 3 de n'importe quel autre code !
+Et oui, à la base il était à une distance 4,
+et un changement d'un bit ne peut réduire cette distance que de 1.
+
+D'ailleurs, on peut faire la remarque qu'il aurait suffi d'avoir des codes de Hamming
+dont la distance de Hamming entre n'importe quelle paire de code est supérieure égale à 3,
+pour garantir une reconstruction correcte avec au plus une erreur sur un bit.
+Dans notre cas, avec une distance de Hamming d'au moins 4,
+n peut faire la remarque que le code reste robuste malgré un changement de bit
+et une perte de bit,
+ce qui est un peu plus résilient encore !
+
+D'ailleurs, si vous n'avez pas résolu le problème du Qui Est-Ce avec 4 personnage,
+je vous invite à réfléchir à ces notions de codes de Hamming...
+
+Allez, si vous êtes vraiment, vraiment en galère,
+je vous ai mis un indice dans le script de cette vidéo,
+dont le lien est en description :
+
+Hint:
+00000
+00111
+11100
+11011
 
 
 ## Reed-Muller
 
+Avant de conclure, j'aimerais vous dire quelques mots d'une variante du code de Reed-Solomon,
+appelé le code de Reed-Muller.
+L'idée, c'est qu'au lieu d'encoder un message m par un polynôme P à une variable,
+le code de Reed-Muller va l'encoder dans un polynôme multilinéaire Q à plusieurs variables.
+Autrement dit, Q doit avoir plusieurs variables, 
+qu'on peut noter Z_1_, Z_2_, et ainsi de suite,
+et quand on fixe toutes les variables sauf une,
+on doit obtenir un polynôme de degré 1.
+
+Si Q a q variables, alors il doit s'écrire comme une somme de termes
+Z^h^ = Z_1_^h_1^ Z_2_^h_2^ Z_3_^h_3^ ... Z_q_^h_q^,
+où h est une suite binaire de q bits.
+Eh bien, l'idée est d'associer à chacun des termes de la sortes 
+un coefficient m_h_ qui dépend du message m à encoder.
+AUtrement dit, m est encodé par le polynôme multilinéaire à plusieurs variables
+qui est la somme des m_h_ Z^h^.
+
+Le code de Reed-Muller est obtenu en prenant les valeurs du polynôme Q
+pour ses différentes entrées.
+On peut ainsi vouloir travailler avec le corps fini F_2_ à deux éléments,
+et donc considérer m_h_ égal à 0 ou à 1.
+Le polynôme Q prend alors en entrée q variables binaires,
+ce qui fait 2^q entrées possibles.
+En publiant ses valeurs pour toutes ces entrées,
+qui elles aussi seront binaires,
+on obtient un code de Reed-Muller de longueur 2^q.
+
+Il y a beaucoup de détails sur lequel je ne vais pas m'étendre pour aujourd'hui,
+comme le fait de se restreindre au moment de la définition du polynôme Q
+à un sous-ensemble des valeurs possibles de h 
+typiquement en fonction du nombre de 1 dans la suite binaire h,
+cependant ce que je veux simplement vous montrer aujourd'hui,
+c'est qu'on peut naturellement généraliser les idées de Reed-Solomon 
+pour les polynômes à une variable
+à des solutions qui exploitent les polynômes à plusieurs variables.
+
+Comme on le verra par la suite, ces polynômes à plusieurs variables,
+dans lesquels résident tant de subtilités de la géométrie algébrique,
+à l'instar du dernier théorème de Fermat,
+sont des composants centraux de la cryptographie en général,
+et des preuves à divulgation nulle de connaissance en particulier ;
+notamment parce que la distance de Hamming entre les codes qu'ils génèrent
+est souvent garantie d'être grande.
+
 
 ## Conclusion
+
+J'aimerais conclure avec un semi mea culpa.
+Face à l'urgence à résoudre les problèmes de nos sociétés,
+en particulier l'amplification algorithmique de la désinformation et de la haine,
+il m'arrive souvent de prendre à partie les sujets 
+qui me semblent banaliser l'inattention à ces problèmes,
+et qui me semblent donc dangereusement ralentir la mobilisation nécessaire
+pour les résoudre, et protéger des vies et nos démocraties.
+Et la géométrie algébrique est un exemple que je prends souvent
+pour mettre en évidence l'énorme gachis d'intellects humains,
+indispensables pour relever les grands défis d'aujourd'hui,
+mais trop occupés à s'adonner à leurs passions artistiques.
+
+Même si je savais déjà que cette géométrie algébrique avait des applications en cryptographie,
+notamment pour concevoir des codes de correction d'erreur comme Reed-Solomon et Reed-Muller,
+j'ai quand même pris une claque il y a quelques mois,
+en découvrant à quel point elle est essentielle 
+pour des solutions plus avancées de cryptographie
+qui me semblent essentielles pour fermer l'espace informationnel européen 
+contre les ingérences des entreprises et des gouvernements étrangers,
+tout en permettant aux citoyens européens de profiter de ce cyberespace en toute sécurité,
+et en particulier en toute confidentialité vis-à-vis de forces politiques internes
+que ces citoyens devraient pouvoir ouvertement critiquer sans représailles.
+On aura le temps d'y venir, mais oui, 
+ces solutions semblent clé pour fournir des preuves de citoyenneté
+avec divulgation nulle de connaissance,
+capables de mimiquer les propriétés du vote à l'isoloir 
+pour de nombreuses applications sur le web.
+Décidément, les mathématiques ne cessent de me surprendre
+par leurs nombreuses applications souvent inattendues.
+
+Néanmoins, le fait que certaines parties de la géométrie algébrique 
+aient des applications qui me semblent essentielles 
+pour la protection des démocraties
+ne signifie pas que toutes les recherches dans le domaine lui soit utiles.
+Vu l'urgence démocratique,
+il me semble en fait au contraire plus urgent que jamais
+que les chercheurs qui ont les facultés mathématiques 
+pour comprendre cette géométrie algébrique 
+et pour l'appliquer à la protection des systèmes démocratiques le fassent.
+
+En un sens, ces mathématiciens sont les Spiderman de l'âge moderne de l'information.
+Leur faculté rare est un véritable superpouvoir,
+ou du moins un pouvoir que beaucoup de militants pour la démocratie adoreraient avoir.
+À ces mathématiciens, j'aimerais relayer la remarque de l'oncle de Spiderman :
+"de grands pouvoirs impliquent de grandes responsabilités".
+
+Nous avons désespérément besoin de sécuriser notre cyberespace.
+Aidez-nous à y parvenir, pour le bien des démocraties.
 
