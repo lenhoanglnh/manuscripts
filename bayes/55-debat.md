@@ -296,13 +296,9 @@ https://tournesol.app/entities/yt:chALQCm9VgE
 A contrario,
 de manière remarquable, Geanakoplos et Polemarchakis ont démontré que,
 si l'ensemble des possibles est fini,
-<<<<<<< HEAD
 et si Alice et Bob sont bien bayésiens et effectuent ces raisonnements 
 sur les croyances probables des autres,
 alors Alice et Bob finiront par dire exactement la même probabilité.
-=======
-Alice et Bob finiront par dire exactement la même probabilité.
->>>>>>> 116524d (Added proof of Bayesian dialogue)
 Dès lors leurs estimations postérieures 
 sur la probabilité d'élection d'Harris seront les mêmes,
 et elle sera bien entendu celles qu'ils affirment publiquement.
