@@ -264,8 +264,24 @@ Cette organisation en tant que telle est largement surhumaine ;
 mais surtout, pour comprendre les risques cyber,
 il ne faut surtout pas les extraire de l'équation.
 
-Ainsi, à bien des égards, 
-les risques numériques dus aux superintelligences 
+En fait, l'un des principes opérationnels du Guide de Survie au Cybercrime,
+que j'ai co-écrit avec Romain du Marais,
+consiste à connaître le cybercrime,
+et donc les différentes superintelligences qui vous menacent.
+En particulier, il y en a certaines qui sont sans doute déjà capables
+de détruire vos organisations si elles le souhaitent,
+comme les gouvernements américains et chinois.
+Mais, sauf si vous êtes une opérateur d'importance vitale pour la société,
+l'enjeu n'est pas nécessairement pour vous de vous protéger 
+contre toutes les superintelligences.
+En particulier, il est essentiel pour la survie de vos organisations
+que vous soyez résilients contre de plus petits groupes de cybercriminels,
+car ceux-ci sont aussi beaucoup plus nombreux ;
+mais ils restent eux-mêmes très largement surhumains.  
+https://www.dunod.com/entreprise-et-economie/guide-survie-au-cybercrime-en-entreprise-fuites-donnees-ransomwares
+
+Ainsi, à bien des égards,
+les risques numériques dus aux superintelligences
 ne sont pas complètement différents des risques hors lignes.
 Cependant, le numérique a au moins deux spécificités
 qui méritent une attention particulière.
@@ -274,7 +290,11 @@ En premier lieu, même si de nombreuses régulations
 cherchent maintenant à dompter le cyberespace,
 le numérique reste en grande partie un espace de non-droit,
 notamment car beaucoup d'opérations qui s'y passent sont difficilement traçables.
-En particulier, il reste de nombreuses préoccupations à avoir
+Des backdoors peuvent être implantées par des superintelligences,
+sans que quiconque ne puisse les détecter ;
+et elles peuvent provoquer des attaques dévastatrices,
+comme on l'a vu récemment au Liban.
+De façon plus générale, il reste de nombreuses préoccupations à avoir
 autour de l'applicabilité de nombreuses lois déjà existantes 
 aux superintelligences numériques ;
 surtout quand on voit que même l'aveu d'OpenAI de violations massives de propriété intellectuelle
