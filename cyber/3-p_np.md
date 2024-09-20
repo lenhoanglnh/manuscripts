@@ -3,8 +3,7 @@
 Comme on l'a vu la dernière fois,
 l'un des grands enjeux de la cybersécurité,
 c'est de pouvoir se protéger de "superintelligences",
-c'est-à-dire de systèmes d'informations beaucoup plus puissants 
-que nous-mêmes.
+c'est-à-dire de systèmes d'informations beaucoup plus puissants que nous-mêmes.
 Par exemple, est-ce qu'une start-up de 3 personnes avec un unique serveur
 peut empêcher toute l'armée numérique chinoise et la NSA
 de compromettre les opérations de la start-up ?
