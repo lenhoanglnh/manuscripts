@@ -1,4 +1,4 @@
-# Vérifier une supercalculatrice avec une armée de vérificateurs faibles
+# Contrôler une supercalculatrice avec une armée de fourmis
 
 Imaginez qu'une supercalculatrice d'une entreprise privée 
 prétend effectuer des milliards de milliards d'opérations,
