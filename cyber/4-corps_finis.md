@@ -29,7 +29,7 @@ Aujourd'hui, on va voir
 que la liste des corps finis est remarquablement simple et structurée.
 En fait, ces corps finis forment aujourd'hui 
 le socle d'un grand nombre de solution de cybersécurité,
-non seulement pour le chiffabordrement des données,
+non seulement pour le chiffrement des données,
 mais aussi pour l'authentification des sources des données
 et pour l'intégrité de ces données.
 Mais tout ça, on prendra le temps d'en parler dans de futures vidéos.
