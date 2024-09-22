@@ -131,7 +131,7 @@ c'est bien sûr l'ensemble de la société ---
 non seulement des gens qui la composent, 
 mais aussi des moyens de productions qui composent la société,
 ainsi que des nombreuses règles de commerce,
-comme les lois sur le salaire minimum,
+comme les contrôles de qualité des moyens de production,
 qui permettent à la société de continuer à pouvoir fournir ses services surhumains.
 
 Alors, j'imagine qu'il y en a beaucoup d'entre vous
@@ -287,7 +287,19 @@ et donc les différentes superintelligences qui vous menacent.
 En particulier, il y en a certaines qui sont sans doute déjà capables
 de détruire vos organisations si elles le souhaitent,
 comme les gouvernements américains et chinois.
-Mais, sauf si vous êtes une opérateur d'importance vitale pour la société,
+S'ils ordonnent à leurs multinationales d'implanter des portes dérobées
+dans les produits qu'elles commercialisent,
+ou d'effectuer une mise à jour volontairement nocive des logiciels et des machines
+que nos entreprises utilisent à longueur de journée,
+alors elles peuvent paralyser tout notre système d'information,
+des systèmes de paiement par carte ou virement à la gestion des réseaux électriques,
+en passant par les services mails, 
+les réservations de billets et les logiciels de logistique.
+Sans parler des voitures modernes qui sont bourrées d'électronique,
+et dont une prise de contrôle à distance rendrait l'attaque des bipeurs anecdotiques...
+
+Ceci étant dit, 
+sauf si vous êtes une opérateur d'importance vitale pour la société,
 l'enjeu n'est pas nécessairement pour vous de vous protéger 
 contre toutes les superintelligences.
 En particulier, il est essentiel pour la survie de vos organisations
@@ -399,8 +411,8 @@ garantissant ainsi une sécurité parfaite.
 Mais pour certains protocoles dont on parlera dans cette série,
 la sécurité est uniquement avec grande probabilité.
 Cependant, cette probabilité peut être extrêmement grande ;
-du genre elle peut être égale à 1 - 2^1000,
-ce qui fait la probabilité d'être hacké est plus faible que le nombre de particules dans l'univers.
+Par exemple, la probabilité d'une faille peut être égale à 1 / 2^1000^,
+ce qui est plus faible que le nombre de particules dans l'univers.
 Dans ce cas, l'exposant de 2, ici égal à 1000,
 est ce qu'on appelle le nombre de bits de sécurité informationnelle.
 
@@ -412,17 +424,17 @@ et l'on se contente d'avoir des protocoles calculatoirement robustes.
 Typiquement, on va alors concevoir des protocoles tels que,
 en utilisant les meilleurs algorithmes connus à ce jour,
 le nombre d'opérations nécessaires pour casser le protocole
-reste typiquement de l'ordre de 2^120, soit environ 10^36.
+reste typiquement de l'ordre de 2^120^, soit environ 10^36^.
 
-En effet, un article de recherche de 2020 que cela coûtait environ 45k$
-d'effectuer autour de 2^64 opérations, soit environ 10^20 opérations.
+En effet, un article de recherche de 2020 estime que cela coûtait environ 45k$
+d'effectuer autour de 2^64^ opérations, soit environ 10^20^ opérations.
 On peut par ailleurs estimer la quantité de calculs dédiés au Bitcoin,
-qui représente environ 2^80 opérations par jour, 
-soit environ 10^24 opérations.  
+qui représente environ 2^80^ opérations par jour, 
+soit environ 10^24^ opérations.  
 https://eprint.iacr.org/2020/014.pdf
 
-Pour arriver à 2^120, 
-il faudrait encore multiplier le nombre d'opérations par 2^40, soit 10^12.
+Pour arriver à 2^120^, 
+il faudrait encore multiplier le nombre d'opérations par 2^40^, soit 10^12^.
 Ce n'est pas complètement inconcevable. 
 Mais on en est assez confiant aujourd'hui dans le fait
 qu'aucune superintelligence n'y parviendra dans les décennies à venir.
@@ -477,7 +489,10 @@ que les solutions qu'on a développées pour se protéger des superintelligences
 peuvent être appliquées telles quelles aux superintelligences numériques.
 Notamment parce que le cyberespace est un monde émergent,
 avec des particularités comme la vitesse des opérations qui s'y déroulent,
-ou la difficulté de faire appliquer la loi dans le cyberespace.
+ou la difficulté de faire appliquer la loi dans le cyberespace ;
+or les désastres dans le cyberespace ont des conséquences terrifiantes hors ligne,
+de l'amplification de la haine dont on voit les conséquences politiques
+à l'émergence de nouvelles formes d'attaques comme celles des bipeurs au Liban.
 
 Dès lors, en plus des solutions sociales, juridiques et démocratiques usuelles,
 dans le cyberespace, il nous faut des solutions de sécurité numérique.
@@ -504,4 +519,9 @@ pour vous montrer comment le déploiement de la cryptographie moderne
 peut radicalement améliorer la sécurité et l'intégrité du web,
 de sorte à le protéger contre toutes les superintelligences.
 Qu'elles soient numériques ou non.
+
+Mais pour cela, il va falloir urgemment 
+que beaucoup plus d'attention soit donnée à la cybersécurité,
+que des investissements publics et privés majeurs lui soient dédiés,
+et que chacun d'entre nous adoptons les réflexes fondamentaux de la cyberdéfense.
 
