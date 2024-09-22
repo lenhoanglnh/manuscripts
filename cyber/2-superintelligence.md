@@ -25,18 +25,32 @@ Mais du coup, selon la définition standard de l'intelligence,
 l'Association Tournesol, Google et le gouvernement chinois 
 sont tous déjà des superintelligences.
 Ces organisations qui disposent d'un grand nombre d'humains,
-mais aussi de machines,
-pour accomplir toutes sortes de tâches,
-sont capables d'accomplir toutes les tâches que peut faire un humain seul,
+mais aussi d'un grand nombre de machines,
+et l'ensemble de ce dispositif est capable d'accomplir 
+toutes les tâches que peut faire un humain seul,
 et surtout peuvent effectuer des opérations 
-que cet Homo Sapiens serait bien incapables de mener.
+qu'un unique Homo Sapiens serait bien incapables de mener ;
+comme collecter des données de dizaines de milliers de contributeurs,
+visiter des millions de milliards de pages web
+ou mettre un milliard d'humain sous écoute.
 
-Et ça, ça me semble essentiel à comprendre
-pour éviter de tomber dans un fatalisme face à l'intellect des superintelligences ;
-notamment pour éviter de conclure définitivement
-que l'émergence d'une superintelligence signifie nécessairement la fin de l'humanité.
-On va voir aujourd'hui que combattre les superintelligences,
-c'est une norme dans l'histoire de l'humanité.
+Notez qu'ici, je ne cherche pas à isoler l'entité par son substrat,
+en opposant par exemple l'intelligence en matière organique
+de l'intelligence en silicone.
+Comme on l'a fait dans la première vidéo de cette série,
+on va considérer des systèmes d'information
+qui contiennent à la fois des machines et des humains,
+et se demander de quoi ces systèmes sont capables ; 
+et surtout comment les combattre.
+
+Cette approche plus conforme à la définition commune de l'intelligence,
+me semble surtout très utile,
+non seulement pour éviter un fatalisme face à l'intellect des superintelligences
+et conclure trop vite que l'émergence d'une superintelligence 
+signe nécessairement la fin de l'humanité,
+mais aussi et surtout pour s'inspirer des succès du passé.
+En effet, on va voir que combattre les superintelligences,
+c'est en fait une norme dans l'histoire de l'humanité.
 Et même si beaucoup d'humains ont malheureusement été écrasés par ces superintelligences,
 nous avons régulièrement développé des outils extrêmement puissants et efficaces,
 pour limiter leurs emprises potentiellement néfastes sur nos sociétés.
@@ -127,7 +141,9 @@ il est extrêmement utile de voir nos sociétés comme des superintelligences,
 ou au moins comme des êtres vyvants avec un Y,
 pour se rendre compte à quel point les organisations déjà existantes
 nous dépassent déjà très largement dans leur complexité,
-mais aussi et surtout dans leurs nombreuses facultés.
+mais aussi et surtout dans leurs nombreuses facultés.  
+https://tournesol.app/entities/yt:J-pV9vxMF8Q  
+https://tournesol.app/entities/yt:YVlZZnCSrIE
 
 Et en particulier, aussi riches que vous pourriez être,
 votre capacité à acquérir une veste de laine, un grille-pain ou un crayon de papier,
@@ -148,7 +164,7 @@ Même si un milliardaire est techniquement humain, et donc a priori pas "surhuma
 le fait qu'il dispose d'un accès à d'énormes ressources financières suffit en fait
 à composer un système { humain + fortune }
 dont on peut dire qu'il est capable de facultés très largement surhumaines.
-Et oui, l'argent suffit à vous rendre surhumain,
+Et oui, l'argent suffit à vous faire de vous un être "sur-humain",
 en vous ajoutant par exemple la faculté d'acquérir une veste de laine !
 
 De même, les multinationales peuvent être vues aujourd'hui comme des superintelligences,
@@ -317,8 +333,9 @@ Malheureusement, plus notre monde hors ligne se connecte à Internet,
 et devient donc en ligne,
 plus les superintelligences numériques représentent un sérieux danger.
 La numérisation du monde représente ainsi une énorme vulnérabilité :
-elle nous expose d'autant plus à des superintelligences numériques
-dotées de facultées que ne possèdent pas les superintelligences hors ligne.
+elle nous déplace dans un espace beaucoup moins régulé,
+où règnent des superintelligences numériques dotées de facultées 
+que ne possèdent pas les superintelligences hors ligne.
 
 
 ## Les maths de la cyber
@@ -421,13 +438,13 @@ J'espère que je vous ai convaincu aujourd'hui de l'utilité
 de ne pas réduire la "superintelligence" à un algorithme ou une machine.
 La définition la plus standard de ce concept,
 qui est notamment abondamment utilisée par ceux qui se fascinent pour ce concept,
-s'applique telle quelle à de nombreuses organisations humaines.
+devrait déjà s'appliquer telle quelle à de nombreuses organisations humaines.
 Et clairement, ces organisations humaines peuvent être des menaces
 pour la sécurité et le bien-être des populations.
 Mais clairement aussi, on est très loin d'être désarmé face aux superintelligences.
 Depuis des siècles, les états de droits n'ont cessé de s'améliorer
 pour eux-mêmes devenir des superintelligences,
-conçues pour protéger les populations des autres superintelligences,
+conçues pour protéger les populations d'autres superintelligences,
 notamment celles qui sont les plus nuisibles pour ces populations.
 
 En particulier, avec ce constat, 
@@ -452,7 +469,7 @@ Nos sociétés ont développé de nombreuses solutions pour lutter
 contre cette concentration de pouvoirs.
 On peut penser qu'elles sont insuffisantes ;
 mais on ne peut pas dire qu'elles sont inexistantes.
-Au contraire, il faut surtout, je pense, 
+En fait, je pense qu'il faut surtout
 défendre le renforcement des dispositifs existants.
 
 Néanmoins, il serait également erroné de considérer 
