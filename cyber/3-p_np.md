@@ -24,10 +24,16 @@ Bien souvent,
 comme l'ont d'ailleurs très bien fait Passe Science et Science Étonnante,
 on présente ainsi le problème P versus NP
 comme une question sur la capacité des machines à résoudre des problèmes difficiles ;
-mais, comme on va le voir, on peut aussi l'interpréter
-comme une question sur l'intérêt pour un vérificateur faible
+mais on peut en fait aussi l'interpréter
+comme une question sur la faculté d'un vérificateur faible
 à déléguer des tâches à une sorte de superintelligence, 
 sans que la superintelligence ne puisse tromper le vérificateur.
+
+Et comme on va le voir, il existe des réponses positives à cette question.
+Cec qui signifie que, 
+si on prend le temps de développer des systèmes cryptographiques sécurisés,
+il y a tout à fait moyen de garder des suyperintelligences sous contrôles,
+au moins dans le contexte de certaines applications.
 
 
 ## Le problème P versus NP
@@ -39,7 +45,8 @@ au sens où, pour les résoudre, il faut beaucoup travailler ;
 et même si on délègue le travail aux machines,
 ces machines doivent elles aussi énormément travailler.
 Plus précisément, elles devront effectuer un grand nombre d'opérations.
-Or on va supposer que le vérificateur n'a qu'une puissance de calculs limité.
+Eh bien, un vérificateur faible,
+c'est tout simplement un vérificateur qui n'a qu'une puissance de calculs limitée.
 
 A priori, il peut sembler 
 que déléguer une tâche à une superintelligence ne soit pas d'un énorme intérêt :
@@ -62,23 +69,50 @@ Formellement, l'algorithme de vérification s'écrit
 `Verifie(preuve, théorème)`
 et accepte si la preuve est une preuve valide du théorème, et rejette sinon.
 Bien entendu, cet algorithme n'est pas magique ;
-il lui faudra travaillé pour effectuer cette vérification.
+il faudra travailler pour effectuer cette vérification.
 
 Mais la question qu'on se pose, 
 c'est si l'algorithme y gagnerait beaucoup à déléguer la *recherche* de preuve mathématique,
 plutôt qu'à l'effectuer lui-même.
 Plus précisément, étant donné un théorème `théorème`,
-trouver une preuve `preuve` tel que `Verifie(preuve, théorème) = accepte`.
+y a-t-il un intérêt à délaisser à d'autres
+la tâche de trouver une preuve `preuve` tel que `Verifie(preuve, théorème) = accepte` ?
 Et oui, parce que Coq n'est pas juste un vérificateur de preuves,
-il est aussi capables de rechercher des preuves.
-Mais plus généralement, puisque `preuve` n'est qu'une suite de symboles,
+il est aussi capable de rechercher des preuves.
+Après tout, puisque `preuve` n'est qu'une suite de symboles,
 on peut lister toutes les possibles valeurs de `preuve`,
 en commençant par celle de 1 symbole, puis celles de 2 symboles et ainsi de suite.
-Et a priori, ceci nécessite baeucoup plus de travail que la vérification.
+Si Coq veut trouver une preuve, il lui suffit de suivre cet algorithme pour y arriver.
+Cependant, ceci nécessitera beaucoup plus de travail de sa part,
+que la simple tâche de vérification de la validité d'une preuve.
 
 Pour mesurer le gain à déléguer,
 les informaticiens proposent de quantifier le travail nécessaire à la recherche,
 relativement au travail nécessaire à la vérification.
+En fait, les problèmes P, c'est en gros les problèmes de vérification.
+Tandis que les problèmes NP, ce sont les problèmes de recherche.
+La question P versus NP demande s'il existe des problèmes
+pour lesquels la recherche est forcément exponentiellement plus longue
+que la vérification.
+
+NB: Il suffit que la recherche soit superpolynomiale en la vérification,
+i.e. chercher une solution dont la descriptions est de longueur n prend un temps (n)
+tel que, pour tout entier k, f(n) / n^k^ tend vers l'infini quand n tend vers l'infini.
+Il faut par ailleurs que la vérification prenne un temps un temps polynomial en n.
+
+Et on considère généralement qu'il s'agit du plus important problème ouvert de l'informatique,
+et peut-être même de toutes les mathématiques, 
+de toutes les sciences et de sécurité nationale.
+En tout cas, le Clay Institute of Mathematics offre 1 million de dollars
+à quiconque parviendrait à résoudre ce problème.
+
+NB: La seule raison pour laquelle je ne pense pas qu'il soit si important,
+c'est parce que je suspecte très fortement de connaître la réponse 
+(à savoir, P différente de NP).
+Dès lors d'autres questions pour lesquelles on n'a aucune idée de la réponse,
+comme des questions autour de la gouvernance algorithmique,
+me semble en fait plus importante aujourd'hui.
+
 Considérons ainsi toutes les preuves d'un théorème donné
 dont le temps de vérification est faible,
 c'est-à-dire qui peut être effectué en n secondes par Coq,
@@ -90,18 +124,13 @@ dont le nombre de symboles ne peut pas être lu par le laptop en n secondes,
 On va considérer que si le temps qu'il aurait fallu pour trouver une preuve
 parmi l'ensemble de ces preuves est de n^2^ secondes,
 alors l'algorithme y aura gagner à externaliser la preuve.
-Mais qu'il n'y aura pas beaucoup gagné.
+Mais il n'y aura pas beaucoup gagné.
 Idem si ce temps est de l'ordre de n^3^ secondes, ou n^100^ secondes.
 
 Dans le cadre du problème P versus NP, 
 le vérificateur y gagne énormément, 
 si le temps qu'il lui aurait été nécessaire est quelque chose comme 2^n^,
 c'est-à-dire exponentiel en n.
-
-NB: En fait, il suffit que ce soit superpolynomial dans le pire cas, 
-c'est-à-dire > f(n),
-où, pour tout k, f(n) / n^k^ tend vers l'infini.
-
 Et oui, parce que 2^n^ a une croissance exponentielle,
 c'est-à-dire qu'elle dépasse très rapidement notre entendement,
 et en particulier ce que le vérificateur pourrait imaginer effectuer.
@@ -134,7 +163,7 @@ qu'aucune machine sur Terre ne parviendra jamais au bout des calculs nécessairs
 
 En fait, si P est différent de NP, 
 c'est que, d'une certaine manière,
-un vérificateur peut même vérifier des travaux effectuer par une hyperintelligence,
+un vérificateur peut même vérifier des travaux effectués par une hyperintelligence,
 c'est-à-dire un système d'information 
 qui transcende les limites calculatoires de l'univers.
 
@@ -189,8 +218,13 @@ nécessitent des temps de calculs supra-astronomiques ;
 bien que toute solution qui serait trouvée pourrait être validée 
 par un vérificateur peu puissant en quelques minutes seulement.
 
-Prouver P ≠ NP prouverait les limites du calculable en pratique,
+En particulier, de manière à la fois fascinante intellectuellement
+et extrêmement utile dans la pratique surtout en cryptographie,
+prouver P ≠ NP prouverait les limites du calculable en pratique,
 quelles que soient les machines qu'on utilise.
+Ce serait une preuve des limites de toute superintelligence du monde réel,
+y compris celles qui sont une combinaisons d'intellects humains et de supercalculateurs.
+
 Ah oui, petite note très rapide, en gros, non,
 on ne pense pas que les machines quantiques permettront
 de résoudre les problèmes NP.
@@ -213,7 +247,7 @@ L'astuce omniprésente de la cryptographie pour ce problème d'authentification,
 c'est d'utiliser l'hypothèse P ≠ NP, et la création d'un secret.
 On aura le temps de rentrer dans plus de détails mais en gros,
 le prouveur faible va choisir un témoin secret w,
-et générer une instance de problème x pour lequel w est solution.
+et il va générer une instance de problème x pour lequel w est solution.
 
 Ça c'est généralement faisable très facilement.
 Par exemple écrivons une expression complexe comme
@@ -227,7 +261,7 @@ Bon ce n'est pas l'équation la plus sécurisée,
 on verra d'autres meilleures manières de créer des équations,
 notamment à partir de mots de passe et de fonctions de hachage,
 mais ça vous donne une idée de comment un prouveur faible
-peut créer un problème dont il connaît la solution.  
+peut créer un problème difficile dont il connaît la solution.  
 https://tournesol.app/entities/yt:rO5aQzgKOs0
 
 Le prouveur faible peut alors publier son problème,
@@ -256,12 +290,11 @@ malgré un rapport de forces humaines et matérielles très inégal.
 
 ## La classe IP
 
-Les problèmes NP sont les problèmes de recherche de solution,
-et dont les solutions sont vérifiables en temps polynommial.
-De manière implicite, 
-ces problèmes considèrent que le prouveur doit communiquer sa solution en une fois.
-Voilà qui peut être problématique si la solution est en fait trop complexe
-pour être communiquée.
+Les problèmes NP sont les problèmes 
+dont les solutions sont vérifiables par un vérificateur faible.
+Voilà qui peut être problématique 
+si la solution est en fait trop longue pour être communiquée à un vérificateur faible,
+ou si sa vérification requiert elle-même d'énormes calculs.
 
 Les chercheurs en informatique se sont ainsi demandés 
 si on ne pouvait pas généraliser la classe NP,
@@ -270,19 +303,23 @@ en introduisant potentiellement plusieurs interactions entre le vérificateur et
 et en s'autorisant des conclusions uniquement avec très grande probabilité,
 plutôt que des réponses déterministes comme pour NP.
 
-Si, suite à un échange, pour les problèmes dont la réponse est "oui", 
-un prouveur arbitrairement puissant
-est capable de convaincre avec grande probabilité le vérificateur
-qu'il connaît la bonne réponse,
+Voilà qui les a conduits à définir la classe des problèmes IP,
+pour Interactive Proof, ou preuve par interaction.
+Un problème est IP si un prouveur arbitrairement puissant 
+qui a effectivement résolument le problème peut convaincre
+le vérificateur faible que c'est le cas ;
+et si un prouveur arbitrairement puissant 
+qui n'a pas résolu le problème ne pourra pas y arriver.
+
+Plus précisément, les deux conditions sont les suivantes :
+1. Quand la réponse est "oui", 
+un prouveur arbitrairement puissant est capable de convaincre 
+avec grande probabilité le vérificateur que la réponse est oui,
 après un nombre au plus polynomial d'échanges ;
-et si, quand la réponse est "non", 
+2. Quand la réponse est "non", 
 aucun prouveur, aussi puissant et malveillant soit-il,
 ne pourra convaincre le vérificateur que la réponse est "non",
-si ce n'est avec une très faible probabilité ;
-des problèmes avec ces propriétés de prouvabilité sans tromperie
-par interaction et avec grande probabilité,
-c'est ce qu'on appelle la classe des problèmes IP,
-pour Interactive Proof, ou preuve par interaction.
+si ce n'est avec une très faible probabilité.
 
 Comme on va le voir dans la suite de cette série,
 les preuves IP sont en fait encore un peu plus 
@@ -317,6 +354,10 @@ En discutant, une superintelligence pourrait en principe me convaincre
 de la validité de ses calculs,
 même si elle pourrait être incapables de m'expliquer tous ses calculs.
 
+Un autre exemple est celui de certains jeux de plateaux, comme le Hex et le Reversi.
+Une hyperintelligence serait en mesure de nous convaincre
+qu'elle possède effectivement la stratégie optimale à ces jeux.
+
 On peut même définir des variantes de la classe IP,
 comme les classes MIP et IOP,
 où l'idée est à chaque fois d'ajouter des contextes d'échanges
@@ -328,6 +369,13 @@ sans qu'aucune ne puisse communiquer avec l'autre.
 Ce n'est pas forcément très réaliste sur le web,
 mais ce concept est en fait très utile pour concevoir 
 des arguments succincts de connaissances sans interaction, comme on va en parler bientôt.
+De manière spectaculaire, on a démontré que la classe MIP est équivalente à NEXPTIME,
+la classe des problèmes de recherche dont la vérification est possible en temps exponentielle.
+Et pour le coup, on a démontré que cette classe était strictement plus grande que NP,
+et donc que P,
+ce qui montre qu'un problème difficile de la classe MIP 
+ne pourra pas être résolu par une superintelligence,
+y compris dans le cas où P = NP.
 
 Enfin, dans les problèmes IOP, pour Interactive Oracle Protocol,
 le vérificateur a la capacité de laisser parler le prouveur très longtemps
@@ -354,10 +402,13 @@ Eh bien, en 1986, les informaticiens Amos Fiat and Adi Shamir
 ont proposé de laisser le prouveur simuler ce travail du vérificateur.
 Autrement dit, le prouveur va lui-même se lancer des défis au hasard.
 Mais pour que le prouveur ne puisse pas contrôler ce hasard,
-on va aussi lui imposer un procédé pour générer le hasard.
-En pratique, à chaque fois qu'il doit tirer un défi aléatoire,
-on va lui dire de prendre toutes les données du problèmes,
-et de les rentrer dans une fonction de hachage cryptographique,
+on va aussi lui imposer un procédé pour générer le hasard ;
+ou plutôt, pour se lancer un défi qu'il ne pouvait pas avoir anticipé
+avant de se lancer dans l'opération de preuve.
+En pratique, à chaque fois que le vérificateur devait lui lancer un défi aléatoire,
+le prouveur va devoir prendre toutes les données du problèmes,
+et les rentrer dans un générateur de nombre aléatoire,
+qui va typiquement s'appuyer sur une fonction de hachage cryptographique,
 un objet dont je vous ai parlé dans un épisode de String Theory.  
 https://tournesol.app/entities/yt:rO5aQzgKOs0
 
@@ -365,18 +416,20 @@ En effet, on pense aujourd'hui, même si on ne l'a pas démontré,
 qu'il extrêmement difficile de prévoir l'issue de la fonction de hachage cryptographique,
 étant donné son entrée, à part en devinant au hasard,
 ou en effectuant le calcul de la fonction de hachage cryptographique.
-Et du coup, une telle fonction nous semble bien simuler le hasard.
+Et du coup, une telle fonction nous semble bien simuler le hasard,
+notamment le hasard au sens de Laplace et du bayésianisme,
+à savoir des informations autrement imprévisibles.
 
 Quoi qu'il en soit, en utilisant une telle fonction pour simuler les défis du vérificateur,
 le prouveur peut donc simuler un échange entre lui et le vérificateur,
 ou même entre le vérificateur et plusieurs prouveurs indépendants,
 ou même avec un vérificateur qui n'écoute qu'une poignée d'informations
-envoyoées par le prouveur.
+envoyées par le prouveur.
 Il peut ensuite envoyer un transcript de l'échange au vérificateur.
 
 Eh bien, ça, c'est devenu le Saint-Graal de la vérification !
 Grâce à l'algorithme de Fiat-Shamir, à partir de preuves IP, MIP ou IOP,
-on a obtenu un transcript obtenu qu'on appelle 
+on a obtenu un transcript qu'on appelle 
 un argument succinct de connaissance sans interaction,
 ou SNARK, conformément à l'acronyme anglais.
 Un SNARK, c'est un peu comme une preuve dans un problème NP, 
@@ -429,7 +482,8 @@ qu'ils prouvent à des juristes que leurs données d'entraînement
 ne violent pas des droits d'auteur ou des données personnelles ?
 
 Peut-être. Honnêtement, on est vraiment là à la frontière de la connaissance,
-à la fois en intelligence artificielle, mais aussi en cryptographie.
+à la fois en droit et en intelligence artificielle, 
+mais aussi en cryptographie.
 Ce que je peux vous dire, c'est que de plus en plus d'articles de recherches
 explorent le machine learning vérifiable,
 en combinant ses opérations à la conception de SNARK.  
@@ -446,7 +500,7 @@ sans dévoiler quoi que ce soit à propos du détail de ces réseaux de neurones
 
 Et bon, les articles que j'ai vu s'intéressent surtout à l'inférence,
 donc typiquement quand vous jouez avec des algorithmes génératifs déjà entraînés,
-et donc semblent encore loin de pouvoir répondre à la question juridique
+et semblent ainsi encore loin de pouvoir répondre à la question juridique
 que j'ai soulevée plus haut.
 
 Il y a encore beaucoup de travail fascinant pour les chercheurs,
@@ -463,24 +517,43 @@ pour ceux qui considèrent la connaissance comme le Graal ultime.
 Cependant, j'espère que j'ai pu vous faire sentir aujourd'hui
 en quoi ces limites calculatoires sont en fait une bénédiction,
 pour se protéger de superintelligences capables d'effectuer
-beaucoup plus d'opérations que nous, grâce à leurs ressources humaines et matérielles.
+beaucoup plus d'opérations que nous, 
+grâce à leurs ressources humaines et matérielles.
+
 En particulier, c'est assez remarquable que,
 grâce à des problèmes NP,
 un prouveur faible peut être mis sur la même marche que cette superintelligence,
 même avec un arbitre faible.
+Voilà qui semble par exemple essentiel
+pour rétablir un droit d'amplification proportionné en ligne,
+qui paraît beaucoup plus indispensable que la liberté d'expression.
+Et oui, tant qu'on ne régule pas l'amplification en ligne à l'aide de cryptographie,
+les superintelligences malveillantes,
+armées de fermes de trolls humains et électroniques,
+seront capables d'exploiter la supériorité de leurs moyens de production et de diffusion
+de l'information pour imposer leurs propagandes,
+et noyer la parole citoyenne.
 
-Alors oui, il y a un million de dollars en jeu pour le problème P versus NP,
-car c'est l'un des 7 problèmes du Millenium.
+Certes, il y a un million de dollars en jeu pour le problème P versus NP.
 Mais j'espère que je vous ai convaincu qu'il y a en fait beaucoup plus que cela en jeu.
 L'hypothèse P ≠ NP est vraiment la pierre angulaire de nombreuses solutions cryptographiques,
 qu'il me semble indispensable de mieux comprendre et de faire comprendre,
 ainsi que de faire adopter massivement.
-
 Mais surtout, on peut même aller au-delà de cette hypothèse.
-Grâce aux 
+Grâce aux SNARK, et aux preuves à divulgation nulle de connaissance,
+il est en fait certainement possible d'importer en ligne un très grand nombre
+des propriétés de délibération citoyenne hors ligne,
+notamment des notions de confidentialité du votes, d'anonymat des lanceurs d'alerte
+ou encore de vérifiabilité des décomptes des voix.
 
-Car pour protéger nos démocraties et les nombreux systèmes numériques sur lesquels elle s'appuie,
+Mais pour espérer un jour en arriver là,
+si possible avant l'effondrement enclenché des démocraties à travers le monde,
+il va nous falloir investir beaucoup plus de ressources humaines, matérielles et financières,
+dans une véritable stratégie de cyberdéfense de l'espace numérique,
+que ce soit à l'échelle individuelle, à l'échelle de nos organisations,
+ou à l'échelle de nos démocraties,
+en devenant tous beaucoup plus des acteurs informés de la cybersécurité.
+
+Pour protéger nos démocraties et les nombreux systèmes numériques sur lesquels elle s'appuie,
 on a désespérément besoin de s'armer contre toutes sortes de superintelligences déjà existantes.
-
-
 
