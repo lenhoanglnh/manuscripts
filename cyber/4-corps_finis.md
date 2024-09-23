@@ -2,18 +2,18 @@
 
 Comme vous le savez très bien,
 les nombres sont des objets qu'on peut additionner, soustraire, multiplier et diviser.
-Autrement il existe quatre opérations,
-plus +, moins -, fois x et diviser /,
+Autrement dit, il existe quatre opérations,
+plus +, moins -, fois * et diviser /,
 qui permettent de prendre deux nombres, pour en faire un troisième.
-Avec une petite exception, à savoir la division par zéro.
+Avec une petite exception, à savoir la division par zéro qui est interdite.
 
 Pour être très précis, 
 les nombre réels peuvent être additionnés, soustraits, multipliés et divisés,
 ce qui donne ensuite d'autres nombres réels.
 Dans le jargon mathématique, on dit que ces nombre réels forment un corps.
 Mais ils ne sont pas les seuls.
-C'est aussi le cas des fractions, qui forment donc un corps, 
-ainsi que des nombres complexes.
+C'est aussi le cas des fractions, qui forment donc elles aussi un corps.
+Idem pour les nombres complexes.
 Si vous ne connaissez pas les nombres complexes, ne vous en faites pas.
 Ça ne nous sera d'aucune utilité.
 
@@ -27,7 +27,7 @@ Quels sont les corps finis ?
 
 Aujourd'hui, on va voir 
 que la liste des corps finis est remarquablement simple et structurée.
-En fait, ces corps finis forment aujourd'hui 
+Mais surtout, ces corps finis forment aujourd'hui 
 le socle d'un grand nombre de solution de cybersécurité,
 non seulement pour le chiffrement des données,
 mais aussi pour l'authentification des sources des données
@@ -40,8 +40,8 @@ Mais tout ça, on prendra le temps d'en parler dans de futures vidéos.
 Pour définir un corps fini, il suffit de définir un ensemble fini d'objets,
 et de définir comment ils se combinent à travers l'addition et la multiplication.
 Je vous propose de commencer par prendre l'exemple concret du corps fini à 3 éléments,
-communément appelé F_3.
-Ce corps a uniquement deux nombres, qu'on va appeler 0, 1 et a.
+communément appelé F_3_.
+Ce corps a uniquement trois nombres, qu'on va appeler 0, 1 et a.
 Et pour définir l'addition et la multiplication,
 je vais simplement vous donner leurs tables d'addition et de multiplication.
 Voici ce que ça nous donne :
@@ -58,11 +58,11 @@ Voici ce que ça nous donne :
 | 1 | 0 | 1 | a |
 | a | 0 | a | 1 |
 
-Ainsi, si je vous donne à calculer (0+1)*(1+a+0),
-vous pouvez vérifier que 0+1, ça nous fait 1,
-que 1+a font 0, et donc que 1+a+0 font 0+0, ce qui fait la tête à toto,
+Ainsi, si je vous donne à calculer `(0+1)*(1+a+0)`,
+vous pouvez vérifier que `0+1`, ça nous fait 1,
+que `1+a` font 0, et donc que `1+a+0` font `0+0`, ce qui fait la tête à toto,
 enfin, je voulais dire 0.
-et que le résultat est donc 1 * 0, qui est égal à 0.
+et que le résultat est donc `1 * 0`, qui est égal à 0.
 Voilà, vous venez peut-être d'avoir fait vos premiers calculs
 dans le corps fini F_3.
 
@@ -71,12 +71,12 @@ on peut faire quelques remarques assez profondes sur les corps finis.
 D'abord, les deux tableaux sont symétrique par rapport à la diagonale principale,
 qui va d'en haut à gauche à en bas à droite.
 Ça revient à dire que, par exemple, 1+a est nécessairement égal à a+1.
-De même 0*a = a*0.
+De même `0\*a = a\*0`.
 On dit que l'addition et la multiplication sont commutatives.
 Et bien, en 1905, Joseph Wedderburn a démontré que dans tout corps fini,
 c'était nécessairement le cas.
-Et donc, que toutes tables d'addition et de multiplication d'un corps fini
-doit nécessairement avoir une symétrie selon la diagonale principale.
+Et donc, que toutes les tables d'addition et de multiplication d'un corps fini
+doivent nécessairement avoir une symétrie selon la diagonale principale.
 
 Maintenant, notez que la ligne du 0 de la table d'addition est identique
 à la suite des éléments de l'ensemble.
@@ -90,11 +90,11 @@ Dans tout corps, on exige l'existence de ces deux nombres particuliers.
 
 Notez par ailleurs que la ligne de multiplication de zéro
 est identiquement égale à zéro.
-Ça, c'est parce que 1 - 1 = 0.
-Et donc, calculer 0 * a, ça revient à calculer (1 - 1) * a.
+Ça, c'est parce que `1 - 1 = 0`.
+Et donc, calculer `0 * a`, ça revient à calculer `(1 - 1) * a`.
 Par la propriété fondamentale de distributivité de la multiplication,
-ça nous donne 1*a - 1*a, qui est égal à a - a, qui fait zéro.
-De même 0 * 1 = (1-1) * 1 = 1*1 - 1*1 = 1 - 1 = 0.
+ça nous donne `1*a - 1*a`, qui est égal à `a - a`, qui fait zéro.
+De même `0 * 1 = (1-1) * 1 = 1*1 - 1*1 = 1 - 1 = 0`.
 Multiplier par 0 fait donc toujours 0.
 
 Une troisième remarque à faire, c'est que, à l'image d'un sudoku,
@@ -103,23 +103,23 @@ dans les tables d'addition et de multiplication,
 chaque ligne et chaque colonne contient tous les éléments du corps finis
 une et une seule fois.
 Ça, ça vient vraiment du fait qu'on veut pouvoir soustraire et diviser.
-En effet, on veut pouvoir calculer des quantités comme 1 - a.
+En effet, on veut pouvoir calculer des quantités comme `1 - a`.
 Et pour cela, il faut que, dans la ligne du a de la table d'addition, 
 il y ait une case dont la valeur est 1.
 Dans notre cas, cette case correspond à la colonne du a.
-Et ça, ça nous dit que a + a = 1, 
-ce qu'on peut réécrire a = 1 - a, en soustrayant a des deux côtés.
+Et ça, ça nous dit que `a + a = 1`, 
+ce qu'on peut réécrire `a = 1 - a`, en soustrayant a des deux côtés.
 De même, dans la ligne du a de la table de multiplication, 
 il y a une case égale à 1, 
 qui correspond à la colonne du a.
-Et ça, ça nous dit que a * a = 1, et donc que 1/a = a.
+Et ça, ça nous dit que `a * a = 1`, et donc que `1/a = a`.
 On peut donc bien diviser 1 par a.
 
-Comme 1/a est tel que a * (1/a) est égal à l'élément neutre de la multiplication,
+Comme `1/a` est tel que `a * (1/a)` est égal à l'élément neutre de la multiplication,
 à savoir 1,
-on dit que 1/a est l'inverse de a.
-Dans les livres sur les corps finis, vous le verrez davantage noté a^(-1).
-De même la quantité 0 - a est souvent appelée l'opposé de a.
+on dit que `1/a` est l'inverse de `a`.
+Dans les livres sur les corps finis, vous le verrez davantage noté `a^-1^`.
+De même la quantité `0 - a` est souvent appelée l'opposé de a.
 On pourrait aussi l'appeler l'inverse additif de a.
 
 
@@ -155,10 +155,10 @@ Dans la ligne du a, il manque le 1 et le b.
 Mais le b ne peut pas aller tout au bout, 
 car il y a déjà un b dans la dernière colonne.
 Du coup, il faut mettre le b dans la colonne du a,
-ce qui revient à dire que a*a = b.
+ce qui revient à dire que `a*a = b`.
 Mais du coup, il faut mettre un 1 dans la dernière case de la ligne du a,
-c'est-à-dire qu'il faut avoir a*b = 1.
-Par commutativité, on sait que, du coup, b*a = 1.
+c'est-à-dire qu'il faut avoir `a*b = 1`.
+Par commutativité, on sait que, du coup, `b*a = 1`.
 Et la dernière case à remplir doit du coup l'être par un a,
 pour qu'il y ait au moins un a dans la dernière ligne.
 
@@ -173,7 +173,8 @@ Passons maintenant à l'addition,
 qui va être un peu plus compliquée à définir.
 Je vous invite vraiment à mettre pause,
 et à prendre le temps de tester différentes combinaisons.
-Allez, mettez pause...
+Si vous galérez un peu, c'est normal, ce n'est pas si facile.
+Allez, mettez pause, pour essayer...
 
 Vous avez trouvé ?
 
@@ -184,11 +185,11 @@ Alors, la démonstration n'est pas suffisamment simple pour que je vous la donne
 sans rendre la vidéo indigeste pour beaucoup,
 mais sachez que c'est une conséquence du théorème de Lagrange.
 Et c'est généralisable à tout corps fini.
-Si ce corps a q éléments, alors la somme des q éléments tous égaux à 1 est égale à 0.
+Si ce corps a q éléments, alors la somme de q éléments tous égaux à 1 est égale à 0.
 
-Maintenant, dans notre cas, remarquez que (1 + 1) * (1 + 1) = 1 + 1 + 1 + 1,
+Maintenant, dans notre cas, remarquez que `(1 + 1) * (1 + 1) = 1 + 1 + 1 + 1`,
 par la distributivité de la multiplication sur l'addition.
-Et donc, on sait que (1+1) * (1+1) = 0.
+Et donc, on sait que `(1+1) * (1+1) = 0`.
 Ou dit autrement, 1+1 est un nombre dont la multiplication par lui-même vaut 0.
 Maintenant, lorsqu'on regarde la table de multiplication,
 la multiplication par soi-même correspond à la diagonale principale ;
@@ -197,8 +198,8 @@ c'est lorsque le nombre est déjà égal à 0.
 Là encore, il s'agit d'un théorème plus général sur les corps :
 si une multiplication de deux nombres vaut zéro,
 alors au moins l'un des deux nombres doit lui-même être zéro.
-Quoi qu'il en soit, comme (1+1) * (1+1) = 0,
-on conclut que 1 + 1 doit être égal à 0.
+Quoi qu'il en soit, comme `(1+1) * (1+1) = 0`,
+on conclut que `1 + 1` doit être égal à 0.
 
 | + | 0 | 1 | a | b |
 | - | - | - | - | - |
@@ -207,7 +208,7 @@ on conclut que 1 + 1 doit être égal à 0.
 | a | a |   |   |   |
 | b | b |   |   |   |
 
-Maintenant, comme il faut un a et un b par ligne et colonne,
+Mais du coup, comme il faut un a et un b par ligne et colonne,
 on peut remplir la ligne et la colone du 1.
 
 | + | 0 | 1 | a | b |
@@ -220,8 +221,9 @@ on peut remplir la ligne et la colone du 1.
 Comment maintenant déterminer a + a ?
 On peut faire la remarque que 
 a + a = a * (1 + 1) = a * 0 = 0.
-Et donc, la diagonale principale est en fait égale à 0,
-ce qui permet de compléter les deux cases restantes par 1.
+Et donc, la diagonale principale est en fait égale à 0.
+Puisqu'il faut au moins un 1 dans chaque ligne et colonne,
+on en déduit que les deux cases restantes doivent être des 1.
 
 | + | 0 | 1 | a | b |
 | - | - | - | - | - |
@@ -236,7 +238,7 @@ ce qui permet de compléter les deux cases restantes par 1.
 ## Les corps finis
 
 On a vu que dans tout corps fini à q éléments,
-la somme 1 + 1 + 1 + ... + 1 avec q termes est égale à 0.
+la somme `1 + 1 + 1 + ... + 1` avec q termes est égale à 0.
 OK, mais comme on l'a vu dans notre exemple, 
 ce n'est pas nécessairement la plus petite somme de 1 qui s'annule.
 On avait ainsi vu que pour q = 4, la somme 1+1 s'annulait déjà.
@@ -245,7 +247,7 @@ Ce nombre p est aussi connu sous le nom de "caractéristique" du corps.
 
 On peut faire la remarque que p est forcément premier.
 En effet, sinon, la somme de p termes égaux à 1 pourrait se factoriser
-en (1 + 1 + ... + 1) * (1 + 1 + ... + 1) = 0.
+en `(1 + 1 + ... + 1) * (1 + 1 + ... + 1) = 0`.
 Or on a vu que le produit de deux nombres ne peut être nul 
 que si au moins un des termes est nul ;
 or dans chaque terme, le nombre de terme est strictement inférieur à p.
@@ -255,24 +257,26 @@ et à la cryptographie qui en fait abondamment usage.
 
 En fait, l'ensemble des éléments qu'on construit avec une somme de 1
 forme lui-même un sous-corps de corps à q éléments, 
-c'est-à-dire un sous-ensemble d'objets qui se combinent via les 4 opérations de base.
+c'est-à-dire un sous-ensemble de nombres qui se combinent via les 4 opérations de base.
 En effet, lorsqu'on multiplie deux éléments qui sont des sommes de 1,
 alors par distributivité de la multiplication, on obtient encore une somme de 1.
 De plus, on vient de montrer qu'il contient exactement p éléments ;
 la somme de p éléments rebouclant alors avec la valeur 0.
 On dit que le sous-corps engendré par (0, 1) est un corps fini à p éléments.
 
-En fait, chaque élément de ce sous-corps est directement identifié par le nombre 1
-qui compose son écriture en sommes de 1.
+En fait, chaque élément de ce sous-corps est directement identifié par le nombre de 1
+qui compose son écriture en somme de 1.
 C'est juste que quand ce nombre excède p, alors on peut lui retirer p termes,
 car la somme de ces p termes est égale à 1.
 Vous le voyez peut-être venir, ce corps fini à p éléments n'est autre
 que l'ensemble des nombres dits "modulo p",
 c'est-à-dire l'ensemble des nombres entiers avec l'égalité "forcée" p = 0.
 
-on a d'ailleurs déjà vu un exemple de tel corps, à savoir le corps à 3 éléments.
+On a d'ailleurs déjà vu un exemple de tel corps, à savoir le corps à 3 éléments.
 Et oui, p = 3 est un nombre premier !
-Mais on peut de même détailler les tables d'addition et de multiplication du corps à 5 éléments
+On peut de même détailler 
+les tables d'addition et de multiplication du corps à 5 éléments,
+qui correspondent aux opérations modul 5.
 
 | + | 0 | 1 | 2 | 3 | 4 |
 | - | - | - | - | - | - |
@@ -300,15 +304,16 @@ comme la racine carrée de -1 pour construire les nombres complexes à partir de
 
 Appelons par exemple k le "nombre imaginaire" du corps à q éléments.
 Alors les nombres du corps à q éléments doivent pouvoir s'écrire :
-$a_0 + a_1 k + a_2 k^2 + ... + a_{n-1} k^{n-1}$,
+`a_0_ + a_1_ k + a_2_ k^2^ + ... + a_n-1_ k^n-1^`,
 pour un certain nombre entier naturel n,
-avec des coefficients $a_0, a_1, ..., a_{n-1}$ qui sont des éléments du corps fini à p éléments.
-On dit dans le jargon que F_q a une structure de F_p-espace vectoriel.
-Mais alors le nombre d'éléments de F_q,
+avec des coefficients a_0_, a_1_, ..., a_n-1_ qui sont des éléments du corps fini à p éléments.
+On dit dans le jargon que F_q_ a une structure de F_p_-espace vectoriel.
+Mais alors le nombre d'éléments de F_q_,
 c'est le nombre de façon de choisir a_0, fois celui de choisir a_1, et ainsi de suite.
-Cela fait p^n choix possibles. 
-Voilà qui force q = p^n : 
-autrement dit le nombre d'éléments de tout corps fini doit être une puissance de p.
+Cela fait p^n^ choix possibles. 
+Voilà qui force q = p^n^ : 
+autrement dit le nombre d'éléments de tout corps fini doit être une puissance 
+d'un nombre premier p.
 
 
 ## Construire des corps finis à p^n éléments
@@ -321,13 +326,13 @@ lorsqu'on le met à une trop grande puissance.
 C'est exactement ce qui a été fait pour les nombres complexes.
 En effet, pour définir ces nombres, on a forcé le nombre imaginaire i
 à avoir une puissance 2 qui s'écrit entièrement en tant que nombre réel,
-à savoir i^2 = -1.
-Mais du coup, quand on multiplie des nombres complexes et qu'un terme i^7 apparaît,
+à savoir i² = -1.
+Mais du coup, quand on multiplie des nombres complexes et qu'un terme i⁷ apparaît,
 on peut le réduire à un nombre complexe usuel,
-en faisant la remarque que i^7 = i^2 * i^2 * i^2 * i = (-1) * (-1) * (-1) * i = -i.
+en faisant la remarque que `i⁷ = i² * i² * i² * i = (-1) * (-1) * (-1) * i = -i`.
 
 Eh bien, on va faire exactement pareil pour k, 
-mais en se permettant des expressions plus complexes de k^n = - k - 1.
+mais en se permettant des expressions plus complexes de k^n^.
 Pour illustrer, prenons le cas du corps fini à 2 éléments,
 qui correspond donc aux nombres modulo 2,
 et dont les tables d'addition et de multiplication sont les suivantes : 
@@ -342,13 +347,13 @@ et dont les tables d'addition et de multiplication sont les suivantes :
 | 0 | 0 | 0 |
 | 1 | 0 | 1 |
 
-Et ajoutons le nombre imaginaire k avec k^2 = k + 1
+Et ajoutons le nombre imaginaire k avec k² = k + 1
 au corps fini à 2 éléments.
-On a alors 4 valeurs possibles : 0 + 0k, 1 + 0k, 0 + 1k, 1+1k,
+On a alors 4 valeurs possibles : `0 + 0k`, `1 + 0k`, `0 + 1k`, `1+1k`,
 qu'on peut réécrire 0, 1, k et k+1.
 
 Notez que 0 et 1 se combine comme avant,
-tandis que k+k = 0 + (1+1)k = 0 + 0k = 0.
+tandis que `k+k = 0 + (1+1)k = 0 + 0k = 0`.
 Du coup, on obtient la table d'addition suivante :
 
 |  +  |  0  |  1  |  k  | k+1 |
@@ -359,9 +364,9 @@ Du coup, on obtient la table d'addition suivante :
 | k+1 | k+1 |  k  |  1  |  0  |
 
 On peut également calculer la table de multiplication,
-en utilisant k^2 = k + 1,
-qui implique $k(k+1) = k^2 + k = (k+k) + 1 = 1$
-et $(k+1)^2 = k^2 + k + k + 1 = k+1 + k+k + 1 = k$.
+en utilisant `k² = k + 1`,
+qui implique `k(k+1) = k^2 + k = (k+k) + 1 = 1`
+et `(k+1)² = k² + k + k + 1 = k+1 + k+k + 1 = k`.
 Ceci donne
 
 |  *  |  0  |  1  |  k  | k+1 |
@@ -372,17 +377,18 @@ Ceci donne
 | k+1 |  0  | k+1 |  1  |  k  |
 
 On obtient exactement les mêmes tables que celles qu'on a construites précédemment,
-avec k à la place de a et k+1 à la place de b... Laplaaaaace
+avec k à la place de a et k+1 à la place de b... Laplaaaaace !!!
+Désolé. C'était hors-sujet...
 
 
 ## Polynomes irréductibles
 
 Alors, il y a quand même une difficulté que j'ai sauté,
 au moment de définir l'équation du nombre imaginaire k.
-Et oui, si j'ai choisi k^2 = k + 1, et pas k^2 = -1,
+Et oui, si j'ai choisi `k² = k + 1`, et pas k² = -1,
 ce n'est en fait pas par hasard.
 
-En effet, si j'étais parti avec k^2 = -1, 
+En effet, si j'étais parti avec k² = -1, 
 j'aurai obtenu la table de multiplication suivante : 
 
 |  *  |  0  |  1  |  k  | k+1 |
@@ -396,56 +402,56 @@ Vous voyez le drame ?
 Le 0 apparaît maintenant plusieurs fois dans une même ligne !
 Et ça, ça implique que les opérations définies ne composent plus un corps.
 
-Mais, donc, pourquoi est-ce que k² = k+1 est un bon choix,
-mais k^2 = -1 en est un mauvais ?
+Mais, donc, pourquoi est-ce que `k² = k+1` est un bon choix,
+mais `k² = -1` en est un mauvais ?
 
-Eh bien, ça vient du fait que l'équation X² = -1 a déjà une solution dans F_2.
+Eh bien, ça vient du fait que l'équation `X² = -1` a déjà une solution dans F_2_.
 Vous vous souvenez peut-être que, si on a introduire le nombre imaginaire i,
 c'est parce qu'on ne pouvait pas prendre la racine carrée de -1 dans le corps des nombres réels.
-L'équation X² = -1 n'a pas de solution réelle.
+L'équation `X² = -1` n'a pas de solution réelle.
 Et bien, c'est ça qui fait que ajouter une solution i à cette équation
 renforce le corps des nombres réels, en un corps plus grands, à savoir celui des complexes.
 
 Et bien, il en va de même pour les corps finis.
-Toute extension de corps finis requiert l'identification d'une équation en X^n^
+Toute extension de corps finis requiert l'identification d'une équation en `X^n^`
 qui n'a pas de solution dans le corps fini.
-Les expressions comme X^n^ - X - 1 qui n'ont pas de solutions X^n^ - X - 1 = 0
+Les expressions comme `X^n^ - X - 1` qui n'ont pas de solutions `X^n^ - X - 1 = 0`
 sont appelées des polynomes irréductibles.
 Et en pratique, les informaticiens identifient de telles expressions 
 pour ensuite concevoir des corps finis.
 
 Par exemple, le corps fini à 2⁴ = 16 éléments peut se construire à partir de F_2_,
-en s'appuyant sur le nombre imaginaire k défini par k⁴ = k + 1.
-Et ça, ça marche, parce que le polynome X⁴ - X - 1 est irréductible dans F_2_,
+en s'appuyant sur le nombre imaginaire k défini par `k⁴ = k + 1`.
+Et ça, ça marche, parce que le polynome `X⁴ - X - 1` est irréductible dans F_2_,
 et qu'il est de degré 4, c'est-à-dire que la plus grande puissance est 4.
 En pratique, les informaticiens utilisent particulièrement le corps fini à 2⁸ = 256 éléments,
 notamment car ils regroupent souvent les bits par paquets de 8,
 qui forment alors un octet.
-On utilise alors le nombre imaginaire k défini par k⁸ = k⁴ + k³ + k² + 1,
+On utilise alors le nombre imaginaire k défini par `k⁸ = k⁴ + k³ + k² + 1`,
 qui correspond à un polynome irréductible.
-Comme on le verra la prochaine,
+Comme on le verra la prochaine fois,
 c'est ce nombre imaginaire qui est utilisé dans les QR Codes.
 
 D'ailleurs on peut noter que, de façon plus générale, 
 l'encodage des corps F_2^n^_ est particulièrement naturel en informatique.
-En effet, tout élément de F_{2^n} s'écrit
-$a_0 + a_1 k + a_2 k^2 + ... + a_{n-1} k^{n-1}$,
+En effet, tout élément de F_2^n^_ s'écrit
+`a_0_ + a_1_ k + a_2_ k² + ... + a_n-1_ k^n-1^`,
 puisque les puissances supérieures sont réduites par la définition du nombre imaginaire $k$.
-Et donc, on peut l'encoder, en ne retenant que les coefficients $a_{n-1}, a_{n-2}, ..., a_{0}$.
-Or chaque terme $a_{n-1}, a_{n-2}, ..., a_{0}$ doit appartenir à F_2,
+Et donc, on peut l'encoder, en ne retenant que les coefficients a_n-1_, a_n-2_, ..., a_0_.
+Or chaque terme a_n-1_, a_n-2_, ..., a_0_ doit appartenir à F_2,
 le corps à 2 éléments, dont on sait qu'ils sont 0 ou 1.
-Et donc l'encodage $a_{n-1}, a_{n-2}, ..., a_{0}$ est naturellement binaire :
+Et donc l'encodage a_n-1_, a_n-2_, ..., a_0_$ est naturellement binaire :
 il s'agit d'une suite de n bits !
 
-L'addition dans F_{2^n} correspond alors naturellement à une addition terme à terme.
-Par exemple dans F_{16}, les nombres $(k^3 + k + 1)$ et $(k^2 + 1)$ 
-sont respectivement encodés par $(1011)$ et $(0101)$.
-Leur addition donne $k^3 + k^2 + k + (1+1)$.
-Et comme 1+1 = 0 dans F_2, ça nous fait juste $k^3 + k^2 + k$.
+L'addition dans F_2^n^_ correspond alors naturellement à une addition terme à terme sans retenue.
+Par exemple dans F_2⁴_, les nombres `k³ + k + 1` et `k² + 1` 
+sont respectivement encodés par `1011` et `0101`.
+Leur addition donne `k³ + k² + k + (1+1)`.
+Et comme 1+1 = 0 dans F_2, ça nous fait juste `k³ + k² + k`.
 Et comme vous le sentez peut-être venir, 
-l'addition se fait indépendamment pour chaque puissance de $k$.
+l'addition se fait indépendamment pour chaque puissance de k.
 Et ça, ça revient à pauser l'addition, 
-mais sans invoquer de retenues qui feraient interagir les différentes puissancse de $k$.
+mais sans invoquer de retenues qui feraient interagir les différentes puissancse de k.
 Autrement dit, on peut poser l'addition
 
   1011
@@ -453,11 +459,11 @@ Autrement dit, on peut poser l'addition
 ------
   1110
 
-Quand à la multiplication, 
+Quant à la multiplication, 
 il est amusant de voir qu'elle correspond pas mal à la multiplication classique,
 à ceci près qu'il ne faut pas oublier de réduire les termes de "memory overflow".
-Multiplions ainsi $(1101)$ et $(1010)$.
-On obtient
+Illustrons cela en multipliant par exemple `1101` et `1010`.
+En posant la multiplication comme à l'école, on obtient
 
     1101
 *   1010
@@ -470,14 +476,14 @@ On obtient
  1110010
  
 Ce résultat est juste en un certain sens, 
-mais il est insatisfaisant car 1110010 ne correspond pas à l'encodage des nombres de F_{2^4}
+mais il est insatisfaisant car 1110010 ne correspond pas à l'encodage des nombres de F_2⁴_
 comme on l'a défini, car cet encodage doit être une suite de 4 bits.
 
 L'astuce est maintenant de réduire ce résultat,
-à l'aide de l'équation fondamentale du nombre imaginaire $k$,
-qu'on a défini comme $k^4 = k+1$.
-En notation binaire, ça veut dire que $10000 = 0011$.
-Utilisons cela pour réduire 1110010:
+à l'aide de l'équation fondamentale du nombre imaginaire k,
+qu'on a défini comme `k⁴ = k+1`.
+En notation binaire, ça veut dire que `10000 = 0011`.
+Utilisons cela pour réduire `1110010`:
 
    1110010
 ----------
@@ -507,33 +513,40 @@ Utilisons cela pour réduire 1110010:
 
 Ça y est, on y est parvenu, on a obtenu le résultat de notre multiplication.
 
-Notez qu'il y a également d'autres astuces de calculs remarquables pour certains corps finis,
-notamment les corps à p éléments, où p est un nombre premier de Mersenne,
-qui s'écrit 2^r - 1, avec r premier.
-Illustrons le avec r = 3, qui donne le nombre premier de Mersenne 2^3 - 1 = 7
-Les nombres de 0 à 6 du corps F_7 sont simplement représentés 
+
+## Calculs dans les corps finis de (quasi)-Mersenne
+
+Notez qu'il y a également d'autres astuces de calculs remarquables 
+pour certains autres corps finis,
+notamment les corps à p éléments, 
+où p est un nombre premier de Mersenne.
+Un tel nombre premier s'écrit `p = 2^r^ - 1`, où r est lui aussi premier.
+
+Illustrons le avec r = 3, qui donne le nombre premier de Mersenne 2³ - 1 = 7
+Les nombres de 0 à 6 du corps F_7_ sont simplement représentés 
 par leurs représentations binaires à 3 bits,
 ce qui donne la suite de nombres 000, 001, 010, 011, 100, 101 et 110.
-Cependant, on sait que dans F_7, le 7e nombre est intuitivement 0.
+Cependant, on sait que dans F_7_, le 7e nombre est intuitivement 0.
 on a donc 111 = 000.
 
 On peut alors considérer des opérations classiques de multiplication et d'addition,
-avec retenu cette fois puisqu'on travaille avec les représentation binaires des nombres entiers,
-et non pas de nombre F_{p^n},
-et avec une réduction de 111 en 000 à chaque fois qu'on dépasse 111.
-Pour cela, on va décomposer l'encodage en une somme de deux termes,
-le premier commençant par un 111. 
-Un tel terme est forcément égal à 0, 
-puisque 1110...0 = 111 * 10...0 qui est divisible par 0.
+mais avec la retenue cette fois, 
+puisqu'on travaille avec les représentation binaires des nombres entiers,
+et non pas des nombres d'un corps F_2^n^_ de caractéristique 2.
+Il faut juste prêter attention
+à bien effectuer une réduction de 111 en 000 
+à chaque fois qu'on atteint ou qu'on dépasse 111.
 
-Ainsi, 100 * 100 va être égal à 100000, qui se décompose en
-10000 = 11100 + 1100 = 1100 = 1110 + 10 = 10.
+Illustrons cela en faisant `100 * 100`. 
+On obtient alors 100000, qui se décompose en
+10000 = 10000 - 1110 = 10.
 
-Plus généralement tous les nombres premiers de la forme 2^r - c,
+Plus généralement tous les nombres premiers de la forme 2^r^ - c,
 avec un petit nombre impair c,
-définissent des corps finis F_{2^r - c} particulièrement intéressants pour la cryptographie,
-notamment car ils facilitent les calculs par ordinateur ;
-ça paraît anecdotique dit comme ça,
+définissent des corps finis F_2^r - c_ particulièrement intéressants pour la cryptographie,
+notamment car ils facilitent les calculs par ordinateur,
+en réduisant des opérations d'addition et de multiplication à des manipulations de bits.
+Ça paraît anecdotique dit comme ça,
 mais quand il s'agit de produire un grand nombre de preuves cryptographiques,
 ça fait rapidement des économies pas si négligeables de temps et d'énergie !
 
@@ -547,16 +560,24 @@ d'un jeune révolutionnaire mort beaucoup trop tôt,
 un certain Évariste Galois, 
 qui mériterait plusieurs films dédiés à son histoire rocambolesque.
 
-En particulier, la construction qu'on a proposé fait partie d'une recherche plus générale
+En particulier, la construction que je vous ai montrée 
+fait partie d'une recherche plus générale
 sur l'études des solutions des équations polynomiales,
 et sur les structures algébriques des nombres.
-Les mathématiciens plus purs s'intéressent ainsi particulièrement à l'ajout de nombres "imaginaires"
+Les mathématiciens plus purs s'intéressent ainsi à l'ajout de nombres "imaginaires"
 qui aident à résoudre des équations que les nombres rationnels ne permettent pas de résoudre ;
 et il faut que je fasse un peu attention à la terminologie ici,
-car par nombres "imaginaires", j'entends en fait simplement des nombres non-rationnels,
-comme la racine carrée de 2.
+car par nombres "imaginaires", 
+je ne pense pas forcément à la racine carrée de -1.
 
-En particulier, ils aiment réfléchir aux corps infinis conçus par ajouts 
+Par exemple, quand on cherche des solutions rationnelles,
+on peut vouloir ajouter des nombres "imaginaires" comme la racine carrée de 2,
+qui correspond à l'équation k² = 2.
+Et ça marche très bien, car en effet,
+l'équation X² = 2 n'a pas de solution rationnelle.
+
+En particulier, les mathématiciens qui suivent les pas de Galois 
+aiment réfléchir aux corps infinis conçus par ajouts 
 de tous les nombres "imaginaires" utiles à la résolution des équations polynomiales.
 Voilà qui conduit typiquement au corps des nombres complexes si on part des nombres réels,
 ou au corps des nombres algébriques, si on part des nombres rationnels.
@@ -569,7 +590,7 @@ ce qui nous éloigne drastiquement des applications.
 
 Mais tout ça, en cryptographie, en tout cas dans les protocoles les plus standards,
 il n'y a pas lieu de se soucier de ces aspects.
-L'ensemble des corps finis à p^n éléments est un espace déjà suffisamment riche,
+L'ensemble des corps finis à p^n^ éléments est un espace déjà suffisamment riche,
 et surtout suffisamment calculable,
 pour nous fournir des billes précieuses pour sécuriser nos systèmes d'information,
 dont je suis impatient de vous parler.
