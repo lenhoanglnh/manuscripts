@@ -1,4 +1,4 @@
-# Comment marche ChatGPT ?
+# À quoi ressemble le réseau de neurones de ChatGPT ? (Transformeurs)
 
 Vous savez peut-être que ChatGPT,
 et plus généralement les modèles de langage,
