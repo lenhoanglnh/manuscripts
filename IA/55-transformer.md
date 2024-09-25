@@ -23,8 +23,9 @@ Pour cette vidéo, je vais m'intéresser en particulier
 au modèle de langage Llama 3,
 car l'architecture de ce modèle est une information publique.
 D'ailleurs, vous pouvez installer Llama 3 chez vous ---
-même si, je préfère vous prévenir, sans carte graphique,
+même si, je préfère vous prévenir, sans carte graphique puissante,
 générer du texte avec Llama 3 va être long et laborieux.
+Je vais vous parler en particulier ici du modèle à 405 milliards de paramèters.
 
 Si vous voulez juste utiliser Llama 3 en mode chatbot,
 je vous invite à aller sur duckduckgo, 
@@ -47,11 +48,11 @@ Le tokenizer est un algorithme qui va prendre une suite de caractère,
 et va le décomposer en composants appelés tokens.
 Un token peut être un mot, un morceau de mot, ou même un simple caractère,
 comme une lettre de l'alphabet ou un point.
-Llama 3 dispose de 32 000 tokens.
+Llama 3 dispose de 128 000 tokens.
 Et donc, passé la première couche, 
 le texte donné à Llama 3 va être transformé en une suite de d'identifiants de tokens,
 c'est-à-dire une suite de nombre, 
-tous étant des entiers entre 0 et 31 999.
+tous étant des entiers entre 0 et 127 999.
 Pour Llama 3, ce tokenizer est appris indépendamment du coeur du réseau de neurones
 qu'est le transformer.
 Ainsi, si le prompt donné à Llama 3 a quelque chose comme 200 mots,
@@ -62,17 +63,18 @@ en une représentation vectorielle du token.
 Pour cela, on va utiliser un tableau de conversion,
 qu'on appelle dans le jargon une matrice des représentations vectorielles des tokens.
 Cette matrice est appelée tok_embeddings dans le code de Llama 3.
-Elle est de dimension 32 000 par 4096.
-Le nombre 32 000 correspond bien sûr au nombre de tokens,
-alors que 4096 correspond à la dimension de l'espace de représentation des tokens.
+Elle est de dimension 128 000 par 16 384.
+Le nombre 128 000 correspond bien sûr au nombre de tokens,
+alors que 16 384 correspond à la dimension de l'espace de représentation des tokens.
 Cette matrice va nous permettre de transformer la suite de tokens
 en une suite de représentations vectorielles.
 Comme vous l'imaginez peut-être, l'identifiant du token, s'il est égal à k,
 est remplacé par la k-ième colonne de la matrice des représentations vectorielles des tokens.
 En faisant cela token par token,
-on a une transformation de la suite de 400 tokens en une suite de 400 vecteurs de dimension 4096.
+on a une transformation de la suite de 400 tokens 
+en une suite de 400 vecteurs de dimension 16 384.
 Une suite de tels vecteurs forme naturellement une matrice,
-qui va ainsi être de dimension 400 par 4096.
+qui va ainsi être de dimension 400 par 16 384.
 On peut alors parler de représentation matricielle du prompt.
 
 Ensuite, cette représentation matricielle va subir une suite de transformations, 
@@ -88,7 +90,7 @@ pour prédire les probabilités des tokens suivants.
 Pour ce faire, il y a d'abord une "dé-représentation vectorielle" de chaque colonne,
 en multipliant cette colonne par une "matrice de "dé-représentation vectorielle".
 Cette matrice, appelée "output" dans le code de Llama 3,
-est une matrice de taille 4096 par 32000.
+est une matrice de taille 16 384 par 128 000.
 Intuitivement, chaque ligne nous dit comment chaque coordonnée de la représentation vectorielle
 doit être transformée en une "intensité" pour chaque token.
 Les "intensités" pour chaque token sont sont obtenues en ajoutant
@@ -106,7 +108,7 @@ Cette opération est connue sous le nom d'opération "Softmax",
 et on dit parfois qu'elle transforme des logits, qui sont ce que j'ai appelé "intensité",
 en probabilités.
 
-Quoi qu'il en soit, il sort de cette 4e étape une matrice 400 par 32000,
+Quoi qu'il en soit, il sort de cette 4e étape une matrice 400 par 128 000,
 qu'on peut appeler la matrice des probabilités des tokens suivants,
 et qui dit pour chaque position et chaque token,
 la probabilité que la position suivante contienne le token en question,
@@ -148,9 +150,9 @@ Il s'agit juste d'une correction pour chaque token, à ce moment du calcul.
 
 Détaillons d'abord le feedforward, car il est plus simple.
 C'est vraiment juste un réseau de neurones classique,
-qui prend un vecteur de dimension 4096 en entrée,
-le transforme en deux vecteurs de dimension 11 008,
-avec deux matrices de dimension 4096 par 11 008 qui vont être optimisées pendant l'apprentissage.
+qui prend un vecteur de dimension 16 384 en entrée,
+le transforme en deux vecteurs de dimension 53 248,
+avec deux matrices de dimension 16 384 par 53 248 qui vont être optimisées pendant l'apprentissage.
 Une opération non-linéaire, appelée Sigmoid Linear Units,
 est appliquée à l'un des vecteurs obtenus.
 Cette opération resssemble à une version plus lisse de la fonction ReLU,
@@ -162,10 +164,10 @@ Ne nous y attardons pas davantage.
 
 Puis, on effectue une multiplication par coordonnées entre les deux vecteurs de dimension 11 008.
 Enfin, on applique une autre transformation linéaire,
-pour transformer le résultat en un vecteur de dimension 4096,
-à l'aide d'une troisième matrice de dimension 11 008 par 4096.
+pour transformer le résultat en un vecteur de dimension 16 384,
+à l'aide d'une troisième matrice de dimension 53 248 par 16 384.
 Le feedforward contient donc 3 matrices paramètres à optimiser, 
-donc chacune à 11 008 x 4096 coordonnées.
+donc chacune à 53 248 x 16 384 coordonnées.
 Et il va en fait calculer, pour chaque colonne de la représentation matricielle du prompt,
 une modification à effectuer à cette colonne, qui ne dépend que de la colonne même.
 Et donc, la sortie, ça va être l'entrée, plus le résultat des opérations qu'on a décrites.
@@ -174,7 +176,7 @@ Passons maintenant au module d'attention.
 chaque module d'attention est lui même composé de plusieurs opérations parallèles identiques,
 mais avec des paramètres différentes.
 Chaque opération parallèle est appelée une tête du module multi-tête d'attention.
-Dans Llama 3, on a 32 têtes d'attention.
+Dans Llama 3, on a 128 têtes d'attention.
 
 Rappelez-vous que ce module d'attention est en charge de la diffusion de l'information,
 des tokens antérieures aux tokens suivants.
@@ -185,17 +187,17 @@ Pour chaque token, cette information va être directement sous la forme d'un vec
 
 Pour déterminer l'information à diffuser par un token, 
 on utilise une matrice de diffusion informationnelle de la tête d'attention,
-dont la dimension est 4096 par 4096,
+dont la dimension est 16 384 par 16 384,
 et qui va être un autre paramètre du module d'attention 
 à optimiser en fonction des données d'entraînement.
-En multipliant la représentation matricielle, de dimension 400 par 4096,
+En multipliant la représentation matricielle, de dimension 400 par 16 384,
 par cette matrice de diffusion informationnelle,
-on obtient une matrice de dimension 400 par 4096,
+on obtient une matrice de dimension 400 par 16 384,
 qui dit, pour chaque token, l'information vectorielle 
 qu'il veut transmettre aux représentations vectorielles des autres tokens.
 
-NB: En fait, Llama 3 factorise la matrice 4096 par 4096 
-par deux matrices de dimension 4096 par 128, et 128 par 4096.
+NB: En fait, Llama 3 factorise la matrice 16 384 par 16 384
+par deux matrices de dimension 16 384 par 128, et 128 par 16 384.
 Voilà qui permet de réduire le nombre de paramètres du module d'attention.
 
 Reste maintenant à déterminer à quel point cette information à diffuser doit être diffusée.
@@ -228,7 +230,7 @@ que les autres positions veulent lui diffuser,
 pondérées par la matrice d'impact, 
 qui garantit au passage une diffusion uniquement de la gauche vers la droite.
 
-La matrice qu'on obtient, de dimension 400 par 4096,
+La matrice qu'on obtient, de dimension 400 par 16 384,
 va donner les modifications à ajouter à la représentation matricielle du prompt,
 selon une tête du module d'attention.
 Eh bien, la représentation matricielle va être mise à jour,
