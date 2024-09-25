@@ -26,7 +26,6 @@ D'ailleurs, vous pouvez installer Llama 3 chez vous ---
 même si, je préfère vous prévenir, sans carte graphique puissante,
 générer du texte avec Llama 3 va être long et laborieux.
 Je vais vous parler en particulier ici du modèle à 405 milliards de paramèters.
-
 Si vous voulez juste utiliser Llama 3 en mode chatbot,
 je vous invite à aller sur duckduckgo, 
 où vous pourrez aussi utiliser Mistral, ChatGPT et Claude 3.  
@@ -404,6 +403,11 @@ leur efficacité semble davantage résider dans la parallélisation des calculs,
 et dans les nombreuses astuces pour éviter 
 que les représentations matricielles et que les gradients calculés n'explosent,
 ou prennent des valeurs dérisoires à cause de la profondeur du réseau.
+Bref, ce n'est pas trivial, mais c'est loin d'être extraordinaire ;
+et c'est pour ça que je n'ai pas cherché à vulgariser ce concept plus tôt.
+Et si je n'avais pas le sentiment que parler des transformeurs serait clickbait,
+à cause de toute la hype autour des algorithmes génératifs...
+bah, je ne l'aurais pas fait !
 
 Cependant, comme vous le savez si vous me suivez,
 si cela permet des prouesses spectaculaires, 
