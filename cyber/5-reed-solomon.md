@@ -2,8 +2,7 @@
 
 Imaginez une partie un peu spéciale du jeu "qui est-ce ?"
 où chaque joueur a le droit de mentir une seule fois.
-Prenons le cas particulier où vous avez 4 personnages possibles,
-Sabine, Victor, Valentine et Jean-Lou.
+Prenons le cas particulier où vous avez 4 personnages possibles.
 L'autre joueur a l'un de ces personnages dans la main,
 mais vous ne savez pas lequel.
 Vous devez le déterminer, en posant uniquement des questions binaires.
