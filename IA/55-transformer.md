@@ -39,7 +39,7 @@ https://x.com/Snowden/status/1801610725229498403
 Venons-en maintenant à l'architecture de Llama 3.
 Celle-ci se compose d'un "tokenizer", 
 d'une représentation vectorielle des tokens,
-de 32 couches de "blocs du transformer",
+de 126 couches de "blocs du transformer",
 d'un module de dé-représentation chargé d'assigner des probabilités aux différents tokens,
 et enfin un "detokenizer".
 
@@ -182,7 +182,8 @@ Rappelez-vous que ce module d'attention est en charge de la diffusion de l'infor
 des tokens antérieures aux tokens suivants.
 Pour ce faire, chaque tête d'attention va déterminer l'information que chaque token doit diffuser,
 en fonction de la représentation de ce token.
-Pour chaque token, cette information va être directement sous la forme d'un vecteur de dimension 4096,
+Pour chaque token, cette information va être directement 
+sous la forme d'un vecteur de dimension 16 384,
 à ajouter aux représentations vectorielles des autres tokens.
 
 Pour déterminer l'information à diffuser par un token, 
@@ -202,7 +203,7 @@ Voilà qui permet de réduire le nombre de paramètres du module d'attention.
 
 Reste maintenant à déterminer à quel point cette information à diffuser doit être diffusée.
 Pour cela, pour chaque tête d'attention, 
-on va introduire 2 autres matrices de dimension 4096 par 128 qui vont être apprises,
+on va introduire 2 autres matrices de dimension 16 384 par 128 qui vont être apprises,
 chaque colonne de la représentation matricielle va être transformée
 entre 2 vecteurs de dimension 128,
 qu'on peut appeler la représentation bivectorielle dans la tête d'attention du token.
@@ -223,7 +224,7 @@ qui ne semblent en fait pas fondamentaux à la nature et à la performance des t
 Toujours est-il qu'on obtient ainsi une matrice, de dimension 400 par 400,
 qui décrit des impacts de i vers j pour i < j,
 et qui ne décrit aucun impact dans la direction opposée.
-Eh bien, on va multiplier cette matrice par la matrice 400 par 4096 
+Eh bien, on va multiplier cette matrice par la matrice 400 par 16 384 
 des informations à diffuser dans la tête d'attention par chaque token.
 Pour chaque position, cette opération va permettre de collecter les informations
 que les autres positions veulent lui diffuser,
@@ -376,7 +377,7 @@ aux représentations vectorielles des différents tokens.
 Pour finir, il reste à déterminer quelle information sera diffusée.
 Eh bien, c'est là que la 3e et dernière matrice entre en jeu,
 qui est utilisée pour transformer les colonnes de la représentation matricielle de l'image
-en des vecteurs de dimension 4096,
+en des vecteurs de dimension 16 384,
 qui correspondent à la modification additive 
 que ces colonnes souhaitent effectuer aux représentations des tokens.
 
