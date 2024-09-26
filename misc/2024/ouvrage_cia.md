@@ -2,7 +2,7 @@
 
 « Le niveau de démocratie dont jouit le citoyen moyen dans le monde en 2023 
 est retombé à son niveau de 1985 », 
-peut-on lire dans le rapport 2024 du V-Dem Institute.
+peut-on lire dans le rapport 2024 du V-Dem Institute (Nord et al. 2024).
 « Les déclins de la démocratie continuent d'être plus nombreux que les progrès »,
 ajoute l'analyse 2024 du Global State of Democracy Initative,
 un institut intergouvernemental associé à l'Organisation des Nations Unies.
@@ -20,7 +20,7 @@ que la lanceuse d'alerte Frances Haugen a révélés au Wall Street Journal (202
 On y lit que des politiciens européens avaient eux-mêmes identifié un changement
 de l'algorithme de priorisation des contenus des fils d'actualité en 2018,
 et que celui-ci favorisait beaucoup plus nettement les positions provocatrices et clivantes
-(60 Minutes, 2021).
+(Pelley 2021).
 Une demi-décennie plus tard, 
 on en paie visiblement les conséquences, 
 de manière très préoccupante,
@@ -30,25 +30,28 @@ un peu partout dans le monde
 Pourtant, les algorithmes de priorisation de l'information,
 qu'on appelle aussi les *intelligences artificielles* (IA) de recommandation,
 restent des objets beaucoup trop rarement évoqués,
-malgré des accusations de complicité de génocides et de désastres humanitaires (Amnesty 2021, 2022).
+malgré des accusations de complicité de génocides et de désastres humanitaires 
+(Amnesty International 2022, 2023).
 Trop souvent dans l'ombre de la hype des algorithmes génératifs,
 ces IA sont pourtant beaucoup plus lucratives et invasives.
-Après tout, elles sont déjà utilisées par plusieurs milliards d'humains [CITE], 
-pendant plusieurs heures par jour [CITE].
+Après tout, elles sont déjà utilisées par plusieurs milliards d'humains, 
+pendant plusieurs heures par jour (Ortiz-Ospina 2019).
 Mais surtout, elles représentent le maillon essentiel pour retenir leur attention 
 et pour ensuite revendre leurs temps de cerveau disponible à des annonceurs publicitaires.
 Qu'on ne s'y méprenne pas.
 Ce modèle d'affaire représente encore très largement l'écrasante majorité des revenus 
 de la plupart des géants du numérique,
-en particulier Google, Facebook, TikTok et Amazon [CITE].
+en particulier Google, Facebook, TikTok et Amazon (Elias 2024, Kim 2024).
 
 À bien des égards, 
 les IA de recommandation sont aussi plus complexes que les algorithmes génératifs,
 notamment parce qu'elles effectuent un profilage psychologique des milliards d'utilisateur
-à partir de données extrêmement invasives (Kozinsky et al. 2013),
+à partir de données extrêmement invasives (Kosinsky et al. 2013),
 et parce qu'elles s'appuient sur des modèles d'analyse de vidéo et de langage 
-pour modérer et cataloguer les siècles de vidéos qu'elles doivent analyser chaque jour [CITE].
-En fait, à ce jour, le plus grand modèle d'IA publié est une IA de recommandation [CITE].
+pour modérer et cataloguer les siècles de vidéos 
+qu'elles doivent analyser chaque jour (YouTube for Press 2024).
+En fait, à ce jour, 
+le plus grand modèle d'IA publié est une IA de recommandation (Lian et al. 2022).
 Enfin, et surtout, 
 parce que la plupart des humains accèdent désormais à l'information depuis leurs téléphones,
 parce que les opérations intuitives du téléphones sont le clic, le swipe et le scroll,
@@ -59,11 +62,12 @@ elle suggère que ces IA pourraient conserver leur rôle bien central
 dans le flux de l'information dans nos sociétés dans les décennies à venir.
 
 Ce constat préoccupant a poussé de nombreux chercheurs et hacktivistes 
-à défendre l'urgence d'un contrôle démocratique des IA en général [CITE],
-et des IA de recommandation en particulier [CITE].
+à défendre l'urgence d'un contrôle démocratique des IA en général (Hoang 2023),
+et des IA de recommandation en particulier (Gibert et al. 2024, Hoang et Fourquet 2024).
 Cependant, au delà des nombreux défis techniques que pose un tel contrôle,
-qui ont motivé une littérature scientifique fascinante sur la gouvernance algorithmique [CITE],
-cette ambition soulève de nombreuses questions philosophiques [CITE].
+qui ont motivé une littérature scientifique fascinante 
+sur la gouvernance algorithmique (Noothigattu et al. 2018, Lee et al. 2019, Freedman et al. 2020),
+cette ambition soulève de nombreuses questions philosophiques.
 
 L'objectif de cet article,
 c'est de mettre en lumière trois questions philosophiques en particulier,
@@ -80,9 +84,10 @@ dans un futur aussi proche que possible.
 
 Si tout le monde reconnaît aujourd'hui des problèmes de désinformation et de haine en ligne,
 certains peuvent considérer qu'il s'agit du coût à payer,
-si l'on souhaite protéger la liberté d'expression [CITE].
+si l'on souhaite protéger la liberté d'expression (Cohen-Almagor 2015).
 Cependant, cette notion qui peut paraître fondamentale 
-est l'objet d'une vaste littérature [CITE],
+est l'objet d'une vaste littérature 
+(Ammori 2012, Girard 2016, Kloninck 2018, Kaye 2019, Marciel 2023),
 qui en révèle toute la subtilité.
 En fait, des lois encadrent déjà les limites de cette liberté,
 comme l'incitation à la haine (Article R625-7 du code pénal), 
@@ -105,17 +110,17 @@ davantage que sur la *liberté* de les publier.
 
 Malheureusement, une confusion récurrente entre la *liberté d'expression*
 et la *liberté des moyens d'expression*,
-nous semble avoir fait confondre l'idéal de la *délibération démocraitque* [CITE]
-avec la nécessité d'un *marché des idées* [CITE].
+nous semble avoir fait confondre l'idéal de la *délibération démocratique* (Landermore 2017)
+avec la nécessité d'un *marché des idées* (Ingber 1984).
 Or, en pratique, le *marché des idées* s'est lui naturellement organisé
 par la possession privée des *moyens d'expression*,
-à l'image du rachat de médias classiques [CITE]
-ou du réseau social Twitter par des milliardaires [CITE],
+à l'image du rachat de médias classiques (Cagé 2015)
+ou du réseau social Twitter par des milliardaires (Benton et al. 2022),
 mais aussi du chantage d'entreprises privées du numérique comme Google et Facebook
-sur des états démocratiques comme l'Australie et le Canda [CITE].
+sur des états démocratiques comme l'Australie et le Canda (Morris-Grant 2024).
 Pire encore, ce marché des idées est littéralement vendu aux plus offrants,
-par des voies illégales (achats de faux comptes [CITE]) 
-et légales (publicité en ligne et sponsoring d'influenceurs [CITE]).
+par des voies illégales (achats de faux comptes, Huang et Liu 2024) 
+et légales (publicité en ligne et sponsoring d'influenceurs, Leung et al. 2022).
 De façon préoccupante, les inégalités de moyens d'acquisition
 ont conduit à une inégalité monumentale des moyens d'expression.
 Des milliardaires et des entreprises privées disposent 
@@ -139,7 +144,7 @@ comme la vitesse du web transcende très nettement
 celle de la délibération et du vote démocratique,
 tout comme celle de la justice,
 il y a un enjeu urgent à ralentir les processus de viralité en ligne,
-de sorte à permettre une gouvernance démocratique [CITE].
+de sorte à permettre une gouvernance démocratique (Boullier 2020).
 En particulier, Hoang et Fourquet (2024) proposent d'instaurer
 une *présomption de non-recommandabilité massive*,
 selon laquelle un contenu qui n'a pas acquis (démocratiquement)
@@ -199,7 +204,8 @@ d'influencer le comportement des IA.
 La légitimité d'une gouvernance démocratique semble ainsi dépendre de manière essentielle
 de l'état d'esprit dans lequel les citoyens fournissent les données
 qui seront utilisées pour déterminer les objets démocratiques.
-À cet égard, [CITE] soulignent cette nécessité de *choix délibéré*,
+À cet égard, Hoang (2019), Søvik (2022) et Lechiakh et Maurer (2023) 
+soulignent cette nécessité de *choix délibéré*,
 voire de choix *informé* et bien *mûri*,
 en parlant de *volition réfléchie*,
 par opposition aux *préférences instinctives* 
@@ -209,7 +215,7 @@ que si elle est une gouvernance des *volitions*,
 plutôt qu'une gouvernance des *préférences*.
 La plateforme Tournesol a d'ailleurs révélé des écarts de jugements
 enrte les préférences fournies rapidement 
-et celles qui semblent résulter de volitions plus réfléchies [CITE],
+et celles qui semblent résulter de volitions plus réfléchies (Hoang et al. 2024),
 suggérant toute l'importance de cette distinction.
 
 Si l'on accepte la prévalence des volitions sur les préférences,
@@ -226,12 +232,13 @@ avant qu'ils ne fournissent les données qui seront utilisées
 pour concevoir et gouverner les IA.
 
 L'une des initiatives les plus intéressantes à cet égard
-est l'introduction des *Community Notes* sur Twitter [CITE],
+est l'introduction des *Community Notes* sur Twitter 
+(Wirtschafter et Majumder 2023, Pilarski et al. 2024),
 qui visaient à contextualiser les messages publiés sur la plateforme,
 pour permettre aux utilisateurs de prendre du recul
 avant d'éventuellement les "liker" et les partager.
 Même si ces notes sont par ailleurs critiquables,
-notamment à cause de failles de sécurité [CITE],
+notamment à cause de failles de sécurité (Elliot et Gilbert 2023),
 elles suggèrent une voie prometteuse vers la gouvernance des volitions.
 Mais comment pourrait-on aller plus loin ?
 Comment favoriser, puis identifier, les volitions dans le cyber espace ?
@@ -251,11 +258,12 @@ Comment tant de distances, voire tant de haines, ont pu émergé
 entre des représentants politiques,
 ainsi qu'entre des clans de l'électorat qu'ils représentent ?
 
-Selon [CITE], 
+Selon Törnberg (2022), 
 une partie de la réponse réside dans la mise en avant systématique des sujets clivants,
 qui suscitent naturellement plus d'engagements,
-et donc plus de revenus pour les réseaux sociaux [CITE].
-Malheureusement, des études [CITE] montrent que ces sujets clivants clivent ;
+et donc plus de revenus pour les réseaux sociaux (Berger et Milkman 2012).
+Malheureusement, des études (Balietti et al. 2021, Axelrod et al. 2021)
+montrent que ces sujets clivants clivent ;
 en particulier, l'exposition au point de vue opposé a tendance à exacerber les tensions,
 plutôt qu'à rapprocher les points de vues.
 Mais surtout, ces sujets clivants sont souvent des impasses démocratiques,
@@ -272,17 +280,17 @@ peuvent paraître être une chimère à certains.
 Mais si c'est le cas, c'est sans doute précisément 
 à cause de l'attention démesurée donnée aux conflits dans nos démocraties.
 Pourtant, même sur un sujet aussi clivant que les violences policières à l'été 2023 en France,
-une délibération menée en ligne via la plateforme *Pol.is* [CITE]
+une délibération menée en ligne via la plateforme *Pol.is* (Small et al., 2021)
 a identifié de tels consensus radicaux.
 Certes, il y a bien deux clans qui s'opposent ;
 mais les deux clans s'accordent en fait en grande majorité 
 sur l'urgence d'investir davantage dans la formation des policiers d'une part,
-et dans la police de proximité d'autre part [CITE].
+et dans la police de proximité d'autre part (Pech 2023).
 Malheureusement, ces consensus radicaux ont été noyées dans l'océan de haine
 qu'alimentent les IA de recommandation aujourd'hui,
 si bien que les volontés les plus démocratiques sont aujourd'hui inconnues,
 et mises au placard.
-On dit parfois d'eux qu'ils sont des *mute news* [CITE],
+On dit parfois d'eux qu'ils sont des *mute news* (Hoang 2020),
 c'est-à-dire des informations rendues silencieuses 
 par une compétition plus médiatisée et amplifiée par les IA de recommandation.
 
@@ -322,21 +330,111 @@ la distinction entre préférences instinctives et volitions réfléchies
 et la priorisation des consensus radicaux aux dépens des impasses clivantes,
 sans toutefois viser à fournir des conclusions péremptoires.
 J'espère en particulier motiver plus de recherches,
-pour identifier de potentielles réponses consensuellement univoques.
+pour identifier de potentielles réponses consensuellement univoques
+à des enjeux civilisationnels brûlants.
 Par ailleurs, j'ai pour objectif de partager ma curiosité pour ces considérations,
 qui me semblent être d'une grande richesse philosophique insuffisamment explorée.
 
 
 ## Références
 
-60 Minutes 2021
-Amnesty 2021 2022
-Aral 2020
-Chavalarias 2022
-Global State of Democracy Initative 2024
-Tufekci 2017
-V-Dem Institute 2024
-Wall Street Journal 2021
+Ammori N (2012). First Amendment Architecture. Wisconsin Law Review.
+
+Amnesty International (2022). Myanmar: Facebook’s systems promoted violence against Rohingya; Meta owes reparations.
+
+Amnesty International (2023). Ethiopia: Meta’s failures contributed to abuses against Tigrayan community during conflict in northern Ethiopia.
+
+Aral S (2020). The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health--and How We Must Adapt. Penguin 2020.
+
+Axelrod R, Daymude JJ, Forrest S (2021). Preventing extreme polarization of political attitudes. PNAS.
+
+Balietti S, Getoor L, Goldstein DG, Watts DJ (2021). Reducing opinion polarization: Effects of exposure to similar people with differing political views. PNAS.
+
+Benton B, Choi JA, Luo Y, Green K (2022). Hate speech spikes on Twitter after Elon Musk acquires the platform. School of Communication and Media, Montclair State University.
+
+Berger JA, Milkman KL (2012). What Makes Online Content Viral? Journal of Marketing Research.
+
+Small C, Bjorkegren M, Erkkilä T, Shaw L, Megill C (2021). Polis: Scaling deliberation by mapping high dimensional opinion spaces. Recerca: revista de pensament i anàlisi.
+
+Boullier (2020). Comment sortir de l’emprise des réseaux sociaux, Paris, Le Passeur.
+
+Cagé J (2015). Sauver les médias. Capitalisme, financement participatif et démocratie: Capitalisme, financement participatif et démocratie. Média Diffusion.
+
+Chavalarias D (2022). Toxic Data : Comment les réseaux manipulent nos opinions. Flammarion.
+
+Cohen-Almagor R (2015). Confronting the Internet's Dark Side: Moral and Social Responsibility on the Free Highway. Cambridge University Press.
+
+Elias J (2024). Alphabet meets earnings expectations but misses on YouTube ad revenue. CNBC.
+
+Elliott V, Gilbert D (2023). Elon Musk’s Main Tool for Fighting Disinformation on X Is Making the Problem Worse, Insiders Claim. Wired.
+
+Freedman R, Borg JS, Sinnott-Armstrong W, Dickerson JP, Conitzer V (2020). Adapting a kidney exchange algorithm to align with human values. Artificial Intelligence.
+
+Gibert M, Hoang LN, Lambrecht M (2024). Should YouTube make recommendations for the climate?. Ethics and Information Technology.
+
+Girard C (2016). La liberté d'expression : état des questions. Raisons Politiques.
+
+Hagey K and Horwitz J (2021). Facebook Tried to Make Its Platform a Healthier Place. It Got Angrier Instead. Wall Street Journal.
+
+Hoang LN (2019). Towards Robust End-to-End Alignment. SafeAI@AAAI.
+
+Hoang LN (2020). Science communication desperately needs more aligned recommendation algorithms. Frontiers in Communication.
+
+Hoang LN (2023). Les IA échappent au contrôle démocratique. SwissInfo.
+
+Hoang LN, Fourquet JL (2024). La Dictature des Algorithmes : Une transition numérique démocratique est possible. Tallandier.
+
+Hoang LN, Beylerian R, Fageot J, Faucon L, Jungo A, Matissart A, Nogues N, Villemaud O (2024). The Tournesol dataset: Which videos should be more largely recommended? Preprint.
+
+Huang Z, Liu D (2024). Economics of social media fake accounts. Management Science.
+
+Ingber S (1984). The marketplace of ideas: a legitimizing myth. Duke Law Journal.
+
+Kaye D (2019). Speech Police. The global struggle to govern the internet. Columbia Global Reports.
+
+Kloninck K (2018). The New governors: The people, rules, and processes governing Online Speech. Harvard Law Review.
+
+Kim HY (2024). What’s wrong with relying on targeted advertising? Targeting the business model of social media platforms. Critical Review of International Social and Political Philosophy.
+
+Kosinsky M, Stillwell D, Graepel T (2013). Private traits and attributes are predictable from digital records of human behavior. PNAS.
+
+Landermore H (2017). Deliberative Democracy as Open, Not (Just) Representative Democracy. Dædalus.
+
+Lechiakh M, Maurer A (2023). Volition Learning: What Would You Prefer to Prefer? CHI.
+
+Leung FF, Gu FF, Palmatier RW (2022). Online influencer marketing. Journal of the Academy of Marketing Science.
+
+Lian X, Yuan B, Zhu X, Wang Y, He Y, Wu H, ... Liu J (2022). Persia: An open, hybrid system scaling deep learning-based recommenders up to 100 trillion parameters. ACM SIGKDD.
+
+Marciel R (2023). On citizens' right to information: Justification and analysis of the Democratic Right to be well informed. Journal of Political Philosophy.
+
+Noothigattu R, Gaikwad S, Awad E, Dsouza S, Rahwan I, Ravikumar P, Procaccia A (2018). A voting-based system for ethical decision making. AAAI.
+
+Lee MK, Kusbit D, Kahng A, Kim JT, Yuan X, Chan A, See D, Noothigattu R, Lee S, Psomas A, Procaccia A (2019). WebuildAI: Participatory framework for algorithmic governance. ACM HCI.
+
+Morris-Grant B (2024). Meta blocked news from Facebook and Instagram in Canada — could they do the same in Australia? ABC News.
+
+Nord M, Lundstedt M, Angiolillo F, Borella C, Gastaldi L, Good God A, Natsika N, Lindberg SI (2024). Democracy Winning and Losing at the Ballot: Democracy Report 2024. V-Dem Institute 2024.
+
+Ortiz-Ospina (2019). The rise of social media. Our World in Data.
+
+Pech T (2023). Pol.is sur la Police, bilan d’une expérimentation. La Grande Conversation.
+
+Pelley S (2021). Whistleblower: Facebook is misleading the public on progress against hate speech, violence, misinformation. CBS News.
+
+Pilarski M, Solovev KO, Pröllochs N (2024). Community Notes vs. Snoping: How the Crowd Selects Fact-Checking Targets on Social Media. AAAI on Web and Social Media.
+
+Søvik AO (2022). What overarching ethical principle should a superintelligent AI follow? AI & SOCIETY.
+
+The Global State of Democracy 2024: Strengthening the Legitimacy of Elections in a Time of Radical Uncertainty. International IDEA.
+
+Törnberg P (2022). How digital media drive affective polarization through partisan sorting. PNAS.
+
+Tufekci Z (2017). Twitter and Tear Gas: The Power and Fragility of Networked Protest. Yale University Press.
+
+YouTube for Press (2024). blog.youtube/press.
+
+Wirtschafter V, Majumder S (2023). Future Challenges for Online, Crowdsourced Content Moderation: Evidence from Twitter’s Community Notes. Journal of Online Trust and Safety.
 
 
 ## Biographie
