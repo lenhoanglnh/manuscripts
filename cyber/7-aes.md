@@ -463,3 +463,9 @@ Si cette superintellygence bienveillante n'y est pas parvenue,
 peut-être pont-on espérer que d'autres, moins bienveillantes,
 n'y arriveront pas non plus.
 
+À défaut de théorèmes mathématiques, 
+c'est en tout cas le meilleur pari qu'on a trouvé
+pour fournir des solutions pragmatiques 
+pour être prévisiblement imprévisibles,
+en ne s'appuyant que sur des opérations purement déterministes.
+
