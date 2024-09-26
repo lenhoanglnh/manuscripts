@@ -46,8 +46,8 @@ en particulier Google, Facebook, TikTok et Amazon (Elias 2024, Kim 2024).
 À bien des égards, 
 les IA de recommandation sont aussi plus complexes que les algorithmes génératifs,
 notamment parce qu'elles effectuent un profilage psychologique des milliards d'utilisateur
-à partir de données extrêmement invasives (Kosinsky et al. 2013),
-et parce qu'elles s'appuient sur des modèles d'analyse de vidéo et de langage 
+à partir de données extrêmement intrusives (Kosinsky et al. 2013),
+et parce qu'elles s'appuient sur les meilleurs modèles d'analyse de vidéo et de langage 
 pour modérer et cataloguer les siècles de vidéos 
 qu'elles doivent analyser chaque jour (YouTube for Press 2024).
 En fait, à ce jour, 
@@ -94,7 +94,7 @@ comme l'incitation à la haine (Article R625-7 du code pénal),
 le (cyber)-harcèlement (Article 222-33-2-2 du code pénal)
 et la protection des données personnelles (RGPD).
 
-Ceci étant dit, dans l'espace informationnelle,
+Ceci étant dit, dans l'espace informationnel,
 l'enjeu principal ne semble pas être les limites ou non
 de ce que les citoyens ont le droit de déclarer.
 Si des propos ignobles sont tenus sur un réseau social,
@@ -116,7 +116,7 @@ Or, en pratique, le *marché des idées* s'est lui naturellement organisé
 par la possession privée des *moyens d'expression*,
 à l'image du rachat de médias classiques (Cagé 2015)
 ou du réseau social Twitter par des milliardaires (Benton et al. 2022),
-mais aussi du chantage d'entreprises privées du numérique comme Google et Facebook
+et comme l'illustre aussi le chantage d'entreprises privées du numérique comme Google et Facebook
 sur des états démocratiques comme l'Australie et le Canda (Morris-Grant 2024).
 Pire encore, ce marché des idées est littéralement vendu aux plus offrants,
 par des voies illégales (achats de faux comptes, Huang et Liu 2024) 
@@ -127,7 +127,7 @@ Des milliardaires et des entreprises privées disposent
 d'une capacité à diffuser des messages très largement supérieure
 à celles de la quasi-totalité des citoyens.
 
-Si cette concentration des médias est une problème reconnu,
+Si cette concentration des médias est un problème reconnu,
 la quête d'une alternative beaucoup plus conforme aux normes démocratiques
 peine encore à être un sujet de réflexion.
 Il semble toutefois que la clé réside 
@@ -137,7 +137,7 @@ dans le choix des sujets que les médias classiques devraient traiter,
 et surtout que les IA de recommandation devraient suggérer le plus souvent.
 C'est ce que proposent Hoang et Fourquet (2024),
 à travers notamment la plateforme Tournesol 
-qui vise à proposer un mécanisme de conception démocratique des IA de recommandation.
+qui développe un mécanisme de conception démocratique des IA de recommandation.
 
 Par ailleurs, 
 comme la vitesse du web transcende très nettement 
@@ -149,7 +149,7 @@ En particulier, Hoang et Fourquet (2024) proposent d'instaurer
 une *présomption de non-recommandabilité massive*,
 selon laquelle un contenu qui n'a pas acquis (démocratiquement)
 un permis d'amplification à grande échelle
-ne doit pas être recommandé massivement ---
+ne doit pas être recommandé massivement --
 y compris s'il est produit par une multinationale ou un milliardaire.
 
 Ces propositions ont-elles des chances d'être des réponses consensuelles,
@@ -159,7 +159,7 @@ d'un point de vue économique, juridique et démocratique ?
 Quelles solutions pragmatiques sont envisageable sur le plan technique ?
 Voilà tant de questions auxquelles ce court article ne prétend pas répondre,
 mais dont il semble urgent de se saisir 
-pour éviter une prise de la Bastille de l'espace informationnel
+pour éviter une prise de la Bastille informationnelle
 par une poignée d'acteurs trop souvent trop peu alignés avec les normes démocratiques.
 
 
@@ -197,9 +197,6 @@ pour pouvoir être considéré *responsable*,
 dans le sens où ces citoyens seraient en principe en mesure de *répondre*
 à des questions sur les données
 qu'ils ont fournies à la conception des IA de recommandation.
-Plus généralement, les données des citoyens qui alimentent ces IA
-peuvent être difficilement jugées être issues d'une volonté des citoyens
-d'influencer le comportement des IA.
 
 La légitimité d'une gouvernance démocratique semble ainsi dépendre de manière essentielle
 de l'état d'esprit dans lequel les citoyens fournissent les données
@@ -209,22 +206,22 @@ soulignent cette nécessité de *choix délibéré*,
 voire de choix *informé* et bien *mûri*,
 en parlant de *volition réfléchie*,
 par opposition aux *préférences instinctives* 
-qui guident tant des activités des citoyens en ligne en pratique.
+qui guident davantage les activités des citoyens en ligne en pratique.
 Une gouvernance démocratique ne serait ainsi satisfaisante
 que si elle est une gouvernance des *volitions*,
 plutôt qu'une gouvernance des *préférences*.
 La plateforme Tournesol a d'ailleurs révélé des écarts de jugements
-enrte les préférences fournies rapidement 
+entre les préférences fournies rapidement 
 et celles qui semblent résulter de volitions plus réfléchies (Hoang et al. 2024),
 suggérant toute l'importance de cette distinction.
 
 Si l'on accepte la prévalence des volitions sur les préférences,
 il reste à déterminer les dispositifs pratiques
 qui permettront de valoriser ces volitions aux dépens des préférences,
-voire qui permettront des distinguer les volitions des préférences.
+voire qui permettront de distinguer les volitions des préférences.
 Hors ligne, l'article L49 du code électoral, par exemple,
-interdit toute campagne électorale le jour d'une élection.
-Voilà qui permet d'encourager une journée de réflexion,
+interdit toute campagne électorale la veille et le jour d'une élection.
+Voilà qui permet d'encourager au moins une journée de réflexion,
 et limite le risque de décisions de vote plus instinctives.
 De même, en ligne, il serait peut-être adéquat de pousser
 les citoyens à prendre du recul et un temps de réflexion
@@ -234,7 +231,7 @@ pour concevoir et gouverner les IA.
 L'une des initiatives les plus intéressantes à cet égard
 est l'introduction des *Community Notes* sur Twitter 
 (Wirtschafter et Majumder 2023, Pilarski et al. 2024),
-qui visaient à contextualiser les messages publiés sur la plateforme,
+qui visent à contextualiser les messages publiés sur la plateforme,
 pour permettre aux utilisateurs de prendre du recul
 avant d'éventuellement les "liker" et les partager.
 Même si ces notes sont par ailleurs critiquables,
@@ -256,7 +253,7 @@ suggèrent que ce n'est pas une fatalité.
 Mais alors, que s'est-il passé ?
 Comment tant de distances, voire tant de haines, ont pu émergé
 entre des représentants politiques,
-ainsi qu'entre des clans de l'électorat qu'ils représentent ?
+ainsi qu'entre les clans de l'électorat qu'ils représentent ?
 
 Selon Törnberg (2022), 
 une partie de la réponse réside dans la mise en avant systématique des sujets clivants,
@@ -276,7 +273,7 @@ et que la population juge désirables de manière presque consensuelle ?
 
 Ces consensus, qu'on pourrait qualifier de *radicaux* dans la mesure 
 où ils impliquent des interventions,
-peuvent paraître être une chimère à certains.
+peuvent paraître être une chimère.
 Mais si c'est le cas, c'est sans doute précisément 
 à cause de l'attention démesurée donnée aux conflits dans nos démocraties.
 Pourtant, même sur un sujet aussi clivant que les violences policières à l'été 2023 en France,
@@ -287,10 +284,10 @@ mais les deux clans s'accordent en fait en grande majorité
 sur l'urgence d'investir davantage dans la formation des policiers d'une part,
 et dans la police de proximité d'autre part (Pech 2023).
 Malheureusement, ces consensus radicaux ont été noyées dans l'océan de haine
-qu'alimentent les IA de recommandation aujourd'hui,
-si bien que les volontés les plus démocratiques sont aujourd'hui inconnues,
+qu'alimentent les IA de recommandation d'aujourd'hui,
+si bien que les volontés les plus démocratiques sont aujourd'hui méconnues,
 et mises au placard.
-On dit parfois d'eux qu'ils sont des *mute news* (Hoang 2020),
+On dit parfois qu'elles sont des *mute news* (Hoang 2020),
 c'est-à-dire des informations rendues silencieuses 
 par une compétition plus médiatisée et amplifiée par les IA de recommandation.
 
@@ -299,10 +296,10 @@ l'enjeu philosophique est de déterminer la priorisation relative
 entre des sujets où une faible majorité a un avis extrêmement prononcé,
 et des sujets où une écrasante majorité a une même opinion,
 qui implique des changements de société radicaux.
-Comment en particulier fonder la légitimité de mécanismes pratiques
+Comment en particulier fonder la légitimité de mécanismes
 qui favoriseraient les seconds aux premiers ?
 Quelles solutions pratiques peuvent-être envisagées
-pour que la démocratie soit gouverner par le consensus des volitions,
+pour que la démocratie soit gouvernée par le consensus des volitions,
 plutôt que par la majorité des préférences ?
 Et en particulier, peut-on identifier des consensus radicaux,
 au moins au sein de la communauté des philosphes,
@@ -326,14 +323,14 @@ d'une solution de gouvernance démocratique du cyber espace.
 
 Dans cet article, j'ai cherché à clarifier trois questions en particulier,
 à savoir la gouvernance du permis d'amplification massive,
-la distinction entre préférences instinctives et volitions réfléchies
-et la priorisation des consensus radicaux aux dépens des impasses clivantes,
+la valorisation des volitions réfléchies
+et la priorisation des consensus radicaux,
 sans toutefois viser à fournir des conclusions péremptoires.
 J'espère en particulier motiver plus de recherches,
 pour identifier de potentielles réponses consensuellement univoques
 à des enjeux civilisationnels brûlants.
 Par ailleurs, j'ai pour objectif de partager ma curiosité pour ces considérations,
-qui me semblent être d'une grande richesse philosophique insuffisamment explorée.
+qui me semblent être d'une formidable richesse philosophique insuffisamment explorée.
 
 
 ## Références
