@@ -95,10 +95,12 @@ La question P versus NP demande s'il existe des problèmes
 pour lesquels la recherche est forcément exponentiellement plus longue
 que la vérification.
 
-NB: Il suffit que la recherche soit superpolynomiale en la vérification,
-i.e. chercher une solution dont la descriptions est de longueur n prend un temps (n)
-tel que, pour tout entier k, f(n) / n^k^ tend vers l'infini quand n tend vers l'infini.
-Il faut par ailleurs que la vérification prenne un temps un temps polynomial en n.
+NB: Pour prouver que P est différent de NP, 
+il suffit de prouver que la recherche soit obligatoirement superpolynomiale 
+en la vérification pour au moins un problème, 
+i.e. chercher une solution dont la description est de longueur n prend un temps f(n) tel que, 
+pour tout entier k, f(n) / n^k^ tende obligatoirement vers l'infini quand n tend vers l'infini,
+et tel que par ailleurs la vérification puisse prendre un temps qui ne soit que polynomial en n.
 
 Et on considère généralement qu'il s'agit du plus important problème ouvert de l'informatique,
 et peut-être même de toutes les mathématiques, 
