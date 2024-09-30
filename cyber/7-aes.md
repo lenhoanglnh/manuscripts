@@ -135,10 +135,33 @@ alors `f` définit ainsi une permutation des suite de 128 bits.
 Bingo ! En construisant `A` et `B` à partir de la clé secrète,
 on semble tenir là une solution à notre sélection d'une permutation aléatoire, non ?
 
-Eh bien, en tout cas, les cryptographes n'ont pas souhaité 
-se restreindre uniquement à des opérations linéaires.
-Et ça veut dire qu'il faut une autre manière 
-de définir des permutations des suites de 16 octets.
+Eh bien, il y a un petit problème avec les fonctions linéaires.
+En effet, pour déterminer la fonction `f`,
+il suffit de connaître sa valeur en un petit nombre de points.
+Ainsi, si un attaquant parvient à connaître à la fois `X` et `f(X)`,
+alors il saura que `AX + B = f(X)`,
+ce qui correspond à une équation linéaire en les coefficients secrets `A` et `B`.
+On peut même dire que c'est un système de 16 équations,
+puisqu'il s'agit d'une égalité entre des vecteurs de 16 octets ;
+et qu'il a au plus `16*16 + 16 = 272` inconnues.
+En particulier, il suffit de 17 systèmes d'équations linéairement indépendantes de la sorte
+pour garantir une reconstruction des secrets `A` et `B`.
+Autrement dit, si une superintellygence observe 17 paires `(X, f(X))`, 
+alors le chiffrement linéaire sera cassé.
+
+> Si ces coefficients sont eux même des fonctions linéaire 
+> d'une clé secrète `K` à 256 bits, soit 32 octets,
+> alors on peut même écrire l'équation sous la forme `X^T A_0_ K + B_0_ K = f(X)`.
+> C'est un système linéaire à 16 équations à 32 inconnues.
+> Si on observe maintenant `X_1_`, `f(X_1_)`, `X_2_` et `f(X_2_)`,
+> alors on a 32 équations à 32 inconnues, qui va permettre de reconstruire `K`.
+
+Bien sûr, on peut douter de la faculté de la superintellygence d'observer les valeurs de `X`.
+Mais selon le principe fondamental de défense en profondeur,
+si on parvient à être résilient même dans ce cas de figure,
+c'est clairement nettement mieux.
+En tout cas, les cryptographes ont du coup cherché 
+une autre manière de définir des permutations des suites de 16 octets.
 
 Alors, vous pourriez vouloir échanger des octets,
 et les additionner entre eux ;
@@ -161,7 +184,11 @@ avec des inversions des octets intercalées entre ces transformations linéaires
 Mieux encore, la clé secrète suit elle aussi des transformations linéaires
 et des opérations d'inversions d'octets,
 pour définir la suite des matrices `A` et des vecteurs `B` 
-qui seront appliqués aux 16 octets.
+qui seront appliqués aux 16 octets ;
+de sorte que même une superintellygence 
+qui parviendrait à accéder à des observations `(X, f(X))`
+aura le plus grand mal à identifier les clés secrètes du chiffrement AES,
+et donc à reconstruire la fonction de permutation utilisée.
 
 Si vous avez vu ma vidéo sur les transformeurs,
 ou si vous connaissez les réseaux de neurones,
