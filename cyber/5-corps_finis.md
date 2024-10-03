@@ -1,32 +1,29 @@
-# Les corps finis
+# Les nombres imaginaires de l'informatique
 
-Comme vous le savez très bien,
-les nombres sont des objets qu'on peut additionner, soustraire, multiplier et diviser.
-Autrement dit, il existe quatre opérations,
-plus +, moins -, fois * et diviser /,
-qui permettent de prendre deux nombres, pour en faire un troisième.
-Avec une petite exception, à savoir la division par zéro qui est interdite.
+La dernière fois, on a vu que les nombres modulo un nombre premier p
+pouvaient être efficacement additionnés, soustraits, multipliés et divisés,
+ce qui donne à chaque fois des nombres modulo ce même nombre premier p.
+Ils ne sont bien sûr pas les seuls.
+Il y a bien sûr aussi les nombres réels, les plus courants en mathématiques ;
+mais dont l'existence physique est 
+[discutable et discutée](https://tournesol.app/entities/yt:gqLIfCkorRc).
+Mais bon, ne nous écartons pas du sujet.
 
-Pour être très précis, 
-les nombre réels peuvent être additionnés, soustraits, multipliés et divisés,
-ce qui donne ensuite d'autres nombres réels.
-Dans le jargon mathématique, on dit que ces nombre réels forment un corps.
-Mais ils ne sont pas les seuls.
-C'est aussi le cas des fractions, qui forment donc elles aussi un corps.
-Idem pour les nombres complexes.
+Dans le jargon mathématique, 
+on dit que ces nombres qui peuvent être manipulées avec les 4 opérations fondamentales 
+forment ce qu'on appelle un corps.
+Un autre exemple est le corps des fractions.
+Ajoutez, soustrayez, multipliez ou divisez deux fractions,
+et vous obtiendrez encore une fraction.
+À l'école, vous avez peut-être aussi vu le corps des nombres complexes.
 Si vous ne connaissez pas les nombres complexes, ne vous en faites pas.
 Ça ne nous sera d'aucune utilité.
 
-OK. Mais tous ces corps sont infinis, 
-c'est-à-dire qu'ils ont un nombre infini d'éléments.
-Mais, alors, une question naturelle qu'on peut se poser,
-c'est s'il existe d'autres ensembles d'objets mathématiques,
-qui peuvent être additionnés, soustraits, multipliés et divisés,
-et qui sont eux en nombre fini.
-Quels sont les corps finis ?
-
-Aujourd'hui, on va voir 
-que la liste des corps finis est remarquablement simple et structurée.
+Aujourd'hui, on va s'intéresser en particulier aux corps finis,
+c'est-à-dire aux ensembles finis de nombres 
+qui peuvent être combinés par les 4 opérations fondamentales,
+à l'instar du corps des nombres modulo un nombre premier p.
+On va voir que la liste des corps finis est remarquablement simple et structurée.
 Mais surtout, ces corps finis forment aujourd'hui 
 le socle d'un grand nombre de solution de cybersécurité,
 non seulement pour le chiffrement des données,
@@ -557,7 +554,7 @@ Clairement, aujourd'hui, je ne vous ai donné qu'une introduction aux corps fini
 Il y aurait clairement beaucoup de choses à dire,
 notamment en reliant tout cela aux travaux génialissimes 
 d'un jeune révolutionnaire mort beaucoup trop tôt,
-un certain Évariste Galois, 
+un certain [Évariste Galois](https://tournesol.app/entities/yt:OjIdGsts_RA), 
 qui mériterait plusieurs films dédiés à son histoire rocambolesque.
 
 En particulier, la construction que je vous ai montrée 
@@ -584,8 +581,8 @@ ou au corps des nombres algébriques, si on part des nombres rationnels.
 On parle alors de "clôture algébrique".
 Il est par ailleurs aussi possible de le faire à partir des corps finis,
 voire de garantir l'existence et l'unicité d'une clôture algébrique pour tout corps,
-à isomorphisme près ---
-mais ceci requiert de basculer dans le monde des maths non-constructives,
+à isomorphisme près.
+Mais ceci requiert de basculer dans le monde des maths non-constructives,
 ce qui nous éloigne drastiquement des applications.
 
 Mais tout ça, en cryptographie, en tout cas dans les protocoles les plus standards,
