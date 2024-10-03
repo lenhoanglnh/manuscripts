@@ -275,35 +275,13 @@ soit approximativement le nombre de particules dans l'univers.
 Même une superintelligence serait très incapable de lister tous les points
 de la courbe elliptique Curve25519.
 
-Heureusement, il existe une solution remarquable
-pour rapidement un trouver le n-ième point de la courbe elliptique,
-qui s'appuie sur des doublements successifs.
-Ainsi, définissons `G_1_ = 2G =  G + G`.
-Puis `G_2_ = 2G_1_ = G_1_ + G_1_`, et ainsi de suite.
-Calculer `G_k+1` à partir de `G_k_` est très simple :
-il suffit d'ajouter `G_k_` à lui-même.
-Cela peut se faire en une opération sur les courbes elliptiques.
-Mais du coup, on peut calculer `G_k_` à partir de G en seulement k opérations.
-Cependant, de manière remarquable, `G_k_ = 2^k^ G`,
-ce qui permet donc de calculer le 2^k^-ième élément de la suite en seulement k opérations.
-
-Quid maintenant du n-ième élément, s'il n'est pas une puissance de 2 ?
-Et bien, si on nous donne le nombre n en écriture binaire,
-c'est très simple.
-Par exemple, `n = 100` en base 10 s'écrit `n = 1100100` en base de 2,
-ça veut dire qu'il a des bits 1 uniquement aux positions 3, 6 et 7 en partant de la droite,
-alors il se décompose forcément en
-`n = 2^3-1^ + 2^6-1^ + 2^7-1^ = 2² + 2⁵ + 2⁶`.
-On a alors `G_n_ = 2² G + 2⁵ G + 2⁶ G = G_2_ + G_5_ + G_6`.
-On peut en fait calculer `G_2_`, `G_5_` et `G_6_` en 6 opérations sur les courbes elliptiques.
-Et on peut calculer leur somme avec 3 opérations de plus.
-Voilà comment on a pu accéder au 100-ième élément de la suite des `n G`
-avec seulement 9 opérations sur les courbes elliptiques !
-
-Formellement, le nombre d'opérations nécessaires sera logarithmiques en `n`.
-Et de manière pratique, 
-ça veut dire que `P = n G` peut se calculer très rapidement,
-même pour des valeurs cryptographiquement grandes de `n`.
+En fait, ce `n G` des courbes elliptiques, 
+c'est exactement l'équivalent du `g^n^` dont on avait parlé dans une vidéo précédente.
+En particulier, on pense que la fonction qui calcule `n G` à partir de `n`
+est une fonction à sens unique d'aujourd'hui.
+Avec l'astuce des carrés répétés,
+qui correspond ici à la multiplication par 2,
+cette fonction peut être calculée très rapidement.
 
 Toutefois, à l'inverse, étant donné un point `P` d'une courbe elliptique,
 déterminer pour quelle valeur de `n` on a `P = n G`,
@@ -312,21 +290,15 @@ Mieux encore, on suspecte que personne ne saura le faire,
 à moins de lister une bonne partie des 
 plus de `2^252^` valeurs possibles de `n G`,
 jusqu'à en trouver une qui correspond à `P`.
+Dit autrement, on pense
+que le problème du logarithme discret pour les courbes elliptiques 
+est essentiellement impossible pour les superintellygence d'aujourd'hui...
+même si on sait que celles qui auront un calculateur quantique dans le futur
+pourront inverser ce composant fondamental de la cryptographie moderne.
 
-Ainsi, on dit que la fonction qui a un nombre `n` associe `n G`
-est une fonction à sens unique,
-dans la mesure où on peut facilement la calculer,
-mais on suppose qu'il est essentiellement impossible de l'inverser,
-même pour une superintelligence,
-pourvue qu'elle soit contrainte par les puissances de calculs aujourd'hui accessibles.
-
-> En fait, si la superintelligence a accès à une machine quantique,
-> alors on sait qu'elle pourra inverser cette fonction...
-> On dit que le problème du *logarithme discret* est polynomialement soluble
-> par un algorithme quantique.
-> J'ai parlé d'un cas similaire dans la série 
-> sur [String Theory](https://tournesol.app/entities/yt:plgQgJ4obTg).
-
+Mais oublions les calculateurs quantiques pour aujourd'hui,
+comme le font en gros presque toutes les entreprises de cybersécurité.
+On pense donc que calculer `n G` est aujourd'hui une fonction à sens unique.
 Et c'est vraiment cette propriété des groupes cycliques,
 qui n'est d'ailleurs pas du tout spécifiques aux courbes elliptiques,
 qui fait que ces groupes sont d'une très utilité à la cryptographie.
@@ -580,5 +552,17 @@ Mais, comme le dirait l'oncle de Spiderman,
 de grands pouvoirs impliquent de grandes responsabilités.
 
 Les mathématiciens me semblent avoir une responsabilité immense
-à rendre leurs mathématiques plus socialement responsables.
+à rendre leurs mathématiques plus socialement responsables,
+tout comme plus généralemet tous ceux parmi nous qui avons le luxe
+de ne pas vivre dans le besoin grâce à la stabilité de nos démocraties,
+qui est pourtant plus menacée aujourd'hui 
+qu'elle ne l'a été au cours des 70 dernières années.
+Si vous voulez davantage vous investir dans des sciences responsables,
+je ne peux que vous encourager à vous intéresser de plus près à la cybersécurité,
+mais aussi aux mathématiques de la gouvernance,
+incarnée notamment dans notre projet Tournesol.
+Et bien sûr, vous pouvez explicitement y contribuer,
+notamment en créant un compte sur la plateforme
+et en y évaluant les contenus de YouTube 
+que vous pensez être le plus d'intérêt général.
 
