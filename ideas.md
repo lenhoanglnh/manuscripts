@@ -24,7 +24,7 @@ Vérifier les superintelligences (P vs NP vs IP vs SNARK)
  - Vignette robot au tribunal
 
 Les nombres premiers sûrs
- - 4 strong_primes
+ - 4 safe_primes
  - Vignette Sophie Germain avec nombres premiers barrés
 
 Les nombres imaginaires de l'informatique 
