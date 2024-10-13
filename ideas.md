@@ -23,28 +23,29 @@ Vérifier les superintelligences (P vs NP vs IP vs SNARK)
  - 3 p_np
  - Vignette robot au tribunal
 
+Les nombres premiers sûrs
+ - 4 safe_primes
+ - Vignette Sophie Germain avec nombres premiers barrés
+
 Les nombres imaginaires de l'informatique 
- - 4 corps finis
+ - 5 corps finis
  - Vignette i² = - 1 barré, et remplacé par k² = - 1 - k
 
 Qui est-ce ? (avec des mensonges !) 
- - 5 Reed-Solomon
+ - 6 Reed-Solomon
  - Vignette Jeu qui est-ce face à un sweet à capuche
 
 La backdoor des US 
- - 6 Courbes elliptiques
+ - 7 Courbes elliptiques
  - Vignette équation y² = x³ - 3x + b (+ Snowden ?)
 
 L'art d'être prévisiblement imprévisible ? (SHA-2, AES...)
- - 7 aes
+ - 8 aes
  - Vignette ?
 
-Les nombres premiers sûrs
- - 8 strong_primes
- - Vignette Sophie Germain avec nombres premiers barrés
 
 Est-il dangereux de scanner son passeport ?
- - 8 passeport
+ - 9 passeport
  - Puce NFC, Cage de Faraday
  - Infrastructure à clé publique
  - À qui fait confiance votre navigateur ?
@@ -52,11 +53,11 @@ Est-il dangereux de scanner son passeport ?
  - Vignette passeport
 
 Prouver que je sais sans révéler ce que je sais
- - 9 zero_knowledge
+ - 10 zero_knowledge
  - Vignette ?
 
 La preuve d'appartenance sans divulgation d'identité
- - 10 proof_of_membership
+ - 11 proof_of_membership
  - Transformation de la recherche en circuit
  - Merkle Tree
  - Sparse Merkle Tree
