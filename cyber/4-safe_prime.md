@@ -1,19 +1,32 @@
 # Les nombres premiers sûrs
 
-L'une des opérations fondamentales de la cybersécurité aujourd'hui
-est celle qui consiste à prendre un nombre g,
-et à chiffrer un secret s en rendant public le nombre h = g^s^.
-Vraiment, cette opération est au coeur de nombreuses solutions
-dont on reparlera plus tard dans cette série.
+La dernière fois, on a vu que la clé de la cryptographie,
+c'était de générer des secrets w,
+et de concevoir un problème difficile x dont w est la solution.
+En particulier, idéalement résoudre x doit être tellement difficile calculatoirement
+qu'on peut être confiant que même les superintellygences de l'espace numérique,
+comme Google, la NSA et le gouvernement chinois,
+soient incapables de découvrir une solution au problème x,
+comme le secret w dont on a la connaissance.
+
+Aujourd'hui, on va voir la solution qui est très largement la plus utilisée aujourd'hui
+pour concevoir des problèmes difficiles x à partir de secrets w.
+Cette opération, c'est celle qui consiste à simplement calculer x = g^w^,
+où g est un nombre un peu particulier, comme on le verra dans la suite.
+Résoudre le problème x, c'est alors trouver un nombre v tel que x = g^v^.
+Clairement, nous qui avons conçu le problème x à partir de w, 
+on en connaît une solution, à savoir v = w.
+Mais l'espoir, c'est que même une superintellygence ne saura pas trouver une solution v
+à l'équation x = g^v^.
 
 Pour ceux qui ont vu 
 la chouette [vidéo](https://tournesol.app/entities/yt:1Yv8m398Fv0) de Science Étonnante,
-cette astuce de cacher s et révéler h = g^s^ est au coeur
+cette astuce qui consiste à cacher w et à révéler x = g^w^ est au coeur
 de l'algorithme de Diffie-Hellman,
-une solution au coeur de la sécurité du web.
+une solution au centre de la sécurité du web.
 David explique en particulier l'utilité de cette expression
-si g et s sont des nombres entiers 
-et si h = g^s^ est calculé modulo un nombre premier p,
+si g et w sont des nombres entiers 
+et si x = g^w^ est calculé modulo un nombre premier p,
 c'est-à-dire en forçant l'égalité p = 0,
 un peu comme je vous ai expliqué comment forcer l'égalité 12 = 0
 dans [cette vidéo sur String Theory](https://tournesol.app/entities/yt:PalsAMRgU3A).
@@ -22,9 +35,13 @@ Ne vous enfuyez pas tout de suite, j'y reviendrai.
 Dans le jargon, si cette opération est si utile en cybersécurité,
 c'est parce qu'on a des bonnes raisons de penser 
 qu'elle est une fonction à sens unique.
-Autrement dit, calculer h = g^s^ à partir de g et s, c'est facile.
-Mais il peut être extrêmement difficile de calculer s à partir de g et h.
-C'est donc une opération facile à faire, et extrêmement difficile à défaire.
+Autrement dit, calculer le problème x = g^w^ à partir de g et w, c'est facile.
+Mais il peut être extrêmement difficile de reconstruire w à partir de g et x.
+C'est donc une opération facile à faire, et extrêmement difficile à défaire ;
+ou dit avec le langage de la vidéo précédente :
+étant donné un secret w, c'est facile de trouver un problème x dont w est la solution,
+mais dont la résolution est extrêmement difficile.
+
 Eh bien, ça, ce sont des opérations qu'on adore en cryptographie !
 En effet, ça permet à un citoyen lambda de faire des choses
 que même une superintellygence sera incapable de défaire,
@@ -34,7 +51,7 @@ qu'elle sera incassable même par la NSA.
 Et alors, David est allé un peu vite sur quelques petits aspects fascinants,
 que je vais le prendre aujourd'hui le temps d'explorer,
 en faisant notamment un détour par l'une des plus grandes mathématiciennes de l'Histoire,
-une certains Sophie Germain...
+une certaine Sophie Germain...
 
 
 ## L'arithmétique modulo p (avec un angle algorithmique!)
@@ -93,15 +110,16 @@ En multipliant par 46825 des deux côtés,
 cette égalité devient 46825 * n =_13_ 3151.
 Alors, on peut déjà remarquer que cette égalité doit se simplifier modulo 13,
 en remplaçant 46825 par sont modulo 13 et 3151 aussi.
-Ça nous donne 12 * n =_13_ 5.
-Et enfin, on peut remarquer que si on sait résoudre 12 * m =_13_ 1,
-alors il suffira de poser n =_13_ 5*m pour résoudre notre division.
+Ça nous donne 12 \* n =_13_ 5.
+Et enfin, on peut remarquer que si on sait résoudre 12 \* m =_13_ 1,
+alors il suffira de poser n =_13_ 5 \* m pour résoudre notre division.
 
-OK. Mais donc, peut-on trouver m tel que 12 * m =_13_ 1 ?
+OK. Mais donc, peut-on trouver m tel que 12 \* m =_13_ 1 ?
+Peut-on, en un sens, calculer 1 douzième modulo 13 ?
 Un tel nombre m est appelé l'inverse de 12 modulo 13.
 Et on peut remarquer que cette égalité modulo 13
 revient à dire qu'il existe un autre nombre entier k
-tel que 12 * m - 13 * k = 1, ce qu'on appelle une identité de Bézout.
+tel que 12 \* m - 13 \* k = 1, ce qu'on appelle une identité de Bézout.
 Je vais passer sous silence des détails,
 mais parce que 13 est un nombre premier,
 on sait que m et k sont garantis d'exister,
@@ -119,30 +137,30 @@ leur temps de calcul va être dans tous ces cas proportionnels au nombre de chif
 Et c'est en particulier le fait que la division marche aussi bien modulo p
 que l'idée lancée par David d'utiliser la multiplication pour créer un secret partagé
 ne fonctionne pas :
-si Eve observe une multiplication c =_p_ gs de deux nombres entiers g et s modulo p,
+si Eve observe une multiplication c =_p_ gw de deux nombres entiers g et w modulo p,
 et si elle connaît aussi g et p,
-alors elle pourra reconstruire s en calculant s =_p_ c/g.
+alors elle pourra reconstruire s en calculant w =_p_ c/g.
 
 On dit que la multiplication modulo p n'est pas une fonction à sens unique.
-C'est une opération qu'il est très simple de défaire.
+C'est une opération qu'il est simple de défaire.
 
 > Dit autrement, le logarithme discret dans le groupe additif Z/pZ est facile,
 > à cause de l'algorithme d'Euclide de calcul du pgcd.
 
 
-## g^s^ modulo p
+## x =_p_ g^w^
 
-Voilà qui nous amène tout doucement à g^s^ modulo p.
+Voilà qui nous amène tout doucement à x = g^w^ modulo p.
 Est-ce là bien une opération à sens unique ?
 
-D'abord, précisons que g^s^ consiste à multiplier g par g par g et ainsi de suite s fois.
-Et donc s en particulier doit être une entier naturel.
+D'abord, précisons que g^w^ consiste à multiplier g par g par g et ainsi de suite w fois.
+Et donc w en particulier doit être une entier naturel.
 Qui plus est, même modulo 13, g^13^ n'est pas g^0^.
 On ne peut pas remplacer le 13 dans les exposants par un 0,
 car l'exposant n'est pas lui-même un nombre modulo 13.
 Le nombre g lui, l'est, mais pas l'exposant.
 OK. Mais donc, si p, g et s sont grands, 
-le calcul de g^s^ modulo p est-il une opération à sens unique,
+le calcul de x = g^w^ modulo p est-il une opération à sens unique,
 comme David le suggère dans sa vidéo ?
 
 Eh bien, avant de montrer que c'est une opération difficile à défaire,
@@ -174,7 +192,7 @@ De même on peut aisément calculer g puissance 2^12^.
 On obtient g^1'050'625^ ensuite en multipliant g puissance 2^20^ par g puissance 2^12^,
 puis en multipliant ça par g puissance 2^0^, qui n'est autre que g lui-même.
 Voilà qui nous permet de calculer le résultat avec un petit nombre d'opérations ;
-en fait cette astuce des carrés répétés permet de calculer g^s^ modulo p
+en fait cette astuce des carrés répétés permet de calculer x = g^w^ modulo p
 en un nombre d'opérations qui est proportionnel au nombre de chiffres de s.
 
 L'opération est donc facile à faire.
@@ -183,7 +201,7 @@ Mais est-elle difficile à défaire ?
 Eh bien, comme l'explique David, ce n'est pas toujours le cas.
 Typiquement, un mauvais choix de g, comme g = 5 quand p = 13, 
 alors le logarithme discret peut être trivial à défaire,
-parce que la suite des g^s^ boucle très vite.
+parce que la suite des x = g^w^ boucle très vite.
 Mais donc, comment choisir g et p ?
 
 
@@ -198,19 +216,19 @@ et ça donnera toujours des nombres entre 1 et p-1 modulo p.
 
 On peut alors démontrer l'existence de racines de primitive,
 c'est-à-dire que pour tout p,
-il existe des nombres g tels que les g^s^ prennent toutes les valeurs
+il existe des nombres g tels que les x = g^w^ prennent toutes les valeurs
 entre 1 et p-1 modulo p avant de reboucler.
 On dit que le groupe multiplicatif est monogène :
-tout élément du groupe multiplicatif s'écrit g^s^ pour un entier s.
+tout élément du groupe multiplicatif s'écrit g^w^ pour un entier w.
 
-D'ailleurs, vu que g^s^ \* g^t^ = g^s+t^,
+D'ailleurs, vu que g^w^ \* g^v^ = g^w+v^,
 on voit que multiplier deux éléments du groupes
 revient à ajouter leurs exposants, 
 dans l'écriture sous forme de puissance de g.
 En fait, ça revient à dire que l'application 
-qui à s associe g^s est un morphisme de groupe.
+qui à s associe g^w^ est un morphisme de groupe.
 
-Mieux encore, on peut remarquer que le p-ième élément de la suite des g^s^
+Mieux encore, on peut remarquer que le p-ième élément de la suite des g^w^
 doit forcément reboucler, et donc que g^p^ =_p_ g.
 C'est ce qu'on appelle d'ailleurs le petit théorème de Fermat.
 Mais donc g^p-1^ est tel que g^p-1^ g =_p_ g.
@@ -219,19 +237,24 @@ Or on peut aussi écrire 1 =_p_ g^0^.
 Donc g^p-1^ =_p_ g^0^.
 Et donc en termes d'exposants cette fois, on a l'égalité p-1 = 0.
 
-En fait, les exposants des g^s^ modulo p
-se comportent comme des nombres modulo p-1.
+En fait, quand g est une racine primitive de p, 
+les exposants des g^w^ modulo p se comportent comme des nombres modulo p-1.
 On dit que le groupe multiplicatif modulo p est isomorphe au groupe additif modulo p-1,
-ou encore que la fonction qui à s associe g^s^ est un isomorphisme de groupe,
+ou encore que la fonction qui à w associe g^w^ est un isomorphisme de groupe,
 entre le groupe multiplicatif modulo p et le groupe additif modulo p-1.
 
 Mais alors, le logarithme discret modulo p, 
 c'est finalement la division dans le groupe modulo p-1.
-En général, on espère que cette division est difficile.
+En général, on espère que cette division est difficile,
+surtout quand on n'a pas accès directement à w, et qu'on ne connaît que g^w^.
 Mais ce ne sera pas toujours le cas, notamment en fonction des diviseurs de p-1.
 
+OK, on va aborder maintenant la partie la plus difficile de la vidéo,
+donc asseyez-vous bien au fond de votre siège, respirez un bon coup...
+et n'hésitez pas à passer à la section suivante de la vidéo si vous ne le sentez pas !
+
 Prenons l'exemple du nombre premier p = 31, avec g = 3.
-On peut vérifier que la suite des g^s^ modulo p couvre toutes les valeurs entre 1 et 30,
+On peut vérifier que la suite des g^w^ modulo p couvre toutes les valeurs entre 1 et 30,
 et donc que g est une racine primitive de p.
 Sauf que p-1 s'écrit p-1 = 30 = 2 \* 3 \* 5.
 Autremet dit, 30 se décompose comme un produit de petits nombres premiers.
@@ -241,7 +264,7 @@ En particulier, regardez ce qu'il se passe
 quand j'étudie le groupe engendré par g_2_ =_p_ g^3\*5^,
 c'est-à-dire par g à la puissance des facteurs premiers de p qui ne sont pas 2.
 On a alors g_2_^2^ =_p_ (g^2^)^3\*5^ =_p_ g^2\*3\*5^ =_p_ g^30^ =_p_ g^p-1^ = 1.
-Et du coup la suite des g_2_^s^ va osciller entre 1 et g_2_.
+Et du coup la suite des g_2_^w^ va osciller entre 1 et g_2_.
 
 De même on peut voir que le groupe engendré par g_3_ =_p_ g^2\*5^
 va osciller entre trois valeurs, à savoir 1, g_3_ et g_3_^2^.
@@ -253,34 +276,34 @@ tous ces éléments peuvent être calculés explicitement en assez peu de temps.
 Mieux encore, les trois éléments (g_2_, g_3_, g_5_) forment une sorte de base
 de l'ensemble des éléments du groupe multiplicatif modulo p,
 dans le sens où tout terme de ce groupe s'écrit de manière unique
-h =_p_ g_2_^s_2_^ g_3_^s_3_^ g_5_^s_5_,
-où (s_2_, s_3_, s_5_) sont des sortes de coordonnées de h dans cette base,
+h =_p_ g_2_^w_2_^ g_3_^w_3_^ g_5_^w_5_,
+où (s_2_, s_3_, s_5_) sont des sortes de coordonnées de x dans cette base,
 qui sont respectivement des nombres modulo 2, 3 et 5.
 
-Pour résoudre h =_p_ g_2_^s_2_^ g_3_^s_3_^ g_5_^s_5_,
+Pour résoudre x =_p_ g_2_^w_2_^ g_3_^w_3_^ g_5_^w_5_,
 on peut en particulier, précisder les valeurs 
 g_2_ =_p_ g^3\*5^ =_p_ 30, 
 g_3_ =_p_ g^2\*5^ =_p_ 25, et 
 g_5_ =_p_ g^2\*3^ =_p_ 16
 et surtout calculer des termes similaires pour h,
 ce qui va définir 
-h_2_ =_p_ h^3\*5^ =_p_ 30, 
-h_3_ =_p_ h^2\*5^ =_p_ 5 et 
-h_5_ =_p_ h^2\*3^ =_p_ 1.
+h_2_ =_p_ x^3\*5^ =_p_ 30, 
+h_3_ =_p_ x^2\*5^ =_p_ 5 et 
+h_5_ =_p_ x^2\*3^ =_p_ 1.
 
 Pour chaque facteur premier q de p-1,
 on va s'intéresser en particulier à résoudre l'équation
-h_q_ =_p_ g_q_^s_q_^.
+x_q_ =_p_ g_q_^w_q_^.
 Dans notre cas, on obtient les équations
-30 =_p_ 30^s_2_^,
-5 = _p_ 25^s_3_^ et
-1 =_p_ 16^s_5_^.
-En évaluant toutes les puissances de g_q_^s^, 
+30 =_p_ 30^w_2_^,
+5 = _p_ 25^w_3_^ et
+1 =_p_ 16^w_5_^.
+En évaluant toutes les puissances de g_q_^w^, 
 vu qu'il y en a peu pour des petits nombres premiers q,
 on peut alors obtenir s_2_ =_2_ 1, s_3_ =_3_ 2 et s_5_ =_5_ 4.
 
 Pour conclure, il reste à trouver un nombre entier s
-tel que si on écrit g^s^ =_p_ g_2_^s_2_^ g_3_^s_3_^ g_5_^s_5_,
+tel que si on écrit g^w^ =_p_ g_2_^w_2_^ g_3_^w_3_^ g_5_^w_5_^,
 alors les s_2_ =_2_ 1, s_3_ =_3_ 2 et s_5_ =_5_ 4.
 Eh bien, ça, ça correspond au théorème des restes chinois :
 si on connais tous les restes de s modulo des facteurs premiers q,
@@ -305,7 +328,7 @@ de la racine carrée du plus grand facteur premier de p-1.
 
 Si ce plus grand facteur premier reste un nombre cryptographique, ça reste déraisonnable.
 Mais s'il est de l'ordre du million de milliards seulement,
-la fonction qui à s associe g^s^ modulo p ne pourra plus être considérée être à sens unique.
+la fonction qui à s associe g^w^ modulo p ne pourra plus être considérée être à sens unique.
 
 > En pratique, il reste le problème de la factorisation de p-1,
 > que l'on considère être un problème difficile.
@@ -334,12 +357,12 @@ est ce qu'on appelle un *nombre premier sûr*.
 
 Clairement, ces nombres premiers sûrs sont maximalement résilients contre Pohlig-Hellman ;
 et donc pour ces nombres premiers sûrs p et pour une racine primitive g de p,
-la fonction qui à s associe g^s^ modulo aura de meilleures chances d'être à sens unique :
+la fonction qui à w associe g^w^ modulo aura de meilleures chances d'être à sens unique :
 facile à faire, difficile à défaire.
 
-Eh bien sûr, les cryptographes ne sont pas les premiers 
+Et bien sûr, les cryptographes ne sont pas les premiers 
 à s'intéresser à ces nombres premiers sûrs.
-T'es sûr ? Oui je suis sûr.
+T'es sûr ? Oui bien sûr, j'en suis sûr.
 
 Il y a deux siècles, une brillante mathématicienne du nom de Sophie Germain
 avait déjà étudié de tels nombres premiers.
@@ -411,7 +434,7 @@ plutôt que modulo un nombre premier friable.
 
 ## La menace des calculateurs quantiques
 
-Si l'on pense que la fonction qui calcule g^s^ modulo p
+Si l'on pense que la fonction qui calcule g^w^ modulo p
 est une fonction à sens unique pour les superintellygences d'aujourd'hui,
 en tout cas pour les nombres premiers sûrs,
 on imagine toutefois qu'elle ne le sera plus pour certaines superintellygences de demain,
@@ -446,21 +469,21 @@ la [factorisation des nombres](https://tournesol.app/entities/yt:azXt6-098dU).
 
 Eh bien malheureusement, cette même astuce peut être utilisée 
 pour résoudre le problème du logarithme discret,
-c'est-à-dire identifier un s tel que h =_p_ g^s^ modulo p, sachant h, g et p.
+c'est-à-dire identifier un w tel que x =_p_ g^w^ modulo p, sachant h, g et p.
 L'idée en gros c'est d'étudier la suite g^a^ h^-b^ modulo p,
 et en particulier les moments où elle devient égale à 1.
-Typiquement on sait que a = s et b = 1 doit être solution, 
-mais aussi a = 2s et b = 2, 
-ainsi que a = 3s et b = 3, et ainsi de suite.
-Ainsi (s, 1) correspond à une sorte de fréquence du signal.
+Typiquement on sait que a = w et b = 1 doit être solution, 
+mais aussi a = 2w et b = 2, 
+ainsi que a = 3w et b = 3, et ainsi de suite.
+Ainsi (w, 1) correspond à une sorte de fréquence du signal.
 
 Eh bien, je vous épargne bien des détails,
 mais trouver la fréquence fondamentale peut être en gros effectué 
 par la transformée de Fourier quantique,
-et celle-ci peut ensuite être utilisée pour trouver s.
+et celle-ci peut ensuite être utilisée pour trouver w.
 Et voilà pourquoi toute superintellygence 
 qui aura conçu ou accédé à un calculateur quantique
-pourra inverser la fonction à sens unique qui calcule g^s^ à partir de s,
+pourra inverser la fonction à sens unique qui calcule g^w^ à partir de w,
 sur laquelle repose tant la sécurité de notre espace informationnel.
 
 Dès lors, je ne vois vraiment pas comment on peut moralement justifier
@@ -477,15 +500,17 @@ Aujourd'hui, c'était une vidéo nettement plus technique que les précédentes.
 Mais il n'y a nul besoin de retenir tous les détails techniques.
 S'il y a une chose à retenir, 
 c'est surtout qu'une grosse partie de la cybersécurité moderne
-s'appuie sur l'hypothèse selon laquelle le calcul de g^s^ à partir de s
+s'appuie sur l'hypothèse selon laquelle le calcul de x = g^w^ à partir de w
 est une fonction à sens unique,
 c'est-à-dire facile à faire par n'importe quel citoyen sur son téléphone,
 mais extrêmement difficile à défaire par n'importe quel superintellygence.
 
 Mais il y a mieux encore. 
 Cette fonction possède de nombreuses propriétés mathématiques très utiles en pratique,
-notamment le fait que (g^s^)^t = g^(st), comme c'est utilisé dans Diffie-Hellman,
-ou encore que g^s g^t = g^s+t^, qui est le socle de nombreuses applications avancées.
+notamment le fait que (g^w^)^v^ = g^wv^, comme c'est utilisé dans Diffie-Hellman,
+ou encore que g^w^ g^v^ = g^w+v^, 
+qui est le socle de nombreuses applications avancées 
+comme le chiffrement homomorphe et la divulgation nulle de connaissance.
 On dit que la fonction à sens unique est de surcroît quasi-commutative,
 et définit un isomorphisme de groupe.
 
@@ -513,7 +538,7 @@ la menace existentielle qu'ils font peser
 sur l'espace informationnel déjà très mal en point d'aujourd'hui ;
 et pourrait-on dire même d'hier, 
 puisque les superintellygences malveillantes collectent déjà massivement
-des données chiffrées par g^s^, directement ou non,
+des données chiffrées par g^w^, directement ou non,
 pour pouvoir les lire le jour où un elles auront accès à un calculateur quantique.
 Je vous renvoie à cette excellente 
 [vidéo de Veritasium](https://tournesol.app/entities/yt:-UrdExQW0cs)
@@ -521,7 +546,7 @@ sur le "harvest now, decrypt later".
 
 L'ordinateur quantique, ce n'est vraiment pas un nouveau jeu vidéo.
 C'est une menace de plus pour notre espace informationnel,
-qui a propulsé les partis d'extrême-droite au pouvoir depuis une décennie,
+qui a déjà propulsé les partis d'extrême-droite au pouvoir depuis une décennie,
 alimenté la haine et la volonté de meurtres de populations étrangères
 et réduit au silence les sujets les plus vitaux pour notre futur.
 
