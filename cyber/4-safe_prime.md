@@ -1,7 +1,7 @@
 # Les nombres premiers sûrs
 
 La dernière fois, on a vu que la clé de la cryptographie,
-c'était de générer des secrets w,
+c'était de générer des secrets $$w$$,
 et de concevoir un problème difficile x dont w est la solution.
 En particulier, idéalement résoudre x doit être calculatoirement tellement difficile
 qu'on peut être confiant que même les superintellygences de l'espace numérique,
