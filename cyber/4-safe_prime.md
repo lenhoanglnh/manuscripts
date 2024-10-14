@@ -67,7 +67,9 @@ comme $14 = 13 + 1 = 0 + 1 = 1$.
 Pour bien préciser le fait qu'on a cette égalité modulo 13,
 et pas une égalité pour des nombres entiers naturels usuels,
 je vous propose d'écrire cela 
+
 $14 =_{13} 1$
+
 .
 On peut ainsi se rendre compte que tout nombre entier
 sera égal modulo 13 à un nombre entier entre 0 et 12.
