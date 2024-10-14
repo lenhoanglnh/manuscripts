@@ -451,9 +451,9 @@ Et ça, ça revient à pauser l'addition,
 mais sans invoquer de retenues qui feraient interagir les différentes puissancse de k.
 Autrement dit, on peut poser l'addition
 
-  1011
-+ 0101
-  ----
+  1011  
++ 0101  
+  ----  
   1110
 
 Quant à la multiplication, 
