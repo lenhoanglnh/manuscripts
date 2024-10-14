@@ -432,7 +432,7 @@ c'est ce nombre imaginaire qui est utilisé dans les QR Codes.
 D'ailleurs on peut noter que, de façon plus générale, 
 l'encodage des corps F<sub>2<sup>n</sup></sub> est particulièrement naturel en informatique.
 En effet, tout élément de F<sub>2<sup>n</sup></sub> s'écrit
-`a<sub>0</sub> + a<sub>1</sub> k + a<sub>2</sub> k² + ... + a<sub>n-1</sub> k<sup>n-1</sup>`,
+a<sub>0</sub> + a<sub>1</sub> k + a<sub>2</sub> k² + ... + a<sub>n-1</sub> k<sup>n-1</sup>,
 puisque les puissances supérieures sont réduites par la définition du nombre imaginaire $k$.
 Et donc, on peut l'encoder, en ne retenant que les coefficients a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub>.
 Or chaque terme a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub> doit appartenir à F<sub>2,
@@ -464,6 +464,9 @@ En posant la multiplication comme à l'école, on obtient
 
     1101
 *   1010
+
+Test
+
 --------
     0000
 +  1101
