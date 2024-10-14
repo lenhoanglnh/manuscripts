@@ -11,9 +11,9 @@ comme le secret $$w$$ dont on a la connaissance.
 
 Aujourd'hui, on va voir la solution qui est très largement la plus utilisée aujourd'hui
 pour concevoir des problèmes difficiles $$x$$ à partir de secrets $$w$$.
-Cette opération, c'est celle qui consiste à simplement calculer $$x = g^w$$,
+Cette opération, c'est celle qui consiste à simplement calculer $x = g^w$,
 où $$g$$ est un nombre un peu particulier, comme on le verra dans la suite.
-Résoudre le problème $$x$$, c'est alors trouver un nombre $$v$$ tel que $$x = g^v$$.
+Résoudre le problème $$x$$, c'est alors trouver un nombre $$v$$ tel que $$x = g_v$$.
 Clairement, nous qui avons conçu le problème $$x$$ à partir de $$w$$,
 on en connaît une solution, à savoir $$v = w$$.
 Mais l'espoir, c'est que même une superintellygence ne saura pas trouver une solution $$v$$
