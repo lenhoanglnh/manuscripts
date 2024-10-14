@@ -37,7 +37,7 @@ Mais tout ça, on prendra le temps d'en parler dans de futures vidéos.
 Pour définir un corps fini, il suffit de définir un ensemble fini d'objets,
 et de définir comment ils se combinent à travers l'addition et la multiplication.
 Je vous propose de commencer par prendre l'exemple concret du corps fini à 3 éléments,
-communément appelé F_3_.
+communément appelé F<sub>3</sub>.
 Ce corps a uniquement trois nombres, qu'on va appeler 0, 1 et a.
 Et pour définir l'addition et la multiplication,
 je vais simplement vous donner leurs tables d'addition et de multiplication.
@@ -115,7 +115,7 @@ On peut donc bien diviser 1 par a.
 Comme `1/a` est tel que `a * (1/a)` est égal à l'élément neutre de la multiplication,
 à savoir 1,
 on dit que `1/a` est l'inverse de `a`.
-Dans les livres sur les corps finis, vous le verrez davantage noté `a^-1^`.
+Dans les livres sur les corps finis, vous le verrez davantage noté `a<sup>-1</sup>`.
 De même la quantité `0 - a` est souvent appelée l'opposé de a.
 On pourrait aussi l'appeler l'inverse additif de a.
 
