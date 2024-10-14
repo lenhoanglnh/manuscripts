@@ -453,7 +453,7 @@ Autrement dit, on peut poser l'addition
 
   1011  
 + 0101  
-  ----  
+  ------  
   1110
 
 Quant à la multiplication, 
@@ -462,17 +462,15 @@ il est amusant de voir qu'elle correspond pas mal à la multiplication classique
 Illustrons cela en multipliant par exemple `1101` et `1010`.
 En posant la multiplication comme à l'école, on obtient
 
-    1101
-
-Test
-
---------
-    0000
-+  1101
-+ 0000
-+1101
---------
- 1110010
+    1101  
+*   0101  
+  --------  
+     0000  
++   11010  
++  000000  
++ 1101000  
+  --------  
+  1110010
  
 Ce résultat est juste en un certain sens, 
 mais il est insatisfaisant car 1110010 ne correspond pas à l'encodage des nombres de F<sub>2⁴</sub>
@@ -484,31 +482,31 @@ qu'on a défini comme `k⁴ = k+1`.
 En notation binaire, ça veut dire que `10000 = 0011`.
 Utilisons cela pour réduire `1110010`:
 
-   1110010
-----------
-   1000000
-+   110010
-----------
-    001100
-+   110010
-----------
-    111110
-----------
-    100000
-+    11110
-----------
-     00110
-+    11110
-----------
-     11000
-----------
-     10000
-+     1000
-----------
-      0011
-+     1000
-----------
-      1011
+   1110010  
+   ----------  
+   1000000  
++   110010  
+   ----------  
+    001100  
++   110010  
+   ----------  
+    111110  
+   ----------  
+    100000  
++    11110  
+   ----------  
+     00110  
++    11110  
+   ----------  
+     11000  
+   ----------  
+     10000  
++     1000  
+   ----------  
+      0011  
++     1000  
+   ----------  
+      1011
 
 Ça y est, on y est parvenu, on a obtenu le résultat de notre multiplication.
 
