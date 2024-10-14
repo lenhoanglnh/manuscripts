@@ -137,10 +137,9 @@ leur temps de calcul va être dans tous ces cas proportionnels au nombre de chif
 Et c'est en particulier le fait que la division marche aussi bien modulo p
 que l'idée lancée par David d'utiliser la multiplication pour créer un secret partagé
 ne fonctionne pas :
-si Eve observe une multiplication c =<sub>p</sub> gw de deux nombres entiers g et w modulo p,
+si Eve observe une multiplication x =<sub>p</sub> gw de deux nombres entiers g et w modulo p,
 et si elle connaît aussi g et p,
-alors elle pourra reconstruire s en calculant w =<sub>p</sub> c/g.
-
+alors elle pourra reconstruire s en calculant w =<sub>p</sub> x/g.
 On dit que la multiplication modulo p n'est pas une fonction à sens unique.
 C'est une opération qu'il est simple de défaire.
 
@@ -181,7 +180,7 @@ Eh bien, j'en avais parlé sur [String Theory](https://tournesol.app/entities/yt
 L'idée c'est de décomposer 1'050'625 en une somme de puissances de 2.
 Cela nous donne 1'050'625 = 2<sup>20</sup> + 2<sup>12</sup> + 2<sup>0</sup>.
 En fait, cette décomposition n'est autre que l'écriture du nombre en base 2 ;
-et le nombre de terme est exactement le nombre de chiffres en base 2.
+et le nombre de terme est exactement le nombre de chiffres égaux à 1 en base 2.
 
 Maintenant, pour calculer g<sup>2<sup>20</sup></sup>, on va calculer la suite des carrés
 g, g², (g²)², ((g²)²)², et ainsi de suite jusqu'à la combinaison de 20 opérations.
@@ -227,7 +226,7 @@ on voit que multiplier deux éléments du groupes
 revient à ajouter leurs exposants, 
 dans l'écriture sous forme de puissance de g.
 En fait, ça revient à dire que l'application 
-qui à s associe g<sup>w</sup> est un morphisme de groupe.
+qui à w associe g<sup>w</sup> est un morphisme de groupe.
 
 Mieux encore, on peut remarquer que le p-ième élément de la suite des g<sup>w</sup>
 doit forcément reboucler, et donc que g<sup>p</sup> =<sub>p</sub> g.
@@ -288,11 +287,11 @@ on peut en particulier, précisder les valeurs
 g<sub>2</sub> =<sub>p</sub> g<sup>3\*5</sup> =<sub>p</sub> 30, 
 g<sub>3</sub> =<sub>p</sub> g<sup>2\*5</sup> =<sub>p</sub> 25, et 
 g<sub>5</sub> =<sub>p</sub> g<sup>2\*3</sup> =<sub>p</sub> 16
-et surtout calculer des termes similaires pour h,
+et surtout calculer des termes similaires pour x,
 ce qui va définir 
-h<sub>2</sub> =<sub>p</sub> x<sup>3\*5</sup> =<sub>p</sub> 30, 
-h<sub>3</sub> =<sub>p</sub> x<sup>2\*5</sup> =<sub>p</sub> 5 et 
-h<sub>5</sub> =<sub>p</sub> x<sup>2\*3</sup> =<sub>p</sub> 1.
+x<sub>2</sub> =<sub>p</sub> x<sup>3\*5</sup> =<sub>p</sub> 30, 
+x<sub>3</sub> =<sub>p</sub> x<sup>2\*5</sup> =<sub>p</sub> 5 et 
+x<sub>5</sub> =<sub>p</sub> x<sup>2\*3</sup> =<sub>p</sub> 1.
 
 Pour chaque facteur premier q de p-1,
 on va s'intéresser en particulier à résoudre l'équation
@@ -303,7 +302,10 @@ Dans notre cas, on obtient les équations
 1 =<sub>p</sub> 16<sup>w<sub>5</sub></sup>.
 En évaluant toutes les puissances de g<sub>q</sub><sup>w</sup>, 
 vu qu'il y en a peu pour des petits nombres premiers q,
-on peut alors obtenir s<sub>2</sub> =<sub>2</sub> 1, s<sub>3</sub> =<sub>3</sub> 2 et s<sub>5</sub> =<sub>5</sub> 4.
+on peut alors obtenir 
+w<sub>2</sub> =<sub>2</sub> 1, 
+w<sub>3</sub> =<sub>3</sub> 2 et 
+w<sub>5</sub> =<sub>5</sub> 4.
 
 Pour conclure, il reste à trouver un nombre entier s
 tel que si on écrit 
