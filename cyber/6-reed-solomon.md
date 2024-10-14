@@ -56,7 +56,7 @@ tout message textuel peut être transformé en une suite de nombres
 entre 0 et 255.
 
 Par exemple, le mot "Lê" est encodé en UTF-8 par
-la suite de 3 nombres m_1_ = 76, m_2_ = 195 et m_3_ = 170.
+la suite de 3 nombres m<sub>1</sub> = 76, m<sub>2</sub> = 195 et m<sub>3</sub> = 170.
 Comment maintenant puis-je encoder cette suite de 3 nombres,
 de sorte que le code que j'obtiens soit résilient à des erreurs ?
 Une solution naïve serait d'envoyer 3 fois chaque nombre.
@@ -69,8 +69,8 @@ Il requiert de tripler la quantité d'information envoyée.
 Ne pourrait-on pas faire mieux ?
 
 L'idée de Reed-Solomon est d'effectuer une autre transformation,
-en remplaçant la suite m_1_, m_2_, m_3_ par le polynôme
-P(X) = m_1_ + m_2_ X + m_3_ X²,
+en remplaçant la suite m<sub>1</sub>, m<sub>2</sub>, m<sub>3</sub> par le polynôme
+P(X) = m<sub>1</sub> + m<sub>2</sub> X + m<sub>3</sub> X²,
 qui va donc ici être 
 P(X) = 76 + 195 X + 170 X².
 
@@ -83,7 +83,7 @@ Mais surtout, on peut facilement se convaincre,
 par exemple en jouant sur le site Desmos.com,
 que deux courbes paraboliques sont identiques,
 si et sulement si, 
-elles sont définies par les mêmes nombres m_1_, m_2_ et m_3_.
+elles sont définies par les mêmes nombres m<sub>1</sub>, m<sub>2</sub> et m<sub>3</sub>.
 
 Or une courbe parabolique peut être définie tout autrement aussi.
 Prenez trois points de l'espace,
@@ -121,9 +121,9 @@ Grâce à l'envoi de 5 points, on a réussi à identifier l'erreur et à la corr
 ## Le cas plus général
 
 Dans un cadre plus général, 
-si on veut encoder un message (m_1_, m_2_, ..., m_k_) de longueur k,
+si on veut encoder un message (m<sub>1</sub>, m<sub>2</sub>, ..., m<sub>k</sub>) de longueur k,
 on peut encoder le message par le polynôme
-P(X) = m_1_ + m_2_ X + m_3_ X² + ... + m_k_ X^k-1^.
+P(X) = m<sub>1</sub> + m<sub>2</sub> X + m<sub>3</sub> X² + ... + m<sub>k</sub> X<sup>k-1</sup>.
 Mieux encore, si on veut s'autoriser t erreurs,
 on peut envoyer k+2t valeurs du polynôme,
 comme la suite P(1), P(2), ..., P(k+2t).
@@ -132,7 +132,7 @@ on va pouvoir tolérer t erreurs.
 
 Cette fois, étant donné les points P(1), P(2), ..., P(k+2t),
 pour trouver le bon polynôme,
-il faut en trouver un de la forme P(X) = m_1_ + m_2_ X + m_3_ X² + ... + m_k_ X^k-1^
+il faut en trouver un de la forme P(X) = m<sub>1</sub> + m<sub>2</sub> X + m<sub>3</sub> X² + ... + m<sub>k</sub> X<sup>k-1</sup>
 qui passe par au moins k+t de ces points ;
 un peu comme dans le cas k = 3 et t = 1 qu'on a traité plus tôt,
 il nous fallait trouver une parabole qui passe par 4 points.
@@ -156,14 +156,14 @@ vous devinez sans doute l'astuce à venir.
 Il suffit d'effectuer les calculs de P(1), P(2), ..., P(k+2t),
 non pas avec des nombres entiers,
 mais avec des nombres d'un corps fini,
-typiquement le corps fini F_2⁸_ à 256 éléments,
+typiquement le corps fini F<sub>2⁸</sub> à 256 éléments,
 qui est particulièrement adapté à manipuler des octets.
 
-En fait non, dans F_256_, comme dans tout corps fini à 2^n^ éléments, 
+En fait non, dans F<sub>256</sub>, comme dans tout corps fini à 2<sup>n</sup> éléments, 
 on a vu que 1 + 1 = 0.
 Et donc P(2) = P(4) = P(0).
 Donc ça ne marche pas de prendre les valeurs de P pour les valeurs 1, 2, 3...
-Mais il suffit d'utiliser des éléments distincts du corps F_256_.
+Mais il suffit d'utiliser des éléments distincts du corps F<sub>256</sub>.
 En pratique, il y a même de nombreuses autres astuces 
 notamment pour faciliter les opérations de décodage ;
 mais le principe global est le même... même si l'interprétation géométrique devient bancale.
@@ -189,7 +189,7 @@ sont algébriquement exactement les mêmes,
 si on considère maintenant des nombres de corps finis.
 
 Bref, pourvu qu'on sait multiplier et additionner correctement des octets,
-en utilisant notamment les règles du nombre imaginaire k du corps F_256_,
+en utilisant notamment les règles du nombre imaginaire k du corps F<sub>256</sub>,
 on est capable de calculer des espèces de courbes de ces corps finis,
 et de chercher en particulier une courbe associée à un polynôme,
 qui intersecte k+t points parmis ceux qui nous ont été envoyés !
@@ -202,34 +202,34 @@ avec 16 personnages possibles et un mensonge.
 
 J'ai choisi celui-là en particulier,
 parce qu'il s'adapte particulièrement bien à un encodage de Reed Solomon.
-En l'occurence, on va travailler non pas avec le corps F_256_, 
-mais avec le corps fini F_4_ à quatre éléments.
+En l'occurence, on va travailler non pas avec le corps F<sub>256</sub>, 
+mais avec le corps fini F<sub>4</sub> à quatre éléments.
 Souvenez-vous, les éléments de ce corps s'écrivent a + bk,
-où a et b et sont éléments de F_2_, c'est-à-dire des bits,
+où a et b et sont éléments de F<sub>2</sub>, c'est-à-dire des bits,
 et où k est un nombre imaginaire qui vérifie k² = 1 + k.
 Pour simplifier les notations, on notera parfois ab le nombre a + bk.
-On a ainsi les quatre nombres de F_4_ qui s'écrivent
+On a ainsi les quatre nombres de F<sub>4</sub> qui s'écrivent
 00, 01, 10 et 11.
 
 Dans ce qui est-ce, comme il y a 16 personnages possibles,
-on peut encoder l'identité du bon personnage par une suite de deux nombres de F_4_,
-qu'on va appeler m_1_ et m_2_.
+on peut encoder l'identité du bon personnage par une suite de deux nombres de F<sub>4</sub>,
+qu'on va appeler m<sub>1</sub> et m<sub>2</sub>.
 Mis bout à bout ces deux nombres forment alors une suite de 4 bits.
 Par exemple, dans cette correspondance à l'écran,
 Thibaut correspond au code binaire 01 11,
-qui correspond aux nombres m_1_ = k et m_2_ = 1 + k.
+qui correspond aux nombres m<sub>1</sub> = k et m<sub>2</sub> = 1 + k.
 
 Ainsi, si le bon personnage était Thibaut,
 en suivant le code de Reed-Solomon,
-il faudrait communiquer le polynôme P(X) = m_1_ + m_2_ X,
+il faudrait communiquer le polynôme P(X) = m<sub>1</sub> + m<sub>2</sub> X,
 qui serait dans ce cas égal à P(X) = k + (1 + k) X.
 Et pour y arriver, on va donner des valeurs de ce polynôme en 4 points,
-qui vont être les 4 valeurs possibles de X, en tant que nombre de F_4_.
+qui vont être les 4 valeurs possibles de X, en tant que nombre de F<sub>4</sub>.
 
 Ces quatre valeurs seront alors 
 P(00) = P(0) = k = 01
 P(10) = P(1) = k + (1 + k) = 1 + 2k, 
-Ça, ça se simplifie. En effet, dans F_4_, 2 = 0, et donc 2k = 0k = 0.
+Ça, ça se simplifie. En effet, dans F<sub>4</sub>, 2 = 0, et donc 2k = 0k = 0.
 Du coup P(10) = P(1) = 1 = 10.
 Ensuite, P(01) = P(k) = k + (1+k) * k = k + (k + k²) = 2k + (1 + k) = 0 + 1 + k = 11.
 Enfin, P(11) = P(1+k) = k + (1+k) * (1+k) = k + 1 + 2k + k² = 1 + k + (1 + k) = 00.
@@ -338,27 +338,27 @@ appelé le code de Reed-Muller.
 L'idée, c'est qu'au lieu d'encoder un message m par un polynôme P à une variable,
 le code de Reed-Muller va l'encoder dans un polynôme multilinéaire Q à plusieurs variables.
 Autrement dit, Q doit avoir plusieurs variables, 
-qu'on peut noter Z_1_, Z_2_, et ainsi de suite,
+qu'on peut noter Z<sub>1</sub>, Z<sub>2</sub>, et ainsi de suite,
 et quand on fixe toutes les variables sauf une,
 on doit obtenir un polynôme de degré 1.
 
 Si Q a q variables, alors il doit s'écrire comme une somme de termes
-Z^h^ = Z_1_^h_1^ Z_2_^h_2^ Z_3_^h_3^ ... Z_q_^h_q^,
+Z<sup>h</sup> = Z<sub>1</sub><sup>h<sub>1</sub></sup> Z<sub>2</sub><sup>h<sub>2</sub></sup> Z<sub>3</sub><sup>h<sub>3</sub></sup> ... Z<sub>q</sub><sup>h<sub>q</sub></sup>,
 où h est une suite binaire de q bits.
 Eh bien, l'idée est d'associer à chacun des termes de la sortes 
-un coefficient m_h_ qui dépend du message m à encoder.
+un coefficient m<sub>h</sub> qui dépend du message m à encoder.
 AUtrement dit, m est encodé par le polynôme multilinéaire à plusieurs variables
-qui est la somme des m_h_ Z^h^.
+qui est la somme des m<sub>h</sub> Z<sup>h</sup>.
 
 Le code de Reed-Muller est obtenu en prenant les valeurs du polynôme Q
 pour ses différentes entrées.
-On peut ainsi vouloir travailler avec le corps fini F_2_ à deux éléments,
-et donc considérer m_h_ égal à 0 ou à 1.
+On peut ainsi vouloir travailler avec le corps fini F<sub>2</sub> à deux éléments,
+et donc considérer m<sub>h</sub> égal à 0 ou à 1.
 Le polynôme Q prend alors en entrée q variables binaires,
-ce qui fait 2^q entrées possibles.
+ce qui fait 2<sup>q</sup> entrées possibles.
 En publiant ses valeurs pour toutes ces entrées,
 qui elles aussi seront binaires,
-on obtient un code de Reed-Muller de longueur 2^q.
+on obtient un code de Reed-Muller de longueur 2<sup>q</sup>.
 
 Il y a beaucoup de détails sur lequel je ne vais pas m'étendre pour aujourd'hui,
 comme le fait de se restreindre au moment de la définition du polynôme Q
