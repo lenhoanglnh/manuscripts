@@ -19,10 +19,6 @@ RAG
 
 ## Cyber
 
-Vérifier les superintelligences (P vs NP vs IP vs SNARK)
- - 3 p_np
- - Vignette robot au tribunal
-
 Les nombres premiers sûrs
  - 4 safe_primes
  - Vignette Sophie Germain avec nombres premiers barrés
@@ -57,7 +53,7 @@ Prouver que je sais sans révéler ce que je sais
  - Vignette ?
 
 La preuve d'appartenance sans divulgation d'identité
- - 11 proof_of_membership
+ - 11 proof\_of\_membership
  - Transformation de la recherche en circuit
  - Merkle Tree
  - Sparse Merkle Tree
@@ -92,5 +88,5 @@ Le problème des anniversaires (et les tables de hachage, le logarithme...)
 
 Le problème des traders confidentiels et curieux
 La confidentialité différentielle
-
+La dette technique européenne (résilience informationnelle vs IA spectaculaires)
 
