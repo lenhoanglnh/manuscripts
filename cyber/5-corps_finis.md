@@ -453,7 +453,7 @@ Autrement dit, on peut poser l'addition
 
   1011
 + 0101
-======
+  ----
   1110
 
 Quant à la multiplication, 
