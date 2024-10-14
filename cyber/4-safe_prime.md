@@ -68,12 +68,15 @@ Pour bien préciser le fait qu'on a cette égalité modulo 13,
 et pas une égalité pour des nombres entiers naturels usuels,
 je vous propose d'écrire cela 
 
-$14 =_{13} 1$
+$14 =_{13} 1.$
 
-.
 On peut ainsi se rendre compte que tout nombre entier
 sera égal modulo 13 à un nombre entier entre 0 et 12.
-En effet, $37 =_{13} 13 + 13 + 11 =_{13} 0 + 0 + 11 =_{13} 11$, qui est bien entre 0 et 12.
+En effet, 
+
+$37 =_{13} 13 + 13 + 11 =_{13} 0 + 0 + 11 =_{13} 11$
+
+qui est bien entre 0 et 12.
 Plutôt qu'une décomposition en somme de 13,
 on peut même utiliser une décomposition en 13 fois un entier plus un reste.
 Ainsi $37 =_{13} (13 \times  2) + 11 =_{13} (0 \times  2) + 11 =_{13} 11$.
