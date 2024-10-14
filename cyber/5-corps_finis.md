@@ -61,14 +61,14 @@ que `1+a` font 0, et donc que `1+a+0` font `0+0`, ce qui fait la tête à toto,
 enfin, je voulais dire 0.
 et que le résultat est donc `1 * 0`, qui est égal à 0.
 Voilà, vous venez peut-être d'avoir fait vos premiers calculs
-dans le corps fini F_3.
+dans le corps fini F<sub>3</sub>.
 
 Alors, si on regarde de plus prêt les deux tables d'addition et de multiplication,
 on peut faire quelques remarques assez profondes sur les corps finis.
 D'abord, les deux tableaux sont symétrique par rapport à la diagonale principale,
 qui va d'en haut à gauche à en bas à droite.
 Ça revient à dire que, par exemple, 1+a est nécessairement égal à a+1.
-De même `0\*a = a\*0`.
+De même `0*a = a*0`.
 On dit que l'addition et la multiplication sont commutatives.
 Et bien, en 1905, Joseph Wedderburn a démontré que dans tout corps fini,
 c'était nécessairement le cas.
@@ -115,7 +115,7 @@ On peut donc bien diviser 1 par a.
 Comme `1/a` est tel que `a * (1/a)` est égal à l'élément neutre de la multiplication,
 à savoir 1,
 on dit que `1/a` est l'inverse de `a`.
-Dans les livres sur les corps finis, vous le verrez davantage noté `a<sup>-1</sup>`.
+Dans les livres sur les corps finis, vous le verrez davantage noté a<sup>-1</sup>.
 De même la quantité `0 - a` est souvent appelée l'opposé de a.
 On pourrait aussi l'appeler l'inverse additif de a.
 
@@ -229,7 +229,7 @@ on en déduit que les deux cases restantes doivent être des 1.
 | a | a | b | 0 | 1 |
 | b | b | a | 1 | 0 |
 
-Ça y est ! On a réussi à définir notre corps fini F_4 à 4 éléments !
+Ça y est ! On a réussi à définir notre corps fini F<sub>4</sub> à 4 éléments !
 
 
 ## Les corps finis
@@ -301,21 +301,21 @@ comme la racine carrée de -1 pour construire les nombres complexes à partir de
 
 Appelons par exemple k le "nombre imaginaire" du corps à q éléments.
 Alors les nombres du corps à q éléments doivent pouvoir s'écrire :
-`a_0_ + a_1_ k + a_2_ k^2^ + ... + a_n-1_ k^n-1^`,
+a<sub>0</sub> + a<sub>1</sub> k + a<sub>2</sub> k² + ... + a<sub>n-1</sub> k<sup>n-1</sup>,
 pour un certain nombre entier naturel n,
-avec des coefficients a_0_, a_1_, ..., a_n-1_ qui sont des éléments du corps fini à p éléments.
-On dit dans le jargon que F_q_ a une structure de F_p_-espace vectoriel.
-Mais alors le nombre d'éléments de F_q_,
-c'est le nombre de façon de choisir a_0, fois celui de choisir a_1, et ainsi de suite.
-Cela fait p^n^ choix possibles. 
-Voilà qui force q = p^n^ : 
+avec des coefficients a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>n-1</sub> qui sont des éléments du corps fini à p éléments.
+On dit dans le jargon que F<sub>q</sub> a une structure de F<sub>p</sub>-espace vectoriel.
+Mais alors le nombre d'éléments de F<sub>q</sub>,
+c'est le nombre de façon de choisir a<sub>0</sub>, fois celui de choisir a<sub>1</sub>, et ainsi de suite.
+Cela fait p<sup>n</sup> choix possibles. 
+Voilà qui force q = p<sup>n</sup> : 
 autrement dit le nombre d'éléments de tout corps fini doit être une puissance 
 d'un nombre premier p.
 
 
-## Construire des corps finis à p^n éléments
+## Construire des corps finis à p<sup>n</sup> éléments
 
-En cryptographie, on a souvent besoin de construction explicite de corps finis à p^n éléments.
+En cryptographie, on a souvent besoin de construction explicite de corps finis à p<sup>n</sup> éléments.
 Pour effectuer cette construction, il nous faut définir comment le nombre imaginaire k
 se réduit à un nombre du corps,
 lorsqu'on le met à une trop grande puissance.
@@ -329,7 +329,7 @@ on peut le réduire à un nombre complexe usuel,
 en faisant la remarque que `i⁷ = i² * i² * i² * i = (-1) * (-1) * (-1) * i = -i`.
 
 Eh bien, on va faire exactement pareil pour k, 
-mais en se permettant des expressions plus complexes de k^n^.
+mais en se permettant des expressions plus complexes de k<sup>n</sup>.
 Pour illustrer, prenons le cas du corps fini à 2 éléments,
 qui correspond donc aux nombres modulo 2,
 et dont les tables d'addition et de multiplication sont les suivantes : 
@@ -362,7 +362,7 @@ Du coup, on obtient la table d'addition suivante :
 
 On peut également calculer la table de multiplication,
 en utilisant `k² = k + 1`,
-qui implique `k(k+1) = k^2 + k = (k+k) + 1 = 1`
+qui implique `k(k+1) = k² + k = (k+k) + 1 = 1`
 et `(k+1)² = k² + k + k + 1 = k+1 + k+k + 1 = k`.
 Ceci donne
 
@@ -402,7 +402,7 @@ Et ça, ça implique que les opérations définies ne composent plus un corps.
 Mais, donc, pourquoi est-ce que `k² = k+1` est un bon choix,
 mais `k² = -1` en est un mauvais ?
 
-Eh bien, ça vient du fait que l'équation `X² = -1` a déjà une solution dans F_2_.
+Eh bien, ça vient du fait que l'équation `X² = -1` a déjà une solution dans F<sub>2</sub>.
 Vous vous souvenez peut-être que, si on a introduire le nombre imaginaire i,
 c'est parce qu'on ne pouvait pas prendre la racine carrée de -1 dans le corps des nombres réels.
 L'équation `X² = -1` n'a pas de solution réelle.
@@ -410,16 +410,16 @@ Et bien, c'est ça qui fait que ajouter une solution i à cette équation
 renforce le corps des nombres réels, en un corps plus grands, à savoir celui des complexes.
 
 Et bien, il en va de même pour les corps finis.
-Toute extension de corps finis requiert l'identification d'une équation en `X^n^`
+Toute extension de corps finis requiert l'identification d'une équation en `X<sup>n</sup>`
 qui n'a pas de solution dans le corps fini.
-Les expressions comme `X^n^ - X - 1` qui n'ont pas de solutions `X^n^ - X - 1 = 0`
+Les expressions comme `X<sup>n</sup> - X - 1` qui n'ont pas de solutions `X<sup>n</sup> - X - 1 = 0`
 sont appelées des polynomes irréductibles.
 Et en pratique, les informaticiens identifient de telles expressions 
 pour ensuite concevoir des corps finis.
 
-Par exemple, le corps fini à 2⁴ = 16 éléments peut se construire à partir de F_2_,
+Par exemple, le corps fini à 2⁴ = 16 éléments peut se construire à partir de F<sub>2</sub>,
 en s'appuyant sur le nombre imaginaire k défini par `k⁴ = k + 1`.
-Et ça, ça marche, parce que le polynome `X⁴ - X - 1` est irréductible dans F_2_,
+Et ça, ça marche, parce que le polynome `X⁴ - X - 1` est irréductible dans F<sub>2</sub>,
 et qu'il est de degré 4, c'est-à-dire que la plus grande puissance est 4.
 En pratique, les informaticiens utilisent particulièrement le corps fini à 2⁸ = 256 éléments,
 notamment car ils regroupent souvent les bits par paquets de 8,
@@ -430,21 +430,21 @@ Comme on le verra la prochaine fois,
 c'est ce nombre imaginaire qui est utilisé dans les QR Codes.
 
 D'ailleurs on peut noter que, de façon plus générale, 
-l'encodage des corps F_2^n^_ est particulièrement naturel en informatique.
-En effet, tout élément de F_2^n^_ s'écrit
-`a_0_ + a_1_ k + a_2_ k² + ... + a_n-1_ k^n-1^`,
+l'encodage des corps F<sub>2<sup>n</sup></sub> est particulièrement naturel en informatique.
+En effet, tout élément de F<sub>2<sup>n</sup></sub> s'écrit
+`a<sub>0</sub> + a<sub>1</sub> k + a<sub>2</sub> k² + ... + a<sub>n-1</sub> k<sup>n-1</sup>`,
 puisque les puissances supérieures sont réduites par la définition du nombre imaginaire $k$.
-Et donc, on peut l'encoder, en ne retenant que les coefficients a_n-1_, a_n-2_, ..., a_0_.
-Or chaque terme a_n-1_, a_n-2_, ..., a_0_ doit appartenir à F_2,
+Et donc, on peut l'encoder, en ne retenant que les coefficients a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub>.
+Or chaque terme a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub> doit appartenir à F<sub>2,
 le corps à 2 éléments, dont on sait qu'ils sont 0 ou 1.
-Et donc l'encodage a_n-1_, a_n-2_, ..., a_0_$ est naturellement binaire :
+Et donc l'encodage a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub>$ est naturellement binaire :
 il s'agit d'une suite de n bits !
 
-L'addition dans F_2^n^_ correspond alors naturellement à une addition terme à terme sans retenue.
-Par exemple dans F_2⁴_, les nombres `k³ + k + 1` et `k² + 1` 
+L'addition dans F<sub>2<sup>n</sup></sub> correspond alors naturellement à une addition terme à terme sans retenue.
+Par exemple dans F<sub>2⁴</sub>, les nombres `k³ + k + 1` et `k² + 1` 
 sont respectivement encodés par `1011` et `0101`.
 Leur addition donne `k³ + k² + k + (1+1)`.
-Et comme 1+1 = 0 dans F_2, ça nous fait juste `k³ + k² + k`.
+Et comme 1+1 = 0 dans F<sub>2</sub>, ça nous fait juste `k³ + k² + k`.
 Et comme vous le sentez peut-être venir, 
 l'addition se fait indépendamment pour chaque puissance de k.
 Et ça, ça revient à pauser l'addition, 
@@ -473,7 +473,7 @@ En posant la multiplication comme à l'école, on obtient
  1110010
  
 Ce résultat est juste en un certain sens, 
-mais il est insatisfaisant car 1110010 ne correspond pas à l'encodage des nombres de F_2⁴_
+mais il est insatisfaisant car 1110010 ne correspond pas à l'encodage des nombres de F<sub>2⁴</sub>
 comme on l'a défini, car cet encodage doit être une suite de 4 bits.
 
 L'astuce est maintenant de réduire ce résultat,
@@ -517,19 +517,19 @@ Notez qu'il y a également d'autres astuces de calculs remarquables
 pour certains autres corps finis,
 notamment les corps à p éléments, 
 où p est un nombre premier de Mersenne.
-Un tel nombre premier s'écrit `p = 2^r^ - 1`, où r est lui aussi premier.
+Un tel nombre premier s'écrit p = 2<sup>r</sup> - 1, où r est lui aussi premier.
 
 Illustrons le avec r = 3, qui donne le nombre premier de Mersenne 2³ - 1 = 7
-Les nombres de 0 à 6 du corps F_7_ sont simplement représentés 
+Les nombres de 0 à 6 du corps F<sub>7</sub> sont simplement représentés 
 par leurs représentations binaires à 3 bits,
 ce qui donne la suite de nombres 000, 001, 010, 011, 100, 101 et 110.
-Cependant, on sait que dans F_7_, le 7e nombre est intuitivement 0.
+Cependant, on sait que dans F<sub>7</sub>, le 7e nombre est intuitivement 0.
 on a donc 111 = 000.
 
 On peut alors considérer des opérations classiques de multiplication et d'addition,
 mais avec la retenue cette fois, 
 puisqu'on travaille avec les représentation binaires des nombres entiers,
-et non pas des nombres d'un corps F_2^n^_ de caractéristique 2.
+et non pas des nombres d'un corps F<sub>2<sup>n</sup></sub> de caractéristique 2.
 Il faut juste prêter attention
 à bien effectuer une réduction de 111 en 000 
 à chaque fois qu'on atteint ou qu'on dépasse 111.
@@ -538,9 +538,9 @@ Illustrons cela en faisant `100 * 100`.
 On obtient alors 100000, qui se décompose en
 10000 = 10000 - 1110 = 10.
 
-Plus généralement tous les nombres premiers de la forme 2^r^ - c,
+Plus généralement tous les nombres premiers de la forme 2<sup>r</sup> - c,
 avec un petit nombre impair c,
-définissent des corps finis F_2^r - c_ particulièrement intéressants pour la cryptographie,
+définissent des corps finis F<sub>2<sup>r</sup> - c</sub> particulièrement intéressants pour la cryptographie,
 notamment car ils facilitent les calculs par ordinateur,
 en réduisant des opérations d'addition et de multiplication à des manipulations de bits.
 Ça paraît anecdotique dit comme ça,
@@ -587,7 +587,7 @@ ce qui nous éloigne drastiquement des applications.
 
 Mais tout ça, en cryptographie, en tout cas dans les protocoles les plus standards,
 il n'y a pas lieu de se soucier de ces aspects.
-L'ensemble des corps finis à p^n^ éléments est un espace déjà suffisamment riche,
+L'ensemble des corps finis à p<sup>n</sup> éléments est un espace déjà suffisamment riche,
 et surtout suffisamment calculable,
 pour nous fournir des billes précieuses pour sécuriser nos systèmes d'information,
 dont je suis impatient de vous parler.
