@@ -3,7 +3,7 @@
 La dernière fois, on a vu que la clé de la cryptographie,
 c'était de générer des secrets w,
 et de concevoir un problème difficile x dont w est la solution.
-En particulier, idéalement résoudre x doit être tellement difficile calculatoirement
+En particulier, idéalement résoudre x doit être calculatoirement tellement difficile
 qu'on peut être confiant que même les superintellygences de l'espace numérique,
 comme Google, la NSA et le gouvernement chinois,
 soient incapables de découvrir une solution au problème x,
@@ -11,7 +11,7 @@ comme le secret w dont on a la connaissance.
 
 Aujourd'hui, on va voir la solution qui est très largement la plus utilisée aujourd'hui
 pour concevoir des problèmes difficiles x à partir de secrets w.
-Cette opération, c'est celle qui consiste à simplement calculer x = g^w^,
+Cette opération, c'est celle qui consiste à simplement calculer x = g<sup>w</sup>,
 où g est un nombre un peu particulier, comme on le verra dans la suite.
 Résoudre le problème x, c'est alors trouver un nombre v tel que x = g^v^.
 Clairement, nous qui avons conçu le problème x à partir de w, 
