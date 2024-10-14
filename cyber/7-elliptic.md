@@ -1,7 +1,5 @@
 # Cette équation est une backdoor de la NSA
 
-$$x_2^n$$
-
 Dans notre monde extrêmement numérisé, 
 maîtriser les mathématiques est devenu une sorte de superpouvoir.
 Et celui-ci peut être utilisé pour le bien du plus grand nombre, ou non.
