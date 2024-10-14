@@ -410,9 +410,10 @@ Et bien, c'est ça qui fait que ajouter une solution i à cette équation
 renforce le corps des nombres réels, en un corps plus grands, à savoir celui des complexes.
 
 Et bien, il en va de même pour les corps finis.
-Toute extension de corps finis requiert l'identification d'une équation en `X<sup>n</sup>`
+Toute extension de corps finis requiert l'identification d'une équation en X<sup>n</sup>
 qui n'a pas de solution dans le corps fini.
-Les expressions comme `X<sup>n</sup> - X - 1` qui n'ont pas de solutions `X<sup>n</sup> - X - 1 = 0`
+Les expressions comme X<sup>n</sup> - X - 1 
+qui n'ont pas de solutions X<sup>n</sup> - X - 1 = 0
 sont appelées des polynomes irréductibles.
 Et en pratique, les informaticiens identifient de telles expressions 
 pour ensuite concevoir des corps finis.
