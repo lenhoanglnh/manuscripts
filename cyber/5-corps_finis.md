@@ -463,7 +463,6 @@ Illustrons cela en multipliant par exemple `1101` et `1010`.
 En posant la multiplication comme à l'école, on obtient
 
     1101
-*   1010
 
 Test
 
