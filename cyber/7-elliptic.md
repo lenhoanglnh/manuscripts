@@ -149,11 +149,11 @@ Ce qui va m'intéresser maintenant, c'est d'identifier les coefficients de degr�
 En effet, par égalité des polynômes, 
 on sait qu'on doit avoir
 $c^2 = x_P + x_Q + x_R$.
-Mais donc, $x_R = c² - x_P - x_Q`.
+Mais donc, $x_R = c² - x_P - x_Q$.
 Notez qu'on peut estimer la pente $c$ de la droite 
 en calculant le taux d'accroissement entre les points $P$ et $Q$, 
 ce qui donne $c = (y_P - y_Q) / (x_P - x_Q)$,
-et donc on a $x_R = (y_P - y_Q)^2^ / (x_P - x_Q)^2^ - x_P - x_Q$.
+et donc on a $x_R = (y_P - y_Q)^2 / (x_P - x_Q)^2 - x_P - x_Q$.
 On peut ensuite en déduire $y_R$ en utilisant le fait que R est sur la droite,
 ce qui donne $y_R = c x_R + d = (y_P - y_Q) (x_R - x_P) / (x_P - x_Q) + y_P$.
 
@@ -533,8 +533,9 @@ personnellement, j'ai mon bullshit alert rouge écarlate...
 
 Ce dont j'espère vous avoir convaincu aujourd'hui,
 c'est que même les mathématiques les plus obscures comme la géométrie algébrique,
-peuvent être des outils de contrôle et de surveillance,
+peuvent être des outils de contrôle, de chiffrement et de surveillance,
 et donc de sécurité nationale.
+En particulier, sans que 
 Mais surtout, ce que j'aimerais que vous reteniez,
 c'est que dès lors, les mathématiques et les mathématiciens
 ne peuvent plus considérer qu'ils sont purs et loins de toute implication sociale.
