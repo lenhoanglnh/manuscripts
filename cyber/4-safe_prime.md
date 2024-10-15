@@ -340,9 +340,9 @@ Et oui, c'est le même Hellman que dans Diffie-Hellman.
 
 Le temps de calcul de Pohlig-Hellman être de l'ordre
 de la racine carrée du plus grand facteur premier de p-1.
-
-> Techniquement la complexity sera O(\sum<sub>q</sub> k<sub>q</sub> (log(n) + sqrt(q)), 
-> si p-1 = \prod q<sup>k<sub>q</sub></sup>.
+comple
+> Techniquement la complexité sera $O(\sum_q k_q (\log(n) + \sqrt{q})$, 
+> si $p-1 = \prod_q q^{k_q}$.
 
 Si ce plus grand facteur premier reste un nombre cryptographique, ça reste déraisonnable.
 Mais s'il est de l'ordre du million de milliards seulement,
