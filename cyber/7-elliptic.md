@@ -29,7 +29,7 @@ votre machine a dû effectué des opérations sur des courbes elliptiques.
 
 De façon générale, une courbe elliptique est définie
 comme l'ensemble des solutions (x,y) de l'équation 
-`y² = x³ + ax + b`.
+$y² = x³ + ax + b$.
 
 > Pour éviter les singularités, on suppose `4a³ + 27b² ≠ 0`.
 
