@@ -29,16 +29,16 @@ votre machine a dû effectué des opérations sur des courbes elliptiques.
 
 De façon générale, une courbe elliptique est définie
 comme l'ensemble des solutions (x,y) de l'équation 
-$y² = x³ + ax + b$.
+$y^2 = x^3 + ax + b$.
 
-> Pour éviter les singularités, on suppose `4a³ + 27b² ≠ 0`.
+> Pour éviter les singularités, on suppose $4a^3 + 27b^2 \neq 0$.
 
 Le cas suspicieux de la NSA considérait le cas `a = -3` et 
 `b = 41058363725152142129326129780047268409114441015993725554835256314039467401291`.
 Bon, déjà, ce choix de la valeur de `b` paraît étrange.
 
 Par opposition, l'une des courbes les plus standards aujourd'hui
-est l'équation `y² = x³ + 486662 x² + x`,
+est l'équation $y^2 = x^3 + 486662 x^2 + x$,
 qui définit Curve25519.
 Bon, ce n'est pas tout à fait une courbe elliptique en forme standard,
 ce qui facilite certains calculs,
@@ -48,11 +48,11 @@ et plus justifiées, que celles de la NSA.
 
 Mais oublions ces détails pour l'instant.
 Ce qui est intéressant à voir, 
-c'est que si on trace la courbe `y² = x³ + ax + b` dans un logiciel comme Desmos,
+c'est que si on trace la courbe $y^2 = x^3 + ax + b$ dans un logiciel comme Desmos,
 par exemple ici pour `a = -3` et `b = 5`,
 on obtient cette figure assez caractéristique.
 
-Mais ça, ça correspond aux solutions `(x,y)` pour des nombres réels.
+Mais ça, ça correspond aux solutions $(x,y)$ pour des nombres réels.
 Les mathématiciens se sont amusés à explorer des solutions 
 dans d'autres classes de nombres.
 Si on considère les solutions complexes,
@@ -84,7 +84,7 @@ Dans le cas de l'équation de la NSA,
 qui définit un protocole appelé Dual\_EC\_DRBG,
 ce nombre est `p = 115792089210356248762697446949407573529996955224135760342422259061068512044369`.
 Pour la courbe Curve25519,
-on a `p = 2^255^ - 19`.
+on a $p = 2^{255} - 19$.
 C'est d'ailleurs de là que vient son nom d'ailleurs.
 Notez que dans ce second cas, 
 les nombres peuvent être écrits du corps peuvent être écrits avec 256 bits.
@@ -115,47 +115,47 @@ et en prenant le symétrique de ce point selon l'axe des abscisses.
 Et si je vous décris ces opérations géométriquement,
 on peux très bien en avoir une description algébrique aussi,
 grâce à la magie de la géométrie algébrique.
-Appelons ainsi `y² = x³ + ax + b` la courbe elliptique,
-et `y = cx + d` la droite qui passe par P et Q.
+Appelons ainsi $y^2 = x^3 + ax + b$ la courbe elliptique,
+et $y = cx + d$ la droite qui passe par P et Q.
 
 Déterminer les intersection entre la courbe elliptique et la droite,
 ça revient à résoudre ces deux équations à la fois.
 En injectant l'expression y selon l'équation de la droite
 dans l'équation de la courbe elliptique,
-on obtient `(cx + d)² = x³ + ax + b`,
-qu'on peut réécrire `c²x² + 2cd x + d² = x³ + ax + b`.
+on obtient $(cx + d)^2 = x^3 + ax + b$,
+qu'on peut réécrire $c^2 x^2 + 2cd x + d^2 = x^3 + ax + b$.
 En mettant tout à droite de l'équation, on obtient
-`x³ - c² x² + (a - 2cd) x + (b-d)² = 0`,
-ce qui est une équation de degré 3 en `x`.
+$x^3 - c^2 x^2 + (a - 2cd) x + (b-d)^2 = 0$,
+ce qui est une équation de degré 3 en $x$.
 
 Et là, on pourrait vouloir sortir la calculatrice,
 mais il y a en fait une remarque plus maligne à faire.
 En effet, on sait que parmi les points d'intersection 
 entre la courbe elliptique et la droite, il y a les points P, Q et R.
 Mais donc, on sait que les abscisses de ces points sont solution de l'équation.
-Appelons x<sub>P</sub>, x<sub>Q</sub> et x<sub>R</sub> ces points d'intersection.
+Appelons $x_P$, $x_Q$ et $x_R$ ces points d'intersection.
 Alors, d'après la théorie des polynômes, 
 on sait que toute équation de degré 3 qui s'annule en ces 3 points doit s'écrire
-(x-x<sub>P</sub>)(x-x<sub>Q</sub>)(x-x<sub>R</sub>).
+$(x-x_P)(x-x_Q)(x-x_R)$.
 Comme c'est le cas de notre équation de l'intersection 
 entre la courbe elliptique et la droite,
 on sait donc que
-x³ - c² x² + (a - 2cd) x + (b-d)² = (x-x<sub>P</sub>)(x-x<sub>Q</sub>)(x-x<sub>R</sub>).
+$x^3 - c^2 x^2 + (a - 2cd) x + (b-d)^2 = (x-x_P)(x-x_Q)(x-x_R)$.
 
 Ok, on y presque !
 Maintenant, on va développer le terme de droite, ce qui donne
-`(x-x<sub>P</sub>)(x-x<sub>Q</sub>)(x-x<sub>R</sub>) = x³ - (x<sub>P</sub> + x<sub>Q</sub> + x<sub>R</sub>) x² + autres`.
+$(x-x_P)(x-x_Q)(x-x_R) = x^3 - (x_P + x_Q + x_R) x^2 + autres$.
 Ce qui va m'intéresser maintenant, c'est d'identifier les coefficients de degrés 2.
 En effet, par égalité des polynômes, 
 on sait qu'on doit avoir
-`c² = x<sub>P</sub> + x<sub>Q</sub> + x<sub>R</sub>`.
-Mais donc, `x<sub>R</sub> = c² - x<sub>P</sub> - x<sub>Q</sub>`.
-Notez qu'on peut estimer la pente `c` de la droite 
-en calculant le taux d'accroissement entre les points `P` et `Q`, 
-ce qui donne `c = (y<sub>P</sub> - y<sub>Q</sub>) / (x<sub>P</sub> - x<sub>Q</sub>)`,
-et donc on a `x<sub>R</sub> = (y<sub>P</sub> - y<sub>Q</sub>)^2^ / (x<sub>P</sub> - x<sub>Q</sub>)^2^ - x<sub>P</sub> - x<sub>Q</sub>`.
-On peut ensuite en déduire `y<sub>R</sub>` en utilisant le fait que R est sur la droite,
-ce qui donne `y<sub>R</sub> = c x<sub>R</sub> + d = (y<sub>P</sub> - y<sub>Q</sub>) (x<sub>R</sub> - x<sub>P</sub>) / (x<sub>P</sub> - x<sub>Q</sub>) + y<sub>P</sub>`.
+$c^2 = x_P + x_Q + x_R$.
+Mais donc, $x_R = c² - x_P - x_Q`.
+Notez qu'on peut estimer la pente $c$ de la droite 
+en calculant le taux d'accroissement entre les points $P$ et $Q$, 
+ce qui donne $c = (y_P - y_Q) / (x_P - x_Q)$,
+et donc on a $x_R = (y_P - y_Q)^2^ / (x_P - x_Q)^2^ - x_P - x_Q$.
+On peut ensuite en déduire $y_R$ en utilisant le fait que R est sur la droite,
+ce qui donne $y_R = c x_R + d = (y_P - y_Q) (x_R - x_P) / (x_P - x_Q) + y_P$.
 
 Si vous n'avez pas suivi tous les calculs, ne vous en faites pas.
 Ce que je veux vraiment vous montrer,
@@ -171,35 +171,35 @@ mais aussi et surtout aux corps finis.
 Pour les corps finis aussi,
 n'importe quelle paire de points d'une courbe elliptique peut se combiner,
 et nous fournir un troisième de la courbe elliptique ;
-qui rappellons-le, est en fait un ensemble fini de points `(x,y)` 
-où `x` et `y` sont des nombres d'un corps fini.
+qui rappellons-le, est en fait un ensemble fini de points $(x,y)$
+où $x$ et $y$ sont des nombres d'un corps fini.
 
 Enfin, ce n'est pas tout à fait exact, 
 en tout cas avec uniquement les opérations dont je vous ai parlé jusque là.
-Et oui, dans nos équations, on a une division par `x<sub>P</sub> - x<sub>Q</sub>`.
-Or si `x<sub>P</sub> = x<sub>Q</sub>`, alors `x<sub>P</sub> = x<sub>Q</sub>`, et on a donc une division par zéro.
+Et oui, dans nos équations, on a une division par $x_P - x_Q$.
+Or si $x_P = x_Q$, alors $x_P = x_Q$, et on a donc une division par zéro.
 Or ça, c'est vraiment ultra-interdit, non seulement pour les nombres réels,
 mais aussi dans le corps des nombres finis.
 
 En fait, si on regarde notamment la courbe elliptique pour les nombres réels, 
-il y a exactement 2 cas où P et Q sont sur la courbe et où ils ont la même abscisse :
-soit `P = Q`, soit `P` est le symétrique de `Q` selon l'axe des abscisses.
-Dans le premier cas, l'astuce est de dire que `Q` est un point limite 
-d'une suite Q<sub>1</sub>, Q<sub>2</sub>, ... qui tend vers `P`.
-On va alors exiger que la combinaison de P et Q est 
-la limite des combinaisons de P et Q<sub>n</sub>.
-Formellement, ceci revient à considérer la tangente à la courbe elliptique qui passe par `P`,
-et à définir `R` comme le symétrique de l'autre intersection 
+il y a exactement 2 cas où $P$ et $Q$ sont sur la courbe et où ils ont la même abscisse :
+soit $P = Q$, soit $P$ est le symétrique de $Q$ selon l'axe des abscisses.
+Dans le premier cas, l'astuce est de dire que $Q$ est un point limite 
+d'une suite $Q_1$, $Q_2$, ... qui tend vers $P$.
+On va alors exiger que la combinaison de $P$ et $Q$ est 
+la limite des combinaisons de $P$ et $Q_n$.
+Formellement, ceci revient à considérer la tangente à la courbe elliptique qui passe par $P$,
+et à définir $R$ comme le symétrique de l'autre intersection 
 de la tangente avec la courbe elliptique.
 
-Dans le second cas, on va considérer et la combinaison de P avec Q,
-qui est donc la combinaison de P avec lui-même, 
+Dans le second cas, on va considérer et la combinaison de $P$ avec $Q$,
+qui est donc la combinaison de $P$ avec lui-même, 
 est égal à un point fictif,
-qu'on va appeler `0`, 
+qu'on va appeler $0$, 
 et qu'on va considérer être un point un peu spécial de la courbe elliptique.
 Ce point fictif aura par ailleurs la propriété de n'avoir aucun effet,
 quand on le combine à n'importe quel autre point de la courbe.
-Autrement dit, combiner `0` et `P` fait `P`.
+Autrement dit, combiner $0$ et $P$ fait $P$.
 
 Et voilà, on a notre façon de combiner toutes les paires de points
 de notre courbe elliptique étendue.
@@ -243,8 +243,8 @@ C'est une opération plus complexe ;
 mais cela reste une opération algébrique, 
 conformément aux équations qu'on a identifiées plus haut.
 
-`x<sub>R</sub> = (y<sub>P</sub> - y<sub>Q</sub>)^2^ / (x<sub>P</sub> - x<sub>Q</sub>)^2^ - x<sub>P</sub> - x<sub>Q</sub>`,
-`y<sub>R</sub> = (y<sub>P</sub> - y<sub>Q</sub>) (x<sub>R</sub> - x<sub>P</sub>) / (x<sub>P</sub> - x<sub>Q</sub>) + y<sub>P</sub>`.
+$x_R = (y_P - y_Q)^2 / (x_P - x_Q)^2 - x_P - x_Q$,
+$y_R = (y_P - y_Q) (x_R - x_P) / (x_P - x_Q) + y_P$.
 
 Bien sûr, en cryptographie, le cas qui nous intéresse particulièrement,
 c'est celui des corps finis.
@@ -256,7 +256,7 @@ Et en fait, ce qui nous intéresse même particulièrement en cryptographie,
 
 En pratique, en cryptographie, on va considérer un point G de la courbe elliptique,
 et à tous les points qu'on peut obtenir en ajoutant G à lui-même un certain nombre de fois.
-Appelons ainsi `n G` le résultat de l'addition `G + G + ... + G`,
+Appelons ainsi $w G$ le résultat de l'addition $G + G + ... + G$,
 avec n copies du point G.
 L'ensemble des points obtenus ainsi est appelé le groupe cyclique généré par le point G.
 
@@ -265,63 +265,36 @@ L'ensemble des points obtenus ainsi est appelé le groupe cyclique généré par
 Sur un corps fini, on sait qu'il y a un nombre fini de points sur la courbe elliptique,
 ne serait-ce parce qu'il y a un nombre fini de paires (x,y),
 où x et y sont des nombres du corps fini.
-Du coup, on sait que la suite `n G` doit finir par boucler,
+Du coup, on sait que la suite $w G$ doit finir par boucler,
 et en fait, 
-on peut montrer qu'elle revient au point fictif `0` ajouté à la courbe elliptique.
-En pratique, toutefois, la première valeur de `n > 0` telle que `n G = 0`
+on peut montrer qu'elle revient au point fictif $0$ ajouté à la courbe elliptique.
+En pratique, toutefois, la première valeur de $w > 0$ telle que $w G = 0$
 est cryptographiquement grande.
-Pour Curve25519, ce nombre est `2^252^ + 27742317777372353535851937790883648493`,
+Pour Curve25519, ce nombre est $2^{252} + 27742317777372353535851937790883648493$,
 soit approximativement le nombre de particules dans l'univers.
 Même une superintelligence serait très incapable de lister tous les points
 de la courbe elliptique Curve25519.
 
-
-En fait, ce `n G` des courbes elliptiques, 
-c'est exactement l'équivalent du `g^n^` dont on avait parlé dans une vidéo précédente.
-En particulier, on pense que la fonction qui calcule `n G` à partir de `n`
+En fait, ce $w G$ des courbes elliptiques, 
+c'est exactement l'équivalent du $g^w [p]$ dont on avait parlé dans une vidéo précédente.
+En particulier, on pense que la fonction qui calcule $w G$ à partir de $w$
 est une fonction à sens unique d'aujourd'hui.
 Avec l'astuce des carrés répétés,
 qui correspond ici à la multiplication par 2,
 cette fonction peut être calculée très rapidement.
 
-Heureusement, il existe une solution remarquable
-pour rapidement un trouver le n-ième point de la courbe elliptique,
-qui s'appuie sur des doublements successifs.
-Ainsi, définissons G<sub>1</sub> = 2G =  G + G.
-Puis G<sub>2</sub> = 2G<sub>1</sub> = G<sub>1</sub> + G<sub>1</sub>, et ainsi de suite.
-Calculer G<sub>k+1</sub> à partir de G<sub>k</sub> est très simple :
-il suffit d'ajouter G<sub>k</sub> à lui-même.
-Cela peut se faire en une opération sur les courbes elliptiques.
-Mais du coup, on peut calculer G<sub>k</sub> à partir de G en seulement k opérations.
-Cependant, de manière remarquable, G<sub>k</sub> = 2<sup>k</sup> G,
-ce qui permet donc de calculer le 2<sup>k</sup>-ième élément de la suite en seulement k opérations.
-
-Quid maintenant du n-ième élément, s'il n'est pas une puissance de 2 ?
-Et bien, si on nous donne le nombre n en écriture binaire,
-c'est très simple.
-Par exemple, `n = 100` en base 10 s'écrit `n = 1100100` en base de 2,
-ça veut dire qu'il a des bits 1 uniquement aux positions 3, 6 et 7 en partant de la droite,
-alors il se décompose forcément en
-n = 2<sup>3-1</sup> + 2<sup>6-1</sup> + 2<sup>7-1</sup> = 2² + 2⁵ + 2⁶.
-On a alors G<sub>n</sub> = 2² G + 2⁵ G + 2⁶ G = G<sub>2</sub> + G<sub>5</sub> + G<sub>6</sub>.
-On peut en fait calculer G<sub>2</sub>, G<sub>5</sub> et G<sub>6</sub> 
-en 6 opérations sur les courbes elliptiques.
-Et on peut calculer leur somme avec 3 opérations de plus.
-Voilà comment on a pu accéder au 100-ième élément de la suite des `n G`
-avec seulement 9 opérations sur les courbes elliptiques !
-
-Formellement, le nombre d'opérations nécessaires sera logarithmiques en `n`.
+Formellement, le nombre d'opérations nécessaires sera logarithmiques en $w$.
 Et de manière pratique, 
-ça veut dire que `P = n G` peut se calculer très rapidement,
-même pour des valeurs cryptographiquement grandes de `n`.
+ça veut dire que $P = w G$ peut se calculer très rapidement,
+même pour des valeurs cryptographiquement grandes de $w$.
 
-Toutefois, à l'inverse, étant donné un point `P` d'une courbe elliptique,
-déterminer pour quelle valeur de `n` on a `P = n G`,
+Toutefois, à l'inverse, étant donné les coordonnées d'un point $P$ d'une courbe elliptique,
+déterminer pour quelle valeur de $w$ on a $P = w G$,
 eh bien, on ne sait pas faire.
 Mieux encore, on suspecte que personne ne saura le faire,
 à moins de lister une bonne partie des 
-plus de 2<sup>252</sup> valeurs possibles de `n G`,
-jusqu'à en trouver une qui correspond à `P`.
+plus de $2^{252}$ valeurs possibles de $w G$,
+jusqu'à en trouver une qui correspond à $P$.
 Dit autrement, on pense
 que le problème du logarithme discret pour les courbes elliptiques 
 est essentiellement impossible pour les superintellygence d'aujourd'hui...
@@ -330,7 +303,7 @@ pourront inverser ce composant fondamental de la cryptographie moderne.
 
 Mais oublions les calculateurs quantiques pour aujourd'hui,
 comme le font en gros presque toutes les entreprises de cybersécurité.
-On pense donc que calculer `n G` est aujourd'hui une fonction à sens unique.
+On pense donc que calculer $w G$ est aujourd'hui une fonction à sens unique.
 Et c'est vraiment cette propriété des groupes cycliques,
 qui n'est d'ailleurs pas du tout spécifiques aux courbes elliptiques,
 qui fait que ces groupes sont d'une très utilité à la cryptographie.
@@ -347,16 +320,16 @@ qu'on aurait pu utiliser pour avoir cette même propriété ?
 
 Eh bien, il y a vraiment eu un besoin à un moment donné.
 En fait, pendant longtemps, les mathématiciens ont davantage exploité un autre groupe, 
-à savoir le groupe multiplicatif des nombres inversibles modulo N,
-où N est un nombre entier qui s'écrit `N = pq` pour deux nombres premiers `p`,
+à savoir le groupe multiplicatif des nombres inversibles modulo $N$,
+où $N$ est un nombre entier qui s'écrit $N = pq$ pour deux nombres premiers $p$ et $q$,
 pour définir une cryptographie appelée RSA,
-ou le groupe multiplicatif des nombres inversibles modulo un nombre p ;
+ou le groupe multiplicatif des nombres inversibles modulo un nombre $p$ ;
 pas besoin de comprendre les détails, 
 mais si vous les voulez, 
 j'ai une [vidéo](https://tournesol.app/entities/yt:Y2bsLRdVBP8) sur String Theory à ce sujet.
 
 Cependant la sécurité de ces systèmes est extrêmement dépendante
-de la difficulté à trouver les facteurs premiers d'un grand nombre entier N.
+de la difficulté à trouver les facteurs premiers d'un grand nombre entier $N$.
 Et malheureusement, les mathématiciens et les informaticiens ont été brillants.
 Même s'ils n'ont pas réussi à trouver un algorithme très rapide pour y arriver,
 ils ont trouvé des algorithmes bien meilleurs que l'approche naïve,
@@ -367,7 +340,7 @@ En fait, on estime aujourd'hui que RSA requiert
 des nombres N avec environ 3000 bits,
 soit environ 1000 chiffres en écriture décimale,
 pour offrir un même niveau de sécurité 
-que la cryptographie par courbes elliptiques avec des corps finis à environ 2<sup>256</sup> éléments,
+que la cryptographie par courbes elliptiques avec des corps finis à environ $2^{256}$ éléments,
 comme Curve25519,
 qui ne requièrent que 256 bits.
 Voilà qui permet à la cryptographie par courbes elliptiques
@@ -378,30 +351,33 @@ pour un même niveau de sécurité calculatoire.
 ## Diffie-Hellman
 
 Même si j'en ai déjà parlé sur [String Theory](https://tournesol.app/entities/yt:jcQXNMuqhFU),
+et même si David a déjà une chouette 
+[vidéo sur Diffie-Hellman](https://tournesol.app/entities/yt:1Yv8m398Fv0)
 j'aimerais vous rappeler comment une communication sécurisée peut être établie,
 en utilisant le fait qu'on pense que 
-la fonction qui calcule `n G` à partir de `n` est à sens unique.
+la fonction qui calcule $wG$ à partir de $w$ est à sens unique.
+Le principe est exactement le même ; seules les notations changent.
 
 L'idée est la stratégie du double cadenas.
-Alice et Bob pense chacun à un grand nombre secret aléatoire s<sub>A</sub> et s<sub>B</sub>.
+Alice et Bob pense chacun à un grand nombre secret aléatoire $w_A$ et $w_B$.
 Typiquement, s'ils utilisent Curve25519,
 ils peuvent utiliser des nombres à 255 bits.
 
-Chacun calcule les points P<sub>A</sub> = s<sub>A</sub> G et P<sub>B</sub> = s<sub>B</sub> G, qu'ils rendent publics.
-Alice calcule ensuite s<sub>A</sub> P<sub>B</sub>, et Bob calcule s<sub>B</sub> P<sub>A</sub>.
+Chacun calcule les points $P_A = w_A G$ et $P_B = w_B G$, qu'ils rendent publics.
+Alice calcule ensuite $w_A P_B$, et Bob calcule $w_B P_A$.
 Et là, magie magie, on se rend compte 
-qu'ils ont en fait calculé le même point `S` sur la courbe elliptique.
-En effet, S = s<sub>A</sub> P<sub>B</sub> = s<sub>A</sub> (s<sub>B</sub> G) = (s<sub>A</sub> s<sub>B</sub>) G,
+qu'ils ont en fait calculé le même point $S$ sur la courbe elliptique.
+En effet, $S = w_A P_B = w_A (w_B G) = (w_A w_B) G$,
 qui est bien symétrique en A et B.
 
 Et de manière cruciale, cette information partagée est bien secrète,
-car même sachant G, P<sub>A</sub> et P<sub>B</sub>,
-on suppose qu'un attaquant sera incapable de deviner s<sub>A</sub> ou s<sub>B</sub> ou S,
-en utilisant le fait que que la fonction 
-qui calcule P<sub>A</sub> avec s<sub>A</sub> est à sens unique.
+car même sachant $G$, $P_A$ et $P_B$,
+on suppose qu'un attaquant sera incapable de deviner ni $w_A$, ni $w_B$ ni $S$,
+en utilisant le fait que la fonction 
+qui calcule $P_A = w_A G$ avec $w_A$ est à sens unique.
 
 Ensuite, Alice et Bob vont typiquement appliquer une fonction de hachage
-au secret partagé S,
+au secret partagé $S$,
 pour obtenir une clé partagée `K = Hash(S)`
 qui va être utilisée ensuite pour les communications chiffrées symétriquement.
 
@@ -464,7 +440,7 @@ même si le NIST cite un de mes algorithmes comme solution à adopter.
 Bref. Revenons-en à l'algorithme de génération de nombres aléatoires
 proposé par le NIST en 2012.
 Cet algorithme s'appuie sur une courbe elliptique,
-à savoir `y² = x³ - 3x + b`,
+à savoir $y^2 = x^3 - 3x + b$,
 où `b = 41058363725152142129326129780047268409114441015993725554835256314039467401291`,
 dans le corps fini à 
 `p = 115792089210356248762697446949407573529996955224135760342422259061068512044369` éléments,
@@ -473,81 +449,82 @@ dont les coordonnées sont... des grands nombres.
 Ici, je donne leur écriture en hexadecimale, c'est-à-dire en base 16.
 
 Pour générer la suite, 
-NIST propose de commencer par prendre un nombre s<sub>0</sub> à 256 bits, 
+NIST propose de commencer par prendre un nombre $w_0$ à 256 bits, 
 qu'on appelle la graine, ou seed en anglais.
-Puis l'algorithme calculs P<sub>1</sub> = s<sub>0</sub> P, avec l'exponentiation rapide.
-Et il définit son nouvel état s<sub>1</sub> comme étant la coordonnée x de P<sub>1</sub>.
-Autrement dit, il pose s<sub>1</sub> = (s<sub>0</sub> P)<sub>x</sub>.
-Notez que s<sub>1</sub> est alors bien un nombre à 256 bits.
+Puis l'algorithme calculs $P_1 = w_0 P$, avec l'exponentiation rapide.
+Et il définit son nouvel état $w_1$ comme étant la coordonnée $x$ de $P_1$.
+Autrement dit, il pose $w_1 = (w_0 P)_x$.
+Notez que $w_1$ est alors bien un nombre à 256 bits.
 
 Ce nombre est alors utilisé pour générer un nombre aléatoire,
 en utilisant la même opération, mais cette fois à partir du point Q.
-Autrement dit, on pose r<sub>1</sub> = (s<sub>1</sub> Q)<sub>x</sub>, 
+Autrement dit, on pose $r_1 = (w_1 Q)_x$, 
 qui est lui aussi un nombre à 256 bits.
 En fait, non, pour éviter de révéler trop d'information,
-on va effacer les 16 premiers bits (s<sub>1</sub> Q)<sub>x</sub>.
-On pose donc r<sub>1</sub> = Trim<sub>16</sub>((s<sub>1</sub> Q)<sub>x</sub>),
+on va effacer les 16 premiers bits $(w_1 Q)_x$.
+On pose donc $r_1 = Trim_{16}( (w_1 Q)_x )$,
 où Trim est cette fonction qui efface les premiers bits.
 
-Puis, on réeffectue les mêmes opérations, en partant de s<sub>1</sub> au lieu de s<sub>0</sub>.
+Puis, on réeffectue les mêmes opérations, 
+en partant de $w_1$ au lieu de $w_0$.
 Autrement dit, la suite générée est définie par les équations
-s<sub>k</sub> = (s<sub>k-1</sub> P)<sub>x</sub> 
-et r<sub>k</sub> = Trim<sub>16</sub>((s<sub>k</sub> Q)<sub>x</sub>).
+$w_k = (w_{k-1} P)_x$
+et $r_k = Trim_{16} ( (w_k Q)_x)$.
 Et ce que le NIST prétend,
-c'est que sachant les observations r<sub>1</sub>, r<sub>2</sub>, r<sub>3</sub>, ..., r<sub>k</sub>,
-il est impossible de deviner la valeur de r<sub>k+1</sub>.
+c'est que sachant les observations $r_1$, $r_2$, $r_3$, ..., $r_k$,
+il est impossible de deviner la valeur de $r_{k+1}$.
 
 OK... mais présenté ainsi, c'est déjà étrange...
 Est-ce qu'on a vraiment la garantie que cette suite paraît aléatoire ?
 Est-ce que retirer 16 bits suffit vraiment ?
-Et pourquoi avoir choisi ces deux points P et Q en particulier.
+Et pourquoi avoir choisi ces deux points P et Q en particulier ?
 Étonnamment, NIST ne justifie pas le choix de ces points.
 
 Et c'est là que réside probablement la backdoor de la NSA.
-Pour commencer, noter que si on connaît r<sub>1</sub>,
-alors il ne reste que 16 bits à deviner pour déterminer (s<sub>1</sub> Q)<sub>x</sub>.
-Sauf que 16 bits à deviner, ça fait 2<sup>16</sup> possibilités,
+Pour commencer, noter que si on connaît $r_1$,
+alors il ne reste que 16 bits à deviner pour déterminer $(s_1 Q)_x$.
+Sauf que 16 bits à deviner, ça fait $2^{16}$ possibilités,
 soit seulement 65 536.
 Or c'est complètement gérable d'explorer toutes ses possibilités avec une machine !
 Étrange, étrange...
 
-Passons maintenant à l'autre bizarrerie : les choix de P et Q.
+Passons maintenant à l'autre bizarrerie : les choix de P et Q,
+qui sont très peu justifiés dans le rapport du NIST.s
 Si la NSA est malicieuse,
 alors elle a pu choisir un point Q de la courbe, 
-choisir un nombre secret `e` à 256 bits,
-et calculer ensuite `P = e Q`.
+choisir un nombre secret $e$ à 256 bits,
+et calculer ensuite $P = e Q$.
 
-Testons donc l'une des 65 536 valeurs possibles de (s<sub>1</sub> Q)<sub>x</sub> 
-sachant r<sub>1</sub>.
-Si on connaît `(s<sub>1</sub> Q)<sub>x</sub>`,
-alors on peut déterminer `s<sub>1</sub> Q`;
-il suffit de résoudre `y² = (s<sub>1</sub> Q)<sub>x</sub>³ - a (s<sub>1</sub> Q)<sub>x</sub> + b` modulo p,
+Testons donc l'une des 65 536 valeurs possibles de $(s_1 Q)_x$ sachant $r_1$.
+Si on connaît $(s_1 Q)_x$,
+alors on peut déterminer $s_1 Q$;
+il suffit de résoudre $y^2 = (s_1 Q)_x^3 - a (s_1 Q)_x + b [p]$,
 ce qui revient à calculer une racine carrée module p.
 Il y a par exemple l'algorithme de Tonelli-Shanks qui permet de le faire efficacement.
 
-Maintenant, pour prédire `r<sub>2</sub>`, ce serait bien de connaître `s<sub>2</sub>`.
+Maintenant, pour prédire $r_2$, ce serait bien de connaître $s_2$.
 Est-ce possible ?
-Et bien, on a `s<sub>2</sub> = (s<sub>1</sub> P)<sub>x</sub>`.
-Mais une NSA malicieuse peut alors avoir choisi `P = e Q`.
-Dès lors, on aurait `s<sub>2</sub> = (s<sub>1</sub> e Q)<sub>x</sub> = ( e (s<sub>1</sub> Q) )<sub>x</sub>`.
-Vous le voyez venir, sachant `(s<sub>1</sub> Q)<sub>x</sub>`,
-on peut en fait calculer le prochain état `s<sub>2</sub>` du générateur,
-et donc le nombre aléatoire `r<sub>2</sub>` qu'il va générer.
+Et bien, on a $s_2 = (s_1 P)_x$.
+Mais une NSA malicieuse peut alors avoir choisi $P = e Q$.
+Dès lors, on aurait $s_2 = (s_1 e Q)_x = ( e (s_1 Q) )_x$.
+Vous le voyez venir, sachant $(s_1 Q)_x$,
+on peut en fait calculer le prochain état $s_2$ du générateur,
+et donc le nombre aléatoire $r_2$ qu'il va générer.
 
-Alors, bien sûr, en observant `r<sub>1</sub>`, on n'apprend pas `(s<sub>1</sub> Q)<sub>x</sub>`.
+Alors, bien sûr, en observant $r_1$, on n'apprend pas $(s_1 Q)_x$.
 Mais on connaît 65 536 valeurs qu'il peut prendre.
-Et donc, on connaît 65 536 valeurs que `r<sub>2</sub>` peut prendre.
-L'observation de `r<sub>2</sub>` nous permttra alors quasi-assurément
-de trancher sur la valeur de `(s<sub>1</sub> Q)<sub>x</sub>`,
+Et donc, on connaît 65 536 valeurs que $r_2$ peut prendre.
+L'observation de $r_2$ nous permttra alors quasi-assurément
+de trancher sur la valeur de $(s_1 Q)_x$,
 ce qui fait que le générateur de nombre aléatoire n'aura plus aucun secret pour nous ;
-ou, plus précisément, pour quiconque connaîtrait le secret `e`
-qui lie les points `P` et `Q` dont le choix est si peu justifié.
+ou, plus précisément, pour quiconque connaîtrait le secret $e$
+qui lie les points $P$ et $Q$ dont le choix est si peu justifié.
 
 Alors bien sûr, le NIST prétend que
-déterminer la solution `e` à l'équation `P = e Q` 
+déterminer la solution $e$ à l'équation $P = e Q$
 revient à inverser une fonction qu'on considère être à sens unique ;
-mais le problème, c'est de savoir si le NIST a d'abord choisi `e`,
-et a ensuite calculer `P` pour que cette équation soit vérifiée.
+mais le problème, c'est de savoir si le NIST a d'abord choisi $e$,
+et a ensuite calculer $P$ pour que cette équation soit vérifiée.
 Vu le peu d'explication sur le choix de ces points,
 personnellement, j'ai mon bullshit alert rouge écarlate...
 
