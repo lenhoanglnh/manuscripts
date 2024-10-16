@@ -116,16 +116,16 @@ Et si ça, c'est très pratique,
 c'est notamment parce qu'on a défini des additions et des multiplications
 qui fonctionnent extrêmement bien pour les octets de la sorte.
 En particulier, on peut remarquer que toute polynôme de degré 1,
-c'est-à-dire toute fonction affine `P(x) = ax + b`,
+c'est-à-dire toute fonction affine $P(x) = ax + b$,
 où `a` et `b` sont constantes dans le corps fini avec `a` non nul,
 définit bien une permutation de l'ensemble des octets.
-En effet, on peut aisément résoudre toute équation `y = ax + b`,
+En effet, on peut aisément résoudre toute équation $y = ax + b$,
 en retranchant `b` puis en divisant par `a`,
-ce qui nous donne `x = (y-b)/a`.
+ce qui nous donne $x = (y-b)/a$.
 
 Mieux encore, si on voir la suite de 128 bits comme un vecteur de 16 octets,
 on peut définir des fonctions linéaires à l'aide de matrices.
-Formellement, si on définit `f(X) = AX + B`,
+Formellement, si on définit $f(X) = AX + B$,
 où `A` est une matrice de 16 x 16 octets,
 où `B` est une suite de 16 octets,
 et où `X` représente les 16 octets qui forment le bloc en entrée,
@@ -138,25 +138,25 @@ on semble tenir là une solution à notre sélection d'une permutation aléatoir
 Eh bien, il y a un petit problème avec les fonctions linéaires.
 En effet, pour déterminer la fonction `f`,
 il suffit de connaître sa valeur en un petit nombre de points.
-Ainsi, si un attaquant parvient à connaître à la fois `X` et `f(X)`,
-alors il saura que `AX + B = f(X)`,
+Ainsi, si un attaquant parvient à connaître à la fois $X$ et $f(X)$,
+alors il saura que $AX + B = f(X)$,
 ce qui correspond à une équation linéaire en les coefficients secrets `A` et `B`.
 On peut même dire que c'est un système de 16 équations,
 puisqu'il s'agit d'une égalité entre des vecteurs de 16 octets ;
-et qu'il a au plus `16*16 + 16 = 272` inconnues.
+et qu'il a au plus $16 \times 16 + 16 = 272$ inconnues.
 En particulier, il suffit de 17 systèmes d'équations linéairement indépendantes de la sorte
 pour garantir une reconstruction des secrets `A` et `B`.
-Autrement dit, si une superintellygence observe 17 paires `(X, f(X))`, 
+Autrement dit, si une superintellygence observe 17 paires $(X, f(X))$, 
 alors le chiffrement linéaire sera cassé.
 
 > Si ces coefficients sont eux même des fonctions linéaire 
 > d'une clé secrète `K` à 256 bits, soit 32 octets,
-> alors on peut même écrire l'équation sous la forme `X^T A_0_ K + B_0_ K = f(X)`.
+> alors on peut même écrire l'équation sous la forme $X^T A_0 K + B_0 K = f(X)$.
 > C'est un système linéaire à 16 équations à 32 inconnues.
-> Si on observe maintenant `X_1_`, `f(X_1_)`, `X_2_` et `f(X_2_)`,
-> alors on a 32 équations à 32 inconnues, qui va permettre de reconstruire `K`.
+> Si on observe maintenant $X_1$, $f(X_1)$, $X_2$ et $f(X_2)$,
+> alors on a 32 équations à 32 inconnues, qui va permettre de reconstruire $K$.
 
-Bien sûr, on peut douter de la faculté de la superintellygence d'observer les valeurs de `X`.
+Bien sûr, on peut douter de la faculté de la superintellygence d'observer les valeurs de $X$.
 Mais selon le principe fondamental de défense en profondeur,
 si on parvient à être résilient même dans ce cas de figure,
 c'est clairement nettement mieux.
