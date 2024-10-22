@@ -206,7 +206,7 @@ C'est ainsi qu'on espère récupérer les informations les plus pertinentes
 pour une requête donnée.
 
 
-## Structurer les bases de données vectorielles
+## Structurer et rechercher dans les bases de données vectorielles
 
 OK. Mais il y a toutefois un problème avec cette approche.
 Et c'est un problème de taille. Littéralement.
@@ -227,24 +227,194 @@ il y a 6 ans...
 en parlant d'ailleurs alors avec Adrien Matissart,
 que je ne connaissais pas à l'époque,
 mais qui est devenu depuis le Vice-Président de l'Association Tournesol !
-Et bon, je ne connais pas assez le domaine pour savoir si des progrès ont été faits,
-mais a priori je conjecture encore que la réponse est non,
-il n'y a pas de solution sous-linéaire à la maximisation de la recherche d'un plus proche vecteur
-dans une base de données vectorielle...
+Et bon, si on avait tout deux étaient davantage informés,
+on aurait su que le problème avait été mathématiquement résolu 3 ans plus tôt, en 2015, 
+[par les informaticiens Alexandr Andoni et Ilya Razenshteyn](https://dl.acm.org/doi/pdf/10.1145/2746539.2746553).
 
-En pratique en tout cas, les RAG s'appuient des algorithmes
-de recherche du plus voisin approximatif.
+Plus précisément, étant donné n vecteurs de la base de données vectorielle,
+chaque vecteur étant de dimension d,
+le problème du plus proche voisin consiste à concevoir un algorithme qui,
+étant donné un vecteur requête x,
+retourne le vecteur y le plus proche de x dans la base de données.
+Ce problème est simple à résoudre en dimension d = 1 :
+il suffit de trier les vecteurs de la base de données par ordre croissant,
+puis d'effectuer une recherche dichotomique.
+Le temps nécessaire pour résoudre ce problème est alors logarithmique en n,
+c'est-à-dire en gros quasi instantanné.
 
-http://sites.computer.org/debull/A23sept/p39.pdf
+Cependant, en grande dimension, le problème est tout de suite beaucoup plus difficile.
+À tel point qu'on s'intéresse alors uniquement à des approximations du problème.
+Ainsi, le problème du plus proche voisin approximatif avec erreur multiplicative c
+est celui de concevoir un algorithme qui, étant donné un vecteur requête x,
+retourne un vecteur z de la base de données tels que
+la distance entre x et z est inférieure à c fois celle entre x et y ;
+où y est le plus proche vecteur dans la base de données.
+
+Eh bien, Andoni et Razenshteyn ont conçu un algorithme
+dont le temps de calcul de l'ordre de $d n^{\frac{1}{2c^2 - 1}}$,
+ce qui est optimal.
+Ainsi pour $c = 2$, ce temps de calcul est $d n^{1/7}$,
+ce qui est beaucoup moins de $dn$,
+dès lors que la base de données vectorielles contient énormément d'entrées $n$.
+
+L'idée de base de cet algorithme,
+c'est de prendre des directions aléatoires de l'espace et de les sauscissonner.
+En faisant cela pour un certain nombre de directions,
+qui reste très inférieur à la dimension d de l'espace,
+on obtient des sortes de cellules de l'espace,
+qu'on peut alors numéroter.
+Eh bien, en gros, avec grande probabilité, 
+deux vecteurs seront assez proches si seulement si ils sont dans la même cellule.
+Cette technique de sauscissonnage aléatoire et partiel de l'espace
+est ce qu'on appelle celle du hachage avec sensibilité locale, ou LSH en anglais.
+Et bon, en fait, seule, elle ne suffit pas.
+Andoni et Razenshteyn ont conçu par dessus de nombreuses astuces,
+qui permettent d'affiner les cellules en fonction des données,
+ce qui leur a ensuite permis de trouver un algorithme optimal.
+
+Notez toutefois que ces techniques de sauscissonage ne sont en fait pas
+les plus abondamment utilisées aujourd'hui,
+notamment car cela peut rester un peu lent pour certaines applications,
+où on tient vraiment à un temps de calcul logarithmique en la taille de la base de données.
+On préfèrera alors généralement la solution des graphes
+de "petit monde hiérarchiquement navigable",
+"hierarchical navigable small world" ou HNSW en anglais.
+
+L'idée globale des HNSW,
+c'est de mettre les données de la base de données vectorielles sur plusieurs étages,
+avec peu de données sur les étages les plus hautes,
+et beaucoup plus dans les bas étages.
+Étant donné une requête,
+on va alors chercher la donnée du premier étage les plus proches,
+puis explorer les données du second étage connectées à celle du premier étage sélectionnée,
+et ainsi de suite en descendant dans les plus bas étages.
+
+Là encore, il y a énormément d'astuces qui ont été introduites 
+pour bien concevoir un graphe HNSW,
+et pour optimiser son exploration.
+Mais l'idée importante, c'est qu'en adoptant une structure hiérarchique,
+on est capable d'accélérer l'exploration,
+et de la rendre surtout logarithmique 
+en le nombre de données de la base de données vectorielles,
+même si du coup, en n'explorant qu'une toute petite partie du graphe,
+on aura beaucoup moins de garanties sur la quasi-optimalité
+de l'élément sélectionné par la recherche dans le graphe HNSW.
+
+> NB : Une troisième classe d'algorithmes de recherche 
+> dans les bases de données vectorielles
+> est la quantization du produit cartésien.
+> Cependant, de ce que je comprends, 
+> elle semble moins solide théoriquement
+> et moins déployée en pratique...
 
 
 ## Quelques autres considérations
 
-https://arxiv.org/pdf/2312.10997
+Pour améliorer les performances de récupération de l'information,
+en pratique,
+on s'est rendu compte qu'il était utile de demander à des algorithmes de langage
+de reformuler la requête de plusieurs manières,
+et d'ensuite prendre une représentation vectorielle de toutes ces formulations.
+Voilà qui peut améliorer a procédure de récupération de l'information.
 
+Par ailleurs, on peut demander à des humains d'évaluer les performances
+de la récupération de l'information,
+pour ensuite modifier les paramètres de l'opération de récupération de l'information,
+notamment au niveau du calcul des représentations vectorielles,
+ainsi qu'au niveau des réécritures multiples de la requête de l'utilisateur,
+typiquement avec des algorithmes à la Bradley-Terry,
+comme on en a parlé dans une [vidéo précédente](https://tournesol.app/entities/yt:2cvj2-Vh8Uc).
+
+Et j'insiste à nouveau là dessus,
+ces opérations de récupération de l'information,
+à partir de représentations vectorielles et de plus proches voisins approximatifs,
+sont non seulement la partie la plus utile du RAG en pratique,
+après tout, c'est un peu le job de Google Search
+qui a fait la grandeur de l'un des plus grands géants du web,
+mais c'est aussi la partie la plus simple à sécuriser.
+
+Et oui, on obtient alors finalement un moteur de recherche,
+avec une liste de sources où trouver les réponses à la requête,
+sans avoir un algorithme génératif 
+qui pourrait [bullshiter](https://tournesol.app/entities/yt:JcFRbecX6bk)
+et nous expliquer des âneries d'apparence crédible.
+
+Mais si vous tenez vraiment à la partie générative,
+vous pouvez réduire les risques d'âneries avec différentes astuces,
+typiquement en retravaillant les extraits récupérés par la phase de récupération récupération,
+en identifiant les morceaux de ces extraits les plus pertinents,
+et de n'ajouter que ces derniers au prompt de l'algorithme génératif,
+sur lequel il s'appuiera pour générer une réponse.
+
+Il y a aussi toutes sortes de modules additionnels qui ont été proposés,
+et je vous renvoie par exemple à ce survey 
+pour en savoir [plus](https://arxiv.org/pdf/2312.10997).
+Cependant, même si tout ceci aide, ne vous attendez pas à des miracles.
+Même avec un RAG, les algorithmes génératifs produisent encore souvent des âneries,
+et il faut donc vraiment éviter d'utiliser la sortie de ces algorithmes
+directement en entrée d'autres algorithmes,
+surtout pour les applications sensibles.
 
 
 ## Conclusion
+
+Aujourd'hui, les RAG sont vraiment les systèmes fondés sur les modèles de langage 
+les plus naturels à intégrer dans des cas d'usage en entreprise ;
+et c'est en fait un peu plus particulièrement le cas du "R" de RAG.
+Même si ça ne soulève pas la même hype que le "G",
+l'indexation de l'information à partir de représentations vectorielles
+est en train de modifier en profondeur la manière dont on stocke l'information,
+et surtout dont on peut la récupérer.
+
+En fait, pour finir cette vidéo, j'aimerais pousser l'analogie avec le cerveau humain.
+Surtout à l'ère d'Internet, en tout cas en ce qui me concerne,
+quand on me pose une question,
+avant même de répondre, je cherche à avoir constamment une source en tête,
+qui justifierait ce que je pourrais dire ensuite.
+Autrement dit, mon cerveau semble avoir conçu une sorte de base de données vectorielles
+de mes sources d'information.
+Mais alors, comment fait-il pour encoder ces sources en vecteurs ?
+Comment encode-t-il les questions qu'on me pose en vecteur ?
+Et comment utilise-t-il ces encodages pour identifier,
+parmi l'immensité des sources que je connais,
+celles qui seront les plus pertinentes pour répondre à une question donnée ?
+Est-ce que mon cerveau effectue vraiment des opérations vectorielles ?
+
+Clairement c'est très difficile à dire.
+Mais clairement aussi, cette manière de penser,
+avec des références systématiques à des sources,
+c'est quelque chose qui me semble être une bonne manière de penser,
+notamment pour éviter de bullshitter et pour gagner en fiabilité épistémique.
+C'est en tout cas vraiment ainsi que j'écris mes articles scientifiques,
+mais aussi mes scripts de vidéos scientifique et mes fils Twitter.
+
+Et quand on commence à raisonner ainsi,
+on se rend aussi vite compte que toutes les sources ne sont pas aussi fiables.
+Autrement dit, en pratique, ce qui compte, 
+ce n'est pas uniquement la similarité sémantique entre la requête et l'information récupérée.
+La fiabilité de la source doit intervenir pour déterminer
+s'il faut vraiment lui faire appel pour répondre à la requête.
+Voilà qui requiert une évaluation de la recommandabilité de la source.
+
+Eh bien, ça, c'est exactement ce que fait l'algorithme PageRank de Google, 
+à partir des liens entre les pages web,
+même si, malheureusement, Google fait désormais cela de manière très opaque.
+En particulier, on peut douter de la conformité des recommandations de Google
+avec celle que feraient les citoyens ou les experts pertinents.
+Eh bien, pour moi, résoudre le problème de l'évaluation collaborative des sources d'information,
+c'est un peu l'urgence démocratique du monde moderne.
+Et pour y arriver, j'ai participé à la création et au développement de la plateforme Tournesol,
+qui vise à évaluer la recommandabilité des vidéos YouTube
+en s'appuyant sur l'intelligence collective,
+à laquelle je vais, comme si souvent, vous appeler à contribuer.
+
+Tant qu'on n'aura pas fait l'effort d'identifier collectivement les vidéos 
+que YouTube devrait recommander massivement,
+on restera encore bien embêté,
+lorsque Google nous rétorque qu'il n'y a pas d'autres manières
+de recommander des contenus à consommer qu'en s'appuyant sur des entreprises privées.
+J'espère que je peux compter sur vous,
+pour montrer qu'une voie plus sécurisée et démocratique est possible.
 
 
 
