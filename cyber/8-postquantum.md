@@ -136,8 +136,9 @@ on va étudier l'astuce fondamentale des algorithmes,
 qui s'appuient sur [l'article fondateur d'Oded Regev](https://dl.acm.org/doi/10.1145/1060590.1060603) 
 publié en 2005.
 Et accrochez-vous, tout ne va pas être ultra simple.
-En fait, si vous n'êtes pas à l'aise avec les corps finis et les matrices,
-je vous invite à sauter à la section suivante de cette vidéo...
+En particulier, si vous n'êtes pas à l'aise avec les corps finis et les matrices,
+n'hésitez pas à prendre le temps de regarder ces quelques vidéos 
+avant de prendre la suite de la celle-ci...
 
 Et oui, un autre gros défaut du post-quantique,
 c'est que c'est beaucoup plus complexe à comprendre que la cryptographie classique,
@@ -276,5 +277,103 @@ et qu'on pense être également résilients aux calculateurs quantiques.
 
 ## Signature post-quantique
 
-Dernière chose : la signature.
+Des protocoles de signature ont aussi été proposés.
+Rappelons qu'Alice peut émettre la clé publique $x = G w + erreur$ à partir d'une clé privée $w$.
+On va toutefois complexifier légèrement l'équation,
+en considérant une clé privée $W$ qui est maintenant une matrice de taille $n \times k$,
+ce qui donne une clé publique $X$ qui est de taille $m \times k$.
+On a donc maintenant $X = G W + erreurs$, avec tout en majuscule.
+
+Pour signer un message $m$,
+Alice commence par prendre une fonction de hachage, et par calculer $c = H(m)$.
+Le hash $c$ est ensuite transformé en un vecteur $C$ de dimension $k$ modulo $p$.
+Ce qui est important, c'est que $C$ se calcule directement de $c$ par une fonction à sens unique.
+Puis Alice peut signer le message $m$ en publiant $S = W C$.
+N'importe qui peut alors vérifier la validité de la signature,
+en calculant $G S - X C = G W C - G W C - erreurs = - erreurs$.
+La signature sera alors considérée valide si $G S - X C$ est un petit vecteur.
+
+Alors, là je n'ai donné qu'une idée très grossière de la signature cryptographique post-quantique,
+qui s'appuie encore une fois sur l'associativité de la multiplication
+dans le calcul de $G W C$.
+En particulier, le secret $W$ peut être utilisé un coup à gauche pour révéler $X- erreurs = GW$,
+et un coup à droite pour révéler $S = W C$.
+
+Mais bien sûr, dans la version que j'ai présentée,
+le protocole n'est pas sécurisé :
+à partir de $S$ et $C$ en particulier, il peut être possible reconstruire $W$,
+au moins en partie.
+
+Pour sécuriser la signature post-quantique, 
+il faut ajouter de nombreuses autres astuces,
+comme une erreur dans le calcul de $S$.
+En fait, le protocole ML-DSA retenu par le NIST pour la signature post-quantique
+est nettement plus complexe que ce que j'ai présenté ;
+même si son astuce fondamentale est bien l'associativité du calcul de $GWC$.
+
+
+## Conclusion
+
+Les calculateurs quantiques représentent une menace majeure pour la cybersécurité d'aujourd'hui,
+et plus il y aura une hype injustifiée à leur sujet,
+plus on verra des milliards de dollars d'investissement dans leur développement,
+et plus on rapprochera le fameux Q-day,
+ce jour où ces calculateurs quantiques pourront s'attaquer à l'état de sécurité 
+des systèmes d'information déployés à très grande échelle.
+Alors, bien sûr, il faut se méfier des effets d'annonce.
+Non, contrairement à ce qui a pu être rapporté maladroitement dans certains médias,
+la Chine n'a pas du tout réussi à "casser RSA" ;
+des chercheurs prétendent uniquement avoir cassé des versions ridiculement simplistes
+de la cryptographie.
+
+Cependant, il ne faut pas non plus tomber dans le travers inverse,
+qui consiste à fermer les yeux devant le développement technologique,
+et imaginer que les calculateurs quantiques ne sont qu'une fantaisie de science-fiction.
+Leur développement ne cesse de progresser.
+Dès lors, il faut se préparer dès aujourd'hui 
+pour éviter une catastrophe de cybersécurité dans le futur.
+D'autant que les attaquants collectent déjà massivement des données chiffrées
+par les protocoles actuels,
+avec l'objectif de les déchiffrer aussi tôt 
+qu'un calculateur quantique suffisamment grand et fiable leur sera accessible.
+En particulier, ceci implique que, 
+même si on parvient à déployer la cryptographie post-quantique à grande échelle à temps,
+et même si cette cryptographie post-quantique 
+est effectivement résiliente aux calculateur quantiques,
+promouvoir l'informatique quantique,
+c'est avancer le jour où des secrets industriels d'aujourd'hui seront découverts,
+à une date où leur révélation aura davantage de conséquence,
+que si cette révélation avait lieu dans un siècle.
+Il me semble y avoir quelque chose de profondément immoral dans la recherche
+sur le calcul quantique...
+
+Et d'ailleurs, les conséquences négatives de cette recherche ne sont pas la seule raison
+pour laquelle un excès d'investissement dans ce domaine serait éthiquement très discutable.
+Nous vivons depuis une décennie déjà une période de l'histoire
+où les technologies de l'information ont acquis un pouvoir monumental sur la santé des démocraties,
+avec des conséquences déjà tragiques dans de nombreux pays 
+comme le Myanmar, l'Éthiopie et le Soudan,
+et des dégradations terrifiantes de l'intégrité de nombreux états démocratiques.
+
+Dans ce contexte, donner de l'argent public à de la recherche 
+qui n'est clairement pas vouée à protéger la population,
+c'est exactement comme ignorer volontairement des urgences sociétales comme le changement climatique.
+Pour protéger les démocraties, nous avons désespérément besoin
+d'une recherche publique qui soit au service des démocraties ;
+or les chercheurs d'aujourd'hui, y compris dans la fonction publique,
+sont encore sous une pression terrible à suivre la hype,
+plutôt qu'à travailler sur ce qui aura le plus de chance d'être d'intérêt général.
+
+Si vous pensez que la recherche publique doit être beaucoup plus alignée avec l'intérêt général,
+je vous invite en particulier à participer à notre projet Tournesol,
+cette plateforme collaborative qui vise à encourager la recherche sur une démocratie numérique.
+Que ce soit en promouvant le projet autour de vous,
+en appelant les journalistes, les conférenciers et les chercheurs à s'y intéresser,
+en contribuant vous-mêmes à la recherche ou au développement de la plateforme,
+en fournissant des jugements sur la plateforme pour identifier plus de vidéos d'intérêt général,
+ou en effectuant des dons à l'Association Tournesol,
+vous pouvez nous aider à mettre des sujets démocratiques 
+au centre des préoccupation de la recherche publique.
+
+Merci beaucoup d'avance.
 
