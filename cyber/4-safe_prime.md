@@ -450,6 +450,80 @@ modulo un nombre premier sûr,
 plutôt que modulo un nombre premier friable.
 
 
+## Secret partagé et signature cryptographique
+
+En plus d'être une fonction à sens unique,
+le calcul $x = g^w [p]$ a le bon goût d'avoir 
+de nombreuses autres propriétés mathématiques délicieuses,
+comme le fait que $(g^w)^v = g^{wv}$ et le fait que $g^w \cdot g^v = g^{w+v}$.
+La première équation est parfois appelée la propriété de quasi-commutativité,
+tandis que la seconde est appelée morphisme de groupe.
+
+La quasi-commutativité intervient par exemple dans le protocole de Diffie-Hellman,
+comme Science Étonnante l'explique très bien dans sa vidéo.
+Pour créer un secret partagé en communiquant publiquant,
+Alice et Bob peuvent ainsi générer chacun sa clé privée $w_A$ et $w_B$,
+et dériver les clés publiques $x_A = g^{w_A} [p]$ et $x_B = g^{w_B} [p]$.
+Alice peut alors exploiter sa clé privée pour calculer $s_A = x_B^{w_A} [p]$,
+tandis que Bob peut calculer $s_B = x_A^{w_A} [p]$.
+Et parce que $g^w$ est quasi commutatif, 
+on aura $s_A = (g^{w_B})^{w_A} = g^{w_A w_B} = (g^{w_A})^{w_B} = s_B [p]$ :
+autrement dit Alice et Bob auront le même résultat, qui sera donc partagé.
+Mais surtout, en supposant que $x = g^w [p]$ est à sens unique,
+ce résultat partagé sera secret.
+Seuls Alice et Bob pourront le connaître, 
+ce qui leur permettra ensuite d'utiliser des chiffrements symétriques 
+pour communiquer efficacement des secrets.
+
+Pour illustrer l'autre propriété de morphisme, 
+on peut prendre le cas de la signature cryptographique.
+Je vous en avais parlé dans le cas du protocole RSA dans la série sur String Theory.
+Mais aujourd'hui, on va le voir comment exploiter $x = g^w [p]$
+pour produire des signatures cryptographiques, 
+via ce qu'on appelle la signature El Gamal.
+
+L'idée est la suivante : vous devez chiffrer un message m.
+Pour cela vous prenez le hash de m,
+à l'aide d'une fonction de hachage cryptographique, ce qui donne $H(m)$.
+Les détails importent peu.
+Ce qui compte surtout, c'est que $H(m)$ est un nombre qui dépend de $m$.
+Si Alice approuve le message $m$,
+elle peut alors le signer.
+Pour cela, elle va d'abord tirer un entier $k$ au hasard,
+avec la contrainte qu'il doit être un nombre impair inférieur 
+au nombre premier de Germain $q$ associé au nombre premier sûr $p$.
+Cela garantit en particulier que l'on peut diviser par $k$ modulo $p-1$.
+
+Alice va alors rendre public les nombres $r = g^k [p]$
+et $s = (H(m) - wr)/k [p-1]$.
+La paire $(r, s)$ va former la signature.
+Intuitivement, $s$ est un nombre obtenu en ajoutant la trace $H(m)$ du message
+avec la clé privée $w$,
+ce qui va permettre de garantir que seule Alice peut produire ce nombre.
+Mais on va lui ajouter une randomisation à $s$,
+qui dépend du nombre aléatoire $k$,
+pour empêcher quiconque de deviner le nombre $w$ à partir de $s$.
+
+Néanmoins n'importe qui peut vérifier la signature,
+en calculant $x_m = g^{H(m)} [p]$ et $x_s = r^s x^r [p]$.
+En effet, rappelons que $s = (H(m) - wr)/k [p-1]$,
+ce qui signifie que $H(m) = sk + wr [p-1]$.
+Mais du coup, comme $g^w [p]$ est une fonction périodique de $w$ de période $p-1$,
+on a $g^{H(m)} = g^{sk + wr} [p]$.
+C'est là qu'on va utiliser la propriété de morphisme de $g^w$,
+puis celle de quasi-commutativité,
+ce qui nous donne $g^{H(m)} = (g^k)^s \cdot (g^w)^r = r^s x^r [p]$.
+
+Autrement dit, on vient de vérifier que la paire $(r, s)$ est bien
+celle qui résulte d'un calcul avec la clé privée $w$ associée à la clé publique $x$.
+De plus, si on suppose que le calcul de $x = g^w$ est à sens unique,
+on sait que seuls ceux qui connaissent déjà la clé privée $w$ 
+peuvent avoir produit la paire $(r, s)$.
+Ou dit autrement, même une superintellygence comme la NSA
+ne parviendra pas à usurper l'identité d'Alice,
+si elle utilise le protocole de signature cryptographique d'El Gamal.
+
+
 ## La menace des calculateurs quantiques
 
 Si l'on pense que la fonction qui calcule $g^w [p]$
@@ -525,11 +599,8 @@ mais extrêmement difficile à défaire par n'importe quel superintellygence.
 
 Mais il y a mieux encore. 
 Cette fonction possède de nombreuses propriétés mathématiques très utiles en pratique,
-notamment le fait que 
-$(g^w)^v = g^{wv} [p]$, comme c'est utilisé dans Diffie-Hellman,
-ou encore que $g^w g^v = g^{w+v} [p]$, 
-qui est le socle de nombreuses applications avancées 
-comme le chiffrement homomorphe et la divulgation nulle de connaissance.
+notamment le fait que (g^s^)^t = g^(st), comme c'est utilisé dans Diffie-Hellman,
+ou encore que g^s g^t = g^s+t^, comme pour la signature cryptographique.
 On dit que la fonction à sens unique est de surcroît quasi-commutative,
 et définit un isomorphisme de groupe.
 
