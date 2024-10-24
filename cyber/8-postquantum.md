@@ -131,7 +131,13 @@ des protocoles de créations de secrets partagés
 et de signatures cryptographiques à base de réseaux,
 ou lattice-based cryptography en anglais,
 qui ont été sélectionnés par le NIST.
-Ou même plus précisément, on va étudier des versions simplifiées de ces protocoles.
+Ou même plus précisément, 
+on va étudier l'astuce fondamentale des algorithmes,
+qui s'appuient sur [l'article fondateur d'Oded Regev](https://dl.acm.org/doi/10.1145/1060590.1060603) 
+publié en 2005.
+Et accrochez-vous, tout ne va pas être ultra simple.
+En fait, si vous n'êtes pas à l'aise avec les corps finis et les matrices,
+je vous invite à sauter à la section suivante de cette vidéo...
 
 Et oui, un autre gros défaut du post-quantique,
 c'est que c'est beaucoup plus complexe à comprendre que la cryptographie classique,
@@ -139,7 +145,136 @@ et donc beaucoup plus coûteux en termes de ressources humaines ;
 et c'est d'ailleurs aussi bien plus coûteux en termes de ressources calculatoires,
 notamment en termes de tailles des clés et des signatures cryptographiques...
 
+L'idée de Regev, c'est en gros de remplacer l'opération $x = g^w$
+par l'opération $x = G w$, 
+où le clé privée $w$ un vecteur aléatoire de $n$ nombres modulo un nombre premier $p$,
+où $G$ est une matrice aléatoire $G$ de taille $m \times n$,
+contenant elle aussi des nombres modulo $p$,
+et où l'aggrégation de la clé privée $w$ 
+et de la matrice $G$ se fait par multiplication matricielle.
+
+Alors, il y a une petite subtilité :
+alors qu'Alice va utiliser $x_A = G w_A$ avec sa clé privée $w_A$,
+Bob va lui utiliser $x_B = G^T w_B$ avec sa clé privée $w_B$.
+Comme dans Diffie-Hellmann, $x_A$ et $x_B$ vont alors être rendus publics.
+Dès lors, Alice et Bob pourront concevoir un secret partagé,
+sous la forme de $s = x_B^T w_A$ calculable par Alice, 
+qui est aussi égal à $s = w_B^T x_A$.
+Et oui, en développant ces expressions, on se rend compte que $s = w_B^T G w_A$.
+Autrement dit, on a créé le secret partagé 
+en exploitant l'associativité de la multiplication matricielle,
+d'où on tire une sorte de quasi-commutativité de la fonction $x = Gw$.
+
+Si maintenant Bob veut envoyer le bit $b \in \{ 0, 1 \}$ à Alice,
+il va alors envoyer $z = s + b$,
+qu'Alice pourra aisément déchiffrer en retranchant le secret partagé $s$.
+
+Bref, cette solution de chiffrement garantit un secret partagé,
+lequel est ensuite exploitable pour communiquer de manière chifffrée.
+Mais présenté comme je l'ai fait, il ne paraît pas franchement être si secret.
+En particulier, la fonction qui calcule $x = Gw$ à partir de $w$
+ne semble pas vraiment être à sens unique :
+sachant $x$, on semble pouvoir récupérer $w$, 
+en calculant $w = G^{-1} x$.
+Pour cela, il faut bien sûr réussir à inverser la matrice $G$,
+mais ça, c'est en fait très simple, 
+par exemple via [l'algorithme de Gauss-Jordan](https://www.youtube.com/watch?v=Da7p1zWm5lM).
+Et clairement, Regev s'en est bien rendu compte.
+Mais alors, quelle astuce a-t-il introduit pour sécuriser ce protocole ?
+
+Eh bien l'astuce, c'est d'ajouter volontairement des erreurs dans les calculs de $x_A$.
+Ainsi, la vrai opération à sens unique, 
+c'est celle qui consiste à calculer $x = G w + erreur$,
+où erreur est un vecteur tiré au hasard et dont les paramètres sont très petits.
+En fait, récupérer $w$ à partir d'une telle équation avec des erreurs,
+y compris n'y arriver qu'avec une petite probabilité, 
+tant que cette probabilité n'est pas négligeable,
+c'est l'équivalent du problème du logarithme discret,
+mais pour de nombreux protocoles de cryptographie postquantique.
+
+On l'appelle le problème de l'apprentissage avec des erreurs,
+ou learning with errors (LWE) en anglais.
+Et ce qui peut paraître très perturbant pour les statisticiens parmi vous,
+c'est que résoudre l'équation $x = G w + erreur$,
+c'est pourtant un problème de base du machine learning :
+comme j'en ai parlé dans une vieille vidéo,
+c'est tout bêtement le problème de la régression linéaire,
+que Laplace avait déjà étudié il y a deux siècles et demi !
+
+Il y a toutefois deux petits détails, et pas des moindres.
+D'un côté, on cherche ici des solutions qui sont des nombres entiers modulo $q$.
+Et surtout, de l'autre, on ne dispose que d'inégalités modulo $q$.
+Ça, ça fait en particulier que les méthodes classiques,
+qui s'appuient sur la minimisation de la somme des carrés des erreurs,
+vont ici échouer, parce que la somme des carrés des erreurs n'est plus une fonction convexe.
+
+Bref. Certes il y a des ressemblances avec la régression linéaire,
+mais on pense néanmoins que, contrairement à la régression linéaire,
+le problème LWE est lui difficile.
+Et surtout, on pense, ou en tout cas on espère, 
+qu'il demeurera difficile y compris pour les superpuissances 
+qui disposent de calculateurs quantiques.
+
+OK... admettons que LWE soit difficile.
+Il reste toutefois un problème : 
+parce qu'on a introduit des erreurs dans les calculs des données publiques $x_A$ et $x_B$,
+les calculs $s_A = x_B^T w_A$ et $s_B = w_B^T x_A$ ne vont plus coïncider !
+Les secrets sont maintenant bien secrets, mais ils ne sont plus partagés !
+
+En particulier, maintenant, le message chiffré envoyé par Bob va être
+$z = s_B + b$. 
+En développant l'expression de $s_B$, 
+et en particulier de $x_A$ qui intervient dans le calcul de $s_B$, 
+on obtient $z = w_B^T G w_A + w_B^T erreur + b$.
+
+Alors, a priori, Alice ne peut pas calculer cette expression exactement,
+car elle ne connaît pas $w_B$.
+Elle ne connaît que $x_B$.
+Cependant, si maintenant on oublie l'objectif de créer un secret partagé,
+et si au lieu de cela on s'intéresse uniquement à l'envoi d'un bit chiffré de Bob vers Alice,
+alors Bob n'a lui aucun intérêt à cacher $w_B$.
+En particulier, on va supposer qu'il envoie $x_B = G^T w_B$,
+autrement dit qu'il encode $w_B$ sans ajouter de bruit.
+On se rend compte que $z$ s'écrit alors $z = x_B^T w_A + w_B^T erreur + b$.
+En retranchant $x_B^T w_A$, qu'Alice peut tout à fait calculer,
+elle obtient $z - x_B^T w_A = w_B^T erreur + b$.
+
+Vous voyez ce qu'il se passe ?
+Alice a presque récupérer $b$, à des erreurs près dans le calcul.
+Eh bien, l'astuce final de Regev,
+c'est de considérer des petits bruits ; après tout erreurs est généré par Alice même !
+Et surtout, Regev va amplifier le signal.
+Au lieu de rajouter un bit égal à 0 et ou 1,
+il va rajouter en gros $b \times \lfloor p/2 \rfloor$,
+c'est-à-dire que le signal va être maximalement large,
+sachant qu'il est contraint d'être un nombre modulo p.
+
+Et bien, cette fois, on y est !
+On vient de comprendre comment envoyer un bit chiffré
+à l'aide d'un chiffrement asymétrique résilient aux calculateurs quantiques.
+
+Alors, notez que même en prenant des erreurs assez faibles,
+comme elles doivent néanmoins être suffisamment grandes pour rendre
+la fonction $x = G w + erreur$ difficilement inversible,
+il peut arriver que le bruit $w_B^T erreur$ soit plus grand 
+que le signal $b \times \lfloor p/2 \rfloor$,
+ce qui implique alors que le déchiffrement de $b$ sera erroné.
+Toutefois, le taux d'erreur peut être adjusté pour être extrêmement faible,
+de sorte que la sécurité informationnelle du protocole soit très grande.
+Et bien entendu, la sécurité peut être renforcée en ajoutant de la redondance.
+
+Ceci dit, clairement, l'envoi d'un unique bit d'information est coûteux,
+et il serait déraisonnable d'utiliser l'algorithme de Regev
+pour chiffrer de longs messages.
+Mais on peut alors l'utiliser pour créer un secret partagé :
+il suffit à Bob d'envoyer un secret à Alice,
+et ils pourront ensuite l'utiliser comme secret partager
+pour communiquer par chiffrement symétrique,
+avec des techniques dont on reparlera la prochaine fois,
+et qu'on pense être également résilients aux calculateurs quantiques.
 
 
+## Signature post-quantique
 
+Dernière chose : la signature.
 
