@@ -1,22 +1,21 @@
 # Les nombres premiers sûrs
 
-La dernière fois, on a vu que la clé de la cryptographie,
-c'était de générer des secrets $w$,
-et de concevoir un problème difficile $x$ dont $w$ est la solution.
+La dernière fois, on a vu que la cryptographie reposait systématiquement
+sur la génération d'un secret $w$,
+suivi de la conception un problème difficile $x$ dont $w$ est la solution.
 En particulier, idéalement résoudre $x$ doit être calculatoirement tellement difficile
-qu'on peut être confiant que même les superintellygences de l'espace numérique,
+qu'on peut être confiant que même les superpuissances de l'espace numérique,
 comme Google, la NSA et le gouvernement chinois,
-soient incapables de découvrir une solution au problème $x$,
+seront incapables de découvrir une solution au problème $x$,
 comme le secret $w$ dont on a la connaissance.
 
 Aujourd'hui, on va voir la solution qui est très largement la plus utilisée aujourd'hui
 pour concevoir des problèmes difficiles $x$ à partir de secrets $w$.
-Cette opération, c'est celle qui consiste à simplement calculer $x = g^w$,
-où $g$ est un nombre un peu particulier, comme on le verra dans la suite.
-Résoudre le problème $x$, c'est alors trouver un nombre $v$ tel que $x = g_{vw}$.
+Cette opération, c'est celle qui consiste à simplement calculer $x = g^w$.
+Résoudre le problème $x$, c'est alors trouver un nombre $v$ tel que $x = g^v$.
 Clairement, nous qui avons conçu le problème $x$ à partir de $w$,
 on en connaît une solution, à savoir $v = w$.
-Mais l'espoir, c'est que même une superintellygence ne saura pas trouver une solution $v$
+Mais l'espoir, c'est que même une superpuissance ne saura pas trouver une solution $v$
 à l'équation $x = g^v$.
 
 Pour ceux qui ont vu 
@@ -44,12 +43,12 @@ mais dont la résolution est extrêmement difficile.
 
 Eh bien, ça, ce sont des opérations qu'on adore en cryptographie !
 En effet, ça permet à un citoyen lambda de faire des choses
-que même une superintellygence sera incapable de défaire,
+que même une superpuissance sera incapable de défaire,
 comme se connecter à un site web d'une manière si sécurisée
 qu'elle sera incassable même par la NSA.
 
 Et alors, David est allé un peu vite sur quelques petits aspects fascinants,
-que je vais le prendre aujourd'hui le temps d'explorer,
+que je vais prendre aujourd'hui le temps d'explorer,
 en faisant notamment un détour par l'une des plus grandes mathématiciennes de l'Histoire,
 une certaine Sophie Germain...
 
@@ -77,7 +76,7 @@ on peut même utiliser une décomposition en 13 fois un entier plus un reste.
 Ainsi $37 = (13 \times  2) + 11 = (0 \times  2) + 11 = 11 [13]$.
 
 Cette écriture de 37 en tant que $13 \times 2 + 11$
-est aussi appelée le reste de la division euclidienne de 37 par 13.
+est aussi appelée la division euclidienne de 37 par 13.
 Une première observation qu'on peut faire,
 c'est que cette division euclidienne, et en particulier le calcul de 11,
 est très rapide.
@@ -85,9 +84,9 @@ Il suffit en effet de poser une division,
 comme vous l'aviez appris à l'école.
 Et en gros, il suffit de faire autant d'opération que le nombre à diviser a de chiffres.
 On dit que le temps de calcul est linéaire en la description des nombres.
-Ainsi, même si on manipule avec des nombres cryptographiques avec des milliers de chiffres,
+Ainsi, même si on manipule des nombres cryptographiques avec des milliers de chiffres,
 il suffira d'effectuer des milliers d'opérations ;
-à la main, c'est très long, mais pour les machines du premier citoyen venu,
+à la main, c'est très long, mais pour le téléphone du premier citoyen venu,
 ce sera virtuellement immédiat.
 Bref. Réduire un nombre modulo 13, c'est très facile.
 En python, il suffit de taper par exemple `37 % 13`, et la réponse est immédiate.
@@ -131,6 +130,28 @@ J'invite d'ailleurs les plus motivés parmi vous
 à écrire explicitement un algorithme pour y parvenir,
 et à calculer le nombres d'opérations requises par cet algorithme.
 
+```
+def bezout(m: int, k: int):
+    """ Returns (a, b) such that a*m + b*k = gcd(m,k) """
+    if m == k or k == 0:
+        return 1, 0
+    if m < k:
+        b, a = bezout(k, m)
+        return a, b
+    q, r = m // k, m % k    # Writes m = q*k + r
+    c, a = bezout(k, r)     # Writes gcd = c*k + a*r
+    # It follows that gcd = c*k + a*(m - q*k) = a*m + (c-a*q)*k
+    return a, c-a*q
+   
+def inverse(x: int, p: int):
+    a, b = bezout(x, p)     # a*x + b*p = 1
+    assert a*x + b*p == 1, f"{x} and {p} do not seem coprime!"
+    return a
+   
+def divide(x: int, y: int, p: int):
+    return (x * inverse(y, p)) % p
+```
+
 Ce qu'il faut retenir de cette discussion,
 c'est surtout que, dans l'arithmétique modulo p,
 l'addition, la soustraction, la multiplication et la division sont non seulement bien définies ;
@@ -152,10 +173,11 @@ C'est une opération qu'il est simple de défaire.
 
 ## x = g<sup>w</sup> [p]
 
-Voilà qui nous amène tout doucement à $x = g^w [p]$.
+Voilà qui nous amène à $x = g^w [p]$.
 Est-ce là bien une opération à sens unique ?
 
-D'abord, précisons que $g^w$ consiste à multiplier g par g par g et ainsi de suite $w$ fois.
+D'abord, précisons que $g^w$ consiste à multiplier $g$ par $g$ par $g$,
+et ainsi de suite $w$ fois.
 Et donc $w$ en particulier doit être une entier naturel.
 Qui plus est, même modulo 13, $g^13$ n'est pas $g^0$.
 On ne peut pas remplacer le 13 dans les exposants par un 0,
@@ -308,7 +330,7 @@ Dans notre cas, on obtient les équations
 $30 = 30^{w_2} [p]$,
 $5 = 25^{w_3} [p]$ et
 $1 = 16^{w_5} [p]$.
-En évaluant toutes les puissances de g<sub>q</sub><sup>w</sup>, 
+En évaluant toutes les puissances de $g_q^w$, 
 vu qu'il y en a peu pour des petits nombres premiers q,
 on peut alors obtenir 
 $w_2 = 1 [2]$,
@@ -351,10 +373,10 @@ la fonction qui à $w$ associe $g^w [p]$ ne pourra plus être considérée être
 > En pratique, il reste le problème de la factorisation de p-1,
 > que l'on considère être un problème difficile.
 > L'un des dangers toutefois est davantage l'implantation de porte dérobée :
-> une superintellygence pourrait choisir des petits nombres premiers,
+> une superpuissance pourrait choisir des petits nombres premiers,
 > et les multiplier entre eux, en espérant obtenir un nombre N
 > tel que N+1 est un nombre premier.
-> Il pourrait alors recommander d'utiliser p = N+1 dans les chiffrements.
+> Il pourrait alors recommander d'utiliser $p = N+1$ dans les chiffrements.
 > Ça peut paraître étrange comme cyber-attaques, 
 > mais on verra bientôt un exemple de porte dérobée pas si différente,
 > que la NSA semble avoir voulu encourager dans les solutions cyrptographiques...
@@ -519,7 +541,7 @@ celle qui résulte d'un calcul avec la clé privée $w$ associée à la clé pub
 De plus, si on suppose que le calcul de $x = g^w$ est à sens unique,
 on sait que seuls ceux qui connaissent déjà la clé privée $w$ 
 peuvent avoir produit la paire $(r, s)$.
-Ou dit autrement, même une superintellygence comme la NSA
+Ou dit autrement, même une superpuissance comme la NSA
 ne parviendra pas à usurper l'identité d'Alice,
 si elle utilise le protocole de signature cryptographique d'El Gamal.
 
@@ -527,9 +549,9 @@ si elle utilise le protocole de signature cryptographique d'El Gamal.
 ## La menace des calculateurs quantiques
 
 Si l'on pense que la fonction qui calcule $g^w [p]$
-est une fonction à sens unique pour les superintellygences d'aujourd'hui,
+est une fonction à sens unique pour les superpuissances d'aujourd'hui,
 en tout cas pour les nombres premiers sûrs,
-on imagine toutefois qu'elle ne le sera plus pour certaines superintellygences de demain,
+on imagine toutefois qu'elle ne le sera plus pour certaines superpuissances de demain,
 notamment celles qui auront accès à des calculateurs quantiques.
 
 On avait déjà vu dans deux vidéos de String Theory,
@@ -573,7 +595,7 @@ Eh bien, je vous épargne bien des détails,
 mais trouver la fréquence fondamentale peut être en gros effectué 
 par la transformée de Fourier quantique,
 et celle-ci peut ensuite être utilisée pour trouver $w$.
-Et voilà pourquoi toute superintellygence 
+Et voilà pourquoi toute superpuissance 
 qui aura conçu ou accédé à un calculateur quantique
 pourra inverser la fonction à sens unique qui calcule $g^w [p]$ à partir de $w$,
 sur laquelle repose tant la sécurité de notre espace informationnel.
@@ -595,7 +617,7 @@ c'est surtout qu'une grosse partie de la cybersécurité moderne
 s'appuie sur l'hypothèse selon laquelle le calcul de $x = g^w [p]$ 
 à partir de w est une fonction à sens unique,
 c'est-à-dire facile à faire par n'importe quel citoyen sur son téléphone,
-mais extrêmement difficile à défaire par n'importe quel superintellygence.
+mais extrêmement difficile à défaire par n'importe quel superpuissance.
 
 Mais il y a mieux encore. 
 Cette fonction possède de nombreuses propriétés mathématiques très utiles en pratique,
@@ -618,7 +640,7 @@ souvent malheureusement beaucoup plus complexes encore à comprendre,
 et donc à rendre intelligibles y compris pour des docteurs en mathématiques comme moi,
 parce qu'on sait déjà 
 que les calculateurs quantiques vont être capables d'inverser la fonction, 
-et qu'elle ne sera donc plus à sens unique face à certaines superintellygence.
+et qu'elle ne sera donc plus à sens unique face à certaines superpuissance.
 Dans ce contexte, en plus de la recherche et développement de cryptographies alternatives,
 qu'on appelle post-quantique,
 il y a une urgence à ralentir celle des calculateurs quantiques,
@@ -627,7 +649,7 @@ en tout cas à mes yeux,
 la menace existentielle qu'ils font peser 
 sur l'espace informationnel déjà très mal en point d'aujourd'hui ;
 et pourrait-on dire même d'hier, 
-puisque les superintellygences malveillantes collectent déjà massivement
+puisque les superpuissances malveillantes collectent déjà massivement
 des données chiffrées par $g^w [p]$, directement ou non,
 pour pouvoir les lire le jour où un elles auront accès à un calculateur quantique.
 Je vous renvoie à cette excellente 
