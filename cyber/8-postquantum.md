@@ -143,8 +143,9 @@ avant de prendre la suite de la celle-ci...
 Et oui, un autre gros défaut du post-quantique,
 c'est que c'est beaucoup plus complexe à comprendre que la cryptographie classique,
 et donc beaucoup plus coûteux en termes de ressources humaines ;
-et c'est d'ailleurs aussi bien plus coûteux en termes de ressources calculatoires,
-notamment en termes de tailles des clés et des signatures cryptographiques...
+et c'est d'ailleurs aussi bien plus coûteux en termes de tailles mémoires,
+notamment en termes de tailles des clés et des signatures cryptographiques,
+même si à l'inverse on a réussi à avoir des chiffrements rapides en temps de calcul...
 
 L'idée de Regev, c'est en gros de remplacer l'opération $x = g^w$
 par l'opération $x = G w$, 
@@ -267,9 +268,26 @@ Et bien entendu, la sécurité peut être renforcée en ajoutant de la redondanc
 Ceci dit, clairement, l'envoi d'un unique bit d'information est coûteux,
 et il serait déraisonnable d'utiliser l'algorithme de Regev
 pour chiffrer de longs messages.
-Mais on peut alors l'utiliser pour créer un secret partagé :
-il suffit à Bob d'envoyer un secret à Alice,
-et ils pourront ensuite l'utiliser comme secret partager
+Il y a alors deux astuces pour accélérer l'envoi de codes chiffrés.
+Premièrement, en remplaçant les entiers modulo $p$
+par des polynômes à coefficients modulo $p$,
+et avec des propriétés comme $X^n$ qui se décompose en un polynôme de moindre degré,
+on peut adapter l'algorithme de Regev
+pour permettre l'envoi de plusieurs bits.
+Lorsque $p$ est premier, l'ensemble de ces polynômes forme ce qu'on appelle un anneau fini.
+Et si $p$ n'est pas premier, il forme un module ;
+et cela suffit en fait à définir une méthode de chiffrement sécurisé.
+On parle alors de Module-LWE, à la place du problème LWE défini initialement par Regev.
+
+Et comme Regev a lui même démontré des liens très proches entre LWE
+et les réseaux Euclidiens, qu'on appelle lattice en anglais.
+Je ne vais pas rentrer dans plus de détails.
+Tout ça, c'est surtout pour expliquer le nom du protocole retenu par le NIST,
+à savoir le "Module-Lattice-Based Key-Encapsulation Mechanism Standard".
+
+Enfin, et surtout, on peut utiliser ce protocole pour créer un secret partagé :
+il suffit à Bob d'envoyer une suite pseudo-aléatoire de bits à Alice,
+et ils pourront ensuite l'utiliser comme secret partagé
 pour communiquer par chiffrement symétrique,
 avec des techniques dont on reparlera la prochaine fois,
 et qu'on pense être également résilients aux calculateurs quantiques.
@@ -307,7 +325,8 @@ au moins en partie.
 Pour sécuriser la signature post-quantique, 
 il faut ajouter de nombreuses autres astuces,
 comme une erreur dans le calcul de $S$.
-En fait, le protocole ML-DSA retenu par le NIST pour la signature post-quantique
+En fait, le protocole Module-Lattice-Based Digital Signature Standard 
+retenu par le NIST pour la signature post-quantique
 est nettement plus complexe que ce que j'ai présenté ;
 même si son astuce fondamentale est bien l'associativité du calcul de $GWC$.
 
