@@ -76,9 +76,18 @@ Bien sûr, ce constat, je suis très loin d'être le seul,
 ou d'être même le premier, à l'effectuer.
 En particulier, face à l'urgence de sécuriser le cyberespace 
 contre les calculateurs quantiques,
-les cryptographes se sont organisés,
-sous la coupole notamment du National Institute of Standards and Technology,
-le NIST, aux États-Unis.
+les cryptographes se sont organisés.
+Ils ont notamment développé la [cryptographie quantique](https://tournesol.app/entities/yt:kJFfleuDHrU).
+Cependant, celle-ci requiert du matériel spécialisé,
+et risque de ne pas être simple à déployer, surtout sur le court terme.
+
+En tout cas, le National Institute of Standards and Technology,
+le NIST, aux États-Unis, envisage une autre solution, 
+qui repose sur le même principe que la cryptographie classique :
+générer une clé privée $w$ et publier un problème difficile $x$ dont $w$ est solution.
+Mais cette fois, bien sûr, il faut que le problème $x$ soit si difficile
+que même une superpuissance armée de calculateurs quantiques
+ne pourra pas le résoudre avant la fin de l'univers.
 En août dernier, le NIST a en particulier approuvé 
 [un nouveau standard cryptographique](https://csrc.nist.gov/News/2024/postquantum-cryptography-fips-approved).
 
@@ -251,6 +260,14 @@ il va rajouter en gros $b \times \lfloor p/2 \rfloor$,
 c'est-à-dire que le signal va être maximalement large,
 sachant qu'il est contraint d'être un nombre modulo p.
 
+Dernier petit détail, pour garantir que le bruit $w_B^T erreur$ soit petit,
+en plus d'exiger que les erreurs soient de petites tailles,
+il faut que le $w_B$ soit petit lui aussi.
+Rappelons que $w_B$ est un vecteur à $m$ coordonnées modulo $p$.
+Pour garantir un petit $w_B$, 
+Regev propose d'exiger que les coordonnées de $w_B$ soient égales à 0 ou 1,
+et de prendre ces décisions entre 0 et 1 au hasard.
+
 Et bien, cette fois, on y est !
 On vient de comprendre comment envoyer un bit chiffré
 à l'aide d'un chiffrement asymétrique résilient aux calculateurs quantiques.
@@ -281,9 +298,9 @@ On parle alors de Module-LWE, à la place du problème LWE défini initialement 
 
 Et comme Regev a lui même démontré des liens très proches entre LWE
 et les réseaux Euclidiens, qu'on appelle lattice en anglais.
-Je ne vais pas rentrer dans plus de détails.
-Tout ça, c'est surtout pour expliquer le nom du protocole retenu par le NIST,
-à savoir le "Module-Lattice-Based Key-Encapsulation Mechanism Standard".
+Je ne vais pas rentrer dans plus de détails,
+et je vais juste vous renvoyer vers cette [vidéo](https://www.youtube.com/watch?v=G23kfRJGH0k)
+pour en savoir plus.
 
 Enfin, et surtout, on peut utiliser ce protocole pour créer un secret partagé :
 il suffit à Bob d'envoyer une suite pseudo-aléatoire de bits à Alice,
@@ -291,6 +308,13 @@ et ils pourront ensuite l'utiliser comme secret partagé
 pour communiquer par chiffrement symétrique,
 avec des techniques dont on reparlera la prochaine fois,
 et qu'on pense être également résilients aux calculateurs quantiques.
+Ainsi le protocole à la Regel mais à base de Module-LWE
+est utilisé pour encapsuler une clé et l'envoyer à Alice.
+
+On obtient alors un mécanisme d'encapsulation de clé à base de LWE avec module,
+qui est intimement lié aux réseaux euclidiens.
+Et bien, c'est pour ça que le nom du protocole retenu par le NIST
+n'est autre que "Module-Lattice-Based Key-Encapsulation Mechanism Standard".
 
 
 ## Signature post-quantique
@@ -319,16 +343,41 @@ et un coup à droite pour révéler $S = W C$.
 
 Mais bien sûr, dans la version que j'ai présentée,
 le protocole n'est pas sécurisé :
-à partir de $S$ et $C$ en particulier, il peut être possible reconstruire $W$,
+à partir de $S$ et $C$ en particulier, 
+il peut être possible reconstruire $W$,
 au moins en partie.
 
 Pour sécuriser la signature post-quantique, 
 il faut ajouter de nombreuses autres astuces,
 comme une erreur dans le calcul de $S$.
-En fait, le protocole Module-Lattice-Based Digital Signature Standard 
+En fait, le protocole Module-Lattice-Based Digital Signature Algorithm
 retenu par le NIST pour la signature post-quantique
 est nettement plus complexe que ce que j'ai présenté ;
 même si son astuce fondamentale est bien l'associativité du calcul de $GWC$.
+
+On peut toutefois souligner le coût en espace mémoire de cette solution.
+Pour signer un message, 
+Alice doit ainsi publier $G$ et $X$, qui sont maintenant des matrices,
+ainsi que la signature $S$ qui est un vecteur.
+Et dans le cas de l'algorithme ML-DSA approuvé par le NIST,
+les coordonnées de ces objets doivent eux-mêmes être des polynômes
+dont les coefficients sont pris modulo le nombre premier 8 380 417.
+Là encore, il y a en fait d'autres astuces pour réduire la taille des signatures,
+mais on obtient néanmoins des signatures de plusieurs kilo-octets,
+ce qui est beaucoup plus gros que les signatures comme El Gamal ou EC-DSA,
+qui sont typiquement une paire de nombres à 256 bits,
+ce qui fait seulement 64 octets.
+
+Notez enfin que le NIST a approuvé un troisième protocole postquantique,
+appelée "StateLess Hash-Based Digital Signature Algorithm" ou SLH-DSA,
+qui est une solution alternative de signature cryptographique,
+cette fois fondée sur les arbres Merkel dont on reparlera plus tard dans cette série,
+mais la taille des signatures générées est alors plus grande encore,
+et excède rapidement les dizaines de kilo-octets.
+
+Et en pratique, cette inflation de la taille des signatures,
+ça peut être extrêmement coûteux quand il faut valider beaucoup d'authentifications de messages,
+comme c'est le cas dans un de mes projets...
 
 
 ## Conclusion
