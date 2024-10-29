@@ -225,6 +225,10 @@ le problème LWE est lui difficile.
 Et surtout, on pense, ou en tout cas on espère, 
 qu'il demeurera difficile y compris pour les superpuissances 
 qui disposent de calculateurs quantiques.
+C'est en tout cas ce que sous-entend Regev 
+dans son [article original](https://cims.nyu.edu/~regev/papers/qcrypto.pdf),
+avec une note de bas de page qui dit 
+"Si on me forçait à effectuer un pari, je dirais que la conjecture est vraie".
 
 OK... admettons que LWE soit difficile.
 Il reste toutefois un problème : 
