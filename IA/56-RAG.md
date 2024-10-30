@@ -30,7 +30,7 @@ qui datent toutes deux de 2021...
 https://www.perplexity.ai/search/parle-moi-du-projet-tournesol-OIvJH3jERquremRhjUHsog
 
 OK. Mais donc, comment ces 2 références ont été récupérées ?
-Comment peut-on indexer de l'information textuelle avec les algorithmes de langage,
+Comment peut-on indexer d'énormes quantités d'informations avec les algorithmes de langage,
 et ensuite identifier celle qui est la plus pertinente pour une requête donnée ?
 
 
@@ -44,13 +44,13 @@ qui est correspond au "P" dans ChatGPT.
 Rappelez-vous que le principe de base de la conception des algorithmes de langage
 consiste à ingurgiter d'énormes quantités de textes,
 généralement en très grande partie téléchargées du web,
-et de modifier les centaines de milliards de paramètres de ces algorithmes
+et à modifier les centaines de milliards de paramètres de ces algorithmes
 pour qu'ils soient capables de régurgiter des textes semblables
 à ceux des données d'entraînement.
 C'est en cela qu'on les appelle parfois des "perroquets stochastiques".
 
 Mais du coup, ce faisant,
-si l'entraînement a exposé ces algorithmes a de nombreux textes 
+si l'entraînement a exposé ces algorithmes à de nombreux textes 
 qui disent que le projet Tournesol est un projet de démocratie numérique,
 alors les algorithmes de langage vont fournir à leur tour de telles descriptions,
 et ce avec grande probabilité.
@@ -58,24 +58,27 @@ et ce avec grande probabilité.
 En pratique, ce pré-entraînement est toutefois très insuffisant
 pour que les algorithmes de langage soient capables de se comporter de manière satisfaisante.
 Après tout, sur le web, on trouve beaucoup de textes publiés qui sont, disons,
-écrit de manière pas entièrement satisfaisante.
-On sait par exemple que Google a entrainé ses algorithmes sur des articles de Breitbart,
+écrits de manière pas entièrement satisfaisante.
+On sait par exemple que Google a entrainé ses algorithmes 
+sur [des articles de Breitbart](https://www.theguardian.com/technology/2023/apr/20/fresh-concerns-training-material-ai-systems-facist-pirated-malicious),
 un média américain que Wikipedia accuse de publier des histoires intentionnellement trompeuses.
 Au delà du problème des droits d'auteur que cela soulève,
 il y a clairement un problème de qualité de l'information,
 si l'algorithme de langage de Google se contente de répéter des informations de Breitbart.
+Idem d'ailleurs pour [Facebook](https://gizmodo.com/ai-bard-google-facebook-trained-on-breitbart-rt-1850352405).
 
 Pour augmenter la fiabilité de l'algorithme,
 on peut alors effectuer un "peaufinage", qu'on appelle "fine-tuning" en anglais,
 et qui consiste typiquement à demander à des humains d'évaluer différentes réponses de l'algorithme.
 L'approche la plus standard, 
-publicisé sous le nom de "reinforcement learning with human feedback",
+publicisée sous le nom de "reinforcement learning with human feedback",
 et qui revient à appliquer les algorithmes des années 1950
 comme on l'a vu dans une [vidéo précédente](https://tournesol.app/entities/yt:2cvj2-Vh8Uc),
 cette approche consiste à demander à des humains de fournir des jugements comparatifs
 entre des réponses proposées par l'algorithme,
 et d'ensuite modifier l'algorithme pour qu'il favorise la génération de textes
-que les humains sondés préfèrent.
+que les humains sondés préfèrent,
+exactement comme on le fait sur Tournesol dans le cas des IA de recommandation.
 Cependant, cette approche de peaufinage est coûteuse,
 à la fois en termes de ressources humaines et de ressources en calculs,
 et son efficacité est loin d'être suffisante.
@@ -106,19 +109,21 @@ ils oublient complètement ce qui a été dit précédemment.
 On en vient alors à la quatrième et dernière approche,
 qui va demander plus de travail humain et calculatoire que le pré-prompting,
 mais nettement moins que le pré-entraînement et le peaufinage.
-Cette approche, c'est donc le "Retrieval Augmented Generation",
+Cette approche, c'est donc le "Retrieval Augmented Generation" ou RAG,
 qui va être "non-paramétrique",
 c'est-à-dire qu'elle va s'appuyer sur une base de données qui va grossir
 au fur et à mesure qu'on demande à l'algorithme d'apprendre plus d'informations.
+On utilise d'ailleurs actuellement nous aussi un algorithme non-paramétrique sur Tournesol.
 
-L'idée est la suivante :
+L'idée du RAG est la suivante :
 on va indexer tout un tas de documents qu'on souhaite enseigner à l'algorithme,
 et on va définir des méthodes pour lui permettre d'identifier,
 étant donné une requête d'un utilisateur,
 les bouts de documents qui sont les plus pertinents
 pour répondre à la requête de l'utilisateur.
 Ces bouts de documents sont ainsi "récupérés",
-et ils seront alors ajoutés à un preprompt fourni à l'algorithme, d'où "l'augmentation".
+et ils seront alors ajoutés à un preprompt fourni à l'algorithme, 
+d'où "l'augmentation".
 Enfin, on va demander à l'algorithme de générer une réponse avec ce préprompt,
 d'où le nom de "Retrieval Augmented Generation".
 La boucle est bouclée !
@@ -148,10 +153,10 @@ on obtient un vecteur très proche du vecteur du mot "reine".
 
 Au delà de cette opération algébrique mystérieuse,
 l'observation fondamentale de word2vec,
-c'est que les mots dont le sens est intuitivement similaires
+c'est que les mots dont le sens est intuitivement similaire
 ont tendance à avoir des représentation vectorielle similaire.
 Le mot "chien" est ainsi proche du mot "chat".
-On peut donc utiliser la similairét des représentations vectorielles
+On peut donc utiliser la similarité des représentations vectorielles
 pour déterminer si deux mots se font référence,
 et donc s'il est pertinent de penser à l'un quand on nous parle de l'autre.
 
@@ -213,7 +218,7 @@ Et c'est un problème de taille. Littéralement.
 En effet, dans certaines applications, comme perplexity.ai,
 le nombre de documents à analyser est gargantuesque ;
 en l'occurence il s'agit de l'ensemble du web, 
-et donc au moins des milliards de pages web !
+et donc au moins des millions de milliards de pages web !
 
 Chercher à chaque requête le bout de page web le plus proche d'une requête
 semble alors requérir autant d'opération qu'il y a de morceaux de documents analysés,
@@ -255,7 +260,7 @@ dont le temps de calcul de l'ordre de $d n^{\frac{1}{2c^2 - 1}}$,
 ce qui est optimal.
 Ainsi pour $c = 2$, ce temps de calcul est $d n^{1/7}$,
 ce qui est beaucoup moins de $dn$,
-dès lors que la base de données vectorielles contient énormément d'entrées $n$.
+dès lors que la base de données vectorielles contient un grand nombre n d'entrées.
 
 L'idée de base de cet algorithme,
 c'est de prendre des directions aléatoires de l'espace et de les sauscissonner.
@@ -307,6 +312,12 @@ de l'élément sélectionné par la recherche dans le graphe HNSW.
 > elle semble moins solide théoriquement
 > et moins déployée en pratique...
 
+Notez que de nombreux enjeux sont encore ouverts,
+comme combiner ces structurations des bases de données vectorielles
+dans un but d'exploration approximative mais très efficace,
+avec des considérations comme le chiffrement de ces bases de données,
+voir idéalement leur exploration par chiffrement homomorphe...
+
 
 ## Quelques autres considérations
 
@@ -336,7 +347,7 @@ mais c'est aussi la partie la plus simple à sécuriser.
 Et oui, on obtient alors finalement un moteur de recherche,
 avec une liste de sources où trouver les réponses à la requête,
 sans avoir un algorithme génératif 
-qui pourrait [bullshiter](https://tournesol.app/entities/yt:JcFRbecX6bk)
+qui pourrait générer du [bullshit](https://tournesol.app/entities/yt:JcFRbecX6bk)
 et nous expliquer des âneries d'apparence crédible.
 
 Mais si vous tenez vraiment à la partie générative,
@@ -353,7 +364,8 @@ Cependant, même si tout ceci aide, ne vous attendez pas à des miracles.
 Même avec un RAG, les algorithmes génératifs produisent encore souvent des âneries,
 et il faut donc vraiment éviter d'utiliser la sortie de ces algorithmes
 directement en entrée d'autres algorithmes,
-surtout pour les applications sensibles.
+surtout pour les applications sensibles comme l'analyse automatisée des emails d'une entreprise
+et plus encore [l'envoi automatisé de réponses aux emails](https://arxiv.org/abs/2403.02817).
 
 
 ## Conclusion
@@ -396,17 +408,25 @@ La fiabilité de la source doit intervenir pour déterminer
 s'il faut vraiment lui faire appel pour répondre à la requête.
 Voilà qui requiert une évaluation de la recommandabilité de la source.
 
-Eh bien, ça, c'est exactement ce que fait l'algorithme PageRank de Google, 
+Eh bien, ça, c'est exactement ce que faisait l'algorithme PageRank de Google, 
 à partir des liens entre les pages web,
-même si, malheureusement, Google fait désormais cela de manière très opaque.
-En particulier, on peut douter de la conformité des recommandations de Google
+que Google a remplacé il y a longtemps déjà 
+par des solutions clairement beaucoup plus sophistiquée,
+mais aussi malheureusement beaucoup plus opaque.
+
+Quoi qu'il en soit, 
+on peut douter de la conformité des recommandations de Google
 avec celle que feraient les citoyens ou les experts pertinents.
-Eh bien, pour moi, résoudre le problème de l'évaluation collaborative des sources d'information,
-c'est un peu l'urgence démocratique du monde moderne.
+Or résoudre le problème de l'évaluation collaborative des sources d'information,
+ça me semble être l'urgence démocratique numéro 1 du monde moderne.
 Et pour y arriver, j'ai participé à la création et au développement de la plateforme Tournesol,
 qui vise à évaluer la recommandabilité des vidéos YouTube
 en s'appuyant sur l'intelligence collective,
 à laquelle je vais, comme si souvent, vous appeler à contribuer.
+Vous pouvez en particulier nous aider en participant à l'évaluation des vidéos,
+en contribuant au code et aux algorithmes qui font tourner la plateforme
+et en effectuant des dons à l'Association Tournesol.
+Merci beaucoup d'avance.
 
 Tant qu'on n'aura pas fait l'effort d'identifier collectivement les vidéos 
 que YouTube devrait recommander massivement,
