@@ -82,10 +82,10 @@ c'est que cette division euclidienne, et en particulier le calcul de 11,
 est très rapide.
 Il suffit en effet de poser une division, 
 comme vous l'aviez appris à l'école.
-Et en gros, il suffit de faire autant d'opération que le nombre à diviser a de chiffres.
-On dit que le temps de calcul est linéaire en la description des nombres.
+Et en gros, il suffit de faire autant de multiplications que le nombre à diviser a de chiffres.
+On dit que le nombre de multiplications est linéaire en la description des nombres.
 Ainsi, même si on manipule des nombres cryptographiques avec des milliers de chiffres,
-il suffira d'effectuer des milliers d'opérations ;
+il suffira d'effectuer des milliers de multiplications ;
 à la main, c'est très long, mais pour le téléphone du premier citoyen venu,
 ce sera virtuellement immédiat.
 Bref. Réduire un nombre modulo 13, c'est très facile.
@@ -268,11 +268,9 @@ On dit que le groupe multiplicatif modulo p est isomorphe au groupe additif modu
 ou encore que la fonction qui à $w$ associe g<sup>w</sup> est un isomorphisme de groupe,
 entre le groupe multiplicatif modulo p et le groupe additif modulo p-1.
 
-Mais alors, le logarithme discret modulo p, 
-c'est finalement la division dans le groupe modulo p-1.
-En général, on espère que cette division est difficile,
-surtout quand on n'a pas accès directement à $w$, et qu'on ne connaît que g<sup>w</sup>.
-Mais ce ne sera pas toujours le cas, notamment en fonction des diviseurs de p-1.
+Ces propriétés nous permettent de mieux comprendre la fonction $g^w [p]$.
+Mais elles peuvent malheureusement aussi aider un attaquant à inverser cette fonction,
+notamment si le nombre premier $p$ est mal choisi.
 
 OK, on va aborder maintenant la partie la plus difficile de la vidéo,
 donc asseyez-vous bien au fond de votre siège, respirez un bon coup...
