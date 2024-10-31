@@ -185,12 +185,10 @@ pour ensuite obtenir une représentation vectorielle,
 dont la taille est indépendante de la phrase considérée.
 On parle parfois d'opération de "regroupement", ou "pooling" en anglais.
 
-À voir : https://arxiv.org/abs/2201.10005
-
 Mieux encore, on peut considérer qu'il s'agit là d'un bon premier pas,
 mais on peut ensuite optimiser l'opération de pooling
-pour qu'il se conforme à des jugements humains de similarité de textes,
-ou à des corpus de textes avec des questions et des réponses.
+pour qu'il se conforme à des [jugements humains de similarité de textes](https://arxiv.org/abs/2212.09741),
+ou à des [corpus de textes avec des questions et des réponses](https://arxiv.org/abs/2201.10005).
 Dernièrement, un [article publié dans ACL](https://arxiv.org/abs/2401.00368) 
 suggère qu'on peut même automatiser ces opérations,
 en utilisant directement des modèles de langage pour générer
