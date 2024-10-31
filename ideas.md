@@ -3,25 +3,17 @@
 Le vote par popularité insoupçonnée
 Le fréquentisme est statistiquement inadmissible
 
-
 ## Éthique 
 
 YouTube (EIT paper)
 Gouverner sans majorité
 Le réseau de confiance
 
-
 ## IA
 
-Le transformeur
 RAG
 
-
 ## Cyber
-
-Les nombres premiers sûrs
- - 4 safe_primes
- - Vignette Sophie Germain avec nombres premiers barrés
 
 Les nombres imaginaires de l'informatique 
  - 5 corps finis
@@ -82,13 +74,11 @@ Les fiançailles cryptographiques
  - Lemme de Schwartz-Zippel
 
 
-
 Protéger les codes nucléaires
  - Shamir secret sharing
  - Vignette ?
 
 Le problème des anniversaires (et les tables de hachage, le logarithme...)
-
 Le problème des traders confidentiels et curieux
 La confidentialité différentielle
 La dette technique européenne (résilience informationnelle vs IA spectaculaires)
