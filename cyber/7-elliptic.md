@@ -297,16 +297,18 @@ plus de $2^{252}$ valeurs possibles de $w G$,
 jusqu'à en trouver une qui correspond à $P$.
 Dit autrement, on pense
 que le problème du logarithme discret pour les courbes elliptiques 
-est essentiellement impossible pour les superintellygence d'aujourd'hui...
+est essentiellement impossible pour les superpuissances d'aujourd'hui...
 même si on sait que celles qui auront un calculateur quantique dans le futur
 pourront inverser ce composant fondamental de la cryptographie moderne.
 
 Mais oublions les calculateurs quantiques pour aujourd'hui,
 comme le font en gros presque toutes les entreprises de cybersécurité.
 On pense donc que calculer $w G$ est aujourd'hui une fonction à sens unique.
-Et c'est vraiment cette propriété des groupes cycliques,
-qui n'est d'ailleurs pas du tout spécifiques aux courbes elliptiques,
-qui fait que ces groupes sont d'une très utilité à la cryptographie.
+D'autant que le nombre d'éléments qu'on peut ainsi construire, 
+à savoir $2^{252} + 27742317777372353535851937790883648493$,
+est un nombre premier,
+ce qui empêche toute attaque à la Pohlig-Hellman 
+dont on a parlé dans un épisode précédent.
 
 
 ## Comparaison avec RSA
