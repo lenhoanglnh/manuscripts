@@ -64,14 +64,20 @@ Contrôler une supercalculatrice avec une armée de fourmis
  - Vignette fourmis sur un serveur
 
 L'algorithme GKR
+ - gkr
  - Vérifier #SAT
  - Réduire la taille exponentiellement
 
 Les fiançailles cryptographiques
+ - commit
  - Commit and prove
  - (Sparse) Merkle tree
  - Vérifier l'intégrité des données avec un hash
  - Lemme de Schwartz-Zippel
+
+Le déchet toxique de Zcash
+ - kzg
+ - KZG
 
 
 Protéger les codes nucléaires
