@@ -6,6 +6,7 @@ Le fréquentisme est statistiquement inadmissible
 ## Éthique 
 
 YouTube (EIT paper)
+Le doomscrolling passif
 Gouverner sans majorité
 Le réseau de confiance
 
