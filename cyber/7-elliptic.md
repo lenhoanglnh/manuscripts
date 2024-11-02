@@ -275,8 +275,8 @@ soit approximativement le nombre de particules dans l'univers.
 Même une superintelligence serait très incapable de lister tous les points
 de la courbe elliptique Curve25519.
 
-En fait, ce $w G$ des courbes elliptiques, 
-c'est exactement l'équivalent du $g^w [p]$ dont on avait parlé dans une vidéo précédente.
+En fait, ce $X = w G$ des courbes elliptiques, 
+c'est exactement l'équivalent du $x = g^w [p]$ dont on avait parlé dans une vidéo précédente.
 En particulier, on pense que la fonction qui calcule $w G$ à partir de $w$
 est une fonction à sens unique d'aujourd'hui.
 Avec l'astuce des carrés répétés,
@@ -285,16 +285,16 @@ cette fonction peut être calculée très rapidement.
 
 Formellement, le nombre d'opérations nécessaires sera logarithmiques en $w$.
 Et de manière pratique, 
-ça veut dire que $P = w G$ peut se calculer très rapidement,
+ça veut dire que $X = w G$ peut se calculer très rapidement,
 même pour des valeurs cryptographiquement grandes de $w$.
 
-Toutefois, à l'inverse, étant donné les coordonnées d'un point $P$ d'une courbe elliptique,
-déterminer pour quelle valeur de $w$ on a $P = w G$,
+Toutefois, à l'inverse, étant donné les coordonnées d'un point $X$ d'une courbe elliptique,
+déterminer pour quelle valeur de $w$ on a $X = w G$,
 eh bien, on ne sait pas faire.
 Mieux encore, on suspecte que personne ne saura le faire,
 à moins de lister une bonne partie des 
 plus de $2^{252}$ valeurs possibles de $w G$,
-jusqu'à en trouver une qui correspond à $P$.
+jusqu'à en trouver une qui correspond à $X$.
 Dit autrement, on pense
 que le problème du logarithme discret pour les courbes elliptiques 
 est essentiellement impossible pour les superpuissances d'aujourd'hui...
@@ -303,7 +303,7 @@ pourront inverser ce composant fondamental de la cryptographie moderne.
 
 Mais oublions les calculateurs quantiques pour aujourd'hui,
 comme le font en gros presque toutes les entreprises de cybersécurité.
-On pense donc que calculer $w G$ est aujourd'hui une fonction à sens unique.
+On pense donc que calculer $X = w G$ est aujourd'hui une fonction à sens unique.
 D'autant que le nombre d'éléments qu'on peut ainsi construire, 
 à savoir $2^{252} + 27742317777372353535851937790883648493$,
 est un nombre premier,
@@ -350,42 +350,67 @@ d'être significativement moins coûteuse en temps de calculs,
 pour un même niveau de sécurité calculatoire.
 
 
-## Diffie-Hellman
+## Secret partagé et signature cryptographique
 
-Même si j'en ai déjà parlé sur [String Theory](https://tournesol.app/entities/yt:jcQXNMuqhFU),
-et même si David a déjà une chouette 
-[vidéo sur Diffie-Hellman](https://tournesol.app/entities/yt:1Yv8m398Fv0)
-j'aimerais vous rappeler comment une communication sécurisée peut être établie,
-en utilisant le fait qu'on pense que 
-la fonction qui calcule $wG$ à partir de $w$ est à sens unique.
-Le principe est exactement le même ; seules les notations changent.
+Comme la fonction $x = g^w [p]$ dont on a parlé dans une vidéo précédente,
+la fonction $X = w G$ est une fonction à sens unique,
+qui est de surcroît un isomorphisme de groupe et est quasi-commutative.
+Et du coup, on peut utiliser les mêmes constructions que celles de la vidéo précédente,
+pour concevoir des protocoles de Diffie-Hellman pour créer des secrets partagés,
+ou à la El Gamal pour signer cryptographiquement des messages.
 
-L'idée est la stratégie du double cadenas.
+Dans Diffie-Hellman avec courbes elliptiques, ou ECDH en anglais,
 Alice et Bob pense chacun à un grand nombre secret aléatoire $w_A$ et $w_B$.
 Typiquement, s'ils utilisent Curve25519,
 ils peuvent utiliser des nombres à 255 bits.
 
-Chacun calcule les points $P_A = w_A G$ et $P_B = w_B G$, qu'ils rendent publics.
-Alice calcule ensuite $w_A P_B$, et Bob calcule $w_B P_A$.
+Chacun calcule les points $X_A = w_A G$ et $X_B = w_B G$, qu'ils rendent publics.
+Alice calcule ensuite $w_A X_B$, et Bob calcule $w_B X_A$.
 Et là, magie magie, on se rend compte 
 qu'ils ont en fait calculé le même point $S$ sur la courbe elliptique.
-En effet, $S = w_A P_B = w_A (w_B G) = (w_A w_B) G$,
+En effet, $S = w_A X_B = w_A (w_B G) = (w_A w_B) G$,
 qui est bien symétrique en A et B.
 
 Et de manière cruciale, cette information partagée est bien secrète,
-car même sachant $G$, $P_A$ et $P_B$,
+car même sachant $G$, $X_A$ et $X_B$,
 on suppose qu'un attaquant sera incapable de deviner ni $w_A$, ni $w_B$ ni $S$,
 en utilisant le fait que la fonction 
-qui calcule $P_A = w_A G$ avec $w_A$ est à sens unique.
+qui calcule $X_A = w_A G$ avec $w_A$ est à sens unique.
 
 Ensuite, Alice et Bob vont typiquement appliquer une fonction de hachage
 au secret partagé $S$,
 pour obtenir une clé partagée `K = Hash(S)`
-qui va être utilisée ensuite pour les communications chiffrées symétriquement.
+qui va être utilisée ensuite pour les communications chiffrées symétriquement,
+comme on le verra dans une future vidéo.
 
-Notez que les courbes elliptiques peuvent aussi être utilisées 
-pour d'autres opérations cryptographiques,
-comme le chiffrement à clé publique ou la signature crytographique.
+Le cas de la signature cryptographique par courbe elliptique, ou ECDSA en anglais,
+est similaire, en copiant cette fois le protocole d'El Gamal.
+Appelons $q$ le nombre d'éléments de la courbe elliptique,
+qui est donc $2^{252} + 27742317777372353535851937790883648493$ pour Curve25519,
+et qui, rappelons-le, est dans ce cas premier.
+On tire au hasard $k$ entre $1$ et $q-1$.
+Puis on calcule $R = k G$ et $s = (H(m) - R_x w) / k [q]$,
+où $H(m)$ est le hash du message $m$ à signer 
+et $R_x$ est la coordonnée de $R$ selon $x$.
+Encore une fois, l'intuition, c'est d'obtenir un $s$
+qui mélange le message $m$, le clé privée $w$ et de la randomisation via $k$.
+On publie alors $(R, s)$, qui forme la signature cryptographique.
+La vérification s'effectue ensuite en vérifiant que $H(m) G = s R + R_x X$.
+
+Alors, le protocole peut être davantage optimisé,
+en publiant uniquement la coordonnée $R_x$ de $R$,
+ce qui nécessite de diviser l'égalité de vérification par $s$,
+et de regarder uniquement selon la coordonnée $x$, ce qui donne
+$R_x = ((H(m)/s) G - (R_x/s) X)_x$.
+Mais du coup, il faut que $s$ soit non nul :
+si on obtient $s = 0$, on va simplement tirer un autre $k$ au hasard.
+Enfin, dernière chose qui n'a aucune importance théorique,
+l'algorithme standard remplace la soustraction dans le calcul de $s$ par une addition
+$s = (H(m) + R_x w) / k [q]$,
+ce qui donne ensuite la vérification $R_x = ((H(m)/s) G + (R_x/s) X)_x$.
+
+Bref, les courbes elliptiques sont aujourd'hui abondamment utilisées 
+pour chiffrer ou pour authentifier des messages.
 Mais étrangement, c'est pour une autre application encore
 que la NSA proposa Dual\_EC\_DRBG.
 
