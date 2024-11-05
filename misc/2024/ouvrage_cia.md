@@ -45,20 +45,21 @@ en particulier Google, Facebook, TikTok et Amazon (Elias 2024, Kim 2024).
 
 À bien des égards, 
 les IA de recommandation sont aussi plus complexes que les algorithmes génératifs,
-notamment parce qu'elles effectuent un profilage psychologique des milliards d'utilisateur
+notamment parce qu'elles effectuent un profilage psychologique de milliards d'utilisateurs
 à partir de données extrêmement intrusives (Kosinsky et al. 2013),
 et parce qu'elles s'appuient sur les meilleurs modèles d'analyse de vidéo et de langage 
 pour modérer et cataloguer les siècles de vidéos 
 qu'elles doivent analyser chaque jour (YouTube for Press 2024).
 En fait, à ce jour, 
-le plus grand modèle d'IA publié est une IA de recommandation (Lian et al. 2022).
+le plus grand modèle d'IA publié est une IA de recommandation (Lian et al. 2022),
+avec ses centaines de millions de milliards de paramètres.
 Enfin, et surtout, 
 parce que la plupart des humains accèdent désormais à l'information depuis leurs téléphones,
 parce que les opérations intuitives du téléphones sont le clic, le swipe et le scroll,
 et parce qu'une recommandation est attendue en réponse à ces actions,
 les IA de recommandation sont très largement l'interlocuteur privilégié des internautes modernes.
 Cette tendance ne semblant pas s'inverser, 
-elle suggère que ces IA pourraient conserver leur rôle bien central 
+elle suggère que ces IA pourraient conserver leur rôle central 
 dans le flux de l'information dans nos sociétés dans les décennies à venir.
 
 Ce constat préoccupant a poussé de nombreux chercheurs et hacktivistes 
@@ -114,10 +115,10 @@ nous semble avoir fait confondre l'idéal de la *délibération démocratique* (
 avec la nécessité d'un *marché des idées* (Ingber 1984).
 Or, en pratique, le *marché des idées* s'est lui naturellement organisé
 par la possession privée des *moyens d'expression*,
-à l'image du rachat de médias classiques (Cagé 2015)
-ou du réseau social Twitter par des milliardaires (Benton et al. 2022),
+à l'image du rachat de médias traditionnels
+ou du réseau social Twitter par des milliardaires (Cagé 2015, Benton et al. 2022),
 et comme l'illustre aussi le chantage d'entreprises privées du numérique comme Google et Facebook
-sur des états démocratiques comme l'Australie et le Canda (Morris-Grant 2024).
+sur des états démocratiques comme l'Australie et le Canada (Morris-Grant 2024).
 Pire encore, ce marché des idées est littéralement vendu aux plus offrants,
 par des voies illégales (achats de faux comptes, Huang et Liu 2024) 
 et légales (publicité en ligne et sponsoring d'influenceurs, Leung et al. 2022).
@@ -223,11 +224,16 @@ Hors ligne, l'article L49 du code électoral, par exemple,
 interdit toute campagne électorale la veille et le jour d'une élection.
 Voilà qui permet d'encourager au moins une journée de réflexion,
 et limite le risque de décisions de vote plus instinctives.
+Plus récemment, 
+la Convention Citoyenne sur le Climat a donné 
+à un échantillon de 150 citoyens tirés au hasard
+un an de formation, de réflexion et de délibérations,
+pour aboutir à des propositions issues de volitions informées (Pech 2021).
+
 De même, en ligne, il serait peut-être adéquat de pousser
 les citoyens à prendre du recul et un temps de réflexion
 avant qu'ils ne fournissent les données qui seront utilisées 
 pour concevoir et gouverner les IA.
-
 L'une des initiatives les plus intéressantes à cet égard
 est l'introduction des *Community Notes* sur Twitter 
 (Wirtschafter et Majumder 2023, Pilarski et al. 2024),
@@ -414,6 +420,8 @@ Morris-Grant B (2024). Meta blocked news from Facebook and Instagram in Canada �
 Nord M, Lundstedt M, Angiolillo F, Borella C, Gastaldi L, Good God A, Natsika N, Lindberg SI (2024). Democracy Winning and Losing at the Ballot: Democracy Report 2024. V-Dem Institute 2024.
 
 Ortiz-Ospina (2019). The rise of social media. Our World in Data.
+
+Pech, T. (2021). Le Parlement des citoyens: La convention citoyenne pour le climat. Seuil.
 
 Pech T (2023). Pol.is sur la Police, bilan d’une expérimentation. La Grande Conversation.
 
