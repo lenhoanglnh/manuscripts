@@ -311,40 +311,79 @@ ce qui empêche toute attaque à la Pohlig-Hellman
 dont on a parlé dans un épisode précédent.
 
 
-## Comparaison avec RSA
+## Mieux que RSA et l'exponentiation modulaire
 
 Oui, parce que tout ça, mathématiquement, c'est super joli.
 Mais en a-t-on vraiment besoin ?
 Pourquoi a-t-il fallu utiliser ces mathématiques aussi complexes
 pour pouvoir faire de la cryptographie ?
-N'y a-t-il pas plein d'autres groupes cycliques beaucoup plus simples
-qu'on aurait pu utiliser pour avoir cette même propriété ?
+Est-ce que l'exponentiation modulaire qu'on a vu plus tôt dans cette série ne suffit pas ?
+Et quid de RSA, dont je vous ai parlé sur la chaîne String Theory ?
 
-Eh bien, il y a vraiment eu un besoin à un moment donné.
-En fait, pendant longtemps, les mathématiciens ont davantage exploité un autre groupe, 
-à savoir le groupe multiplicatif des nombres inversibles modulo $N$,
-où $N$ est un nombre entier qui s'écrit $N = pq$ pour deux nombres premiers $p$ et $q$,
-pour définir une cryptographie appelée RSA,
-ou le groupe multiplicatif des nombres inversibles modulo un nombre $p$ ;
-pas besoin de comprendre les détails, 
-mais si vous les voulez, 
-j'ai une [vidéo](https://tournesol.app/entities/yt:Y2bsLRdVBP8) sur String Theory à ce sujet.
+Pour rappel, RSA est un autre chiffrement, 
+qui s'appuie sur l'hypothèse selon laquelle multiplier 
+deux très grands nombres premiers $p$ et $q$ pour obtenir $N = pq$
+est une fonction à sens unique :
+facile à faire, et extrêmement difficile à défaire.
+De même, l'exponentiation modulaire s'appuie sur la fonction $x = g^w [p]$,
+qu'on suppose aussi être à sens unique.
 
-Cependant la sécurité de ces systèmes est extrêmement dépendante
-de la difficulté à trouver les facteurs premiers d'un grand nombre entier $N$.
-Et malheureusement, les mathématiciens et les informaticiens ont été brillants.
-Même s'ils n'ont pas réussi à trouver un algorithme très rapide pour y arriver,
-ils ont trouvé des algorithmes bien meilleurs que l'approche naïve,
-dont le temps est typiquement exponentiel en la moitié du nombre de chiffres utilisés,
-ce qui est nettement moins bien qu'être exponentiel en le nombre de chiffres utilisés.
+Et en gros, oui, ces opérations sont à sens unique,
+contre les meilleurs calculateurs et les meilleurs algorithmes d'aujourd'hui.
+Mais elles ne le sont en fait pas *maximalement*.
 
-En fait, on estime aujourd'hui que RSA requiert 
-des nombres N avec environ 3000 bits,
-soit environ 1000 chiffres en écriture décimale,
-pour offrir un même niveau de sécurité 
-que la cryptographie par courbes elliptiques avec des corps finis à environ $2^{256}$ éléments,
-comme Curve25519,
-qui ne requièrent que 256 bits.
+Plus précisément, [l'algorithme généralisé du crible de nombres](https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2394427/14190_FULLTEXT.pdf) 
+est capable de casser ces deux problèmes,
+en un temps d'environ
+$\exp \left( \sqrt[3]{\frac{64}{9}} (\ln p)^{1/3} (\ln \ln p)^{2/3} \right)$,
+qui est sous-exponentiel en le nombre de chiffres du nombre premier $p$.
+Alors, c'est sous-exponentiel, dans le sens où ça finit par être inférieur
+à n'importe quelle fonction $\exp( c \ln p)$.
+Mais qu'on soit clair, ça reste superpolynomial en le nombre de chiffre de $p$,
+et en particulier infaisable par les supercalculateurs dès que $p$ a beaucoup de chiffres.
+
+Pour quantifier la sécurité d'un nombre premier $p$,
+comme on l'a vu dans un [épisode précédent](https://tournesol.app/entities/yt:v_sz0elq0eo),
+on utilise la mesure en nombre de bits $b$ de sécurité calculatoire,
+c'est-à-dire le nombre $b$ tel qu'un attaquant pourra casser le chiffrement
+en effectuant $2^b$ opérations.
+Je vous épargne des détails de calculs,
+mais si on appelle $k$ le nombre de chiffres de $p$ en écriture binaire,
+alors le nombre de bits de sécurité calculatoire sera donné par cette fonction
+$b = \log_2 \exp \left( \sqrt[3]{\frac{64}{9}} (k \ln 2)^{1/3} (\ln (k \ln 2))^{2/3} \right)$.
+Avec $1024$ bits de $p$, on obtient $b \approx 87$ bits de sécurité.
+
+```
+import numpy as np
+b = lambda k: np.log2(np.exp(np.power(64/9, 1/3) * np.power(k * np.log(2), 1/3) * np.power(np.log(k*np.log(2)), 2/3)))
+b(1024)
+b(3072)
+```
+
+En pratique, on a tendance à viser $120$ bits de sécurité pour la plupart des applications,
+ce qui peut s'obtenir avec $p = 3072$.
+Plus précisément, pour des clés de $3072$ bits, 
+on aura environ 139 bits de sécurité.
+
+Cependant, cette vulnérabilité de l'exponentiation modulaire et de RSA
+à l'algorithme généralisé du crible des nombres,
+elle vient vraiment des propriétés des nombres,
+sur lesquelles s'appuient fortement ces solutions cryptographiques.
+En particulier, jusque là, personne n'a su généraliser cet algorithme
+pour casser le chiffrement par courbes elliptiques --- 
+sauf pour certaines courbes elliptiques avec des propriétés très particulières.
+
+En fait, l'algorithme le plus rapide connu pour casser le chiffrement par Curve25519
+est l'algorithme rho de Pollard,
+qui requiert un temps de calcul de l'ordre de $\sqrt{p}$,
+qui est bien exponentiel en le nombre de chiffre de $p$,
+puisqu'on peut aussi l'écrire $2^(k/2)$,
+où $k = \log2(p)$ est le nombre de chiffre de $p$.
+Et du coup, en utilisant un $p = 2^255 - 19$ comme le fait Curve25519,
+ce nombre de chiffre est $k = 254$,
+et elle conduit à $b = k/2 = 127$ bits de sécurité !
+Autrement dit, on a la même sécurité,
+malgré des clés dix fois plus petites.
 Voilà qui permet à la cryptographie par courbes elliptiques
 d'être significativement moins coûteuse en temps de calculs,
 pour un même niveau de sécurité calculatoire.
