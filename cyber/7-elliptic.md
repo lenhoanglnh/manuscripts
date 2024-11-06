@@ -234,7 +234,7 @@ Et de façon remarquable, ce sera le cas,
 quel que soit le corps des nombres sur lequel la courbe elliptique est définie.
 Dès lors, on va simplifier les notations, 
 et remplace l'opérateur `Compo` par un signe usuel pour les groupes commutatifs,
-à savoir le signe `+`.
+comme le signe $\oplus$.
 Et oui, on va dire qu'on peut ajouter des points de la courbe elliptique.
 Faites très attention toutefois,
 l'addition des points de la courbe elliptique n'est pas du tout une addition usuelle ;
@@ -250,6 +250,105 @@ Bien sûr, en cryptographie, le cas qui nous intéresse particulièrement,
 c'est celui des corps finis.
 Et en fait, ce qui nous intéresse même particulièrement en cryptographie,
 ça va être le groupe cyclique engendré par un point de la courbe...
+
+
+## Visualisation des courbes elliptiques sur des corps finis
+
+Pour bien se rendre compte de la magie des courbes elliptiques,
+j'ai développé une petite application web.
+Vous pouvez rentrer vos paramètres de la courbe elliptique,
+à savoir les coefficients $a$ et $b$ de l'équation $y^2 = x^3 + ax + b$,
+et le nombre $p$ modulo lequel on va effectuer les calculs.
+
+Pour $a = -2$, $b = 0$ et $p = 11$ par exemple,
+on peut tracer un quadrillage 
+dont les intersections sont les points $(x, y)$ qui sont des entiers modulo $p$,
+et on peut ensuite placer explicitement ceux qui sont solutions de l'équation modulo $p$.
+L'ensemble des points à l'écran correspond exactement à la courbe elliptique...
+ou presque ! N'oublions pas le point à l'infini qui n'est pas représenté ici.
+Ainsi le point $(0, 0)$, au centre de la figure,
+est bien un point de la courbe elliptique, 
+puisqu'il vérifie bien l'équation $y^2 = x^3 - 2x$.
+De même, le point $(5, 4)$ est aussi solution,
+puisque $y^2$ est alors égal à $5^2 = 25 = 1 [p=11]$,
+et que $x^3 - 2x = 4^3 - 2 \cdot 4 = 64 - 8 = 56 = 11 \cdot 5 + 1 = 1 [p=11]$ aussi.
+
+Sur le corps fini des nombres modulo $11$,
+clairement, notre courbe elliptique ne ressemble plus trop à une courbe.
+Néanmoins, l'ensemble de ses points n'a rien d'aléatoire !
+Au contraire, il dispose de nombreuses propriétés fascinantes.
+
+On peut commencer par observer une symétrie par rapport à l'axe des abscisses,
+qui vient tout simplement du fait que $y$ doit être une racine carrée de $x^3 - 2x$.
+Et bien sûr, si $y$ est une racine carrée, alors $-y$ le sera aussi.
+
+De façon plus spectaculaire, si je prends deux points de la courbe elliptique,
+ils couperont un troisième point de la courbe.
+Par exemple, si je prends les points $(-3, 1)$ et $(-1, 1)$,
+alors la droite qui passe par ces points coupera un troisième point, à savoir $(4, 1)$.
+D'ailleurs, ça, ça implique la somme $(-3, 1) \oplus (-1, 1)$ dans la courbe elliptique
+va donner comme résultat l'image du troisième point $(4, 1)$ par l'axe des abscisses,
+à savoir $(4, -1)$.
+On a l'égalité $(-3, 1) \oplus (-1, 1) = (4, -1)$.
+
+De même, la droite qui passe par $(-1, -1)$ et $(0, 0)$ passe aussi par $(2, 2)$,
+ce qui revient à dire que $(-1, -1) \oplus (0, 0) = (2, -2)$.
+
+Mais il y a plus vicieux.
+Si je prends la droite qui passe par $(-1, 1)$ et $(2, 2)$,
+on pourrait croire dans un premier temps qu'elle ne passe pas 
+par un troisième point de la courbe elliptique,
+comme le suggère ce dessin.
+Sauf qu'il ne faut pas oublier qu'on travaille modulo un nombre premier $p$.
+Et donc, en fait, le point tout à droite, en $(5.5, 3.33)$,
+c'est en fait le même que le point à gauche, en $(-5.5, 3.33)$.
+En fait, l'ensemble des coordonnées modulo $p$, 
+ça correspond en fait au monde de Pacman, où les côtés opposés sont en fait collés.
+Dans le jargon, on parle en fait de tore carré,
+comme celui dont je vous avais parlé 
+dans une [vieille vidéo](https://tournesol.app/entities/yt:8v2JxCUDW6M).
+
+Bref. Du coup, la droite qui sort à droite doit réapparaître à gauche.
+Et quand elle sort en haut, elle doit réapparaître en bas.
+Et c'est ainsi que cette droite finit bel et bien par couper un troisième point.
+Magique, non ?
+
+Et bien, sur l'application que j'ai développé, 
+vous pourrez tester cela avec toutes sortes de paires de points,
+et vous verrez qu'il y a toujours une troisième intersection.
+Et c'est quand même fou ! 
+A priori, ça n'a absolument rien d'évident que de placer des points dans l'espace
+avec cette propriété remarquable.
+Mais comme vous voyez, cela marche en fait toujours...
+
+Ou presque. Voici un cas où ça ne marche pas.
+Si je prends deux points avec la même abscisse,
+je n'ai pas de 3e intersection.
+Mais vous voyez pourquoi ce n'est pas un problème ?
+En fait, on a introduit le $0$ des courbes elliptiques précisément pour résoudre ce problème.
+La droite qui passe par deux points symétriques par l'axe des abscisses
+va être défini comme étant égal à un point infini tout en haut,
+qu'on appelle le $0$.
+Et d'ailleurs, on voit que cela implique bien que les points symétriques
+selon l'axe des abscisses sont bien opposé selon l'opération des courbes elliptiques.
+En effet, si $P$ et $Q$ sont symétriques, on a bien $P \oplus Q = 0$,
+ce qu'on pourrait écrire $Q = \ominus P$.
+
+Enfin, si vous testez bien toutes les possibilités,
+vous finirez peut-être par tomber sur une autre exception.
+Par exemple, la droite qui passe par $(2, 2)$ et $(5, 4)$
+ne semble couper aucun autre point.
+Bizarre, non ?
+
+Si vous regardez l'application, 
+vous verrez qu'elle dit toutefois que leur combinaison est censée donner le point $(2, -2)$.
+Vous voyez ce qu'il se passe ?
+On semble avoir $(2, 2) \oplus (5, 4) = (2, -2) = \ominus (2, 2)$.
+Mais donc, on a en fait $(2, 2) \oplus (2, 2) \oplus (5, 4) = 0$.
+En fait, la droite qui passe par $(2, 2)$ et $(5, 4)$ passe deux fois par $(2, 2)$.
+C'est une droite qui est en fait tangente à la courbe elliptique en $(2, 2)$.
+Voici la seule exception à la règle des trois intersections,
+lorsqu'on tient bien compte du point à l'infini en haut.
 
 
 ## Groupe cyclique et exponentiation
