@@ -350,6 +350,14 @@ C'est une droite qui est en fait tangente à la courbe elliptique en $(2, 2)$.
 Voici la seule exception à la règle des trois intersections,
 lorsqu'on tient bien compte du point à l'infini en haut.
 
+Bref, je vous laisse explorer l'application, 
+si vous voulez bien sentir les courbes elliptiques sur les corps finis.
+Mais gardez toutefois en tête que ce que vous pourrez visualiser,
+ce sera inéluctablement restreint à de petits nombres premiers $p$.
+Ce qui rend les courbes elliptiques si utiles à la cryptographie,
+c'est précisément leur complexité pour de grandes valeurs de $p$,
+pour lesquelles tout effort de visualisation est peine perdue...
+
 
 ## Groupe cyclique et exponentiation
 
