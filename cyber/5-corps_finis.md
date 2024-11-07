@@ -101,7 +101,9 @@ chaque ligne et chaque colonne contient tous les éléments du corps finis
 une et une seule fois.
 Ça, ça vient vraiment du fait qu'on veut pouvoir soustraire et diviser.
 En effet, on veut pouvoir calculer des quantités comme `1 - a`.
-Et pour cela, il faut que, dans la ligne du a de la table d'addition, 
+Appelons `x` le résultat attendu de cette soustraction.
+En ajoutant `a` des deux côtés, on doit alors avoir `1 = a + x`.
+Dit autrement, il faut que, dans la ligne du `a` de la table d'addition, 
 il y ait une case dont la valeur est 1.
 Dans notre cas, cette case correspond à la colonne du a.
 Et ça, ça nous dit que `a + a = 1`, 
@@ -122,7 +124,16 @@ On pourrait aussi l'appeler l'inverse additif de a.
 
 ## Les corps finis à 4 éléments
 
-OK. Sachant tout ce qu'on a vu, 
+OK. Jusque là, on a eu une approche déductive des mathématiques.
+Je vous ai donné les tables d'addition et de multiplication d'un corps fini,
+et on a effectué des opérations à l'aide de ces tables.
+C'est l'approche scolaire des mathématiques.
+Mais ce n'est absolument pas la partie fascinante des mathématiques.
+En particulier, si vous vous armez de curiosité mathématique,
+vous devriez vous demander comment ces tables d'addition et de multiplication ont été conçues.
+
+Eh bien, justement, j'ai un défi pour vous.
+Sachant tout ce qu'on a vu, 
 est-ce que vous sauriez définir un corps fini à 4 éléments ?
 Pour rappel pour cela, il faut définir 4 objets, qu'on peut appeler 0, 1, a et b.
 Et surtout il faut définir comment ces objets interagissent,
@@ -131,6 +142,12 @@ qui doivent être symétriques selon la diagonale principale,
 avec la neutralité de l'addition par 0 et la multiplication par 1,
 et l'apparition de tous les éléments une et une seule fois dans chaque ligne et colonne,
 à l'exception de la ligne et de la colonne multiplicative du 0.
+
+Eh bien, on peut commencer par remplir toutes les cases évidentes
+de ces tables d'addition et de multiplication,
+à savoir la ligne et la colonne d'addition du 0,
+ainsi que les lignes et colonnes de multiplication du 0 et du 1.
+Il reste toutefois 9 cases à remplir pour l'addition, et 4 pour la multiplication.
 
 | + | 0 | 1 | a | b |
 | - | - | - | - | - |
@@ -148,7 +165,11 @@ et l'apparition de tous les éléments une et une seule fois dans chaque ligne e
 
 On peut commencer par la table de multiplication,
 qui a moins de cases à remplir.
-Dans la ligne du a, il manque le 1 et le b.
+Et pour le coup, ce n'est vraiment pas si difficile.
+C'est bien plus facile qu'un sudoku !
+Donc je vous invite vraiment à mettre pause et à la remplir vous-même !
+
+Dans la ligne du a, on voit qu'il manque le 1 et le b.
 Mais le b ne peut pas aller tout au bout, 
 car il y a déjà un b dans la dernière colonne.
 Du coup, il faut mettre le b dans la colonne du a,
@@ -195,6 +216,9 @@ c'est lorsque le nombre est déjà égal à 0.
 Là encore, il s'agit d'un théorème plus général sur les corps :
 si une multiplication de deux nombres vaut zéro,
 alors au moins l'un des deux nombres doit lui-même être zéro.
+Ça vient du fait que dans la table du multiplication,
+il n'y a des zéros que dans les lignes et les colonnes du zéro.
+
 Quoi qu'il en soit, comme `(1+1) * (1+1) = 0`,
 on conclut que `1 + 1` doit être égal à 0.
 
@@ -243,12 +267,14 @@ Appelons p le plus petit nombre de 1 tel que leur somme s'annule.
 Ce nombre p est aussi connu sous le nom de "caractéristique" du corps.
 
 On peut faire la remarque que p est forcément premier.
-En effet, sinon, la somme de p termes égaux à 1 pourrait se factoriser
-en `(1 + 1 + ... + 1) * (1 + 1 + ... + 1) = 0`.
+En effet, sinon p doit pouvoir s'écrire $a \times b$ pour a et b strictement inférieur à $p$, 
+et du coup la somme de p termes égaux à 1 pourrait se factoriser
+en `(1 + 1 + ... + 1) * (1 + 1 + ... + 1) = 0`,
+avec $a$ termes dans la première somme et $b$ dans la seconde.
 Or on a vu que le produit de deux nombres ne peut être nul 
 que si au moins un des termes est nul ;
 or dans chaque terme, le nombre de terme est strictement inférieur à p.
-Ainsi la charactéristique des corps finis est toujours un nombre premier ---
+Ainsi la caractéristique des corps finis est toujours un nombre premier ---
 et c'est ça qui rend les nombres premiers si centraux à la théorie des corps finis,
 et à la cryptographie qui en fait abondamment usage.
 
@@ -273,7 +299,7 @@ On a d'ailleurs déjà vu un exemple de tel corps, à savoir le corps à 3 élé
 Et oui, p = 3 est un nombre premier !
 On peut de même détailler 
 les tables d'addition et de multiplication du corps à 5 éléments,
-qui correspondent aux opérations modul 5.
+qui correspondent aux opérations modulo 5.
 
 | + | 0 | 1 | 2 | 3 | 4 |
 | - | - | - | - | - | - |
@@ -349,7 +375,7 @@ au corps fini à 2 éléments.
 On a alors 4 valeurs possibles : `0 + 0k`, `1 + 0k`, `0 + 1k`, `1+1k`,
 qu'on peut réécrire 0, 1, k et k+1.
 
-Notez que 0 et 1 se combine comme avant,
+Notez que 0 et 1 se combinent comme avant,
 tandis que `k+k = 0 + (1+1)k = 0 + 0k = 0`.
 Du coup, on obtient la table d'addition suivante :
 
@@ -419,13 +445,13 @@ Et en pratique, les informaticiens identifient de telles expressions
 pour ensuite concevoir des corps finis.
 
 Par exemple, le corps fini à 2⁴ = 16 éléments peut se construire à partir de F<sub>2</sub>,
-en s'appuyant sur le nombre imaginaire k défini par `k⁴ = k + 1`.
-Et ça, ça marche, parce que le polynome `X⁴ - X - 1` est irréductible dans F<sub>2</sub>,
+en s'appuyant sur le nombre imaginaire k défini par $k^4 = k + 1$.
+Et ça, ça marche, parce que le polynome $X^4 - X - 1$ est irréductible dans F<sub>2</sub>,
 et qu'il est de degré 4, c'est-à-dire que la plus grande puissance est 4.
 En pratique, les informaticiens utilisent particulièrement le corps fini à 2⁸ = 256 éléments,
 notamment car ils regroupent souvent les bits par paquets de 8,
 qui forment alors un octet.
-On utilise alors le nombre imaginaire k défini par `k⁸ = k⁴ + k³ + k² + 1`,
+On utilise alors le nombre imaginaire k défini par $k^8 = k^4 + k^3 + k^2 + 1$,
 qui correspond à un polynome irréductible.
 Comme on le verra la prochaine fois,
 c'est ce nombre imaginaire qui est utilisé dans les QR Codes.
@@ -436,12 +462,13 @@ En effet, tout élément de F<sub>2<sup>n</sup></sub> s'écrit
 a<sub>0</sub> + a<sub>1</sub> k + a<sub>2</sub> k² + ... + a<sub>n-1</sub> k<sup>n-1</sup>,
 puisque les puissances supérieures sont réduites par la définition du nombre imaginaire $k$.
 Et donc, on peut l'encoder, en ne retenant que les coefficients a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub>.
-Or chaque terme a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub> doit appartenir à F<sub>2,
+Or chaque terme a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub> doit appartenir à F<sub>2</sub>,
 le corps à 2 éléments, dont on sait qu'ils sont 0 ou 1.
-Et donc l'encodage a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub>$ est naturellement binaire :
+Et donc l'encodage a<sub>n-1</sub>, a<sub>n-2</sub>, ..., a<sub>0</sub> est naturellement binaire :
 il s'agit d'une suite de n bits !
 
-L'addition dans F<sub>2<sup>n</sup></sub> correspond alors naturellement à une addition terme à terme sans retenue.
+L'addition dans F<sub>2<sup>n</sup></sub> correspond alors à une addition terme à terme, 
+mais, attention, sans retenue.
 Par exemple dans F<sub>2⁴</sub>, les nombres `k³ + k + 1` et `k² + 1` 
 sont respectivement encodés par `1011` et `0101`.
 Leur addition donne `k³ + k² + k + (1+1)`.
@@ -479,7 +506,7 @@ comme on l'a défini, car cet encodage doit être une suite de 4 bits.
 
 L'astuce est maintenant de réduire ce résultat,
 à l'aide de l'équation fondamentale du nombre imaginaire k,
-qu'on a défini comme `k⁴ = k+1`.
+qu'on a défini comme $k^4 = k+1$.
 En notation binaire, ça veut dire que `10000 = 0011`.
 Utilisons cela pour réduire `1110010`:
 
@@ -536,8 +563,8 @@ Il faut juste prêter attention
 à chaque fois qu'on atteint ou qu'on dépasse 111.
 
 Illustrons cela en faisant `100 * 100`. 
-On obtient alors 100000, qui se décompose en
-10000 = 10000 - 1110 = 10.
+On obtient alors 10 000, qui se décompose en
+10 000 = 10000 - 1110 = 10.
 
 Plus généralement tous les nombres premiers de la forme 2<sup>r</sup> - c,
 avec un petit nombre impair c,
@@ -586,7 +613,7 @@ voire de garantir l'existence et l'unicité d'une clôture algébrique pour tout
 Mais ceci requiert de basculer dans le monde des maths non-constructives,
 ce qui nous éloigne drastiquement des applications.
 
-Mais tout ça, en cryptographie, en tout cas dans les protocoles les plus standards,
+En cryptographie, en tout cas dans les protocoles les plus standards,
 il n'y a pas lieu de se soucier de ces aspects.
 L'ensemble des corps finis à p<sup>n</sup> éléments est un espace déjà suffisamment riche,
 et surtout suffisamment calculable,
