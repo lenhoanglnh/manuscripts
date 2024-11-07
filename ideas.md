@@ -3,25 +3,18 @@
 Le vote par popularité insoupçonnée
 Le fréquentisme est statistiquement inadmissible
 
-
 ## Éthique 
 
 YouTube (EIT paper)
+Le doomscrolling passif
 Gouverner sans majorité
 Le réseau de confiance
 
-
 ## IA
 
-Le transformeur
 RAG
 
-
 ## Cyber
-
-Les nombres premiers sûrs
- - 4 safe_primes
- - Vignette Sophie Germain avec nombres premiers barrés
 
 Les nombres imaginaires de l'informatique 
  - 5 corps finis
@@ -34,6 +27,9 @@ Qui est-ce ? (avec des mensonges !)
 La backdoor des US 
  - 7 Courbes elliptiques
  - Vignette équation y² = x³ - 3x + b (+ Snowden ?)
+
+Le postquantique
+ - 8 postquantum
 
 L'art d'être prévisiblement imprévisible ? (SHA-2, AES...)
  - 8 aes
@@ -69,15 +65,20 @@ Contrôler une supercalculatrice avec une armée de fourmis
  - Vignette fourmis sur un serveur
 
 L'algorithme GKR
+ - gkr
  - Vérifier #SAT
  - Réduire la taille exponentiellement
 
 Les fiançailles cryptographiques
+ - commit
  - Commit and prove
  - (Sparse) Merkle tree
  - Vérifier l'intégrité des données avec un hash
  - Lemme de Schwartz-Zippel
 
+Le déchet toxique de Zcash
+ - kzg
+ - KZG
 
 
 Protéger les codes nucléaires
@@ -85,7 +86,6 @@ Protéger les codes nucléaires
  - Vignette ?
 
 Le problème des anniversaires (et les tables de hachage, le logarithme...)
-
 Le problème des traders confidentiels et curieux
 La confidentialité différentielle
 La dette technique européenne (résilience informationnelle vs IA spectaculaires)
