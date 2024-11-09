@@ -233,8 +233,10 @@ forme alors ce qu'on appelle un groupe commutatif.
 Et de façon remarquable, ce sera le cas,
 quel que soit le corps des nombres sur lequel la courbe elliptique est définie.
 Dès lors, on va simplifier les notations, 
-et remplace l'opérateur `Compo` par un signe usuel pour les groupes commutatifs,
-comme le signe $\oplus$.
+et remplace l'opérateur `Compo` par un signe usuel pour les groupes commutatifs.
+Dans cette vidéo, je vais utiliser le signe $\oplus$,
+pour montrer que ça ressemble à l'addition sans être l'addition usuelle ;
+mais noter qu'il est courant d'utiliser le signe de l'addition $+$.
 Et oui, on va dire qu'on peut ajouter des points de la courbe elliptique.
 Faites très attention toutefois,
 l'addition des points de la courbe elliptique n'est pas du tout une addition usuelle ;
@@ -369,17 +371,38 @@ L'ensemble des points obtenus ainsi est appelé le groupe cyclique généré par
 
 > Ceci correspond formellement à un morphisme de groupe `EntierRelatif -> CourbeElliptique`.
 
-Sur un corps fini, on sait qu'il y a un nombre fini de points sur la courbe elliptique,
-ne serait-ce parce qu'il y a un nombre fini de paires (x,y),
-où x et y sont des nombres du corps fini.
-Du coup, on sait que la suite $w G$ doit finir par boucler,
-et en fait, 
-on peut montrer qu'elle revient au point fictif $0$ ajouté à la courbe elliptique.
-En pratique, toutefois, la première valeur de $w > 0$ telle que $w G = 0$
-est cryptographiquement grande.
-Pour Curve25519, ce nombre est $2^{252} + 27742317777372353535851937790883648493$,
-soit approximativement le nombre de particules dans l'univers.
-Même une superintelligence serait très incapable de lister tous les points
+Prenons l'exemple de $G = (-3, 1)$ de la courbe $y^2 = x^3 - 2x [11]$.
+On a alors $2G = G \oplus G = (0, 0)$.
+Puis $3G = G \oplus 2G = (-3, 1) \oplus (0, 0) = (-3, -1)$.
+Et ensuite $4G = G \oplus 3G = (-3, 1) \oplus (-3, -1) = 0$.
+On vient de retomber à 0 après 4 itérations.
+Mais du coup, $5G = G \oplus 4G = G \oplus 0 = G$.
+En fait le groupe généré par $G$ n'a ici que 4 éléments.
+Et en particulier, on n'a absolument pas visité les 12 points
+de la courbe elliptique $y^2 = x^3 - 2x$ modulo $11$.
+Si vous avez vu la vidéo sur les [nombres premiers sûrs](),
+cela ne vous surprend peut-être pas.
+En fait, $y^2 = x^3 - 2x [11]$ n'est pas une très bonne courbe elliptique,
+car son nombre de point, à savoir 12, est un nombre très friable,
+c'est-à-dire qu'il s'écrit comme le produit de nombre premiers tous très petits.
+
+À l'inverse, considérons la courbe $y^2 = x^3 + 3x + 2 [11]$.
+Comme vous pouvez le voir dans l'application,
+cette courbe a 12 points, plus le point $0$ à l'infini,
+soit un total de 13 points.
+Et 13, c'est beaucoup mieux que 12, puisque 13 est un nombre premier.
+En particulier, peu importe votre point $G$ initial,
+le groupe engendré par $G$ va lui bien passer par tous les points de la courbe elliptique.
+
+Notez que Curve25519 lui n'a pas cette jolie propriété, mais elle l'a presque.
+Son nombre de point est en effet égal à $8r$,
+où $r = 2^{252} + 27742317777372353535851937790883648493$ est lui bel et bien un nombre premier,
+dont la taille est cryptographiquement grande.
+En particulier, en pratique, on a choisi un point $G$ de Curve25519
+tel que le groupe engendré par ce point $G$ est d'ordre $r$ uniquement.
+Notez que ce groupe est isomorphe au groupe additif des entiers modulo $r$ ;
+mais de façon cruciale, cet isomorphisme est à sens unique.
+Même une superpuissance serait très incapable de lister tous les points
 de la courbe elliptique Curve25519.
 
 En fait, ce $X = w G$ des courbes elliptiques, 
