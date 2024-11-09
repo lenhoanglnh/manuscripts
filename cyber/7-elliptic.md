@@ -49,7 +49,7 @@ et plus justifiées, que celles de la NSA.
 Mais oublions ces détails pour l'instant.
 Ce qui est intéressant à voir, 
 c'est que si on trace la courbe $y^2 = x^3 + ax + b$ dans un logiciel comme Desmos,
-par exemple ici pour `a = -3` et `b = 5`,
+par exemple ici pour `a = 1` et `b = 1`,
 on obtient cette figure assez caractéristique.
 
 Mais ça, ça correspond aux solutions $(x,y)$ pour des nombres réels.
@@ -262,48 +262,50 @@ Vous pouvez rentrer vos paramètres de la courbe elliptique,
 à savoir les coefficients $a$ et $b$ de l'équation $y^2 = x^3 + ax + b$,
 et le nombre $p$ modulo lequel on va effectuer les calculs.
 
-Pour $a = -2$, $b = 0$ et $p = 11$ par exemple,
+Pour $a = 1$, $b = 1$ et $p = 5$ par exemple,
+c'est-à-dire la courbe $y^2 = x^3 + x + 1 [5]$,
 on peut tracer un quadrillage 
 dont les intersections sont les points $(x, y)$ qui sont des entiers modulo $p$,
 et on peut ensuite placer explicitement ceux qui sont solutions de l'équation modulo $p$.
 L'ensemble des points à l'écran correspond exactement à la courbe elliptique...
 ou presque ! N'oublions pas le point à l'infini qui n'est pas représenté ici.
-Ainsi le point $(0, 0)$, au centre de la figure,
-est bien un point de la courbe elliptique, 
-puisqu'il vérifie bien l'équation $y^2 = x^3 - 2x$.
-De même, le point $(5, 4)$ est aussi solution,
-puisque $y^2$ est alors égal à $5^2 = 25 = 1 [p=11]$,
-et que $x^3 - 2x = 4^3 - 2 \cdot 4 = 64 - 8 = 56 = 11 \cdot 5 + 1 = 1 [p=11]$ aussi.
+Ça nous fait donc une courbe composée de 1, 2, 3, 4, 5, 6, 7, 8 et 9 points.
 
-Sur le corps fini des nombres modulo $11$,
+Ainsi le point $(x = 0, y = 1)$ est bien un point de la courbe elliptique, 
+puisqu'il vérifie bien l'équation $y^2 = x^3 + x + 1$.
+De même, le point $(2, 1)$ est aussi solution,
+puisque $y^2$ est alors égal à $1^2 = 1 [5]$, 
+et $x^3 + x + 1$ est égal à $2^3 + 2 + 1 = 8 + 2 + 1 = 11 = 5 + 5 + 1 = 1 [5]$.
+
+Sur le corps fini des nombres modulo $5$,
 clairement, notre courbe elliptique ne ressemble plus trop à une courbe.
 Néanmoins, l'ensemble de ses points n'a rien d'aléatoire !
 Au contraire, il dispose de nombreuses propriétés fascinantes.
 
 On peut commencer par observer une symétrie par rapport à l'axe des abscisses,
-qui vient tout simplement du fait que $y$ doit être une racine carrée de $x^3 - 2x$.
+qui vient tout simplement du fait que $y$ doit être une racine carrée de $x^3 + x + 1$.
 Et bien sûr, si $y$ est une racine carrée, alors $-y$ le sera aussi.
 
 De façon plus spectaculaire, si je prends deux points de la courbe elliptique,
 ils couperont un troisième point de la courbe.
-Par exemple, si je prends les points $(-3, 1)$ et $(-1, 1)$,
-alors la droite qui passe par ces points coupera un troisième point, à savoir $(4, 1)$.
-D'ailleurs, ça, ça implique la somme $(-3, 1) \oplus (-1, 1)$ dans la courbe elliptique
-va donner comme résultat l'image du troisième point $(4, 1)$ par l'axe des abscisses,
-à savoir $(4, -1)$.
-On a l'égalité $(-3, 1) \oplus (-1, 1) = (4, -1)$.
+Par exemple, si je prends les points $(0, 1)$ et $(2, 1)$,
+alors la droite qui passe par ces points coupera un troisième point, à savoir $(-2, 1)$.
+D'ailleurs, ça, ça implique la somme $(0, 1) \oplus (2, 1)$ dans la courbe elliptique
+va donner comme résultat l'image du troisième point $(-2, 1)$ par l'axe des abscisses,
+à savoir $(-2, -1)$.
+On a l'égalité $(0, 1) \oplus (-2, 1) = (-2, -1)$.
 
-De même, la droite qui passe par $(-1, -1)$ et $(0, 0)$ passe aussi par $(2, 2)$,
-ce qui revient à dire que $(-1, -1) \oplus (0, 0) = (2, -2)$.
+De même, la droite qui passe par $(-1, -2)$ et $(0, -1)$ passe aussi par $(2, 1)$,
+ce qui revient à dire que $(-1, -2) \oplus (0, -1) = (2, -1)$.
 
 Mais il y a plus vicieux.
-Si je prends la droite qui passe par $(-1, 1)$ et $(2, 2)$,
+Si je prends la droite qui passe par $(-1, -2)$ et $(2, -1)$,
 on pourrait croire dans un premier temps qu'elle ne passe pas 
 par un troisième point de la courbe elliptique,
 comme le suggère ce dessin.
 Sauf qu'il ne faut pas oublier qu'on travaille modulo un nombre premier $p$.
-Et donc, en fait, le point tout à droite, en $(5.5, 3.33)$,
-c'est en fait le même que le point à gauche, en $(-5.5, 3.33)$.
+Et donc, en fait, le point tout à droite, en $(2.5, -0.67)$,
+c'est en fait le même que le point à gauche, en $(-2.5, 0.67)$.
 En fait, l'ensemble des coordonnées modulo $p$, 
 ça correspond en fait au monde de Pacman, où les côtés opposés sont en fait collés.
 Dans le jargon, on parle en fait de tore carré,
@@ -312,7 +314,8 @@ dans une [vieille vidéo](https://tournesol.app/entities/yt:8v2JxCUDW6M).
 
 Bref. Du coup, la droite qui sort à droite doit réapparaître à gauche.
 Et quand elle sort en haut, elle doit réapparaître en bas.
-Et c'est ainsi que cette droite finit bel et bien par couper un troisième point.
+Et c'est ainsi que cette droite finit bel et bien par couper un troisième point,
+à savoir (-2, 1).
 Magique, non ?
 
 Et bien, sur l'application que j'ai développé, 
@@ -324,7 +327,7 @@ avec cette propriété remarquable.
 Mais comme vous voyez, cela marche en fait toujours...
 
 Ou presque. Voici un cas où ça ne marche pas.
-Si je prends deux points avec la même abscisse,
+Si je prends deux points avec la même abscisse, comme (0, 1) et (0, -1),
 je n'ai pas de 3e intersection.
 Mais vous voyez pourquoi ce n'est pas un problème ?
 En fait, on a introduit le $0$ des courbes elliptiques précisément pour résoudre ce problème.
@@ -333,22 +336,25 @@ va être défini comme étant égal à un point infini tout en haut,
 qu'on appelle le $0$.
 Et d'ailleurs, on voit que cela implique bien que les points symétriques
 selon l'axe des abscisses sont bien opposé selon l'opération des courbes elliptiques.
-En effet, si $P$ et $Q$ sont symétriques, on a bien $P \oplus Q = 0$,
-ce qu'on pourrait écrire $Q = \ominus P$.
+En effet, comme $(0, 1) \oplus (0, -1) = 0$,
+ce qu'on pourrait écrire $(0, 1) = \ominus (0, -1)$.
 
 Enfin, si vous testez bien toutes les possibilités,
 vous finirez peut-être par tomber sur une autre exception.
-Par exemple, la droite qui passe par $(2, 2)$ et $(5, 4)$
+Par exemple, la droite qui passe par $(-2, -1)$ et $(0, 1)$
 ne semble couper aucun autre point.
 Bizarre, non ?
 
 Si vous regardez l'application, 
-vous verrez qu'elle dit toutefois que leur combinaison est censée donner le point $(2, -2)$.
+vous verrez qu'elle dit toutefois que leur combinaison est censée donner le point $(-2, 1)$.
 Vous voyez ce qu'il se passe ?
-On semble avoir $(2, 2) \oplus (5, 4) = (2, -2) = \ominus (2, 2)$.
-Mais donc, on a en fait $(2, 2) \oplus (2, 2) \oplus (5, 4) = 0$.
-En fait, la droite qui passe par $(2, 2)$ et $(5, 4)$ passe deux fois par $(2, 2)$.
-C'est une droite qui est en fait tangente à la courbe elliptique en $(2, 2)$.
+On semble avoir $(-2, 1) \oplus (0, 1) = (-2, 1) = \ominus (-2, -1)$.
+Mais donc, on a en fait $(-2, 1) \oplus (0, 1) \oplus (-2, 1) = 0$.
+En fait, la droite qui passe par $(-2, 1)$ et $(0, 1)$ passe deux fois par $(-2, 1)$.
+C'est une droite qui est en fait tangente à la courbe elliptique en $(-2, 1)$.
+Vous pouvez le vérifier sur l'application 
+en traçant la droite qui passe par $(-2, 1)$ et $(-2, 1)$ :
+elle passe bien par $(0, 1)$.
 Voici la seule exception à la règle des trois intersections,
 lorsqu'on tient bien compte du point à l'infini en haut.
 
@@ -371,26 +377,25 @@ L'ensemble des points obtenus ainsi est appelé le groupe cyclique généré par
 
 > Ceci correspond formellement à un morphisme de groupe `EntierRelatif -> CourbeElliptique`.
 
-Prenons l'exemple de $G = (-3, 1)$ de la courbe $y^2 = x^3 - 2x [11]$.
-On a alors $2G = G \oplus G = (0, 0)$.
-Puis $3G = G \oplus 2G = (-3, 1) \oplus (0, 0) = (-3, -1)$.
-Et ensuite $4G = G \oplus 3G = (-3, 1) \oplus (-3, -1) = 0$.
-On vient de retomber à 0 après 4 itérations.
-Mais du coup, $5G = G \oplus 4G = G \oplus 0 = G$.
-En fait le groupe généré par $G$ n'a ici que 4 éléments.
-Et en particulier, on n'a absolument pas visité les 12 points
-de la courbe elliptique $y^2 = x^3 - 2x$ modulo $11$.
+Prenons l'exemple de $G = (2, 1)$ de la courbe $y^2 = x^3 + x + 1 [5]$.
+D'après l'application, on a alors $2G = G \oplus G = (2, -1)$.
+Puis $3G = G \oplus 2G = (2, 1) \oplus (2, -1) = 0$.
+On vient de retomber à 0 après 3 itérations.
+Mais du coup, $4G = G \oplus 3G = G \oplus 0 = G$.
+En fait le groupe généré par $G$ n'a ici que 3 éléments.
+Et en particulier, on n'a absolument pas visité les 9 points
+de la courbe elliptique $y^2 = x^3 + x + 1$ modulo $5$.
 Si vous avez vu la vidéo sur les [nombres premiers sûrs](),
 cela ne vous surprend peut-être pas.
-En fait, $y^2 = x^3 - 2x [11]$ n'est pas une très bonne courbe elliptique,
-car son nombre de point, à savoir 12, est un nombre très friable,
+En fait, $y^2 = x^3 + x + 1 [5]$ n'est pas une très bonne courbe elliptique,
+car son nombre de point, à savoir 9, est un nombre friable,
 c'est-à-dire qu'il s'écrit comme le produit de nombre premiers tous très petits.
 
-À l'inverse, considérons la courbe $y^2 = x^3 + 3x + 2 [11]$.
+À l'inverse, considérons la courbe $y^2 = x^3 + 2x + 1 [5]$.
 Comme vous pouvez le voir dans l'application,
-cette courbe a 12 points, plus le point $0$ à l'infini,
-soit un total de 13 points.
-Et 13, c'est beaucoup mieux que 12, puisque 13 est un nombre premier.
+cette courbe a 6 points finis, plus le point $0$ à l'infini,
+soit un total de 7 points.
+Et 7, c'est beaucoup mieux que 9, puisque 7 est un nombre premier.
 En particulier, peu importe votre point $G$ initial,
 le groupe engendré par $G$ va lui bien passer par tous les points de la courbe elliptique.
 
