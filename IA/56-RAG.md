@@ -70,18 +70,18 @@ Idem d'ailleurs pour [Facebook](https://gizmodo.com/ai-bard-google-facebook-trai
 Pour augmenter la fiabilité de l'algorithme,
 on peut alors effectuer un "peaufinage", qu'on appelle "fine-tuning" en anglais,
 et qui consiste typiquement à demander à des humains d'évaluer différentes réponses de l'algorithme.
-L'approche la plus standard, 
-publicisée sous le nom de "reinforcement learning with human feedback",
-et qui revient à appliquer les algorithmes des années 1950
-comme on l'a vu dans une [vidéo précédente](https://tournesol.app/entities/yt:2cvj2-Vh8Uc),
-cette approche consiste à demander à des humains de fournir des jugements comparatifs
+L'approche la plus standard a été publicisée 
+sous le nom de "reinforcement learning with human feedback",
+alors qu'elle revient simplement à appliquer les algorithmes des années 1950
+comme on l'a vu dans une [vidéo précédente](https://tournesol.app/entities/yt:2cvj2-Vh8Uc).
+Cette approche consiste à demander à des humains de fournir des jugements comparatifs
 entre des réponses proposées par l'algorithme,
-et d'ensuite modifier l'algorithme pour qu'il favorise la génération de textes
+et à ensuite modifier l'algorithme pour qu'il favorise la génération de textes
 que les humains sondés préfèrent,
-exactement comme on le fait sur Tournesol dans le cas des IA de recommandation.
+un peu comme on le fait sur Tournesol dans le cas des IA de recommandation.
 Cependant, cette approche de peaufinage est coûteuse,
 à la fois en termes de ressources humaines et de ressources en calculs,
-et son efficacité est loin d'être suffisante.
+et son efficacité est loin d'être suffisante pour une tâche aussi complexe que le langage.
 
 Notez qu'on parle aussi de "peaufinage" pour la poursuite du pré-entraînement,
 mais cette fois sur des données proches du cas d'usage de l'algorithme.
@@ -105,6 +105,10 @@ Mais surtout, le pré-prompting est nécessairement limité car il ne peut pas �
 Les modèles de langage ont en effet une fenêtre contextuelle restreinte,
 ce qui fait qu'au bout d'un moment, 
 ils oublient complètement ce qui a été dit précédemment.
+Alors, il y a différentes astuces pour tenter d'augmenter cette fenêtre contextuelle,
+mais les performances sont limitées,
+et elles ne suffisent pas à retenir des énormes quantités d'information,
+comme l'ensemble des transcripts des vidéos Science4All par exemple.
 
 On en vient alors à la quatrième et dernière approche,
 qui va demander plus de travail humain et calculatoire que le pré-prompting,
@@ -154,7 +158,7 @@ on obtient un vecteur très proche du vecteur du mot "reine".
 Au delà de cette opération algébrique mystérieuse,
 l'observation fondamentale de word2vec,
 c'est que les mots dont le sens est intuitivement similaire
-ont tendance à avoir des représentation vectorielle similaire.
+ont tendance à avoir des représentations vectorielles similaires.
 Le mot "chien" est ainsi proche du mot "chat".
 On peut donc utiliser la similarité des représentations vectorielles
 pour déterminer si deux mots se font référence,
@@ -235,11 +239,11 @@ on aurait su que le problème avait été mathématiquement résolu 3 ans plus t
 [par les informaticiens Alexandr Andoni et Ilya Razenshteyn](https://dl.acm.org/doi/pdf/10.1145/2746539.2746553).
 
 Plus précisément, étant donné n vecteurs de la base de données vectorielle,
-chaque vecteur étant de dimension d,
+chaque vecteur étant de dimension d, qu'on illustre ici avec le cas $d = 2$,
 le problème du plus proche voisin consiste à concevoir un algorithme qui,
 étant donné un vecteur requête x,
 retourne le vecteur y le plus proche de x dans la base de données.
-Ce problème est simple à résoudre en dimension d = 1 :
+Ce problème est simple à résoudre en dimension $d = 1$ :
 il suffit de trier les vecteurs de la base de données par ordre croissant,
 puis d'effectuer une recherche dichotomique.
 Le temps nécessaire pour résoudre ce problème est alors logarithmique en n,
@@ -252,28 +256,39 @@ est celui de concevoir un algorithme qui, étant donné un vecteur requête x,
 retourne un vecteur z de la base de données tels que
 la distance entre x et z est inférieure à c fois celle entre x et y ;
 où y est le plus proche vecteur dans la base de données.
+Donc, par exemple, dans ce dessin, c'est ok de retourner ce point,
+mais cet autre point est beaucoup trop loin et ne devrait pas être renvoyé.
 
-Eh bien, Andoni et Razenshteyn ont conçu un algorithme
+De façon amusante, ce problème ressemble beaucoup à celui de la cryptographie postquantique,
+dont on reparlera plus tard dans la série sur la cybersécurité...
+
+En tout cas, en 2015, Andoni et Razenshteyn ont conçu un algorithme
 dont le temps de calcul de l'ordre de $d n^{\frac{1}{2c^2 - 1}}$,
 ce qui est optimal.
 Ainsi pour $c = 2$, ce temps de calcul est $d n^{1/7}$,
 ce qui est beaucoup moins de $dn$,
 dès lors que la base de données vectorielles contient un grand nombre n d'entrées.
+Si $n = 10^{14}$, soit cent mille milliards,
+alors $n^{1/7} = 100$, ce qui est beaucoup moins que $n$ lui-même.
 
-L'idée de base de cet algorithme,
+L'idée de base de l'algorithme d'Andoni et Razenshteyn,
 c'est de prendre des directions aléatoires de l'espace et de les sauscissonner.
 En faisant cela pour un certain nombre de directions,
 qui reste très inférieur à la dimension d de l'espace,
 on obtient des sortes de cellules de l'espace,
 qu'on peut alors numéroter.
-Eh bien, en gros, avec grande probabilité, 
+Notez qu'on va sauscissonner uniquement un petit nombre de directions,
+si bien que les cellules en questions seront en fait infinies
+selon les directions orthogonales aux directions aléatoires sélectionnées.
+
+Néanmoins, en gros, avec grande probabilité, 
 deux vecteurs seront assez proches si seulement si ils sont dans la même cellule.
 Cette technique de sauscissonnage aléatoire et partiel de l'espace
 est ce qu'on appelle celle du hachage avec sensibilité locale, ou LSH en anglais.
 Et bon, en fait, seule, elle ne suffit pas.
-Andoni et Razenshteyn ont conçu par dessus de nombreuses astuces,
-qui permettent d'affiner les cellules en fonction des données,
-ce qui leur a ensuite permis de trouver un algorithme optimal.
+Mais en ajoutant de nombreuses autres astuces,
+qui affinent notamment les cellules en fonction des données,
+Andoni et Razenshteyn ont réussi à concevoir un algorithme optimal.
 
 Notez toutefois que ces techniques de sauscissonage ne sont en fait pas
 les plus abondamment utilisées aujourd'hui,
@@ -287,6 +302,8 @@ L'idée globale des HNSW,
 c'est de mettre les données de la base de données vectorielles sur plusieurs étages,
 avec peu de données sur les étages les plus hautes,
 et beaucoup plus dans les bas étages.
+Sur chaque étage, on va construire un réseau de proches voisins,
+et on va créer des passerelles des étages au-dessus vers en dessous.
 Étant donné une requête,
 on va alors chercher la donnée du premier étage les plus proches,
 puis explorer les données du second étage connectées à celle du premier étage sélectionnée,
@@ -319,12 +336,31 @@ voir idéalement leur exploration par chiffrement homomorphe...
 
 ## Quelques autres considérations
 
-Pour améliorer les performances de récupération de l'information,
+L'un des intérêts de la structure non-paramétrique du RAG,
+c'est qu'il permet de naturellement segmenter les données auxquelles un RAG a accès,
+en fonction des privilèges de l'employer qui l'utilise.
+Ainsi, le calcul des représentations vectorielles des documents internes d'une entreprise
+peut très bien s'effectuer sans tenir compte de ces privilèges,
+ce qui réduit les besoins de refaire le travail pour chaque niveau de privilège.
+Cependant, on peut ensuite concevoir plusieurs bases de données vectorielles,
+avec pour chacune l'ensemble des données 
+auxquelles une catégorie d'employés peut accéder.
+Voilà qui revient à appliquer le principe de cloisonnement avec moindre privilège,
+dont Romain du Marais et moi vous parlons dans notre livre
+"Guide de survie au cybercrime en entreprise" paru chez Dunod,
+avec une préface de Guillaume Poupard.
+
+Bien sûr, idéalement, il faut aussi appliquer la défense en profondeur,
+et combiner cette solution à d'autres pour protéger au mieux 
+les données de votre entreprise contre la croissance terrifiante du cybercrime.
+
+Par ailleurs, pour améliorer les performances de récupération de l'information,
 en pratique,
 on s'est rendu compte qu'il était utile de demander à des algorithmes de langage
 de reformuler la requête de plusieurs manières,
 et d'ensuite prendre une représentation vectorielle de toutes ces formulations.
-Voilà qui peut améliorer a procédure de récupération de l'information.
+Autrement dit, on automatise le "prompt engineering".
+Voilà qui peut améliorer la procédure de récupération de l'information.
 
 Par ailleurs, on peut demander à des humains d'évaluer les performances
 de la récupération de l'information,
@@ -416,6 +452,8 @@ Quoi qu'il en soit,
 on peut douter de la conformité des recommandations de Google
 avec celle que feraient les citoyens ou les experts pertinents.
 Or résoudre le problème de l'évaluation collaborative des sources d'information,
+de sorte à ensuite faciliter la tâche de recommandation des sources d'information,
+aussi bien pour les algorithmes que pour les humains,
 ça me semble être l'urgence démocratique numéro 1 du monde moderne.
 Et pour y arriver, j'ai participé à la création et au développement de la plateforme Tournesol,
 qui vise à évaluer la recommandabilité des vidéos YouTube
