@@ -290,7 +290,7 @@ On dit que le sous-corps engendré par (0, 1) est un corps fini à p éléments.
 En fait, chaque élément de ce sous-corps est directement identifié par le nombre de 1
 qui compose son écriture en somme de 1.
 C'est juste que quand ce nombre excède p, alors on peut lui retirer p termes,
-car la somme de ces p termes est égale à 1.
+car la somme de ces p termes est égale à 0.
 Vous le voyez peut-être venir, ce corps fini à p éléments n'est autre
 que l'ensemble des nombres dits "modulo p",
 c'est-à-dire l'ensemble des nombres entiers avec l'égalité "forcée" p = 0.
@@ -429,6 +429,8 @@ Mais, donc, pourquoi est-ce que `k² = k+1` est un bon choix,
 mais `k² = -1` en est un mauvais ?
 
 Eh bien, ça vient du fait que l'équation `X² = -1` a déjà une solution dans F<sub>2</sub>.
+Et oui, modulo 2, $-1 = 1 [2]$, et donc cette équation n'est autre que $X^2 = 1$,
+qui a pour solution $X = 1$.
 Vous vous souvenez peut-être que, si on a introduire le nombre imaginaire i,
 c'est parce qu'on ne pouvait pas prendre la racine carrée de -1 dans le corps des nombres réels.
 L'équation `X² = -1` n'a pas de solution réelle.
