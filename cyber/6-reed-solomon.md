@@ -1,17 +1,23 @@
 # Qui est-ce ? (avec un mensonge !)
 
 Imaginez une partie un peu spéciale du jeu "qui est-ce ?"
-où chaque joueur a le droit de mentir une seule fois.
+où chaque joueur a le droit de mentir au plus une seule fois.
 Prenons le cas particulier où vous avez 4 personnages possibles.
 L'autre joueur a l'un de ces personnages dans la main,
 mais vous ne savez pas lequel.
 Vous devez le déterminer, en posant uniquement des questions binaires.
 Par exemple, vous pouvez demander : "le personnage est-il une fille ?"
-Ou "le personnage a-t-il un micro ?".
+Ou "le personnage est-il habillé en noir ?".
 Et l'autre joueur doit répondre par oui ou par non.
 
 Sauf que contrairement au jeu classique,
 le joueur adverse a un droit unique au mensonge.
+Et ça, ça rend un jeu mathématiquement beaucoup plus intéressant !
+D'ailleurs, pour vous construire une intuition de ce jeu,
+je vous invite à y jouer, 
+en cliquant sur le lien en commentaire épinglé et en description de cette vidéo,
+à savoir [guesswho.science4all.org/fr.html](https://guesswho.science4all.org/fr.html).
+
 Quel est le nombre minimal de question à poser
 pour identifier avec certitude le personnage que l'autre joueur a dans la main ?
 Je vous invite à mettre pause, et à essayer de répondre vous même à cette question.
@@ -54,15 +60,20 @@ Les détails vont dépendre de l'encodage,
 mais par exemple, en utilisant l'UTF-8,
 tout message textuel peut être transformé en une suite de nombres
 entre 0 et 255.
+Chaque nombre est appelé un octet,
+parce qu'il s'écrit avec 8 bits.
 
-Par exemple, le mot "Lê" est encodé en UTF-8 par
+En python, pour obtenir l'encodage UTF-8 d'un texte `text`,
+il suffit ainsi de taper `list(text.encode())`.
+Ainsi, le mot "Lê" est encodé en UTF-8 par
 la suite de 3 nombres $m_1 = 76$, $m_2 = 195$ et $m_3 = 170$.
 Comment maintenant puis-je encoder cette suite de 3 nombres,
 de sorte que le code que j'obtiens soit résilient à des erreurs ?
 Une solution naïve serait d'envoyer 3 fois chaque nombre.
 Et donc, j'envoie (76, 76, 76, 195, 195, 195, 170, 170, 170).
-Ça me fait 9 octets à envoyer ;
-et en effet, s'il y a un octet erroné,
+Ça me fait 9 octets à envoyer.
+
+Et en effet, s'il y a un octet erroné,
 je saurai le détecter, et identifier sa bonne valeur.
 Mais cet encodage est très coûteux.
 Il requiert de tripler la quantité d'information envoyée.
@@ -89,6 +100,9 @@ Or une courbe parabolique peut être définie tout autrement aussi.
 Prenez trois points de l'espace,
 alors il existe en fait une et une seule parabole 
 qui passe par ces trois points.
+C'est un peu comme pour définir un plan dans l'espace :
+pour tout triplet de points dans l'espace 3D, 
+il existe un et un seul plan qui passe par ces points.
 Et bien, on tient là l'astuce pour définir le code de Reed-Solomon.
 
 L'idée va être de choisir non pas 3, mais 5 points désormais sur cette parabole,
@@ -117,8 +131,17 @@ On peut donc envisager 3 cas :
 - interpoler 1, 3 et 4, et voir si ça coupe 5. Bingo, c'est gagné !
 Grâce à l'envoi de 5 points, on a réussi à identifier l'erreur et à la corriger.
 
+En fait, mathématiquement, il se passe vraiment la même chose
+que si on avait pris 5 points d'un plan.
+Si un point n'est pas dans le plan contenant les 4 autres,
+et si on sait qu'il y a au plus un point erroné,
+c'est que ce point qui ne colle pas avec les autres est erroné !
+
 
 ## Le cas plus général
+
+On a donc vu comment encoder 3 morceaux d'information 
+à l'aide de 5 points d'une parabole, qui correspond à un polynôme de degré 2.
 
 Dans un cadre plus général, 
 si on veut encoder un message $(m_1, m_2, ..., m_k)$ de longueur $k$,
