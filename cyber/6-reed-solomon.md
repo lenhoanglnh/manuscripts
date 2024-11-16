@@ -295,7 +295,8 @@ Mais in fine, on obtient alors le tableau des encodages de Reed-Solomon suivants
  '11 01': '11 10 00 01'  
  '11 11': '11 00 01 10'
 
-Et je voulais vraiment vous montrer ça, 
+Ça peut paraître aride.
+Mais je voulais vraiment vous montrer ça, 
 parce qu'il y a quelque chose de magnifique dans la liste des codes obtenus.
 Pour commencer, on peut remarquer que, dans chaque colonne,
 il y a autant de 0 que de 1.
@@ -303,58 +304,84 @@ C'est un signe que l'encodage a bien été optimisé ;
 chaque bit envoyé, s'il n'est pas corrompu, a bien un bit d'information.
 
 En particulier, on peut maintenant transformer les codes de 8 bits de Reed-Solomon
-en une suite d 8 questions binaires.
+en une suite de 8 questions binaires.
 Pour cela, pour le premier bit,
-il suffit d'identifier toutes les lignes où le bit est égal à 1.
-Ces lignes correspondent à une moitié des personnages.
+il suffit d'identifier toutes les lignes où le premier bit est égal à 1.
+Ces lignes correspondent à une moitié des personnages ; 
+en l'occurence, ça correspond aux personnages de la 2e et de la 4e ligne.
 Et bien, pour récolter l'information sur la valeur du premier bit du code de Reed-Solomon,
 il suffit de demander si le personnage que l'autre joueur a en main
-fait partie de cette moitié des personnages.
+fait partie de ces lignes.
 Si la réponse est oui, c'est que le premier bit du code de Reed-Solomon est égal à 1.
 Sinon, il est égal à 0.
-Et en faisant cela pour chaque bit du code de Reed-Solomon,
-on peut alors récupérer ce code après 8 questions binaires.
 
-Par ailleurs, à l'exception des codes de 00 00 et 11 11,
+De même, le deuxième bit de l'encodage revient à demander
+si le personnage secret appartient est dans l'union des lignes 3 et 4.
+Bon, par contre, pour les questions suivantes,
+la question est plus longue à formuler,
+mais on peut y arriver en listant simplement les personnages
+qui ont un 1 dans le n-ième bit de l'encodage de Reed-Solomon.
+En faisant cela pour chaque bit du code de Reed-Solomon,
+et en supposant que l'adversaire ne ment jamais,
+on peut alors récupérer le code de Reed-Solomon après 8 questions binaires.
+
+Mais que se passe-t-il maintenant si l'adversaire ment ?
+Comment pourra-t-on retrouver l'identité de son personnage secret ?
+
+Pour comprendre la magie de Reed-Solomon, 
+on peut remarquer que, à l'exception des codes de 00 00 et 11 11,
 tous les codes obtenus ont exactement 4 valeurs 0, et 4 valeurs 1.
 Mais surtout, le plus fou, 
 c'est vraiment ce qu'il se passe quand on compare n'importe quelle paire de codes.
-Prenons par exemple des codes associés à 01 10 et 11 01.
-Ça nous donne les codes
+Prenons par exemple des codes associés Amy Plant et Osons Causer.
+Leurs codes de Reed-Solomon sont
 01 11 00 10 et
 11 10 00 01.
-On peut alors compter le nombre de bits pour lesquels ses codes diffèrent.
-On obtient 4.
-On dit que la distance de Hamming entre les deux codes est égale à 4.
+On peut alors identifier les bits pour lesquels ses codes diffèrent.
+Il s'agit du premier bit, du 4e bit, du 7e bit et du 8e bit.
+On obtient 4 désaccords.
+Dans le jargon des codes de correction d'erreur,
+la distance de Hamming entre les deux codes est égale à 4.
 
 Et bien, ce chiffre n'est pas spécifique aux deux codes qu'on a sélectionnés.
 Si on prend n'importe quelle paire de codes,
 le nombre de bits dont ils diffèrent va toujours être 4 ;
 à moins que les codes sont complètement opposés,
-comme celui de 00 00 et celui de 11 00.
+comme celui de Léa Bello et celui de Scilabus.
 
 Dans le jargon, on dit que la distance de Hamming 
 entre n'importe quelle paire de codes est supérieure ou égale à 4.
 Et bien, je vous mets au défi de concevoir une liste de 16 codes de longueur 8
 telle que la distance entre chaque paire est supérieure ou égale à 4,
 sans invoquer la théorie des corps fini et le code de Reed-Solomon !
-C'est assez fou ce qu'on a réussi.
+C'est très loin d'être trivial !
+C'est en fait assez fou ce que Reed-Solomon permet.
 
-Et d'ailleurs, cette distance de Hamming qui permet d'avoir un code robuste.
+Et d'ailleurs, cette distance de Hamming qui permet d'avoir un code qui tolère des erreurs ;
+ou dans le cas du jeu "qui est-ce ?", des mensonges.
 En effet, s'il y a une erreur sur un bit,
-alors obtiendra le code corrompu ne sera qu'à une distance de Hamming de 1 
-de l'un des codes valides de Hamming ; celui qu'il était avant l'erreur.
-Mais il sera en revanche à une distance de Hamming au moins 3 de n'importe quel autre code !
+alors le code de Reed-Solomon corrompu ne sera qu'à une distance de Hamming de 1
+du code correct de Reed-Solomon ;
+et oui, il n'aura subi qu'une modification.
+
+Mais surtout, il sera forcément à une distance de Hamming au moins 3 
+de n'importe quel autre code correct de Redd-Solomon !
 Et oui, à la base il était à une distance 4,
 et un changement d'un bit ne peut réduire cette distance que de 1.
+Eh bien ça, ça va clairement nous permettre de retrouver le bon code.
 
 D'ailleurs, on peut faire la remarque qu'il aurait suffi d'avoir des codes de Hamming
 dont la distance de Hamming entre n'importe quelle paire de code est supérieure égale à 3,
 pour garantir une reconstruction correcte avec au plus une erreur sur un bit.
 Dans notre cas, avec une distance de Hamming d'au moins 4,
-n peut faire la remarque que le code reste robuste malgré un changement de bit
-et une perte de bit,
+le code reste robuste malgré un changement de bit et une perte de bit,
 ce qui est un peu plus résilient encore !
+
+Autrement dit, il permet de garantir de trouver le personnage secret de l'adversaire 
+après avoir posé 8 questions binaires,
+y compris si on autorise l'adversaire à mentir une fois,
+et à refuser de répondre une autre fois !
+Pas mal, hein ?
 
 D'ailleurs, si vous n'avez pas résolu le problème du Qui Est-Ce avec 4 personnage,
 je vous invite à réfléchir à ces notions de codes de Hamming...
@@ -386,8 +413,8 @@ $Z^h = Z_1^{h_1} Z_2^{h_2} Z_3^{h_3} ... Z_q^{h_q}$,
 où $h$ est une suite binaire de $q$ bits.
 Eh bien, l'idée est d'associer à chacun des termes de la sortes 
 un coefficient $m_h$ qui dépend du message m à encoder.
-AUtrement dit, $m$ est encodé par le polynôme multilinéaire à plusieurs variables
-qui est la somme des $m_h Z^h$.
+Autrement dit, $m$ est encodé par le polynôme multilinéaire à plusieurs variables
+$Q(Z) = \sum_h m_h Z^h$ qui est la somme des $m_h Z^h$.
 
 Le code de Reed-Muller est obtenu en prenant les valeurs du polynôme $Q$
 pour ses différentes entrées.
@@ -409,6 +436,7 @@ pour les polynômes à une variable
 à des solutions qui exploitent les polynômes à plusieurs variables.
 
 Comme on le verra par la suite, ces polynômes à plusieurs variables,
+et en particulier les polynômes multilinéaires à plusieurs variables,
 dans lesquels résident tant de subtilités de la géométrie algébrique,
 à l'instar du dernier théorème de Fermat,
 sont des composants centraux de la cryptographie en général,
@@ -419,7 +447,6 @@ est souvent garantie d'être grande.
 
 ## Conclusion
 
-J'aimerais conclure avec un semi mea culpa.
 Face à l'urgence à résoudre les problèmes de nos sociétés,
 en particulier l'amplification algorithmique de la désinformation et de la haine,
 il m'arrive souvent de prendre à partie les sujets 
@@ -446,11 +473,20 @@ ces solutions semblent clé pour fournir des preuves de citoyenneté
 avec divulgation nulle de connaissance,
 capables de mimiquer les propriétés du vote à l'isoloir 
 pour de nombreuses applications sur le web.
+
+En particulier, la démocratie numérique qu'on envisage 
+dans notre livre [La Dictature des Algorithmes](https://www.tallandier.com/livre/la-dictature-des-algorithmes/),
+et dont on investigue les fondements via la recherche-action menée 
+par [Tournesol](https://tournesol.app/),
+semble absolument requérir des solutions cryptographiques
+qui s'appuient sur de la géométrie algébrique extrêmement complexe,
+mais aussi remarquablement séduisante,
+comme des preuves de citoyenneté sans divulgation d'identité.
 Décidément, les mathématiques ne cessent de me surprendre
 par leurs nombreuses applications souvent inattendues.
 
 Néanmoins, le fait que certaines parties de la géométrie algébrique 
-aient des applications qui me semblent essentielles 
+ont des applications qui me semblent essentielles 
 pour la protection des démocraties
 ne signifie pas que toutes les recherches dans le domaine lui soit utiles.
 Vu l'urgence démocratique,
@@ -466,5 +502,6 @@ ou du moins un pouvoir que beaucoup de militants pour la démocratie adoreraient
 "de grands pouvoirs impliquent de grandes responsabilités".
 
 Nous avons désespérément besoin de sécuriser notre cyberespace.
-Aidez-nous à y parvenir, pour le bien des démocraties.
+Il est urgent que les plus grands cerveaux de notre nation nous aide à y parvenir,
+pour augmenter les chances de survie de nos démocraties.
 
