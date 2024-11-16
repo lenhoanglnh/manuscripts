@@ -189,15 +189,16 @@ Donc ça ne marche pas de prendre les valeurs de P pour les valeurs 1, 2, 3...
 Mais il suffit d'utiliser des éléments distincts du corps $F_{256}$.
 En pratique, il y a même de nombreuses autres astuces 
 notamment pour faciliter les opérations de décodage ;
-mais le principe global est le même... même si l'interprétation géométrique devient bancale.
+mais le principe global est le même... 
+même si l'interprétation géométrique devient alors bancale.
 
 Et oui, je vous ai expliqué Reed-Solomon de manière géométrique,
 parce que c'est quand même plus sympa, et ça aide vraiment à comprendre ;
 mais en fait, l'intuition géométrique ne tient que pour les nombres réels !
+Or, en pratique, on utilise des nombres de corps finis comme $F_{256}$.
 Fort heureusement, grâce à la géométrie algébrique,
 qui est une sorte de dictionnaire de traduction entre la géométrie et l'algèbre,
 toutes mes illustrations correspondent à des calculs très clairement définis.
-
 En particulier, le mathématicien français Lagrange --- #Laplaaaace 
 Non... non... Lagrange pas Laplace.
 Ah ok...
@@ -211,8 +212,9 @@ lorsqu'on considère des nombres réels,
 sont algébriquement exactement les mêmes,
 si on considère maintenant des nombres de corps finis.
 
-Bref, pourvu qu'on sait multiplier et additionner correctement des octets,
-en utilisant notamment les règles du nombre imaginaire k du corps $F_{256}$,
+Bref, pourvu qu'on sait additionner, soustraire, multiplier et diviser correctement des octets,
+en utilisant notamment les règles du nombre imaginaire k du corps $F_{256}$
+vérifiant $k^8 = k^4 + k^3 + k^2 + 1$ comme on l'a vu la dernière fois,
 on est capable de calculer des espèces de courbes de ces corps finis,
 et de chercher en particulier une courbe associée à un polynôme,
 qui intersecte $k+t$ points parmis ceux qui nous ont été envoyés !
@@ -237,46 +239,60 @@ On a ainsi les quatre nombres de $F_4$ qui s'écrivent
 Dans ce qui est-ce, comme il y a 16 personnages possibles,
 on peut encoder l'identité du bon personnage par une suite de deux nombres de $F_4$,
 qu'on va appeler $m_1$ et $m_2$.
+$m_1$ va typiquement représenter la ligne, et $m_2$ la colonne.
+Communiquer ces deux nombres, c'est communiquer l'identité d'un personnage.
 Mis bout à bout ces deux nombres forment alors une suite de 4 bits.
 Par exemple, dans cette correspondance à l'écran,
-Thibaut correspond au code binaire 01 11,
-qui correspond aux nombres $m_1 = k$ et $m_2 = 1 + k$.
+Monsieur Phi correspond au code binaire 00 01,
+qui correspond aux nombres $m_1 = 0$ et $m_2 = k$,
+tandis que Scilabus correspond à 11 00, donc $m_1 = 1 + k$ et $m_2 = 0$.
+Pour prendre un autre exemple,
+Heu?reka correspond à 01 11, donc $m_1 = k$ et $m_2 = 1+k$.
 
-Ainsi, si le bon personnage était Thibaut,
+Ainsi, si le bon personnage était Heu?reka,
 en suivant le code de Reed-Solomon,
 il faudrait communiquer le polynôme $P(X) = m_1 + m_2 X$,
 qui serait dans ce cas égal à $P(X) = k + (1 + k) X$.
-Et pour y arriver, on va donner des valeurs de ce polynôme en 4 points,
-qui vont être les 4 valeurs possibles de X, en tant que nombre de $F_4$.
+Et pour y arriver en tolérant une erreur, 
+il faut ajouter une redonce de 2,
+ce qui revient à donner des valeurs de ce polynôme en 4 points.
+Et ça tombe bien, le nombre $X$ en entrée du polynôme,
+qui doit être un élément du corps fini $F_4$ à 4 éléments,
+peut prendre exactement 4 valeurs possibles, 
 
-Ces quatre valeurs seront alors 
+De façon plus générale, 
+la taille du corps fini choisi restreint la taille de l'encodage de Reed-Solomon :
+s'il y avait plus d'options, ou si l'on voulait tolérer plus d'erreurs,
+il nous aurait fallu effectuer la démarche dans un corps fini plus grand.
+
+Bref. Dans notre cas, les quatre valeurs du polynôme $P(X) = k + (1 + k) X$ sont
 $P(00) = P(0) = k = 01$
 $P(10) = P(1) = k + (1 + k) = 1 + 2k$, 
 Ça, ça se simplifie. En effet, dans $F_4$, $2 = 0$, et donc $2k = 0k = 0$.
 Du coup $P(10) = P(1) = 1 = 10$.
 Ensuite, $P(01) = P(k) = k + (1+k) * k = k + (k + k^2) = 2k + (1 + k) = 0 + 1 + k = 11$.
 Enfin, $P(11) = P(1+k) = k + (1+k) * (1+k) = k + 1 + 2k + k^2 = 1 + k + (1 + k) = 00$.
-Du coup, le code associé à Thibaut sera 01 10 11 00.
+Du coup, le code associé à Heu?reka sera 01 10 11 00.
 
-On peut faire les mêmes opérations avec tout le monde.
+On peut faire les mêmes opérations avec chacun des personnages.
 Je vous épargne les calculs.
 Mais in fine, on obtient alors le tableau des encodages de Reed-Solomon suivants :
 
- '00 00': '00 00 00 00'
- '00 10': '00 10 01 11'
- '00 01': '00 01 11 10'
- '00 11': '00 11 10 01'
- '10 00': '10 10 10 10'
- '10 10': '10 00 11 01'
- '10 01': '10 11 01 00'
- '10 11': '10 01 00 11'
- '01 00': '01 01 01 01'
- '01 10': '01 11 00 10'
- '01 01': '01 00 10 11'
- '01 11': '01 10 11 00'
- '11 00': '11 11 11 11'
- '11 10': '11 01 10 00'
- '11 01': '11 10 00 01'
+ '00 00': '00 00 00 00'  
+ '00 10': '00 10 01 11'  
+ '00 01': '00 01 11 10'  
+ '00 11': '00 11 10 01'  
+ '10 00': '10 10 10 10'  
+ '10 10': '10 00 11 01'  
+ '10 01': '10 11 01 00'  
+ '10 11': '10 01 00 11'  
+ '01 00': '01 01 01 01'  
+ '01 10': '01 11 00 10'  
+ '01 01': '01 00 10 11'  
+ '01 11': '01 10 11 00'  
+ '11 00': '11 11 11 11'  
+ '11 10': '11 01 10 00'  
+ '11 01': '11 10 00 01'  
  '11 11': '11 00 01 10'
 
 Et je voulais vraiment vous montrer ça, 
