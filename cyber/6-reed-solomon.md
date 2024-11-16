@@ -1,4 +1,4 @@
-# Qui est-ce ? (avec un mensonge !)
+# Qui est-ce ? (avec un mensonge autorisé !)
 
 Imaginez une partie un peu spéciale du jeu "qui est-ce ?"
 où chaque joueur a le droit de mentir au plus une seule fois.
