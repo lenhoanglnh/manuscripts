@@ -371,6 +371,13 @@ par exemple Bridgy Fed n'est maintenue que par le seul Ryan Barrett,
 ce qui soulève des préoccupations en termes de continuité de la maintenance,
 voire en terme de compromission potentielle.
 
+De même des AppViews alternatives peuvent accéder aux données des relais AT,
+et c'est le cas en particulier de deck.blue,
+qui rappellera TweetDeck à ceux qui connaissent.
+Cependant, là encore, méfiance méfiance,
+deck.blue est maintenu par l'unique [Giladsio](https://patreon.com/deckblue/about),
+ce qui questionne la pérennité et la sécurité de cette solution.
+
 Par ailleurs, sur Bluesky,
 vous avez la possibilité pour chacun de créer des "starter packages",
 c'est-à-dire une liste de comptes Bluesky que vous pourrez suivre.
