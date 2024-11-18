@@ -3,10 +3,11 @@
 Si vous suivez la vulgarisation scientifique sur les réseaux sociaux,
 vous avez sans doute observé un X-ode récent de Twitter vers d'autres plateformes,
 en particulier vers Bluesky.
-Et oui, je fais partie de cette vague, 
+Si vous avez pour compris le jeu de mot, j'ai parlé de X-ode. X-ode...
+
+Bref. En tout casm oui, je fais partie de cette vague, 
 notamment sous l'impulsion de Philoxime.
-Bien sûr, cette immigration dans le ciel bleu 
-est souvent un geste contestataire 
+Bien sûr, cette immigration dans le ciel bleu est en partie un geste contestataire 
 contre le probable futur directeur du Département de l'Efficacité Gouvernementale des US,
 une personne qui est propriétaire de la plateforme Twitter qu'il a renommée X,
 et qu'il a transformée en une [arme électorale](https://tournesol.app/entities/yt:dk9_m48rQVg) 
@@ -73,7 +74,11 @@ pour Internet Message Access Protocol,
 où le serveur mail conserve nos mails,
 et les redistribue aux différents clients mails qui souhaite les télécharger.
 
-Et en principe, il n'y a nul besoin d'utiliser un service d'une entreprise privée.
+Et alors, il y a beaucoup de surcouches de cryptographie pour sécuriser tout cela,
+notamment des histoires de TLS, de DKIM, voire de PGP...
+mais oublions tout cela pour aujourd'hui.
+
+En principe, il n'y a nul besoin d'utiliser un service d'une entreprise privée.
 Vous pourriez très bien acheter votre propre machine, 
 la laisser constamment allumer,
 et lui demander de jouer le rôle de votre serveur mail.
@@ -85,7 +90,7 @@ c'est parce qu'il s'agit d'un archétype de protocole décentralisé,
 qui montre toutefois bien les limites de la décentralisations.
 Et oui, parce qu'il y a de bonnes chances pour que vous qui regardez cette vidéo,
 vous n'utilisez en fait ni le protocole POP, ni le protocole IMAP,
-notamment parce que vous ne disposez pas d'un client mail.
+notamment parce que vous ne disposez même pas d'un client mail.
 C'est typiquement le cas si vous accédez à vos emails via un navigateur web,
 comme Google Chrome, Microsoft Edge, Safari ou encore Mozilla Firefox.
 Dans ce cas, les mails sont envoyés à votre navigateur,
@@ -98,20 +103,51 @@ le protocole SMTP/POP/IMAP s'est centralisé,
 avec désormais une gestion centralisée des emails sur gmail ou outlook.
 Il y a même de bonnes chances 
 que les emails de votre entreprise sont en fait eux aussi gérés 
-par l'un des géants du numérique.
+par l'un des géants du numérique,
+si bien que la malveillance ou le hack massif d'un de ces géants 
+pourraient compromettre toutes les communications d'un très grand nombre d'entreprise.
 
-Et alors, il y a de bonnes raisons de faire cela,
+Or malheureusement, une telle malveillance ou un tel hack massif,
+ce n'est asbolument pas de la science-fiction. 
+L'analyse automatisée de vos emails par les géants du numérique est systématique
+(après tout gmail vous propose des autocomplétions et des réponses automatisées),
+et [Microsoft a subi un hack majeur à l'été 2023](https://tournesol.app/entities/yt:v66YDx7U6V0),
+qui a conduit à un [rapport incendiaire](https://www.cisa.gov/resources-tools/resources/CSRB-Review-Summer-2023-MEO-Intrusion)
+de l'agence américaine de cybersécurité, le CISA,
+où l'on peut lire que "Microsoft ne sait pas comment ses systèmes ont été infiltrés
+et si les vulnérabilités utilisées ont été corrigées".
+Autrement dit, le hack n'est pas un événement isolé dans le temps ;
+les attaquants chinois sont très probablement encore dans les systèmes critiques de l'entreprise.
+
+Aussi piratable qu'un PC Windows.
+
+Et malheureusement, décentraliser l'email moderne est loin d'être trivial,
 notamment parce que les protocoles modernes sont en fait horriblement complexes,
 avec notamment toutes sortes de blacklists pour combattre la pandémie de spams.
 En gros, votre serveur fait-maison a de bonnes chances d'être bloqué par Gmail ou outlook...
 Et comme l'intérêt des emails, c'est d'envoyer des messages à d'autres,
 qui pour beaucoup sont sur ces plateformes,
 en pratique, c'est vraiment compliqué de décentraliser les emails aujourd'hui.
+C'est le piège de l'effet de réseau.
 
-Et ça, c'est un avertissement important :
+En fait, à moins que vous ne soyez un professionnel qui utilise des clés PGP
+et qui ne parle qu'à d'autres professionnels qui utilisent eux aussi des clés PGP,
+ce qui est mon cas avec les co-fondateurs de mon entreprises d'ailleurs,
+je vous recommande fortement de privilégier des solutions de messagerie modernes comme Signal,
+qui est libre, open-source et fournit du chiffrement bout-à-bout,
+pour envoyer des messages sensibles à vos contacts.
+Même si Signal n'est pas lui-même un système centralisé,
+il a au moins l'avantage d'être "zero-trust", 
+dans le sens où une compromission de Signal paralyserait la messagerie,
+mais ne permettrait pas à l'attaquant d'accéder à vos messages,
+car ils sont chiffrés de bout-à-bout.
+
+En tout cas, il s'agit d'un avertissement important :
 les forces du marché et la tentation de la centralisation 
 pour simplifier la résolution des problèmes de cybersécurité
-plannent systématiquement sur tout protocole a priori décentralisé.
+plannent systématiquement sur tout protocole a priori décentralisé,
+ce qui peut conduire à l'adoption de solutions qui sont en fait très mal sécurisées,
+notamment car elles concentrent les risques sur un petit nombre de systèmes d'information.
 
 
 ## Mastodon, ActivityPub et le Fediverse
@@ -138,7 +174,7 @@ pour gérer mes envois et mes réceptions de messages ActivityPub.
 Ce serveur ActivityPub va en particulier gérer 2 boîtes :
 une boîte d'envoi de messages, ou outbox,
 et une boîte de réception de messages, ou inbox.
-Et comme pour emails, 
+Et comme pour les emails, 
 à chaque fois que l'utilisateur voudra consulter un fil d'actualité,
 il retirera des messages de l'inbox.
 Et s'il veut publier des contenus, il enverra dans l'outbox.
@@ -189,11 +225,17 @@ que de permettre aux modérateurs d'un serveur ActivityPub A
 de bloquer entièrement d'autres serveurs ActivityPub B.
 Mais si vous utilisez le serveur A, 
 vous ne pourrez du coup plus recevoir les messages du serveur B.
-Et vous seriez alors tentés de créer votre propre serveur,
-ou de migrer vers un serveur C qui écoute le serveur B.
+En fait, le système ActivityPub, 
+il est en quelque sorte davantage féodal que décentralisé,
+dans le sens où les terrains des seigneurs peuvent communiquer,
+mais ils peuvent aussi être bloqués.
+L'espace informationnelle dans ActivityPub est ainsi naturellement morcelé,
+ou du moins morcelable.
 
-L'une des limites du protocole ActivityPub,
-c'est que ce transfert de compte d'un serveur à l'autre n'a pas été très bien pensé.
+Alors, il n'est pas non plus complètement féodal,
+puisque vous pouvez facilement déménager dans un autre serveur C,
+voire vous pouvez créer votre propre serveur ActivityPub.
+Cependant, ce transfert de compte d'un serveur à l'autre est nécessairement un peu radical.
 Et ça, c'est en fait parce que votre serveur concentre beaucoup de tâches.
 Ce serveur gère non seulement vos inbox et vos outbox,
 mais aussi du coup tout votre historique et vos clés cryptographiques 
@@ -276,7 +318,7 @@ ou si vous souhaitez un algorithme de recommandation spécifique,
 vous pouvez utilisez une autre AppView.
 
 Et puis, bien sûr, je n'ai ici que survoler le protocole AT,
-mais il y a bien sûr beaucoup de nombreuses autres détails importants
+mais il y a bien sûr beaucoup de nombreux autres aspects importants
 que je ne vais pas prendre le temps de détailler.
 Ceci étant dit, en théorie, 
 même si le protocole AT est clairement une avancée remarquable,
@@ -302,7 +344,8 @@ Comme on en parle dans le Guide de Survie au Cybercrime,
 l'un des principes opérationnels fondamentaux de la cybersécurité,
 c'est la sobriété numérique.
 Plus vos outils numériques seront sobres,
-et moins ils seront bourrés de potentielles vulnérabilités
+et moins ils seront bourrés,
+bourrés de fonctionnalités mais bourrés aussi de potentielles vulnérabilités
 que des attaquants pourront exploiter pour ces outils.
 Il faut absolument réduire la *surface d'attaque*.
 
@@ -339,10 +382,10 @@ que vous prétendez posséder.
 C'est ce que j'ai fait, et c'est pour ça que sur Bluesky par exemple,
 vous verrez que mon arobase est @science4all.org.
 
-Sur Bluesky, en plus de faire ça avec son site [Science Étonnante](https://scienceetonnante.com),
+Sur Bluesky, en plus de faire ça avec son site [scienceetonnante.com](https://scienceetonnante.com),
 David Louapre a également prouvé qu'il contrôlait la chaîne YouTube Science Étonnante,
 en ajoutant à la description de la chaîne son compte Bluesky ;
-et d'ailleurs je l'ai copié.
+et d'ailleurs je l'ai copié, en en faisant de même avec ma chaîne YouTUbe.
 
 Sauf que bien sûr, ceci marche uniquement si vous disposez d'un site,
 ou d'un compte sur un autre réseau social,
@@ -351,11 +394,12 @@ En particulier, on est malheureusement encore très loin d'une preuve de citoyen
 et plus loin encore d'une preuve de citoyenneté 
 avec potentiellement divulgation nulle d'identité,
 qui serait un peu le Saint-Graal pour être authentifié en ligne de manière anonyme.
+Cependant, le protocole AT me semble parfaitement approprié pour inclure ce genre d'informations.
 
 Les protocoles ActivityPub et AT ont par ailleurs introduit des mécanismes de modération,
 des outils bien entendu indispensables pour gouverner adéquatement les réseaux sociaux,
 et éviter la violation des lois existantes sur le harcèlement et l'appel à la haine.
-Sur ActivityPub, la modération est avant tout effectué au niveau des serveurs ActivityPub,
+Sur ActivityPub, la modération est avant tout effectuée au niveau des serveurs ActivityPub,
 non seulement en supprimant éventuellement des contenus publiés sur ces serveurs,
 mais aussi en bloquant éventuellement les flux venant de certains autres serveurs ActivityPub.
 
@@ -374,10 +418,15 @@ Les utilisateurs peuvent eux-mêmes étiqueter leurs propres publications,
 et on peut aussi imaginer des services intermédiaires en charge d'étiqueter les contenus,
 comme le fait la plateforme Tournesol pour les vidéos YouTube,
 avec des scores Tournesol selon différents critères.
-
 Bien sûr, dans tous ces cas, 
 la trace cryptographique de l'identité de la personne qui assigne le label
 est un élément fondamental pour déterminer comment interpréter ces données.
+
+Bref, en régulant les mécanismes de labels,
+en particulier la manière de les assigner 
+et la manière dont ils doivent être pris en compte par les AppViews,
+on peut tout à fait envsager une gouvernance démocratie 
+des réseaux sociaux qui suivent le protocole AT.
 
 Enfin, il y a le problème des messages directs qui
 sont assez mal gérés par les protocoles ActivityPub et AT.
@@ -442,13 +491,15 @@ Alors oui, concevoir des réseaux sociaux alternatifs,
 c'est permettre à des journalistes et des politiciens de se protéger 
 du harcèlement et de la haine,
 ce qui est vraiment extrêmement important.
-
 Mais si les solutions techniques qu'on avance faciliteront également
 la radicalisation des mouvements violients et haineux,
 il y a de quoi être très dubitatif vis-à-vis de leur intérêt démocratique.
+C'est vraiment pour ça que j'ai utilisé le qualificatif "féodal"
+pour parler du protocole ActivityPub,
+mêm s'il est probablement un peu trop fort.
 
-Notre livre "La dictature des algorithmes", co-écrit avec Jean-Lou Fourquet,
-a un chapitre dédié à la tension entre centralisation et décentralisation.
+Dans notre livre "La dictature des algorithmes", co-écrit avec Jean-Lou Fourquet,
+un chapitre est dédié à la tension entre centralisation et décentralisation.
 Et ce qu'on a écrit, c'est qu'il s'agit d'un problème en fait ancestral,
 auquel la Révolution Française a fourni une solution remarquable :
 en fait, pour vivre ensemble, il faut avant tout décentraliser la gouvernance,
@@ -475,12 +526,12 @@ Mais une fois les consensus identifié,
 il est aussi important que ces contenus qu'il est d'intérêt général de diffuser 
 soient effectivement diffusés au plus grand nombre.
 
-Bien sûr, cette vision est loin d'être incompatible avec des solutions
-comme le protocole AT.
+Bien sûr, comme on l'a vu, 
+cette vision est loin d'être incompatible avec le protocole AT.
 Mais pour qu'elle prenne un jour le pas,
 il va falloir qu'on ne vise pas uniquement 
 la décentralisation et le pluralisme des algorithmes ;
-il est aussi indispensable, je pense, d'assujettir ces algorithmes à la démocratie.
+il est aussi indispensable, je pense, d'assujettir ces algorithmes à la voix démocratique.
 
 
 ## Conclusion
@@ -501,9 +552,11 @@ Les juristes, les sociologues et le peuple ont aussi un rôle crucial à jouer
 pour assainir notre cyberespace et protéger nos démocraties.
 
 À l'inverse, toutefois, 
-il faut éviter également le piège du socio-solutionnisme.
+il faut éviter également le piège du socio-solutionnisme,
+par exemple en espérant que le DSA sera magiquement appliqué
+ou que les citoyens français vont magiquement abandonner TikTok.
 Concrètement aujourd'hui, on manque aussi de nombreuses solutions techniques
-pour améliorer grandement notre espace informationnel,
+pour assujettir notre espace informationnel aux normes démocratiques,
 comme la preuve de citoyenneté sans divulgation d'identité,
 des solutions pour identifier et promouvoir les consensus radicaus
 et des algorithmes résilients à des cyber-attaques.
@@ -532,13 +585,14 @@ comme vous informer davantage à ce sujet,
 en parler autour de vous, à vos proches et à vos collègues,
 organiser des événements avec des experts de ces questions,
 orienter les financements publics et privés vers ces considérations,
-ou encore adopter les solutions qui s'approchent le plus d'une démocratie numérique.
+ou encore adopter les solutions qui s'approchent le plus d'une démocratie numérique,
+comme privilégier Bluesky à Twitter.
 
-Et en l'occurence, je crois sincèrement 
+En particulier, je crois sincèrement 
 que notre projet Tournesol est le plus abouti à ce sujet,
 même s'il est lui-même encore extrêmement déficient.
 Bluesky a reçu des dizaines de millions de dollars d'investissement
-pour concevoir en quelques années le protocole AT.
+pour concevoir en quelques années le protocole AT et une plateforme minimaliste.
 Si on veut une démocratie numérique, 
 il va falloir au moins ce genre d'investissements pour y arriver.
 En attendant, vous pouvez nous aider de multiples manières :
