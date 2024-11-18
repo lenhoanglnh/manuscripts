@@ -505,14 +505,14 @@ ce sont vraiment des réseaux sociaux décentralisés ?
 
 Dès 2018, on m'a invité à publier mes vidéos sur Skeptikon.fr,
 un serveur ActivityPub qui s'appuie sur le logiciel libre PeerTube.
-Mais honnêtement, quand je vois la page d'accueil de Skeptikon,
+Mais honnêtement, quand je vois la description de Skeptikon,
 avec le mot zététique un peu partout,
 ça ne me donne personnellement absolument pas envie.
-Il y a déjà des dérives sectaires très dérangeantes dans le mouvement zététique.
+Il y a déjà eu des dérives sectaires dérangeantes dans le mouvement zététique.
 Un réseau social qui s'annonce dédié à ce mouvement,
 ça me semble en fait plus inquiétant qu'enthousiasmant.
 
-Et bien sûr, Skeptikon, 
+Or, bien sûr, Skeptikon, 
 c'est pourtant très loin d'être la communauté web la plus dérangeante.
 Même s'ils n'utilisent pas le protocole ActivityPub,
 les plateformes comme BitChute, Gab ou 4Chan sont très largement reconnues 
@@ -521,9 +521,9 @@ comme étant des nids de radicalisation d'extrême-droite.
 Alors oui, concevoir des réseaux sociaux alternatifs,
 c'est permettre à des journalistes et des politiciens de se protéger 
 du harcèlement et de la haine,
-ce qui est vraiment extrêmement important.
+ce qui est vraiment important.
 Mais si les solutions techniques qu'on avance faciliteront également
-la radicalisation des mouvements violients et haineux,
+la radicalisation de bulles idéologiques alimentées par la haine,
 il y a de quoi être très dubitatif vis-à-vis de leur intérêt démocratique.
 C'est vraiment pour ça que j'ai utilisé le qualificatif "féodal"
 pour parler du protocole ActivityPub,
