@@ -317,6 +317,13 @@ si vous trouvez qu'il manque de fonctionnalités à la TweetDeck,
 ou si vous souhaitez un algorithme de recommandation spécifique,
 vous pouvez utilisez une autre AppView.
 
+Le protocole AT envisage même l'ajout de deux autres types de serveurs :
+d'un côté les serveurs d'étiquetage des contenus publiés, 
+typiquement en charge d'évaluer 
+si un message est un discours de haine, de cyberharcèlement ou de désinformation ;
+et de l'autre les serveurs de création de fils d'actualité,
+qui vont filtrer les contenus et surtout sélectionner ceux qui vont être recommandés.
+
 Et puis, bien sûr, je n'ai ici que survoler le protocole AT,
 mais il y a bien sûr beaucoup de nombreux autres aspects importants
 que je ne vais pas prendre le temps de détailler.
@@ -330,7 +337,8 @@ voire malveillants, typiquement parce qu'ils ont été piratés par des malfaisa
 Mais surtout, en pratique, jusque là en tout cas,
 si le protocole AT a été conçu pour permettre un réseau social très décentralisé,
 force est de constater que BlueSky est encore assez incontournable,
-à la fois en tant que PDS, que relai et qu'AppView.
+et qu'il gère en fait tous les services identifiés,
+à savoir le PDS, le relai, l'étiquetage, la création de fils et l'AppView.
 Donc il va falloir attendre encore un peu pour voir dans quelles mesures
 le protocole AT définit vraiment un réseau social décentralisé.
 
@@ -414,13 +422,17 @@ Mais il peut aussi se contenter d'un label comme `porn`,
 qui sera visible des AppViews, 
 qui pourront alors décider elles-mêmes de publier ou non le contenu.
 D'ailleurs, ces labels ne viennent pas nécessairement du relai Bluesky.
-Les utilisateurs peuvent eux-mêmes étiqueter leurs propres publications,
-et on peut aussi imaginer des services intermédiaires en charge d'étiqueter les contenus,
-comme le fait la plateforme Tournesol pour les vidéos YouTube,
-avec des scores Tournesol selon différents critères.
-Bien sûr, dans tous ces cas, 
-la trace cryptographique de l'identité de la personne qui assigne le label
-est un élément fondamental pour déterminer comment interpréter ces données.
+Les utilisateurs peuvent eux-mêmes étiqueter leurs propres publications.
+
+Mais surtout, comme on l'a vu, 
+le protocole AT envisage de permettre à des tiers d'ajouter leurs propres étiquettes.
+On peut ainsi tout à fait envisager que, à l'avenir,
+une plateforme à la Tournesol organise un étiquetage collaboratif,
+puis les aggrège en scores Tournesol selon différents critères pour chaque contenu publié,
+comme on le fait déjà pour les vidéos YouTube.
+En fait, adapter Tournesol à Bluesky serait sans doute déjà d'actualité,
+si l'Association Tournesol disposait des moyens humains et financiers suffisants
+pour investiguer la gouvernance démocratique des plateformes de micro-blogging.
 
 Bref, en régulant les mécanismes de labels,
 en particulier la manière de les assigner 
