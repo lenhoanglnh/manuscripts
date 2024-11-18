@@ -276,14 +276,119 @@ ou si vous souhaitez un algorithme de recommandation spécifique,
 vous pouvez utilisez une autre AppView.
 
 Et puis, bien sûr, je n'ai ici que survoler le protocole AT,
-mais il y a bien sûr beaucoup de nombreuses autres détails important
+mais il y a bien sûr beaucoup de nombreuses autres détails importants
+que je ne vais pas prendre le temps de détailler.
+Ceci étant dit, en théorie, 
+même si le protocole AT est clairement une avancée remarquable,
+on est encore loin de l'idéal de l'algorithmique répartie,
+qui garantirait à un utilisateur aucune gêne occasionnée,
+même si certains composants du réseau deviennent tout à défaillants,
+voire malveillants, typiquement parce qu'ils ont été piratés par des malfaisants.
 
-Ceci étant dit, en pratique, jusque là en tout cas,
+Mais surtout, en pratique, jusque là en tout cas,
 si le protocole AT a été conçu pour permettre un réseau social très décentralisé,
 force est de constater que BlueSky est encore assez incontournable,
 à la fois en tant que PDS, que relai et qu'AppView.
 Donc il va falloir attendre encore un peu pour voir dans quelles mesures
 le protocole AT définit vraiment un réseau social décentralisé.
+
+
+## De nouvelles fonctionnalités
+
+Pour l'instant, Mastodon et Bluesky disposent d'un nombre limité de fonctionnalités,
+notamment si on le compare à des alternatives comme Twitter.
+Et je veux vraiment insister sur le fait que c'est une excellente chose.
+Comme on en parle dans le Guide de Survie au Cybercrime,
+l'un des principes opérationnels fondamentaux de la cybersécurité,
+c'est la sobriété numérique.
+Plus vos outils numériques seront sobres,
+et moins ils seront bourrés de potentielles vulnérabilités
+que des attaquants pourront exploiter pour ces outils.
+Il faut absolument réduire la *surface d'attaque*.
+
+Néanmoins, ces protocoles permettent déjà de nouvelles fonctionnalités.
+Les protocoles ActivityPub et AT étant partiellement interopérables,
+sur Mastodon, il est possible en principe de concevoir des comptes
+qui vont être conçus pour relayés des informations publiées sur Bluesky,
+et vice-versa.
+On parle de "Bridge" entre les protocoles.
+Cependant, ces Bridges ne seront pas parfaits, 
+certaines opérations dans l'un des protocoles 
+ne pouvant pas tout à fait être traduits dans l'autre.
+Et surtout, jusque là, aucune solution ne semble être solidement maintenue ;
+par exemple Bridgy Fed n'est maintenue que par le seul Ryan Barrett,
+ce qui soulève des préoccupations en termes de continuité de la maintenance,
+voire en terme de compromission potentielle.
+
+Par ailleurs, sur Bluesky,
+vous avez la possibilité pour chacun de créer des "starter packages",
+c'est-à-dire une liste de comptes Bluesky que vous pourrez suivre.
+Plus généralement, pour vous lancer sur Bluesky,
+je vous invite à cliquer sur le profil d'un utilisateur actif que vous aimez bien,
+et à voir la liste des personnes que cet utilisateur suit.
+
+Par ailleurs, Mastodon et Bluesky proposent tout deux 
+une solution de vérification de compte à partir d'une preuve de contrôle d'un site web.
+Typiquement, si vous voulez garantir que vous êtes bien Lê Nguyên Hoang,
+vous pourriez prouver que vous contrôlez bien le site [Science4All](https://science4all.org),
+car il y a suffisamment d'éléments sur des sites sérieux 
+qui font le lien entre Lê Nguyên Hoang et ce site.
+Et pour y arriver, Mastodon et Bluesky vous proposent le défi suivant :
+intégrer au site Science4All.org une mention des comptes Mastodon et Bluesky
+que vous prétendez posséder.
+C'est ce que j'ai fait, et c'est pour ça que sur Bluesky par exemple,
+vous verrez que mon arobase est @science4all.org.
+
+Sur Bluesky, en plus de faire ça avec son site [Science Étonnante](https://scienceetonnante.com),
+David Louapre a également prouvé qu'il contrôlait la chaîne YouTube Science Étonnante,
+en ajoutant à la description de la chaîne son compte Bluesky ;
+et d'ailleurs je l'ai copié.
+
+Sauf que bien sûr, ceci marche uniquement si vous disposez d'un site,
+ou d'un compte sur un autre réseau social,
+qui est de notoriété suffisante.
+En particulier, on est malheureusement encore très loin d'une preuve de citoyenneté,
+et plus loin encore d'une preuve de citoyenneté 
+avec potentiellement divulgation nulle d'identité,
+qui serait un peu le Saint-Graal pour être authentifié en ligne de manière anonyme.
+
+Les protocoles ActivityPub et AT ont par ailleurs introduit des mécanismes de modération,
+des outils bien entendu indispensables pour gouverner adéquatement les réseaux sociaux,
+et éviter la violation des lois existantes sur le harcèlement et l'appel à la haine.
+Sur ActivityPub, la modération est avant tout effectué au niveau des serveurs ActivityPub,
+non seulement en supprimant éventuellement des contenus publiés sur ces serveurs,
+mais aussi en bloquant éventuellement les flux venant de certains autres serveurs ActivityPub.
+
+Dans le protocole AT, 
+l'idée est davantage de permettre à différentes entités de poser une étiquette, 
+aussi appelée label,
+sur des contenus publiés.
+Le [relai Bluesky](https://docs.bsky.app/docs/advanced-guides/moderation#global-label-values) 
+peut par exemple imposer le label `!hide`,
+qui cachera les contenus aux AppViews qui utilisent ce relai.
+Mais il peut aussi se contenter d'un label comme `porn`,
+qui sera visible des AppViews, 
+qui pourront alors décider elles-mêmes de publier ou non le contenu.
+D'ailleurs, ces labels ne viennent pas nécessairement du relai Bluesky.
+Les utilisateurs peuvent eux-mêmes étiqueter leurs propres publications,
+et on peut aussi imaginer des services intermédiaires en charge d'étiqueter les contenus,
+comme le fait la plateforme Tournesol pour les vidéos YouTube,
+avec des scores Tournesol selon différents critères.
+
+Bien sûr, dans tous ces cas, 
+la trace cryptographique de l'identité de la personne qui assigne le label
+est un élément fondamental pour déterminer comment interpréter ces données.
+
+Enfin, il y a le problème des messages directs qui
+sont assez mal gérés par les protocoles ActivityPub et AT.
+En particulier, dans sa [Roadmap 2024](https://docs.bsky.app/blog/2024-protocol-roadmap),
+Bluesky reconnaît utilisé un système centralisé pour l'instant.
+Ceci étant dit, Bluesky prévoit à terme de développer du chiffrement bout-à-bout,
+ou End-to-end encryption,
+comme le fait déjà très bien Signal.
+Donc je vous recommande d'éviter d'envoyer des messages trop sensibles 
+via la messagerie directe de Bluesky, 
+et d'utiliser plutôt Signal.
 
 
 ## Les travers de la décentralisation
