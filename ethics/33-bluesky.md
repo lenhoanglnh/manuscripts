@@ -5,7 +5,7 @@ vous avez sans doute observé un X-ode récent de Twitter vers d'autres platefor
 en particulier vers Bluesky.
 Si vous avez pour compris le jeu de mot, j'ai parlé de X-ode. X-ode...
 
-Bref. En tout casm oui, je fais partie de cette vague, 
+Bref. En tout cas, oui, je fais partie de cette vague, 
 notamment sous l'impulsion de Philoxime.
 Bien sûr, cette immigration dans le ciel bleu est en partie un geste contestataire 
 contre le probable futur directeur du Département de l'Efficacité Gouvernementale des US,
@@ -377,6 +377,18 @@ c'est-à-dire une liste de comptes Bluesky que vous pourrez suivre.
 Plus généralement, pour vous lancer sur Bluesky,
 je vous invite à cliquer sur le profil d'un utilisateur actif que vous aimez bien,
 et à voir la liste des personnes que cet utilisateur suit.
+
+Une autre fonctionnalité chouette de Bluesky,
+qui montre bien qu'elle a été pensée par des anciens des équipes de sécurité de Twitter,
+c'est la possibilité d'être détaché d'une citation.
+Ainsi, comme sur Twitter, 
+vous pouvez partager un message publié et y ajouter un commentaire.
+Cependant, sur Twitter, si cette action est souvent utilisée pour sourcer une information,
+ou pour diffuser une tendance amusante,
+elle l'est aussi trop souvent pour faire des [appels à la meute](https://tournesol.app/entities/yt:P0YB40z7RJ0),
+en encourageant typiquement la haine envers la personne citée.
+Pour éviter cette troisième utilisation sans compromettre les deux premières,
+Bluesky permet à la personne citée de forcer le détachement de son message.
 
 Par ailleurs, Mastodon et Bluesky proposent tout deux 
 une solution de vérification de compte à partir d'une preuve de contrôle d'un site web.
