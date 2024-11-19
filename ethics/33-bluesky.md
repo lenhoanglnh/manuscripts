@@ -703,19 +703,20 @@ Néanmoins, je ne peux pas insister suffisamment sur le fait
 que ce protocole seul ne suffira pas à faire de Bluesky 
 un réseau social compatible avec la démocratie.
 
-Et donc pour finir, j'aimerais avant tout effectuer un appel à l'aide.
+Et donc pour finir, j'aimerais avant tout effectuer un appel à l'action.
 Concevoir une démocratie numérique, 
 ce qui me semble indispensable pour protéger nos démocraties aujourd'hui très menacées,
-c'est malheureusement un énorme chantier extrêmement pluridisciplinaire.
+c'est un énorme chantier extrêmement pluridisciplinaire.
 Si on veut se donner les chances de ne pas succomber à des gouvernements autoritaires,
 ou à une troisième guerre mondiale,
-il est indispensable que tous ceux parmi nous qui le pouvons
-donnions au moins un peu d'attention à cette cause.
+une mobilisation forte pour cette cause est aujourd'hui indispensable,
+à l'image de celles qu'il y a eu pour le climat, les droits humains ou le vote citoyen.
 
 Et pour cela, il y a une myriade de choses que vous pouvez faire,
 comme vous informer davantage à ce sujet,
 en parler autour de vous, à vos proches et à vos collègues,
 organiser des événements avec des experts de ces questions,
+inviter des conférenciers comme Jean-Lou Fourquet, Victor Fersing ou moi-même,
 orienter les financements publics et privés vers ces considérations,
 ou encore adopter les solutions qui s'approchent le plus d'une démocratie numérique,
 comme privilégier Bluesky à Twitter.
