@@ -340,6 +340,10 @@ qui vont filtrer les contenus et surtout sélectionner ceux qui vont être recom
 Et puis, bien sûr, je n'ai ici que survoler le protocole AT,
 mais il y a bien sûr beaucoup de nombreux autres aspects importants
 que je ne vais pas prendre le temps de détailler.
+Mais j'espère vous avoir fait comprendre 
+pourquoi j'ai été agréablement surpris par ce protocole,
+et pourquoi je le considère prometteur.
+
 Ceci étant dit, en théorie, 
 même si le protocole AT est clairement une avancée remarquable,
 on est encore loin de l'idéal de l'algorithmique répartie,
