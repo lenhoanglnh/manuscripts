@@ -70,22 +70,6 @@ Le protocole SMTP, pour Simple Message Transfer Protocol, se charge de tout ça.
 Maintenant, quand on veut accéder à nos emails,
 nos clients mails vont alors demander au serveur mail
 de nous envoyer tous les emails qu'il ne nous a pas encore envoyé.
-Et si on utilise le protocole POP, pour Post Office Protocol,
-alors le serveur mail va en général supprimer ces emails :
-dans ce cas, le serveur mail sert avant tout de relai.
-Mais ça, ce n'est pas pratique si on veut accéder à nos emails depuis plusieurs machines,
-ou si on a peur de perdre nos emails le jour où notre serveur mail tombera en panne.
-Du coup, on peut préférer le protocol IMAP,
-pour Internet Message Access Protocol,
-où le serveur mail conserve nos mails,
-et les redistribue aux différents clients mails qui souhaite les télécharger.
-Bien sûr, il peut les supprimer, mais ce ne sera que 
-lorsque l'utilisateur en fait la demande explicite.
-
-Et alors, il y a beaucoup de surcouches de cryptographie pour sécuriser tout cela,
-notamment des histoires de TLS, de DKIM, voire de PGP...
-mais oublions tout cela pour aujourd'hui.
-
 En principe, il n'y a nul besoin d'utiliser un service d'une entreprise privée.
 Vous pourriez très bien acheter votre propre machine, 
 la laisser constamment allumer,
