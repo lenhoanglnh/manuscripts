@@ -34,8 +34,12 @@ Et puis, Bluesky et compagnie sont-ils vraiment décentralisés ?
 Aujourd'hui, on essaie de faire le point sur toutes ces questions,
 pour mieux comprendre les enjeux démocratiques 
 d'une décentralisation des réseaux sociaux.
+
 Spoiler alert : le tl;dr, c'est que Bluesky, 
-c'est clairement largement le plus prometteur !
+c'est clairement largement le plus prometteur.
+Et si vous êtes sur une instance Mastodon, 
+je vous inviterais même à abandonner cette instance,
+et à rejoindre Bluesky à la place !
 
 
 ## Retour aux emails
@@ -456,11 +460,34 @@ En fait, adapter Tournesol à Bluesky serait sans doute déjà d'actualité,
 si l'Association Tournesol disposait des moyens humains et financiers suffisants
 pour investiguer la gouvernance démocratique des plateformes de micro-blogging.
 
-Bref, en régulant les mécanismes de labels,
-en particulier la manière de les assigner 
-et la manière dont ils doivent être pris en compte par les AppViews,
-on peut tout à fait envsager une gouvernance démocratie 
+D'ailleurs, on pourrait envisager d'aller plus loin encore dans le protocole AT,
+et découper d'autres fonctionnalités verticales.
+Par exemple, les AppViews effectuent encore beaucoup de tâches,
+ce qui fait que concevoir une AppView alternative représente beaucoup de tâches.
+Or, on pourrait typiquement vouloir que chaque AppView permette par exemple
+de faciliter l'intégration de n'importe quelle solution d'étiquetage des contenus.
+Voilà qui pourrait par exemple permettre à Tournesol et d'autres
+de développer facilement des fonctionnalités
+qui permettent à chaque utilisateur de dire si un contenu est d'intérêt général,
+voire de justifier cela, en évaluant son importance, sa pédagogie,
+ou le fait qu'il promeuve de meilleures habitudes.
+
+On pourrait même imaginer inclure directement l'interface de comparaisons,
+non seulement de messages publiés sur Bluesky, mais peut-être même aussi de vidéos,
+dans le flux d'actualité des utilisateurs qui souhaitent participer
+à la gouvernance collaborative des algorithmes de recommandation.
+
+Bref, en augmentant encore plus la découpe verticale,
+et en régulant par exemple
+la manière dont des labels d'utilisateurs avec des preuves de citoyenneté
+doivent être pris en compte par les AppViews,
+on peut tout à fait envsager à terme une gouvernance démocratie 
 des réseaux sociaux qui suivent le protocole AT.
+C'est pourquoi Bluesky me paraît très prometteur,
+même s'il va falloir encore énormément d'innovations démocratiques,
+avec une attention particulière à la sécurité,
+si on veut que cela permette d'assainir durablement notre espace informationnel,
+et surtout si on veut que cela renforce la résilience de nos démocraties.
 
 Enfin, il y a le problème des messages directs qui
 sont assez mal gérés par les protocoles ActivityPub et AT.
@@ -649,6 +676,14 @@ qui incluent vraiment l'état de l'art de la cryptographie ;
 et c'est justement ce dont je parle dans ma série sur la cybersécurité.
 Et si vous avez déjà vu quelques vidéos,
 vous savez à quel point le niveau technique requis est très élevé.
+
+Ceci étant dit, contrairement à Mastodon,
+Bluesky me semble extrêmement prometteur.
+En fait, j'ai vraiment été très agréablement surpris
+par la qualité du protocole AT.
+Néanmoins, je ne peux pas insister suffisamment sur le fait 
+que ce protocole seul ne suffira pas à faire de Bluesky 
+un réseau social compatible avec la démocratie.
 
 Et donc pour finir, j'aimerais avant tout effectuer un appel à l'aide.
 Concevoir une démocratie numérique, 
