@@ -548,6 +548,17 @@ c'est pourtant très loin d'être la communauté web la plus dérangeante.
 Même s'ils n'utilisent pas le protocole ActivityPub,
 les plateformes comme BitChute, Gab ou 4Chan sont très largement reconnues 
 comme étant des nids de radicalisation d'extrême-droite.
+Le réseau social Parler a en particuler été reconnu central
+à l'organisation des émeutes du Capitol en 2021 qui, rappelons-le,
+ressemblait fortement à une tentative de coup d'état sur la 1e puissance mondiale.
+
+Par ailleurs, ne pensez absolument pas 
+que Facebook est devenu éthique en construisant le réseau social Threads 
+sur le protocole ActivityPub.
+Ce n'est finalement pas si différent de Google et Microsoft
+qui ont construit Gmail et Outlook sur les protocoles emails.
+En particulier, Facebook conserve un pouvoir énorme sur le réseau social Threads,
+contrairement au pouvoir de l'entreprise Bluesky sur le réseau social Bluesky.
 
 Alors oui, concevoir des réseaux sociaux alternatifs,
 c'est permettre à des journalistes et des politiciens de se protéger 
@@ -557,8 +568,7 @@ Mais si les solutions techniques qu'on avance faciliteront également
 la radicalisation de bulles idéologiques alimentées par la haine,
 il y a de quoi être très dubitatif vis-à-vis de leur intérêt démocratique.
 C'est vraiment pour ça que j'ai utilisé le qualificatif "féodal"
-pour parler du protocole ActivityPub,
-mêm s'il est probablement un peu trop fort.
+pour parler du protocole ActivityPub.
 
 Dans notre livre "La dictature des algorithmes", co-écrit avec Jean-Lou Fourquet,
 un chapitre est dédié à la tension entre centralisation et décentralisation.
@@ -577,7 +587,8 @@ et d'augmenter radicalement le coût de la corruption de la gouvernance.
 Mais une fois les quasi-consensus radicaux identifiés,
 et une fois qu'on s'est mis d'accord pour en faire des lois,
 il faut qu'il y a une et une seule loi ;
-et que cette loi s'applique à tous.
+et que cette loi s'applique à tous, 
+dans un espace commun à tous les citoyens.
 
 En tout cas, cette vision de décentralisation de la gouvernance de décisions centralisées,
 c'est vraiment la raison d'être du projet Tournesol.
@@ -588,8 +599,11 @@ Mais une fois les consensus identifié,
 il est aussi important que ces contenus qu'il est d'intérêt général de diffuser 
 soient effectivement diffusés au plus grand nombre.
 
-Bien sûr, comme on l'a vu, 
-cette vision est loin d'être incompatible avec le protocole AT.
+Or comme on l'a vu, 
+si cette vision ne me semble pas cohérente avec le protocole ActivityPub,
+elle est loin d'être incompatible avec le protocole AT,
+ce qui fait que je suis beaucoup plus enthousiaste vis-à-vis de Bluesky,
+que je ne le suis vis-à-vis de Mastodon.
 Mais pour qu'elle prenne un jour le pas,
 il va falloir qu'on ne vise pas uniquement 
 la décentralisation et le pluralisme des algorithmes ;
