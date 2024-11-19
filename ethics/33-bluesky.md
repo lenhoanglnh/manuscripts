@@ -505,14 +505,45 @@ ce sont vraiment des réseaux sociaux décentralisés ?
 
 Dès 2018, on m'a invité à publier mes vidéos sur Skeptikon.fr,
 un serveur ActivityPub qui s'appuie sur le logiciel libre PeerTube.
+À première vue, ça peut paraître chouette :
+c'est soutenue par une association à but non lucratif,
+et on y trouve des gens très chouettes 
+comme Hygiène Mentale, Le Réveilleur ou encore Philoxime.
 Mais honnêtement, quand je vois la description de Skeptikon,
 avec le mot zététique un peu partout,
-ça ne me donne personnellement absolument pas envie.
-Il y a déjà eu des dérives sectaires dérangeantes dans le mouvement zététique.
-Un réseau social qui s'annonce dédié à ce mouvement,
+ça ne me donne pas envie.
+Personnellement, le site Skeptikon.fr me donne surtout d'être lieu
+où la zététique se recroqueville sur elle-même,
+plutôt qu'ouverte sur l'extérieur.
+
+La communauté zététique est déjà bien trop connue 
+pour son manque de bienveillance et ses innombrables dramas,
+mais aussi par un tribalisme de ses membres,
+voire de potentielles dérives sectaires.
+Un réseau social où ce mouvement se regroupe encore plus dans une bulle,
 ça me semble en fait plus inquiétant qu'enthousiasmant.
 
-Or, bien sûr, Skeptikon, 
+Ceci dit, le problème des réseaux sociaux segmentés par communauté
+n'est pas spécifique aux problèmes de la communauté zététique.
+En s'isolant des autres communautés, 
+même la meilleure communauté qui soit risque non seulement
+de s'enfermer dans sa chambre d'écho et de banaliser ses travers,
+mais de plus, sa portée risque de se limiter à une communauté de convertis.
+
+Ainsi, même une plateforme ActivityPub comme [algebra.chat](https://algebra.chat/),
+où les mathématiciens peuvent s'échanger des maths,
+ne me semble vraiment pas attirante,
+notamment dans la mesure où elle banalise l'isolation sociale des mathématiciens.
+Et d'ailleurs même en maths, il y a des dérives, notamment des dérives élitistes.
+Je vous invite par exemple à lire 
+la [section Criticism](https://en.wikipedia.org/wiki/Nicolas_Bourbaki#Criticism) 
+de la page Wikipedia sur Bourbaki,
+ce groupe élitiste de mathématiciens,
+et les conséquences que cela a sans doute eu sur la compétitivité de la France
+dans le domaine des maths appliquées,
+que les plus brillants cerveaux du pays se sont trop souvent mis à snobber.
+
+Mais bien sûr, Skeptikon ou algebra.chat, 
 c'est pourtant très loin d'être la communauté web la plus dérangeante.
 Même s'ils n'utilisent pas le protocole ActivityPub,
 les plateformes comme BitChute, Gab ou 4Chan sont très largement reconnues 
