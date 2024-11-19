@@ -381,6 +381,7 @@ ce qui questionne la pérennité et la sécurité de cette solution.
 Par ailleurs, sur Bluesky,
 vous avez la possibilité pour chacun de créer des "starter packages",
 c'est-à-dire une liste de comptes Bluesky que vous pourrez suivre.
+Y a notamment [celle de Philoxime](https://bsky.app/starter-pack/philoxime.bsky.social/3larjt2vyqn2c) qui est très chouette !
 Plus généralement, pour vous lancer sur Bluesky,
 je vous invite à cliquer sur le profil d'un utilisateur actif que vous aimez bien,
 et à voir la liste des personnes que cet utilisateur suit.
