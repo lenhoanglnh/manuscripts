@@ -71,7 +71,7 @@ Maintenant, quand on veut accéder à nos emails,
 nos clients mails vont alors demander au serveur mail
 de nous envoyer tous les emails qu'il ne nous a pas encore envoyé.
 Et si on utilise le protocole POP, pour Post Office Protocol,
-alors le serveur mail va aussi supprimer ces emails :
+alors le serveur mail va en général supprimer ces emails :
 dans ce cas, le serveur mail sert avant tout de relai.
 Mais ça, ce n'est pas pratique si on veut accéder à nos emails depuis plusieurs machines,
 ou si on a peur de perdre nos emails le jour où notre serveur mail tombera en panne.
@@ -79,6 +79,8 @@ Du coup, on peut préférer le protocol IMAP,
 pour Internet Message Access Protocol,
 où le serveur mail conserve nos mails,
 et les redistribue aux différents clients mails qui souhaite les télécharger.
+Bien sûr, il peut les supprimer, mais ce ne sera que 
+lorsque l'utilisateur en fait la demande explicite.
 
 Et alors, il y a beaucoup de surcouches de cryptographie pour sécuriser tout cela,
 notamment des histoires de TLS, de DKIM, voire de PGP...
@@ -123,12 +125,13 @@ de l'agence américaine de cybersécurité, le CISA,
 où l'on peut lire que "Microsoft ne sait pas comment ses systèmes ont été infiltrés
 et si les vulnérabilités utilisées ont été corrigées".
 Autrement dit, le hack n'est pas un événement isolé dans le temps ;
-les attaquants chinois sont très probablement encore dans les systèmes critiques de l'entreprise.
+les attaquants chinois sont probablement encore dans les systèmes critiques de l'entreprise.
 
 Aussi piratable qu'un PC Windows.
 
 Et malheureusement, décentraliser l'email moderne est loin d'être trivial,
-notamment parce que les protocoles modernes sont en fait horriblement complexes,
+notamment parce que les protocoles modernes ont évolués 
+et sont devnus horriblement complexes,
 avec notamment toutes sortes de blacklists pour combattre la pandémie de spams.
 En gros, votre serveur fait-maison a de bonnes chances d'être bloqué par Gmail ou outlook...
 Et comme l'intérêt des emails, c'est d'envoyer des messages à d'autres,
@@ -142,7 +145,7 @@ ce qui est mon cas avec les co-fondateurs de mon entreprises d'ailleurs,
 je vous recommande fortement de privilégier des solutions de messagerie modernes comme Signal,
 qui est libre, open-source et fournit du chiffrement bout-à-bout,
 pour envoyer des messages sensibles à vos contacts.
-Même si Signal n'est pas lui-même un système centralisé,
+Même si Signal n'est pas lui-même un système décentralisé,
 il a au moins l'avantage d'être "zero-trust", 
 dans le sens où une compromission de Signal paralyserait la messagerie,
 mais ne permettrait pas à l'attaquant d'accéder à vos messages,
@@ -269,8 +272,12 @@ avec un statut "d'entreprise d'intérêt pour la société", ou Benefit corporat
 En pratique, ça exige uniquement d'ajouter l'objectif d'intérêt pour la société
 dans les statuts de l'entreprise,
 et il y a clairement des risques d'ethics washing derrière ce genre d'appellation.
+D'autant que la dernière levée de fonds de Bluesky englobe de nombreux investisseurs,
+notamment Blockchain Capital,
+et que les investisseurs peuvent avoir un pouvoir de nuisance important
+sur les intentions éthiques d'une entreprise.
 
-Mais au delà des mots, le projet Bluesky a vraiment coupé les ponts avec Twitter,
+Ceci dit, au delà des mots, le projet Bluesky a vraiment coupé les ponts avec Twitter,
 en effectuant des levées de fonds alternatives,
 et en exigeant une énorme transparence dans le développement.
 C'est ainsi qu'est né non seulement le protocole AT,
@@ -315,8 +322,8 @@ et ça, ça veut dire que si un serveur de stockage de vos données vous paraît
 vous pouvez uniquement modifier ce PDS,
 qui a vraiment été conçu pour être portable,
 tout en préservant l'utilisation normale du réseau social.
-De même si les relais ignorent systématiquement les comptes que vous voulez suivre,
-vous pouvez demander à votre AppView de récupérer ses données chez un autre relai.
+De même, si les relais ignorent systématiquement les comptes que vous voulez suivre,
+vous pouvez en principe demander à votre AppView de récupérer ses données chez un autre relai.
 
 Enfin, si vous n'aimez pas l'interface de votre AppView,
 si vous trouvez qu'il manque de fonctionnalités à la TweetDeck,
@@ -425,8 +432,7 @@ Sauf que bien sûr, ceci marche uniquement si vous disposez d'un site,
 ou d'un compte sur un autre réseau social,
 qui est de notoriété suffisante.
 En particulier, on est malheureusement encore très loin d'une preuve de citoyenneté,
-et plus loin encore d'une preuve de citoyenneté 
-avec potentiellement divulgation nulle d'identité,
+et plus loin encore d'une preuve de citoyenneté avec potentiellement divulgation nulle d'identité,
 qui serait un peu le Saint-Graal pour être authentifié en ligne de manière anonyme.
 Cependant, le protocole AT me semble parfaitement approprié pour inclure ce genre d'informations.
 
@@ -619,6 +625,14 @@ et une fois qu'on s'est mis d'accord pour en faire des lois,
 il faut qu'il y a une et une seule loi ;
 et que cette loi s'applique à tous, 
 dans un espace commun à tous les citoyens.
+
+Bon, bien sûr, en pratique, bien gouverner,
+ça ne se réduit pas à la seule volonté d'écrire des lois ensemble.
+En pratique, comme on le voit très bien en ce moment en France ou en Allemagne,
+déterminer les bons mécanismes pour les lois reflètent vraiment 
+les préférences des citoyens sur l'état de droit,
+et si possible des préférences bienveillantes, informées et réfléchies,
+c'est bien sûr extrêmement difficile.
 
 En tout cas, cette vision de décentralisation de la gouvernance de décisions centralisées,
 c'est vraiment la raison d'être du projet Tournesol.
