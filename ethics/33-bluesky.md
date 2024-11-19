@@ -34,6 +34,8 @@ Et puis, Bluesky et compagnie sont-ils vraiment décentralisés ?
 Aujourd'hui, on essaie de faire le point sur toutes ces questions,
 pour mieux comprendre les enjeux démocratiques 
 d'une décentralisation des réseaux sociaux.
+Spoiler alert : le tl;dr, c'est que Bluesky, 
+c'est clairement largement le plus prometteur !
 
 
 ## Retour aux emails
