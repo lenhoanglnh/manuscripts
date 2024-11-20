@@ -333,9 +333,10 @@ même si le protocole AT est clairement une avancée remarquable,
 on est encore loin de l'idéal de l'algorithmique répartie,
 qui garantirait à un utilisateur aucune gêne occasionnée,
 même si certains composants du réseau deviennent tout à défaillants,
-voire malveillants, typiquement parce qu'ils ont été piratés par des malfaisants.
+voire malveillants, typiquement parce qu'ils ont été piratés par des malfaisants,
+ou parce que l'entreprise Bluesky a mal tourné.
 
-Mais surtout, en pratique, jusque là en tout cas,
+D'autant que, en pratique, jusque là en tout cas,
 si le protocole AT a été conçu pour permettre un réseau social très décentralisé,
 force est de constater que BlueSky est encore assez incontournable,
 et qu'il gère en fait tous les services identifiés,
@@ -536,7 +537,7 @@ comme Hygiène Mentale, Le Réveilleur ou encore Philoxime.
 Mais honnêtement, quand je vois la description de Skeptikon,
 avec le mot zététique un peu partout,
 ça ne me donne pas envie.
-Personnellement, le site Skeptikon.fr me donne surtout d'être lieu
+Personnellement, le site Skeptikon.fr me donne surtout l'impression d'être un lieu
 où la zététique se recroqueville sur elle-même,
 plutôt qu'ouverte sur l'extérieur.
 
