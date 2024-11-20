@@ -708,7 +708,9 @@ comme privilégier Bluesky à Twitter,
 voire développer des fonctionnalités de gouvernance démocratique par dessus Bluesky,
 comme des systèmes de preuves de citoyenneté sans divulgation de connaissance,
 des solutions d'étiquetage des contenus pour collecter des jugements citoyens,
-et des générateur de feeds démocratiques et au service de l'intérêt général.
+des générateur de feeds démocratiques et au service de l'intérêt général,
+voire des relais portés par l'Union Européenne 
+pour garantir une résilience malgré de potentiels travers de Bluesky.
 
 En particulier, je crois sincèrement 
 que notre projet Tournesol est le projet de gouvernance démocratique 
