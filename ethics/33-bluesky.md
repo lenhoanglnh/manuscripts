@@ -704,12 +704,17 @@ organiser des événements avec des experts de ces questions,
 inviter des conférenciers comme Jean-Lou Fourquet, Victor Fersing ou moi-même,
 orienter les financements publics et privés vers ces considérations,
 ou encore adopter les solutions qui s'approchent le plus d'une démocratie numérique,
-comme privilégier Bluesky à Twitter.
+comme privilégier Bluesky à Twitter,
+voire développer des fonctionnalités de gouvernance démocratique par dessus Bluesky,
+comme des systèmes de preuves de citoyenneté sans divulgation de connaissance,
+des solutions d'étiquetage des contenus pour collecter des jugements citoyens,
+et des générateur de feeds démocratiques et au service de l'intérêt général.
 
 En particulier, je crois sincèrement 
-que notre projet Tournesol est le plus abouti à ce sujet,
-même s'il est lui-même encore extrêmement déficient.
-Bluesky a reçu des dizaines de millions de dollars d'investissement
+que notre projet Tournesol est le projet de gouvernance démocratique 
+le plus abouti à ce sujet et à ce jour,
+même si, comme Bluesky, il est lui-même encore extrêmement déficient.
+D'ailleurs, Bluesky a reçu des dizaines de millions de dollars d'investissement
 pour concevoir en quelques années le protocole AT et une plateforme minimaliste.
 Si on veut une démocratie numérique, 
 il va falloir au moins ce genre d'investissements pour y arriver.
