@@ -6,7 +6,7 @@ Le fréquentisme est statistiquement inadmissible
 ## Éthique 
 
 YouTube (EIT paper)
-Les réseaux sociaux décentralisés (BlueSky, Mastodon, PeerTube...)
+Theory of Change (via Bluesky)
 Le doomscrolling passif
 Gouverner sans majorité
 Le réseau de confiance
