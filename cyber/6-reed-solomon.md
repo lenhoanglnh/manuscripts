@@ -219,6 +219,31 @@ on est capable de calculer des espèces de courbes de ces corps finis,
 et de chercher en particulier une courbe associée à un polynôme,
 qui intersecte $k+t$ points parmis ceux qui nous ont été envoyés !
 
+> En parlant de redondance, 
+> je vous invite fortement à conserver plusieurs copies de vos données les plus importantes,
+> tout en faisant attention à ne pas laisser ces copies chez des hébergeurs
+> qui ne sont pas dignes de confiance,
+> à l'instar des fournisseurs de services cloud américains ou chinois qui,
+> par la loi de leurs pays respectifs,
+> doivent transférer toutes les données auxquelles leurs gouvernements souhaitent accéder.
+> Plus que jamais, il y a urgence à appliquer le principe de redondance 
+> pour ne pas perdre nos données,
+> mais aussi celui de la souveraineté numérique pour réduire le risque de vol de ces données.
+> Et pour cela, 
+> je vous invite en particulier à vous intéresser au service Drive d'Infomaniak, 
+> une entreprise suisse 100% indépendante
+> qui fait un effort majeur pour tout développer de manière souveraine, 
+> avec des collaborateurs uniquement en Suisse, 
+> une société indépendante enregistrée en Suisse et un For juridique en Suisse.
+> (tout ce qu'il faut pour garantir 100% souveraineté), 
+> notamment par opposition aux entreprises américaines soumises au Patriot Act. 
+> Vous pouvez profitez gratuitement des services Drive, Mail et SwissTransfer d'Infomaniak, 
+> et je vous recommande aussi vivement leur kSuite
+> qui est une alternative souveraine complète à Microsoft 365 ou Google WorkSpace.
+> Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
+> Infomaniak reverse un don à l'Association Tournesol. 
+> Merci beaucoup à eux pour ce partenariat.
+
 
 ## Résolution du Qui Est-Ce ?
 
