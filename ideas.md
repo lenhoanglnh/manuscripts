@@ -5,9 +5,9 @@ Le fréquentisme est statistiquement inadmissible
 
 ## Éthique 
 
-YouTube (EIT paper)
 Theory of Change (via Bluesky)
 Le doomscrolling passif
+Émergence
 Gouverner sans majorité
 Le réseau de confiance
 
