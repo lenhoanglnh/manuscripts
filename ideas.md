@@ -5,8 +5,9 @@ Le fréquentisme est statistiquement inadmissible
 
 ## Éthique 
 
-Theory of Change (via Bluesky)
+Theory of Change
 Le doomscrolling passif
+Gouvernance de l'attention / liberté d'expression
 Émergence
 Gouverner sans majorité
 Le réseau de confiance
@@ -16,10 +17,6 @@ Le réseau de confiance
 RAG
 
 ## Cyber
-
-Les nombres imaginaires de l'informatique 
- - 5 corps finis
- - Vignette i² = - 1 barré, et remplacé par k² = - 1 - k
 
 Qui est-ce ? (avec des mensonges !) 
  - 6 Reed-Solomon
