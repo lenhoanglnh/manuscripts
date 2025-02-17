@@ -153,9 +153,12 @@ Clairement, c'est beaucoup plus facile d'améliorer un système qui n'a jamais �
 Mais pour moi et tous ceux qui l'ont connu,
 François était bien plus qu'un chercheur exceptionnel.
 C'était avant tout un personnage, 
-une personne à la fois très charismatique et adorable.
+une personne à la fois très charismatique,
+malgré son accent prononcé de la campagne québécoise.
+Et pô juste le simple accent québécois qu'on entend à Montréal...
+François était surtout une personne adorable.
 
-C'est peut-être surtout un très grand amateur de tarot.
+Au GERAD, on le connaît avant tout comme un très grand amateur de tarot.
 C'est simple.
 Tous les midis, avec d'autres collègues du GERAD,
 il jouait une partie de tarot,
@@ -164,6 +167,17 @@ Même quand il était en vacances, ou quand il n'avait rien à faire au bureau,
 il lui arrivait de venir sur l'heure du dîner,
 comme le disent les québécois pour qui "déjeuner" est le repas du matin,
 pour ne pas prendre du retard dans le classement du tarot.
+
+François était aussi un grand sportif.
+Alors qu'il était en plein milieu de sa soixantaine,
+il m'a régulièrement invité à jouer au squash avec lui,
+un sport que j'ai découvert à Montréal.
+Et alors que j'étais loin d'être mauvais ---
+j'ai fait des sports de raquette toute ma vie ---
+François ne cessait de me faire courir dans tous les sens et de me foutre des raclées.
+D'ailleurs, il arrivait souvent 
+que nos rendez-vous professionnels dévient 
+en leçons techniques et tactiques de squash.
 
 Toujours prêt à raconter ses innombrables anecdotes,
 il aimait par exemple raconter sa jeunesse,
@@ -250,18 +264,24 @@ mais les sujets d'expertise de François étaient en périphérie de ma recherch
 
 Mais plutôt que de me recentrer sur des sujets qu'il maîtrise,
 François a exprimé beaucoup de plaisir à me suivre dans mes investigations,
-tout en identifiant ici et là avec des nouvelles idées ou des points d'amélioration.
-Il m'a surtout aidé à trouver mon autre encadrant de thèse, Georges Zaccour,
+tout en cherchant ici et là des nouvelles idées ou des points d'amélioration.
+Il était vraiment l'inverse d'un micro-manager, 
+ce qui pouvait être déstabilisant pour certains,
+mais pour moi c'était vraiment le directeur de thèse idéal.
+
+François m'a surtout aidé à trouver mon autre encadrant de thèse, Georges Zaccour,
 et à ainsi faire le pont entre deux sections du GERAD qui ne collaborent pas souvent.
 C'est grâce à François que je me suis vraiment senti comme un explorateur 
 en faisant de la recherche,
 autorisé et même encouragé à prendre les directions que je souhaite.
 Merci François.
 
-En fait, et surtout, si j'ai fait de la recherche, c'est vraiment grâce à François.
-C'est peut-être difficile à croire aujourd'hui, vu à quel point je parle de science désormais,
+En fait, et surtout, si je me suis lancé dans le monde de la recherche, 
+c'est vraiment grâce à François.
+C'est peut-être difficile à croire aujourd'hui, 
+vu à quel point je parle de science désormais,
 mais quand je suis arrivé à Montréal en provenance de l'École Polytechnique en France,
-je voulais être ingénieur, pas chercheur.
+je voulais être ingénieur ; pas chercheur.
 Si j'ai choisi d'aller à Montréal, 
 c'était notamment parce qu'il y avait moins de cours à y suivre,
 et qu'il y avait au lieu de cela un projet de recherche à effectuer,
