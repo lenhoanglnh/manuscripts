@@ -6,23 +6,23 @@ Et celui-ci peut être utilisé pour le bien du plus grand nombre, ou non.
 Aujourd'hui, on va voir que, il y a deux décennies,
 la NSA semble assez clairement avoir exploité ce superpouvoir,
 pour faciliter la cybersurveillance de masse de l'ensemble de la planète,
-mais aussi la prise de contrôle des objets électroniques ;
-et l'attaque récente des bipeurs au Liban montre bien toute l'ampleur d'un tel pouvoir.
+mais aussi la prise de contrôle des objets électroniques.
 
-Heureusement, dans ce cas, 
+Heureusement, dans le cas de la cyber-attaque de la NSA dont on va parler,
 d'un côté les mathématiciens de la NSA n'ont pas été particulièrement brillants ;
 et surtout, la même maîtrise des mathématiques par des membres de la société civile
-a permis d'identifier ce qui peut bien sembler être une cyberattaque mondialisée de la NSA.
-Et quand on voit certains dirigeants politiques de premier plan outre-Atlantique,
-il y a de quoi y voir une menace globale sur l'ensemble de la planète...
+a permis d'identifier et de contre-carrer les plans de la NSA ---
+NSA qui, rappelons-le, est sous l'autorité du Président des États-Unis d'Amérique,
+auquel il est sans doute raisonnable de n'avoir qu'une confiance très limitée.
 
-Mais bizarrement, pour comprendre tout ceci,
+Bizarrement, 
+pour comprendre comment la NSA a failli réussir à piéger tous nos systèmes d'information,
 il va nous falloir faire un détour vers les courbes elliptiques,
 qui sont des objets remarquables de la géométrie algébrique,
 et des composants essentiels de la cryptographie moderne.
 En fait, pour regarder la vidéo que vous regardez,
 et en particulier pour certifier qu'elle est bien une vidéo envoyée par YouTube,
-votre machine a dû effectué des opérations sur des courbes elliptiques.
+votre smartphone ou votre ordinateur a dû effectué des opérations sur des courbes elliptiques.
 
 
 ## Les courbes elliptiques
@@ -52,18 +52,18 @@ c'est que si on trace la courbe $y^2 = x^3 + ax + b$ dans un logiciel comme Desm
 par exemple ici pour `a = 1` et `b = 1`,
 on obtient cette figure assez caractéristique.
 
-Mais ça, ça correspond aux solutions $(x,y)$ pour des nombres réels.
+Mais ça, ça correspond aux solutions $(x,y)$ pour le corps des nombres réels.
 Les mathématiciens se sont amusés à explorer des solutions 
 dans d'autres classes de nombres.
-Si on considère les solutions complexes,
+Si on considère les solutions dans le corps des nombres complexes,
 on obtient alors une surface fermée, mais avec un trou ;
 on parle de tore, un peu comme celui qu'on avait vu dans cette 
 [vieille vidéo](https://tournesol.app/entities/yt:8v2JxCUDW6M).
 
 Et ça, c'est joli. 
 Mais visiblement, pour les mathématiciens, ce n'est pas encore assez joli.
-Et ils s'intéressent en fait souvent bien plus
-aux solutions rationnelles, c'est-à-dire aux fractions d'entiers.
+Et ils s'intéressent en fait souvent bien plus aux solutions 
+dans le corps des nombres rationnels, c'est-à-dire les fractions d'entiers.
 Et d'ailleurs El Jj a fait 
 une [excellente vidéo](https://tournesol.app/entities/yt:NEVapv8c-SM) à ce sujet,
 où on voit que ces "courbes" sont en fait plein de points discrets.
@@ -71,30 +71,37 @@ où on voit que ces "courbes" sont en fait plein de points discrets.
 Mais ce n'est pas tout.
 Les mathématiciens vont aussi chercher 
 à identifier les solutions des courbes elliptiques 
-dans d'autres classes de nombres, 
-comme celui des [p-adiques](https://tournesol.app/entities/yt:tRaq4aYPzCc),
+dans d'autres corps de nombres, 
+comme le corps des nombres [p-adiques](https://tournesol.app/entities/yt:tRaq4aYPzCc),
 qui ont notamment été utile 
 pour [prouver le fameux dernier théorème de Fermat](https://tournesol.app/entities/yt:grzFM5XciAY).
 
-Mais en cryptographie, les solutions qui vont nous intéresser,
-comme vous vous y attendez peut-être si vous avez vu les dernières vidéos,
+Mais si vous avez suivi cette série,
+vous savez désormais que, en cryptographie, 
+les solutions qui vont nous intéresser,
 ce sont les solutions dans les corps finis,
-comme celui des nombres modulo un nombre premier p.
+comme celui des nombres modulo un grand nombre premier p.
 Dans le cas de l'équation de la NSA, 
 qui définit un protocole appelé Dual\_EC\_DRBG,
 ce nombre est `p = 115792089210356248762697446949407573529996955224135760342422259061068512044369`.
-Pour la courbe Curve25519,
+Pour la courbe Curve25519, 
+qui pour rappel est la plus standard et la plus sécurisée aujourd'hui,
 on a $p = 2^{255} - 19$.
-C'est d'ailleurs de là que vient son nom d'ailleurs.
-Notez que dans ce second cas, 
-les nombres peuvent être écrits du corps peuvent être écrits avec 256 bits.
-Ce qui est très utile...
+C'est beaucoup plus propre que le choix étrange de la NSA !
+
+C'est d'ailleurs de cette valeur du nombre premier 
+que vient le nom de Curve25519.
+Et en plus d'être une expression relativement naturelle,
+les nombres peuvent être écrits du corps peuvent être écrits avec 256 bits,
+et que les calculs peuvent être optimisés 
+car $p = 2^{255} - 19$ est un quasi-nombre premier de Mersenne,
+comme on en a parlé dans une [vidéo précédente](https://tournesol.app/entities/yt:kkU8u6IWrVs).
 
 
 ## Une courbe elliptique est un groupe
 
 La propriété fondamentale des courbes elliptiques, 
-quel que soit les nombres qu'on considère,
+quels que soient le corps des nombres qu'on considère,
 c'est que l'ensemble de ses points peuvent être combiné algébriquement.
 Autrement dit, étant donné n'importe quels points P et Q déjà sur la courbe,
 je peux combiner P et Q pour fabriquer un troisième point R sur la courbe.
@@ -104,7 +111,7 @@ comment cette composition des points d'une courbe elliptique opère
 consiste à revenir au cas le plus visuel,
 à savoir celui du ces nombres réels,
 puisqu'on a alors une courbe elliptique 
-qui ressemble vraiment à ce qu'on pense, quand on entend parler de courbe.
+qui ressemble vraiment à ce qu'on pense, quand on entend le mot "courbe".
 
 Considérons deux points P et Q sur cette courbe.
 Je peux alors construire un troisième point R sur cette courbe,
@@ -115,10 +122,12 @@ et en prenant le symétrique de ce point selon l'axe des abscisses.
 Et si je vous décris ces opérations géométriquement,
 on peux très bien en avoir une description algébrique aussi,
 grâce à la magie de la géométrie algébrique.
+Allez, on va se faire une petite minute de calculs,
+que vous pouvez sauter sans perdre le fil de la vidéo.
+
 Appelons ainsi $y^2 = x^3 + ax + b$ la courbe elliptique,
 et $y = cx + d$ la droite qui passe par P et Q.
-
-Déterminer les intersection entre la courbe elliptique et la droite,
+Déterminer les intersections entre la courbe elliptique et la droite,
 ça revient à résoudre ces deux équations à la fois.
 En injectant l'expression y selon l'équation de la droite
 dans l'équation de la courbe elliptique,
@@ -174,12 +183,12 @@ et nous fournir un troisième de la courbe elliptique ;
 qui rappellons-le, est en fait un ensemble fini de points $(x,y)$
 où $x$ et $y$ sont des nombres d'un corps fini.
 
-Enfin, ce n'est pas tout à fait exact, 
-en tout cas avec uniquement les opérations dont je vous ai parlé jusque là.
+Enfin, ce n'est pas tout à fait exact.
 Et oui, dans nos équations, on a une division par $x_P - x_Q$.
 Or si $x_P = x_Q$, alors $x_P = x_Q$, et on a donc une division par zéro.
-Or ça, c'est vraiment ultra-interdit, non seulement pour les nombres réels,
-mais aussi dans le corps des nombres finis.
+Or ça, c'est vraiment ultra-interdit, non seulement dans le corps des nombres réels,
+mais aussi dans tous les autres corps,
+y compris donc dans le corps des nombres finis.
 
 En fait, si on regarde notamment la courbe elliptique pour les nombres réels, 
 il y a exactement 2 cas où $P$ et $Q$ sont sur la courbe et où ils ont la même abscisse :
@@ -205,7 +214,7 @@ Et voilà, on a notre façon de combiner toutes les paires de points
 de notre courbe elliptique étendue.
 On dit que l'opération qu'on a définie est une loi de composition interne,
 et on peut la noter `R = Compo(P, Q)`.
-Et on peut même remarque que cette loi de composition a de très belles propriétés :
+Et on peut même faire la remarque que cette loi de composition a de très belles propriétés :
 1. Il y a un élément "neutre", dans le sens où il a un effet nul sur tout point.
 Autrement dit, pour tout point P de la courbe elliptique, on a `Compo(P, 0) = P`.
 2. Pour tout point P de la courbe elliptique, il existe un point Q de la courbe elliptique, 
@@ -236,8 +245,9 @@ Dès lors, on va simplifier les notations,
 et remplace l'opérateur `Compo` par un signe usuel pour les groupes commutatifs.
 Dans cette vidéo, je vais utiliser le signe $\oplus$,
 pour montrer que ça ressemble à l'addition sans être l'addition usuelle ;
-mais noter qu'il est courant d'utiliser le signe de l'addition $+$.
-Et oui, on va dire qu'on peut ajouter des points de la courbe elliptique.
+mais beaucoup de ressources, y compris Wikipedia, utilisent le signe usuel de l'addition $+$.
+En tout cas, grâce à cette opération $\oplus$,
+on peut maintenant ajouter des points de la courbe elliptique.
 Faites très attention toutefois,
 l'addition des points de la courbe elliptique n'est pas du tout une addition usuelle ;
 en particulier, elle ne correspond absolument pas à l'addition des coordonnées.
@@ -257,7 +267,8 @@ Et en fait, ce qui nous intéresse même particulièrement en cryptographie,
 ## Visualisation des courbes elliptiques sur des corps finis
 
 Pour bien se rendre compte de la magie des courbes elliptiques,
-j'ai développé une petite application web.
+j'ai développé une petite application web,
+accessible à [ellipticcurve.science4all.org](https://ellipticcurve.science4all.org).
 Vous pouvez rentrer vos paramètres de la courbe elliptique,
 à savoir les coefficients $a$ et $b$ de l'équation $y^2 = x^3 + ax + b$,
 et le nombre $p$ modulo lequel on va effectuer les calculs.
@@ -273,6 +284,8 @@ ou presque ! N'oublions pas le point à l'infini qui n'est pas représenté ici.
 
 Ainsi le point $(x = 0, y = 1)$ est bien un point de la courbe elliptique, 
 puisqu'il vérifie bien l'équation $y^2 = x^3 + x + 1$.
+En effet, si je remplace $y$ par 1, j'obtiens 1 à gauche,
+et si remplace $x$ par 0, j'obtiens $0 + 0 + 1 = 1$ à droite.
 De même, le point $(2, 1)$ est aussi solution,
 puisque $y^2$ est alors égal à $1^2 = 1 [5]$, 
 et $x^3 + x + 1$ est égal à $2^3 + 2 + 1 = 8 + 2 + 1 = 11 = 5 + 5 + 1 = 1 [5]$.
@@ -290,7 +303,7 @@ De façon plus spectaculaire, si je prends deux points de la courbe elliptique,
 ils couperont un troisième point de la courbe.
 Par exemple, si je prends les points $(0, 1)$ et $(2, 1)$,
 alors la droite qui passe par ces points coupera un troisième point, à savoir $(-2, 1)$.
-D'ailleurs, ça, ça implique la somme $(0, 1) \oplus (2, 1)$ dans la courbe elliptique
+D'ailleurs, ça, ça implique que la somme $(0, 1) \oplus (2, 1)$ dans la courbe elliptique
 va donner comme résultat l'image du troisième point $(-2, 1)$ par l'axe des abscisses,
 à savoir $(-2, -1)$.
 On a l'égalité $(0, 1) \oplus (-2, 1) = (-2, -1)$.
@@ -305,7 +318,7 @@ par un troisième point de la courbe elliptique,
 comme le suggère ce dessin.
 Sauf qu'il ne faut pas oublier qu'on travaille modulo un nombre premier $p$.
 Et donc, en fait, le point tout à droite, en $(2.5, -0.67)$,
-c'est en fait le même que le point à gauche, en $(-2.5, 0.67)$.
+c'est en fait le même que le point à gauche, en $(-2.5, -0.67)$.
 En fait, l'ensemble des coordonnées modulo $p$, 
 ça correspond en fait au monde de Pacman, où les côtés opposés sont en fait collés.
 Dans le jargon, on parle en fait de tore carré,
@@ -385,10 +398,10 @@ Mais du coup, $4G = G \oplus 3G = G \oplus 0 = G$.
 En fait le groupe généré par $G$ n'a ici que 3 éléments.
 Et en particulier, on n'a absolument pas visité les 9 points
 de la courbe elliptique $y^2 = x^3 + x + 1$ modulo $5$.
-Si vous avez vu la vidéo sur les [nombres premiers sûrs](),
+Si vous avez vu la vidéo sur les [nombres premiers sûrs](https://tournesol.app/entities/yt:gQAvq620lSI),
 cela ne vous surprend peut-être pas.
 En fait, $y^2 = x^3 + x + 1 [5]$ n'est pas une très bonne courbe elliptique,
-car son nombre de point, à savoir 9, est un nombre friable,
+car son nombre de points, à savoir 9, est un nombre friable,
 c'est-à-dire qu'il s'écrit comme le produit de nombre premiers tous très petits.
 
 À l'inverse, considérons la courbe $y^2 = x^3 + 2x + 1 [5]$.
@@ -406,19 +419,18 @@ dont la taille est cryptographiquement grande.
 En particulier, en pratique, on a choisi un point $G$ de Curve25519
 tel que le groupe engendré par ce point $G$ est d'ordre $r$ uniquement.
 Notez que ce groupe est isomorphe au groupe additif des entiers modulo $r$ ;
-mais de façon cruciale, cet isomorphisme est à sens unique.
-Même une superpuissance serait très incapable de lister tous les points
-de la courbe elliptique Curve25519.
+mais de façon cruciale, cet isomorphisme est à sens unique :
+c'est facile de calculer $w G$ étant donné un nombre $w$ modulo $r$,
+mais c'est très difficile, étant donné un point $X$ du groupe engendré par $G$,
+de déterminer une valeur de $w$ modulo $r$ telle que $X = w G$,
+même pour une superpuissance numérique.
 
 En fait, ce $X = w G$ des courbes elliptiques, 
-c'est exactement l'équivalent du $x = g^w [p]$ dont on avait parlé dans une vidéo précédente.
-En particulier, on pense que la fonction qui calcule $w G$ à partir de $w$
-est une fonction à sens unique d'aujourd'hui.
-Avec l'astuce des carrés répétés,
-qui correspond ici à la multiplication par 2,
-cette fonction peut être calculée très rapidement.
-
-Formellement, le nombre d'opérations nécessaires sera logarithmiques en $w$.
+c'est exactement l'équivalent du $x = g^w [p]$ dont on avait parlé 
+dans une [vidéo précédente](https://tournesol.app/entities/yt:gQAvq620lSI).
+En particulier, si $X = w G$ peut se calculer rapidement,
+c'est grâce à l'astuce des carrés répétés.
+Formellement, le nombre d'opérations nécessaires sera logarithmique en $r$.
 Et de manière pratique, 
 ça veut dire que $X = w G$ peut se calculer très rapidement,
 même pour des valeurs cryptographiquement grandes de $w$.
@@ -432,7 +444,7 @@ plus de $2^{252}$ valeurs possibles de $w G$,
 jusqu'à en trouver une qui correspond à $X$.
 Dit autrement, on pense
 que le problème du logarithme discret pour les courbes elliptiques 
-est essentiellement impossible pour les superpuissances d'aujourd'hui...
+est essentiellement impossible pour les superpuissances numériques d'aujourd'hui...
 même si on sait que celles qui auront un calculateur quantique dans le futur
 pourront inverser ce composant fondamental de la cryptographie moderne.
 
@@ -517,6 +529,7 @@ où $k = \log2(p)$ est le nombre de chiffre de $p$.
 Et du coup, en utilisant un $p = 2^255 - 19$ comme le fait Curve25519,
 ce nombre de chiffre est $k = 254$,
 et elle conduit à $b = k/2 = 127$ bits de sécurité !
+
 Autrement dit, on a la même sécurité,
 malgré des clés dix fois plus petites.
 Voilà qui permet à la cryptographie par courbes elliptiques
@@ -610,36 +623,47 @@ Mais si vous avez un moyen de deviner le secret de Bob,
 alors vous pourrez non seulement usurper l'identité Bob 
 et dire à Alice des éléments trompeurs au nom de Bob ;
 mais vous pourrez même usurper l'identité d'Alice et piéeger Bob !
-Plus généralement, de nombreux systèmes modernes exploitent à foison des tokens aléatoires,
-qui sont des nombres qu'Alice peut typiquement envoyer à Bob,
+Plus généralement, de nombreux systèmes modernes exploitent à foison 
+ce qu'on appelle des tokens aléatoires,
+à savoir des nombres qu'Alice peut typiquement envoyer à Bob,
 et que Bob pourra réutiliser pour affirmer être Bob.
+Rien à voir avec les tokens des algorithmes de langage...
 Si ces tokens aléatoires peuvent être prédits, même uniquement de temps en temps,
 alors l'attaquant pourra en fait régulièrement infiltrer de nombreux systèmes d'information.
 
 Alors, en pratique, un hasard imprévisible par le démon de Solomonoff est trop coûteux à obtenir ;
 du coup, on se contente de générer une suite de nombres,
-en espérant qu'une superintelligence soit incapable de la prolonger mieux que le hasard,
+en espérant qu'une superpuissance numérique soit incapable de la prolonger mieux que le hasard,
 à cause de ses limites en puissance de calculs,
-comme on en a parlé dans une [vidéo précédente](TBD).
+comme on en a parlé dans une [vidéo précédente](https://tournesol.app/entities/yt:Sbh3-EHgawI).
 Et oui, pour rappel, 
-toute superintelligence du monde physique est très inférieure au démon de Solomonoff,
+toute superintellygence du monde physique est très inférieure au démon de Solomonoff,
 qui lui-même est très inférieur au démon de Laplace.
 
 Eh bien, la NSA a proposé un algorithme qui génère une suite de nombres,
-en suggérant que toute superintelligence sera incapable 
+en suggérant que toute superpuissance numérique sera incapable 
 de prédire le suivant mieux que le hasard.
 Enfin, pour être exact, c'est le NIST, 
 le National Institute of Standards and Technology,
 qui [a proposé ce standard](https://csrc.nist.gov/pubs/sp/800/90/a/final).
-Mais c'est évident que cet institut américain est proche de la NSA.
 
-Bon, après, ça ne veut absolument pas dire que tout ce que dit le NIST est une backdoor ;
+Et c'est là qu'on rentre dans une frontière fine et floue 
+en théorie du complot et confiance justifiée en les institutions.
+Clairement le NIST est proche de la NSA.
+Mais ça ne veut pas dire que tout ce que dit le NIST est une backdoor ;
 en tout cas, je vous assure ne pas avoir été contacté par le NIST
 pour [leur rapport sur la sécurité de l'IA](https://csrc.nist.gov/pubs/ai/100/2/e2023/final),
-même si le NIST cite un de mes algorithmes comme solution à adopter.
+même si le NIST cite un de mes algorithmes 
+comme étant l'une des solutions à l'état de l'art à adopter
+pour atténuer les risques d'empoisonnement des modèles d'IA.
+Et plus généralement, quand le NIST justifie ses standards 
+par des recherches scientifiques publiées par des chercheurs indépendants
+dans des revues scientifiques de renom,
+comme c'est davantage le cas de la cryptographie postquantique dont on reparlera,
+il y a de quoi avoir raisonnablement confiance en ses recommandations.
+Mais le cas de l'algorithme de génération de nombres aléatoires proposé par le NIST en 2012
+est beaucoup plus louche...
 
-Bref. Revenons-en à l'algorithme de génération de nombres aléatoires
-proposé par le NIST en 2012.
 Cet algorithme s'appuie sur une courbe elliptique,
 à savoir $y^2 = x^3 - 3x + b$,
 où `b = 41058363725152142129326129780047268409114441015993725554835256314039467401291`,
