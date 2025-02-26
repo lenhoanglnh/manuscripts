@@ -18,10 +18,6 @@ RAG
 
 ## Cyber
 
-Qui est-ce ? (avec des mensonges !) 
- - 6 Reed-Solomon
- - Vignette Jeu qui est-ce face à un sweet à capuche
-
 La backdoor des US 
  - 7 Courbes elliptiques
  - Vignette équation y² = x³ - 3x + b (+ Snowden ?)
