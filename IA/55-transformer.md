@@ -462,4 +462,3 @@ qui exigent de monter les standards de sécurité du numérique,
 comme on l'a fait dans tant d'autres industries, de l'automobile à l'aviation,
 en passant par l'agroalimentaire, la pharmaceutique et l'énergie !
 
-
