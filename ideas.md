@@ -18,17 +18,12 @@ RAG
 
 ## Cyber
 
-La backdoor des US 
- - 7 Courbes elliptiques
- - Vignette équation y² = x³ - 3x + b (+ Snowden ?)
-
 Le postquantique
  - 8 postquantum
 
 L'art d'être prévisiblement imprévisible ? (SHA-2, AES...)
  - 8 aes
  - Vignette ?
-
 
 Est-il dangereux de scanner son passeport ?
  - 9 passeport
@@ -39,7 +34,9 @@ Est-il dangereux de scanner son passeport ?
  - Vignette passeport
 
 Prouver que je sais sans révéler ce que je sais
- - 10 zero_knowledge
+ - 10 zero\_knowledge
+ - 3-graph coloring
+ - Algorithme de Schnorr
  - Vignette ?
 
 La preuve d'appartenance sans divulgation d'identité
@@ -48,6 +45,9 @@ La preuve d'appartenance sans divulgation d'identité
  - Merkle Tree
  - Sparse Merkle Tree
  - Vignette ?
+
+La solution de Mohameden Dieye
+ - TBD
 
 Le vote électronique
  - Le chiffrement homomorphe
