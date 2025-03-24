@@ -133,6 +133,30 @@ Toujours est-il que, aujourd'hui, faute de mieux,
 le NIST a approuvé la cryptographie post-quantique,
 que je vais donc pouvoir vous présenter.
 
+> Mais avant de vous présenter le post-quantique,
+> je tiens à vous rappeler que la cybersécurité ne se réduit pas au chiffrement des données.
+> Selon un [sondage effectué](https://legrandcontinent.eu/fr/2025/03/20/les-europeens-face-a-la-guerre-et-trump-10-points-sur-un-sondage-exclusif/) le 20 mars dernier,
+> l'écrasante majorité des européens ont acquis une méfiance accrue envers les États-Unis.
+> En particulier, sachant que la loi FISA et le Patriot Act en vigueur outre-Atlantique
+> permettent aux autorités américaines d'accéder à des données de non-américains
+> stockées sur le territoire étatsuniens, 
+> il y a urgence à investir dans une autonomie numérique.
+> Et c'est justement ce que vous propose Infomaniak, le sponsor de cette vidéo.
+> Je vous invite en particulier à vous intéresser à kDrive, 
+> la solution de stockage en ligne d'Infomaniak, 
+> une entreprise suisse 100% indépendante
+> qui fait un effort majeur pour tout développer de manière souveraine, 
+> avec des collaborateurs uniquement en Suisse, 
+> leurs propres data centers éco-responsables basés en Suisse, 
+> une société indépendante enregistrée en Suisse,
+> un pays dont la juridiction garantit vraiment la protection des données. 
+> Vous pouvez profitez gratuitement des services kDrive, Mail et SwissTransfer d'Infomaniak,
+> et je vous recommande aussi vivement leur kSuite
+> qui est une alternative souveraine complète à Microsoft 365 ou Google WorkSpace.
+> Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
+> Infomaniak reverse un don à l'Association Tournesol. 
+> Merci beaucoup à eux pour ce partenariat.
+
 
 ## La cryptographie post-quantique
 
