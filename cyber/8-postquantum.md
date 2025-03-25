@@ -145,14 +145,14 @@ que je vais donc pouvoir vous présenter.
 > Je vous invite en particulier à vous intéresser à kDrive, 
 > la solution de stockage en ligne d'Infomaniak, 
 > une entreprise suisse 100% indépendante
-> qui fait un effort majeur pour tout développer de manière souveraine, 
-> avec des collaborateurs uniquement en Suisse, 
-> leurs propres data centers éco-responsables basés en Suisse, 
-> une société indépendante enregistrée en Suisse,
-> un pays dont la juridiction garantit vraiment la protection des données. 
-> Le stockage est répliqué sur 3 supports dans 2 data centers,
-> pour assurer un maximum de continuité de service même en cas de panne.
-> Ce service kDrive fait d'ailleurs parti de l'offre gratuite my kSuite.
+> qui fait un effort majeur pour tout développer de manière souveraine. 
+> Vous pouvez profitez de my kSuite, 
+> leur offre gratuite qui inclus une adresse email ainsi que kDrive,
+> qui sont des alternatives souveraines à Gmail et Google Drive.
+> Je vous encourage à tester leur offre gratuite et si vous êtes convaincu, 
+> j'ai pour vous le code promo SCIENCE80 pour passer à la mise à niveau payante,
+> et profiter d'un rabais de 80% sur l'offre 1 To pendant la première année.
+> Retrouvez le lien en description.
 > Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
 > Infomaniak reverse un don à l'Association Tournesol. 
 > Merci beaucoup à eux pour ce partenariat.
