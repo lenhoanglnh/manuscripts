@@ -150,9 +150,9 @@ que je vais donc pouvoir vous présenter.
 > leurs propres data centers éco-responsables basés en Suisse, 
 > une société indépendante enregistrée en Suisse,
 > un pays dont la juridiction garantit vraiment la protection des données. 
-> Vous pouvez profitez gratuitement des services kDrive, Mail et SwissTransfer d'Infomaniak,
-> et je vous recommande aussi vivement leur kSuite
-> qui est une alternative souveraine complète à Microsoft 365 ou Google WorkSpace.
+> Le stockage est répliqué sur 3 supports dans 2 data centers,
+> pour assurer un maximum de continuité de service même en cas de panne.
+> Ce service kDrive fait d'ailleurs parti de l'offre gratuite my kSuite.
 > Pour chaque vidéo où je les promeus, ce que je fais avec grand plaisir, 
 > Infomaniak reverse un don à l'Association Tournesol. 
 > Merci beaucoup à eux pour ce partenariat.
@@ -160,7 +160,7 @@ que je vais donc pouvoir vous présenter.
 
 ## La cryptographie post-quantique
 
-Alors, en fait non.
+Alors, je ne vais pas vous le cacher.
 La cryptographie post-quantique est malheureusement beaucoup plus complexe
 que la simple opération $x = g^w$,
 ce qui fait que je ne vais pas pouvoir vous la décrire pleinement
