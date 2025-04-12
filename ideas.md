@@ -8,8 +8,9 @@ Le fréquentisme est statistiquement inadmissible
 Theory of Change
 Le doomscrolling passif
 Gouvernance de l'attention / liberté d'expression
+Le constructivisme moral
+Sortir de la paralysie parlementaire
 Émergence
-Gouverner sans majorité
 Le réseau de confiance
 
 ## IA
