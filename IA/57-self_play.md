@@ -43,8 +43,13 @@ biais sociologiques dans les données,
 données stratégiquement choisies par les fournisseurs,
 données adversarialement choisies par les attaquants...
 
+Et c'est surtout ignorer la dimension politique et sociétale de ces objets,
+en particulier les problèmes d'alignement avec les préférences humaines.
+
 
 ## Conclusion
 
-Conclusion.
+Attention au coolwashing.
+
+Attention à la mute-newsisation des enjeux sociétaux.
 
