@@ -336,7 +336,13 @@ et par ailleurs, le Chain of Thought peut être hacké par des textes malveillan
 qui ressemblent à des raisonnements étape par étape,
 mais qui aboutissent volontairement à des conclusions erronées.
 
-Bref, avec le RLAIF ou le Chain of Thought, les algorithmes n'apprennent en fait rien de nouveau.
+Bref, avec le RLAIF ou le Chain of Thought, les algorithmes n'apprennent en fait rien de nouveau, 
+ce qui peut être vite gênant quand on les interroge sur l'actualité.
+
+> Marine Le Pen a-t-elle été injustement condamnée pour détournement de fonds ?
+
+![Marine Le Pen a-t-elle été injustement condamnée pour détournement de fonds ?](57-SelfPlay1.png "Marine Le Pen a-t-elle été injustement condamnée pour détournement de fonds ?")
+
 Ils ne font qu'amplifier un type de conclusion qu'ils sont capables d'obtenir,
 et qu'on espère être davantage aligné avec les préférences des utilisateurs.
 En particulier, il me semble clair que ces procédures ne sont pas substituables 
@@ -378,7 +384,13 @@ et surtout à le faire selon des normes démocratiques.
 
 Typiquement, l'un des principes fondamentaux de la démocratie,
 c'est le principe "une personne, une voix",
-qui permet à tout citoyen d'avoir le même degré d'influence que tout autre citoyen.
+qui permet à tout citoyen d'avoir le même degré d'influence que tout autre citoyen,
+notamment sur des sujets controversés comme la politique.
+
+> Macron devrait-il choisir un Premier Ministre du RN ?
+
+![Macron devrait-il choisir un Premier Ministre du RN ?](57-SelfPlay2.png "Macron devrait-il choisir un Premier Ministre du RN ?")
+
 Clairement, le numérique aujourd'hui ne respecte absolument pas ce principe.
 D'ailleurs, une bonne partie de ma recherche scientifique consiste à formaliser cette notion,
 et à concevoir des algorithmes qui respectent cette norme,
