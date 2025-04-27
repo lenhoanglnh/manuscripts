@@ -425,7 +425,7 @@ que les données empiriques sur notre monde peuvent être remplacées par du cal
 Mais si cette vidéo me déçoit, c'est en fait beaucoup plus encore 
 pour tout ce qu'elle a volontairement choisi de laisser de côté.
 Le PDG d'OpenAI, Sam Altman, a lui même reconnu qu'il aurait été impossible
-de fabriquer violer ChatGPT sans violer les droits d'auteur
+de fabriquer ChatGPT sans violer les droits d'auteur
 (et je ne parle même pas des données personnelles...).
 Rendez-vous compte, de l'aveu des créateurs de ces technologies,
 le sujet de la vidéo est un objet illégal.
