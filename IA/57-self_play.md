@@ -18,12 +18,13 @@ comme des précisions sur quels chatbots ont suivi quelles procédures d'entraî
 Cependant, la conclusion de sa vidéo m'a paru confuse,
 et pas seulement parce que la réflexion des algorithmes génératifs
 est très loin de n'utiliser que des énergies renouvelables.
-Pour être plus précis, la citation que j'ai donnée donne l'impression
+Pour être plus précis, la citation donne l'impression
 que les données humaines peuvent être parfaitement substituées par de la réflexion,
 tout comme l'énergie fossile peut être substituée par des énergies renouvelables.
 
 Or ça, ça me paraît trompeur, ne serait-ce que pour des questions d'unités physiques.
-L'énergie fossile et l'énergie renouvelable peuvent toutes deux se mesurer en joules.
+L'énergie fossile et l'énergie renouvelable peuvent toutes deux se mesurer en joules,
+et il est donc raisonnable de s'attendre à pouvoir remplacer l'une par l'autre.
 Mais les données humaines se mesurent en bits, 
 ou en giga-octets qui correspondent à 8 x 10⁹ bits.
 Tandis que la réflexion se mesure en nombre d'opérations par secondes, typiquement en FLOAPs.
@@ -32,15 +33,17 @@ Or les FLOAPs et les giga-octets, ça paraît extrêmement différent.
 Mais surtout, de manière plus fondamentale,
 la complexité des données, cela renvoie à la notion de complexité de Solomonoff ;
 tandis que le temps de réflexion, cela renvoie à la complexité en temps de calculs.
-Aujourd'hui, je vous propose de bien clarifier ces distinctions,
-mais aussi de voir dans quelle mesure il est possible de convertir l'une en l'autre,
+S'il on peut, dans une certaine mesure, convertir l'une en l'autre,
+la science de l'information et du calcul montre bien qu'il s'agit de concepts bien différents.
+Aujourd'hui, je vous propose d'explorer cette distinction,
 pour mieux comprendre l'intérêt des systèmes d'apprentissage,
 mais aussi leurs limites fondamentales.
 
 Et enfin, je vais dire quelques mots de ce que je vois comme l'état de l'art 
 de l'éducation des algorithmes selon des standards démocratiques,
-un sujet qui me semble fondamental,
-mais qui a été largement laissé de côté par la vidéo de David.
+un sujet fondamental mais bien trop souvent laissé de côté 
+par la recherche et la vulgarisation en IA,
+et qui me semble essentielle pour combler les limites fondamentales de la réflexion.
 
 
 ## Jeu de go versus IA de recommandation
