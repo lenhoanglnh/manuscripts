@@ -1,4 +1,4 @@
-# ChatGPT doit réfléchir ?
+# ChatGPT et les limites de la réflexion
 
 > Si les données humaines sont les énergies fossiles de l'IA,
 > l'apprentissage par renforcement sur les problèmes vérifiables,
