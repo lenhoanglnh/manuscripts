@@ -348,11 +348,17 @@ ce qui peut être vite gênant quand on les interroge sur l'actualité.
 
 Ils ne font qu'amplifier un type de conclusion qu'ils sont capables d'obtenir,
 et qu'on espère être davantage aligné avec les préférences des utilisateurs.
-En particulier, il me semble clair que ces procédures ne sont pas substituables 
-à des données d'entraînement auxquelles ces algorithmes n'ont pas eu accès préalablement.
+En particulier, il me semble clair que le RLAIF et le Chain of Thought 
+ne peuvent pas remplacer des données d'entraînement 
+auxquelles ces algorithmes n'ont pas eu accès préalablement.
 Voilà pourquoi, même si j'adore David et je pense que c'est vraiment le boss de la vulgarisation,
 et que c'est aussi par ailleurs un excellent scientifique,
 son analogie avec l'énergie renouvelable me paraît trompeuse.
+
+Contrairement à l'énergie fossile,
+les données d'entraînement de qualité, 
+en particulier sur les actualités de notre monde ou sur les jugements des citoyens, 
+ne pourront pas être remplacées par plus de calculs uniquement.
 
 
 ## L'alignement démocratique
