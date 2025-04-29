@@ -10,7 +10,7 @@
 > [Les 4 étapes pour entraîner un LLM, Science Étonnante, 27:10](https://tournesol.app/entities/yt:YcIbZGTRMjI)
 
 Il y a quelques jours, David Louapre de la chaîne Science Étonnante
-a publié une vidéo sur l'entraînement des algorithmes génératifs.
+a publié une vidéo très informative sur l'entraînement des algorithmes génératifs.
 Comme toujours, David a fourni des explications d'une qualité pédagogique remarquable,
 et j'ai même appris plusieurs choses que je ne savais pas grâce à sa vidéo,
 comme des précisions sur quels chatbots ont suivi quelles procédures d'entraînement.
@@ -31,15 +31,17 @@ Tandis que la réflexion se mesure en nombre d'opérations par secondes, typique
 Or les FLOAPs et les giga-octets, ça paraît extrêmement différent.
 
 Mais surtout, de manière plus fondamentale,
-la complexité des données, cela renvoie à la notion de complexité de Solomonoff ;
-tandis que le temps de réflexion, cela renvoie à la complexité en temps de calculs.
+la complexité des données, cela renvoie à la notion de 
+[complexité de Solomonoff](https://tournesol.app/entities/yt:d4vfMgWG-Jw) ;
+tandis que le temps de réflexion, cela renvoie à la 
+[complexité en temps de calculs](https://tournesol.app/entities/yt:lXRVZP-tUzw).
 S'il on peut, dans une certaine mesure, convertir l'une en l'autre,
 la science de l'information et du calcul montre bien qu'il s'agit de concepts bien différents.
 Aujourd'hui, je vous propose d'explorer cette distinction,
 pour mieux comprendre l'intérêt des systèmes d'apprentissage,
 mais aussi leurs limites fondamentales.
 
-Et enfin, je vais dire quelques mots de ce que je vois comme l'état de l'art 
+Et je dirai aussi quelques mots de ce que je vois comme l'état de l'art 
 de l'éducation des algorithmes selon des standards démocratiques,
 un sujet fondamental mais bien trop souvent laissé de côté 
 par la recherche et la vulgarisation en IA,
@@ -159,6 +161,13 @@ est extrêmement laborieux,
 car il faudrait inclure dans cet algorithme une description d'énormément de choses,
 comme les détails des psychologies des 3 milliards d'utilisateurs des réseaux sociaux.
 
+Pour la petite histoire, je parle de complexité de Solomonoff plutôt que de Kolmogorov,
+car Andrey Kolmogorov a reconnu que le génialissime Ray Solomonoff l'avait précédé
+dans la définition et l'étude de ce concept.
+Mais surtout, en 2003, après la mort de Kolmogorov,
+le premier Prix Kolmogorov fut décerné à... wait for it... Ray Solomonoff,
+pour avoir inventer le concept de complexité de Kolmogorov !
+
 
 ## L'apprentissage avec vérification des résultats
 
@@ -261,9 +270,21 @@ avec tout ce que cela peut impliquer en termes de contraintes énergétiques.
 En effet, il n'y a aucune garantie que le meilleur algorithme de jeu de go
 capable de jouer chaque coup en moins d'une second sera un petit algorithme.
 Bien au contraire, il me paraît probable que celui-ci soit extrêmement complexe,
-dans le sens où son nombre de paramètres sera monumental.
-Et je parierais qu'il en sera de même pour des algorithmes qui génèrent des preuves mathématiques,
-ou des codes informatiques vérifiables.
+dans le sens où son nombre de paramètres sera monumental,
+exactement comme un mathématicien moderne s'appuie en fait aujourd'hui
+sur des dizaines de milliers de pages de mathématiques pour résoudre des problèmes,
+et non pas uniquement sur la poignée d'axiomes des mathématiques.
+
+En fait, je parierais qu'il en sera de même pour des algorithmes 
+qui génèrent des preuves mathématiques,
+ou des codes informatiques vérifiable :
+ces derniers gagneront à être gargantuesques.
+D'ailleurs DeepSeek est loin d'être petit : il fait 671 milliards de paramètres.
+S'il a coûté moins cher à produire, ce n'est absolument pas parce qu'il est plus petit,
+c'est davantage parce qu'il utilise des astuces pour requérir moins de calculs 
+à chaque fois qu'on lui demande de produire un nouveau mot,
+astuces dont j'ai parlé dans ma vidéo sur les Transformers, 
+notamment le Mixture-of-Experts.
 
 
 ## Algorithme génératif en tant que juge et chaînes de pensée
@@ -351,11 +372,8 @@ et qu'on espère être davantage aligné avec les préférences des utilisateurs
 En particulier, il me semble clair que le RLAIF et le Chain of Thought 
 ne peuvent pas remplacer des données d'entraînement 
 auxquelles ces algorithmes n'ont pas eu accès préalablement.
-Voilà pourquoi, même si j'adore David et je pense que c'est vraiment le boss de la vulgarisation,
-et que c'est aussi par ailleurs un excellent scientifique,
-son analogie avec l'énergie renouvelable me paraît trompeuse.
-
-Contrairement à l'énergie fossile,
+Voilà pourquoi l'analogie avec l'énergie renouvelable me paraît trompeuse.
+Contrairement à la substitition de l'énergie fossile par l'énergie renouvelable,
 les données d'entraînement de qualité, 
 en particulier sur les actualités de notre monde ou sur les jugements des citoyens, 
 ne pourront pas être remplacées par plus de calculs uniquement.
@@ -364,7 +382,7 @@ ne pourront pas être remplacées par plus de calculs uniquement.
 ## L'alignement démocratique
 
 Dans le jargon de la recherche sur l'entraînement des algorithmes d'apprentissage,
-l'éducation des algorithmes est parfois appelé le problème de l'alignement.
+l'éducation civique des algorithmes est parfois appelé le problème de l'alignement.
 Comme on l'a vu, on peut effectuer de l'alignement avec des feedbacks d'humains,
 ou on peut le faire avec des feedbacks d'algorithmes.
 Il faut bien voir qu'il s'agit là d'un positionnement fondamentalement politique,
@@ -405,7 +423,7 @@ D'ailleurs, une bonne partie de ma recherche scientifique consiste à formaliser
 et à concevoir des algorithmes qui respectent cette norme,
 comme j'en ai parlé dans le [Salon Culture et Jeux Mathématiques](https://tournesol.app/entities/yt:Q6pviOfz1EI).
 
-Un autre principe majeur de la démocratie,
+Par ailleurs, un autre principe majeur de la démocratie,
 c'est la transparence des processus démocratiques.
 Il faut non seulement savoir comment nos votes sont pris en compte par les autorités,
 mais il faut de surcroît que les autorités rendent des comptes,
@@ -414,6 +432,9 @@ Dans un cadre numérique, ceci revient à exiger la transparence des algorithmes
 mais aussi des activités de ces algorithmes 
 pour que tout citoyen soit au moins en principe capable de détecter les travers
 et de réagir aux violations des lois existantes.
+Clairement, surtout dans le numérique développé par le privé,
+souvent dans des pays étrangers de plus en plus autoritaires,
+on est extrêmement loin de ce standard démocratique.
 
 Inclure ces considérations et d'autres,
 c'est précisément l'objectif du projet Tournesol 
@@ -423,6 +444,10 @@ ont trop souvent tendance à omettre ces dimensions primordiales,
 et à réduire les initiatives de numérique démocratique à des Mute News,
 aux dépens d'un enthousiasme prononcé pour des technologies 
 hors de tout contrôle démocratique.
+Trop souvent, les algorithmes génératifs retiennent toute l'attention,
+cette ressource si rare et précieuse,
+et dont le contrôle a été complètement abandonné 
+à des IA de recommandation d'entreprises étrangères.
 
 
 ## Conclusion
@@ -443,32 +468,42 @@ la psychologie humaine ou la géopolitique,
 ce qui peut laisser croire aux auditeurs, à tort,
 que les données empiriques sur notre monde peuvent être remplacées par du calcul.
 
-Mais si cette vidéo me déçoit, c'est en fait beaucoup plus encore 
-pour tout ce qu'elle a volontairement choisi de laisser de côté.
-Le PDG d'OpenAI, Sam Altman, a lui même reconnu qu'il aurait été impossible
-de fabriquer ChatGPT sans violer les droits d'auteur
+Mais ce que je trouve dommage, c'est en fait beaucoup plus encore 
+pour tout ce que tant de vulgarisateurs et de chercheurs en IA 
+choisissent volontairement de laisser de côté, 
+comme l'état de droit dans l'espace numérique 
+et les conséquences du numérique sont la sécurité nationale.
+Pour rappel, le PDG d'OpenAI, Sam Altman, a lui même reconnu 
+qu'il aurait été impossible de fabriquer ChatGPT sans violer les droits d'auteur
 (et je ne parle même pas des données personnelles...).
 Rendez-vous compte, de l'aveu des créateurs de ces technologies,
-le sujet de la vidéo est un objet illégal.
-Mais surtout, si l'état de droit n'est aujourd'hui pas appliqué au numérique,
-c'est parce qu'on a banalisé leur adoption,
-notamment à travers des contenus de vulgarisation scientifique 
-qui ont même tendance à célébrer ces produits au même titre 
-que des découvertes scientifiques comme la relativité générale.
+le sujet d'attention de tant de contenus scientifiques est un objet illégal ;
+et pour le coup, trop souvent, trop de scientifiques s'en foutent.
+Mais du coup, on a banalisé le fait que les lois ne sont pas appliquées au numérique,
+notamment dans les contenus de vulgarisation scientifique 
+qui ont même tendance à célébrer autant ces produits
+qu'ils célèbrent des découvertes scientifiques comme la relativité générale.
 
 Imaginez qu'un industriel du tabac crée une nouvelle cigarette,
 à base d'une molécule autre que la nicotine,
 une molécule qui n'est pas encore interdite mais qui,
 de l'aveu de l'industriel, 
 a clairement été produite sans respect des normes industrielles.
-Est-ce qu'il serait raisonnable pour un vulgarisateur scientifique de célébrer ce produit ?
+Est-ce qu'il serait raisonnable pour un vulgarisateur scientifique 
+de faire l'apologie de la science derrière ce produit ?
 
-C'est ce que j'appelle le #CoolWashing des algorithmes génératifs.
-Et celui-ci joue un rôle central dans le marketing des entreprises qui les développent ;
-j'ai déjà vu des commerciaux de ces entreprises utiliser explicitement le terme "FOMO",
+Cette attitude enthousiasmante vis-à-vis des technologies de l'information, 
+c'est ce que j'appelle la stratégie du #CoolWashing.
+Et je parle bien de stratégie, 
+car le marketing des entreprises qui développent ces technologies
+appelle ouvertement les scientifiques à, par exemple, 
+["adopter un ton positif"](https://gizmodo.com/google-reportedly-told-ai-scientists-to-strike-a-positi-1845944406).
+Et oui, car les enjeux financiers sont ensuite monumentaux.
+J'ai ainsi déjà vu des commerciaux de ces entreprises utiliser explicitement le terme "FOMO",
 pour "Fear Of Missing Out",
 pour appeler des industriels à acheter de manière précipitée ces outils,
-bien avant d'avoir identifié des cas d'usage concrets.
+bien avant d'avoir identifié des cas d'usage concrets 
+à haute valeur ajoutée et à faible risque pour le business.
 Ce #CoolWashing alimente ainsi une survalorisation de ces produits,
 mais aussi leur intégration accélérée dans des systèmes critiques du tissu industriel,
 bien avant qu'un quelconque audit de sécurité n'ait été effectué.
@@ -481,7 +516,9 @@ il me semble urgent d'être beaucoup vigilants,
 notamment vis-à-vis de la cybersécurité de ces systèmes,
 mais aussi plus généralement de leur gouvernance.
 
-Si même le plus grand vulgarisateur scientifique de France met ce sujet de côté,
+Si même le plus brillant vulgarisateur scientifique de France met ce sujet de côté,
 j'ai peur que les industriels et les citoyens français 
-échoueront à être suffisamment sensibilisés vis-à-vis de ces enjeux planétaires.
+échoueront à être suffisamment sensibilisés vis-à-vis de ces enjeux planétaires,
+avec toutes les conséquences catastrophiques 
+dont on parle dans notre livre La Dictature des Algorithmes notamment.
 
