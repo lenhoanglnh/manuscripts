@@ -6,6 +6,7 @@ Le fréquentisme est statistiquement inadmissible
 ## Éthique 
 
 Theory of Change
+Le temps (cf. https://digitalcommons.law.seattleu.edu/sulr/vol48/iss3/4/)
 Le doomscrolling passif
 Gouvernance de l'attention / liberté d'expression
 Le constructivisme moral
@@ -15,12 +16,9 @@ Le réseau de confiance
 
 ## IA
 
-RAG
+Les agents
 
 ## Cyber
-
-Le postquantique
- - 8 postquantum
 
 L'art d'être prévisiblement imprévisible ? (SHA-2, AES...)
  - 8 aes
