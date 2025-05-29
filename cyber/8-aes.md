@@ -5,13 +5,7 @@ La cybersécurité repose sur l'incapacité de cybercriminels puissants
 En particulier, comme on l'a vu dans la dernière vidéo,
 de nombreuses solutions cryptographiques exigent de générer des nombres que 
 même une superpuissance comme la NSA sera incapable de prédire.
-
-Et notez que tous les générateurs ne sont pas cryptographiquement sécurisés.
-Par exemple, le module `random` de python n'est pas cryptographiquement sécurisé,
-comme vous pouvez vous en rendre compte en lisant 
-la [documentation du module](https://docs.python.org/3/library/random.html).
-
-En fait, idéalement, il faudrait être mathématiquement assuré 
+Idéalement, il faudrait être mathématiquement assuré 
 de l'incapacité de toute superintellygence à prédire les nombres aléatoires qu'on génère.
 Dans le jargon, on parle de génération de nombres aléatoires cryptographiquement sécurisés.
 Ces nombres doivent non seulement être imprévisibles pour nous ;
@@ -36,27 +30,39 @@ et on aurait plus de chances de réussir,
 que si on utilisait à la place un meilleur générateur de nombre aléatoire.
 Nous autres humains sommes prévisiblement pas si imprévisibles...
 
-Mais surtout, en cryptographie, 
-il nous faut générer beaucoup de nombres aléatoires,
-parfois des milliers, des millions, voire des milliards de nombres aléatoires.
-Et pour cette tâche, nos cerveaux de primate sont en fait très limités,
-car ils sont dépassés par la quantité de travail que cela exige.
+En fait, être prévisiblement imprévisible, ce n'est vraiment pas évident.
+En pratique, beaucoup de générateurs de nombres aléatoires
+ne sont en fait pas *cryptographiquement* sécurisés.
+Par exemple, le module `random` de python n'est pas cryptographiquement sécurisé,
+comme vous pouvez vous en rendre compte en lisant 
+la [documentation du module](https://docs.python.org/3/library/random.html).
+Autrement dit, si vous utilisez le module `random` de python,
+un attaquant qui observe les nombres que vous générez pourra finir
+par deviner les prochains nombres générés, 
+qui n'auront alors plus aucune prévisibilité pour lui.
+L'aléatoire `random` de python est en fait prévisiblement prévisible.
 
-Alors, en pratique, dans certains protocoles,
+En pratique, dans certains protocoles à haut enjeu,
 on va exploiter des capteurs de température ou des mesures de lampes lava,
-pour générer toujours plus de hasard.
-Mais aujourd'hui, on va se demander comment nos machines sont programmées,
-pour générer des nombres prévisiblement imprévisibles,
+et en particulier la théorie du chaos dans des systèmes physiques complexes,
+pour être aussi prévisiblement imprévisible que possible.
+Mais même là, on va généralement combiner cette graine d'aléatoire
+pour ensuite générer d'autres nombres aléatoires, 
 sans avoir accès à des capteurs extérieurs.
+Comment fait-on pour être alors algorithmiquement prévisiblement imprévisible ?
+N'est-ce pas là un oxymore ?
+N'y a-t-il pas là une contradiction dans les termes ?
 
-Aujourd'hui, on va voir la solution aujourd'hui considérée la plus standard,
-notamment AES-CTR\_DBRG et les algorithmes SHA-2,
-qui sont fondés sur des principes similaires.
-Et comme on va le voir, il s'appuie sur des concepts 
-dont l'application va en fait bien au-delà 
-de la génération de nombres prévisiblement imprévisibles ;
-on les retrouve aussi dans le chiffrement symétrique 
-et le calcul d'empreintes cryptographiques.
+Aujourd'hui, on va voir les solutions aujourd'hui considérées standards,
+notamment AES-CTR\_DBRG et SHA-256,
+qu'on pense être des algorithmes prévisibles imprévisibles,
+y compris selon les standards élevés de la cryptographie.
+Et comme on va le voir, 
+les applications de cette faculté à être prévisiblement imprévisible 
+sont nombreuses ;
+on retrouve ces algorithmes aussi bien 
+dans le calcul d'empreintes cryptographiques
+que dans le chiffrement symétrique, parmi de nombreux autres exemples.
 En fait, le coeur de la cybersécurité aujourd'hui,
 ce sont vraiment ces opérations prévisiblement imprévisibles.
 
@@ -93,21 +99,25 @@ ce sont vraiment ces opérations prévisiblement imprévisibles.
 
 ## Le chiffrement de bloc
 
-L'ingrédient de base de nombreuses solutions cryptographiques est le chiffrement de bloc,
+L'ingrédient de base 
+de nombreuses solutions cryptographiques est le chiffrement de bloc,
 ou *bloc cipher* en anglais.
-L'idée est de définir une fonction qui prend en entrée un bloc,
-et sort un bloc avec le même nombre de bits,
-et dont la transformation est paramétrée par une clé secrète.
-Cette fonction doit être par ailleurs maximalement inversible.
-En particulier, pour n'importe quelle clé,
-il faut éviter que deux blocs différents en entrée
-soient transformés soit transformés en deux blocs identiques en sortie,
-puisque ça impliquerait que d'autres blocs en sortie sont garantis de ne pas être générés.
-Autrement dit, pour toute clé, 
+L'idée est de définir une fonction qui prend en entrée 
+une suite de bits de longueur fixée, qu'on appelle aussi un bloc,
+et qui sort un bloc de même longueur.
+De plus, la transformation va être paramétrée par une clé secrète.
+
+On exige généralement que, pour n'importe quelle clé,
+deux blocs différents en entrée
+soient transformés en deux blocs différents en sortie.
+Autrement dit, on évite les collisions en sortie,
+pour éviter que certaines sorties soient plus fréquentes que d'autres.
+En termes techniques, pour toute clé, 
 le chiffrement de bloc doit définir une permutation 
-de l'ensemble des blocs ;
-et cette propriété très utile pour maximiser l'imprévisibilité
-sera par ailleurs *essentielle* pour le chiffrement symétrique.
+de l'ensemble des blocs.
+Cette propriété très utile pour maximiser 
+de manière prévisible l'imprévisibilité de la sortie
+sera d'ailleurs *essentielle* pour le chiffrement symétrique.
 
 Dans les années 1970, un chiffrement de bloc appelé DES a été proposé, 
 et a ensuite été érigé en standard ;
@@ -115,12 +125,20 @@ mais la sécurité de cette solution fut montrée insuffisante,
 à la fois parce qu'elle utilisait des clés de chiffrement à seulement 56 bits,
 ce qui ne fait que $2^{56} ≈ 10^{17}$ clés possibles seulement,
 mais aussi parce qu'il y avait des moyens de court-circuiter une partie du calcul.
-En 1999, la *Electronic Frontier Foundation* a ainsi montré comment casser 
-un chiffrement DES en à peine 22 heures.
+En 1999, [la *Electronic Frontier Foundation* a ainsi montré comment casser un chiffrement DES en à peine 22 heures](https://w2.eff.org/Privacy/Crypto/Crypto_misc/DESCracker/HTML/19980716_eff_des_faq.html).
 
 Bref. On pourrait croire qu'il suffit de faire un peu n'importe quoi 
 avec les blocs de bits pour générer du hasard ;
 mais être prévisiblement imprévisible n'est pas si évident !
+Cet exemple montre par ailleurs ce qu'on entend vraiment par "imprévisibilité" :
+on ne cherche en fait pas à être imprévisible au sens de 
+[Solomonoff et du bayésianisme](https://tournesol.app/entities/yt:t4X6BWjr_do).
+Il s'agit d'être imprévisible contre des 
+["bayésiens pragmatiques"](https://tournesol.app/entities/yt:lXRVZP-tUzw),
+c'est-à-dire contre des algorithmes limités en puissances de calcul.
+Autrement dit, il s'agit d'être sécurisé contre 
+des [la NSA](https://tournesol.app/entities/yt:v_sz0elq0eo),
+mais pas contre le [démon de Solomonoff](https://tournesol.app/entities/yt:6N0dlorL0r8).
 
 De nos jours, le chiffrement de bloc le plus standard est AES avec 256 bits,
 qui opère sur des blocs de 128 bits, avec une clé qui fait également 256 bits.
@@ -129,7 +147,7 @@ mais je vais quand même vous en dire quelques mots,
 notamment parce que ses opérations sont un peu analogues 
 aux calculs des réseaux de neurones.
 
-!> Il y a en fait 3 modes de fonctionnements d'AES,
+> Il y a en fait 3 modes de fonctionnements d'AES,
 avec respectivement 128, 192 et 256 bits.
 Mais ici je ne parlerai uniquement que du cas avec 256 bits.
 
@@ -139,46 +157,58 @@ comme des suites de 16 paquets de 8 bits.
 Chaque paquet de 8 bit est alors appelé un octet.
 On parle aussi de *byte* en anglais.
 
-!> Techniquement, un *byte* n'est pas nécessairement un octet,
+> Techniquement, un *byte* n'est pas nécessairement un octet,
 mais ce sera généralement le cas en pratique.
 
-Mieux encore, chaque octet définit un nombre du corps fini à $2^8$ éléments.
-Je vous renvoie à une vidéo précédente pour comprendre ce que j'entends par là.
-Et si ça, c'est très pratique,
-c'est notamment parce qu'on a défini des additions et des multiplications
-qui fonctionnent extrêmement bien pour les octets de la sorte.
-En particulier, on peut remarquer que toute polynôme de degré 1,
-c'est-à-dire toute fonction affine $P(x) = ax + b$,
-où `a` et `b` sont constantes dans le corps fini avec `a` non nul,
-définit bien une permutation de l'ensemble des octets.
-En effet, on peut aisément résoudre toute équation $y = ax + b$,
-en retranchant `b` puis en divisant par `a`,
-ce qui nous donne $x = (y-b)/a$.
+Mieux encore, chaque octet définit un nombre du corps fini à $2^8 = 256$ éléments.
+J'ai parlé de ces corps finis dans une [vidéo précédente](https://tournesol.app/entities/yt:kkU8u6IWrVs).
+Mais tout ce que vous avez besoin de savoir pour aujourd'hui,
+c'est qu'on peut définir des opérations d'additions et de multiplications
+entre les octets,
+et que ces opérations sont inversibles,
+dans le sens où on peut aussi effectuer des soustractions et des divisions,
+à l'exception de la multiplication et de la division par zéro.
+Du coup, on peut remarquer que toute fonction affine $P(x) = ax + b$,
+où $a$ et $b$ sont constantes dans le corps fini avec $a$ non nul,
+définit une permutation de l'ensemble des octets.
+C'est donc a priori un très bon candidat pour être un chiffrement de bloc.
 
-Mieux encore, si on voit la suite de 128 bits comme un vecteur de 16 octets,
+Alors, pas tout à fait, car on a vu que le bloc AES prenait en entrée,
+non pas un octet, mais 16 octets.
+Bien sûr, on pourrait effectuer une transformation affine différente à chaque
+octet du bloc d'entrée d'AES.
+Mais si vous connaissez l'algèbre linéaire, 
+vous voyez peut-être comment faire mieux.
+Si on voit la suite de 128 bits comme un vecteur de 16 octets,
 on peut définir des fonctions linéaires à l'aide de matrices.
 Formellement, si on définit $f(X) = AX + B$,
-où `A` est une matrice de 16 x 16 octets,
-où `B` est une suite de 16 octets,
-et où `X` représente les 16 octets qui forment le bloc en entrée,
-pourvu que `A` est ce qu'on appelle une *matrice inversible*,
-alors `f` définit ainsi une permutation des suite de 128 bits.
+où $A$ est une matrice de 16 x 16 octets,
+où $B$ est une suite de 16 octets,
+et où $X$ représente les 16 octets qui forment le bloc en entrée,
+pourvu que $A$ est ce qu'on appelle une *matrice inversible*,
+alors $f$ définit ainsi une permutation des suite de 128 bits.
 
-Bingo ! En construisant `A` et `B` à partir de la clé secrète,
+> Le cas où on fait des transformations affines par octet
+correspond au cas où $A$ est une matrice diagonale
+à coefficients diagonaux non nuls.
+
+Bingo ! En construisant $A$ et $B$ à partir de la clé secrète,
 on semble tenir là une solution à notre sélection d'une permutation aléatoire, non ?
 
 Eh bien, il y a un petit problème avec les fonctions linéaires.
-En effet, pour déterminer la fonction `f`,
+En effet, pour déterminer la fonction $f$,
 il suffit de connaître sa valeur en un petit nombre de points.
 Ainsi, si un attaquant parvient à connaître à la fois $X$ et $f(X)$,
 alors il saura que $AX + B = f(X)$,
-ce qui correspond à une équation linéaire en les coefficients secrets `A` et `B`.
+ce qui correspond à une équation linéaire en les coefficients secrets $A$ et $B$.
 On peut même dire que c'est un système de 16 équations,
 puisqu'il s'agit d'une égalité entre des vecteurs de 16 octets ;
 et qu'il a au plus $16 \times 16 + 16 = 272$ inconnues.
-En particulier, il suffit de 17 systèmes d'équations linéairement indépendantes de la sorte
-pour garantir une reconstruction des secrets `A` et `B`.
-Autrement dit, si une superintellygence observe 17 paires $(X, f(X))$, 
+En particulier, il suffit de 17 observations $(X, f(X))$
+pour garantir une reconstruction des secrets $A$ et $B$,
+via des algorithmes très rapides 
+comme le [pivot de Gauss-Jordan](https://tournesol.app/entities/yt:17UAULAknyQ).
+Autrement dit, si une superintellygence observe environ 17 nombres générés,
 alors le chiffrement linéaire sera cassé.
 
 > Si ces coefficients sont eux même des fonctions linéaire 
@@ -186,30 +216,23 @@ alors le chiffrement linéaire sera cassé.
 > alors on peut même écrire l'équation sous la forme $X^T A_0 K + B_0 K = f(X)$.
 > C'est un système linéaire à 16 équations à 32 inconnues.
 > Si on observe maintenant $X_1$, $f(X_1)$, $X_2$ et $f(X_2)$,
-> alors on a 32 équations à 32 inconnues, qui va permettre de reconstruire $K$.
+> alors on a déjà de quoi permettre reconstruire $K$ après 2 observations !
 
-Bien sûr, on peut douter de la faculté de la superintellygence d'observer les valeurs de $X$.
-Mais selon le principe fondamental de défense en profondeur,
-si on parvient à être résilient même dans ce cas de figure,
-c'est clairement nettement mieux.
-En tout cas, les cryptographes ont du coup cherché 
-une autre manière de définir des permutations des suites de 16 octets.
-
+Mais donc, comment augmenter la sécurité de notre génération de blocs ?
 Alors, vous pourriez vouloir échanger des octets,
 et les additionner entre eux ;
 mais toutes ces opérations sont en fait elles aussi linéaires.
 Et qui plus est, combiner tout plein d'opérations linéaires,
 eh bien, ça reste une opération linéaire.
-Non, si on veut aller au-delà du `AX+B`, il va falloir une autre astuce.
+Non, si on veut aller au-delà du $AX+B$, il va falloir une autre astuce.
 Vous l'avez trouvée ?
 
 Eh bien, une autre permutation qu'on peut définir pour un octet,
-c'est celle qui consiste à remplacer tout octet `x` par son inverse `1/x`,
-à l'exception du `0` qu'on laisse inchangé.
+c'est celle qui consiste à remplacer tout octet $x$ par son inverse $1/x$,
+à l'exception du $0$ qu'on laisse inchangé.
 Cette opération est bien une permutation,
 puisqu'on peut l'inverser en réeffectuant la même opération ;
-et oui, `1/(1/x)) = x`.
-
+et oui, $1/(1/x)) = x$.
 Eh bien, AES, en gros c'est ça.
 C'est une succession de 14 transformations linéaires définies par la clé secrète,
 avec des inversions des octets intercalées entre ces transformations linéaires.
@@ -217,10 +240,10 @@ Alors, en pratique, ce ne sont pas exactement des inversions,
 notamment pour éviter des points, mais c'est en gros des inversions.
 Par ailleurs, dans AES, la clé secrète suit elle aussi des transformations linéaires
 et des opérations d'inversions d'octets,
-pour définir la suite des matrices `A` et des vecteurs `B` 
+pour définir la suite des matrices $A$ et des vecteurs $B$
 qui seront appliqués aux 16 octets ;
 de sorte que même une superintellygence 
-qui parviendrait à accéder à des observations `(X, f(X))`
+qui parviendrait à accéder à des millions d'observations $(X, f(X))$
 aura le plus grand mal à identifier les clés secrètes du chiffrement AES,
 et donc à reconstruire la fonction de permutation utilisée.
 
@@ -232,9 +255,9 @@ avec entre chaque bidouille non-linéaire une transformation linéaire.
 En particulier, ces opérations ont le don d'être largement parallélisables,
 [sans l'être complètement](https://tournesol.app/entities/yt:g_u8YWpe4BM).
 
-Ainsi, AES définit ainsi une opération qui prend en entrée un bloc `X` de 128 bits
-et une clé `K` de 256 bits, et qui sort un bloc `Y` de 128 bits.
-On peut ainsi écrire `Y = AES(X, K)`.
+Ainsi, AES définit ainsi une opération qui prend en entrée un bloc $X$ de 128 bits
+et une clé $K$ de 256 bits, et qui sort un bloc $Y$ de 128 bits.
+On peut ainsi écrire $Y = AES(X, K)$.
 Et si on prend une clé `K` parfaitement inconnue d'une superintelligence,
 alors aux yeux de celle-ci, 
 AES effectue une permutation essentiellement imprévisble
@@ -246,15 +269,20 @@ Enfin, plus exactement, c'est ce qu'on suspecte fortement.
 Malheureusement, démontrer mathématiquement la sécurité d'AES reste un problème ouvert ;
 en fait on n'arrive même pas à démontrer qu'il existe des fonctions
 de hachage cryptographiques,
+c'est-à-dire des solutions au problème de la conception d'algorithmes prévisiblement imprévisibles,
 notamment parce que c'est un problème plus dur en quoi mathématiquement
 que de prouver que P est différent de NP,
 pour lequel il y a un prix d'un million de dollars du Clay Math Institute,
 dont aucun mathématicien n'a encore su se saisir.
+Eh oui, quand on dit être prévisiblement imprévisible,
+c'est vis-à-vis de supercalculateurs dont la puissance de calcul est limitée,
+ce qui est très proche des considérations de 
+[P versus NP](https://tournesol.app/entities/yt:AgtOCNCejQ8).
 
 Néanmoins la sécurité d'AES, y compris contre les calculateurs quantiques,
 c'est peut-être la conjecture non démontrée la plus fiable de la cybersécurité,
 ne serait-ce que parce que cela fait désormais un quart de siècle
-qu'on échoue à la casser..
+qu'on échoue à la casser.
 Voilà pourquoi on s'est appuyé sur AES depuis pour 
 le hachage, le chiffrement symétrique et la génération de nombres aléatoires.
 
@@ -272,13 +300,12 @@ il doit être impossible pour une superintellygence
 de deviner quoi que ce soit à propos de l'entrée mieux que le hasard,
 à cause de ses limites en puissances de calcul.
 
-Pour garantir cette propriété, le bloc AES a un défaut :
-si on connaît la clé `K` et le bloc de sortie,
+Pour garantir cette propriété, le bloc AES a un léger défaut :
+si on connaît la clé $K$ et le bloc de sortie,
 alors on peut reconstruire le bloc en entrée.
 Ainsi, quand la clé parvient à être identifiée, 
 AES génère une sortie informative vis-à-vis de son entrée.
-
-Pour être plus prévisiblement imprévisible,
+Pour être davantage prévisiblement imprévisible,
 les informaticiens Merkle et Damgård ont proposé d'utiliser 
 des clés K beaucoup plus longues.
 On va ensuite décomposer K en une suite de blocs $K_1, K_2, ..., K_N$,
@@ -306,15 +333,17 @@ de l'absence de hacks tout court.
 
 Notez que d'autres fonctions de hachage ont été introduites,
 notamment la famille de fonctions SHA-3.
-Cependant, leur vocation n'est pas nécessairement de rremplacer SHA-2.
+Cependant, leur vocation n'est pas nécessairement de remplacer SHA-2.
 IL s'agissait plus de proposer une solution fondée 
 sur des principes radicalement distincts,
-pour anticiper l'éventualité où SHA-2 serait cassé.
+pour anticiper l'éventualité où SHA-2 serait cassée.
+On n'oublie surtout pas le principe de défense en profondeur en cryptographie !
 
 Alors, pour être plus précis, 
 SHA-256 utilise un autre chiffrement de bloc que AES,
 qui est composée de 64 opérations linéaires plutôt que 14,
-et qui agit sur des suites de 512 bits plutôt que 128.
+avec bien sûr là encore des opérations non-linéaires intercalées.
+Par ailleurs, les blocs de SHA-256 sont constitués de 512 bits plutôt que 128.
 Enfin, l'opération non-linéaire utilisée est davantage la rotation,
 c'est-à-dire remplacer par exemple la suite de bits 1000 par 0001,
 en faisant glisser le bit à gaucher vers la droite.
@@ -323,12 +352,18 @@ notamment vis-à-vis du choix des constantes des transformations linéaires,
 ou vis-à-vis du préformatage des données à hacher
 pour qu'elles se décomposent bien en suites de 512 bits.
 
-!> Notez que la fonction de chiffrement de bloc de SHA-256
+> La fonction de chiffrement de bloc de SHA-256
 fait en fait intervenir deux sortes différentes d'addition,
 une addition dans le corps F_2^32^_ qui revient à prendre le XOR,
 et une addition dans l'anneau Z_2^32^_ qui requiert des retenues.
 Dans les deux cas, l'addition d'une constante définit une permutation
 des suites de 32 bits.
+
+> En pratique, SHA-256 utilise la transformation de Davies-Meyer
+pour définir le chiffrement de bloc,
+qui a pourtant le défaut de ne pas conduire à une permutation.
+Ceci dit, personne jusque là n'a su exploiter les mauvaises propriétés
+de cette transformation pour casser SHA-256.
 
 Quoi qu'il en soit, ce faisant,
 SHA-256 prend n'importe quelle suite de bits de n'importe quelle taille en entrée,
@@ -373,6 +408,9 @@ contre les attaques par préimage et par collision,
 deux décennies et demi de pratique ont convaincu les cryptographes
 que cette résistance était suffisamment probable
 pour que toute l'économie mondiale repose dessus.
+En tout cas, les experts sont tous convaincus que 
+les principales vulnérabilités des systèmes d'information ne résident pas
+dans SHA256.
 
 
 ## Le chiffrement symétrique CBC
@@ -380,36 +418,38 @@ pour que toute l'économie mondiale repose dessus.
 Passons maintenant au chiffrement symétrique.
 Vous vous souvenez peut-être que, dans la vidéo précédente,
 on avait vu comment les courbes elliptiques permettent 
-à deux interlocuteurs Alice et Bob de constituer un secret partagé `S`,
-sans qu'aucune superintellygence ne soit capable de deviner ce secret `S`,
+à deux interlocuteurs Alice et Bob de constituer un secret partagé $S$,
+sans qu'aucune superintellygence ne soit capable de deviner ce secret $S$,
 y compris après avoir intercepté tous les échanges
 qui ont permis à Alice et Bob de constituer ce secret.
 Cette solution est appelée algorithme de Diffie-Hellman,
 et si vous ne vous rendez pas compte de la magie qu'il opère,
 je vous invite à aller voir la vidéo de Science Étonnante qui l'explique très bien.
 
-OK, mais avoir un secret partagé `S`,
+OK, mais avoir un secret partagé $S$,
 ce n'est pas tout à fait l'objectif d'Alice et Bob.
 Ce qu'ils veulent, c'est surtout pouvoir envoyer des messages
 sans que la superintellygence ne puisse les lire.
 Eh bien, pour y arriver, 
-AES propose de d'abord transformer le secret partagé `S` 
-en une clé de chiffrement `K`,
+on va d'abord transformer le secret partagé $S$ 
+en une clé de chiffrement $K$,
 à l'aide d'une fonction de hachage ;
 comme typiquement SHA-256.
 D'ailleurs avec SHA-256, Alice et Bob obtiendront une clé de 256 bits,
 ce qui correspond exactement à la longueur nécessaire pour AES.
 
-Maintenant, imaginons qu'Alice souhaite envoyer un message `M` à Bob,
-en chiffrant le message avec la clé de chiffrement partagée `K`.
+Maintenant, imaginons qu'Alice souhaite envoyer un message $M$ à Bob,
+en chiffrant le message avec la clé de chiffrement partagée $K$.
 Comment peut-elle s'y prendre ?
-Bien sûr, on peut commencer en transformant `M` en une suite de bits.
+Bien sûr, on peut commencer en transformant $M$ en une suite de bits,
+comme vos machines le font à longueur de journée.
 Cependant, cette suite peut avoir un nombre arbitraire de bits,
-mais AES ne peut avoir en entrée que 128 bits.
-Clairement, il va nous falloir découper `M` en une suite de blocs de 128 bits.
-Supposons que `M` est un énorme fichier,
+alors que AES ne peut avoir en entrée que 128 bits.
+Clairement, il va nous falloir découper $M$ en une suite de blocs de 128 bits.
+Supposons que $M$ est un énorme fichier,
 de sorte que son code binaire est une suite d'un million de blocs de 128 bits.
-Comment utiliser `K` pour chiffrer cette suite de blocs ?
+Comment utiliser la clé $K$ à 256 bits 
+pour chiffrer cette énorme suite de blocs ?
 
 Si on y va bêtement, en utilisant AES indépendamment pour chaque bloc,
 alors on va risquer malheureusement de révéler des informations.
@@ -431,7 +471,7 @@ ce qui rendra sa sortie tout aussi imprévisible, et ainsi de suite.
 En particulier, désormais deux blocs initialement identiques
 seront chiffrés différemment.
 
-!> Pour rendre le chiffrement encore un peu imprévisible,
+> Pour rendre le chiffrement encore un peu imprévisible,
 Alice et Bob peuvent aussi ajouter une suite de 128 bits au premier bloc à chiffrer.
 Cette suite peut tout à fait être publique.
 Son but est uniquement de garantir que deux messages identiques
@@ -441,10 +481,10 @@ qui viennent en support du chiffrement
 sont appelés des nonces.
 
 De façon cruciale, toutes ses opérations sont facilement inversibles,
-pour Bob qui connaît le code chiffré et la clé `K`.
+pour Bob qui connaît le code chiffré et la clé $K$.
 En effet, le déchiffrement de chaque bloc s'obtient
 en effectuant les opérations d'inversion du chiffrement de bloc AES,
-et d'ajouter ce résultat au bloc chiffré précédent.
+et en ajoutant ce résultat au bloc chiffré précédent.
 
 Ce chiffrement symétrique CBC a toutefois quelques défauts,
 qui font qu'on lui préfère d'autre solutions.
@@ -484,11 +524,13 @@ non pas le bloc à chiffrer,
 mais une suite publique de 64 bits d'apparence aléatoire appelée nonce,
 suivie de l'écriture du numéro à chiffrer en base 2, en 64 bits.
 
-!> Le nonce permet de contrer les attaques par pré-calcul :
-un attaquant ne peut pas faire plein de calculs en amont
+> Le nonce permet de contrer les attaques par pré-calcul :
+un attaquant peut faire plein de calculs en amont
 pour construire une table d'inversion des messages chiffrés.
+Mais si la construction de cette table prend plus de temps que l'âge de l'univers,
+alors cette attaque par pré-calcul restera vaine.
 
-Le résultat du chiffrement de cette entrée avec la clé `K`
+Le résultat du chiffrement de cette entrée avec la clé $K$
 donne alors 128 bits qui peuvent paraître aléatoires.
 Eh bien, CTR propose d'ajouter ces 128 bits au bloc à chiffrer,
 ce qui donne alors le bloc correspondant chiffré.
@@ -496,36 +538,38 @@ Cette fois, pas de dépendance inter-blocs dans le chiffrement ;
 et donc aucune dépendance inter-blocs dans le déchiffrement non plus !
 Voilà qui sont des opérations entièrement parallélisables.
 
-Bien entendu, AES pourrait être remplacé par un autre chiffrement de bloc,
-comme cela a été proposé pour SHA-256.
+Bien entendu, AES pourrait être remplacé par un autre chiffrement de bloc.
+En fait, certains considèrent que la meilleure solution est désormais
+ChaCha20, qui combine des solutions d'AES et de SHA-256.
 Mais si l'on garde AES et si on le combine à CTR, on obtient alors AES-CTR.
 Intuitivement, AES-CTR peut paraître moins sécurisé que AES-CBC,
 car il y a moins l'effet d'avalanche qui fait que deux messages qui diffèrent d'un bit
 auront des chiffrements radicalement différents.
 Cependant, jusque là, AES-CTR reste considéré pleinement sécurisé.
 
-En pratique, AES-CTR et AES-CBC sont généralement combinés à d'autres informations,
+En pratique, AES-CTR, AES-CBC et ChaCha20 sont généralement combinés à d'autres informations,
 potentiellement publiques comme des méta-données sur le destinataire du message,
 typiquement sous la forme d'une adresse IP.
 Enfin, tout cela est souvent accompagné d'un hash du code chiffré
 et des méta-données, pour authentifier le message.
 Un tel hash est appelé *code d'authentification du message* ou MAC en anglais.
 On parle alors de chiffrement symétrique authentifié.
+ChaCha20 + MAC donne alors ChaCha20-Poly1305, ou ChaChaPoly pour les intimes,
+que certains considèrent être la meilleure solution de communication sécurisée aujourd'hui.
 
-Enfin, on peut parler duau générateur de nombre aléatoire AES-CTR_DBRG.
+Enfin, on peut parler du générateur de nombre aléatoire AES-CTR_DBRG.
 Sa conception correspond tout simplement au chiffrement d'un message vide avec AES-CTR.
 En pratique, plutôt qu'utiliser un nonce,
 on encourage la personne qui utilise ce générateur 
-à spécifier, en plus de la clé `K` à 256 bits, 
-un nombre aléatoire `V` à 128 bits, qui sera l'entrée d'AES.
-`V` et `K` sont alors appelées des *graines* du générateur.
+à spécifier, en plus de la clé $K$ à 256 bits, 
+un nombre aléatoire $V$ à 128 bits, qui sera l'entrée d'AES.
+$V$ et $K$ sont alors appelées des *graines* du générateur.
 Pour obtenir le n-ième nombre généré par AES-CTR_DBRG
-à partir de la graine `(V, K)`,
+à partir de la graine $(V, K)$,
 il suffit alors de calculer $AES(V \oplus n, K)$,
 où l'addition est ici un XOR.
 
-> En particulier, il ne s'agit pas de l'addition dans le corps fini F_2^128_.
-Après tout, dans ce corps fini, on aurait V + 2 = V...
+> En particulier, il ne s'agit pas de l'addition dans le corps fini $F_{2^128}$.
 
 En pratique, AES-CTR_DBRG est aujourd'hui considéré être 
 l'un des générateurs de nombres aléatoires les plus sécurisés,
@@ -535,14 +579,11 @@ Comme l'explique très bien [3Blue1Brown](https://tournesol.app/entities/yt:RQWp
 le quantique n'est vraiment utile que pour une poignée de problèmes,
 en particulier pour casser le chiffrement pré-quantique,
 mais il ne permet absolument pas en général de casser le chiffrement.
-Après tout, sa sécurité est intimement lié au chiffrement symétrique AES-CTR,
-qui est lui omniprésent, et pour l'instant au moins, est considéré sécurisé,
-grâce notamment aux échecs à le casser,
-malgré des incitatifs énormes à y parvenir.
-En tout cas, je vous invite à le privilégier à DUAL\_EC\_DBRG,
-si vous voyez ce que je veux dire...
+En pratique, pour casser AES-CTR_DBRG,
+on pense qu'un calculateur quantique nécessitera toujours un temps exponentiel
+en la longueur des clés secrètes.
 
-Ceci étant dit, en théorie, 
+Et je dis bien "on pense", car, en théorie, 
 il reste encore beaucoup de chemins à parcourir 
 pour être pleinement rassuré pour la sécurité d'AES-CTR_DBRG.
 En particulier, celle-ci dépend fortement de la conjecture
