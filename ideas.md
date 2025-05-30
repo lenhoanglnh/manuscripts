@@ -5,24 +5,23 @@ Le fréquentisme est statistiquement inadmissible
 
 ## Éthique 
 
-Theory of Change
-Le temps (cf. https://digitalcommons.law.seattleu.edu/sulr/vol48/iss3/4/)
+change 	Theory of Change
+time	Le temps (cf. https://digitalcommons.law.seattleu.edu/sulr/vol48/iss3/4/)
+freedom_of_speech
+ - Gouvernance de l'attention / liberté d'expression
+constructivism
+ - Le constructivisme moral
 Le doomscrolling passif
-Gouvernance de l'attention / liberté d'expression
-Le constructivisme moral
-Sortir de la paralysie parlementaire
+Le danger du débat unidimensionnel
 Émergence
 Le réseau de confiance
 
 ## IA
 
+Hijacker ChatGPT
 Les agents
 
 ## Cyber
-
-L'art d'être prévisiblement imprévisible ? (SHA-2, AES...)
- - 8 aes
- - Vignette ?
 
 Est-il dangereux de scanner son passeport ?
  - 9 passeport
