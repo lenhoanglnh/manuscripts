@@ -569,8 +569,6 @@ Pour obtenir le n-ième nombre généré par AES-CTR_DBRG
 il suffit alors de calculer $AES(V \oplus n, K)$,
 où l'addition est ici un XOR.
 
-> En particulier, il ne s'agit pas de l'addition dans le corps fini $F_{2^128}$.
-
 En pratique, AES-CTR_DBRG est aujourd'hui considéré être 
 l'un des générateurs de nombres aléatoires les plus sécurisés,
 y compris contre des calculateurs quantiques.
