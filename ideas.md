@@ -18,8 +18,7 @@ Le réseau de confiance
 
 ## IA
 
-Hijacker ChatGPT
-Les agents
+injection	Hijacker ChatGPT, Les agents
 
 ## Cyber
 
