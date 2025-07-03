@@ -19,6 +19,9 @@ Le réseau de confiance
 ## IA
 
 injection	Hijacker ChatGPT, Les agents
+moyenne		Calculer une moyenne robuste
+taggants	Protéger les données
+
 
 ## Cyber
 
@@ -43,7 +46,7 @@ La preuve d'appartenance sans divulgation d'identité
  - Sparse Merkle Tree
  - Vignette ?
 
-La solution de Mohameden Dieye
+La solution de Neff
  - TBD
 
 Le vote électronique
