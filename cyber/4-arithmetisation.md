@@ -4,7 +4,7 @@ Imaginez qu'une supercalculatrice d'une entreprise privée
 prétend effectuer des milliards de milliards d'opérations,
 et que l'entreprise affirme que les calculs concluent 
 que la probabilité que la gauche gagne l'élection présidentielle de 2027
-est égale à 35%
+est égale à 35%.
 Comment savoir si la supercalculatrice a bien effectué correctement
 les milliards de milliards d'opération, 
 et que l'entreprise a bien rapporté les résultats de ce calcul ?
