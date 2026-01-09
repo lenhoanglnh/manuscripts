@@ -28,6 +28,18 @@ et qu'il est donc urgent d'y inclure des considérations morales.
 
 ## Déontologie et programmation explicite
 
+Une première grande catégorie de philosophie morale
+est l'approche déontologique,
+souvent associée au philosophe Emmanuel Kant.
+En gros, il s'agit de dire explicitement
+quelles actions doivent être effectuées
+et lesquelles ne doivent pas être effectuées.
+Et ça, c'est très proche de la programmation usuelle,
+où on dit à une machine exactement quelles instructions suivre.
+
+Par exemple, on peut dire à un algorithme 
+
+
 ## Utilitarisme et apprentissage par renforcement
 
 ## Éthique de la vertue et pré-entraînement
